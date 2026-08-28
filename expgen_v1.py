@@ -38,8 +38,13 @@ sys.path.insert(0, str(HERE / "reflex" / "_arc"))
 
 OUT = HERE / "results" / "expacq" / "data"
 
-POOL_PARSE_SEED, POOL_PARSE_N = 5555, 18000
-POOL_OOF_SEED, POOL_OOF_N = 5556, 2500
+# AMENDMENT 1 (2026-08-28, BEFORE any split was emitted): initial
+# pool 18000+2500 produced only 3404 residuals at the measured 83.4%
+# frozen-engine pool coverage (the assert below fired; zero files
+# written). Pool enlarged to meet the frozen 6,500-item requirement;
+# capacity parameter only — seeds, filter, splits unchanged.
+POOL_PARSE_SEED, POOL_PARSE_N = 5555, 40000
+POOL_OOF_SEED, POOL_OOF_N = 5556, 5000
 SHUFFLE_SEED = 5557
 N_VAL, N_TRAFFIC, N_SEALED = 1000, 5000, 500
 SEM_SEED, ADV_SEED, ADV_PER = 7222, 7666, 12
