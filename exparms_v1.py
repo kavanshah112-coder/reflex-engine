@@ -79,12 +79,19 @@ def probe_validation(eng, val, tag, out_dir, i_at):
     return row
 
 
-def run_arm(arm, limit=None):
+def run_arm(arm, limit=None, miner_model="ollama"):
+    """miner_model: 'ollama' (the pre-registered local arms) or an
+    Anthropic model id — the H12-lineage SCALE REPLICATIONS of A2,
+    reported alongside the primary arms, never swapped into the
+    outcome ladder. Only the MINER's proposals change; certification,
+    probation, and all engine work stay local and deterministic."""
     from reflex import acquire as AQ
     from reflex.adapters.ollama import OllamaAdapter
     from reflex.engine import Engine
 
-    out = ARMS / arm
+    tag = arm if miner_model == "ollama" else \
+        f"{arm}-{miner_model.split('-')[1]}"
+    out = ARMS / tag
     out.mkdir(parents=True, exist_ok=True)
     eng = Engine(resolver=None, redundancy=True, use_breeder=True)
     traffic = load("expacq_traffic")
@@ -98,7 +105,12 @@ def run_arm(arm, limit=None):
                            AQ.make_shadow_eval(eng, grade),
                            breeder=eng.breeder)
     gauntlet.activate_all_active()
-    adapter = OllamaAdapter()
+    if miner_model == "ollama":
+        adapter = OllamaAdapter()
+    else:
+        from reflex.adapters.anthropic_direct import \
+            AnthropicDirectAdapter
+        adapter = AnthropicDirectAdapter(model=miner_model)
     miner = AQ.Miner(adapter, store) if arm in ("A2", "A3") else None
     breeder_prod = (AQ.BreederProducer(eng.breeder, store)
                     if arm in ("A1", "A3") else None)
@@ -211,8 +223,9 @@ def main():
     ap.add_argument("--arm", required=True,
                     choices=["A0", "A1", "A2", "A3"])
     ap.add_argument("--limit", type=int, default=None)
+    ap.add_argument("--miner-model", default="ollama")
     a = ap.parse_args()
-    run_arm(a.arm, a.limit)
+    run_arm(a.arm, a.limit, a.miner_model)
 
 
 if __name__ == "__main__":
