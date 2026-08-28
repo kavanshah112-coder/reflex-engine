@@ -1,0 +1,29 @@
+{
+ "v1.0": {
+  "created": "2026-08-28",
+  "spec": "V1_SPEC.md (frozen 2026-08-28, issued by user)",
+  "plan": "V1_PLAN.md (frozen at this commit, before any sealed set exists)",
+  "prior_version_verification": {
+   "method": "scratchpad verify_arc.py: tag exists + working tree clean + repo-vs-snapshot recursive byte compare (excluding .git); full verdict in arc_verification.json (copied below per version)",
+   "verified_on": "2026-08-28",
+   "v0.1": {"tag": "c60eaad09", "tree_clean": true, "snapshot": "byte-identical"},
+   "v0.2": {"tag": "030231cd8", "tree_clean": true, "snapshot": "CREATED 2026-08-28 (pre-existing gap: reflex-poc-v0.2-frozen never existed; the snapshot practice began at v0.3). Built as a byte-copy of the 186 working-tree files listed by tag v0.2-final; verified 0 mismatches vs working tree; tag content identical modulo the repo's on-disk line-ending form. Live repo HEAD 33cbf1983 = v0.2-final + one post-final housekeeping commit adding two rendered PDF reports (results/Adaptive_Reflex_POC_v0.1_Report.pdf, results/Reflex_Graph_vs_Cascade_v0.2_Report.pdf); those two PDFs are intentionally absent from the snapshot (outside the tagged tree) and are the expected repo-vs-snapshot difference for future verifications."},
+   "v0.3": {"tag": "888f71812", "tree_clean": true, "snapshot": "byte-identical"},
+   "v0.4": {"tag": "b2a725103", "tree_clean": true, "snapshot": "byte-identical"},
+   "v0.5": {"tag": "179603305", "tree_clean": true, "snapshot": "byte-identical"},
+   "v0.6": {"tag": "cff27cb87", "tree_clean": true, "snapshot": "byte-identical"},
+   "v0.7": {"tag": "ab66bb028", "tree_clean": true, "snapshot": "byte-identical"},
+   "v0.8": {"tag": "0dd743a68", "tree_clean": true, "snapshot": "byte-identical"},
+   "v0.9": {"tag": "3423434a6", "tree_clean": true, "snapshot": "byte-identical"},
+   "v0.10": {"tag": "54f05fbba", "tree_clean": true, "snapshot": "byte-identical"},
+   "v0.11": {"tag": "ec56b64a0", "tree_clean": true, "snapshot": "byte-identical"}
+  },
+  "phase": "P1 skeleton",
+  "p1_checkpoint": "PASS 2026-08-28: gateway.ask() end-to-end with metering via ollama (llama3.1:latest), openai_compat (ollama /v1), anthropic_bridge (enqueue->service->replay); tests/test_p1_skeleton.py",
+  "environment": {
+   "local_model": "llama3.1:latest (8B, ollama digest 46e0c10c039e)",
+   "api_models": "claude-haiku-4-5 / claude-sonnet-5 via deferred-replay bridge only (workspace API keys revoked); calls/tokens only, never on the joule axis"
+  },
+  "sealed_sets": "NONE exist at plan freeze. Generators must be committed (hashes recorded here) before any sealed item is generated."
+ }
+}
