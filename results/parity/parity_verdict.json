@@ -1,4 +1,40 @@
 {
+ "sem11_sealed": {
+  "n": 76,
+  "acc": 1.0,
+  "wrong_fire": 0,
+  "llm_step_calls": 0,
+  "item_diffs": [],
+  "ok": true,
+  "wall_s": 0.2
+ },
+ "adv11_sealed": {
+  "n": 122,
+  "acc": 0.8361,
+  "wrong_fire": 0,
+  "llm_step_calls": 0,
+  "item_diffs": [],
+  "ok": true,
+  "wall_s": 48.9
+ },
+ "parse11_sealed": {
+  "n": 1000,
+  "acc": 0.842,
+  "wrong_fire": 0,
+  "llm_step_calls": 0,
+  "item_diffs": [],
+  "ok": true,
+  "wall_s": 1.1
+ },
+ "parse11_oof": {
+  "n": 240,
+  "acc": 0.6833,
+  "wrong_fire": 0,
+  "llm_step_calls": 0,
+  "item_diffs": [],
+  "ok": true,
+  "wall_s": 0.2
+ },
  "cplx10_sealed": {
   "n": 196,
   "acc": 1.0,
@@ -6,6 +42,13 @@
   "llm_step_calls": 0,
   "item_diffs": [],
   "ok": true,
-  "wall_s": 0.7
+  "wall_s": 0.9
+ },
+ "energy": {
+  "n": 196,
+  "acc": 1.0,
+  "j_query": 0.4027626607064611,
+  "bound": 0.61,
+  "ok": true
  }
 }
