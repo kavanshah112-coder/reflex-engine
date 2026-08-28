@@ -239,6 +239,7 @@
    ],
    "cost": {
     "miner_calls": 429,
+    "miner_j_est": 2978803.388120962,
     "miner_tokens": 513135
    },
    "expacq_adv_sealed": {
@@ -330,6 +331,7 @@
    ],
    "cost": {
     "miner_calls": 420,
+    "miner_j_est": 3022794.486126712,
     "miner_tokens": 520713
    },
    "expacq_adv_sealed": {
@@ -421,6 +423,7 @@
    ],
    "cost": {
     "miner_calls": 417,
+    "miner_j_est": 4180408.213577315,
     "miner_tokens": 720126
    },
    "expacq_adv_sealed": {
@@ -512,6 +515,7 @@
    ],
    "cost": {
     "miner_calls": 429,
+    "miner_j_est": 2970496.2805403033,
     "miner_tokens": 511704
    },
    "expacq_adv_sealed": {
@@ -543,13 +547,34 @@
    }
   }
  },
- "cost": {},
+ "cost": {
+  "A2": {
+   "break_even_reuses": 31.386220214533672,
+   "j_per_active_reflex": 22566.69233424971
+  },
+  "A3": {
+   "break_even_reuses": 35.01209637373357,
+   "j_per_active_reflex": 25173.697292714434
+  }
+ },
  "stats": {
   "parse_sealed:A1_vs_A0": {
    "lose": 0,
    "n": 500,
    "p": 1.0,
    "win": 0
+  },
+  "parse_sealed:A2-haiku_vs_A0": {
+   "lose": 0,
+   "n": 500,
+   "p": 3.7e-09,
+   "win": 29
+  },
+  "parse_sealed:A2-sonnet_vs_A0": {
+   "lose": 0,
+   "n": 500,
+   "p": 0.0,
+   "win": 36
   },
   "parse_sealed:A2_vs_A0": {
    "lose": 0,
@@ -568,6 +593,12 @@
    "n": 500,
    "p": 1.0,
    "win": 0
+  },
+  "parse_sealed:sonnet_vs_haiku": {
+   "lose": 0,
+   "n": 500,
+   "p": 0.015625,
+   "win": 7
   }
  }
 }

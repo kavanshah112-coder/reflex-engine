@@ -60,9 +60,10 @@
     "tag": "ec56b64a0",
     "tree_clean": true,
     "snapshot": "byte-identical"
-   }
+   },
+   "reverified_at_finalization": "2026-08-29: v0.1, v0.3-v0.11 byte-identical, all trees clean, all tags intact. v0.2: snapshot covers the full tagged tree exactly; repo-side surplus only (gitignored runtime artifacts + the 2 documented post-final PDFs) - expected, benign."
   },
-  "phase": "P2 complete (v1.0-parity)",
+  "phase": "COMPLETE (v1.0-final)",
   "p1_checkpoint": "PASS 2026-08-28: gateway.ask() end-to-end with metering via ollama (llama3.1:latest), openai_compat (ollama /v1), anthropic_bridge (enqueue->service->replay); tests/test_p1_skeleton.py",
   "environment": {
    "local_model": "llama3.1:latest (8B, ollama digest 46e0c10c039e)",
@@ -76,6 +77,28 @@
    "energy": "0.403 J/query @ 100% on cplx10_sealed (bound 0.61; V0.5 protocol, ambient-calibrated)",
    "gateway": "CERTIFIED_REFLEX / LLM_ESCALATED / ABSTAINED all verified (tests/test_gateway.py)",
    "engine_inline_residue": "packs/physics/README.md section: 4 classes, E1 violation-log candidates"
+  },
+  "p3_loop_close": "PASS 2026-08-29: momentum new_kind+new_cap mined live from llama-8B escalation, dimension-certified, probation-promoted, paraphrases answered 14.0/30.0 with certificates (results/demo/loop_close_transcript.json)",
+  "expacq": {
+   "plan_freeze": "c7079fa (before any sealed item)",
+   "generator": "expgen_v1.py @ 0786c6d; amendment 1 (pool capacity) @ 8820876 pre-data",
+   "datasets": "results/expacq/dataset_hashes.json (val 1000 / traffic 5000 / parse 500 / sem 76 / adv 122); pool 45000 @ 83.4% frozen coverage, 0 wrong",
+   "arms": {
+    "A0": "flat 0; gate 0.000",
+    "A1": "flat 0; ZERO candidates (breeder needs completed parses)",
+    "A2_llama": "flat 0; 132 ACTIVE of 2306; gate 0.000",
+    "A3_llama": "flat 0; 118 ACTIVE of 2255; gate 0.000",
+    "A2_haiku_replication": "+5.8pp sealed (29/0 vs A0, p 3.7e-9); 14 ACTIVE of 435; gate 0.000",
+    "A2_sonnet_replication": "+7.2pp sealed (36/0, p~0; vs haiku 7/0 p .016); 48 ACTIVE of 1014; gate 0.000"
+   },
+   "controls": {
+    "K2": "integrity OFF: adv wrong-fire 6.6% (v0.11 C2 replicated on fresh sets)",
+    "K3": "pure LLM adv wrong-fire: llama 36.9% @ 1910 J/q measured; haiku 24.6%; sonnet 25.4% (calls-only)",
+    "K4": "gauntlet OFF: 0 wrong-fire (certification backstop); coverage cost sem -5.3pp adv -8.2pp (llama pool)",
+    "CAL": "miner energy: 6973 J/call, 5.81 J/token (30 metered calls)"
+   },
+   "outcome": "C per frozen ladder (parity total; H3 falsified @ pre-registered llama scale; channel works at API scale at zero safety cost)",
+   "final_verification": "all dataset+vendor hashes clean (79 files); run_v1_0_experiment.py OK"
   }
  }
 }
