@@ -1,0 +1,278 @@
+{
+ "battery/adv11_dev.json": {
+  "origin": "reflex-poc-v0.11@v0.11-final:results/raw_v11/adv11_dev.json",
+  "sha256": "95d44eb218fbdfa3557a6db37c8ca1e965f67280c6f256a3cb0f715418de08c4"
+ },
+ "battery/adv11_sealed.json": {
+  "origin": "reflex-poc-v0.11@v0.11-final:results/raw_v11/adv11_sealed.json",
+  "sha256": "054c8dc5302c61bedb9d66bb8d23334709a3015501e8a1cb680e36d36758e825"
+ },
+ "battery/cplx10_dev.json": {
+  "origin": "reflex-poc-v0.11@v0.11-final:results/raw_v10/cplx10_dev.json",
+  "sha256": "9ab854c1ab1409e5ffcf0e8f1bd40fafe41a00a69ad4e8f890ded0ed76230a25"
+ },
+ "battery/cplx10_sealed.json": {
+  "origin": "reflex-poc-v0.11@v0.11-final:results/raw_v10/cplx10_sealed.json",
+  "sha256": "a21e0707d2d4fba079fe0e3763cd94082e140f879ce334df0c7394b5c71f8d61"
+ },
+ "battery/dataset_hashes_v11.json": {
+  "origin": "reflex-poc-v0.11@v0.11-final:results/raw_v11/dataset_hashes_v11.json",
+  "sha256": "f1841b1c11e2ee131ed3915c7a889e66f979ffa469e659230857698eb4e20bc5"
+ },
+ "battery/parse11_oof.json": {
+  "origin": "reflex-poc-v0.11@v0.11-final:results/raw_v11/parse11_oof.json",
+  "sha256": "58f0f9087fa16778d94701e975650aecaef0cc923c4664177baffaaad06c46a7"
+ },
+ "battery/parse11_sealed.json": {
+  "origin": "reflex-poc-v0.11@v0.11-final:results/raw_v11/parse11_sealed.json",
+  "sha256": "da0f91d6d8427ef63093d1892a7903af38a570fcb40f1d92577356c26c1aa6ad"
+ },
+ "battery/parse11_val.json": {
+  "origin": "reflex-poc-v0.11@v0.11-final:results/raw_v11/parse11_val.json",
+  "sha256": "ed2050e4fcf2d795aa7b7890b4c236298a79b286c1fff956051e74ad3810264d"
+ },
+ "battery/sem11_dev.json": {
+  "origin": "reflex-poc-v0.11@v0.11-final:results/raw_v11/sem11_dev.json",
+  "sha256": "3fc56c5e84f9cfb19e6c2ec40e663038dbb0428a37a28d37a8f2ca1635a90822"
+ },
+ "battery/sem11_sealed.json": {
+  "origin": "reflex-poc-v0.11@v0.11-final:results/raw_v11/sem11_sealed.json",
+  "sha256": "a39f89dec1ac81476ddda47377f0e88f675a4b4ed1fd593a01ca252abe23a1d4"
+ },
+ "results/raw_v11/parser_breeder11.json": {
+  "origin": "reflex-poc-v0.11@v0.11-final:results/raw_v11/parser_breeder11.json",
+  "sha256": "2d23a847745b1653a4d73f1489b3676ffb9f1b4f25796c6ca8d42188b2c6cbe6"
+ },
+ "results/raw_v5/profile_choice.json": {
+  "origin": "reflex-poc-v0.11@v0.11-final:results/raw_v5/profile_choice.json",
+  "sha256": "589d4f74f889df2fe16519af7875fdcb79575bb17c1d1530cfe877403a897b7c"
+ },
+ "results/raw_v6/registry_gen5.json": {
+  "origin": "reflex-poc-v0.11@v0.11-final:results/raw_v6/registry_gen5.json",
+  "sha256": "d4ea616a9564fd747fd3a621aa9108231946e288cd7330b2ed709f534a938734"
+ },
+ "v0_1/src/common/__init__.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v0_1/src/common/__init__.py",
+  "sha256": "0a39ec7167802cd4a594a43083e86218d25317457bd6d741bac61d77ac1e8142"
+ },
+ "v0_1/src/common/actions.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v0_1/src/common/actions.py",
+  "sha256": "2b1a28a337c309da8ff16d3f2d86f3a9007ccdb6b54fe341d1bb86b23d5f66fd"
+ },
+ "v0_1/src/common/util.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v0_1/src/common/util.py",
+  "sha256": "0f990eb9786e38782a2b5774d6b78d7a6c5eaff6b2b0c131281f14d570863c2e"
+ },
+ "v0_1/src/evaluation/grade.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v0_1/src/evaluation/grade.py",
+  "sha256": "e1f326721da51c13d8496232ab2a2d1b503181fa0757cbd0d169a7815f40bc43"
+ },
+ "v0_1/src/llm/ollama_client.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v0_1/src/llm/ollama_client.py",
+  "sha256": "6b3a88a9ceee23e0efe98242d498a94d518c9ce244abeba6bee75dd6f4727d38"
+ },
+ "v0_1/src/nodes/sym_engine.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v0_1/src/nodes/sym_engine.py",
+  "sha256": "ef4b70d64ab20cc8b06d7f7ec4ed570ffb2eed52eca55820d8d14197759c8d75"
+ },
+ "v10/nlpw10.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v10/nlpw10.py",
+  "sha256": "42988313a9b4e1b3f181a839d3fe38a56e2d658e92fc2be3934b8f65f77cdfec"
+ },
+ "v10/pathman10.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v10/pathman10.py",
+  "sha256": "5bd2f49acf7907febb1c51b120f0dc3222bdec92d6545e48ca232a867df76406"
+ },
+ "v10/pbreed10.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v10/pbreed10.py",
+  "sha256": "2813e60846ca41db897b4d33e09c2b548db62a65b7b52c7cac876563652df4ce"
+ },
+ "v10/planner10.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v10/planner10.py",
+  "sha256": "ae88006770b013f960986b4d096ac2de8e736f0a512cef2f1e9fd9a23d71743e"
+ },
+ "v10/universe10.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v10/universe10.py",
+  "sha256": "4ef6b6c9b838e09bf8755ecd6e1f14919dc0158c9175426a4c93b600486df76d"
+ },
+ "v11/integrity11.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v11/integrity11.py",
+  "sha256": "bff283203725f35cc1d02009debb56044afa8a7443e6cb84848c4ea9f8da4bee"
+ },
+ "v11/lexpatch11.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v11/lexpatch11.py",
+  "sha256": "6bc44a2a3614a8844fcd8887ba04026a00a599dda849df75a20729f23fc515a1"
+ },
+ "v11/pbreed11.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v11/pbreed11.py",
+  "sha256": "d996095a1dfa69412d28d96ef3a395053e3d4268c18af1ae7149c2a263f0310f"
+ },
+ "v11/semparse11.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v11/semparse11.py",
+  "sha256": "a077912b5d32b117e059cfb214cded996d57e7e4279617877558f19ec044d245"
+ },
+ "v11/semrun11.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v11/semrun11.py",
+  "sha256": "59b367448be1678b50131e14de5f1e8ce72e4d0396efd3e9ea70978720960486"
+ },
+ "v11/semstate11.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v11/semstate11.py",
+  "sha256": "598efd63a5cf2fb71c994e29743fdf6122104bae6c34a3d3afe2df5c1248ac42"
+ },
+ "v11/test_invariants11.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v11/test_invariants11.py",
+  "sha256": "71609db1e402a9874bca39489be752b77b90082ebecfc1c3a3f3ac25b8710bc5"
+ },
+ "v3/__init__.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v3/__init__.py",
+  "sha256": "44906516de5186fea2275569fbe4d099e8d658b9d954e0b91ed86bc8f9d20364"
+ },
+ "v3/capabilities.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v3/capabilities.py",
+  "sha256": "5ee04919cccb65ae58f7b11b35c5c2d05cc890a4dcdf53bc8b76ec4274ed3094"
+ },
+ "v3/ir.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v3/ir.py",
+  "sha256": "cabaeddec3999097b5e0224959189a2f426a7329a5fb6ebc99d5aceceb217416"
+ },
+ "v3/planner.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v3/planner.py",
+  "sha256": "8c31917abbed9e9f37fd299c63ed88f6f0fdaa05ce41dbc6a3657b49ca329abd"
+ },
+ "v3/qparse.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v3/qparse.py",
+  "sha256": "3b6f17e8ad2af59dc3bb887a2fb76882f73e5989e0134ca172da00046acd4ce1"
+ },
+ "v4/__init__.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v4/__init__.py",
+  "sha256": "0fa1f91e150383a2f85fe29308a828e629aa33a25a31aaba4ef543cfbfc9df10"
+ },
+ "v4/analyze_v4.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v4/analyze_v4.py",
+  "sha256": "cc05e08e5688a417a72f5b42b3a5fd2aaa55a052d5baa358a60b14c7c317249c"
+ },
+ "v4/breeder.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v4/breeder.py",
+  "sha256": "ac7624e58ae1dae652065557bae337b1cbcef904f9ec91fb414875a6ee27533b"
+ },
+ "v4/engines_v4.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v4/engines_v4.py",
+  "sha256": "1a674b25fd16b72d9335d5a74fb7ae06f994138912f781c6c98c92a4adc53f59"
+ },
+ "v4/llm_bridge.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v4/llm_bridge.py",
+  "sha256": "bf149cc5d56adb429d51b669e2d8a94377a36d728a8cede56c0740bdeea8f168"
+ },
+ "v4/partial_planner.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v4/partial_planner.py",
+  "sha256": "9ce9563ca664809b380a68f58ef1154b2345eb7991b944437e8f4272e261002b"
+ },
+ "v4/qparse4.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v4/qparse4.py",
+  "sha256": "8babb46058a809ac8ff4efd33cac85b88fac39638e4fc461d5ff116f316b0816"
+ },
+ "v4/registry_v4.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v4/registry_v4.py",
+  "sha256": "9fd3c4966e058de13b907ccc0b906424a55f3ef947536f5a7b00e21bb6be2341"
+ },
+ "v5/breeder5.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v5/breeder5.py",
+  "sha256": "798bd1590ac0fd0578d8bc7d85348e0e5b0fe85360ca520485295297cb06c7ab"
+ },
+ "v5/bridge5.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v5/bridge5.py",
+  "sha256": "6e925f4437a3798974f1b3467a5ba8a074886a4d97d3c0ca5e1ea4139cfb45f7"
+ },
+ "v5/depplan.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v5/depplan.py",
+  "sha256": "4c13ae55295ac7d8d5a308c81889b04e4f00e6457f7f55e5510a6f60d345d1b5"
+ },
+ "v5/energy.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v5/energy.py",
+  "sha256": "ccc2897fa7f34327d6ef321bccd4421153b2c38fcfbeaa84ed365ed038f69c6b"
+ },
+ "v5/engine5.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v5/engine5.py",
+  "sha256": "09cb581c0c0849d7a69f4809917f7089bb4f5aaec0ede70e9e26808fca6e3f87"
+ },
+ "v5/integrity.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v5/integrity.py",
+  "sha256": "4cf015aa0e372e18b1ee356f3d75657dd8f36a63de358f476a5c3bc311a9f231"
+ },
+ "v5/llm5.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v5/llm5.py",
+  "sha256": "7e0c33c871e0717e8dc81a87bf73f1f34f666345bab17ed816529de185c98b0c"
+ },
+ "v6/align.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v6/align.py",
+  "sha256": "3283ad30be772401cd84deb9b4bc0e02027f60969da5a1285649b78abe52309c"
+ },
+ "v6/bench6.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v6/bench6.py",
+  "sha256": "13f62e3f98a747c25cbccdb3712157b7c34eefc5546d6b49b2d8da89c1ebc211"
+ },
+ "v6/breeder6.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v6/breeder6.py",
+  "sha256": "9ac2b737fce694c856b29f67901dd9292bdd1b3dc0c6ccf07c5b2fed27859b99"
+ },
+ "v6/capgraph.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v6/capgraph.py",
+  "sha256": "ff4f4a5e2bbedfa194013a4393c69e9021d08fc548b2aa28840ac4a8d68623ae"
+ },
+ "v6/concepts.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v6/concepts.py",
+  "sha256": "1c5270d5aecf6959a13169fe37838b82e46527cb60b7d065dec5a44ed231f1ac"
+ },
+ "v6/engine6.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v6/engine6.py",
+  "sha256": "797fa8b7c9db9f5c2ed545273d486bfc374413c46dfd422306769a53d4e510c9"
+ },
+ "v6/gates6.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v6/gates6.py",
+  "sha256": "2b87f572e63ab86b482bfe4a0df85c35eb79f53269340f51722c3d4391ebe1ee"
+ },
+ "v6/patterns.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v6/patterns.py",
+  "sha256": "3e597e835493d1d9029e9155963fb8bc0a667be76f3e9aab8dd3ce8205357f27"
+ },
+ "v8/capindex.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v8/capindex.py",
+  "sha256": "4817938cf7bdc5d70ab0eecf3a112b862777bcedf7cb2a4a9935ccf724821edf"
+ },
+ "v8/fingerprint.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v8/fingerprint.py",
+  "sha256": "d4891c2620c2860cf997e547abd024ae41b8de36f7600a56fab9dcabe4ac7898"
+ },
+ "v8/llmstep.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v8/llmstep.py",
+  "sha256": "897621e1bde60f9dc5431283223ac311ed7e7660179cc7b66832546e47b61bf0"
+ },
+ "v8/pathindex.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v8/pathindex.py",
+  "sha256": "fcfc244ae086b72e768c25de9138589ecd97f9427aada482a3b3580dbe754a10"
+ },
+ "v8/pathman.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v8/pathman.py",
+  "sha256": "a18bd7d53785cd2fb9c6a48663c0ed7a917aa10183e8bfae0283ae2c381449cd"
+ },
+ "v8/recognize8.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v8/recognize8.py",
+  "sha256": "4b90d125618f79c194731a6e46f101c60c40b8cdea9b0d6b7cecc1943abcc7b1"
+ },
+ "v9/genparse9.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v9/genparse9.py",
+  "sha256": "10a1b38a20b0680aff60f71bd9890e170dadc223ef1cc10cae753434776ba546"
+ },
+ "v9/pbreed9.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v9/pbreed9.py",
+  "sha256": "8def556c743d1a8998f549670980d9d94ba7c6bfba796880fd86b40bf8444201"
+ },
+ "v9/sqr9.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v9/sqr9.py",
+  "sha256": "2f85ca60aa8dae1ee07ad25b6d1c714b96f4839618b510ec98c9cf9a915832fe"
+ },
+ "v9/universe9.py": {
+  "origin": "reflex-poc-v0.11@v0.11-final:v9/universe9.py",
+  "sha256": "be6df8b88c5a19fff9dd1ccf14f8f4d7c22d6611249205cd35b64edf94f9c757"
+ }
+}

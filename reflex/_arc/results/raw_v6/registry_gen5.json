@@ -1,0 +1,363 @@
+{
+ "version": "gen5",
+ "capabilities": {
+  "potential_energy": {
+   "inputs": [
+    "mass",
+    "height"
+   ],
+   "output": "energy",
+   "equation": "E = m*g*h",
+   "expr": "m0 * 9.8 * h0",
+   "domain": "mechanics"
+  },
+  "kinetic_energy": {
+   "inputs": [
+    "mass",
+    "speed"
+   ],
+   "output": "energy",
+   "equation": "E = m*v**2/2",
+   "expr": "m0 * v0**2 / 2",
+   "domain": "mechanics"
+  },
+  "work_from_force": {
+   "inputs": [
+    "force",
+    "distance"
+   ],
+   "output": "energy",
+   "equation": "E = F*d",
+   "expr": "f0 * d0",
+   "domain": "mechanics"
+  },
+  "height_from_energy": {
+   "inputs": [
+    "energy",
+    "mass"
+   ],
+   "output": "height",
+   "equation": "h = E/(m*g)",
+   "expr": "e0 / (m0 * 9.8)",
+   "domain": "mechanics"
+  },
+  "speed_from_energy": {
+   "inputs": [
+    "energy",
+    "mass"
+   ],
+   "output": "speed",
+   "equation": "v = sqrt(2*E/m)",
+   "expr": "math.sqrt(2 * e0 / m0)",
+   "domain": "mechanics"
+  },
+  "force_from_mass_accel": {
+   "inputs": [
+    "mass",
+    "accel"
+   ],
+   "output": "force",
+   "equation": "F = m*a",
+   "expr": "m0 * a0",
+   "domain": "mechanics"
+  },
+  "heat_to_temp_rise": {
+   "inputs": [
+    "energy",
+    "mass",
+    "spec_heat"
+   ],
+   "output": "temp_diff",
+   "equation": "dT = E/(m*c)",
+   "expr": "e0 / (m0 * c0)",
+   "domain": "thermodynamics"
+  },
+  "temp_rise_to_heat": {
+   "inputs": [
+    "mass",
+    "spec_heat",
+    "temp_diff"
+   ],
+   "output": "energy",
+   "equation": "E = m*c*dT",
+   "expr": "m0 * c0 * t0",
+   "domain": "thermodynamics"
+  },
+  "carnot_efficiency": {
+   "inputs": [
+    "temp_hot",
+    "temp_cold"
+   ],
+   "output": "efficiency",
+   "equation": "eta = 1 - Tc/Th",
+   "expr": "1 - tc0 / th0",
+   "domain": "thermodynamics"
+  },
+  "work_from_heat_eff": {
+   "inputs": [
+    "efficiency",
+    "energy"
+   ],
+   "output": "energy",
+   "equation": "W = eta*Qh",
+   "expr": "eff0 * e0",
+   "domain": "thermodynamics"
+  },
+  "electrical_energy": {
+   "inputs": [
+    "power",
+    "time"
+   ],
+   "output": "energy",
+   "equation": "E = P*t",
+   "expr": "p0 * t0",
+   "domain": "electricity"
+  },
+  "power_from_vi": {
+   "inputs": [
+    "voltage",
+    "current"
+   ],
+   "output": "power",
+   "equation": "P = V*I",
+   "expr": "v0 * i0",
+   "domain": "electricity"
+  },
+  "power_from_i2r": {
+   "inputs": [
+    "current",
+    "resistance"
+   ],
+   "output": "power",
+   "equation": "P = I**2*R",
+   "expr": "i0**2 * r0",
+   "domain": "electricity"
+  },
+  "current_from_vr": {
+   "inputs": [
+    "voltage",
+    "resistance"
+   ],
+   "output": "current",
+   "equation": "I = V/R",
+   "expr": "v0 / r0",
+   "domain": "electricity"
+  },
+  "voltage_from_ir": {
+   "inputs": [
+    "current",
+    "resistance"
+   ],
+   "output": "voltage",
+   "equation": "V = I*R",
+   "expr": "i0 * r0",
+   "domain": "electricity"
+  },
+  "charge_from_it": {
+   "inputs": [
+    "current",
+    "time"
+   ],
+   "output": "charge",
+   "equation": "Q = I*t",
+   "expr": "i0 * t0",
+   "domain": "electricity"
+  },
+  "energy_conservation": {
+   "inputs": [
+    "energy"
+   ],
+   "output": "energy",
+   "equation": "E_out = E_in",
+   "expr": "e0",
+   "domain": "shared",
+   "transfer": true
+  },
+  "revenue_calc": {
+   "inputs": [
+    "price_per_unit",
+    "count"
+   ],
+   "output": "revenue",
+   "equation": "R = p*n",
+   "expr": "p0 * c0",
+   "domain": "finance"
+  },
+  "variable_cost": {
+   "inputs": [
+    "unit_cost",
+    "count"
+   ],
+   "output": "cost_var",
+   "equation": "Cv = u*n",
+   "expr": "u0 * c0",
+   "domain": "finance"
+  },
+  "total_cost": {
+   "inputs": [
+    "fixed_cost",
+    "cost_var"
+   ],
+   "output": "cost_total",
+   "equation": "C = F + Cv",
+   "expr": "f0 + c0",
+   "domain": "finance"
+  },
+  "profit_calc": {
+   "inputs": [
+    "revenue",
+    "cost_total"
+   ],
+   "output": "profit",
+   "equation": "P = R - C",
+   "expr": "r0 - c0",
+   "domain": "finance"
+  },
+  "margin_calc": {
+   "inputs": [
+    "profit",
+    "revenue"
+   ],
+   "output": "rate",
+   "equation": "m = P/R",
+   "expr": "p0 / r0",
+   "domain": "finance"
+  },
+  "margin_net": {
+   "inputs": [
+    "net_profit",
+    "revenue"
+   ],
+   "output": "rate",
+   "equation": "m = Pn/R",
+   "expr": "n0 / r0",
+   "domain": "finance"
+  },
+  "simple_interest": {
+   "inputs": [
+    "principal",
+    "rate",
+    "years"
+   ],
+   "output": "interest",
+   "equation": "I = P*r*t",
+   "expr": "p0 * r0 * y0",
+   "domain": "finance",
+   "context_exclude": [
+    "compound"
+   ]
+  },
+  "interest_from_final": {
+   "inputs": [
+    "final_amount",
+    "principal"
+   ],
+   "output": "interest",
+   "equation": "I = A - P",
+   "expr": "f0 - p0",
+   "domain": "finance"
+  },
+  "revenue_sale": {
+   "inputs": [
+    "sale_price",
+    "count"
+   ],
+   "output": "revenue",
+   "equation": "R = ps*n",
+   "expr": "s0 * c0",
+   "domain": "finance"
+  },
+  "break_even": {
+   "inputs": [
+    "fixed_cost",
+    "price_per_unit",
+    "unit_cost"
+   ],
+   "output": "count_breakeven",
+   "equation": "n = F/(p-u)",
+   "expr": "f0 / (p0 - u0)",
+   "domain": "finance"
+  },
+  "area_rect": {
+   "inputs": [
+    "length",
+    "width"
+   ],
+   "output": "area",
+   "equation": "A = l*w",
+   "expr": "l0 * w0",
+   "domain": "engineering"
+  },
+  "volume_box": {
+   "inputs": [
+    "area",
+    "height"
+   ],
+   "output": "volume",
+   "equation": "V = A*h",
+   "expr": "a0 * h0",
+   "domain": "engineering"
+  },
+  "mass_from_density": {
+   "inputs": [
+    "density",
+    "volume"
+   ],
+   "output": "mass",
+   "equation": "m = rho*V",
+   "expr": "d0 * v0",
+   "domain": "engineering"
+  },
+  "material_cost": {
+   "inputs": [
+    "price_per_kg",
+    "mass"
+   ],
+   "output": "cost_var",
+   "equation": "Cv = pk*m",
+   "expr": "p0 * m0",
+   "domain": "engineering"
+  },
+  "weight_from_mass": {
+   "inputs": [
+    "mass"
+   ],
+   "output": "force",
+   "equation": "W = m*g",
+   "expr": "m0 * 9.8",
+   "domain": "engineering"
+  },
+  "paint_cost": {
+   "inputs": [
+    "liters",
+    "price_per_liter"
+   ],
+   "output": "cost_var",
+   "equation": "C = L*pl",
+   "expr": "l0 * p0",
+   "domain": "engineering"
+  },
+  "bred_money": {
+   "inputs": [
+    "energy",
+    "price_per_kwh"
+   ],
+   "output": "money",
+   "equation": "bred: trace_mining gen3",
+   "expr": "2.7777777777777776e-07*e0*p0",
+   "domain": "bred"
+  },
+  "bred_final_amount": {
+   "inputs": [
+    "years",
+    "rate",
+    "principal"
+   ],
+   "output": "final_amount",
+   "equation": "bred: llm_proposal gen5",
+   "expr": "(p0 * (1 + r0) ** y0)",
+   "domain": "bred"
+  }
+ },
+ "hash": "2b108ad4a59e6f179584216802e9f06b4f1930c1fe08660e08e0a5bda6683c75"
+}

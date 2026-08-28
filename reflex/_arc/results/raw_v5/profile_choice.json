@@ -1,0 +1,19 @@
+{
+ "best": "ctx",
+ "extra_opts": null,
+ "rule": "lowest J/tok with tok/s within 5% of fastest; else fastest",
+ "measured": {
+  "ctxNone": {
+   "tok_per_s": 9.310777561175476,
+   "j_per_tok": 11.430496146015539
+  },
+  "ctx{'num_thread': 6}": {
+   "tok_per_s": 9.08723561319403,
+   "j_per_tok": 10.99440906425542
+  },
+  "ref{'num_thread': 14}": {
+   "tok_per_s": 7.99173191467394,
+   "j_per_tok": 8.700395830540675
+  }
+ }
+}
