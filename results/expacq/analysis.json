@@ -1,0 +1,191 @@
+{
+ "arms": {
+  "A0": {
+   "arm_stats": {
+    "cand_ACTIVE": 0,
+    "cand_GATE_REJECTED": 0,
+    "cand_PROBATION": 0,
+    "cand_PROPOSED": 0,
+    "cand_REJECTED": 0,
+    "candidates_total": 0,
+    "escalations": 5000,
+    "miner_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0
+   },
+   "checkpoints": [
+    {
+     "i": 100,
+     "t": 1787907422.2187703,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 250,
+     "t": 1787907423.0438964,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 500,
+     "t": 1787907423.9366424,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 1000,
+     "t": 1787907425.005181,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 2500,
+     "t": 1787907426.8503401,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 5000,
+     "t": 1787907429.5829184,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    }
+   ],
+   "cost": {
+    "miner_calls": 0,
+    "miner_tokens": 0
+   },
+   "expacq_adv_sealed": {
+    "acc": 0.8360655737704918,
+    "coverage": 0.47540983606557374,
+    "gate_rate": 0.0,
+    "n": 122,
+    "wrong_fire": 0
+   },
+   "expacq_parse_sealed": {
+    "acc": 0.0,
+    "coverage": 0.0,
+    "gate_rate": 0.0,
+    "n": 500,
+    "wrong_fire": 0
+   },
+   "expacq_sem_sealed": {
+    "acc": 1.0,
+    "coverage": 0.8289473684210527,
+    "gate_rate": 0.0,
+    "n": 76,
+    "wrong_fire": 0
+   },
+   "traffic": {
+    "escalated": 5000,
+    "n": 5000,
+    "ok": 0,
+    "wrong": 0
+   }
+  },
+  "A1": {
+   "arm_stats": {
+    "cand_ACTIVE": 0,
+    "cand_GATE_REJECTED": 0,
+    "cand_PROBATION": 0,
+    "cand_PROPOSED": 0,
+    "cand_REJECTED": 0,
+    "candidates_total": 0,
+    "escalations": 5000,
+    "miner_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0
+   },
+   "checkpoints": [
+    {
+     "i": 100,
+     "t": 1787907432.906813,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 250,
+     "t": 1787907433.738892,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 500,
+     "t": 1787907434.6245766,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 1000,
+     "t": 1787907435.7132428,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 2500,
+     "t": 1787907437.5685418,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 5000,
+     "t": 1787907440.2713187,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    }
+   ],
+   "cost": {
+    "miner_calls": 0,
+    "miner_tokens": 0
+   },
+   "expacq_adv_sealed": {
+    "acc": 0.8360655737704918,
+    "coverage": 0.47540983606557374,
+    "gate_rate": 0.0,
+    "n": 122,
+    "wrong_fire": 0
+   },
+   "expacq_parse_sealed": {
+    "acc": 0.0,
+    "coverage": 0.0,
+    "gate_rate": 0.0,
+    "n": 500,
+    "wrong_fire": 0
+   },
+   "expacq_sem_sealed": {
+    "acc": 1.0,
+    "coverage": 0.8289473684210527,
+    "gate_rate": 0.0,
+    "n": 76,
+    "wrong_fire": 0
+   },
+   "traffic": {
+    "escalated": 5000,
+    "n": 5000,
+    "ok": 0,
+    "wrong": 0
+   }
+  }
+ },
+ "cost": {},
+ "stats": {
+  "parse_sealed:A1_vs_A0": {
+   "lose": 0,
+   "n": 500,
+   "p": 1.0,
+   "win": 0
+  }
+ }
+}
