@@ -16,7 +16,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ARMS_DIR = HERE / "results" / "expacq" / "arms"
 OUT = HERE / "results" / "expacq"
-ARM_NAMES = ["A0", "A1", "A2", "A3"]
+ARM_NAMES = ["A0", "A1", "A2", "A3", "A2-haiku", "A2-sonnet"]
 LLM_JQ = 719.0
 
 
@@ -99,10 +99,13 @@ def main():
             cost["miner_j_est"] = tok * cal["j_per_token"]
         e["cost"] = cost
         A["arms"][arm] = e
-    for arm in ("A1", "A2", "A3"):
+    for arm in ("A1", "A2", "A3", "A2-haiku", "A2-sonnet"):
         if arm in sealed_rows and "A0" in sealed_rows:
             A["stats"][f"parse_sealed:{arm}_vs_A0"] = mcnemar(
                 sealed_rows["A0"], sealed_rows[arm])
+    if "A2-haiku" in sealed_rows and "A2-sonnet" in sealed_rows:
+        A["stats"]["parse_sealed:sonnet_vs_haiku"] = mcnemar(
+            sealed_rows["A2-haiku"], sealed_rows["A2-sonnet"])
     if "A2" in sealed_rows and "A3" in sealed_rows:
         A["stats"]["parse_sealed:A3_vs_A2"] = mcnemar(
             sealed_rows["A2"], sealed_rows["A3"])

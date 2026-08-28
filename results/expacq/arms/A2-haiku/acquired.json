@@ -1,0 +1,261 @@
+[
+ {
+  "cid": "ce199fee618",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "height",
+   "noun": "up"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-haiku-4-5",
+   "tokens_in": 1133,
+   "tokens_out": 135,
+   "query": "A palette of 120 kg gets winched up 25 m. How much potential energy does it gain?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ca64eb8347c",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "height",
+   "noun": "up"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-haiku-4-5",
+   "tokens_in": 1134,
+   "tokens_out": 150,
+   "query": "A gondola of 45 kg gets winched up 3 m. How much potential energy does it gain?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cbba2180c71",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "height",
+   "noun": "up"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-haiku-4-5",
+   "tokens_in": 1133,
+   "tokens_out": 134,
+   "query": "A palette of 20 kg gets winched up 25 m. How much potential energy does it gain?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cc09c3642cf",
+  "type": "new_cap",
+  "payload": {
+   "name": "potential_energy_gain",
+   "inputs": [
+    "mass",
+    "accel",
+    "height"
+   ],
+   "output": "energy",
+   "expr": "mass * accel * height"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-haiku-4-5",
+   "tokens_in": 1133,
+   "tokens_out": 134,
+   "query": "A palette of 20 kg gets winched up 25 m. How much potential energy does it gain?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cf4317955a3",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "height",
+   "noun": "up"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-haiku-4-5",
+   "tokens_in": 1133,
+   "tokens_out": 132,
+   "query": "A skip of 45 kg gets winched up 25 m. How much potential energy does it gain?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cb631362a7a",
+  "type": "new_cap",
+  "payload": {
+   "name": "revenue",
+   "inputs": [
+    "count",
+    "ppu"
+   ],
+   "output": "revenue",
+   "expr": "count * ppu"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-haiku-4-5",
+   "tokens_in": 1122,
+   "tokens_out": 108,
+   "query": "300 units go for $twelve each. What revenue results?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ca152cf0272",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "height",
+   "noun": "up"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-haiku-4-5",
+   "tokens_in": 1133,
+   "tokens_out": 150,
+   "query": "A palette of 80 kg gets winched up 25 m. How much potential energy does it gain?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cf8c6c4ba50",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "accel",
+   "noun": "gravity"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-haiku-4-5",
+   "tokens_in": 1133,
+   "tokens_out": 150,
+   "query": "A palette of 80 kg gets winched up 25 m. How much potential energy does it gain?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cad7f54ab3c",
+  "type": "new_cap",
+  "payload": {
+   "name": "gravitational_potential_energy",
+   "inputs": [
+    "mass",
+    "accel",
+    "height"
+   ],
+   "output": "energy",
+   "expr": "mass * accel * height"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-haiku-4-5",
+   "tokens_in": 1133,
+   "tokens_out": 150,
+   "query": "A palette of 80 kg gets winched up 25 m. How much potential energy does it gain?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cddc55ddb5d",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "units"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-haiku-4-5",
+   "tokens_in": 1122,
+   "tokens_out": 149,
+   "query": "300 units sell for $four each. What revenue results?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ca19f5670f7",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "price_per_unit",
+   "noun": "each"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-haiku-4-5",
+   "tokens_in": 1122,
+   "tokens_out": 149,
+   "query": "300 units sell for $four each. What revenue results?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ca8c3adfe37",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "ppu",
+   "noun": "command"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-haiku-4-5",
+   "tokens_in": 1120,
+   "tokens_out": 188,
+   "query": "750 units command $twelve each. What revenue results?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c7989d6f889",
+  "type": "unit_index",
+  "payload": {
+   "unit": "each",
+   "kind": "ppu"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-haiku-4-5",
+   "tokens_in": 1120,
+   "tokens_out": 188,
+   "query": "750 units command $twelve each. What revenue results?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cb1b9ccaddc",
+  "type": "conversion",
+  "payload": {
+   "concept": "ppu",
+   "units": [
+    "each"
+   ],
+   "op": "mul",
+   "factor": 1
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-haiku-4-5",
+   "tokens_in": 1120,
+   "tokens_out": 188,
+   "query": "750 units command $twelve each. What revenue results?"
+  },
+  "confirms": 3,
+  "requires": []
+ }
+]

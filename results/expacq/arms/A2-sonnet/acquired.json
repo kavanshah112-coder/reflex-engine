@@ -1,0 +1,818 @@
+[
+ {
+  "cid": "c682561682e",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 252,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cc4f66bfbe7",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 388,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c8336b55528",
+  "type": "adj_map",
+  "payload": {
+   "adj": "flows",
+   "kind": "current"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1455,
+   "tokens_out": 326,
+   "query": "For an element on 230 V \u2014 its resistance being six ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c158855273d",
+  "type": "adj_map",
+  "payload": {
+   "adj": "flows",
+   "kind": "current"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 227,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cd2ee209648",
+  "type": "adj_map",
+  "payload": {
+   "adj": "winched up",
+   "kind": "height"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1462,
+   "tokens_out": 487,
+   "query": "A palette of 120 kg gets winched up 25 m. How much potential energy does it gain?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c6e3c647bc3",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 219,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cf7ee50e3a1",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 199,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ca56a4b4e8a",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 236,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c3dbc1ec583",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "height",
+   "noun": "gondola"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1463,
+   "tokens_out": 413,
+   "query": "A gondola of 45 kg gets winched up 3 m. How much potential energy does it gain?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c6cf29fec0a",
+  "type": "adj_map",
+  "payload": {
+   "adj": "winched up",
+   "kind": "height"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1463,
+   "tokens_out": 413,
+   "query": "A gondola of 45 kg gets winched up 3 m. How much potential energy does it gain?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c2e2d7a266f",
+  "type": "adj_map",
+  "payload": {
+   "adj": "flows",
+   "kind": "current"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 256,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c2f3622246b",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 244,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c7c32ada621",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1455,
+   "tokens_out": 305,
+   "query": "For an element on 48 V \u2014 its resistance being six ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c648d50c85e",
+  "type": "adj_map",
+  "payload": {
+   "adj": "flows",
+   "kind": "current"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 337,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cec41bebedb",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 218,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cc80baccf41",
+  "type": "adj_map",
+  "payload": {
+   "adj": "flows",
+   "kind": "current"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 322,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c36b86d7a3d",
+  "type": "adj_map",
+  "payload": {
+   "adj": "flows",
+   "kind": "current"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1458,
+   "tokens_out": 326,
+   "query": "For an element on 230 V \u2014 its resistance being sixteen ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cd0e87502fe",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "resistance",
+   "noun": "ohms"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 228,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c684c9f2e04",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 228,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "caac2053483",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "height",
+   "noun": "up"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1462,
+   "tokens_out": 433,
+   "query": "A palette of 20 kg gets winched up 25 m. How much potential energy does it gain?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c7fc798b862",
+  "type": "adj_map",
+  "payload": {
+   "adj": "winched",
+   "kind": "height"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1462,
+   "tokens_out": 433,
+   "query": "A palette of 20 kg gets winched up 25 m. How much potential energy does it gain?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c8a4d3c046e",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "height",
+   "noun": "winched"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1462,
+   "tokens_out": 398,
+   "query": "A skip of 45 kg gets winched up 25 m. How much potential energy does it gain?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cd4a1def2aa",
+  "type": "adj_map",
+  "payload": {
+   "adj": "winched up",
+   "kind": "height"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1462,
+   "tokens_out": 398,
+   "query": "A skip of 45 kg gets winched up 25 m. How much potential energy does it gain?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cce26b90eba",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 228,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cc0dc786a2f",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 230,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ce8f92d29c6",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "price_per_unit",
+   "noun": "each"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1446,
+   "tokens_out": 418,
+   "query": "300 units sell for $twelve each. What revenue results?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c83afc2ca1f",
+  "type": "adj_map",
+  "payload": {
+   "adj": "each",
+   "kind": "price_per_unit"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1446,
+   "tokens_out": 418,
+   "query": "300 units sell for $twelve each. What revenue results?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ce6c03bb38b",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 256,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c35b09a3d18",
+  "type": "adj_map",
+  "payload": {
+   "adj": "flows",
+   "kind": "current"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 310,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cbec0b372dc",
+  "type": "adj_map",
+  "payload": {
+   "adj": "flows",
+   "kind": "current"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 365,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c148fa16dcc",
+  "type": "adj_map",
+  "payload": {
+   "adj": "flows",
+   "kind": "current"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 323,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c634ccd664c",
+  "type": "adj_map",
+  "payload": {
+   "adj": "each",
+   "kind": "price_per_unit"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1445,
+   "tokens_out": 389,
+   "query": "300 units go for $twelve each. What revenue results?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c00d8a8c059",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 235,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c9bafee64c0",
+  "type": "adj_map",
+  "payload": {
+   "adj": "flows",
+   "kind": "current"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 326,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c16c785e883",
+  "type": "adj_map",
+  "payload": {
+   "adj": "winched up",
+   "kind": "height"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1462,
+   "tokens_out": 387,
+   "query": "A palette of 80 kg gets winched up 25 m. How much potential energy does it gain?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c2d5da02bdf",
+  "type": "adj_map",
+  "payload": {
+   "adj": "each",
+   "kind": "price_per_unit"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1444,
+   "tokens_out": 498,
+   "query": "300 units sell for $four each. What revenue results?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ce37603c86e",
+  "type": "adj_map",
+  "payload": {
+   "adj": "flows",
+   "kind": "current"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 255,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c8456810ce3",
+  "type": "adj_map",
+  "payload": {
+   "adj": "flows",
+   "kind": "current"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 286,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c303719553b",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 222,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c659bb835a4",
+  "type": "adj_map",
+  "payload": {
+   "adj": "flows",
+   "kind": "current"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 322,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cc449031b04",
+  "type": "unit_index",
+  "payload": {
+   "unit": "A",
+   "kind": "current"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 406,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c29f98da2e2",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "resistance",
+   "noun": "ohms"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 249,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c634a794caa",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "price_per_unit",
+   "noun": "each"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1445,
+   "tokens_out": 337,
+   "query": "300 units go for $twelve each. What revenue results?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cf688b62a98",
+  "type": "adj_map",
+  "payload": {
+   "adj": "each",
+   "kind": "price_per_unit"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1445,
+   "tokens_out": 337,
+   "query": "300 units go for $twelve each. What revenue results?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c0406e04d67",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "widgets"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1461,
+   "tokens_out": 490,
+   "query": "Two hundred fifty widgets at nine dollars each - the take?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c68e77861a4",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "revenue",
+   "noun": "take"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1461,
+   "tokens_out": 490,
+   "query": "Two hundred fifty widgets at nine dollars each - the take?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cdebc41214f",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "voltage",
+   "noun": "element"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1458,
+   "tokens_out": 164,
+   "query": "For an element on 48 V \u2014 its resistance being sixteen ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cb54f080349",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "voltage",
+   "noun": "element"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic:claude-sonnet-5",
+   "tokens_in": 1457,
+   "tokens_out": 217,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ }
+]

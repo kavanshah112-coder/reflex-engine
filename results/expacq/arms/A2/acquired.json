@@ -1,0 +1,2277 @@
+[
+ {
+  "cid": "c717b2761e5",
+  "type": "new_kind",
+  "payload": {
+   "name": "sell_revenue",
+   "dim": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "unit": "$/units",
+   "nouns": [
+    "units"
+   ],
+   "aliases": []
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 961,
+   "tokens_out": 188,
+   "query": "300 units sell for $twelve each. What revenue results?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cb22c895a13",
+  "type": "new_kind",
+  "payload": {
+   "name": "sell_revenue",
+   "dim": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "unit": "$/units",
+   "nouns": [
+    "units"
+   ],
+   "aliases": []
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 960,
+   "tokens_out": 186,
+   "query": "300 units sell for $four each. What revenue results?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c43b403a4e7",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cc45323158a",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c4384d3700f",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 245,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c8990c867fc",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 241,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c69412e5fa0",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cb98d6c25d7",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 241,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ceea6b2aeb1",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 969,
+   "tokens_out": 201,
+   "query": "For an element on 230 V \u2014 its resistance being six ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c919c9b4915",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 969,
+   "tokens_out": 245,
+   "query": "For an element on 230 V \u2014 its resistance being sixteen ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c09ce57ddae",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c0dc07d215f",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c981bdad7ae",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 241,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cfdd7637822",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c6c253a462c",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 969,
+   "tokens_out": 235,
+   "query": "For an element on 48 V \u2014 its resistance being sixteen ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c03109c8c1a",
+  "type": "new_cap",
+  "payload": {
+   "name": "electric_current",
+   "inputs": [
+    "power",
+    "voltage"
+   ],
+   "output": "current",
+   "expr": "power / voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 969,
+   "tokens_out": 235,
+   "query": "For an element on 48 V \u2014 its resistance being sixteen ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c6ad307f93d",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c90615d70ee",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c7d2f7870a6",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c3ea7e91fb7",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cfdf978b91e",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 969,
+   "tokens_out": 245,
+   "query": "For an element on 230 V \u2014 its resistance being sixteen ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c904c32f460",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cc22bf29f84",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cc3e3659409",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c5d90746d33",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cb142ce6726",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c0246088073",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 241,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c155b3beaec",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c397bf90c7c",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 969,
+   "tokens_out": 244,
+   "query": "For an element on 48 V \u2014 its resistance being sixteen ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c67095c3de3",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cb8388d5e91",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cb550bde883",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cf14b103410",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c84a292fb35",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c37981740b0",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c9e00feee33",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cda74fefdfd",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cae4bb38855",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ce133817c98",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c706637a255",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 241,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ccf8e6c1c6d",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 241,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cca6a68fb8a",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cf71d01c037",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "caba89c46c1",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cca665d950c",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 241,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ccc6f8e1219",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 241,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c7f5798af18",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cd62e1d595d",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 969,
+   "tokens_out": 244,
+   "query": "For an element on 230 V \u2014 its resistance being six ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cd901faa8d2",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c216dd74431",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 969,
+   "tokens_out": 244,
+   "query": "For an element on 48 V \u2014 its resistance being six ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c28f458bdb3",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 969,
+   "tokens_out": 244,
+   "query": "For an element on 230 V \u2014 its resistance being six ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cb1212b8728",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c39b46b3664",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 241,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cdd342da9e1",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c7fd319494e",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 969,
+   "tokens_out": 245,
+   "query": "For an element on 230 V \u2014 its resistance being sixteen ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cced855421e",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cc66205abf4",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 241,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ca67078b931",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 241,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ce5e94616fe",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 241,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c54cc0df6a9",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 241,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ccc73b37f96",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c325b579e75",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cee9b584d30",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cd4291cd6b2",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c169b481307",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 969,
+   "tokens_out": 245,
+   "query": "For an element on 230 V \u2014 its resistance being sixteen ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c8a885cb238",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c31af39c155",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c784c3f785f",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cdd3aaa7678",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 241,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c681769787c",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 969,
+   "tokens_out": 245,
+   "query": "For an element on 230 V \u2014 its resistance being sixteen ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c247ca09459",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c2a93704f83",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ccee53906bb",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c47de915a83",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c27b54407fc",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c385c1bac69",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cb1ca4d7a8b",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 241,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c5acfdf3991",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cb0051c33a5",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c85cf964da0",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 969,
+   "tokens_out": 245,
+   "query": "For an element on 230 V \u2014 its resistance being sixteen ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c5f78c43abc",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c6398ad5a45",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ccdf5ad3404",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c3fb9f72e3b",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c092582668f",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cf5d90f0ab7",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c31b4591670",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 241,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c2d3e57732e",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 969,
+   "tokens_out": 244,
+   "query": "For an element on 48 V \u2014 its resistance being six ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cd91341eef2",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "revenue",
+   "noun": "units"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 961,
+   "tokens_out": 188,
+   "query": "300 units sell for $twelve each. What revenue results?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c53d193b77b",
+  "type": "unit_index",
+  "payload": {
+   "unit": "$twelve",
+   "kind": "price_per_unit"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 961,
+   "tokens_out": 188,
+   "query": "300 units sell for $twelve each. What revenue results?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c0c786bb053",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cb68a48031b",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 241,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c6641083a75",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c20ec46dba8",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cb49ac69c94",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ca7cbc2e4cf",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c6393c7f242",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c86ed07758e",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c5dc9cd58c8",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c2ba166ef12",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cb2bb3fcdf7",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cc3c7455fba",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ccb87773ca5",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 969,
+   "tokens_out": 244,
+   "query": "For an element on 230 V \u2014 its resistance being six ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cab22305a5c",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 241,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c062d3ce860",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cb64e18e6b9",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 241,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c99a5e28f34",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c1d02891667",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ce44abb7c37",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cfc2286401d",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cca05ee9c11",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c32bc36c321",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 969,
+   "tokens_out": 244,
+   "query": "For an element on 48 V \u2014 its resistance being six ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cc715894ef9",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cc1990b0d2c",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c310e9dded1",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c9b0f6eac31",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 241,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c01ec72eb63",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c177d8dafee",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "revenue",
+   "noun": "units"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 960,
+   "tokens_out": 186,
+   "query": "300 units sell for $four each. What revenue results?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c0d8f4f936e",
+  "type": "unit_index",
+  "payload": {
+   "unit": "$four",
+   "kind": "price_per_unit"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 960,
+   "tokens_out": 186,
+   "query": "300 units sell for $four each. What revenue results?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cda51357580",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c11d38787c3",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c0a2c4e206b",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cd5e1120712",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cdf74b6efff",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c599659721e",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 241,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ca5bf80c35d",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cf25dfe9357",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c632a2f7f46",
+  "type": "unit_index",
+  "payload": {
+   "unit": "$four",
+   "kind": "unit_margin"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 959,
+   "tokens_out": 198,
+   "query": "120 units command $four each. What revenue results?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c543cdf026c",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "energy",
+   "noun": "potential energy"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 980,
+   "tokens_out": 188,
+   "query": "A gondola of 20 kg gets winched up 3 m. How much potential energy does it gain?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ca125f92e2b",
+  "type": "unit_index",
+  "payload": {
+   "unit": "$each",
+   "kind": "annual_profit"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 969,
+   "tokens_out": 200,
+   "query": "750 units command $twelve each. What revenue results?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c5f26600846",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "energy",
+   "noun": "potential energy"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 977,
+   "tokens_out": 188,
+   "query": "A palette of twenty kg gets winched up 3 m. How much potential energy does it gain?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c7e770713a9",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "energy",
+   "noun": "potential energy"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 980,
+   "tokens_out": 188,
+   "query": "A gondola of 20 kg gets winched up 3 m. How much potential energy does it gain?"
+  },
+  "confirms": 3,
+  "requires": []
+ }
+]

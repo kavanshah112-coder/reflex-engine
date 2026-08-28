@@ -177,11 +177,393 @@
     "ok": 0,
     "wrong": 0
    }
+  },
+  "A2": {
+   "arm_stats": {
+    "adapter": "ollama",
+    "calls": 429,
+    "cand_ACTIVE": 132,
+    "cand_GATE_REJECTED": 2170,
+    "cand_PROBATION": 4,
+    "cand_PROPOSED": 0,
+    "cand_REJECTED": 0,
+    "candidates_total": 2306,
+    "escalations": 5000,
+    "miner_calls": 429,
+    "tokens_in": 417925,
+    "tokens_out": 95210
+   },
+   "checkpoints": [
+    {
+     "i": 100,
+     "t": 1787907831.3935955,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 250,
+     "t": 1787908305.7598226,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 500,
+     "t": 1787909094.2276254,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 1000,
+     "t": 1787910680.1754436,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 2500,
+     "t": 1787915369.109409,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 5000,
+     "t": 1787922668.8096366,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    }
+   ],
+   "cost": {
+    "miner_calls": 429,
+    "miner_tokens": 513135
+   },
+   "expacq_adv_sealed": {
+    "acc": 0.8360655737704918,
+    "coverage": 0.47540983606557374,
+    "gate_rate": 0.0,
+    "n": 122,
+    "wrong_fire": 0
+   },
+   "expacq_parse_sealed": {
+    "acc": 0.0,
+    "coverage": 0.0,
+    "gate_rate": 0.0,
+    "n": 500,
+    "wrong_fire": 0
+   },
+   "expacq_sem_sealed": {
+    "acc": 1.0,
+    "coverage": 0.8289473684210527,
+    "gate_rate": 0.0,
+    "n": 76,
+    "wrong_fire": 0
+   },
+   "traffic": {
+    "escalated": 5000,
+    "n": 5000,
+    "ok": 0,
+    "wrong": 0
+   }
+  },
+  "A2-haiku": {
+   "arm_stats": {
+    "adapter": "anthropic:claude-haiku-4-5",
+    "calls": 420,
+    "cand_ACTIVE": 14,
+    "cand_GATE_REJECTED": 418,
+    "cand_PROBATION": 0,
+    "cand_PROPOSED": 0,
+    "cand_REJECTED": 3,
+    "candidates_total": 435,
+    "escalations": 4818,
+    "miner_calls": 420,
+    "tokens_in": 474852,
+    "tokens_out": 45861
+   },
+   "checkpoints": [
+    {
+     "i": 100,
+     "t": 1787916693.735817,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 250,
+     "t": 1787916718.822447,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 500,
+     "t": 1787916765.148851,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 1000,
+     "t": 1787916851.2559505,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 2500,
+     "t": 1787917114.7285163,
+     "val_n": 1000,
+     "val_ok": 58,
+     "val_wrong": 0
+    },
+    {
+     "i": 5000,
+     "t": 1787917509.155173,
+     "val_n": 1000,
+     "val_ok": 58,
+     "val_wrong": 0
+    }
+   ],
+   "cost": {
+    "miner_calls": 420,
+    "miner_tokens": 520713
+   },
+   "expacq_adv_sealed": {
+    "acc": 0.8360655737704918,
+    "coverage": 0.47540983606557374,
+    "gate_rate": 0.0,
+    "n": 122,
+    "wrong_fire": 0
+   },
+   "expacq_parse_sealed": {
+    "acc": 0.058,
+    "coverage": 0.058,
+    "gate_rate": 0.0,
+    "n": 500,
+    "wrong_fire": 0
+   },
+   "expacq_sem_sealed": {
+    "acc": 1.0,
+    "coverage": 0.8289473684210527,
+    "gate_rate": 0.0,
+    "n": 76,
+    "wrong_fire": 0
+   },
+   "traffic": {
+    "escalated": 4818,
+    "n": 5000,
+    "ok": 182,
+    "wrong": 0
+   }
+  },
+  "A2-sonnet": {
+   "arm_stats": {
+    "adapter": "anthropic:claude-sonnet-5",
+    "calls": 417,
+    "cand_ACTIVE": 48,
+    "cand_GATE_REJECTED": 966,
+    "cand_PROBATION": 0,
+    "cand_PROPOSED": 0,
+    "cand_REJECTED": 0,
+    "candidates_total": 1014,
+    "escalations": 4774,
+    "miner_calls": 417,
+    "tokens_in": 607518,
+    "tokens_out": 112608
+   },
+   "checkpoints": [
+    {
+     "i": 100,
+     "t": 1787917575.3543236,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 250,
+     "t": 1787917624.5679615,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 500,
+     "t": 1787917704.6837928,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 1000,
+     "t": 1787917878.940622,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 2500,
+     "t": 1787918428.402422,
+     "val_n": 1000,
+     "val_ok": 73,
+     "val_wrong": 0
+    },
+    {
+     "i": 5000,
+     "t": 1787919227.671083,
+     "val_n": 1000,
+     "val_ok": 73,
+     "val_wrong": 0
+    }
+   ],
+   "cost": {
+    "miner_calls": 417,
+    "miner_tokens": 720126
+   },
+   "expacq_adv_sealed": {
+    "acc": 0.8360655737704918,
+    "coverage": 0.47540983606557374,
+    "gate_rate": 0.0,
+    "n": 122,
+    "wrong_fire": 0
+   },
+   "expacq_parse_sealed": {
+    "acc": 0.072,
+    "coverage": 0.072,
+    "gate_rate": 0.0,
+    "n": 500,
+    "wrong_fire": 0
+   },
+   "expacq_sem_sealed": {
+    "acc": 1.0,
+    "coverage": 0.8289473684210527,
+    "gate_rate": 0.0,
+    "n": 76,
+    "wrong_fire": 0
+   },
+   "traffic": {
+    "escalated": 4774,
+    "n": 5000,
+    "ok": 226,
+    "wrong": 0
+   }
+  },
+  "A3": {
+   "arm_stats": {
+    "adapter": "ollama",
+    "calls": 429,
+    "cand_ACTIVE": 118,
+    "cand_GATE_REJECTED": 2133,
+    "cand_PROBATION": 4,
+    "cand_PROPOSED": 0,
+    "cand_REJECTED": 0,
+    "candidates_total": 2255,
+    "escalations": 5000,
+    "miner_calls": 429,
+    "tokens_in": 417925,
+    "tokens_out": 93779
+   },
+   "checkpoints": [
+    {
+     "i": 100,
+     "t": 1787922982.488523,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 250,
+     "t": 1787923402.0843801,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 500,
+     "t": 1787924179.4559495,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 1000,
+     "t": 1787926176.1067295,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 2500,
+     "t": 1787931603.0804057,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    },
+    {
+     "i": 5000,
+     "t": 1787940409.52506,
+     "val_n": 1000,
+     "val_ok": 0,
+     "val_wrong": 0
+    }
+   ],
+   "cost": {
+    "miner_calls": 429,
+    "miner_tokens": 511704
+   },
+   "expacq_adv_sealed": {
+    "acc": 0.8360655737704918,
+    "coverage": 0.47540983606557374,
+    "gate_rate": 0.0,
+    "n": 122,
+    "wrong_fire": 0
+   },
+   "expacq_parse_sealed": {
+    "acc": 0.0,
+    "coverage": 0.0,
+    "gate_rate": 0.0,
+    "n": 500,
+    "wrong_fire": 0
+   },
+   "expacq_sem_sealed": {
+    "acc": 1.0,
+    "coverage": 0.8289473684210527,
+    "gate_rate": 0.0,
+    "n": 76,
+    "wrong_fire": 0
+   },
+   "traffic": {
+    "escalated": 5000,
+    "n": 5000,
+    "ok": 0,
+    "wrong": 0
+   }
   }
  },
  "cost": {},
  "stats": {
   "parse_sealed:A1_vs_A0": {
+   "lose": 0,
+   "n": 500,
+   "p": 1.0,
+   "win": 0
+  },
+  "parse_sealed:A2_vs_A0": {
+   "lose": 0,
+   "n": 500,
+   "p": 1.0,
+   "win": 0
+  },
+  "parse_sealed:A3_vs_A0": {
+   "lose": 0,
+   "n": 500,
+   "p": 1.0,
+   "win": 0
+  },
+  "parse_sealed:A3_vs_A2": {
    "lose": 0,
    "n": 500,
    "p": 1.0,
