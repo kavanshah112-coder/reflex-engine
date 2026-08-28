@@ -33,6 +33,16 @@ class Engine:
                                                  _run)
         self.breeder = (loader.load_breeder(pack_dir)
                         if use_breeder else None)
+        if self.breeder is not None:
+            import json as _json
+            acq = Path(pack_dir) / "acquired.json"
+            if acq.exists():
+                for c in _json.loads(acq.read_text(
+                        encoding="utf-8")):
+                    if c["type"] == "template_struct":
+                        self.breeder.deployed_struct[
+                            c["payload"]["key"]] = \
+                            c["payload"]["spec"]
         self.resolver = resolver
         self.redundancy = redundancy
         self.pack_dir = str(pack_dir)

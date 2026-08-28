@@ -29,6 +29,16 @@ if str(_ARC) not in sys.path:
 
 _APPLIED = None
 
+# acquisition-time canonical-conversion rules (reflex/acquire.py
+# appends here for `conversion` candidates; consulted after the pack's
+# base rules)
+EXTRA_CANONICAL = []
+
+# authoritative unit-index extras: the pack's own extras plus ACTIVE
+# acquired unit_index entries. Injector._rebuild_units re-applies
+# exactly this dict after any fresh index build.
+UNIT_INDEX_EXTRAS = {}
+
 
 def _load(pack_dir):
     p = Path(pack_dir)
@@ -79,7 +89,7 @@ def _make_to_canonical(conv, kinds_obj):
         v = f["value"]
         u = (f.get("unit") or "").strip().lower().rstrip(".,;:!?")
         k = f["concept"]
-        for r in rules:
+        for r in list(rules) + EXTRA_CANONICAL:
             if r["concept"] != k:
                 continue
             if r.get("special") == "kwh_contains":
@@ -141,7 +151,10 @@ def apply(pack_dir):
     idx = W._build_unit_index()
     W._UNIT_IDX.clear()
     W._UNIT_IDX.update(idx)
-    for u, ks in lex["unit_index_extra"].items():
+    UNIT_INDEX_EXTRAS.clear()
+    UNIT_INDEX_EXTRAS.update({u: list(ks) for u, ks in
+                              lex["unit_index_extra"].items()})
+    for u, ks in UNIT_INDEX_EXTRAS.items():
         W._UNIT_IDX.setdefault(u, list(ks))
 
     # ---- comparatives (shared instance with semrun's import)
@@ -209,6 +222,18 @@ def apply(pack_dir):
                                           U10.KINDS10)
 
     _APPLIED = pack_dir
+
+    # ---- acquired overlay: ACTIVE candidates from past acquisition
+    # runs (authorship-tagged; applied via the same injector so a
+    # fresh process reproduces the acquired state)
+    acq = Path(pack_dir) / "acquired.json"
+    if acq.exists():
+        from .. import acquire as AQ
+        inj = AQ.Injector()
+        for c in json.loads(acq.read_text(encoding="utf-8")):
+            if c["type"] == "template_struct":
+                continue      # applied by load_breeder's caller
+            inj.apply(c)
 
 
 def load_breeder(pack_dir):
