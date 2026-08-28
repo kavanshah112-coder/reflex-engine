@@ -1,0 +1,30 @@
+{
+ "recipe": "expgen_v1.py",
+ "generated": "2026-08-28 14:26:33",
+ "pool": {
+  "n": 45000,
+  "coverage": 0.8344,
+  "answered_wrong": 0,
+  "residual": 7454
+ },
+ "expacq_val": {
+  "n": 1000,
+  "sha256": "552935bcb5cbf4e18f8b228260227afdd53fdffc602ecf4501c9f45594d79d81"
+ },
+ "expacq_traffic": {
+  "n": 5000,
+  "sha256": "b1cb2bd2019062d64a766b323d7b856821c81cb83c51f06f2f64a7324675e805"
+ },
+ "expacq_parse_sealed": {
+  "n": 500,
+  "sha256": "22a90537c442bc76b9d615218bd23ba1a2331590460995cba68800ec29e6be47"
+ },
+ "expacq_sem_sealed": {
+  "n": 76,
+  "sha256": "6ff6fcf5c36f6395cfae644845a1a0b7940bc38cedf7bd4689d3c5b7676b31ba"
+ },
+ "expacq_adv_sealed": {
+  "n": 122,
+  "sha256": "f5bdbe92d9710f8d9d625e89d03abb508d9178be2009089843340aa23452eda3"
+ }
+}

@@ -1,0 +1,610 @@
+[
+{
+"id": "s11x0000",
+"q": "Cart A weighs 800 kg and moves at 12 m/s. Cart B weighs 801 kg and moves at 21 m/s. What is the kinetic energy of the first one?",
+"answer": 57600.0,
+"trap_answer": 176620.5,
+"class": "bind2",
+"expect": "answer"
+},
+{
+"id": "s11x0001",
+"q": "Sled A weighs 1500 kg and moves at 8 m/s. Sled B weighs 801 kg and moves at 16 m/s. What is the kinetic energy of the second one?",
+"answer": 102528.0,
+"trap_answer": 48000.0,
+"class": "bind2",
+"expect": "answer"
+},
+{
+"id": "s11x0002",
+"q": "Barge A weighs 1500 kg and moves at 10 m/s. Barge B weighs 1201 kg and moves at 9 m/s. What is the kinetic energy of the first one?",
+"answer": 75000.0,
+"trap_answer": 48640.5,
+"class": "bind2",
+"expect": "answer"
+},
+{
+"id": "s11x0003",
+"q": "Drone A weighs 800 kg and moves at 15 m/s. Drone B weighs 1201 kg and moves at 6 m/s. Drone C weighs 1202 kg and moves at 17 m/s. What is the kinetic energy of drone c?",
+"answer": 173689.0,
+"trap_answer": 90000.0,
+"class": "bind3",
+"expect": "answer"
+},
+{
+"id": "s11x0004",
+"q": "Crate A weighs 1100 kg and moves at 20 m/s. Crate B weighs 801 kg and moves at 21 m/s. Crate C weighs 1502 kg and moves at 7 m/s. What is the kinetic energy of crate a?",
+"answer": 220000.0,
+"trap_answer": 176620.5,
+"class": "bind3",
+"expect": "answer"
+},
+{
+"id": "s11x0005",
+"q": "Truck A weighs 1500 kg and moves at 10 m/s. Truck B weighs 1501 kg and moves at 11 m/s. Truck C weighs 1102 kg and moves at 12 m/s. Truck D weighs 1203 kg and moves at 13 m/s. Truck E weighs 1504 kg and moves at 19 m/s. What is the kinetic energy of the second one?",
+"answer": 90810.5,
+"trap_answer": 75000.0,
+"class": "bind5",
+"expect": "answer"
+},
+{
+"id": "s11x0006",
+"q": "Barge A weighs 1200 kg and moves at 10 m/s. Barge B weighs 1101 kg and moves at 6 m/s. Barge C weighs 1102 kg and moves at 12 m/s. Barge D weighs 1503 kg and moves at 15 m/s. Barge E weighs 1104 kg and moves at 16 m/s. What is the kinetic energy of the fourth one?",
+"answer": 169087.5,
+"trap_answer": 60000.0,
+"class": "bind5",
+"expect": "answer"
+},
+{
+"id": "s11x0007",
+"q": "Drone A weighs 900 kg and moves at 15 m/s. Drone B weighs 901 kg and moves at 6 m/s. Drone C weighs 1102 kg and moves at 22 m/s. Drone D weighs 1203 kg and moves at 23 m/s. Drone E weighs 1204 kg and moves at 12 m/s. Drone F weighs 805 kg and moves at 25 m/s. Drone G weighs 906 kg and moves at 16 m/s. Drone H weighs 1107 kg and moves at 12 m/s. Drone I weighs 1208 kg and moves at 18 m/s. Drone J weighs 909 kg and moves at 29 m/s. What is the kinetic energy of the fastest drone?",
+"answer": 382234.5,
+"trap_answer": 101250.0,
+"class": "bind10",
+"expect": "answer"
+},
+{
+"id": "s11x0008",
+"q": "Car A \u2014 the red car \u2014 weighs 1500 kg and moves at 8 m/s. Car B weighs 1100 kg and moves at 12 m/s. What is the kinetic energy of the red car?",
+"answer": 48000.0,
+"trap_answer": 79200.0,
+"class": "alias",
+"expect": "answer"
+},
+{
+"id": "s11x0009",
+"q": "Car A \u2014 the red car \u2014 weighs 1200 kg and moves at 10 m/s. Car B weighs 1100 kg and moves at 12 m/s. What is the kinetic energy of the red car?",
+"answer": 60000.0,
+"trap_answer": 79200.0,
+"class": "alias",
+"expect": "answer"
+},
+{
+"id": "s11x0010",
+"q": "The drone weighs 600 kg. It cruises at 12 m/s. What is its kinetic energy?",
+"answer": 43200.0,
+"trap_answer": null,
+"class": "pronoun",
+"expect": "answer"
+},
+{
+"id": "s11x0011",
+"q": "The drone weighs 1000 kg. It cruises at 9 m/s. What is its kinetic energy?",
+"answer": 40500.0,
+"trap_answer": null,
+"class": "pronoun",
+"expect": "answer"
+},
+{
+"id": "s11x0012",
+"q": "The crate weighs 12 kg. The crate weighs 9 kg. It is lifted 20 m. What is its potential energy?",
+"answer": null,
+"trap_answer": 2352.0,
+"class": "conflict",
+"expect": "abstain"
+},
+{
+"id": "s11x0013",
+"q": "The crate weighs 50 kg. The crate weighs 40 kg. It is lifted 5 m. What is its potential energy?",
+"answer": null,
+"trap_answer": 2450.0000000000005,
+"class": "conflict",
+"expect": "abstain"
+},
+{
+"id": "s11x0014",
+"q": "The crate weighs 12 kg. The crate weighs 9 kg. It is lifted 10 m. What is its potential energy?",
+"answer": null,
+"trap_answer": 1176.0,
+"class": "conflict",
+"expect": "abstain"
+},
+{
+"id": "s11x0015",
+"q": "Initially the silo holds 50 kg of grain; finally it holds 35 kg. How much mass was lost?",
+"answer": 15,
+"trap_answer": null,
+"class": "valid_change",
+"expect": "answer"
+},
+{
+"id": "s11x0016",
+"q": "Initially the silo holds 80 kg of grain; finally it holds 60 kg. How much mass was lost?",
+"answer": 20,
+"trap_answer": null,
+"class": "valid_change",
+"expect": "answer"
+},
+{
+"id": "s11x0017",
+"q": "Initially the silo holds 20 kg of grain; finally it holds 15 kg. How much mass was lost?",
+"answer": 5,
+"trap_answer": null,
+"class": "valid_change",
+"expect": "answer"
+},
+{
+"id": "s11x0018",
+"q": "Crate A weighs 20 kg. Crate B weighs 15 kg. Crate A is lifted 8 m. What is the potential energy of crate A?",
+"answer": 1568.0,
+"trap_answer": 1176.0,
+"class": "cross_entity",
+"expect": "answer"
+},
+{
+"id": "s11x0019",
+"q": "Crate A weighs 20 kg. Crate B weighs 15 kg. Crate A is lifted 4 m. What is the potential energy of crate A?",
+"answer": 784.0,
+"trap_answer": 588.0,
+"class": "cross_entity",
+"expect": "answer"
+},
+{
+"id": "s11x0020",
+"q": "Crate A weighs 20 kg. Crate A weighs 15 kg. Crate B weighs 70 kg and moves at 6 m/s. What is the kinetic energy of crate B?",
+"answer": 1260.0,
+"trap_answer": null,
+"class": "quarantine",
+"expect": "answer"
+},
+{
+"id": "s11x0021",
+"q": "Crate A weighs 44 kg. Crate A weighs 33 kg. Crate B weighs 70 kg and moves at 10 m/s. What is the kinetic energy of crate B?",
+"answer": 3500.0,
+"trap_answer": null,
+"class": "quarantine",
+"expect": "answer"
+},
+{
+"id": "s11x0022",
+"q": "Crate A weighs 20 kg. Crate A weighs 15 kg. Crate A moves at 6 m/s. What is the kinetic energy of crate A?",
+"answer": null,
+"trap_answer": 360.0,
+"class": "quarantine_blocked",
+"expect": "abstain"
+},
+{
+"id": "s11x0023",
+"q": "Crate A weighs 44 kg. Crate A weighs 33 kg. Crate A moves at 6 m/s. What is the kinetic energy of crate A?",
+"answer": null,
+"trap_answer": 792.0,
+"class": "quarantine_blocked",
+"expect": "abstain"
+},
+{
+"id": "s11x0024",
+"q": "Trolley A weighs 1100 kg and moves at 10 m/s. Trolley B weighs 1501 kg and moves at 16 m/s. What is the kinetic energy of the faster trolley?",
+"answer": 192128.0,
+"trap_answer": 55000.0,
+"class": "bind2",
+"expect": "answer"
+},
+{
+"id": "s11x0025",
+"q": "Barge A weighs 1100 kg and moves at 15 m/s. Barge B weighs 901 kg and moves at 13 m/s. What is the kinetic energy of the first one?",
+"answer": 123750.0,
+"trap_answer": 76134.5,
+"class": "bind2",
+"expect": "answer"
+},
+{
+"id": "s11x0026",
+"q": "Cart A weighs 800 kg and moves at 15 m/s. Cart B weighs 901 kg and moves at 11 m/s. What is the kinetic energy of cart a?",
+"answer": 90000.0,
+"trap_answer": 54510.5,
+"class": "bind2",
+"expect": "answer"
+},
+{
+"id": "s11x0027",
+"q": "Truck A weighs 1100 kg and moves at 10 m/s. Truck B weighs 901 kg and moves at 11 m/s. Truck C weighs 902 kg and moves at 10 m/s. What is the kinetic energy of truck b?",
+"answer": 54510.5,
+"trap_answer": 55000.0,
+"class": "bind3",
+"expect": "answer"
+},
+{
+"id": "s11x0028",
+"q": "Crate A weighs 1100 kg and moves at 15 m/s. Crate B weighs 901 kg and moves at 11 m/s. Crate C weighs 802 kg and moves at 10 m/s. What is the kinetic energy of the second one?",
+"answer": 54510.5,
+"trap_answer": 123750.0,
+"class": "bind3",
+"expect": "answer"
+},
+{
+"id": "s11x0029",
+"q": "Crate A weighs 800 kg and moves at 10 m/s. Crate B weighs 1201 kg and moves at 21 m/s. Crate C weighs 1102 kg and moves at 7 m/s. Crate D weighs 1203 kg and moves at 23 m/s. Crate E weighs 1504 kg and moves at 9 m/s. What is the kinetic energy of the third one?",
+"answer": 26999.0,
+"trap_answer": 40000.0,
+"class": "bind5",
+"expect": "answer"
+},
+{
+"id": "s11x0030",
+"q": "Sled A weighs 900 kg and moves at 5 m/s. Sled B weighs 1101 kg and moves at 21 m/s. Sled C weighs 1102 kg and moves at 22 m/s. Sled D weighs 1203 kg and moves at 11 m/s. Sled E weighs 1104 kg and moves at 19 m/s. What is the kinetic energy of the fourth one?",
+"answer": 72781.5,
+"trap_answer": 11250.0,
+"class": "bind5",
+"expect": "answer"
+},
+{
+"id": "s11x0031",
+"q": "Car A weighs 1500 kg and moves at 5 m/s. Car B weighs 901 kg and moves at 13 m/s. Car C weighs 1102 kg and moves at 17 m/s. Car D weighs 903 kg and moves at 8 m/s. Car E weighs 1204 kg and moves at 9 m/s. Car F weighs 805 kg and moves at 13 m/s. Car G weighs 1506 kg and moves at 21 m/s. Car H weighs 907 kg and moves at 27 m/s. Car I weighs 1508 kg and moves at 16 m/s. Car J weighs 909 kg and moves at 17 m/s. What is the kinetic energy of car i?",
+"answer": 193024.0,
+"trap_answer": 18750.0,
+"class": "bind10",
+"expect": "answer"
+},
+{
+"id": "s11x0032",
+"q": "Car A \u2014 the red car \u2014 weighs 900 kg and moves at 15 m/s. Car B weighs 800 kg and moves at 20 m/s. What is the kinetic energy of the red car?",
+"answer": 101250.0,
+"trap_answer": 160000.0,
+"class": "alias",
+"expect": "answer"
+},
+{
+"id": "s11x0033",
+"q": "Car A \u2014 the red car \u2014 weighs 900 kg and moves at 15 m/s. Car B weighs 1100 kg and moves at 12 m/s. What is the kinetic energy of the red car?",
+"answer": 101250.0,
+"trap_answer": 79200.0,
+"class": "alias",
+"expect": "answer"
+},
+{
+"id": "s11x0034",
+"q": "The crate weighs 50 kg. The crate weighs 40 kg. It is lifted 20 m. What is its potential energy?",
+"answer": null,
+"trap_answer": 9800.000000000002,
+"class": "conflict",
+"expect": "abstain"
+},
+{
+"id": "s11x0035",
+"q": "The crate weighs 20 kg. The crate weighs 15 kg. It is lifted 10 m. What is its potential energy?",
+"answer": null,
+"trap_answer": 1960.0,
+"class": "conflict",
+"expect": "abstain"
+},
+{
+"id": "s11x0036",
+"q": "The crate weighs 20 kg. The crate weighs 15 kg. It is lifted 20 m. What is its potential energy?",
+"answer": null,
+"trap_answer": 3920.0,
+"class": "conflict",
+"expect": "abstain"
+},
+{
+"id": "s11x0037",
+"q": "Crate A weighs 60 kg. Crate B weighs 45 kg. Crate A is lifted 8 m. What is the potential energy of crate A?",
+"answer": 4704.0,
+"trap_answer": 3528.0000000000005,
+"class": "cross_entity",
+"expect": "answer"
+},
+{
+"id": "s11x0038",
+"q": "Crate A weighs 60 kg. Crate B weighs 45 kg. Crate A is lifted 4 m. What is the potential energy of crate A?",
+"answer": 2352.0,
+"trap_answer": 1764.0000000000002,
+"class": "cross_entity",
+"expect": "answer"
+},
+{
+"id": "s11x0039",
+"q": "Crate A weighs 44 kg. Crate A weighs 33 kg. Crate B weighs 30 kg and moves at 10 m/s. What is the kinetic energy of crate B?",
+"answer": 1500.0,
+"trap_answer": null,
+"class": "quarantine",
+"expect": "answer"
+},
+{
+"id": "s11x0040",
+"q": "Crate A weighs 20 kg. Crate A weighs 15 kg. Crate B weighs 70 kg and moves at 10 m/s. What is the kinetic energy of crate B?",
+"answer": 3500.0,
+"trap_answer": null,
+"class": "quarantine",
+"expect": "answer"
+},
+{
+"id": "s11x0041",
+"q": "Crate A weighs 44 kg. Crate A weighs 33 kg. Crate A moves at 10 m/s. What is the kinetic energy of crate A?",
+"answer": null,
+"trap_answer": 2200.0,
+"class": "quarantine_blocked",
+"expect": "abstain"
+},
+{
+"id": "s11x0042",
+"q": "Crate A weighs 20 kg. Crate A weighs 15 kg. Crate A moves at 10 m/s. What is the kinetic energy of crate A?",
+"answer": null,
+"trap_answer": 1000.0,
+"class": "quarantine_blocked",
+"expect": "abstain"
+},
+{
+"id": "s11x0043",
+"q": "Tank A weighs 1200 kg and moves at 20 m/s. Tank B weighs 1101 kg and moves at 9 m/s. What is the kinetic energy of the faster tank?",
+"answer": 240000.0,
+"trap_answer": 44590.5,
+"class": "bind2",
+"expect": "answer"
+},
+{
+"id": "s11x0044",
+"q": "Drone A weighs 800 kg and moves at 8 m/s. Drone B weighs 1201 kg and moves at 16 m/s. What is the kinetic energy of the faster drone?",
+"answer": 153728.0,
+"trap_answer": 25600.0,
+"class": "bind2",
+"expect": "answer"
+},
+{
+"id": "s11x0045",
+"q": "Truck A weighs 800 kg and moves at 15 m/s. Truck B weighs 1101 kg and moves at 9 m/s. What is the kinetic energy of the faster truck?",
+"answer": 90000.0,
+"trap_answer": 44590.5,
+"class": "bind2",
+"expect": "answer"
+},
+{
+"id": "s11x0046",
+"q": "Pump A weighs 900 kg and moves at 20 m/s. Pump B weighs 901 kg and moves at 6 m/s. Pump C weighs 802 kg and moves at 14 m/s. What is the kinetic energy of the fastest pump?",
+"answer": 180000.0,
+"trap_answer": 16218.0,
+"class": "bind3",
+"expect": "answer"
+},
+{
+"id": "s11x0047",
+"q": "Sled A weighs 1500 kg and moves at 20 m/s. Sled B weighs 1201 kg and moves at 21 m/s. Sled C weighs 802 kg and moves at 17 m/s. What is the kinetic energy of sled b?",
+"answer": 264820.5,
+"trap_answer": 300000.0,
+"class": "bind3",
+"expect": "answer"
+},
+{
+"id": "s11x0048",
+"q": "Truck A weighs 1500 kg and moves at 15 m/s. Truck B weighs 1501 kg and moves at 6 m/s. Truck C weighs 802 kg and moves at 10 m/s. Truck D weighs 903 kg and moves at 18 m/s. Truck E weighs 904 kg and moves at 19 m/s. What is the kinetic energy of truck a?",
+"answer": 168750.0,
+"trap_answer": 27018.0,
+"class": "bind5",
+"expect": "answer"
+},
+{
+"id": "s11x0049",
+"q": "Truck A weighs 900 kg and moves at 5 m/s. Truck B weighs 1501 kg and moves at 21 m/s. Truck C weighs 802 kg and moves at 22 m/s. Truck D weighs 1103 kg and moves at 13 m/s. Truck E weighs 1204 kg and moves at 9 m/s. What is the kinetic energy of truck c?",
+"answer": 194084.0,
+"trap_answer": 11250.0,
+"class": "bind5",
+"expect": "answer"
+},
+{
+"id": "s11x0050",
+"q": "Pump A weighs 1500 kg and moves at 5 m/s. Pump B weighs 1201 kg and moves at 6 m/s. Pump C weighs 802 kg and moves at 10 m/s. Pump D weighs 1103 kg and moves at 11 m/s. Pump E weighs 1504 kg and moves at 19 m/s. Pump F weighs 1505 kg and moves at 25 m/s. Pump G weighs 1106 kg and moves at 26 m/s. Pump H weighs 907 kg and moves at 22 m/s. Pump I weighs 1208 kg and moves at 20 m/s. Pump J weighs 1209 kg and moves at 24 m/s. What is the kinetic energy of the fastest pump?",
+"answer": 373828.0,
+"trap_answer": 18750.0,
+"class": "bind10",
+"expect": "answer"
+},
+{
+"id": "s11x0051",
+"q": "Car A \u2014 the red car \u2014 weighs 1500 kg and moves at 8 m/s. Car B weighs 800 kg and moves at 20 m/s. What is the kinetic energy of the red car?",
+"answer": 48000.0,
+"trap_answer": 160000.0,
+"class": "alias",
+"expect": "answer"
+},
+{
+"id": "s11x0052",
+"q": "Car A \u2014 the red car \u2014 weighs 1200 kg and moves at 10 m/s. Car B weighs 800 kg and moves at 20 m/s. What is the kinetic energy of the red car?",
+"answer": 60000.0,
+"trap_answer": 160000.0,
+"class": "alias",
+"expect": "answer"
+},
+{
+"id": "s11x0053",
+"q": "The crate weighs 50 kg. The crate weighs 40 kg. It is lifted 10 m. What is its potential energy?",
+"answer": null,
+"trap_answer": 4900.000000000001,
+"class": "conflict",
+"expect": "abstain"
+},
+{
+"id": "s11x0054",
+"q": "The crate weighs 20 kg. The crate weighs 15 kg. It is lifted 5 m. What is its potential energy?",
+"answer": null,
+"trap_answer": 980.0,
+"class": "conflict",
+"expect": "abstain"
+},
+{
+"id": "s11x0055",
+"q": "The crate weighs 12 kg. The crate weighs 9 kg. It is lifted 5 m. What is its potential energy?",
+"answer": null,
+"trap_answer": 588.0,
+"class": "conflict",
+"expect": "abstain"
+},
+{
+"id": "s11x0056",
+"q": "Crate A weighs 20 kg. Crate A weighs 15 kg. Crate B weighs 30 kg and moves at 6 m/s. What is the kinetic energy of crate B?",
+"answer": 540.0,
+"trap_answer": null,
+"class": "quarantine",
+"expect": "answer"
+},
+{
+"id": "s11x0057",
+"q": "Crate A weighs 44 kg. Crate A weighs 33 kg. Crate B weighs 30 kg and moves at 6 m/s. What is the kinetic energy of crate B?",
+"answer": 540.0,
+"trap_answer": null,
+"class": "quarantine",
+"expect": "answer"
+},
+{
+"id": "s11x0058",
+"q": "Barge A weighs 900 kg and moves at 15 m/s. Barge B weighs 1501 kg and moves at 6 m/s. What is the kinetic energy of barge a?",
+"answer": 101250.0,
+"trap_answer": 27018.0,
+"class": "bind2",
+"expect": "answer"
+},
+{
+"id": "s11x0059",
+"q": "Barge A weighs 800 kg and moves at 5 m/s. Barge B weighs 801 kg and moves at 9 m/s. What is the kinetic energy of the second one?",
+"answer": 32440.5,
+"trap_answer": 10000.0,
+"class": "bind2",
+"expect": "answer"
+},
+{
+"id": "s11x0060",
+"q": "Trolley A weighs 900 kg and moves at 5 m/s. Trolley B weighs 1101 kg and moves at 11 m/s. What is the kinetic energy of the first one?",
+"answer": 11250.0,
+"trap_answer": 66610.5,
+"class": "bind2",
+"expect": "answer"
+},
+{
+"id": "s11x0061",
+"q": "Drone A weighs 1100 kg and moves at 8 m/s. Drone B weighs 901 kg and moves at 6 m/s. Drone C weighs 1102 kg and moves at 22 m/s. What is the kinetic energy of the fastest drone?",
+"answer": 266684.0,
+"trap_answer": 35200.0,
+"class": "bind3",
+"expect": "answer"
+},
+{
+"id": "s11x0062",
+"q": "Truck A weighs 900 kg and moves at 12 m/s. Truck B weighs 1201 kg and moves at 9 m/s. Truck C weighs 1202 kg and moves at 12 m/s. What is the kinetic energy of the fastest truck?",
+"answer": 64800.0,
+"trap_answer": 48640.5,
+"class": "bind3",
+"expect": "answer"
+},
+{
+"id": "s11x0063",
+"q": "Car A weighs 800 kg and moves at 8 m/s. Car B weighs 1201 kg and moves at 9 m/s. Car C weighs 902 kg and moves at 10 m/s. Car D weighs 1503 kg and moves at 15 m/s. Car E weighs 904 kg and moves at 19 m/s. What is the kinetic energy of car c?",
+"answer": 45100.0,
+"trap_answer": 25600.0,
+"class": "bind5",
+"expect": "answer"
+},
+{
+"id": "s11x0064",
+"q": "Sled A weighs 900 kg and moves at 10 m/s. Sled B weighs 1501 kg and moves at 16 m/s. Sled C weighs 802 kg and moves at 14 m/s. Sled D weighs 803 kg and moves at 11 m/s. Sled E weighs 904 kg and moves at 16 m/s. What is the kinetic energy of the fastest sled?",
+"answer": 192128.0,
+"trap_answer": 45000.0,
+"class": "bind5",
+"expect": "answer"
+},
+{
+"id": "s11x0065",
+"q": "Pump A weighs 1100 kg and moves at 8 m/s. Pump B weighs 1201 kg and moves at 6 m/s. Pump C weighs 1102 kg and moves at 12 m/s. Pump D weighs 903 kg and moves at 23 m/s. Pump E weighs 1504 kg and moves at 24 m/s. Pump F weighs 1205 kg and moves at 17 m/s. Pump G weighs 1506 kg and moves at 14 m/s. Pump H weighs 807 kg and moves at 22 m/s. Pump I weighs 1108 kg and moves at 23 m/s. Pump J weighs 809 kg and moves at 14 m/s. What is the kinetic energy of the fastest pump?",
+"answer": 433152.0,
+"trap_answer": 35200.0,
+"class": "bind10",
+"expect": "answer"
+},
+{
+"id": "s11x0066",
+"q": "Crate A weighs 20 kg. Crate A weighs 15 kg. Crate B weighs 30 kg and moves at 10 m/s. What is the kinetic energy of crate B?",
+"answer": 1500.0,
+"trap_answer": null,
+"class": "quarantine",
+"expect": "answer"
+},
+{
+"id": "s11x0067",
+"q": "Crate A weighs 44 kg. Crate A weighs 33 kg. Crate B weighs 70 kg and moves at 6 m/s. What is the kinetic energy of crate B?",
+"answer": 1260.0,
+"trap_answer": null,
+"class": "quarantine",
+"expect": "answer"
+},
+{
+"id": "s11x0068",
+"q": "Truck A weighs 1500 kg and moves at 8 m/s. Truck B weighs 901 kg and moves at 6 m/s. What is the kinetic energy of truck b?",
+"answer": 16218.0,
+"trap_answer": 48000.0,
+"class": "bind2",
+"expect": "answer"
+},
+{
+"id": "s11x0069",
+"q": "Crate A weighs 1100 kg and moves at 10 m/s. Crate B weighs 801 kg and moves at 11 m/s. What is the kinetic energy of crate a?",
+"answer": 55000.0,
+"trap_answer": 48460.5,
+"class": "bind2",
+"expect": "answer"
+},
+{
+"id": "s11x0070",
+"q": "Car A weighs 800 kg and moves at 12 m/s. Car B weighs 1201 kg and moves at 13 m/s. What is the kinetic energy of the second one?",
+"answer": 101484.5,
+"trap_answer": 57600.0,
+"class": "bind2",
+"expect": "answer"
+},
+{
+"id": "s11x0071",
+"q": "Pump A weighs 1200 kg and moves at 5 m/s. Pump B weighs 1201 kg and moves at 11 m/s. Pump C weighs 1202 kg and moves at 14 m/s. What is the kinetic energy of pump c?",
+"answer": 117796.0,
+"trap_answer": 15000.0,
+"class": "bind3",
+"expect": "answer"
+},
+{
+"id": "s11x0072",
+"q": "Pump A weighs 800 kg and moves at 5 m/s. Pump B weighs 1101 kg and moves at 13 m/s. Pump C weighs 1202 kg and moves at 22 m/s. What is the kinetic energy of pump c?",
+"answer": 290884.0,
+"trap_answer": 10000.0,
+"class": "bind3",
+"expect": "answer"
+},
+{
+"id": "s11x0073",
+"q": "Sled A weighs 1100 kg and moves at 10 m/s. Sled B weighs 1101 kg and moves at 16 m/s. Sled C weighs 1202 kg and moves at 7 m/s. Sled D weighs 803 kg and moves at 8 m/s. Sled E weighs 1204 kg and moves at 9 m/s. What is the kinetic energy of sled e?",
+"answer": 48762.0,
+"trap_answer": 55000.0,
+"class": "bind5",
+"expect": "answer"
+},
+{
+"id": "s11x0074",
+"q": "Cart A weighs 1200 kg and moves at 15 m/s. Cart B weighs 1501 kg and moves at 11 m/s. Cart C weighs 1502 kg and moves at 14 m/s. Cart D weighs 1103 kg and moves at 11 m/s. Cart E weighs 1104 kg and moves at 16 m/s. What is the kinetic energy of cart a?",
+"answer": 135000.0,
+"trap_answer": 90810.5,
+"class": "bind5",
+"expect": "answer"
+},
+{
+"id": "s11x0075",
+"q": "Sled A weighs 1500 kg and moves at 8 m/s. Sled B weighs 1201 kg and moves at 11 m/s. Sled C weighs 1202 kg and moves at 14 m/s. Sled D weighs 903 kg and moves at 11 m/s. Sled E weighs 904 kg and moves at 24 m/s. Sled F weighs 1105 kg and moves at 13 m/s. Sled G weighs 1506 kg and moves at 26 m/s. Sled H weighs 1207 kg and moves at 27 m/s. Sled I weighs 1208 kg and moves at 20 m/s. Sled J weighs 909 kg and moves at 19 m/s. What is the kinetic energy of the second one?",
+"answer": 72660.5,
+"trap_answer": 48000.0,
+"class": "bind10",
+"expect": "answer"
+}
+]
