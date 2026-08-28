@@ -1,0 +1,1385 @@
+{
+ "accel": {
+  "aliases": [
+   "m/s^2"
+  ],
+  "dim": [
+   0,
+   1,
+   -2,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "acceleration"
+  ],
+  "unit": "m/s^2"
+ },
+ "ad_spend": {
+  "aliases": [
+   "$"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "nouns": [
+   "marketing spend"
+  ],
+  "unit": "$"
+ },
+ "annual_profit": {
+  "aliases": [],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "nouns": [
+   "annual profit",
+   "yearly profit"
+  ],
+  "unit": "$"
+ },
+ "area": {
+  "aliases": [
+   "m^2",
+   "square metres"
+  ],
+  "dim": [
+   0,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "area"
+  ],
+  "unit": "m^2"
+ },
+ "batches_month": {
+  "aliases": [],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  "nouns": [
+   "batches per month"
+  ],
+  "unit": ""
+ },
+ "cac": {
+  "aliases": [
+   "$ per customer"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   1
+  ],
+  "nouns": [
+   "customer acquisition cost"
+  ],
+  "unit": "$/cust"
+ },
+ "capex": {
+  "aliases": [],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "nouns": [
+   "capital expenditure",
+   "upfront investment",
+   "initial investment"
+  ],
+  "unit": "$"
+ },
+ "charge": {
+  "aliases": [
+   "coulombs"
+  ],
+  "dim": [
+   0,
+   0,
+   1,
+   1,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "charge"
+  ],
+  "unit": "C"
+ },
+ "churn_rate": {
+  "aliases": [
+   "%"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "monthly churn"
+  ],
+  "unit": ""
+ },
+ "concentration": {
+  "aliases": [
+   "mol/L",
+   "M"
+  ],
+  "dim": [
+   0,
+   -3,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  "nouns": [
+   "concentration",
+   "molarity"
+  ],
+  "unit": "mol/L"
+ },
+ "cost_energy": {
+  "aliases": [
+   "$"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "nouns": [
+   "energy cost"
+  ],
+  "unit": "$"
+ },
+ "cost_ops": {
+  "aliases": [
+   "$"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "nouns": [
+   "operating cost"
+  ],
+  "unit": "$"
+ },
+ "cost_total": {
+  "aliases": [
+   "$"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "nouns": [
+   "total cost"
+  ],
+  "unit": "$"
+ },
+ "cost_var": {
+  "aliases": [
+   "$"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "nouns": [
+   "variable cost"
+  ],
+  "unit": "$"
+ },
+ "count": {
+  "aliases": [
+   "units"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  "nouns": [
+   "quantity sold",
+   "number of units",
+   "batch"
+  ],
+  "unit": "units"
+ },
+ "current": {
+  "aliases": [
+   "A",
+   "amps"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "current"
+  ],
+  "unit": "A"
+ },
+ "cust_lifetime": {
+  "aliases": [
+   "months"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "expected customer lifetime (months)"
+  ],
+  "unit": ""
+ },
+ "cycle_profit": {
+  "aliases": [],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "nouns": [
+   "cycle profit",
+   "profit per cycle"
+  ],
+  "unit": "$"
+ },
+ "data_count": {
+  "aliases": [],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "number of readings"
+  ],
+  "unit": ""
+ },
+ "data_sum": {
+  "aliases": [],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "sum of the readings"
+  ],
+  "unit": ""
+ },
+ "density": {
+  "aliases": [
+   "kg/m^3"
+  ],
+  "dim": [
+   1,
+   -3,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "density"
+  ],
+  "unit": "kg/m^3"
+ },
+ "dilution_factor": {
+  "aliases": [],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "dilution factor"
+  ],
+  "unit": ""
+ },
+ "distance": {
+  "aliases": [
+   "m"
+  ],
+  "dim": [
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "distance"
+  ],
+  "unit": "m"
+ },
+ "efficiency": {
+  "aliases": [],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "efficiency"
+  ],
+  "unit": ""
+ },
+ "energy": {
+  "aliases": [
+   "J",
+   "joules"
+  ],
+  "dim": [
+   1,
+   2,
+   -2,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "energy"
+  ],
+  "unit": "J"
+ },
+ "final_amount": {
+  "aliases": [
+   "$"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "nouns": [
+   "final balance"
+  ],
+  "unit": "$"
+ },
+ "final_concentration": {
+  "aliases": [
+   "mol/L"
+  ],
+  "dim": [
+   0,
+   -3,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  "nouns": [
+   "final concentration"
+  ],
+  "unit": "mol/L"
+ },
+ "fixed_cost": {
+  "aliases": [
+   "$"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "nouns": [
+   "fixed costs"
+  ],
+  "unit": "$"
+ },
+ "force": {
+  "aliases": [
+   "N"
+  ],
+  "dim": [
+   1,
+   1,
+   -2,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "force",
+   "weight"
+  ],
+  "unit": "N"
+ },
+ "height": {
+  "aliases": [
+   "m",
+   "metres"
+  ],
+  "dim": [
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "height",
+   "thickness"
+  ],
+  "unit": "m"
+ },
+ "interest": {
+  "aliases": [
+   "$"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "nouns": [
+   "interest"
+  ],
+  "unit": "$"
+ },
+ "length": {
+  "aliases": [
+   "m"
+  ],
+  "dim": [
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "length"
+  ],
+  "unit": "m"
+ },
+ "ltv": {
+  "aliases": [
+   "$ per customer"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   1
+  ],
+  "nouns": [
+   "customer lifetime value"
+  ],
+  "unit": "$/cust"
+ },
+ "ltv_cac": {
+  "aliases": [],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "LTV to CAC ratio"
+  ],
+  "unit": ""
+ },
+ "mass": {
+  "aliases": [
+   "kg",
+   "kilograms"
+  ],
+  "dim": [
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "mass"
+  ],
+  "unit": "kg"
+ },
+ "mean": {
+  "aliases": [],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "mean",
+   "average"
+  ],
+  "unit": ""
+ },
+ "molar_mass": {
+  "aliases": [
+   "g/mol"
+  ],
+  "dim": [
+   1,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   0
+  ],
+  "nouns": [
+   "molar mass"
+  ],
+  "unit": "g/mol"
+ },
+ "moles": {
+  "aliases": [
+   "mol",
+   "moles"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  "nouns": [
+   "amount of substance"
+  ],
+  "unit": "mol"
+ },
+ "monthly_margin": {
+  "aliases": [
+   "$"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   1
+  ],
+  "nouns": [
+   "monthly margin per customer"
+  ],
+  "unit": "$/cust/mo"
+ },
+ "monthly_profit": {
+  "aliases": [],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "nouns": [
+   "monthly profit"
+  ],
+  "unit": "$"
+ },
+ "months_count": {
+  "aliases": [],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  "nouns": [
+   "months of operation",
+   "number of months"
+  ],
+  "unit": ""
+ },
+ "net_profit": {
+  "aliases": [
+   "$"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "nouns": [
+   "after-tax profit"
+  ],
+  "unit": "$"
+ },
+ "new_customers": {
+  "aliases": [
+   "customers"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  "nouns": [
+   "new customers"
+  ],
+  "unit": ""
+ },
+ "obs_value": {
+  "aliases": [],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "observed value"
+  ],
+  "unit": ""
+ },
+ "payback_months": {
+  "aliases": [],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  "nouns": [
+   "payback period in months",
+   "months to pay back",
+   "payback months"
+  ],
+  "unit": ""
+ },
+ "power": {
+  "aliases": [
+   "W",
+   "watts"
+  ],
+  "dim": [
+   1,
+   2,
+   -3,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "power"
+  ],
+  "unit": "W"
+ },
+ "ppu": {
+  "aliases": [
+   "$ per unit"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   1
+  ],
+  "nouns": [
+   "per-unit net profit",
+   "profit per unit"
+  ],
+  "unit": "$/unit"
+ },
+ "price_per_kg": {
+  "aliases": [
+   "$/kg"
+  ],
+  "dim": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "nouns": [
+   "price per kilogram"
+  ],
+  "unit": "$/kg"
+ },
+ "price_per_kwh": {
+  "aliases": [
+   "$/kWh"
+  ],
+  "dim": [
+   -1,
+   -2,
+   2,
+   0,
+   0,
+   0,
+   1
+  ],
+  "nouns": [
+   "electricity tariff"
+  ],
+  "unit": "$/kWh"
+ },
+ "price_per_unit": {
+  "aliases": [
+   "$ each"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   1
+  ],
+  "nouns": [
+   "selling price"
+  ],
+  "unit": "$/unit"
+ },
+ "principal": {
+  "aliases": [
+   "$"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "nouns": [
+   "principal"
+  ],
+  "unit": "$"
+ },
+ "product_moles": {
+  "aliases": [
+   "mol"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  "nouns": [
+   "product amount"
+  ],
+  "unit": "mol"
+ },
+ "profit": {
+  "aliases": [
+   "$"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "nouns": [
+   "profit"
+  ],
+  "unit": "$"
+ },
+ "rate": {
+  "aliases": [
+   "%"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "rate",
+   "margin"
+  ],
+  "unit": ""
+ },
+ "rate_tax": {
+  "aliases": [
+   "%"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "tax rate"
+  ],
+  "unit": ""
+ },
+ "reaction_yield": {
+  "aliases": [
+   "%"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "reaction yield"
+  ],
+  "unit": ""
+ },
+ "resistance": {
+  "aliases": [
+   "ohms"
+  ],
+  "dim": [
+   1,
+   2,
+   -3,
+   -2,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "resistance"
+  ],
+  "unit": "ohm"
+ },
+ "revenue": {
+  "aliases": [
+   "$"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "nouns": [
+   "revenue"
+  ],
+  "unit": "$"
+ },
+ "roi": {
+  "aliases": [],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "return on investment",
+   "roi"
+  ],
+  "unit": ""
+ },
+ "solute_mass": {
+  "aliases": [
+   "g",
+   "grams"
+  ],
+  "dim": [
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "dissolved mass"
+  ],
+  "unit": "g"
+ },
+ "solution_volume": {
+  "aliases": [
+   "L",
+   "litres"
+  ],
+  "dim": [
+   0,
+   3,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "solution volume"
+  ],
+  "unit": "L"
+ },
+ "spec_heat": {
+  "aliases": [
+   "J/kg/K"
+  ],
+  "dim": [
+   0,
+   2,
+   -2,
+   0,
+   -1,
+   0,
+   0
+  ],
+  "nouns": [
+   "specific heat"
+  ],
+  "unit": "J/kg/K"
+ },
+ "speed": {
+  "aliases": [
+   "m/s"
+  ],
+  "dim": [
+   0,
+   1,
+   -1,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "speed",
+   "velocity"
+  ],
+  "unit": "m/s"
+ },
+ "sq_dev_sum": {
+  "aliases": [],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "sum of squared deviations"
+  ],
+  "unit": ""
+ },
+ "std_dev": {
+  "aliases": [],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "standard deviation"
+  ],
+  "unit": ""
+ },
+ "temp_cold": {
+  "aliases": [
+   "K"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0
+  ],
+  "nouns": [
+   "cold reservoir temperature"
+  ],
+  "unit": "K"
+ },
+ "temp_diff": {
+  "aliases": [
+   "K",
+   "degrees"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0
+  ],
+  "nouns": [
+   "temperature rise",
+   "warming",
+   "temperature change",
+   "temperature difference",
+   "degrees warmer"
+  ],
+  "unit": "K"
+ },
+ "temp_hot": {
+  "aliases": [
+   "K"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0
+  ],
+  "nouns": [
+   "hot reservoir temperature"
+  ],
+  "unit": "K"
+ },
+ "time": {
+  "aliases": [
+   "s",
+   "seconds"
+  ],
+  "dim": [
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "time",
+   "duration"
+  ],
+  "unit": "s"
+ },
+ "unit_cost": {
+  "aliases": [
+   "$ each"
+  ],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   1
+  ],
+  "nouns": [
+   "production cost"
+  ],
+  "unit": "$/unit"
+ },
+ "unit_margin": {
+  "aliases": [],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "unit margin",
+   "margin fraction"
+  ],
+  "unit": ""
+ },
+ "variance": {
+  "aliases": [],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "variance"
+  ],
+  "unit": ""
+ },
+ "voltage": {
+  "aliases": [
+   "V"
+  ],
+  "dim": [
+   1,
+   2,
+   -3,
+   -1,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "voltage"
+  ],
+  "unit": "V"
+ },
+ "volume": {
+  "aliases": [
+   "m^3",
+   "cubic metres"
+  ],
+  "dim": [
+   0,
+   3,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "volume"
+  ],
+  "unit": "m^3"
+ },
+ "width": {
+  "aliases": [
+   "m"
+  ],
+  "dim": [
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "width"
+  ],
+  "unit": "m"
+ },
+ "years": {
+  "aliases": [
+   "years"
+  ],
+  "dim": [
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "term"
+  ],
+  "unit": "yr"
+ },
+ "z_score": {
+  "aliases": [],
+  "dim": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nouns": [
+   "z-score",
+   "standard score"
+  ],
+  "unit": ""
+ }
+}

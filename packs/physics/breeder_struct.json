@@ -1,0 +1,95 @@
+{
+ "deployed": {},
+ "deployed_ask": {},
+ "deployed_struct": {
+  "<N2> g/mol <W> <NUM> l <W> <W>": {
+   "concept": "solution_volume",
+   "support": 36,
+   "unit": "l"
+  },
+  "<N2> m <W> <NUM> m <W> <W>": {
+   "concept": "width",
+   "support": 29,
+   "unit": "m"
+  },
+  "<NUM> units <W> <W>": {
+   "concept": "count",
+   "support": 41,
+   "unit": "units"
+  },
+  "<W> <W> $ <NUM> <W> <W>": {
+   "concept": "price_per_unit",
+   "support": 43,
+   "unit": "$"
+  },
+  "<W> <W> <NUM> pieces <W> <W>": {
+   "concept": "count",
+   "support": 43,
+   "unit": "pieces"
+  },
+  "<W> <W> <W> <NUM> % <W> <W>": {
+   "concept": "rate_tax",
+   "support": 39,
+   "unit": "%"
+  },
+  "<W> <W> <W> <NUM> g/mol <W> <N2>": {
+   "concept": "molar_mass",
+   "support": 34,
+   "unit": "g/mol"
+  },
+  "<W> <W> <W> <NUM> g/mol <W> <W>": {
+   "concept": "molar_mass",
+   "support": 11,
+   "unit": "g/mol"
+  },
+  "<W> <W> <W> <NUM> kg/m^ <N2> <W>": {
+   "concept": "density",
+   "support": 43,
+   "unit": "kg/m"
+  },
+  "<W> <W> <W> <NUM> m/s <W> <W>": {
+   "concept": "speed",
+   "support": 153,
+   "unit": "m/s"
+  },
+  "<W> <W> <W> <NUM> minutes <W> <W>": {
+   "concept": "time",
+   "support": 37,
+   "unit": "minutes"
+  },
+  "<W> <W> <W> <NUM> ohms <W> <W>": {
+   "concept": "resistance",
+   "support": 41,
+   "unit": "ohms"
+  },
+  "<W> g/mol <W> <NUM> l <W> <W>": {
+   "concept": "solution_volume",
+   "support": 5,
+   "unit": "l"
+  },
+  "a <W> <W> <NUM> kg <W> <W>": {
+   "concept": "mass",
+   "support": 171,
+   "unit": "kg"
+  },
+  "kg <W> <W> <NUM> m <W> <W>": {
+   "concept": "height",
+   "support": 38,
+   "unit": "m"
+  },
+  "m <W> <W> <NUM> m <W> <W>": {
+   "concept": "height",
+   "support": 43,
+   "unit": "m"
+  },
+  "ohms <W> <W> <NUM> v <W> <W>": {
+   "concept": "voltage",
+   "support": 43,
+   "unit": "v"
+  }
+ },
+ "log": [],
+ "n_patterns_observed": 0,
+ "n_sobs": 25,
+ "path_cache": {}
+}

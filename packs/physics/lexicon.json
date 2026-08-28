@@ -1,0 +1,392 @@
+{
+ "adj": {
+  "across": "width",
+  "climbs": "height",
+  "cruises": "speed",
+  "deep": "height",
+  "descends": "height",
+  "dropped": "height",
+  "drops": "height",
+  "falling": "height",
+  "falls": "height",
+  "fell": "height",
+  "high": "height",
+  "hoisted": "height",
+  "lifted": "height",
+  "long": "length",
+  "lowered": "height",
+  "moving": "speed",
+  "plunges": "height",
+  "raised": "height",
+  "rolls": "speed",
+  "tall": "height",
+  "thick": "height",
+  "traveling": "speed",
+  "travelling": "speed",
+  "wide": "width"
+ },
+ "comparatives": {
+  "bigger": [
+   "mass",
+   1
+  ],
+  "biggest": [
+   "mass",
+   1
+  ],
+  "cheaper": [
+   "price_per_unit",
+   -1
+  ],
+  "cheapest": [
+   "price_per_unit",
+   -1
+  ],
+  "deeper": [
+   "height",
+   1
+  ],
+  "denser": [
+   "density",
+   1
+  ],
+  "densest": [
+   "density",
+   1
+  ],
+  "faster": [
+   "speed",
+   1
+  ],
+  "fastest": [
+   "speed",
+   1
+  ],
+  "heavier": [
+   "mass",
+   1
+  ],
+  "heaviest": [
+   "mass",
+   1
+  ],
+  "hotter": [
+   "temp_diff",
+   1
+  ],
+  "larger": [
+   "volume",
+   1
+  ],
+  "largest": [
+   "volume",
+   1
+  ],
+  "lighter": [
+   "mass",
+   -1
+  ],
+  "lightest": [
+   "mass",
+   -1
+  ],
+  "longer": [
+   "length",
+   1
+  ],
+  "longest": [
+   "length",
+   1
+  ],
+  "pricier": [
+   "price_per_unit",
+   1
+  ],
+  "priciest": [
+   "price_per_unit",
+   1
+  ],
+  "shorter": [
+   "height",
+   -1
+  ],
+  "slower": [
+   "speed",
+   -1
+  ],
+  "slowest": [
+   "speed",
+   -1
+  ],
+  "smaller": [
+   "volume",
+   -1
+  ],
+  "smallest": [
+   "volume",
+   -1
+  ],
+  "stronger": [
+   "voltage",
+   1
+  ],
+  "taller": [
+   "height",
+   1
+  ],
+  "tallest": [
+   "height",
+   1
+  ],
+  "wider": [
+   "width",
+   1
+  ]
+ },
+ "entity_adjectives": [
+  "red",
+  "blue",
+  "green",
+  "black",
+  "white",
+  "old",
+  "new",
+  "left",
+  "right",
+  "big",
+  "small",
+  "heavy",
+  "light"
+ ],
+ "entity_nouns": [
+  "car",
+  "tank",
+  "pump",
+  "truck",
+  "block",
+  "slab",
+  "crate",
+  "beaker",
+  "battery",
+  "motor",
+  "coil",
+  "piston",
+  "drone",
+  "cart",
+  "boiler",
+  "reactor",
+  "vat",
+  "silo",
+  "wheel",
+  "press",
+  "kiln",
+  "generator",
+  "fan",
+  "lorry",
+  "sled",
+  "trolley",
+  "barge",
+  "probe",
+  "sensor"
+ ],
+ "extra_nouns": {
+  "batches_month": [
+   "batches per month"
+  ],
+  "capex": [
+   "upfront investment",
+   "investment"
+  ],
+  "count": [
+   "housings",
+   "brackets",
+   "panels",
+   "turns out",
+   "becomes"
+  ],
+  "data_count": [
+   "measurements",
+   "samples",
+   "probes",
+   "trials",
+   "observations"
+  ],
+  "dilution_factor": [
+   "fold",
+   "thinned",
+   "diluted",
+   "factor"
+  ],
+  "energy": [
+   "joules"
+  ],
+  "fixed_cost": [
+   "flat",
+   "fixed charge",
+   "flat charge",
+   "fixed fee",
+   "fixed costs"
+  ],
+  "height": [
+   "falling",
+   "fall",
+   "drop",
+   "descent"
+  ],
+  "mass": [
+   "weighs",
+   "weighing",
+   "weight",
+   "weigh"
+  ],
+  "months_count": [
+   "months of operation"
+  ],
+  "payback_months": [
+   "pay back",
+   "pays back",
+   "payback"
+  ],
+  "speed": [
+   "velocity",
+   "pace",
+   "clip"
+  ],
+  "time": [
+   "operates",
+   "stays on",
+   "runs"
+  ]
+ },
+ "ref_hypernyms": [
+  "container",
+  "vessel",
+  "machine",
+  "device",
+  "vehicle",
+  "object",
+  "item"
+ ],
+ "sale_verbs": [
+  "sell",
+  "sold",
+  "price",
+  "charg",
+  "fetch",
+  "go",
+  "goes",
+  "went"
+ ],
+ "target_verbs": {
+  "concentration": "concentration",
+  "cost": "cost_total",
+  "current": "current",
+  "energy": "energy",
+  "mass": "mass",
+  "power": "power",
+  "profit": "profit",
+  "revenue": "revenue",
+  "take": "revenue",
+  "weigh": "mass",
+  "weighs": "mass"
+ },
+ "unit_index_extra": {
+  "item": [
+   "count"
+  ],
+  "items": [
+   "count"
+  ],
+  "piece": [
+   "count"
+  ],
+  "pieces": [
+   "count"
+  ],
+  "unit": [
+   "count"
+  ],
+  "widgets": [
+   "count"
+  ]
+ },
+ "unit_words": [
+  "$",
+  "%",
+  "a",
+  "amp",
+  "ampere",
+  "amperes",
+  "amps",
+  "cm",
+  "degree",
+  "degrees",
+  "dollar",
+  "dollars",
+  "eur",
+  "euro",
+  "euros",
+  "g",
+  "gram",
+  "grams",
+  "h",
+  "hour",
+  "hours",
+  "hr",
+  "hrs",
+  "hz",
+  "item",
+  "items",
+  "j",
+  "joule",
+  "joules",
+  "kg",
+  "kilo",
+  "kilogram",
+  "kilograms",
+  "kilos",
+  "kj",
+  "km",
+  "kpa",
+  "kw",
+  "kwh",
+  "l",
+  "liter",
+  "liters",
+  "litre",
+  "litres",
+  "m",
+  "meter",
+  "meters",
+  "metre",
+  "metres",
+  "min",
+  "minute",
+  "minutes",
+  "ml",
+  "mm",
+  "mol",
+  "moles",
+  "n",
+  "newton",
+  "newtons",
+  "ohm",
+  "ohms",
+  "pa",
+  "percent",
+  "piece",
+  "pieces",
+  "s",
+  "sec",
+  "second",
+  "seconds",
+  "unit",
+  "units",
+  "v",
+  "volt",
+  "volts",
+  "w",
+  "watt",
+  "watts"
+ ]
+}

@@ -1,0 +1,176 @@
+{
+ "canonical_rules": [
+  {
+   "concept": "time",
+   "factor": 60.0,
+   "op": "mul",
+   "units": [
+    "min",
+    "minutes",
+    "minute"
+   ]
+  },
+  {
+   "concept": "time",
+   "factor": 3600.0,
+   "op": "mul",
+   "units": [
+    "h",
+    "hr",
+    "hrs",
+    "hour",
+    "hours"
+   ]
+  },
+  {
+   "concept": "speed",
+   "factor": 3.6,
+   "op": "div",
+   "units": [
+    "km/h",
+    "kph",
+    "km/hr"
+   ]
+  },
+  {
+   "concept": "mass",
+   "factor": 1000.0,
+   "op": "div",
+   "units": [
+    "g",
+    "grams",
+    "gram"
+   ]
+  },
+  {
+   "concept": "mass",
+   "factor": 1000.0,
+   "op": "mul",
+   "units": [
+    "t",
+    "tonne",
+    "tonnes",
+    "metric tons"
+   ]
+  },
+  {
+   "concept": "energy",
+   "factor": 1000.0,
+   "op": "mul",
+   "units": [
+    "kj"
+   ]
+  },
+  {
+   "concept": "energy",
+   "factor": 1000000.0,
+   "op": "mul",
+   "units": [
+    "mj"
+   ]
+  },
+  {
+   "concept": "energy",
+   "factor": 3600000.0,
+   "op": "mul",
+   "units": [
+    "kwh"
+   ]
+  },
+  {
+   "concept": "power",
+   "factor": 1000.0,
+   "op": "mul",
+   "units": [
+    "kw"
+   ]
+  },
+  {
+   "concept": "price_per_kwh",
+   "factor": 3600000.0,
+   "op": "div",
+   "special": "kwh_contains"
+  },
+  {
+   "concept": "solution_volume",
+   "factor": 1000.0,
+   "op": "div",
+   "units": [
+    "ml",
+    "millilitres",
+    "milliliters"
+   ]
+  }
+ ],
+ "mention_conv": {
+  "cm": [
+   "m",
+   0.01
+  ],
+  "h": [
+   "s",
+   3600.0
+  ],
+  "hour": [
+   "s",
+   3600.0
+  ],
+  "hours": [
+   "s",
+   3600.0
+  ],
+  "hr": [
+   "s",
+   3600.0
+  ],
+  "hrs": [
+   "s",
+   3600.0
+  ],
+  "kj": [
+   "j",
+   1000.0
+  ],
+  "km": [
+   "m",
+   1000.0
+  ],
+  "kw": [
+   "w",
+   1000.0
+  ],
+  "kwh": [
+   "j",
+   3600000.0
+  ],
+  "min": [
+   "s",
+   60.0
+  ],
+  "minute": [
+   "s",
+   60.0
+  ],
+  "minutes": [
+   "s",
+   60.0
+  ],
+  "ml": [
+   "l",
+   0.001
+  ],
+  "mm": [
+   "m",
+   0.001
+  ]
+ },
+ "percent_rule": {
+  "factor": 100.0,
+  "min_abs": 1.5,
+  "op": "div",
+  "units": [
+   "%",
+   "percent"
+  ]
+ }
+}

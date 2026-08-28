@@ -1,0 +1,867 @@
+{
+ "annual_profit_calc": {
+  "family": "caps10",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "expr": "monthly_profit * months_count",
+   "inputs": [
+    "monthly_profit",
+    "months_count"
+   ],
+   "output": "annual_profit"
+  }
+ },
+ "area_rect": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "engineering",
+   "equation": "A = l*w",
+   "expr": "l0 * w0",
+   "inputs": [
+    "length",
+    "width"
+   ],
+   "output": "area"
+  }
+ },
+ "break_even": {
+  "family": "v4",
+  "has_compiled_members": true,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "finance",
+   "equation": "n = F/(p-u)",
+   "expr": "f0 / (p0 - u0)",
+   "inputs": [
+    "fixed_cost",
+    "price_per_unit",
+    "unit_cost"
+   ],
+   "output": "count_breakeven"
+  }
+ },
+ "bred_final_amount": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "domain": "bred",
+   "equation": "bred: llm_proposal gen5",
+   "expr": "(p0 * (1 + r0) ** y0)",
+   "inputs": [
+    "years",
+    "rate",
+    "principal"
+   ],
+   "output": "final_amount"
+  }
+ },
+ "bred_money": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "domain": "bred",
+   "equation": "bred: trace_mining gen3",
+   "expr": "2.7777777777777776e-07*e0*p0",
+   "inputs": [
+    "energy",
+    "price_per_kwh"
+   ],
+   "output": "money"
+  }
+ },
+ "cac_calc": {
+  "family": "caps9",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "domain": "business",
+   "equation": "CAC = spend / customers",
+   "expr": "ad_spend / new_customers",
+   "inputs": [
+    "ad_spend",
+    "new_customers"
+   ],
+   "output": "cac"
+  }
+ },
+ "carnot_efficiency": {
+  "family": "v4",
+  "has_compiled_members": true,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "thermodynamics",
+   "equation": "eta = 1 - Tc/Th",
+   "expr": "1 - tc0 / th0",
+   "inputs": [
+    "temp_hot",
+    "temp_cold"
+   ],
+   "output": "efficiency"
+  }
+ },
+ "charge_from_it": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "electricity",
+   "equation": "Q = I*t",
+   "expr": "i0 * t0",
+   "inputs": [
+    "current",
+    "time"
+   ],
+   "output": "charge"
+  }
+ },
+ "concentration_calc": {
+  "family": "caps9",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "domain": "chemistry",
+   "equation": "C = n / V",
+   "expr": "moles / solution_volume",
+   "inputs": [
+    "moles",
+    "solution_volume"
+   ],
+   "output": "concentration"
+  }
+ },
+ "current_from_vr": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "electricity",
+   "equation": "I = V/R",
+   "expr": "v0 / r0",
+   "inputs": [
+    "voltage",
+    "resistance"
+   ],
+   "output": "current"
+  }
+ },
+ "cycle_profit_from_margin": {
+  "family": "caps10",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "expr": "unit_margin * revenue",
+   "inputs": [
+    "unit_margin",
+    "revenue"
+   ],
+   "output": "cycle_profit"
+  }
+ },
+ "dilute": {
+  "family": "caps9",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "domain": "chemistry",
+   "equation": "C2 = C1 / f",
+   "expr": "concentration / dilution_factor",
+   "inputs": [
+    "concentration",
+    "dilution_factor"
+   ],
+   "output": "final_concentration"
+  }
+ },
+ "electrical_energy": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "electricity",
+   "equation": "E = P*t",
+   "expr": "p0 * t0",
+   "inputs": [
+    "power",
+    "time"
+   ],
+   "output": "energy"
+  }
+ },
+ "energy_conservation": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "shared",
+   "equation": "E_out = E_in",
+   "expr": "e0",
+   "inputs": [
+    "energy"
+   ],
+   "output": "energy",
+   "transfer": true
+  }
+ },
+ "energy_cost": {
+  "family": "caps9",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "dim_note": "tariff is $/J-equivalent after kWh normalization in compile",
+   "domain": "finance",
+   "equation": "Ce = E * tariff",
+   "expr": "energy * price_per_kwh",
+   "inputs": [
+    "energy",
+    "price_per_kwh"
+   ],
+   "output": "cost_energy"
+  }
+ },
+ "force_from_mass_accel": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "mechanics",
+   "equation": "F = m*a",
+   "expr": "m0 * a0",
+   "inputs": [
+    "mass",
+    "accel"
+   ],
+   "output": "force"
+  }
+ },
+ "heat_to_temp_rise": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "thermodynamics",
+   "equation": "dT = E/(m*c)",
+   "expr": "e0 / (m0 * c0)",
+   "inputs": [
+    "energy",
+    "mass",
+    "spec_heat"
+   ],
+   "output": "temp_diff"
+  }
+ },
+ "height_from_energy": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "mechanics",
+   "equation": "h = E/(m*g)",
+   "expr": "e0 / (m0 * 9.8)",
+   "inputs": [
+    "energy",
+    "mass"
+   ],
+   "output": "height"
+  }
+ },
+ "interest_from_final": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "finance",
+   "equation": "I = A - P",
+   "expr": "f0 - p0",
+   "inputs": [
+    "final_amount",
+    "principal"
+   ],
+   "output": "interest"
+  }
+ },
+ "kinetic_energy": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "mechanics",
+   "equation": "E = m*v**2/2",
+   "expr": "m0 * v0**2 / 2",
+   "inputs": [
+    "mass",
+    "speed"
+   ],
+   "output": "energy"
+  }
+ },
+ "lifetime_from_churn": {
+  "family": "caps9",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "domain": "business",
+   "equation": "L = 1 / churn",
+   "expr": "1 / churn_rate",
+   "inputs": [
+    "churn_rate"
+   ],
+   "output": "cust_lifetime"
+  }
+ },
+ "ltv_cac_ratio": {
+  "family": "caps9",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "domain": "business",
+   "equation": "ratio = LTV / CAC",
+   "expr": "ltv / cac",
+   "inputs": [
+    "ltv",
+    "cac"
+   ],
+   "output": "ltv_cac"
+  }
+ },
+ "ltv_calc": {
+  "family": "caps9",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "domain": "business",
+   "equation": "LTV = margin * L",
+   "expr": "monthly_margin * cust_lifetime",
+   "inputs": [
+    "monthly_margin",
+    "cust_lifetime"
+   ],
+   "output": "ltv"
+  }
+ },
+ "margin_calc": {
+  "family": "v4",
+  "has_compiled_members": true,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "finance",
+   "equation": "m = P/R",
+   "expr": "p0 / r0",
+   "inputs": [
+    "profit",
+    "revenue"
+   ],
+   "output": "rate"
+  }
+ },
+ "margin_net": {
+  "family": "v4",
+  "has_compiled_members": true,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "finance",
+   "equation": "m = Pn/R",
+   "expr": "n0 / r0",
+   "inputs": [
+    "net_profit",
+    "revenue"
+   ],
+   "output": "rate"
+  }
+ },
+ "margin_of_unit": {
+  "family": "caps10",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "expr": "ppu / price_per_unit",
+   "inputs": [
+    "ppu",
+    "price_per_unit"
+   ],
+   "output": "unit_margin"
+  }
+ },
+ "mass_from_density": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "engineering",
+   "equation": "m = rho*V",
+   "expr": "d0 * v0",
+   "inputs": [
+    "density",
+    "volume"
+   ],
+   "output": "mass"
+  }
+ },
+ "material_cost": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "engineering",
+   "equation": "Cv = pk*m",
+   "expr": "p0 * m0",
+   "inputs": [
+    "price_per_kg",
+    "mass"
+   ],
+   "output": "cost_var"
+  }
+ },
+ "mean_calc": {
+  "family": "caps9",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "domain": "statistics",
+   "equation": "mu = S / n",
+   "expr": "data_sum / data_count",
+   "inputs": [
+    "data_sum",
+    "data_count"
+   ],
+   "output": "mean"
+  }
+ },
+ "moles_from_mass": {
+  "family": "caps9",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "domain": "chemistry",
+   "equation": "n = m / M",
+   "expr": "solute_mass / molar_mass",
+   "inputs": [
+    "solute_mass",
+    "molar_mass"
+   ],
+   "output": "moles"
+  }
+ },
+ "monthly_profit_calc": {
+  "family": "caps10",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "expr": "cycle_profit * batches_month",
+   "inputs": [
+    "cycle_profit",
+    "batches_month"
+   ],
+   "output": "monthly_profit"
+  }
+ },
+ "net_profit9": {
+  "family": "caps9",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "domain": "finance",
+   "equation": "Pn = P(1-t)",
+   "expr": "profit * (1 - rate_tax)",
+   "inputs": [
+    "profit",
+    "rate_tax"
+   ],
+   "output": "net_profit"
+  }
+ },
+ "operating_cost": {
+  "family": "caps9",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "domain": "finance",
+   "equation": "Co = Cv + Ce",
+   "expr": "cost_var + cost_energy",
+   "inputs": [
+    "cost_var",
+    "cost_energy"
+   ],
+   "output": "cost_ops"
+  }
+ },
+ "paint_cost": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "engineering",
+   "equation": "C = L*pl",
+   "expr": "l0 * p0",
+   "inputs": [
+    "liters",
+    "price_per_liter"
+   ],
+   "output": "cost_var"
+  }
+ },
+ "payback_calc": {
+  "family": "caps10",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "expr": "months_count / roi",
+   "inputs": [
+    "months_count",
+    "roi"
+   ],
+   "output": "payback_months"
+  }
+ },
+ "per_unit_profit": {
+  "family": "caps9",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "domain": "finance",
+   "equation": "ppu = Pn/n",
+   "expr": "net_profit / count",
+   "inputs": [
+    "net_profit",
+    "count"
+   ],
+   "output": "ppu"
+  }
+ },
+ "potential_energy": {
+  "family": "v4",
+  "has_compiled_members": true,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "mechanics",
+   "equation": "E = m*g*h",
+   "expr": "m0 * 9.8 * h0",
+   "inputs": [
+    "mass",
+    "height"
+   ],
+   "output": "energy"
+  }
+ },
+ "power_from_i2r": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "electricity",
+   "equation": "P = I**2*R",
+   "expr": "i0**2 * r0",
+   "inputs": [
+    "current",
+    "resistance"
+   ],
+   "output": "power"
+  }
+ },
+ "power_from_vi": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "electricity",
+   "equation": "P = V*I",
+   "expr": "v0 * i0",
+   "inputs": [
+    "voltage",
+    "current"
+   ],
+   "output": "power"
+  }
+ },
+ "profit_calc": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "finance",
+   "equation": "P = R - C",
+   "expr": "r0 - c0",
+   "inputs": [
+    "revenue",
+    "cost_total"
+   ],
+   "output": "profit"
+  }
+ },
+ "revenue_calc": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "finance",
+   "equation": "R = p*n",
+   "expr": "p0 * c0",
+   "inputs": [
+    "price_per_unit",
+    "count"
+   ],
+   "output": "revenue"
+  }
+ },
+ "revenue_sale": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "finance",
+   "equation": "R = ps*n",
+   "expr": "s0 * c0",
+   "inputs": [
+    "sale_price",
+    "count"
+   ],
+   "output": "revenue"
+  }
+ },
+ "roi_calc": {
+  "family": "caps10",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "expr": "annual_profit / capex",
+   "inputs": [
+    "annual_profit",
+    "capex"
+   ],
+   "output": "roi"
+  }
+ },
+ "simple_interest": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "context_exclude": [
+    "compound"
+   ],
+   "domain": "finance",
+   "equation": "I = P*r*t",
+   "expr": "p0 * r0 * y0",
+   "inputs": [
+    "principal",
+    "rate",
+    "years"
+   ],
+   "output": "interest"
+  }
+ },
+ "speed_from_energy": {
+  "family": "v4",
+  "has_compiled_members": true,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "mechanics",
+   "equation": "v = sqrt(2*E/m)",
+   "expr": "math.sqrt(2 * e0 / m0)",
+   "inputs": [
+    "energy",
+    "mass"
+   ],
+   "output": "speed"
+  }
+ },
+ "std_calc": {
+  "family": "caps9",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "domain": "statistics",
+   "equation": "sd = sqrt(var)",
+   "expr": "variance ** 0.5",
+   "inputs": [
+    "variance"
+   ],
+   "output": "std_dev"
+  }
+ },
+ "temp_rise_to_heat": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "thermodynamics",
+   "equation": "E = m*c*dT",
+   "expr": "m0 * c0 * t0",
+   "inputs": [
+    "mass",
+    "spec_heat",
+    "temp_diff"
+   ],
+   "output": "energy"
+  }
+ },
+ "total_cost": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "finance",
+   "equation": "C = F + Cv",
+   "expr": "f0 + c0",
+   "inputs": [
+    "fixed_cost",
+    "cost_var"
+   ],
+   "output": "cost_total"
+  }
+ },
+ "total_cost9": {
+  "family": "caps9",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "domain": "finance",
+   "equation": "C = F + Co",
+   "expr": "fixed_cost + cost_ops",
+   "inputs": [
+    "fixed_cost",
+    "cost_ops"
+   ],
+   "output": "cost_total"
+  }
+ },
+ "variable_cost": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "finance",
+   "equation": "Cv = u*n",
+   "expr": "u0 * c0",
+   "inputs": [
+    "unit_cost",
+    "count"
+   ],
+   "output": "cost_var"
+  }
+ },
+ "variance_calc": {
+  "family": "caps9",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "domain": "statistics",
+   "equation": "var = SS / n",
+   "expr": "sq_dev_sum / data_count",
+   "inputs": [
+    "sq_dev_sum",
+    "data_count"
+   ],
+   "output": "variance"
+  }
+ },
+ "voltage_from_ir": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "electricity",
+   "equation": "V = I*R",
+   "expr": "i0 * r0",
+   "inputs": [
+    "current",
+    "resistance"
+   ],
+   "output": "voltage"
+  }
+ },
+ "volume_box": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "engineering",
+   "equation": "V = A*h",
+   "expr": "a0 * h0",
+   "inputs": [
+    "area",
+    "height"
+   ],
+   "output": "volume"
+  }
+ },
+ "weight_from_mass": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "engineering",
+   "equation": "W = m*g",
+   "expr": "m0 * 9.8",
+   "inputs": [
+    "mass"
+   ],
+   "output": "force"
+  }
+ },
+ "work_from_force": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "mechanics",
+   "equation": "E = F*d",
+   "expr": "f0 * d0",
+   "inputs": [
+    "force",
+    "distance"
+   ],
+   "output": "energy"
+  }
+ },
+ "work_from_heat_eff": {
+  "family": "v4",
+  "has_compiled_members": false,
+  "in_engine_base": true,
+  "spec": {
+   "domain": "thermodynamics",
+   "equation": "W = eta*Qh",
+   "expr": "eff0 * e0",
+   "inputs": [
+    "efficiency",
+    "energy"
+   ],
+   "output": "energy"
+  }
+ },
+ "yield_product": {
+  "family": "caps9",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "domain": "chemistry",
+   "equation": "np = n * y",
+   "expr": "moles * reaction_yield",
+   "inputs": [
+    "moles",
+    "reaction_yield"
+   ],
+   "output": "product_moles"
+  }
+ },
+ "z_calc": {
+  "family": "caps9",
+  "has_compiled_members": false,
+  "in_engine_base": false,
+  "spec": {
+   "domain": "statistics",
+   "equation": "z = (x-mu)/sd",
+   "expr": "(obs_value - mean) / std_dev",
+   "inputs": [
+    "obs_value",
+    "mean",
+    "std_dev"
+   ],
+   "output": "z_score"
+  }
+ }
+}

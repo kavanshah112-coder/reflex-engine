@@ -45,7 +45,9 @@ def grade(v, a, tol=2e-2):
     return abs(v - a) / abs(a) <= tol
 
 
-def build_runner(resolver_on):
+def build_runner(resolver_on, engine_mode="lexpatch"):
+    if engine_mode == "pack":
+        return _build_pack_runner(resolver_on)
     from v11 import lexpatch11
     lexpatch11.apply()
     from v11.semparse11 import parse as sp
@@ -122,6 +124,56 @@ def build_runner(resolver_on):
     return run_one
 
 
+def _build_pack_runner(resolver_on):
+    """Route through the pack-driven Engine (reflex/engine.py) —
+    identical recipe, tables from packs/physics instead of hardcoded
+    state."""
+    sys.path.insert(0, str(HERE))
+    from reflex.engine import Engine
+    resolver = None
+    if resolver_on:
+        from v5 import llm5
+        llm5.activate_best(warm=True)
+        def resolver(query, fact, state):     # noqa: F811
+            from v4 import llm_bridge as B4
+            cands = fact.get("ambiguity") or []
+            names = {e: state.graph.entities[e]["name"] for e in cands
+                     if e in state.graph.entities}
+            prompt = (f"QUERY: {query}\nA quantity ({fact['concept']}"
+                      f" = {fact['value']} {fact.get('unit', '')}, "
+                      f"span \"{fact.get('span', '')[:80]}\") has an "
+                      f"ambiguous entity. Candidates: {names}. Which "
+                      f"entity id does it belong to? Do NOT solve the "
+                      f"problem. Reply ONLY: "
+                      f"{{\"entity\": \"<id>\"}}")
+            try:
+                out = B4.generate_json(prompt, max_tokens=40)
+            except TypeError:
+                out = B4.generate_json(prompt)
+            if isinstance(out, dict):
+                j = out.get("json") or {}
+                e = j.get("entity")
+                if e is None and out.get("raw"):
+                    import re as _re
+                    m = _re.search(r'"entity"\s*:\s*"(E\d+)"',
+                                   str(out["raw"]))
+                    e = m.group(1) if m else None
+                return e
+            return None
+
+    eng = Engine(resolver=resolver, redundancy=True,
+                 use_breeder=True)
+
+    def run_one(item):
+        r = eng.run_query(item["q"], item["id"],
+                          available=item.get("available"))
+        r.pop("_state", None)
+        r.pop("_info", None)
+        return r
+
+    return run_one
+
+
 def run_suite(name, run_one):
     items = json.loads((BAT / f"{name}.json").read_text(
         encoding="utf-8"))
@@ -185,8 +237,10 @@ def main():
     ap.add_argument("--suite", default=None)
     ap.add_argument("--resolver", default="on",
                     choices=["on", "off"])
+    ap.add_argument("--engine", default="lexpatch",
+                    choices=["lexpatch", "pack"])
     a = ap.parse_args()
-    run_one = build_runner(a.resolver == "on")
+    run_one = build_runner(a.resolver == "on", engine_mode=a.engine)
     suites = [a.suite] if a.suite else SUITES
     verdict = {}
     for name in suites:

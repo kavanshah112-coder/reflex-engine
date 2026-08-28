@@ -6,7 +6,7 @@
   "llm_step_calls": 0,
   "item_diffs": [],
   "ok": true,
-  "wall_s": 0.2
+  "wall_s": 0.1
  },
  "adv11_sealed": {
   "n": 122,
@@ -15,7 +15,7 @@
   "llm_step_calls": 0,
   "item_diffs": [],
   "ok": true,
-  "wall_s": 48.9
+  "wall_s": 38.8
  },
  "parse11_sealed": {
   "n": 1000,
@@ -24,7 +24,7 @@
   "llm_step_calls": 0,
   "item_diffs": [],
   "ok": true,
-  "wall_s": 1.1
+  "wall_s": 1.0
  },
  "parse11_oof": {
   "n": 240,
@@ -42,13 +42,6 @@
   "llm_step_calls": 0,
   "item_diffs": [],
   "ok": true,
-  "wall_s": 0.9
- },
- "energy": {
-  "n": 196,
-  "acc": 1.0,
-  "j_query": 0.4027626607064611,
-  "bound": 0.61,
-  "ok": true
+  "wall_s": 0.8
  }
 }

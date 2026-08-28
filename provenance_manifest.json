@@ -6,24 +6,76 @@
   "prior_version_verification": {
    "method": "scratchpad verify_arc.py: tag exists + working tree clean + repo-vs-snapshot recursive byte compare (excluding .git); full verdict in arc_verification.json (copied below per version)",
    "verified_on": "2026-08-28",
-   "v0.1": {"tag": "c60eaad09", "tree_clean": true, "snapshot": "byte-identical"},
-   "v0.2": {"tag": "030231cd8", "tree_clean": true, "snapshot": "CREATED 2026-08-28 (pre-existing gap: reflex-poc-v0.2-frozen never existed; the snapshot practice began at v0.3). Built as a byte-copy of the 186 working-tree files listed by tag v0.2-final; verified 0 mismatches vs working tree; tag content identical modulo the repo's on-disk line-ending form. Live repo HEAD 33cbf1983 = v0.2-final + one post-final housekeeping commit adding two rendered PDF reports (results/Adaptive_Reflex_POC_v0.1_Report.pdf, results/Reflex_Graph_vs_Cascade_v0.2_Report.pdf); those two PDFs are intentionally absent from the snapshot (outside the tagged tree) and are the expected repo-vs-snapshot difference for future verifications."},
-   "v0.3": {"tag": "888f71812", "tree_clean": true, "snapshot": "byte-identical"},
-   "v0.4": {"tag": "b2a725103", "tree_clean": true, "snapshot": "byte-identical"},
-   "v0.5": {"tag": "179603305", "tree_clean": true, "snapshot": "byte-identical"},
-   "v0.6": {"tag": "cff27cb87", "tree_clean": true, "snapshot": "byte-identical"},
-   "v0.7": {"tag": "ab66bb028", "tree_clean": true, "snapshot": "byte-identical"},
-   "v0.8": {"tag": "0dd743a68", "tree_clean": true, "snapshot": "byte-identical"},
-   "v0.9": {"tag": "3423434a6", "tree_clean": true, "snapshot": "byte-identical"},
-   "v0.10": {"tag": "54f05fbba", "tree_clean": true, "snapshot": "byte-identical"},
-   "v0.11": {"tag": "ec56b64a0", "tree_clean": true, "snapshot": "byte-identical"}
+   "v0.1": {
+    "tag": "c60eaad09",
+    "tree_clean": true,
+    "snapshot": "byte-identical"
+   },
+   "v0.2": {
+    "tag": "030231cd8",
+    "tree_clean": true,
+    "snapshot": "CREATED 2026-08-28 (pre-existing gap: reflex-poc-v0.2-frozen never existed; the snapshot practice began at v0.3). Built as a byte-copy of the 186 working-tree files listed by tag v0.2-final; verified 0 mismatches vs working tree; tag content identical modulo the repo's on-disk line-ending form. Live repo HEAD 33cbf1983 = v0.2-final + one post-final housekeeping commit adding two rendered PDF reports (results/Adaptive_Reflex_POC_v0.1_Report.pdf, results/Reflex_Graph_vs_Cascade_v0.2_Report.pdf); those two PDFs are intentionally absent from the snapshot (outside the tagged tree) and are the expected repo-vs-snapshot difference for future verifications."
+   },
+   "v0.3": {
+    "tag": "888f71812",
+    "tree_clean": true,
+    "snapshot": "byte-identical"
+   },
+   "v0.4": {
+    "tag": "b2a725103",
+    "tree_clean": true,
+    "snapshot": "byte-identical"
+   },
+   "v0.5": {
+    "tag": "179603305",
+    "tree_clean": true,
+    "snapshot": "byte-identical"
+   },
+   "v0.6": {
+    "tag": "cff27cb87",
+    "tree_clean": true,
+    "snapshot": "byte-identical"
+   },
+   "v0.7": {
+    "tag": "ab66bb028",
+    "tree_clean": true,
+    "snapshot": "byte-identical"
+   },
+   "v0.8": {
+    "tag": "0dd743a68",
+    "tree_clean": true,
+    "snapshot": "byte-identical"
+   },
+   "v0.9": {
+    "tag": "3423434a6",
+    "tree_clean": true,
+    "snapshot": "byte-identical"
+   },
+   "v0.10": {
+    "tag": "54f05fbba",
+    "tree_clean": true,
+    "snapshot": "byte-identical"
+   },
+   "v0.11": {
+    "tag": "ec56b64a0",
+    "tree_clean": true,
+    "snapshot": "byte-identical"
+   }
   },
-  "phase": "P1 skeleton",
+  "phase": "P2 complete (v1.0-parity)",
   "p1_checkpoint": "PASS 2026-08-28: gateway.ask() end-to-end with metering via ollama (llama3.1:latest), openai_compat (ollama /v1), anthropic_bridge (enqueue->service->replay); tests/test_p1_skeleton.py",
   "environment": {
    "local_model": "llama3.1:latest (8B, ollama digest 46e0c10c039e)",
    "api_models": "claude-haiku-4-5 / claude-sonnet-5 via deferred-replay bridge only (workspace API keys revoked); calls/tokens only, never on the joule axis"
   },
-  "sealed_sets": "NONE exist at plan freeze. Generators must be committed (hashes recorded here) before any sealed item is generated."
+  "sealed_sets": "NONE exist at plan freeze. Generators must be committed (hashes recorded here) before any sealed item is generated.",
+  "e0_parity": {
+   "verified": "2026-08-28",
+   "lexpatch_path": "all 5 suites zero item-diffs vs v0.11 C10 rows; wrong-fire 0.000; cplx10 196/196 @ 0 LLM calls; invariants 8/8",
+   "pack_path": "identical battery result via packs/physics + loader (--engine pack); tests/test_pack_equality.py: 13/13 structures byte-identical between lexpatch and pack injection",
+   "energy": "0.403 J/query @ 100% on cplx10_sealed (bound 0.61; V0.5 protocol, ambient-calibrated)",
+   "gateway": "CERTIFIED_REFLEX / LLM_ESCALATED / ABSTAINED all verified (tests/test_gateway.py)",
+   "engine_inline_residue": "packs/physics/README.md section: 4 classes, E1 violation-log candidates"
+  }
  }
 }
