@@ -221,19 +221,32 @@ def static_gates(c, inj):
                            [x.lower() for x in v] and k != p["kind"]]
             if extra_owner:
                 return False, f"noun_conflict:{extra_owner[0]}"
+            own = [x.lower() for x in
+                   (list(W.KINDS9[p["kind"]][2] or []) +
+                    W._EXTRA_NOUNS.get(p["kind"], []))]
+            if p["noun"].lower() in own:
+                return False, "redundant"
             return True, "ok"
         if t == "adj_map":
             if p["kind"] not in W.KINDS9:
                 return False, "kind_unknown"
-            if p["adj"] in W._ADJ and W._ADJ[p["adj"]] != p["kind"]:
-                return False, f"adj_conflict:{W._ADJ[p['adj']]}"
+            if p["adj"] in W._ADJ:
+                return (False, "redundant"
+                        if W._ADJ[p["adj"]] == p["kind"] else
+                        f"adj_conflict:{W._ADJ[p['adj']]}")
+            if not _NOUN_RE.match(p["adj"].lower()):
+                return False, "adj_malformed"
             return True, "ok"
         if t == "unit_index":
             if p["kind"] not in W.KINDS9:
                 return False, "kind_unknown"
             prev = W._UNIT_IDX.get(p["unit"])
-            if prev and p["kind"] not in prev:
-                return False, f"unit_conflict:{prev}"
+            if prev is not None:
+                # existing mapping: either a conflict or a redundant
+                # restatement; narrowing an ambiguous entry is a
+                # behavior change and needs its own future type
+                return (False, "redundant" if prev == [p["kind"]]
+                        else f"unit_conflict:{prev}")
             return True, "ok"
         if t == "conversion":
             if p["concept"] not in W.KINDS9:
@@ -258,6 +271,16 @@ def static_gates(c, inj):
             for n in (p.get("nouns") or []):
                 if n.lower() in owned:
                     return False, f"noun_conflict:{owned[n.lower()]}"
+            # an alias that is already an indexed unit token would
+            # inject ambiguity into every query using that unit (the
+            # 'brick_mass aliased kg' failure from the demo)
+            for a2 in (p.get("aliases") or []):
+                al = str(a2).strip().lower()
+                if al in W._UNIT_IDX or al in W.UNIT_WORDS:
+                    return False, f"alias_unit_collision:{al}"
+            u2 = str(p.get("unit") or "").strip().lower()
+            if u2 and u2 in W._UNIT_IDX and len(u2) <= 3:
+                return False, f"canonical_unit_collision:{u2}"
             return True, "ok"
         if t == "new_cap":
             if not _NAME_RE.match(p["name"]):
@@ -334,11 +357,11 @@ def _expr_dim(node, dims):
 
 
 # ------------------------------------------------------------ producers
-MINER_PROMPT = """You are extracting DOMAIN KNOWLEDGE from a query an \
-engine could not parse. Do NOT solve the problem.
+MINER_PROMPT = """You are extracting DOMAIN KNOWLEDGE from a query a \
+deterministic engine could not fully handle. Do NOT solve the problem.
 
 QUERY: {query}
-
+{engine_report}
 The engine already knows these quantity kinds (name: canonical unit):
 {kinds_list}
 
@@ -358,7 +381,13 @@ Emit STRICT JSON only, no prose:
 
 Rules: reference existing kinds by EXACT name; propose new_kinds only
 if no existing kind fits; every noun/unit must literally appear in the
-query; empty lists are fine. JSON only."""
+query; propose ONLY what fills the reported gap — do NOT restate
+mappings the engine already extracted successfully; empty lists are
+fine. If the ASKED-FOR quantity itself is not an existing kind,
+propose it as a new_kind AND a new_cap computing it from existing
+kinds. dim is exponents over [mass,length,time,current,temperature,
+count,money] (e.g. speed=[0,1,-1,0,0,0,0]; money/count are the last
+two). JSON only."""
 
 
 class Miner:
@@ -368,11 +397,31 @@ class Miner:
         self.adapter = adapter
         self.store = store
 
-    def mine(self, query, inj, max_tokens=700):
+    def mine(self, query, inj, engine_record=None, max_tokens=700):
         kinds_list = "\n".join(
             f"  {k}: {inj.U10.KINDS10[k][1] or '(count)'}"
             for k in sorted(inj.U10.KINDS10))
+        report = ""
+        if engine_record is not None:
+            st = engine_record.get("_state")
+            facts = []
+            if st is not None:
+                facts = [f"{f['concept']}={f['value']} "
+                         f"{f.get('unit') or ''}".strip()
+                         for f in st.facts]
+            tgt = (engine_record.get("_info") or {}).get(
+                "target_concept")
+            report = (
+                "\nENGINE REPORT (why it failed):\n"
+                f"  facts it extracted: {facts or 'NONE'}\n"
+                f"  target concept it identified: "
+                f"{tgt or 'UNKNOWN'}\n"
+                f"  failure: "
+                f"{engine_record.get('abstain_reason')}\n"
+                "  The gap is whatever the query mentions that the "
+                "report above is missing.\n")
         prompt = MINER_PROMPT.format(query=query,
+                                     engine_report=report,
                                      kinds_list=kinds_list)
         c = self.adapter.complete(prompt, max_tokens=max_tokens)
         if c.pending:
@@ -430,6 +479,45 @@ class BreederProducer:
         return out
 
 
+# ------------------------------------------------- shadow evaluation
+def make_shadow_eval(engine, grade):
+    """Canonical shadow evaluator (used by demo AND experiment arms):
+    a shadow confirmation requires ZERO new wrong answers AND ZERO
+    coverage regression (baseline-correct items that stop being
+    correct). The regression clause is a P3 design decision from the
+    loop-close demo: candidates that silently degrade parsing (e.g. a
+    kind aliased to an existing unit) caused abstentions, which a
+    wrong-answers-only check cannot see."""
+    baselines = {}
+
+    def shadow_eval(batch, cand):
+        bid = id(batch)
+        if bid not in baselines:
+            base = {}
+            for t in batch:
+                r = engine.run_query(t["q"], f"shb_{t['id']}")
+                v = r.get("numeric_value")
+                base[t["id"]] = (v, grade(v, t.get("answer")))
+            baselines[bid] = base
+        base = baselines[bid]
+        wrong = lost = lift = 0
+        for t in batch:
+            r = engine.run_query(t["q"], f"shc_{t['id']}")
+            v = r.get("numeric_value")
+            ok = grade(v, t.get("answer"))
+            bv, bok = base[t["id"]]
+            if v is not None and not ok and (bv is None or bok):
+                wrong += 1
+            if bok and not ok:
+                lost += 1
+            if ok and not bok:
+                lift += 1
+        return {"wrong": wrong + lost, "new_wrong": wrong,
+                "lost_coverage": lost, "lift": lift}
+
+    return shadow_eval
+
+
 # ------------------------------------------------------------- gauntlet
 class Gauntlet:
     """static gates -> probation (shadow batches) -> ACTIVE."""
@@ -451,23 +539,74 @@ class Gauntlet:
             ok, why = static_gates(c, self.inj)
             c["history"].append({"gate": why, "t": time.time()})
             c["status"] = "PROBATION" if ok else "GATE_REJECTED"
+        # second pass: a new_cap rejected only for kind_unknown may
+        # depend on a sibling new_kind that just entered probation —
+        # re-gate with the sibling(s) tentatively applied and couple
+        # them via `requires` (dependents activate only after their
+        # requirements are ACTIVE)
+        kinds_in_prob = {c["payload"]["name"]: c for c in cands
+                         if c["type"] == "new_kind"
+                         and c["status"] == "PROBATION"}
+        for c in cands:
+            if c["type"] != "new_cap" or \
+                    c["status"] != "GATE_REJECTED" or \
+                    c["history"][-1]["gate"] != "kind_unknown":
+                continue
+            need = [k for k in (c["payload"]["inputs"] +
+                                [c["payload"]["output"]])
+                    if k not in self.inj.U10.KINDS10]
+            deps = [kinds_in_prob[k] for k in need
+                    if k in kinds_in_prob]
+            if len(deps) != len(need):
+                continue
+            undos = [self.inj.apply(d) for d in deps]
+            try:
+                ok, why = static_gates(c, self.inj)
+            finally:
+                for u in reversed(undos):
+                    self.inj.revert(u)
+            c["history"].append({"gate_with_deps": why,
+                                 "t": time.time()})
+            if ok:
+                c["status"] = "PROBATION"
+                c["requires"] = [d["cid"] for d in deps]
         self.store.save()
 
     def probation_round(self, shadow_batch):
         """One shadow batch over all PROBATION candidates, each
-        evaluated in isolation (apply -> eval -> revert)."""
+        evaluated in isolation (apply -> eval -> revert). Candidates
+        with `requires` get their requirements applied for the eval;
+        requirements (new_kind) are processed before dependents, so a
+        coupled pair promotes in the same round."""
         results = {}
-        for c in self.store.by_status("PROBATION"):
+        cohort = sorted(self.store.by_status("PROBATION"),
+                        key=lambda c: (c["type"] != "new_kind",
+                                       c["created"]))
+        for c in cohort:
+            reqs = [self.store.rows[cid]
+                    for cid in c.get("requires", [])]
+            if any(r["status"] in ("REJECTED", "GATE_REJECTED")
+                   for r in reqs):
+                c["status"] = "REJECTED"
+                c["history"].append({"requires_failed": True,
+                                     "t": time.time()})
+                results[c["cid"]] = (c["status"], None)
+                continue
+            dep_undos = [self.inj.apply(r) for r in reqs
+                         if r["status"] != "ACTIVE"]
             undo = self.inj.apply(c)
             try:
                 r = self.shadow_eval(shadow_batch, c)
             finally:
                 self.inj.revert(undo)
+                for u in reversed(dep_undos):
+                    self.inj.revert(u)
             ok = r["wrong"] == 0
             c["history"].append({"shadow": r, "t": time.time()})
             if ok:
                 c["confirms"] += 1
-                if c["confirms"] >= N_PROBATION:
+                if c["confirms"] >= N_PROBATION and all(
+                        x["status"] == "ACTIVE" for x in reqs):
                     c["status"] = "ACTIVE"
                     self.active_undo[c["cid"]] = self.inj.apply(c)
             else:
@@ -488,9 +627,13 @@ class Gauntlet:
     def write_overlay(self, pack_dir):
         """Persist ACTIVE candidates to the pack's acquired.json."""
         p = Path(pack_dir) / "acquired.json"
-        rows = [{k: c[k] for k in ("cid", "type", "payload",
-                                   "source", "authorship",
-                                   "confirms")}
-                for c in self.store.by_status("ACTIVE")]
+        rows = [{**{k: c[k] for k in ("cid", "type", "payload",
+                                      "source", "authorship",
+                                      "confirms")},
+                 "requires": c.get("requires", [])}
+                for c in sorted(self.store.by_status("ACTIVE"),
+                                key=lambda c:
+                                (c["type"] != "new_kind",
+                                 c["created"]))]
         p.write_text(json.dumps(rows, indent=1), encoding="utf-8")
         return len(rows)

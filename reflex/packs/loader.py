@@ -39,6 +39,13 @@ EXTRA_CANONICAL = []
 # exactly this dict after any fresh index build.
 UNIT_INDEX_EXTRAS = {}
 
+# kind names present in the loaded pack's base tables. Anything in
+# KINDS10 beyond this set was ACQUIRED at runtime; the engine's
+# target-recovery step (reflex/engine.py) consults only acquired
+# kinds, so base-pack behavior — and therefore E0 parity — is
+# untouched by construction.
+BASE_KINDS = set()
+
 
 def _load(pack_dir):
     p = Path(pack_dir)
@@ -132,6 +139,8 @@ def apply(pack_dir):
              for k, v in P["kinds"].items()}
     U10.KINDS10.clear()
     U10.KINDS10.update(kinds)
+    BASE_KINDS.clear()
+    BASE_KINDS.update(kinds)
     # worker view (module-global; semparse11 holds the same instance)
     W.KINDS9.clear()
     W.KINDS9.update(kinds)

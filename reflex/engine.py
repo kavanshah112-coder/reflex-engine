@@ -66,6 +66,43 @@ class Engine:
                             abs(f["value"] - v) < 1e-9:
                         f["concept"] = c
                         rec["reflex_parse"] = True
+        # acquired-kind target recovery: the vendored target-namer
+        # cannot see single-word nouns of kinds added after pack load
+        # (tc_hits requires multiword phrases; the v9 fallback tables
+        # are import-frozen). Fires ONLY for acquired kinds and ONLY
+        # when the target is unknown, so base-pack behavior and E0
+        # parity are untouched by construction.
+        import re as _re
+        from .packs.loader import BASE_KINDS
+        import v10.universe10 as _U10
+        acquired = {k: _U10.KINDS10[k] for k in _U10.KINDS10
+                    if k not in BASE_KINDS}
+        if acquired:
+            segs = [s for s in _re.split(r"[.?!]", query)
+                    if s.strip()]
+            askl = (segs[-1] if segs else query).lower()
+            toks = set(_re.findall(r"[a-z_]+", askl))
+            hits = []
+            for k, spec in acquired.items():
+                nouns = [k] + [n.lower() for n in (spec[2] or [])]
+                for n in nouns:
+                    if (" " in n and n in askl) or n in toks:
+                        hits.append(k)
+                        break
+            tgt = info.get("target_concept")
+            if len(set(hits)) == 1:
+                if tgt in (None, "UNKNOWN"):
+                    info["target_concept"] = hits[0]
+                else:
+                    # wrong-target override: the base namer picked a
+                    # kind whose value is ALREADY a given input (the
+                    # 'asking for what you were told' signal the arc
+                    # treats as suspicious) while an acquired kind's
+                    # noun literally appears in the ask
+                    have = {f["concept"] for f in st.facts
+                            if f.get("value") is not None}
+                    if tgt in have:
+                        info["target_concept"] = hits[0]
         ti = time.perf_counter()
         self._certify(st)
         rec["integrity_ms"] = (time.perf_counter() - ti) * 1e3

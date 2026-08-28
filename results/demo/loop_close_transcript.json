@@ -1,0 +1,2128 @@
+{
+ "started": "2026-08-28 13:57:24",
+ "stages": [
+  {
+   "stage": "escalate+mine",
+   "id": "p11o00000",
+   "q": "Nine hundred kilograms of rolling stock at a dozen metres per second \u2014 kinetic energy?",
+   "gateway_status": "LLM_ESCALATED",
+   "candidates": [
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "energy",
+      "noun": "kinetic energy"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "kilograms",
+      "kind": "mass"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "metres per second",
+      "kind": "speed"
+     }
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "kinetic_energy",
+      "dim": [
+       1,
+       2,
+       -2,
+       0,
+       0,
+       0,
+       0
+      ],
+      "unit": "Joule",
+      "nouns": [
+       "kinetic energy"
+      ],
+      "aliases": []
+     }
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "kinetic_energy",
+      "inputs": [
+       "mass",
+       "speed^2"
+      ],
+      "output": "energy",
+      "expr": "(0,1,-2,0,0,0,0) * mass * speed^2"
+     }
+    }
+   ]
+  },
+  {
+   "stage": "escalate+mine",
+   "id": "p11o00001",
+   "q": "Take a 2-tonne flywheel doing 10 m/s; how many joules of motion does it hold?",
+   "gateway_status": "LLM_ESCALATED",
+   "candidates": [
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "energy",
+      "noun": "joules"
+     }
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "kinetic_energy",
+      "dim": [
+       0,
+       1,
+       -2,
+       0,
+       0,
+       0,
+       0
+      ],
+      "unit": "joule",
+      "nouns": [
+       "flywheel"
+      ],
+      "aliases": []
+     }
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "kinetic_energy",
+      "inputs": [
+       "mass",
+       "speed^2"
+      ],
+      "output": "energy",
+      "expr": "(0,1,-2,0,0,0,0) * (1,0,-2,0,0,0,0)"
+     }
+    }
+   ]
+  },
+  {
+   "stage": "escalate+mine",
+   "id": "p11o00003",
+   "q": "An 11-ohm coil across 110 volts: the current, please.",
+   "gateway_status": "LLM_ESCALATED",
+   "candidates": [
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "current",
+      "noun": "coil"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "ohm",
+      "kind": "resistance"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "volt",
+      "kind": "voltage"
+     }
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "power",
+      "dim": [
+       0,
+       1,
+       -3,
+       0,
+       0,
+       0,
+       0
+      ],
+      "unit": "W",
+      "nouns": [
+       "coil"
+      ],
+      "aliases": []
+     }
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "compute_power",
+      "inputs": [
+       "voltage",
+       "current"
+      ],
+      "output": "power",
+      "expr": "voltage * current"
+     }
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "compute_current",
+      "inputs": [
+       "voltage",
+       "resistance"
+      ],
+      "output": "current",
+      "expr": "voltage / resistance"
+     }
+    }
+   ]
+  },
+  {
+   "stage": "escalate+mine",
+   "id": "p11o00004",
+   "q": "Two hundred fifty widgets at nine dollars each - the take?",
+   "gateway_status": "LLM_ESCALATED",
+   "candidates": [
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "count",
+      "noun": "widgets"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "$",
+      "kind": "cost_total"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "units",
+      "kind": "count"
+     }
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "widget_count",
+      "dim": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0
+      ],
+      "unit": "count/units",
+      "nouns": [
+       "widgets"
+      ],
+      "aliases": []
+     }
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "widget_count",
+      "inputs": [
+       "250.0",
+       "9.0 dollars"
+      ],
+      "output": "widget_count",
+      "expr": "(250.0 * 9.0 dollars) / count"
+     }
+    }
+   ]
+  },
+  {
+   "stage": "escalate+mine",
+   "id": "p11o00005",
+   "q": "A brick of 2 by 1 by 0.1 metres in 7800 kg/m^3 steel weighs what?",
+   "gateway_status": "LLM_ESCALATED",
+   "candidates": [
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "volume",
+      "noun": "brick"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "meters",
+      "kind": "length"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "cubic meters",
+      "kind": "volume"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "kilograms",
+      "kind": "mass"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "cubic meters",
+      "kind": "volume"
+     }
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "brick_volume",
+      "dim": [
+       0,
+       3,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "unit": "m^3",
+      "nouns": [
+       "brick"
+      ],
+      "aliases": []
+     }
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "brick_mass",
+      "dim": [
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "unit": "kg",
+      "nouns": [
+       "brick"
+      ],
+      "aliases": []
+     }
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "brick_weight",
+      "inputs": [
+       "volume",
+       "mass",
+       "density"
+      ],
+      "output": "mass",
+      "expr": "volume * density"
+     }
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "calculate_brick_weight",
+      "inputs": [
+       "brick_volume",
+       "brick_mass",
+       "density"
+      ],
+      "output": "mass",
+      "expr": "brick_volume * density"
+     }
+    }
+   ]
+  },
+  {
+   "stage": "escalate+mine",
+   "id": "p11o00006",
+   "q": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+   "gateway_status": "LLM_ESCALATED",
+   "candidates": [
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "current",
+      "noun": "current"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "ohms",
+      "kind": "resistance"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "V",
+      "kind": "voltage"
+     }
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "power",
+      "dim": [
+       0,
+       2,
+       -3,
+       0,
+       0,
+       1,
+       0
+      ],
+      "unit": "W",
+      "nouns": [
+       "current",
+       "voltage"
+      ],
+      "aliases": [
+       "watts"
+      ]
+     }
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "power_from_voltage_and_current",
+      "inputs": [
+       "voltage",
+       "current"
+      ],
+      "output": "power",
+      "expr": "voltage * current"
+     }
+    }
+   ]
+  },
+  {
+   "stage": "escalate+mine",
+   "id": "p11o00013",
+   "q": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+   "gateway_status": "LLM_ESCALATED",
+   "candidates": [
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "current",
+      "noun": "current"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "ohms",
+      "kind": "resistance"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "V",
+      "kind": "voltage"
+     }
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "power",
+      "dim": [
+       0,
+       2,
+       -3,
+       0,
+       0,
+       1,
+       0
+      ],
+      "unit": "W",
+      "nouns": [
+       "current",
+       "voltage"
+      ],
+      "aliases": [
+       "watts"
+      ]
+     }
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "power_from_voltage_and_current",
+      "inputs": [
+       "voltage",
+       "current"
+      ],
+      "output": "power",
+      "expr": "voltage * current"
+     }
+    }
+   ]
+  },
+  {
+   "stage": "escalate+mine",
+   "id": "p11o00016",
+   "q": "For an element on 48 V \u2014 its resistance being six ohms \u2014 what current flows?",
+   "gateway_status": "LLM_ESCALATED",
+   "candidates": [
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "current",
+      "noun": "current"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "ohms",
+      "kind": "resistance"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "V",
+      "kind": "voltage"
+     }
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "power",
+      "dim": [
+       0,
+       1,
+       -3,
+       0,
+       0,
+       0,
+       0
+      ],
+      "unit": "W",
+      "nouns": [
+       "current",
+       "voltage"
+      ],
+      "aliases": [
+       "watts"
+      ]
+     }
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "power_from_current_and_voltage",
+      "inputs": [
+       "current",
+       "voltage"
+      ],
+      "output": "power",
+      "expr": "mul(current, voltage)"
+     }
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "calculate_current",
+      "inputs": [
+       "voltage",
+       "resistance"
+      ],
+      "output": "current",
+      "expr": "div(voltage, resistance)"
+     }
+    }
+   ]
+  },
+  {
+   "stage": "escalate+mine",
+   "id": "p11o00022",
+   "q": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+   "gateway_status": "LLM_ESCALATED",
+   "candidates": [
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "current",
+      "noun": "current"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "ohms",
+      "kind": "resistance"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "V",
+      "kind": "voltage"
+     }
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "power",
+      "dim": [
+       0,
+       2,
+       -3,
+       0,
+       0,
+       1,
+       0
+      ],
+      "unit": "W",
+      "nouns": [
+       "current",
+       "voltage"
+      ],
+      "aliases": [
+       "watts"
+      ]
+     }
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "power_from_voltage_and_current",
+      "inputs": [
+       "voltage",
+       "current"
+      ],
+      "output": "power",
+      "expr": "voltage * current"
+     }
+    }
+   ]
+  },
+  {
+   "stage": "escalate+mine",
+   "id": "p11o00024",
+   "q": "For an element on 230 V \u2014 its resistance being sixteen ohms \u2014 what current flows?",
+   "gateway_status": "LLM_ESCALATED",
+   "candidates": [
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "current",
+      "noun": "current"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "ohms",
+      "kind": "resistance"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "V",
+      "kind": "voltage"
+     }
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "power",
+      "dim": [
+       0,
+       2,
+       -3,
+       1,
+       0,
+       0,
+       0
+      ],
+      "unit": "W",
+      "nouns": [
+       "current",
+       "voltage"
+      ],
+      "aliases": [
+       "watts"
+      ]
+     }
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "power_from_current_and_voltage",
+      "inputs": [
+       "current",
+       "voltage"
+      ],
+      "output": "power",
+      "expr": "input1 * input2"
+     }
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "calculate_current",
+      "inputs": [
+       "voltage",
+       "resistance"
+      ],
+      "output": "current",
+      "expr": "input1 / input2"
+     }
+    }
+   ]
+  },
+  {
+   "stage": "escalate+mine",
+   "id": "p11o00027",
+   "q": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+   "gateway_status": "LLM_ESCALATED",
+   "candidates": [
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "current",
+      "noun": "current"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "ohms",
+      "kind": "resistance"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "V",
+      "kind": "voltage"
+     }
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "power",
+      "dim": [
+       0,
+       2,
+       -3,
+       1,
+       0,
+       0,
+       0
+      ],
+      "unit": "W",
+      "nouns": [
+       "current",
+       "voltage"
+      ],
+      "aliases": [
+       "watts"
+      ]
+     }
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "power",
+      "inputs": [
+       "current",
+       "voltage"
+      ],
+      "output": "power",
+      "expr": "current * voltage"
+     }
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "electric_current",
+      "inputs": [
+       "voltage",
+       "resistance"
+      ],
+      "output": "current",
+      "expr": "voltage / resistance"
+     }
+    }
+   ]
+  },
+  {
+   "stage": "escalate+mine",
+   "id": "p11o00033",
+   "q": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+   "gateway_status": "LLM_ESCALATED",
+   "candidates": [
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "current",
+      "noun": "current"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "ohms",
+      "kind": "resistance"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "V",
+      "kind": "voltage"
+     }
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "power",
+      "dim": [
+       0,
+       1,
+       -3,
+       0,
+       0,
+       0,
+       0
+      ],
+      "unit": "W",
+      "nouns": [
+       "current",
+       "voltage"
+      ],
+      "aliases": [
+       "watts"
+      ]
+     }
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "power",
+      "inputs": [
+       "current",
+       "voltage"
+      ],
+      "output": "power",
+      "expr": "current * voltage"
+     }
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "electric_current",
+      "inputs": [
+       "voltage",
+       "resistance"
+      ],
+      "output": "current",
+      "expr": "voltage / resistance"
+     }
+    }
+   ]
+  },
+  {
+   "stage": "gates",
+   "probation": [
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "energy",
+      "noun": "kinetic energy"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "metres per second",
+      "kind": "speed"
+     }
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "kinetic_energy",
+      "dim": [
+       1,
+       2,
+       -2,
+       0,
+       0,
+       0,
+       0
+      ],
+      "unit": "Joule",
+      "nouns": [
+       "kinetic energy"
+      ],
+      "aliases": []
+     }
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "kinetic_energy",
+      "dim": [
+       0,
+       1,
+       -2,
+       0,
+       0,
+       0,
+       0
+      ],
+      "unit": "joule",
+      "nouns": [
+       "flywheel"
+      ],
+      "aliases": []
+     }
+    },
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "current",
+      "noun": "coil"
+     }
+    },
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "count",
+      "noun": "widgets"
+     }
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "widget_count",
+      "dim": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0
+      ],
+      "unit": "count/units",
+      "nouns": [
+       "widgets"
+      ],
+      "aliases": []
+     }
+    },
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "volume",
+      "noun": "brick"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "cubic meters",
+      "kind": "volume"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "cubic meters",
+      "kind": "volume"
+     }
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "brick_weight",
+      "inputs": [
+       "volume",
+       "mass",
+       "density"
+      ],
+      "output": "mass",
+      "expr": "volume * density"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "V",
+      "kind": "voltage"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "V",
+      "kind": "voltage"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "V",
+      "kind": "voltage"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "V",
+      "kind": "voltage"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "V",
+      "kind": "voltage"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "V",
+      "kind": "voltage"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "V",
+      "kind": "voltage"
+     }
+    }
+   ],
+   "rejected": [
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "kilograms",
+      "kind": "mass"
+     },
+     "why": "redundant"
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "kinetic_energy",
+      "inputs": [
+       "mass",
+       "speed^2"
+      ],
+      "output": "energy",
+      "expr": "(0,1,-2,0,0,0,0) * mass * speed^2"
+     },
+     "why": "name_exists"
+    },
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "energy",
+      "noun": "joules"
+     },
+     "why": "redundant"
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "kinetic_energy",
+      "inputs": [
+       "mass",
+       "speed^2"
+      ],
+      "output": "energy",
+      "expr": "(0,1,-2,0,0,0,0) * (1,0,-2,0,0,0,0)"
+     },
+     "why": "name_exists"
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "ohm",
+      "kind": "resistance"
+     },
+     "why": "redundant"
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "volt",
+      "kind": "voltage"
+     },
+     "why": "redundant"
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "power",
+      "dim": [
+       0,
+       1,
+       -3,
+       0,
+       0,
+       0,
+       0
+      ],
+      "unit": "W",
+      "nouns": [
+       "coil"
+      ],
+      "aliases": []
+     },
+     "why": "name_exists"
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "compute_power",
+      "inputs": [
+       "voltage",
+       "current"
+      ],
+      "output": "power",
+      "expr": "voltage * current"
+     },
+     "why": "duplicate_of:power_from_vi"
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "compute_current",
+      "inputs": [
+       "voltage",
+       "resistance"
+      ],
+      "output": "current",
+      "expr": "voltage / resistance"
+     },
+     "why": "duplicate_of:current_from_vr"
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "$",
+      "kind": "cost_total"
+     },
+     "why": "unit_conflict:['ad_spend', 'annual_profit', 'capex', 'cost_energy', 'cost_ops', 'cost_total', 'cost_var', 'cycle_profit', 'final_amount', 'fixed_cost', 'interest', 'monthly_margin', 'monthly_profit', 'net_profit', 'principal', 'profit', 'revenue']"
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "units",
+      "kind": "count"
+     },
+     "why": "redundant"
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "widget_count",
+      "inputs": [
+       "250.0",
+       "9.0 dollars"
+      ],
+      "output": "widget_count",
+      "expr": "(250.0 * 9.0 dollars) / count"
+     },
+     "why": "kind_unknown"
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "meters",
+      "kind": "length"
+     },
+     "why": "unit_conflict:['concentration', 'distance', 'height', 'length', 'width']"
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "kilograms",
+      "kind": "mass"
+     },
+     "why": "redundant"
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "brick_volume",
+      "dim": [
+       0,
+       3,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "unit": "m^3",
+      "nouns": [
+       "brick"
+      ],
+      "aliases": []
+     },
+     "why": "canonical_unit_collision:m^3"
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "brick_mass",
+      "dim": [
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "unit": "kg",
+      "nouns": [
+       "brick"
+      ],
+      "aliases": []
+     },
+     "why": "canonical_unit_collision:kg"
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "calculate_brick_weight",
+      "inputs": [
+       "brick_volume",
+       "brick_mass",
+       "density"
+      ],
+      "output": "mass",
+      "expr": "brick_volume * density"
+     },
+     "why": "kind_unknown"
+    },
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "current",
+      "noun": "current"
+     },
+     "why": "redundant"
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "ohms",
+      "kind": "resistance"
+     },
+     "why": "redundant"
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "power",
+      "dim": [
+       0,
+       2,
+       -3,
+       0,
+       0,
+       1,
+       0
+      ],
+      "unit": "W",
+      "nouns": [
+       "current",
+       "voltage"
+      ],
+      "aliases": [
+       "watts"
+      ]
+     },
+     "why": "name_exists"
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "power_from_voltage_and_current",
+      "inputs": [
+       "voltage",
+       "current"
+      ],
+      "output": "power",
+      "expr": "voltage * current"
+     },
+     "why": "duplicate_of:power_from_vi"
+    },
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "current",
+      "noun": "current"
+     },
+     "why": "redundant"
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "ohms",
+      "kind": "resistance"
+     },
+     "why": "redundant"
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "power",
+      "dim": [
+       0,
+       2,
+       -3,
+       0,
+       0,
+       1,
+       0
+      ],
+      "unit": "W",
+      "nouns": [
+       "current",
+       "voltage"
+      ],
+      "aliases": [
+       "watts"
+      ]
+     },
+     "why": "name_exists"
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "power_from_voltage_and_current",
+      "inputs": [
+       "voltage",
+       "current"
+      ],
+      "output": "power",
+      "expr": "voltage * current"
+     },
+     "why": "duplicate_of:power_from_vi"
+    },
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "current",
+      "noun": "current"
+     },
+     "why": "redundant"
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "ohms",
+      "kind": "resistance"
+     },
+     "why": "redundant"
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "power",
+      "dim": [
+       0,
+       1,
+       -3,
+       0,
+       0,
+       0,
+       0
+      ],
+      "unit": "W",
+      "nouns": [
+       "current",
+       "voltage"
+      ],
+      "aliases": [
+       "watts"
+      ]
+     },
+     "why": "name_exists"
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "power_from_current_and_voltage",
+      "inputs": [
+       "current",
+       "voltage"
+      ],
+      "output": "power",
+      "expr": "mul(current, voltage)"
+     },
+     "why": "expr_free_vars:['mul']"
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "calculate_current",
+      "inputs": [
+       "voltage",
+       "resistance"
+      ],
+      "output": "current",
+      "expr": "div(voltage, resistance)"
+     },
+     "why": "expr_free_vars:['div']"
+    },
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "current",
+      "noun": "current"
+     },
+     "why": "redundant"
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "ohms",
+      "kind": "resistance"
+     },
+     "why": "redundant"
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "power",
+      "dim": [
+       0,
+       2,
+       -3,
+       0,
+       0,
+       1,
+       0
+      ],
+      "unit": "W",
+      "nouns": [
+       "current",
+       "voltage"
+      ],
+      "aliases": [
+       "watts"
+      ]
+     },
+     "why": "name_exists"
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "power_from_voltage_and_current",
+      "inputs": [
+       "voltage",
+       "current"
+      ],
+      "output": "power",
+      "expr": "voltage * current"
+     },
+     "why": "duplicate_of:power_from_vi"
+    },
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "current",
+      "noun": "current"
+     },
+     "why": "redundant"
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "ohms",
+      "kind": "resistance"
+     },
+     "why": "redundant"
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "power",
+      "dim": [
+       0,
+       2,
+       -3,
+       1,
+       0,
+       0,
+       0
+      ],
+      "unit": "W",
+      "nouns": [
+       "current",
+       "voltage"
+      ],
+      "aliases": [
+       "watts"
+      ]
+     },
+     "why": "name_exists"
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "power_from_current_and_voltage",
+      "inputs": [
+       "current",
+       "voltage"
+      ],
+      "output": "power",
+      "expr": "input1 * input2"
+     },
+     "why": "expr_free_vars:['input1', 'input2']"
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "calculate_current",
+      "inputs": [
+       "voltage",
+       "resistance"
+      ],
+      "output": "current",
+      "expr": "input1 / input2"
+     },
+     "why": "expr_free_vars:['input1', 'input2']"
+    },
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "current",
+      "noun": "current"
+     },
+     "why": "redundant"
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "ohms",
+      "kind": "resistance"
+     },
+     "why": "redundant"
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "power",
+      "dim": [
+       0,
+       2,
+       -3,
+       1,
+       0,
+       0,
+       0
+      ],
+      "unit": "W",
+      "nouns": [
+       "current",
+       "voltage"
+      ],
+      "aliases": [
+       "watts"
+      ]
+     },
+     "why": "name_exists"
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "power",
+      "inputs": [
+       "current",
+       "voltage"
+      ],
+      "output": "power",
+      "expr": "current * voltage"
+     },
+     "why": "duplicate_of:power_from_vi"
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "electric_current",
+      "inputs": [
+       "voltage",
+       "resistance"
+      ],
+      "output": "current",
+      "expr": "voltage / resistance"
+     },
+     "why": "duplicate_of:current_from_vr"
+    },
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "current",
+      "noun": "current"
+     },
+     "why": "redundant"
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "ohms",
+      "kind": "resistance"
+     },
+     "why": "redundant"
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "power",
+      "dim": [
+       0,
+       1,
+       -3,
+       0,
+       0,
+       0,
+       0
+      ],
+      "unit": "W",
+      "nouns": [
+       "current",
+       "voltage"
+      ],
+      "aliases": [
+       "watts"
+      ]
+     },
+     "why": "name_exists"
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "power",
+      "inputs": [
+       "current",
+       "voltage"
+      ],
+      "output": "power",
+      "expr": "current * voltage"
+     },
+     "why": "duplicate_of:power_from_vi"
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "electric_current",
+      "inputs": [
+       "voltage",
+       "resistance"
+      ],
+      "output": "current",
+      "expr": "voltage / resistance"
+     },
+     "why": "duplicate_of:current_from_vr"
+    }
+   ]
+  },
+  {
+   "stage": "probation_done",
+   "active": [
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "energy",
+      "noun": "kinetic energy"
+     },
+     "source": "MINER",
+     "authorship": {
+      "model": "ollama",
+      "tokens_in": 955,
+      "tokens_out": 218,
+      "query": "Nine hundred kilograms of rolling stock at a dozen metres per second \u2014 kinetic energy?"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "metres per second",
+      "kind": "speed"
+     },
+     "source": "MINER",
+     "authorship": {
+      "model": "ollama",
+      "tokens_in": 955,
+      "tokens_out": 218,
+      "query": "Nine hundred kilograms of rolling stock at a dozen metres per second \u2014 kinetic energy?"
+     }
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "kinetic_energy",
+      "dim": [
+       1,
+       2,
+       -2,
+       0,
+       0,
+       0,
+       0
+      ],
+      "unit": "Joule",
+      "nouns": [
+       "kinetic energy"
+      ],
+      "aliases": []
+     },
+     "source": "MINER",
+     "authorship": {
+      "model": "ollama",
+      "tokens_in": 955,
+      "tokens_out": 218,
+      "query": "Nine hundred kilograms of rolling stock at a dozen metres per second \u2014 kinetic energy?"
+     }
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "kinetic_energy",
+      "dim": [
+       0,
+       1,
+       -2,
+       0,
+       0,
+       0,
+       0
+      ],
+      "unit": "joule",
+      "nouns": [
+       "flywheel"
+      ],
+      "aliases": []
+     },
+     "source": "MINER",
+     "authorship": {
+      "model": "ollama",
+      "tokens_in": 971,
+      "tokens_out": 188,
+      "query": "Take a 2-tonne flywheel doing 10 m/s; how many joules of motion does it hold?"
+     }
+    },
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "current",
+      "noun": "coil"
+     },
+     "source": "MINER",
+     "authorship": {
+      "model": "ollama",
+      "tokens_in": 964,
+      "tokens_out": 232,
+      "query": "An 11-ohm coil across 110 volts: the current, please."
+     }
+    },
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "count",
+      "noun": "widgets"
+     },
+     "source": "MINER",
+     "authorship": {
+      "model": "ollama",
+      "tokens_in": 960,
+      "tokens_out": 204,
+      "query": "Two hundred fifty widgets at nine dollars each - the take?"
+     }
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "widget_count",
+      "dim": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0
+      ],
+      "unit": "count/units",
+      "nouns": [
+       "widgets"
+      ],
+      "aliases": []
+     },
+     "source": "MINER",
+     "authorship": {
+      "model": "ollama",
+      "tokens_in": 960,
+      "tokens_out": 204,
+      "query": "Two hundred fifty widgets at nine dollars each - the take?"
+     }
+    },
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "volume",
+      "noun": "brick"
+     },
+     "source": "MINER",
+     "authorship": {
+      "model": "ollama",
+      "tokens_in": 991,
+      "tokens_out": 315,
+      "query": "A brick of 2 by 1 by 0.1 metres in 7800 kg/m^3 steel weighs what?"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "cubic meters",
+      "kind": "volume"
+     },
+     "source": "MINER",
+     "authorship": {
+      "model": "ollama",
+      "tokens_in": 991,
+      "tokens_out": 315,
+      "query": "A brick of 2 by 1 by 0.1 metres in 7800 kg/m^3 steel weighs what?"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "cubic meters",
+      "kind": "volume"
+     },
+     "source": "MINER",
+     "authorship": {
+      "model": "ollama",
+      "tokens_in": 991,
+      "tokens_out": 315,
+      "query": "A brick of 2 by 1 by 0.1 metres in 7800 kg/m^3 steel weighs what?"
+     }
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "brick_weight",
+      "inputs": [
+       "volume",
+       "mass",
+       "density"
+      ],
+      "output": "mass",
+      "expr": "volume * density"
+     },
+     "source": "MINER",
+     "authorship": {
+      "model": "ollama",
+      "tokens_in": 991,
+      "tokens_out": 315,
+      "query": "A brick of 2 by 1 by 0.1 metres in 7800 kg/m^3 steel weighs what?"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "V",
+      "kind": "voltage"
+     },
+     "source": "MINER",
+     "authorship": {
+      "model": "ollama",
+      "tokens_in": 970,
+      "tokens_out": 201,
+      "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "V",
+      "kind": "voltage"
+     },
+     "source": "MINER",
+     "authorship": {
+      "model": "ollama",
+      "tokens_in": 970,
+      "tokens_out": 201,
+      "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "V",
+      "kind": "voltage"
+     },
+     "source": "MINER",
+     "authorship": {
+      "model": "ollama",
+      "tokens_in": 969,
+      "tokens_out": 243,
+      "query": "For an element on 48 V \u2014 its resistance being six ohms \u2014 what current flows?"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "V",
+      "kind": "voltage"
+     },
+     "source": "MINER",
+     "authorship": {
+      "model": "ollama",
+      "tokens_in": 970,
+      "tokens_out": 201,
+      "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "V",
+      "kind": "voltage"
+     },
+     "source": "MINER",
+     "authorship": {
+      "model": "ollama",
+      "tokens_in": 969,
+      "tokens_out": 244,
+      "query": "For an element on 230 V \u2014 its resistance being sixteen ohms \u2014 what current flows?"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "V",
+      "kind": "voltage"
+     },
+     "source": "MINER",
+     "authorship": {
+      "model": "ollama",
+      "tokens_in": 970,
+      "tokens_out": 237,
+      "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+     }
+    },
+    {
+     "type": "unit_index",
+     "payload": {
+      "unit": "V",
+      "kind": "voltage"
+     },
+     "source": "MINER",
+     "authorship": {
+      "model": "ollama",
+      "tokens_in": 970,
+      "tokens_out": 237,
+      "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+     }
+    }
+   ],
+   "rejected_in_probation": 0
+  },
+  {
+   "stage": "deep_mine",
+   "q": "A cart with a mass of 40 kg rolls along at 3 m/s. What is its momentum?",
+   "gateway_status": "LLM_ESCALATED",
+   "candidates": [
+    {
+     "type": "lexicon_noun",
+     "payload": {
+      "kind": "momentum",
+      "noun": "momentum"
+     },
+     "status": "GATE_REJECTED",
+     "requires": []
+    },
+    {
+     "type": "new_kind",
+     "payload": {
+      "name": "momentum",
+      "dim": [
+       1,
+       1,
+       -1,
+       0,
+       0,
+       0,
+       0
+      ],
+      "unit": "kg m/s",
+      "nouns": [
+       "momentum"
+      ],
+      "aliases": []
+     },
+     "status": "PROBATION",
+     "requires": []
+    },
+    {
+     "type": "new_cap",
+     "payload": {
+      "name": "momentum",
+      "inputs": [
+       "mass",
+       "speed"
+      ],
+      "output": "momentum",
+      "expr": "mass * speed"
+     },
+     "status": "PROBATION",
+     "requires": [
+      "c3d4cde69b8"
+     ]
+    }
+   ]
+  }
+ ],
+ "oof_abstentions_before": 76,
+ "reflips": {
+  "certified_correct": [],
+  "certified_wrong": [],
+  "still_uncovered": 76
+ },
+ "deep_loop": {
+  "active": [
+   {
+    "type": "new_kind",
+    "payload": {
+     "name": "momentum",
+     "dim": [
+      1,
+      1,
+      -1,
+      0,
+      0,
+      0,
+      0
+     ],
+     "unit": "kg m/s",
+     "nouns": [
+      "momentum"
+     ],
+     "aliases": []
+    },
+    "source": "MINER",
+    "authorship": {
+     "model": "ollama",
+     "tokens_in": 985,
+     "tokens_out": 165,
+     "query": "A cart with a mass of 40 kg rolls along at 3 m/s. What is its momentum?"
+    }
+   },
+   {
+    "type": "new_cap",
+    "payload": {
+     "name": "momentum",
+     "inputs": [
+      "mass",
+      "speed"
+     ],
+     "output": "momentum",
+     "expr": "mass * speed"
+    },
+    "source": "MINER",
+    "authorship": {
+     "model": "ollama",
+     "tokens_in": 985,
+     "tokens_out": 165,
+     "query": "A cart with a mass of 40 kg rolls along at 3 m/s. What is its momentum?"
+    }
+   }
+  ],
+  "paraphrases": [
+   {
+    "q": "A 7 kg drone cruises at 2 m/s. What is its momentum?",
+    "expect": 14.0,
+    "status": "CERTIFIED_REFLEX",
+    "value": 14.0,
+    "correct": true
+   },
+   {
+    "q": "The trolley weighs 12 kg and moves at 2.5 m/s - momentum?",
+    "expect": 30.0,
+    "status": "CERTIFIED_REFLEX",
+    "value": 30.0,
+    "correct": true
+   }
+  ]
+ },
+ "example_certificate": {
+  "query": "A 7 kg drone cruises at 2 m/s. What is its momentum?",
+  "value": 14.0,
+  "status": "CERTIFIED_REFLEX",
+  "certificate": {
+   "engine": "1.0-p2",
+   "pack": "C:\\Users\\admin\\Downloads\\reflex-engine\\packs\\physics",
+   "mode": "global",
+   "facts": [
+    {
+     "fid": "F1",
+     "entity": "GLOBAL",
+     "concept": "mass",
+     "value": 7.0,
+     "unit": "kg",
+     "status": "CERTIFIED",
+     "span": "A 7 kg drone cruises at 2 m/s."
+    },
+    {
+     "fid": "F2",
+     "entity": "GLOBAL",
+     "concept": "speed",
+     "value": 2.0,
+     "unit": "m/s",
+     "status": "CERTIFIED",
+     "span": "A 7 kg drone cruises at 2 m/s."
+    }
+   ],
+   "redundancy_checked": false,
+   "invariant_violations": 0,
+   "parse_ms": 0.549,
+   "integrity_ms": 0.053
+  }
+ },
+ "llm_stats": {
+  "adapter": "ollama",
+  "calls": 102,
+  "tokens_in": 15267,
+  "tokens_out": 9237
+ }
+}

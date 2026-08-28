@@ -1,0 +1,407 @@
+[
+ {
+  "cid": "cfdf03fea48",
+  "type": "new_kind",
+  "payload": {
+   "name": "kinetic_energy",
+   "dim": [
+    1,
+    2,
+    -2,
+    0,
+    0,
+    0,
+    0
+   ],
+   "unit": "Joule",
+   "nouns": [
+    "kinetic energy"
+   ],
+   "aliases": []
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 955,
+   "tokens_out": 218,
+   "query": "Nine hundred kilograms of rolling stock at a dozen metres per second \u2014 kinetic energy?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c4601414fed",
+  "type": "new_kind",
+  "payload": {
+   "name": "kinetic_energy",
+   "dim": [
+    0,
+    1,
+    -2,
+    0,
+    0,
+    0,
+    0
+   ],
+   "unit": "joule",
+   "nouns": [
+    "flywheel"
+   ],
+   "aliases": []
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 971,
+   "tokens_out": 188,
+   "query": "Take a 2-tonne flywheel doing 10 m/s; how many joules of motion does it hold?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c560edef5c8",
+  "type": "new_kind",
+  "payload": {
+   "name": "widget_count",
+   "dim": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "unit": "count/units",
+   "nouns": [
+    "widgets"
+   ],
+   "aliases": []
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 960,
+   "tokens_out": 204,
+   "query": "Two hundred fifty widgets at nine dollars each - the take?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c3d4cde69b8",
+  "type": "new_kind",
+  "payload": {
+   "name": "momentum",
+   "dim": [
+    1,
+    1,
+    -1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "unit": "kg m/s",
+   "nouns": [
+    "momentum"
+   ],
+   "aliases": []
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 985,
+   "tokens_out": 165,
+   "query": "A cart with a mass of 40 kg rolls along at 3 m/s. What is its momentum?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cf1d76871fa",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "energy",
+   "noun": "kinetic energy"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 955,
+   "tokens_out": 218,
+   "query": "Nine hundred kilograms of rolling stock at a dozen metres per second \u2014 kinetic energy?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c433c2dd94b",
+  "type": "unit_index",
+  "payload": {
+   "unit": "metres per second",
+   "kind": "speed"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 955,
+   "tokens_out": 218,
+   "query": "Nine hundred kilograms of rolling stock at a dozen metres per second \u2014 kinetic energy?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cbf919b7023",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "current",
+   "noun": "coil"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 964,
+   "tokens_out": 232,
+   "query": "An 11-ohm coil across 110 volts: the current, please."
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c2b75831943",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "widgets"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 960,
+   "tokens_out": 204,
+   "query": "Two hundred fifty widgets at nine dollars each - the take?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c8e16dce690",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "volume",
+   "noun": "brick"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 991,
+   "tokens_out": 315,
+   "query": "A brick of 2 by 1 by 0.1 metres in 7800 kg/m^3 steel weighs what?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c2934e5ccc1",
+  "type": "unit_index",
+  "payload": {
+   "unit": "cubic meters",
+   "kind": "volume"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 991,
+   "tokens_out": 315,
+   "query": "A brick of 2 by 1 by 0.1 metres in 7800 kg/m^3 steel weighs what?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cc2ffa8eb34",
+  "type": "unit_index",
+  "payload": {
+   "unit": "cubic meters",
+   "kind": "volume"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 991,
+   "tokens_out": 315,
+   "query": "A brick of 2 by 1 by 0.1 metres in 7800 kg/m^3 steel weighs what?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c292537452e",
+  "type": "new_cap",
+  "payload": {
+   "name": "brick_weight",
+   "inputs": [
+    "volume",
+    "mass",
+    "density"
+   ],
+   "output": "mass",
+   "expr": "volume * density"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 991,
+   "tokens_out": 315,
+   "query": "A brick of 2 by 1 by 0.1 metres in 7800 kg/m^3 steel weighs what?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c60d23f56dc",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cd4bc5eac8a",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ced01d4ccf1",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 969,
+   "tokens_out": 243,
+   "query": "For an element on 48 V \u2014 its resistance being six ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ccc78a1ba0f",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 201,
+   "query": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c7efc655c1e",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 969,
+   "tokens_out": 244,
+   "query": "For an element on 230 V \u2014 its resistance being sixteen ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c452d5d014a",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ccbeb789f28",
+  "type": "unit_index",
+  "payload": {
+   "unit": "V",
+   "kind": "voltage"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 970,
+   "tokens_out": 237,
+   "query": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c6adcb8bff1",
+  "type": "new_cap",
+  "payload": {
+   "name": "momentum",
+   "inputs": [
+    "mass",
+    "speed"
+   ],
+   "output": "momentum",
+   "expr": "mass * speed"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "ollama",
+   "tokens_in": 985,
+   "tokens_out": 165,
+   "query": "A cart with a mass of 40 kg rolls along at 3 m/s. What is its momentum?"
+  },
+  "confirms": 3,
+  "requires": [
+   "c3d4cde69b8"
+  ]
+ }
+]
