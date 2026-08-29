@@ -131,3 +131,18 @@ truth to machine precision.
 Outcome (frozen ladder): **C** — integration total, pre-registered
 acquisition bet falsified at local scale, channel proven at API scale
 at zero safety cost.
+
+## V1.1 (reflex-engine, v1.1-final) — the ledger now spans V0.1 → V1.1
+
+| # | Hypothesis | Verdict | Evidence |
+|---|---|---|---|
+| J1 | Engine fixes lift V1.0 residual ≥15pp | CONFIRMED++ | +92.8pp; then parse11/OOF 100.0%; 180k sweep: 0 residual, 0 wrong |
+| J2 | Post-fix frontier harder for miners | RESOLVED BEYOND | frontier VANISHED in-universe; ablation vacuous (Amendment C) |
+| J3 | Opus ≥ sonnet reflex minting (bridge) | CONFIRMED | strict-gate mints: opus 12/20 > haiku 8 > sonnet 6; content high everywhere |
+| J4 | MEMORY.fact: omitted constants at 0 wrong | CONFIRMED | 2,776 serves, 0 wrong; 8 constants incl. all material densities |
+| J5 | TEXT.qa: repeats at 0 wrong, never displaces functional | CONFIRMED | 4,696 serves; precedence machine-tested; 2 rubric-synonym misses reported |
+| J6 | Commercial cost/query falls over 100k | CONFIRMED | coverage 93.5→95.1%; 95.4% energy saving vs pure LLM |
+| J7 | Zero wrong-fire everywhere | VIOLATED ONCE (B2), zero post-fix | latent ordinal gap: 1/76 on fresh seed; supersede-rerun → sem 100% |
+
+Outcome: **A** (ladder letter), with the B2 violation stated beside
+the headline; open class logged as the arc's top safety item.
