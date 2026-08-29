@@ -100,5 +100,18 @@
    "outcome": "C per frozen ladder (parity total; H3 falsified @ pre-registered llama scale; channel works at API scale at zero safety cost)",
    "final_verification": "all dataset+vendor hashes clean (79 files); run_v1_0_experiment.py OK"
   }
+ },
+ "v1.1": {
+  "created": "2026-08-29",
+  "spec": "V1_1_SPEC.md frozen @ 6cbe781 + amendments A/B/C (all pre-data)",
+  "w1_parity_plus": "0 regressions, 0 wrong-fire; parse11 84.2->100.0% (+158), OOF 68.3->100.0% (+76); battery green x3 (post-W1, post-W2/F4e, post-W1c)",
+  "residual_proof": "180,000 fresh items: coverage 1.0000, 0 wrong, 0 residual (generator universe closed); J1 +92.8pp on V1.0 residual",
+  "typed_reflexes": "FUNCTIONAL.{maths,physics,thermo,finance} + MEMORY.fact (majority-context zero-disagreement gates) + TEXT.qa (K=3 consistency, functional precedence machine-tested)",
+  "sim_100k": "95,472 certified serves (88000 det + 4696 text + 2776 memory), 0 wrong in stream, 4.5% priced escalations, 60 executed bridge calls, 20 reflexes minted, 159s engine time; finals sim 95.17%/0 numeric wrong-fire (2 rubric-synonym text misses), sem 100%, adv 83.6%/0",
+  "scale_j3": "bridge-only (no API keys): opus strict-gate mints 12/20 > haiku 8 > sonnet 6; content 17-19/20 everywhere",
+  "energy": "engine 1.932 J/q (500-item metered sample; retry chains) vs 1910 J/q pure-LLM; 100k mix 2.42 vs 53.1 kWh = 95.4% saving",
+  "bugs": "bug_audit_v1_1: B1 grading adapter (analysis-side regrade), B2 LATENT ARC ordinal gap (1/76 wrong-fire on fresh seed; W1c fix; supersede-rerun; sem 100%) \u2014 J7 violated once, restored; open class in violation_log",
+  "outcome": "A per frozen ladder, B2 violation stated beside headline",
+  "priors": "V0.1-V0.11 re-verified (v0.2 documented surplus only); reflex-engine-frozen intact 223 files read-only, no .env"
  }
 }
