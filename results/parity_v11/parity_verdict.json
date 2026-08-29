@@ -1,0 +1,910 @@
+{
+ "sem11_sealed": {
+  "n": 76,
+  "acc": 1.0,
+  "wrong_fire": 0,
+  "llm_step_calls": 0,
+  "item_diffs": [],
+  "improvements": [],
+  "ok": true,
+  "wall_s": 0.6
+ },
+ "adv11_sealed": {
+  "n": 122,
+  "acc": 0.8361,
+  "wrong_fire": 0,
+  "llm_step_calls": 0,
+  "item_diffs": [],
+  "improvements": [],
+  "ok": true,
+  "wall_s": 119.5
+ },
+ "parse11_sealed": {
+  "n": 1000,
+  "acc": 0.981,
+  "wrong_fire": 0,
+  "llm_step_calls": 0,
+  "item_diffs": [],
+  "improvements": [
+   [
+    "p11s00006",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00007",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00008",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00018",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00019",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00029",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00036",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00038",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00039",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00046",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00049",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00059",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00076",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00077",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00078",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00086",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00096",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00106",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00117",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00118",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00127",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00128",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00136",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00148",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00149",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00156",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00159",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00166",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00168",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00169",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00178",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00179",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00196",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00197",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00218",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00219",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00236",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00239",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00247",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00256",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00268",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00277",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00278",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00279",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00287",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00289",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00296",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00297",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00317",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00318",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00337",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00339",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00346",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00347",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00348",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00349",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00356",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00369",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00379",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00396",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00397",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00406",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00416",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00426",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00427",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00428",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00436",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00456",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00457",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00459",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00488",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00489",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00508",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00526",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00528",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00529",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00537",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00556",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00558",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00576",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00587",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00588",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00589",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00597",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00609",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00616",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00618",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00627",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00629",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00637",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00647",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00649",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00656",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00657",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00658",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00659",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00676",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00696",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00698",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00706",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00707",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00709",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00729",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00737",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00739",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00747",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00758",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00766",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00767",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00768",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00796",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00798",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00807",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00816",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00826",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00828",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00829",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00837",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00839",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00857",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00867",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00876",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00886",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00888",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00899",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00907",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00919",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00927",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11s00929",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00947",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00949",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00957",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00966",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00967",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11s00969",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00976",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00977",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11s00988",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11s00999",
+    "correct False->True (ref v=None new v=14.375)"
+   ]
+  ],
+  "ok": true,
+  "wall_s": 4.6
+ },
+ "parse11_oof": {
+  "n": 240,
+  "acc": 0.9958,
+  "wrong_fire": 0,
+  "llm_step_calls": 0,
+  "item_diffs": [],
+  "improvements": [
+   [
+    "p11o00000",
+    "correct False->True (ref v=None new v=64800.0)"
+   ],
+   [
+    "p11o00001",
+    "correct False->True (ref v=None new v=100000.0)"
+   ],
+   [
+    "p11o00003",
+    "correct False->True (ref v=None new v=10.0)"
+   ],
+   [
+    "p11o00004",
+    "correct False->True (ref v=None new v=2250.0)"
+   ],
+   [
+    "p11o00006",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00013",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00016",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11o00022",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00024",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00027",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11o00033",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11o00038",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11o00039",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11o00044",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00045",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11o00046",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11o00047",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00049",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11o00052",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00053",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00054",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11o00057",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11o00058",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00060",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11o00066",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11o00067",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11o00070",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11o00071",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11o00074",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00075",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11o00077",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00085",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00092",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11o00094",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11o00095",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00097",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11o00105",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11o00107",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11o00113",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00114",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00115",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11o00117",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11o00118",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11o00121",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11o00124",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11o00128",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11o00130",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11o00138",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11o00141",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11o00144",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00146",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00147",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11o00154",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11o00159",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11o00161",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11o00168",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11o00170",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11o00171",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11o00175",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11o00176",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00183",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11o00197",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00198",
+    "correct False->True (ref v=None new v=3.0)"
+   ],
+   [
+    "p11o00199",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00202",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11o00211",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11o00212",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11o00214",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11o00215",
+    "correct False->True (ref v=None new v=38.333333333333336)"
+   ],
+   [
+    "p11o00218",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00226",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00229",
+    "correct False->True (ref v=None new v=8.0)"
+   ],
+   [
+    "p11o00230",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00231",
+    "correct False->True (ref v=None new v=14.375)"
+   ],
+   [
+    "p11o00235",
+    "correct False->True (ref v=None new v=14.375)"
+   ]
+  ],
+  "ok": true,
+  "wall_s": 0.7
+ },
+ "cplx10_sealed": {
+  "n": 196,
+  "acc": 1.0,
+  "wrong_fire": 0,
+  "llm_step_calls": 0,
+  "item_diffs": [],
+  "improvements": [],
+  "ok": true,
+  "wall_s": 2.6
+ }
+}

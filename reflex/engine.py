@@ -50,9 +50,11 @@ class Engine:
     def run_query(self, query, qid, available=None):
         """One query through the full pipeline. Returns the v11-style
         record + parse artifacts (facts/state for certificates)."""
+        from . import engine_patches as EP
         t0 = time.perf_counter()
+        query, _norm = EP.normalize_query(query)     # F1+F2 (V1.1)
         rec = {"query_id": qid, "llm_calls": [],
-               "reflex_parse": False}
+               "reflex_parse": False, "normalized": _norm}
         tp = time.perf_counter()
         st, info = self._parse(query, qid)
         rec["parse_ms"] = (time.perf_counter() - tp) * 1e3
@@ -109,6 +111,30 @@ class Engine:
         r = self._run(st, info, query, qid, use_llm=False,
                       resolver=self.resolver,
                       redundancy=self.redundancy, avail=available)
+        # F3 (V1.1): retry-after-abstain with an alternative target.
+        # Only coverage-type abstentions retry, so no answered item
+        # and no integrity verdict can ever change.
+        if r.get("status") != "pm_answer" and \
+                r.get("abstain_reason") in EP._RETRYABLE:
+            from .packs.loader import TARGET_VERBS
+            import v10.nlpw10 as _W
+            in_concepts = {f["concept"] for f in st.facts
+                           if f.get("value") is not None}
+            for alt in EP.alt_targets(
+                    query, info.get("target_concept"),
+                    _W.KINDS9, TARGET_VERBS, in_concepts):
+                info2 = dict(info, target_concept=alt,
+                             target_entity=info.get("target_entity"))
+                r2 = self._run(st, info2, query, qid,
+                               use_llm=False,
+                               resolver=self.resolver,
+                               redundancy=self.redundancy,
+                               avail=available)
+                if r2.get("status") == "pm_answer":
+                    r = r2
+                    info = info2
+                    rec["target_retry"] = alt
+                    break
         rec.update({k: r.get(k) for k in
                     ("status", "numeric_value", "abstain_reason",
                      "mode", "resolver_used", "redundancy_checked",

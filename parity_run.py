@@ -212,24 +212,31 @@ def wrong_fire(rows):
     return wrong_ans + ans_on_abst
 
 
-def diff_reference(name, rows):
+def diff_reference(name, rows, plus=False):
+    """plus=False: any correctness change is a diff (V1.0 exact
+    parity). plus=True (V1.1 PARITY-PLUS): improvements
+    (not-correct -> correct) are allowed and counted; regressions
+    (correct -> not-correct) and new wrong answers are failures."""
     ref_p = BAT / f"reference_ms_{name}_C10.jsonl"
     ref = {}
     for line in ref_p.read_text(encoding="utf-8").splitlines():
         d = json.loads(line)
         ref[d["query_id"]] = d
-    diffs = []
+    diffs, improvements = [], []
     for r in rows:
         g = ref.get(r["query_id"])
         if g is None:
             diffs.append((r["query_id"], "missing_in_reference"))
             continue
-        if bool(r["correct"]) != bool(g["correct"]):
-            diffs.append((r["query_id"],
-                          f"correct {g['correct']}->{r['correct']} "
-                          f"(ref v={g.get('value')} "
-                          f"new v={r.get('value')})"))
-    return diffs
+        if bool(r["correct"]) == bool(g["correct"]):
+            continue
+        desc = (f"correct {g['correct']}->{r['correct']} "
+                f"(ref v={g.get('value')} new v={r.get('value')})")
+        if plus and r["correct"] and not g["correct"]:
+            improvements.append((r["query_id"], desc))
+        else:
+            diffs.append((r["query_id"], desc))
+    return (diffs, improvements) if plus else diffs
 
 
 def main():
@@ -239,7 +246,12 @@ def main():
                     choices=["on", "off"])
     ap.add_argument("--engine", default="lexpatch",
                     choices=["lexpatch", "pack"])
+    ap.add_argument("--plus", action="store_true",
+                    help="V1.1 PARITY-PLUS: improvements allowed, "
+                         "regressions/wrong-fire fail")
     a = ap.parse_args()
+    if a.plus:      # V1.1 rows land beside, not over, V1.0 evidence
+        globals()["OUT"] = HERE / "results" / "parity_v11"
     run_one = build_runner(a.resolver == "on", engine_mode=a.engine)
     suites = [a.suite] if a.suite else SUITES
     verdict = {}
@@ -250,18 +262,24 @@ def main():
         acc = sum(bool(r["correct"]) for r in rows) / n
         wf = wrong_fire(rows)
         llm = sum(r["n_llm_calls"] for r in rows)
-        diffs = diff_reference(name, rows)
+        improvements = []
+        if a.plus:
+            diffs, improvements = diff_reference(name, rows,
+                                                 plus=True)
+        else:
+            diffs = diff_reference(name, rows)
         ok = wf == 0 and not diffs
         b = BOUNDS.get(name)
         if b and acc < b["acc_min"]:
             ok = False
         verdict[name] = {"n": n, "acc": round(acc, 4),
                          "wrong_fire": wf, "llm_step_calls": llm,
-                         "item_diffs": diffs, "ok": ok,
+                         "item_diffs": diffs,
+                         "improvements": improvements, "ok": ok,
                          "wall_s": round(time.perf_counter() - t0,
                                          1)}
         print(f"{name}: n={n} acc={acc:.4f} wrong_fire={wf} "
-              f"diffs={len(diffs)} "
+              f"regress={len(diffs)} improved={len(improvements)} "
               f"{'OK' if ok else 'FAIL'}", flush=True)
         for d in diffs[:10]:
             print("   diff:", d)

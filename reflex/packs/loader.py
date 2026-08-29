@@ -46,6 +46,10 @@ UNIT_INDEX_EXTRAS = {}
 # untouched by construction.
 BASE_KINDS = set()
 
+# pack target-verb map (ask verb -> kind), wired into the engine's
+# F3 post-abstain target retry (V1.1); dead data in V1.0
+TARGET_VERBS = {}
+
 
 def _load(pack_dir):
     p = Path(pack_dir)
@@ -166,6 +170,13 @@ def apply(pack_dir):
     for u, ks in UNIT_INDEX_EXTRAS.items():
         W._UNIT_IDX.setdefault(u, list(ks))
 
+    TARGET_VERBS.clear()
+    TARGET_VERBS.update(lex.get("target_verbs") or {})
+
+    # V1.1 F4 lexicon patches (engine-layer; reflex/engine_patches.py)
+    from .. import engine_patches as _EP
+    _EP.apply_lexicon_patches(W, UNIT_INDEX_EXTRAS)
+
     # ---- comparatives (shared instance with semrun's import)
     SS.COMPARATIVES.clear()
     SS.COMPARATIVES.update({k: tuple(v) for k, v in
@@ -199,7 +210,10 @@ def apply(pack_dir):
             u = (unit or "").strip().lower()
             money_u = u.startswith("$") or u in ("dollars", "dollar")
             if money_u and "price_per_unit" in W.KINDS9:
-                if (nxt and nxt[0] in ("each", "apiece")) or \
+                # V1.1 F4c: word-number mentions put the unit token in
+                # nxt[0] ("nine dollars each"), so 'each/apiece' may
+                # sit at nxt[1]
+                if any(t in ("each", "apiece") for t in nxt[:2]) or \
                         any(w.startswith(sale_verbs)
                             for w in prv + nxt):
                     return "price_per_unit", ["price_per_unit"]
