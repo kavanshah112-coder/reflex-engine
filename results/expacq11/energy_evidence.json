@@ -1,0 +1,41 @@
+{
+ "per_query_runs": [
+  {
+   "n": 500,
+   "j_query": 0.3718489004710806
+  },
+  {
+   "n": 500,
+   "j_query": 0.33734645571243377
+  },
+  {
+   "n": 500,
+   "j_query": 0.3598289672666532
+  }
+ ],
+ "batch_runs": [
+  {
+   "n": 5000,
+   "j_total": 108.61045797341502,
+   "j_query": 0.021722091594683003
+  },
+  {
+   "n": 5000,
+   "j_total": 100.63906623137882,
+   "j_query": 0.020127813246275765
+  },
+  {
+   "n": 5000,
+   "j_total": 107.23011728681334,
+   "j_query": 0.021446023457362667
+  }
+ ],
+ "cold_start_ms": 1.5,
+ "summary": {
+  "per_query_mean": 0.35634144115005584,
+  "per_query_stdev": 0.017513617627187436,
+  "batch_mean": 0.021098642766107144,
+  "batch_stdev": 0.0008520187037518019,
+  "method_note": "per-query windows are overhead-dominated at sub-ms/query (200 ms sampling); the batch instrument is authoritative for the certified-serve cost"
+ }
+}
