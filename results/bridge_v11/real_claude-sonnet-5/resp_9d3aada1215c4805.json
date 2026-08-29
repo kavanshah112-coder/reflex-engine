@@ -1,0 +1,5 @@
+{
+ "text": "{\"lexicon_nouns\": [], \"adj_maps\": [{\"adj\": \"gave\", \"kind\": \"principal\"}, {\"adj\": \"twice\", \"kind\": \"rate\"}], \"unit_index\": [], \"conversions\": [], \"new_kinds\": [], \"new_caps\": [{\"name\": \"bank_loan_total\", \"inputs\": [\"principal\", \"rate\"], \"output\": \"principal\", \"expr\": \"principal + principal * rate\"}, {\"name\": \"total_capital\", \"inputs\": [\"capex\", \"principal\"], \"output\": \"capex\", \"expr\": \"capex + principal\"}]}",
+ "tokens_in": 638,
+ "tokens_out": 75
+}

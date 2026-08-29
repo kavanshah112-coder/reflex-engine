@@ -1,0 +1,5 @@
+{
+ "text": "{\"lexicon_nouns\": [], \"adj_maps\": [], \"unit_index\": [{\"unit\": \"WPM\", \"kind\": \"speed\"}, {\"unit\": \"words per minute\", \"kind\": \"speed\"}], \"conversions\": [], \"new_kinds\": [], \"new_caps\": [{\"name\": \"next_speed\", \"inputs\": [\"speed\"], \"output\": \"speed\", \"expr\": \"speed + speed\"}, {\"name\": \"avg_typing_speed\", \"inputs\": [\"speed\", \"data_count\"], \"output\": \"mean\", \"expr\": \"sum(speed) / data_count\"}]}",
+ "tokens_in": 660,
+ "tokens_out": 68
+}

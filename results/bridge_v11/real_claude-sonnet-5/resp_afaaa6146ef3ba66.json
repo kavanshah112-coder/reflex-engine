@@ -1,0 +1,5 @@
+{
+ "text": "{\"lexicon_nouns\": [{\"kind\": \"count\", \"noun\": \"bales\"}], \"adj_maps\": [], \"unit_index\": [], \"conversions\": [], \"new_kinds\": [], \"new_caps\": [{\"name\": \"bales_added\", \"inputs\": [\"payback_months\"], \"output\": \"count\", \"expr\": \"max(payback_months) - min(payback_months)\"}]}",
+ "tokens_in": 640,
+ "tokens_out": 48
+}

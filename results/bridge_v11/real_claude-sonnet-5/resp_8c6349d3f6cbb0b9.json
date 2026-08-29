@@ -1,0 +1,5 @@
+{
+ "text": "{\"lexicon_nouns\": [], \"adj_maps\": [{\"adj\": \"measures\", \"kind\": \"length\"}], \"unit_index\": [{\"unit\": \"feet\", \"kind\": \"length\"}], \"conversions\": [], \"new_kinds\": [], \"new_caps\": [{\"name\": \"room_area\", \"inputs\": [\"length\", \"width\"], \"output\": \"area\", \"expr\": \"length * width\"}, {\"name\": \"total_carpet_cost\", \"inputs\": [\"area\", \"fixed_cost\", \"sq_dev_sum\", \"price_per_unit\", \"payback_months\"], \"output\": \"cost_total\", \"expr\": \"area * (fixed_cost + sq_dev_sum + price_per_unit + payback_months)\"}]}",
+ "tokens_in": 650,
+ "tokens_out": 110
+}

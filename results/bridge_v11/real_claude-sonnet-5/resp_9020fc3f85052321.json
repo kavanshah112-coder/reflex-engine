@@ -1,0 +1,5 @@
+{
+ "text": "{\"lexicon_nouns\": [{\"kind\": \"distance\", \"noun\": \"distance\"}, {\"kind\": \"length\", \"noun\": \"side\"}], \"adj_maps\": [], \"unit_index\": [{\"unit\": \"feet\", \"kind\": \"length\"}], \"conversions\": [], \"new_kinds\": [], \"new_caps\": [{\"name\": \"garden_area\", \"inputs\": [\"distance\", \"length\"], \"output\": \"area\", \"expr\": \"(distance / 2 - length) * length\"}]}",
+ "tokens_in": 625,
+ "tokens_out": 65
+}

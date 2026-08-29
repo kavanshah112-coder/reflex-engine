@@ -1,0 +1,5 @@
+{
+ "text": "{\"lexicon_nouns\": [{\"kind\": \"count\", \"noun\": \"burritos\"}, {\"kind\": \"count\", \"noun\": \"students\"}], \"adj_maps\": [], \"unit_index\": [], \"conversions\": [], \"new_kinds\": [{\"name\": \"leftover_count\", \"dim\": [0,0,0,0,0,1,0], \"unit\": \"units\", \"nouns\": [\"leftover burritos\"], \"aliases\": []}], \"new_caps\": [{\"name\": \"leftover_calc\", \"inputs\": [\"count\", \"cost_total\"], \"output\": \"leftover_count\", \"expr\": \"count - count - cost_total\"}]}",
+ "tokens_in": 660,
+ "tokens_out": 85
+}

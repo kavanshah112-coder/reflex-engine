@@ -1,0 +1,5 @@
+{
+ "text": "{\"lexicon_nouns\": [{\"kind\": \"count\", \"noun\": \"sausages\"}], \"adj_maps\": [], \"unit_index\": [], \"conversions\": [], \"new_kinds\": [], \"new_caps\": [{\"name\": \"dog_time\", \"inputs\": [\"time\", \"rate\"], \"output\": \"time\", \"expr\": \"time * rate\"}, {\"name\": \"avg_time\", \"inputs\": [\"time\"], \"output\": \"mean\", \"expr\": \"mean(time)\"}]}",
+ "tokens_in": 650,
+ "tokens_out": 58
+}

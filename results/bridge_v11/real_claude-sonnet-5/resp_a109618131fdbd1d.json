@@ -1,0 +1,5 @@
+{
+ "text": "{\"lexicon_nouns\": [{\"kind\": \"count\", \"noun\": \"pencils\"}], \"adj_maps\": [], \"unit_index\": [], \"conversions\": [], \"new_kinds\": [{\"name\": \"box_count\", \"dim\": [0,0,0,0,0,1,0], \"unit\": \"units\", \"nouns\": [\"boxes\"], \"aliases\": []}], \"new_caps\": [{\"name\": \"boxes_needed\", \"inputs\": [\"count\", \"box_count\"], \"output\": \"box_count\", \"expr\": \"ceil(count / (count / box_count))\"}]}",
+ "tokens_in": 650,
+ "tokens_out": 70
+}
