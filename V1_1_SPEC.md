@@ -223,3 +223,29 @@ file existed (nothing consumed, nothing superseded):
 2. **W5 commercial simulation: 100,000 queries** (was 25,000).
    G2_N = 100000, same family weights and seeds; checkpoints every
    10,000. J6 unchanged.
+
+## AMENDMENT C (2026-08-29, pre-data, forced by measurement)
+
+W1b closed the ENTIRE generator universe: post-W1b residual 0/4,600
+(0.00%), parse11 sealed 100.0%, OOF 100.0%, zero regressions, zero
+wrong-fire. Consequences, recorded before any V1.1 sealed item exists:
+1. G1 (residual stream) has no members. The W4 ablation-on-residual
+   is VACUOUS and is reported as such (this resolves J2: the post-fix
+   frontier does not merely shrink — it vanishes in-universe). B0-B2
+   arms are not run for lack of subject matter; expgen instead emits
+   a residual-proof record (pool size, coverage, zero-residual
+   verification, any stragglers itemized).
+2. The acquisition experiment moves entirely to W5's typed-reflex
+   families: MEMORY.fact (fact-recall omitting items) and TEXT.qa
+   (definitions), where acquirable ground genuinely exists.
+3. J3 (Opus scale test, bridge-only) retargets to TEXT-reflex
+   quality vs answering-model scale: each unique definition question
+   is served K_TXT=3 times to EACH bridge model (haiku, sonnet,
+   opus); measured: answer-consistency rate, gate survival, and
+   correctness of the resulting TEXT.qa reflexes per model.
+   FUNCTIONAL mining arms have no in-universe material and are not
+   run (recorded, not hidden).
+4. W5 (100,000 queries) becomes the primary experiment: sonnet-bridge
+   as the sim's answering model for sampled definition escalations,
+   MEMORY/TEXT producers live, all other escalations priced.
+   Checkpoints every 10,000. J6/J7 unchanged.

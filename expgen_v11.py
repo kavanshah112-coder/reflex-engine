@@ -42,7 +42,9 @@ G1_PARSE_SEED, G1_PARSE_N = 8555, 160000
 G1_OOF_SEED, G1_OOF_N = 8556, 20000
 G1_SHUFFLE = 8557
 G1_VAL, G1_TRAFFIC, G1_SEALED = 300, 2000, 300
-G2_SEED, G2_N = 9555, 25000
+# AMENDMENT B (user-directed, pre-data): commercial sim scaled to
+# 100,000 queries; W1b engine fixes precede G1 filtering
+G2_SEED, G2_N = 9555, 100000
 G3_SEED, SEM_SEED, ADV_SEED = 9666, 9777, 9778
 
 MATERIALS = {  # material -> density kg/m^3 (frozen ground truth)
