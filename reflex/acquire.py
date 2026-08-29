@@ -139,6 +139,14 @@ class Injector:
             undo["prev"] = self.breeder_ref.deployed_struct.get(
                 p["key"])
             self.breeder_ref.deployed_struct[p["key"]] = p["spec"]
+        elif t == "memory_fact":
+            entry = dict(p)
+            self.loader.MEMORY_FACTS.append(entry)
+            undo["entry"] = entry
+        elif t == "text_qa":
+            undo["key"] = p["key"]
+            undo["prev"] = self.loader.TEXT_QA.get(p["key"])
+            self.loader.TEXT_QA[p["key"]] = dict(p)
         else:
             raise ValueError(f"unknown candidate type {t}")
         return undo
@@ -184,6 +192,13 @@ class Injector:
             else:
                 self.breeder_ref.deployed_struct[undo["key"]] = \
                     undo["prev"]
+        elif t == "memory_fact":
+            self.loader.MEMORY_FACTS.remove(undo["entry"])
+        elif t == "text_qa":
+            if undo["prev"] is None:
+                del self.loader.TEXT_QA[undo["key"]]
+            else:
+                self.loader.TEXT_QA[undo["key"]] = undo["prev"]
 
 
 # --------------------------------------------------------- static gates
@@ -324,6 +339,31 @@ def static_gates(c, inj):
             return True, "ok"
         if t == "template_struct":
             return True, "delegated_to_pbreed_gates"
+        if t == "memory_fact":
+            # MEMORY gate family (V1_1_SPEC §2): concept validity,
+            # finite value, observation quorum; the zero-disagreement
+            # rule is enforced at the producer, probation follows
+            if p["concept"] not in W.KINDS9:
+                return False, "kind_unknown"
+            v = float(p["value"])
+            if not (abs(v) < 1e15):
+                return False, "value_range"
+            if p.get("n_observations", 0) < 3:
+                return False, "observation_quorum"
+            return True, "ok"
+        if t == "text_qa":
+            # TEXT gate family: quorum, non-empty, no collision with
+            # a different stored answer; never overrides functional
+            # paths (guaranteed by the gateway's consult order)
+            if not p.get("key") or not (p.get("answer") or "").strip():
+                return False, "empty"
+            if p.get("n_observations", 0) < 3:
+                return False, "observation_quorum"
+            from .packs import loader as _L
+            prev = _L.TEXT_QA.get(p["key"])
+            if prev and prev.get("answer") != p["answer"]:
+                return False, "answer_collision"
+            return True, "ok"
         return False, "unknown_type"
     except Exception as e:
         return False, f"gate_error:{type(e).__name__}:{e}"
@@ -479,6 +519,145 @@ class BreederProducer:
         return out
 
 
+# ----------------------------------------- V1.1 typed reflex classes
+def classify_reflex(ctype, payload, kinds):
+    """Deterministic reflex_class (V1_1_SPEC §2). FUNCTIONAL domains
+    from the governing kind's dimension vector (M,L,T,I,K,N,$)."""
+    if ctype == "memory_fact":
+        return "MEMORY.fact"
+    if ctype == "text_qa":
+        return "TEXT.qa"
+    kind = (payload.get("output") or payload.get("kind") or
+            payload.get("concept") or payload.get("name"))
+    dim = None
+    if kind in kinds:
+        dim = kinds[kind][0]
+    elif ctype == "new_kind":
+        dim = tuple(payload.get("dim") or ())
+    if not dim or len(dim) != 7:
+        return "FUNCTIONAL.physics"
+    if dim[6] != 0:
+        return "FUNCTIONAL.finance"
+    if dim[4] != 0:
+        return "FUNCTIONAL.thermodynamics"
+    if all(d == 0 for i, d in enumerate(dim) if i != 5):
+        return "FUNCTIONAL.maths"
+    return "FUNCTIONAL.physics"
+
+
+_STOPTOK = {"the", "a", "an", "of", "at", "in", "on", "to", "is",
+            "are", "was", "and", "how", "what", "much", "many",
+            "does", "it", "its", "with", "for", "per", "by"}
+
+
+def _ctx_tokens(query):
+    return {t for t in re.findall(r"[a-z]+", query.lower())
+            if t not in _STOPTOK and len(t) > 2}
+
+
+class MemoryFactTracker:
+    """MEMORY.fact producer: recurring (concept, canonical value)
+    constants across DIFFERENT queries. Zero-disagreement rule: a
+    value proposes only if no other value was ever observed for the
+    same concept with an overlapping (or universal) context."""
+
+    def __init__(self, k_min=3):
+        self.k = k_min
+        self.obs = {}       # concept -> {value_key: [count, ctx_set,
+        #                                  unit, raw_value]}
+        self.proposed = set()
+
+    def observe(self, query, facts):
+        ctx = _ctx_tokens(query)
+        for f in facts:
+            v = f.get("value")
+            c = f.get("concept")
+            if v is None or c in (None, "UNKNOWN"):
+                continue
+            vk = round(float(v), 9)
+            slot = self.obs.setdefault(c, {})
+            if vk in slot:
+                slot[vk][0] += 1
+                slot[vk][1] &= ctx
+            else:
+                slot[vk] = [1, set(ctx), f.get("unit") or "", v]
+
+    def harvest(self, store, kinds):
+        out = []
+        for c, values in self.obs.items():
+            for vk, (n, ctx, unit, raw) in values.items():
+                if n < self.k or (c, vk) in self.proposed:
+                    continue
+                clash = False
+                for vk2, (n2, ctx2, _u2, _r2) in values.items():
+                    if vk2 == vk:
+                        continue
+                    if not ctx or not ctx2 or (ctx & ctx2):
+                        clash = True    # disagreement in scope
+                        break
+                if clash or c not in kinds:
+                    continue
+                # strip the concept's own noun tokens: they appear
+                # BECAUSE the constant was stated, so requiring them
+                # would make the reflex unusable exactly where it is
+                # needed (queries that omit the constant)
+                noise = {w for noun in
+                         ([c] + list(kinds[c][2] or []))
+                         for w in noun.lower().split()}
+                ctx_use = ctx - noise
+                self.proposed.add((c, vk))
+                out.append(store.add(
+                    "memory_fact",
+                    {"concept": c, "value": raw, "unit": unit,
+                     "context_tokens": sorted(ctx_use)[:6],
+                     "n_observations": n}, "MINER",
+                    {"producer": "MemoryFactTracker"}))
+        return out
+
+
+class TextQATracker:
+    """TEXT.qa producer: a normalized question whose escalation
+    answers agree K times. Never overrides a functional path (the
+    gateway consults TEXT_QA only after the engine abstains)."""
+
+    def __init__(self, k_min=3):
+        self.k = k_min
+        self.obs = {}       # key -> {"answers": [raw...], "q": str}
+        self.proposed = set()
+
+    @staticmethod
+    def norm_q(q):
+        return re.sub(r"[^a-z0-9 ]", "",
+                      " ".join(q.lower().split()))
+
+    @staticmethod
+    def norm_a(a):
+        return re.sub(r"[^a-z0-9. ]", "",
+                      " ".join((a or "").lower().split()))[:400]
+
+    def observe(self, query, answer_text):
+        key = self.norm_q(query)
+        d = self.obs.setdefault(key, {"answers": [], "q": query})
+        d["answers"].append(answer_text)
+
+    def harvest(self, store):
+        out = []
+        for key, d in self.obs.items():
+            if key in self.proposed or len(d["answers"]) < self.k:
+                continue
+            norms = {self.norm_a(a) for a in d["answers"]}
+            if len(norms) != 1 or not next(iter(norms)):
+                continue        # disagreement or empty -> never
+            self.proposed.add(key)
+            out.append(store.add(
+                "text_qa",
+                {"key": key, "answer": d["answers"][0],
+                 "question": d["q"],
+                 "n_observations": len(d["answers"])}, "MINER",
+                {"producer": "TextQATracker"}))
+        return out
+
+
 # ------------------------------------------------- shadow evaluation
 def make_shadow_eval(engine, grade):
     """Canonical shadow evaluator (used by demo AND experiment arms):
@@ -536,6 +715,8 @@ class Gauntlet:
         for c in cands:
             if c["status"] != "PROPOSED":
                 continue
+            c["reflex_class"] = classify_reflex(
+                c["type"], c["payload"], self.inj.W.KINDS9)
             ok, why = static_gates(c, self.inj)
             c["history"].append({"gate": why, "t": time.time()})
             c["status"] = "PROBATION" if ok else "GATE_REJECTED"

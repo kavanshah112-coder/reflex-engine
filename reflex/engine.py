@@ -116,25 +116,63 @@ class Engine:
         # and no integrity verdict can ever change.
         if r.get("status") != "pm_answer" and \
                 r.get("abstain_reason") in EP._RETRYABLE:
-            from .packs.loader import TARGET_VERBS
+            from .packs.loader import MEMORY_FACTS, TARGET_VERBS
+            import re as _re
             import v10.nlpw10 as _W
             in_concepts = {f["concept"] for f in st.facts
                            if f.get("value") is not None}
-            for alt in EP.alt_targets(
-                    query, info.get("target_concept"),
-                    _W.KINDS9, TARGET_VERBS, in_concepts):
-                info2 = dict(info, target_concept=alt,
-                             target_entity=info.get("target_entity"))
-                r2 = self._run(st, info2, query, qid,
+            alts = EP.alt_targets(
+                query, info.get("target_concept"),
+                _W.KINDS9, TARGET_VERBS, in_concepts)
+
+            def _try(tgt):
+                info2 = dict(info, target_concept=tgt)
+                rr = self._run(st, info2, query, qid,
                                use_llm=False,
                                resolver=self.resolver,
                                redundancy=self.redundancy,
                                avail=available)
-                if r2.get("status") == "pm_answer":
-                    r = r2
-                    info = info2
+                return (rr, info2) if rr.get("status") == \
+                    "pm_answer" else None
+
+            hit = None
+            for alt in alts:                    # phase 1: F3 alts
+                hit = _try(alt)
+                if hit:
                     rec["target_retry"] = alt
                     break
+            if hit is None and MEMORY_FACTS:
+                # phase 2 (V1.1 MEMORY.fact): inject applicable
+                # certified constants (context satisfied, concept not
+                # explicitly given), then retry original + alt targets
+                qtok = set(_re.findall(r"[a-z]+", query.lower()))
+                added = []
+                for mf in MEMORY_FACTS:
+                    if mf["concept"] in in_concepts:
+                        continue
+                    if set(mf.get("context_tokens") or []) <= qtok:
+                        f = st.add(entity="GLOBAL",
+                                   concept=mf["concept"],
+                                   value=mf["value"],
+                                   unit=mf.get("unit", ""),
+                                   role="input",
+                                   provenance="MEMORY",
+                                   span=f"[memory:{mf['concept']}]")
+                        f["status"] = "CERTIFIED"
+                        added.append(mf["concept"])
+                if added:
+                    targets = [info.get("target_concept")] + alts
+                    for tgt in dict.fromkeys(
+                            t for t in targets
+                            if t not in (None, "UNKNOWN")):
+                        hit = _try(tgt)
+                        if hit:
+                            rec["memory_used"] = added
+                            if tgt != info.get("target_concept"):
+                                rec["target_retry"] = tgt
+                            break
+            if hit:
+                r, info = hit
         rec.update({k: r.get(k) for k in
                     ("status", "numeric_value", "abstain_reason",
                      "mode", "resolver_used", "redundancy_checked",

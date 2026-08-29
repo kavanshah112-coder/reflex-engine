@@ -110,6 +110,14 @@ PATCH_UNIT_INDEX = {
 # already in the pack table (mass t/tonne/tonnes * 1000)
 
 
+# F4e: caret-exponent unit capture ("2 m^3" — the vendored UNIT_RE
+# stops at '^', truncating to "m"). Wrapper prefers a full
+# caret/compound form WHEN the index knows it; otherwise verbatim
+# original behavior.
+_CARET_RE = re.compile(
+    r"^\s*([A-Za-z]+(?:\^\d)?(?:/[A-Za-z]+(?:\^\d)?)?)")
+
+
 def apply_lexicon_patches(W, unit_extras):
     """Called by the loader after pack injection (engine-layer,
     single auditable site)."""
@@ -117,6 +125,19 @@ def apply_lexicon_patches(W, unit_extras):
     for u, ks in PATCH_UNIT_INDEX.items():
         W._UNIT_IDX.setdefault(u, list(ks))
         unit_extras.setdefault(u, list(ks))
+    if not getattr(W._unit_after, "_v11_caret", False):
+        _orig = W._unit_after
+
+        def _unit_after_caret(text, end):
+            m = _CARET_RE.match(text[end:end + 24])
+            if m and "^" in m.group(1):
+                u = m.group(1).strip().rstrip(".,;:!?")
+                if u.lower() in W._UNIT_IDX:
+                    return u
+            return _orig(text, end)
+
+        _unit_after_caret._v11_caret = True
+        W._unit_after = _unit_after_caret
 
 
 # ---- F3 support: alternative-target candidates from the ask clause

@@ -105,6 +105,30 @@ class ReflexGateway:
                               * 1000))
                 self._n[ans.status] += 1
                 return ans
+        # V1.1 TEXT.qa: a certified text reflex for this normalized
+        # question (consulted only AFTER the engine abstains, so a
+        # functional path always outranks text recall)
+        if rec is not None:
+            from .packs.loader import TEXT_QA
+            if TEXT_QA:
+                from .acquire import TextQATracker
+                hit = TEXT_QA.get(TextQATracker.norm_q(query))
+                if hit:
+                    ans = Answer(
+                        value=hit["answer"],
+                        status=CERTIFIED_REFLEX,
+                        certificate=Certificate("memory", {
+                            "engine": ENGINE_VERSION,
+                            "reflex_class": "TEXT.qa",
+                            "n_observations":
+                                hit.get("n_observations"),
+                            "note": "functional paths abstained; "
+                                    "served from a consistency-"
+                                    "gated text reflex"}),
+                        cost=Cost(wall_ms=(time.perf_counter() - t0)
+                                  * 1000))
+                    self._n[ans.status] += 1
+                    return ans
         # coverage gap (or no engine): escalate
         reason = (rec.get("abstain_reason") if rec else
                   "no certified path: engine not loaded")

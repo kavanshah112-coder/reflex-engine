@@ -50,6 +50,11 @@ BASE_KINDS = set()
 # F3 post-abstain target retry (V1.1); dead data in V1.0
 TARGET_VERBS = {}
 
+# V1.1 typed-reflex stores (reflex/acquire.py injects ACTIVE
+# candidates here; engine/gateway consume them)
+MEMORY_FACTS = []     # [{concept, value, unit, context_tokens, ...}]
+TEXT_QA = {}          # normalized question -> {answer, topic, n_obs}
+
 
 def _load(pack_dir):
     p = Path(pack_dir)
