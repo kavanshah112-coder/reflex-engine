@@ -105,6 +105,49 @@ class Engine:
                             if f.get("value") is not None}
                     if tgt in have:
                         info["target_concept"] = hits[0]
+        # W1.1b (V1.2): appositive alias resolution — "Truck A — the
+        # freight hauler —" registers the alias, facts whose spans
+        # carry the alias re-attribute to its entity, and an ask
+        # naming the alias resolves. Replaces the correct-by-luck
+        # global guesses the guard rightly refuses.
+        if st.graph.entities:
+            import re as _re
+            for eid, e in list(st.graph.entities.items()):
+                nm = _re.escape(e["name"])
+                for m in _re.finditer(
+                        rf"{nm}\s*[,–—-]+\s*(the\s+"
+                        rf"[a-z][a-z ]{{2,30}}?)\s*[,–—-]",
+                        query, _re.I):
+                    ph = m.group(1).strip()
+                    # only a TRUE alias: if the phrase already
+                    # resolves (it is an entity-pattern name of its
+                    # own, e.g. "the red car"), the vendored binding
+                    # machinery owns it — registering it here would
+                    # split the entity (sem alias class regression,
+                    # caught by the battery)
+                    already, _c = st.graph.resolve(ph)
+                    if already is None:
+                        st.graph.alias(eid, ph)
+            alias_map = {}
+            for eid, e in st.graph.entities.items():
+                for a2 in e["aliases"]:
+                    alias_map[a2.lower()] = eid
+            if alias_map:
+                for f in st.facts:
+                    sp = (f.get("span") or "").lower()
+                    for a2, eid in alias_map.items():
+                        if a2 in sp and f.get("entity") != eid:
+                            f["entity"] = eid
+                            f["ambiguity"] = []
+                            break
+                if info.get("target_entity") is None:
+                    segs2 = [s for s in _re.split(r"[.?!]", query)
+                             if s.strip()]
+                    ask2 = (segs2[-1] if segs2 else query).lower()
+                    hits2 = {eid for a2, eid in alias_map.items()
+                             if a2 in ask2}
+                    if len(hits2) == 1:
+                        info["target_entity"] = next(iter(hits2))
         ti = time.perf_counter()
         self._certify(st)
         rec["integrity_ms"] = (time.perf_counter() - ti) * 1e3
@@ -173,6 +216,49 @@ class Engine:
                             break
             if hit:
                 r, info = hit
+        # W1.1 (V1.2): ambiguity-by-default guard. A GLOBAL solve
+        # over a state where >=2 entities hold competing facts of the
+        # same kinds is a binding guess, not an answer (bug_audit_v1_1
+        # B2's class): convert to a hazard abstention carrying the
+        # competing bindings. Single-entity and genuinely-global
+        # states are untouched; relational asks route through
+        # relational modes and never reach here.
+        if r.get("status") == "pm_answer" and \
+                r.get("mode") == "global":
+            import re as _re2
+            _segs = [s for s in _re2.split(r"[.?!]", query)
+                     if s.strip()]
+            _ask = (_segs[-1] if _segs else query)
+            if not EP.ASK_REF_RE.search(_ask):
+                per_ent = None      # kind-only ask: legitimately
+                #                     global; guard stays silent
+            else:
+                per_ent = {}
+        else:
+            per_ent = None
+        if per_ent is not None:
+            for f in st.facts:
+                e = f.get("entity")
+                if e in (None, "GLOBAL"):
+                    continue
+                if f.get("value") is not None and \
+                        f.get("concept") not in (None, "UNKNOWN"):
+                    per_ent.setdefault(e, set()).add(f["concept"])
+            if len(per_ent) >= 2:
+                kinds_seen = {}
+                competing = set()
+                for e, ks in per_ent.items():
+                    for k in ks:
+                        if k in kinds_seen and kinds_seen[k] != e:
+                            competing.add(k)
+                        kinds_seen.setdefault(k, e)
+                if competing:
+                    r = dict(r, status="abstain",
+                             numeric_value=None,
+                             abstain_reason="target_entity_ambiguous")
+                    rec["guard_fired"] = {
+                        "competing_kinds": sorted(competing),
+                        "entities": sorted(per_ent)}
         rec.update({k: r.get(k) for k in
                     ("status", "numeric_value", "abstain_reason",
                      "mode", "resolver_used", "redundancy_checked",

@@ -100,7 +100,10 @@ REF_COMPARATIVES = [
     "longer", "larger", "smaller", "bigger", "denser", "cheaper",
     "pricier", "wider", "deeper", "fastest", "slowest", "heaviest",
     "lightest", "tallest", "longest", "largest", "smallest",
-    "biggest", "densest", "cheapest", "priciest"]
+    "biggest", "densest", "cheapest", "priciest",
+    # V1.2 W1.2 audit findings: present in COMPARATIVES, absent here
+    # (the B2 pattern); vocabulary completed under PARITY-PLUS
+    "hotter", "stronger"]
 
 
 def _make_to_canonical(conv, kinds_obj):

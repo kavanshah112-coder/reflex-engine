@@ -127,7 +127,19 @@ def normalize_query(q):
 
 # ---- F4: lexicon patches surfaced by F1-F3 testing (violation_log)
 # F4b: unit words the vendored table lacks (capture gate)
-PATCH_UNIT_WORDS = {"tonne", "tonnes", "widgets", "widget"}
+# + V1.2 W1.2 audit findings: index keys the capture path could
+# never produce (noun-path-alive, capture-dead)
+PATCH_UNIT_WORDS = {"tonne", "tonnes", "widgets", "widget",
+                    "kph", "coulombs"}
+# intentionally-dead unit-index aliases (documented audit
+# exceptions): 'c'/'k' are single-letter ambiguity hazards;
+# months/years/yr/customers have index kinds NARROWER than the
+# token's real usage (months -> cust_lifetime only), so capture
+# would hijack phrase-scoped naming that is currently correct —
+# the phrase path stays authoritative for them (measured: enlivening
+# 'months' broke cplx10 chains before the battery caught it)
+AUDIT_DEAD_UNIT_KEYS = {"c", "k", "months", "years", "yr",
+                        "customers"}
 # F4b/F4d: unit-index entries — tonne mass forms + spelled-out rate
 # compounds that _unit_after builds ("metres per second" ->
 # "metres/second") but the index never contained
@@ -172,6 +184,17 @@ def apply_lexicon_patches(W, unit_extras):
 
         _unit_after_caret._v11_caret = True
         W._unit_after = _unit_after_caret
+
+
+# W1.1 (V1.2) guard scope: the ambiguity guard fires only when the
+# ask CONTAINS a reference-shaped expression that failed to resolve
+# ("the tenth one", "that unit", "the other one", "in question") —
+# single-scenario chains with incidental entities and kind-only asks
+# stay global (the cplx battery is the arbiter). Residual exposure:
+# novel reference forms outside this detector (violation_log).
+ASK_REF_RE = re.compile(
+    r"\bthe\s+[a-z]+\s+one\b|\bthat\s+[a-z]+\b|\bthe\s+other\b|"
+    r"\bin\s+question\b", re.I)
 
 
 # ---- F3 support: alternative-target candidates from the ask clause
