@@ -37,6 +37,9 @@ _F1_AND_A_HALF = re.compile(
 # ---- F2: digit-hyphen-letter separation
 _F2_RE = re.compile(r"(\d)-([A-Za-z])")
 
+# F7 (W1b): height-cue adjectives the arc's miners kept rediscovering
+PATCH_ADJ = {"winched": "height", "up": "height"}
+
 
 # F1e: MULTI-WORD verbal numbers -> digits ("Nine hundred" -> 900).
 # Single-word numbers stay on the vendored path (it handles them,
@@ -50,6 +53,18 @@ _NUMWORD = ("zero|one|two|three|four|five|six|seven|eight|nine|ten|"
             "sixty|seventy|eighty|ninety|hundred|thousand|million")
 _F1_MULTI = re.compile(
     rf"\b(?:{_NUMWORD})(?:[\s-](?:{_NUMWORD}|and))+\b", re.I)
+
+# ---- W1b (Amendment B): the last measured residual families
+# F5: money-prefixed WORD numbers ("$twelve each") — the digit path
+# handles $ prefixes; the word-number path never did
+_F5_MONEYWORD = re.compile(
+    rf"\$\s?((?:{_NUMWORD})(?:[\s-](?:{_NUMWORD}|and))*)\b", re.I)
+# F6: dimension lists ("2 by 1 by 0.1 metres") -> explicit
+# length/width/height phrasing the parser's adjective machinery knows
+_F6_DIMS = re.compile(
+    r"\b(\d+(?:\.\d+)?)\s+by\s+(\d+(?:\.\d+)?)\s+by\s+"
+    r"(\d+(?:\.\d+)?)\s*(metres|meters|metre|meter|m|cm|mm)\b",
+    re.I)
 
 
 def _words_to_number(phrase):
@@ -73,6 +88,23 @@ def normalize_query(q):
         if v is None:
             return m.group(0)
         return f"{v:g}"
+    def _moneyword(m):
+        t = m.group(1).lower().replace("-", " ").replace(" and ",
+                                                        " ")
+        v = _words_to_number(t)
+        return m.group(0) if v is None else f"${v:g}"
+    out = _F5_MONEYWORD.sub(_moneyword, out)
+
+    def _dims(m):
+        # spelled metre forms use the short unit: the legacy index
+        # maps "metres" uniquely to height (v0.11-inherited state,
+        # kept for parity), while "m" is multi-candidate and lets the
+        # long/wide/high adjectives resolve each dimension
+        u = m.group(4).lower()
+        u = "m" if u.startswith("met") else u
+        return (f"{m.group(1)} {u} long, {m.group(2)} {u} wide, "
+                f"{m.group(3)} {u} high")
+    out = _F6_DIMS.sub(_dims, out)
     out = _F1_MULTI.sub(_multi, out)
     for rx, rep in _F1_SUBS:
         if rep is None:
@@ -125,6 +157,8 @@ def apply_lexicon_patches(W, unit_extras):
     for u, ks in PATCH_UNIT_INDEX.items():
         W._UNIT_IDX.setdefault(u, list(ks))
         unit_extras.setdefault(u, list(ks))
+    for a, k in PATCH_ADJ.items():
+        W._ADJ.setdefault(a, k)
     if not getattr(W._unit_after, "_v11_caret", False):
         _orig = W._unit_after
 
