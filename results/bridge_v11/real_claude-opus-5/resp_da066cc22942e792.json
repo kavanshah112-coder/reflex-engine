@@ -1,0 +1,5 @@
+{
+ "text": "{\n \"lexicon_nouns\": [\n  {\n   \"kind\": \"count\",\n   \"noun\": \"packages\"\n  },\n  {\n   \"kind\": \"count\",\n   \"noun\": \"lemon heads\"\n  }\n ],\n \"adj_maps\": [\n  {\n   \"adj\": \"ate\",\n   \"kind\": \"count\"\n  },\n  {\n   \"adj\": \"left\",\n   \"kind\": \"count\"\n  }\n ],\n \"unit_index\": [\n  {\n   \"unit\": \"package\",\n   \"kind\": \"count\"\n  }\n ],\n \"conversions\": [],\n \"new_kinds\": [\n  {\n   \"name\": \"items_per_package\",\n   \"dim\": [\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0\n   ],\n   \"unit\": \"(count)/package\",\n   \"nouns\": [\n    \"packages\"\n   ],\n   \"aliases\": [\n    \"packages of\"\n   ]\n  }\n ],\n \"new_caps\": [\n  {\n   \"name\": \"packages_consumed\",\n   \"inputs\": [\n    \"count\",\n    \"items_per_package\"\n   ],\n   \"output\": \"count\",\n   \"expr\": \"count / items_per_package\"\n  }\n ]\n}",
+ "tokens_in": 784,
+ "tokens_out": 184
+}

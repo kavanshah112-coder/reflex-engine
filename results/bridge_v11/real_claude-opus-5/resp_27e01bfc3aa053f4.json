@@ -1,0 +1,5 @@
+{
+ "text": "{\"lexicon_nouns\": [{\"kind\": \"count\", \"noun\": \"questions\"}, {\"kind\": \"count\", \"noun\": \"points\"}], \"adj_maps\": [{\"adj\": \"easy\", \"kind\": \"count\"}, {\"adj\": \"average\", \"kind\": \"count\"}, {\"adj\": \"difficult\", \"kind\": \"count\"}], \"unit_index\": [{\"unit\": \"%\", \"kind\": \"rate\"}, {\"unit\": \"points\", \"kind\": \"count\"}], \"conversions\": [], \"new_kinds\": [], \"new_caps\": [{\"name\": \"expected_correct\", \"inputs\": [\"count\", \"rate\"], \"output\": \"count\", \"expr\": \"count * rate\"}]}",
+ "tokens_in": 832,
+ "tokens_out": 114
+}

@@ -1,0 +1,5 @@
+{
+ "text": "{\n \"lexicon_nouns\": [\n  {\n   \"kind\": \"count\",\n   \"noun\": \"guns\"\n  }\n ],\n \"adj_maps\": [\n  {\n   \"adj\": \"share\",\n   \"kind\": \"mean\"\n  },\n  {\n   \"adj\": \"equally\",\n   \"kind\": \"mean\"\n  }\n ],\n \"unit_index\": [],\n \"conversions\": [],\n \"new_kinds\": [],\n \"new_caps\": [\n  {\n   \"name\": \"pooled_total\",\n   \"inputs\": [\n    \"count\"\n   ],\n   \"output\": \"data_sum\",\n   \"expr\": \"count + count\"\n  },\n  {\n   \"name\": \"equal_share\",\n   \"inputs\": [\n    \"data_sum\",\n    \"data_count\"\n   ],\n   \"output\": \"mean\",\n   \"expr\": \"data_sum / data_count\"\n  }\n ]\n}",
+ "tokens_in": 815,
+ "tokens_out": 131
+}

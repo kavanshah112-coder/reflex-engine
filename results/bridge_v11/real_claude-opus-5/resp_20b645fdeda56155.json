@@ -1,0 +1,5 @@
+{
+ "text": "{\"lexicon_nouns\": [{\"kind\": \"count\", \"noun\": \"boards\"}, {\"kind\": \"cost_total\", \"noun\": \"cost\"}], \"adj_maps\": [{\"adj\": \"sells\", \"kind\": \"revenue\"}], \"unit_index\": [], \"conversions\": [], \"new_kinds\": [], \"new_caps\": [{\"name\": \"profit_from_sales\", \"inputs\": [\"revenue\", \"cost_total\"], \"output\": \"profit\", \"expr\": \"revenue - cost_total\"}]}",
+ "tokens_in": 882,
+ "tokens_out": 84
+}

@@ -1,0 +1,5 @@
+{
+ "text": "{\n \"lexicon_nouns\": [\n  {\n   \"kind\": \"count\",\n   \"noun\": \"cannolis\"\n  },\n  {\n   \"kind\": \"count\",\n   \"noun\": \"corn\"\n  },\n  {\n   \"kind\": \"count\",\n   \"noun\": \"corns\"\n  }\n ],\n \"adj_maps\": [\n  {\n   \"adj\": \"bought\",\n   \"kind\": \"count\"\n  },\n  {\n   \"adj\": \"combined\",\n   \"kind\": \"count\"\n  }\n ],\n \"unit_index\": [],\n \"conversions\": [],\n \"new_kinds\": [],\n \"new_caps\": [\n  {\n   \"name\": \"ratio_scale_count\",\n   \"inputs\": [\n    \"count\",\n    \"rate\"\n   ],\n   \"output\": \"count\",\n   \"expr\": \"count * rate\"\n  },\n  {\n   \"name\": \"count_after_change\",\n   \"inputs\": [\n    \"count\"\n   ],\n   \"output\": \"count\",\n   \"expr\": \"count + count\"\n  },\n  {\n   \"name\": \"combined_total_count\",\n   \"inputs\": [\n    \"count\"\n   ],\n   \"output\": \"count\",\n   \"expr\": \"count + count\"\n  }\n ]\n}",
+ "tokens_in": 830,
+ "tokens_out": 186
+}

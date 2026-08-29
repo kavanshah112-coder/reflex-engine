@@ -1,0 +1,3240 @@
+[
+ {
+  "cid": "c6a0a906638",
+  "type": "new_kind",
+  "payload": {
+   "name": "received_count",
+   "dim": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "unit": "units",
+   "nouns": [],
+   "aliases": []
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 799,
+   "tokens_out": 111,
+   "query": "Maria had twenty-five pieces of gum. Tommy gave her sixteen more pieces. Luis gave her twenty more pieces. How many pieces of gum does Maria have now?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c114a6ecdb4",
+  "type": "new_kind",
+  "payload": {
+   "name": "eggs_per_volume",
+   "dim": [
+    0,
+    -3,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "unit": "units/m^3",
+   "nouns": [],
+   "aliases": []
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 792,
+   "tokens_out": 162,
+   "query": "Chef Pillsbury's secret recipe requires 7 eggs for every 2 cups of flour. How many eggs will he need if he uses 8 cups of flour?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c87a7be586c",
+  "type": "new_kind",
+  "payload": {
+   "name": "weekly_spend",
+   "dim": [
+    0,
+    0,
+    -1,
+    0,
+    0,
+    0,
+    1
+   ],
+   "unit": "$/wk",
+   "nouns": [
+    "dollars"
+   ],
+   "aliases": [
+    "$ per week"
+   ]
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 819,
+   "tokens_out": 146,
+   "query": "Madeline and her roommate, Keenan, share the cost of groceries. In total, they spend about $400 per month. In a four-week month, how many dollars does Keenan sp"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c89b96afff6",
+  "type": "new_kind",
+  "payload": {
+   "name": "calories",
+   "dim": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "unit": "calorie",
+   "nouns": [
+    "calories"
+   ],
+   "aliases": [
+    "calorie"
+   ]
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 829,
+   "tokens_out": 236,
+   "query": "John makes himself a 6 egg omelet with 2 oz of cheese and an equal amount of ham.  Eggs are 75 calories each.  Cheese is 120 calories per ounce.  Ham is 40 calo"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c975c21ef4f",
+  "type": "new_kind",
+  "payload": {
+   "name": "calories_per_ounce",
+   "dim": [
+    -1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "unit": "calories/kg",
+   "nouns": [
+    "ounce"
+   ],
+   "aliases": [
+    "calories per ounce",
+    "calories/ounce"
+   ]
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 829,
+   "tokens_out": 236,
+   "query": "John makes himself a 6 egg omelet with 2 oz of cheese and an equal amount of ham.  Eggs are 75 calories each.  Cheese is 120 calories per ounce.  Ham is 40 calo"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c7073d6737c",
+  "type": "new_kind",
+  "payload": {
+   "name": "calories_per_egg",
+   "dim": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "unit": "calories/egg",
+   "nouns": [
+    "egg"
+   ],
+   "aliases": [
+    "calories each"
+   ]
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 829,
+   "tokens_out": 236,
+   "query": "John makes himself a 6 egg omelet with 2 oz of cheese and an equal amount of ham.  Eggs are 75 calories each.  Cheese is 120 calories per ounce.  Ham is 40 calo"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c26417c142f",
+  "type": "new_kind",
+  "payload": {
+   "name": "sheet_density",
+   "dim": [
+    0,
+    -1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "unit": "1/m",
+   "nouns": [
+    "pages"
+   ],
+   "aliases": [
+    "pages/inch"
+   ]
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 813,
+   "tokens_out": 162,
+   "query": "The book is printed on paper that, when stacked, is 100 pages to the inch. Each paper is printed on both sides, with one page of the book printed on each side. "
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c3847863d97",
+  "type": "new_kind",
+  "payload": {
+   "name": "calls_per_customer",
+   "dim": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "unit": "calls/customer",
+   "nouns": [
+    "calls"
+   ],
+   "aliases": [
+    "telephone calls"
+   ]
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 889,
+   "tokens_out": 169,
+   "query": "Jason works as a salesperson at a car dealership.  He needs to sell 15 cars this month to earn a big bonus.  He knows based on historical averages, that for eve"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c8e33569543",
+  "type": "new_kind",
+  "payload": {
+   "name": "customers_per_sale",
+   "dim": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "unit": "customers/car",
+   "nouns": [
+    "customers"
+   ],
+   "aliases": [
+    "customers per car"
+   ]
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 889,
+   "tokens_out": 169,
+   "query": "Jason works as a salesperson at a car dealership.  He needs to sell 15 cars this month to earn a big bonus.  He knows based on historical averages, that for eve"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cc8b57393aa",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "windows"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 811,
+   "tokens_out": 135,
+   "query": "Luke is buying fabric for new curtains. There are five windows. Each window is 35 inches wide and Luke needs to buy fabric equal to 2 times the total width of t"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c39c9d1cf64",
+  "type": "unit_index",
+  "payload": {
+   "unit": "inches",
+   "kind": "width"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 811,
+   "tokens_out": 135,
+   "query": "Luke is buying fabric for new curtains. There are five windows. Each window is 35 inches wide and Luke needs to buy fabric equal to 2 times the total width of t"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c80f6e95238",
+  "type": "conversion",
+  "payload": {
+   "concept": "width",
+   "units": [
+    "inches"
+   ],
+   "op": "mul",
+   "factor": 0.0254
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 811,
+   "tokens_out": 135,
+   "query": "Luke is buying fabric for new curtains. There are five windows. Each window is 35 inches wide and Luke needs to buy fabric equal to 2 times the total width of t"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c0d41d00c23",
+  "type": "adj_map",
+  "payload": {
+   "adj": "twice",
+   "kind": "rate"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 815,
+   "tokens_out": 109,
+   "query": "To fund his store, Mr. Josue solicited money from two banks. The first bank gave him $4000, and the second company gave him twice as much. If he initially had $"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c7ff3f824a3",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "gum"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 799,
+   "tokens_out": 111,
+   "query": "Maria had twenty-five pieces of gum. Tommy gave her sixteen more pieces. Luis gave her twenty more pieces. How many pieces of gum does Maria have now?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c3c83712c0a",
+  "type": "new_cap",
+  "payload": {
+   "name": "total_after_gifts",
+   "inputs": [
+    "count",
+    "received_count"
+   ],
+   "output": "count",
+   "expr": "count + received_count"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 799,
+   "tokens_out": 111,
+   "query": "Maria had twenty-five pieces of gum. Tommy gave her sixteen more pieces. Luis gave her twenty more pieces. How many pieces of gum does Maria have now?"
+  },
+  "confirms": 3,
+  "requires": [
+   "c6a0a906638"
+  ]
+ },
+ {
+  "cid": "cad281a9983",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "eggs"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 792,
+   "tokens_out": 162,
+   "query": "Chef Pillsbury's secret recipe requires 7 eggs for every 2 cups of flour. How many eggs will he need if he uses 8 cups of flour?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cf213ab8c8f",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "volume",
+   "noun": "flour"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 792,
+   "tokens_out": 162,
+   "query": "Chef Pillsbury's secret recipe requires 7 eggs for every 2 cups of flour. How many eggs will he need if he uses 8 cups of flour?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cd2e7512341",
+  "type": "unit_index",
+  "payload": {
+   "unit": "cups",
+   "kind": "volume"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 792,
+   "tokens_out": 162,
+   "query": "Chef Pillsbury's secret recipe requires 7 eggs for every 2 cups of flour. How many eggs will he need if he uses 8 cups of flour?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c4c75ca20aa",
+  "type": "conversion",
+  "payload": {
+   "concept": "volume",
+   "units": [
+    "cups"
+   ],
+   "op": "mul",
+   "factor": 0.0002365882
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 792,
+   "tokens_out": 162,
+   "query": "Chef Pillsbury's secret recipe requires 7 eggs for every 2 cups of flour. How many eggs will he need if he uses 8 cups of flour?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c7e49c868fa",
+  "type": "new_cap",
+  "payload": {
+   "name": "eggs_per_volume_from_recipe",
+   "inputs": [
+    "count",
+    "volume"
+   ],
+   "output": "eggs_per_volume",
+   "expr": "count / volume"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 792,
+   "tokens_out": 162,
+   "query": "Chef Pillsbury's secret recipe requires 7 eggs for every 2 cups of flour. How many eggs will he need if he uses 8 cups of flour?"
+  },
+  "confirms": 3,
+  "requires": [
+   "c114a6ecdb4"
+  ]
+ },
+ {
+  "cid": "cb4af988f09",
+  "type": "new_cap",
+  "payload": {
+   "name": "eggs_needed_for_flour",
+   "inputs": [
+    "eggs_per_volume",
+    "volume"
+   ],
+   "output": "count",
+   "expr": "eggs_per_volume * volume"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 792,
+   "tokens_out": 162,
+   "query": "Chef Pillsbury's secret recipe requires 7 eggs for every 2 cups of flour. How many eggs will he need if he uses 8 cups of flour?"
+  },
+  "confirms": 3,
+  "requires": [
+   "c114a6ecdb4"
+  ]
+ },
+ {
+  "cid": "c09c303ffe5",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "kittens"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 852,
+   "tokens_out": 54,
+   "query": "The Doubtfire sisters are driving home with 7 kittens adopted from the local animal shelter when their mother calls to inform them that their two house cats hav"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c0368f1f894",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "cats"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 852,
+   "tokens_out": 54,
+   "query": "The Doubtfire sisters are driving home with 7 kittens adopted from the local animal shelter when their mother calls to inform them that their two house cats hav"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c21d011d914",
+  "type": "adj_map",
+  "payload": {
+   "adj": "adopted",
+   "kind": "count"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 852,
+   "tokens_out": 54,
+   "query": "The Doubtfire sisters are driving home with 7 kittens adopted from the local animal shelter when their mother calls to inform them that their two house cats hav"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c3e8fb12352",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "buckets"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 868,
+   "tokens_out": 177,
+   "query": "Ron is fed up with the pothole in front of his house. If it doesn't get fixed, it's going to do $450 worth of damage to his car. Unfortunately, the city council"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c6e2ead8525",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "unit_cost",
+   "noun": "asphalt"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 868,
+   "tokens_out": 177,
+   "query": "Ron is fed up with the pothole in front of his house. If it doesn't get fixed, it's going to do $450 worth of damage to his car. Unfortunately, the city council"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cdc2bef00fc",
+  "type": "adj_map",
+  "payload": {
+   "adj": "save",
+   "kind": "cost_total"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 868,
+   "tokens_out": 177,
+   "query": "Ron is fed up with the pothole in front of his house. If it doesn't get fixed, it's going to do $450 worth of damage to his car. Unfortunately, the city council"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c2bbae3455f",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "revenue",
+   "noun": "money"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 861,
+   "tokens_out": 119,
+   "query": "Jason was told he could earn $3.00 for doing his laundry,  $1.50 for cleaning his room, $0.75 for taking the trash to the curb each week and $0.50 for emptying "
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cb23cb6ef4c",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "times"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 861,
+   "tokens_out": 119,
+   "query": "Jason was told he could earn $3.00 for doing his laundry,  $1.50 for cleaning his room, $0.75 for taking the trash to the curb each week and $0.50 for emptying "
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c803d43701e",
+  "type": "adj_map",
+  "payload": {
+   "adj": "earn",
+   "kind": "revenue"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 861,
+   "tokens_out": 119,
+   "query": "Jason was told he could earn $3.00 for doing his laundry,  $1.50 for cleaning his room, $0.75 for taking the trash to the curb each week and $0.50 for emptying "
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c7d783662f3",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "bars"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 818,
+   "tokens_out": 119,
+   "query": "Joe's bag of Halloween candy has 25 chocolate bars and 80 candied apples. Each chocolate bar weighs twice as much as each candied apple. If each chocolate bar w"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ccb20d2fc21",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "apples"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 818,
+   "tokens_out": 119,
+   "query": "Joe's bag of Halloween candy has 25 chocolate bars and 80 candied apples. Each chocolate bar weighs twice as much as each candied apple. If each chocolate bar w"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cee936e94d4",
+  "type": "adj_map",
+  "payload": {
+   "adj": "weighs",
+   "kind": "mass"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 818,
+   "tokens_out": 119,
+   "query": "Joe's bag of Halloween candy has 25 chocolate bars and 80 candied apples. Each chocolate bar weighs twice as much as each candied apple. If each chocolate bar w"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c586488b59a",
+  "type": "adj_map",
+  "payload": {
+   "adj": "weigh",
+   "kind": "mass"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 818,
+   "tokens_out": 119,
+   "query": "Joe's bag of Halloween candy has 25 chocolate bars and 80 candied apples. Each chocolate bar weighs twice as much as each candied apple. If each chocolate bar w"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cd773b2d142",
+  "type": "adj_map",
+  "payload": {
+   "adj": "twice",
+   "kind": "rate"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 818,
+   "tokens_out": 119,
+   "query": "Joe's bag of Halloween candy has 25 chocolate bars and 80 candied apples. Each chocolate bar weighs twice as much as each candied apple. If each chocolate bar w"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c0d015767e4",
+  "type": "conversion",
+  "payload": {
+   "concept": "mass",
+   "units": [
+    "g",
+    "grams"
+   ],
+   "op": "div",
+   "factor": 1000
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 818,
+   "tokens_out": 119,
+   "query": "Joe's bag of Halloween candy has 25 chocolate bars and 80 candied apples. Each chocolate bar weighs twice as much as each candied apple. If each chocolate bar w"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cd4bd728c17",
+  "type": "new_cap",
+  "payload": {
+   "name": "group_mass",
+   "inputs": [
+    "count",
+    "mass"
+   ],
+   "output": "mass",
+   "expr": "count * mass"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 818,
+   "tokens_out": 119,
+   "query": "Joe's bag of Halloween candy has 25 chocolate bars and 80 candied apples. Each chocolate bar weighs twice as much as each candied apple. If each chocolate bar w"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ca578f8c9df",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "books"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 1000,
+   "tokens_out": 160,
+   "query": "The book fair had a sale where 3 books were $18.72. If you wanted to buy 6 books, how much money would you need?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c4e1839a8ae",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "cost_total",
+   "noun": "money"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 1000,
+   "tokens_out": 160,
+   "query": "The book fair had a sale where 3 books were $18.72. If you wanted to buy 6 books, how much money would you need?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c9547c3babf",
+  "type": "new_cap",
+  "payload": {
+   "name": "unit_price_from_total",
+   "inputs": [
+    "cost_total",
+    "count"
+   ],
+   "output": "price_per_unit",
+   "expr": "cost_total / count"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 1000,
+   "tokens_out": 160,
+   "query": "The book fair had a sale where 3 books were $18.72. If you wanted to buy 6 books, how much money would you need?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ce2cc8be1b0",
+  "type": "new_cap",
+  "payload": {
+   "name": "total_cost_from_unit_price",
+   "inputs": [
+    "price_per_unit",
+    "count"
+   ],
+   "output": "cost_total",
+   "expr": "price_per_unit * count"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 1000,
+   "tokens_out": 160,
+   "query": "The book fair had a sale where 3 books were $18.72. If you wanted to buy 6 books, how much money would you need?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c2bf3b6105e",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "cost_total",
+   "noun": "cost"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 819,
+   "tokens_out": 146,
+   "query": "Madeline and her roommate, Keenan, share the cost of groceries. In total, they spend about $400 per month. In a four-week month, how many dollars does Keenan sp"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cd10ade120a",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "week"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 819,
+   "tokens_out": 146,
+   "query": "Madeline and her roommate, Keenan, share the cost of groceries. In total, they spend about $400 per month. In a four-week month, how many dollars does Keenan sp"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cce9cf370f9",
+  "type": "adj_map",
+  "payload": {
+   "adj": "spend",
+   "kind": "cost_total"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 819,
+   "tokens_out": 146,
+   "query": "Madeline and her roommate, Keenan, share the cost of groceries. In total, they spend about $400 per month. In a four-week month, how many dollars does Keenan sp"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ca625452ea3",
+  "type": "conversion",
+  "payload": {
+   "concept": "rate_tax",
+   "units": [
+    "%"
+   ],
+   "op": "div",
+   "factor": 100
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 819,
+   "tokens_out": 146,
+   "query": "Madeline and her roommate, Keenan, share the cost of groceries. In total, they spend about $400 per month. In a four-week month, how many dollars does Keenan sp"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cac63e019c3",
+  "type": "text_qa",
+  "payload": {
+   "key": "most mercury compounds decompose when they are",
+   "answer": "Heated. Most mercury compounds are thermally unstable and decompose when heated, typically releasing mercury vapor.",
+   "question": "Most mercury compounds decompose when they are?",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c74b3688e98",
+  "type": "text_qa",
+  "payload": {
+   "key": "in a plant the flower contains what",
+   "answer": "A vector. Most often a bacterial plasmid or a modified virus, it carries the desired DNA into the host cell so the gene can be taken up and expressed.",
+   "question": "In a plant, the flower contains what?",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c9c7a865012",
+  "type": "text_qa",
+  "payload": {
+   "key": "proteins are categorized according to shape and what property which correlates with it",
+   "answer": "Solubility. Proteins are classified by their shape and their solubility, which correlate: globular proteins are generally soluble in water, while fibrous proteins are typically insoluble.",
+   "question": "Proteins are categorized according to shape and what property, which correlates with it?",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c96f6b2dae9",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "principal",
+   "noun": "money"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 815,
+   "tokens_out": 127,
+   "query": "Ronnie was given $5 while Rissa was given thrice as much. After each of them had given an equal amount of money to their little sister, Rissa is left with 4/5 o"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c9ab75e600b",
+  "type": "adj_map",
+  "payload": {
+   "adj": "given",
+   "kind": "principal"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 815,
+   "tokens_out": 127,
+   "query": "Ronnie was given $5 while Rissa was given thrice as much. After each of them had given an equal amount of money to their little sister, Rissa is left with 4/5 o"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c2a30773ad5",
+  "type": "adj_map",
+  "payload": {
+   "adj": "thrice",
+   "kind": "rate"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 815,
+   "tokens_out": 127,
+   "query": "Ronnie was given $5 while Rissa was given thrice as much. After each of them had given an equal amount of money to their little sister, Rissa is left with 4/5 o"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c6af076fcdf",
+  "type": "adj_map",
+  "payload": {
+   "adj": "left",
+   "kind": "final_amount"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 815,
+   "tokens_out": 127,
+   "query": "Ronnie was given $5 while Rissa was given thrice as much. After each of them had given an equal amount of money to their little sister, Rissa is left with 4/5 o"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ced9e6e2796",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "distance",
+   "noun": "miles"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 802,
+   "tokens_out": 157,
+   "query": "Jack decides to visit a museum 150 miles from home.  He drives 75 mph there and back.  He spends 6 hours at the museum.  How long is he gone from home?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c48cb309ff5",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "speed",
+   "noun": "mph"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 802,
+   "tokens_out": 157,
+   "query": "Jack decides to visit a museum 150 miles from home.  He drives 75 mph there and back.  He spends 6 hours at the museum.  How long is he gone from home?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c6fea5d7621",
+  "type": "unit_index",
+  "payload": {
+   "unit": "miles",
+   "kind": "distance"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 802,
+   "tokens_out": 157,
+   "query": "Jack decides to visit a museum 150 miles from home.  He drives 75 mph there and back.  He spends 6 hours at the museum.  How long is he gone from home?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c16956e589e",
+  "type": "unit_index",
+  "payload": {
+   "unit": "mph",
+   "kind": "speed"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 802,
+   "tokens_out": 157,
+   "query": "Jack decides to visit a museum 150 miles from home.  He drives 75 mph there and back.  He spends 6 hours at the museum.  How long is he gone from home?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c335aae22d7",
+  "type": "unit_index",
+  "payload": {
+   "unit": "hours",
+   "kind": "time"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 802,
+   "tokens_out": 157,
+   "query": "Jack decides to visit a museum 150 miles from home.  He drives 75 mph there and back.  He spends 6 hours at the museum.  How long is he gone from home?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c1e49b4ed17",
+  "type": "conversion",
+  "payload": {
+   "concept": "distance",
+   "units": [
+    "miles"
+   ],
+   "op": "mul",
+   "factor": 1609.344
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 802,
+   "tokens_out": 157,
+   "query": "Jack decides to visit a museum 150 miles from home.  He drives 75 mph there and back.  He spends 6 hours at the museum.  How long is he gone from home?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c4c1c6dc975",
+  "type": "conversion",
+  "payload": {
+   "concept": "speed",
+   "units": [
+    "mph"
+   ],
+   "op": "mul",
+   "factor": 0.44704
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 802,
+   "tokens_out": 157,
+   "query": "Jack decides to visit a museum 150 miles from home.  He drives 75 mph there and back.  He spends 6 hours at the museum.  How long is he gone from home?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c99a79ed65e",
+  "type": "conversion",
+  "payload": {
+   "concept": "time",
+   "units": [
+    "hours"
+   ],
+   "op": "mul",
+   "factor": 3600
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 802,
+   "tokens_out": 157,
+   "query": "Jack decides to visit a museum 150 miles from home.  He drives 75 mph there and back.  He spends 6 hours at the museum.  How long is he gone from home?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c4b2afe3e1d",
+  "type": "new_cap",
+  "payload": {
+   "name": "round_trip_time",
+   "inputs": [
+    "distance",
+    "speed",
+    "time"
+   ],
+   "output": "time",
+   "expr": "2 * distance / speed + time"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 802,
+   "tokens_out": 157,
+   "query": "Jack decides to visit a museum 150 miles from home.  He drives 75 mph there and back.  He spends 6 hours at the museum.  How long is he gone from home?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c4bb3903656",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "eggs"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 829,
+   "tokens_out": 236,
+   "query": "John makes himself a 6 egg omelet with 2 oz of cheese and an equal amount of ham.  Eggs are 75 calories each.  Cheese is 120 calories per ounce.  Ham is 40 calo"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cf511754967",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "mass",
+   "noun": "cheese"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 829,
+   "tokens_out": 236,
+   "query": "John makes himself a 6 egg omelet with 2 oz of cheese and an equal amount of ham.  Eggs are 75 calories each.  Cheese is 120 calories per ounce.  Ham is 40 calo"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c35e794cc04",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "mass",
+   "noun": "ham"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 829,
+   "tokens_out": 236,
+   "query": "John makes himself a 6 egg omelet with 2 oz of cheese and an equal amount of ham.  Eggs are 75 calories each.  Cheese is 120 calories per ounce.  Ham is 40 calo"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c1ae47232ca",
+  "type": "unit_index",
+  "payload": {
+   "unit": "oz",
+   "kind": "mass"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 829,
+   "tokens_out": 236,
+   "query": "John makes himself a 6 egg omelet with 2 oz of cheese and an equal amount of ham.  Eggs are 75 calories each.  Cheese is 120 calories per ounce.  Ham is 40 calo"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c5ec7fca9c6",
+  "type": "unit_index",
+  "payload": {
+   "unit": "ounce",
+   "kind": "mass"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 829,
+   "tokens_out": 236,
+   "query": "John makes himself a 6 egg omelet with 2 oz of cheese and an equal amount of ham.  Eggs are 75 calories each.  Cheese is 120 calories per ounce.  Ham is 40 calo"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cb5f9f8fbf5",
+  "type": "conversion",
+  "payload": {
+   "concept": "mass",
+   "units": [
+    "oz",
+    "ounce"
+   ],
+   "op": "mul",
+   "factor": 0.0283495
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 829,
+   "tokens_out": 236,
+   "query": "John makes himself a 6 egg omelet with 2 oz of cheese and an equal amount of ham.  Eggs are 75 calories each.  Cheese is 120 calories per ounce.  Ham is 40 calo"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c9d2122f9d5",
+  "type": "new_cap",
+  "payload": {
+   "name": "total_calories",
+   "inputs": [
+    "count",
+    "calories_per_egg",
+    "mass",
+    "calories_per_ounce"
+   ],
+   "output": "calories",
+   "expr": "count * calories_per_egg + mass * calories_per_ounce"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 829,
+   "tokens_out": 236,
+   "query": "John makes himself a 6 egg omelet with 2 oz of cheese and an equal amount of ham.  Eggs are 75 calories each.  Cheese is 120 calories per ounce.  Ham is 40 calo"
+  },
+  "confirms": 3,
+  "requires": [
+   "c7073d6737c",
+   "c975c21ef4f",
+   "c89b96afff6"
+  ]
+ },
+ {
+  "cid": "c2fed0e2d55",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "revenue",
+   "noun": "money"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 833,
+   "tokens_out": 138,
+   "query": "Keegan was running a car wash with his friend Tashay to raise money for a baseball camp. They needed to raise $200 for the two of them. By 3 pm, Keegan had earn"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cc58ed6de3f",
+  "type": "adj_map",
+  "payload": {
+   "adj": "earned",
+   "kind": "revenue"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 833,
+   "tokens_out": 138,
+   "query": "Keegan was running a car wash with his friend Tashay to raise money for a baseball camp. They needed to raise $200 for the two of them. By 3 pm, Keegan had earn"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c35b33f078f",
+  "type": "adj_map",
+  "payload": {
+   "adj": "raise",
+   "kind": "revenue"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 833,
+   "tokens_out": 138,
+   "query": "Keegan was running a car wash with his friend Tashay to raise money for a baseball camp. They needed to raise $200 for the two of them. By 3 pm, Keegan had earn"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c1ecf14b3be",
+  "type": "unit_index",
+  "payload": {
+   "unit": "miles",
+   "kind": "length"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 776,
+   "tokens_out": 114,
+   "query": "A farm was 7 miles wide and 8 miles long. What is the area of the farm?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c9cdc51ff01",
+  "type": "conversion",
+  "payload": {
+   "concept": "length",
+   "units": [
+    "miles"
+   ],
+   "op": "mul",
+   "factor": 1609.344
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 776,
+   "tokens_out": 114,
+   "query": "A farm was 7 miles wide and 8 miles long. What is the area of the farm?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c34cf420403",
+  "type": "conversion",
+  "payload": {
+   "concept": "width",
+   "units": [
+    "miles"
+   ],
+   "op": "mul",
+   "factor": 1609.344
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 776,
+   "tokens_out": 114,
+   "query": "A farm was 7 miles wide and 8 miles long. What is the area of the farm?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c361baf180d",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "people"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 797,
+   "tokens_out": 44,
+   "query": "A group was sitting at a lunch table. After finishing, six people left and there were five left at the table. How many people were at the table to start with?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cb288d98f4c",
+  "type": "adj_map",
+  "payload": {
+   "adj": "left",
+   "kind": "count"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 797,
+   "tokens_out": 44,
+   "query": "A group was sitting at a lunch table. After finishing, six people left and there were five left at the table. How many people were at the table to start with?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cd5eba8ef67",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "distance",
+   "noun": "journey"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 841,
+   "tokens_out": 168,
+   "query": "A train covered a certain distance at a uniform speed. If the train would have been 6 km/hr faster it would have 8 hours less than the scheduled time, and if th"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c551657a803",
+  "type": "adj_map",
+  "payload": {
+   "adj": "faster",
+   "kind": "speed"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 841,
+   "tokens_out": 168,
+   "query": "A train covered a certain distance at a uniform speed. If the train would have been 6 km/hr faster it would have 8 hours less than the scheduled time, and if th"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cf89f572993",
+  "type": "adj_map",
+  "payload": {
+   "adj": "slower",
+   "kind": "speed"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 841,
+   "tokens_out": 168,
+   "query": "A train covered a certain distance at a uniform speed. If the train would have been 6 km/hr faster it would have 8 hours less than the scheduled time, and if th"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c28733830a5",
+  "type": "adj_map",
+  "payload": {
+   "adj": "scheduled",
+   "kind": "time"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 841,
+   "tokens_out": 168,
+   "query": "A train covered a certain distance at a uniform speed. If the train would have been 6 km/hr faster it would have 8 hours less than the scheduled time, and if th"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c4b4d992386",
+  "type": "adj_map",
+  "payload": {
+   "adj": "uniform",
+   "kind": "speed"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 841,
+   "tokens_out": 168,
+   "query": "A train covered a certain distance at a uniform speed. If the train would have been 6 km/hr faster it would have 8 hours less than the scheduled time, and if th"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c95a0cbb804",
+  "type": "unit_index",
+  "payload": {
+   "unit": "hours",
+   "kind": "time"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 841,
+   "tokens_out": 168,
+   "query": "A train covered a certain distance at a uniform speed. If the train would have been 6 km/hr faster it would have 8 hours less than the scheduled time, and if th"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c9639ebac1c",
+  "type": "conversion",
+  "payload": {
+   "concept": "speed",
+   "units": [
+    "km/hr"
+   ],
+   "op": "div",
+   "factor": 3.6
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 841,
+   "tokens_out": 168,
+   "query": "A train covered a certain distance at a uniform speed. If the train would have been 6 km/hr faster it would have 8 hours less than the scheduled time, and if th"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c738c1eb6cb",
+  "type": "conversion",
+  "payload": {
+   "concept": "time",
+   "units": [
+    "hours"
+   ],
+   "op": "mul",
+   "factor": 3600
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 841,
+   "tokens_out": 168,
+   "query": "A train covered a certain distance at a uniform speed. If the train would have been 6 km/hr faster it would have 8 hours less than the scheduled time, and if th"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c80b7b2c18f",
+  "type": "new_cap",
+  "payload": {
+   "name": "journey_length",
+   "inputs": [
+    "speed",
+    "time"
+   ],
+   "output": "length",
+   "expr": "speed * time"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 841,
+   "tokens_out": 168,
+   "query": "A train covered a certain distance at a uniform speed. If the train would have been 6 km/hr faster it would have 8 hours less than the scheduled time, and if th"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c7ce2d208d5",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "sodas"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 788,
+   "tokens_out": 61,
+   "query": "Tiffany was buying sodas for her and her friends. They needed nine sodas, but Tiffany bought seven extra. How many did she buy?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c8ae08b5839",
+  "type": "adj_map",
+  "payload": {
+   "adj": "needed",
+   "kind": "count"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 788,
+   "tokens_out": 61,
+   "query": "Tiffany was buying sodas for her and her friends. They needed nine sodas, but Tiffany bought seven extra. How many did she buy?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c366140b84c",
+  "type": "adj_map",
+  "payload": {
+   "adj": "extra",
+   "kind": "count"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 788,
+   "tokens_out": 61,
+   "query": "Tiffany was buying sodas for her and her friends. They needed nine sodas, but Tiffany bought seven extra. How many did she buy?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c38fb404bda",
+  "type": "adj_map",
+  "payload": {
+   "adj": "bought",
+   "kind": "count"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 788,
+   "tokens_out": 61,
+   "query": "Tiffany was buying sodas for her and her friends. They needed nine sodas, but Tiffany bought seven extra. How many did she buy?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ca77ef4d634",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "watches"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 790,
+   "tokens_out": 92,
+   "query": "If Tom plans to fix 158 watches at the rate of 12 watches per day, how many watches will he fix on the last day?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cb232c27647",
+  "type": "adj_map",
+  "payload": {
+   "adj": "fix",
+   "kind": "count"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 790,
+   "tokens_out": 92,
+   "query": "If Tom plans to fix 158 watches at the rate of 12 watches per day, how many watches will he fix on the last day?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c2256d3fa2c",
+  "type": "adj_map",
+  "payload": {
+   "adj": "last",
+   "kind": "count"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 790,
+   "tokens_out": 92,
+   "query": "If Tom plans to fix 158 watches at the rate of 12 watches per day, how many watches will he fix on the last day?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c4182b9d9b9",
+  "type": "unit_index",
+  "payload": {
+   "unit": "watches/day",
+   "kind": "rate"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 790,
+   "tokens_out": 92,
+   "query": "If Tom plans to fix 158 watches at the rate of 12 watches per day, how many watches will he fix on the last day?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c773f55dfca",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "pages"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 813,
+   "tokens_out": 162,
+   "query": "The book is printed on paper that, when stacked, is 100 pages to the inch. Each paper is printed on both sides, with one page of the book printed on each side. "
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c916dde9409",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "length",
+   "noun": "inch"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 813,
+   "tokens_out": 162,
+   "query": "The book is printed on paper that, when stacked, is 100 pages to the inch. Each paper is printed on both sides, with one page of the book printed on each side. "
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c4e77149bdb",
+  "type": "adj_map",
+  "payload": {
+   "adj": "stacked",
+   "kind": "length"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 813,
+   "tokens_out": 162,
+   "query": "The book is printed on paper that, when stacked, is 100 pages to the inch. Each paper is printed on both sides, with one page of the book printed on each side. "
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c5f2815e799",
+  "type": "unit_index",
+  "payload": {
+   "unit": "inch",
+   "kind": "length"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 813,
+   "tokens_out": 162,
+   "query": "The book is printed on paper that, when stacked, is 100 pages to the inch. Each paper is printed on both sides, with one page of the book printed on each side. "
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cf46426aded",
+  "type": "unit_index",
+  "payload": {
+   "unit": "inches",
+   "kind": "length"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 813,
+   "tokens_out": 162,
+   "query": "The book is printed on paper that, when stacked, is 100 pages to the inch. Each paper is printed on both sides, with one page of the book printed on each side. "
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c3ca5278a8c",
+  "type": "conversion",
+  "payload": {
+   "concept": "length",
+   "units": [
+    "inch",
+    "inches"
+   ],
+   "op": "mul",
+   "factor": 0.0254
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 813,
+   "tokens_out": 162,
+   "query": "The book is printed on paper that, when stacked, is 100 pages to the inch. Each paper is printed on both sides, with one page of the book printed on each side. "
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cf180f596f9",
+  "type": "new_cap",
+  "payload": {
+   "name": "pages_from_thickness",
+   "inputs": [
+    "sheet_density",
+    "length"
+   ],
+   "output": "count",
+   "expr": "sheet_density * length * 2"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 813,
+   "tokens_out": 162,
+   "query": "The book is printed on paper that, when stacked, is 100 pages to the inch. Each paper is printed on both sides, with one page of the book printed on each side. "
+  },
+  "confirms": 3,
+  "requires": [
+   "c26417c142f"
+  ]
+ },
+ {
+  "cid": "c98e8720dbe",
+  "type": "adj_map",
+  "payload": {
+   "adj": "twice",
+   "kind": "rate"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 815,
+   "tokens_out": 109,
+   "query": "To fund his store, Mr. Josue solicited money from two banks. The first bank gave him $4000, and the second company gave him twice as much. If he initially had $"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c273f2a72fb",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "time",
+   "noun": "movie"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 799,
+   "tokens_out": 104,
+   "query": "Movie A was one-fourth the length of Movie B. Movie B was 5 minutes longer than Movie C. Movie C was 1.25 hours. How many minutes long was Movie A?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c93c8c585bc",
+  "type": "adj_map",
+  "payload": {
+   "adj": "length",
+   "kind": "time"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 799,
+   "tokens_out": 104,
+   "query": "Movie A was one-fourth the length of Movie B. Movie B was 5 minutes longer than Movie C. Movie C was 1.25 hours. How many minutes long was Movie A?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c51c80450b8",
+  "type": "adj_map",
+  "payload": {
+   "adj": "longer",
+   "kind": "time"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 799,
+   "tokens_out": 104,
+   "query": "Movie A was one-fourth the length of Movie B. Movie B was 5 minutes longer than Movie C. Movie C was 1.25 hours. How many minutes long was Movie A?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c240ade4346",
+  "type": "unit_index",
+  "payload": {
+   "unit": "minutes",
+   "kind": "time"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 799,
+   "tokens_out": 104,
+   "query": "Movie A was one-fourth the length of Movie B. Movie B was 5 minutes longer than Movie C. Movie C was 1.25 hours. How many minutes long was Movie A?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cd9f11c10ae",
+  "type": "unit_index",
+  "payload": {
+   "unit": "hours",
+   "kind": "time"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 799,
+   "tokens_out": 104,
+   "query": "Movie A was one-fourth the length of Movie B. Movie B was 5 minutes longer than Movie C. Movie C was 1.25 hours. How many minutes long was Movie A?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c4a6e7c2232",
+  "type": "conversion",
+  "payload": {
+   "concept": "time",
+   "units": [
+    "minutes"
+   ],
+   "op": "mul",
+   "factor": 60
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 799,
+   "tokens_out": 104,
+   "query": "Movie A was one-fourth the length of Movie B. Movie B was 5 minutes longer than Movie C. Movie C was 1.25 hours. How many minutes long was Movie A?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c9a49762f3f",
+  "type": "conversion",
+  "payload": {
+   "concept": "time",
+   "units": [
+    "hours"
+   ],
+   "op": "mul",
+   "factor": 3600
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 799,
+   "tokens_out": 104,
+   "query": "Movie A was one-fourth the length of Movie B. Movie B was 5 minutes longer than Movie C. Movie C was 1.25 hours. How many minutes long was Movie A?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c00499622c9",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "distance",
+   "noun": "home"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 887,
+   "tokens_out": 159,
+   "query": "John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get home in 4 ho"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ce976a4c21d",
+  "type": "adj_map",
+  "payload": {
+   "adj": "far",
+   "kind": "distance"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 887,
+   "tokens_out": 159,
+   "query": "John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get home in 4 ho"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c3d2d1652c4",
+  "type": "adj_map",
+  "payload": {
+   "adj": "remaining",
+   "kind": "time"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 887,
+   "tokens_out": 159,
+   "query": "John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get home in 4 ho"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c0e14e97049",
+  "type": "adj_map",
+  "payload": {
+   "adj": "standstill",
+   "kind": "speed"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 887,
+   "tokens_out": 159,
+   "query": "John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get home in 4 ho"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cc250fed84d",
+  "type": "unit_index",
+  "payload": {
+   "unit": "mph",
+   "kind": "speed"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 887,
+   "tokens_out": 159,
+   "query": "John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get home in 4 ho"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cf5c8e72180",
+  "type": "unit_index",
+  "payload": {
+   "unit": "half-hour",
+   "kind": "time"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 887,
+   "tokens_out": 159,
+   "query": "John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get home in 4 ho"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "caa432220eb",
+  "type": "conversion",
+  "payload": {
+   "concept": "speed",
+   "units": [
+    "mph"
+   ],
+   "op": "mul",
+   "factor": 0.44704
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 887,
+   "tokens_out": 159,
+   "query": "John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get home in 4 ho"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c0d70bc7b10",
+  "type": "conversion",
+  "payload": {
+   "concept": "time",
+   "units": [
+    "hours"
+   ],
+   "op": "mul",
+   "factor": 3600
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 887,
+   "tokens_out": 159,
+   "query": "John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get home in 4 ho"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c8968e7f03d",
+  "type": "conversion",
+  "payload": {
+   "concept": "time",
+   "units": [
+    "half-hour"
+   ],
+   "op": "mul",
+   "factor": 1800
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 887,
+   "tokens_out": 159,
+   "query": "John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get home in 4 ho"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cde35e28501",
+  "type": "new_cap",
+  "payload": {
+   "name": "leg_distance",
+   "inputs": [
+    "speed",
+    "time"
+   ],
+   "output": "distance",
+   "expr": "speed * time"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 887,
+   "tokens_out": 159,
+   "query": "John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get home in 4 ho"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cc78dcb36b1",
+  "type": "text_qa",
+  "payload": {
+   "key": "malonate plays what negative role on the enzyme succinate dehydrogenase",
+   "answer": "Malonate acts as a competitive inhibitor of succinate dehydrogenase. It closely resembles succinate, so it binds the enzyme's active site and blocks the real substrate from being oxidized to fumarate.",
+   "question": "Malonate plays what negative role on the enzyme succinate dehydrogenase?",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c2bb67153ce",
+  "type": "text_qa",
+  "payload": {
+   "key": "ingestion and propulsion are the first two steps in which process that describes how humans process and consume food",
+   "answer": "They are the first two steps of digestion, the digestive process. The full sequence is ingestion, propulsion, mechanical digestion, chemical digestion, absorption, and defecation.",
+   "question": "Ingestion and propulsion are the first two steps in which process that describes how humans process and consume food?",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c7a14852374",
+  "type": "text_qa",
+  "payload": {
+   "key": "about half of what type of radiation is absorbed in the first 15 meters of water",
+   "answer": "Ultraviolet radiation \u2014 roughly half of the UV entering clear water is absorbed within the first 15 meters of the water column.",
+   "question": "About half of what type of radiation is absorbed in the first 15 meters of water?",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c926fd58a11",
+  "type": "text_qa",
+  "payload": {
+   "key": "what is part of a large fungus that lives underground",
+   "answer": "The mycelium. It is the underground network of thread-like filaments called hyphae, which makes up the main body of the fungus; the mushroom above ground is only the reproductive structure.",
+   "question": "What is part of a large fungus that lives underground?",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cd927a1d77e",
+  "type": "text_qa",
+  "payload": {
+   "key": "what does pepsin help break down into amino acids",
+   "answer": "Pepsin breaks down proteins. This stomach enzyme works in acidic conditions to cleave proteins into shorter peptides, which other enzymes then reduce to amino acids.",
+   "question": "What does pepsin help break down into amino acids?",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cc23b7c07c8",
+  "type": "text_qa",
+  "payload": {
+   "key": "the small rocky bodies that orbit the sun are called what",
+   "answer": "They are called asteroids. Most orbit the Sun in the asteroid belt between Mars and Jupiter.",
+   "question": "The small, rocky bodies that orbit the sun are called what?",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c7043065a79",
+  "type": "text_qa",
+  "payload": {
+   "key": "ibuprofen and albuterol are examples of drugs whose  have different effects",
+   "answer": "Enantiomers (optical isomers, or stereoisomers). Ibuprofen and albuterol are chiral drugs whose mirror-image forms differ in biological activity, with typically one enantiomer active and the other much less so.",
+   "question": "Ibuprofen and albuterol are examples of drugs whose _________ have different effects.",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "caf6c33cf35",
+  "type": "text_qa",
+  "payload": {
+   "key": "what are thought to have evolved at least 200 million years ago from gymnosperms like gnetae",
+   "answer": "Angiosperms, the flowering plants. They are thought to have evolved at least 200 million years ago from gymnosperm ancestors resembling the gnetae.",
+   "question": "What are thought to have evolved at least 200 million years ago from gymnosperms like gnetae?",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c679011f6b5",
+  "type": "text_qa",
+  "payload": {
+   "key": "an object attached to a spring sliding on a frictionless surface is an uncomplicated type of what device",
+   "answer": "A simple harmonic oscillator. The spring's restoring force is proportional to displacement (F = -kx), so with no friction the mass oscillates sinusoidally.",
+   "question": "An object attached to a spring sliding on a frictionless surface is an uncomplicated type of what device?",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cc0787e76ce",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "cats"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 779,
+   "tokens_out": 43,
+   "query": "Mrs. Sheridan has 11 cats. How many more cats does Mrs. Sheridan need to have 43 cats?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c250908b86c",
+  "type": "adj_map",
+  "payload": {
+   "adj": "need",
+   "kind": "count"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 779,
+   "tokens_out": 43,
+   "query": "Mrs. Sheridan has 11 cats. How many more cats does Mrs. Sheridan need to have 43 cats?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cbe15fbf716",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "length",
+   "noun": "perimeter"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 806,
+   "tokens_out": 94,
+   "query": "The perimeter of two squares ABCD and PQRS are 3:2 respectively. The sums of the perimeters of the squares are 30. Find the perimeter of ABCD and PQRS."
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cd061346fcb",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "length",
+   "noun": "perimeters"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 806,
+   "tokens_out": 94,
+   "query": "The perimeter of two squares ABCD and PQRS are 3:2 respectively. The sums of the perimeters of the squares are 30. Find the perimeter of ABCD and PQRS."
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c89a4fcc9a0",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "squares"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 806,
+   "tokens_out": 94,
+   "query": "The perimeter of two squares ABCD and PQRS are 3:2 respectively. The sums of the perimeters of the squares are 30. Find the perimeter of ABCD and PQRS."
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c6966d19ff2",
+  "type": "adj_map",
+  "payload": {
+   "adj": "sums",
+   "kind": "length"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 806,
+   "tokens_out": 94,
+   "query": "The perimeter of two squares ABCD and PQRS are 3:2 respectively. The sums of the perimeters of the squares are 30. Find the perimeter of ABCD and PQRS."
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c019585b823",
+  "type": "new_cap",
+  "payload": {
+   "name": "share_by_ratio",
+   "inputs": [
+    "length",
+    "rate"
+   ],
+   "output": "length",
+   "expr": "length * rate / (rate + 1)"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 806,
+   "tokens_out": 94,
+   "query": "The perimeter of two squares ABCD and PQRS are 3:2 respectively. The sums of the perimeters of the squares are 30. Find the perimeter of ABCD and PQRS."
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c171e827eec",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "slices"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 819,
+   "tokens_out": 83,
+   "query": "Since pizza is a favorite in Kevin's family, they also bought some. His sister bought 48 slices of pizza and his brother bought 48 as well. How many slices of p"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c62306e1830",
+  "type": "adj_map",
+  "payload": {
+   "adj": "ate",
+   "kind": "count"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 819,
+   "tokens_out": 83,
+   "query": "Since pizza is a favorite in Kevin's family, they also bought some. His sister bought 48 slices of pizza and his brother bought 48 as well. How many slices of p"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c6e78a3c051",
+  "type": "adj_map",
+  "payload": {
+   "adj": "bought",
+   "kind": "count"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 819,
+   "tokens_out": 83,
+   "query": "Since pizza is a favorite in Kevin's family, they also bought some. His sister bought 48 slices of pizza and his brother bought 48 as well. How many slices of p"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c56c66d72fa",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "fish"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 870,
+   "tokens_out": 61,
+   "query": "Bob had 7 fish in his ornamental fish pond. 3 were orange, and 4 were white. He decided he wanted to get some more, so he went to the pet store. He had a sales "
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cc7d8b6ba6d",
+  "type": "adj_map",
+  "payload": {
+   "adj": "orange",
+   "kind": "count"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 870,
+   "tokens_out": 61,
+   "query": "Bob had 7 fish in his ornamental fish pond. 3 were orange, and 4 were white. He decided he wanted to get some more, so he went to the pet store. He had a sales "
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c2d12d69562",
+  "type": "adj_map",
+  "payload": {
+   "adj": "white",
+   "kind": "count"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 870,
+   "tokens_out": 61,
+   "query": "Bob had 7 fish in his ornamental fish pond. 3 were orange, and 4 were white. He decided he wanted to get some more, so he went to the pet store. He had a sales "
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cd735730b8f",
+  "type": "adj_map",
+  "payload": {
+   "adj": "mixed",
+   "kind": "count"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 870,
+   "tokens_out": 61,
+   "query": "Bob had 7 fish in his ornamental fish pond. 3 were orange, and 4 were white. He decided he wanted to get some more, so he went to the pet store. He had a sales "
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c1e0c1fe8e3",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "days"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 874,
+   "tokens_out": 78,
+   "query": "Christina records her mood every day on a calendar. Over the past thirty days of moods, she had twelve good days and eight bad days and the rest were neutral. H"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c1a12760334",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "moods"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 874,
+   "tokens_out": 78,
+   "query": "Christina records her mood every day on a calendar. Over the past thirty days of moods, she had twelve good days and eight bad days and the rest were neutral. H"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c674d76fee5",
+  "type": "adj_map",
+  "payload": {
+   "adj": "good",
+   "kind": "count"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 874,
+   "tokens_out": 78,
+   "query": "Christina records her mood every day on a calendar. Over the past thirty days of moods, she had twelve good days and eight bad days and the rest were neutral. H"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c789c9167b8",
+  "type": "adj_map",
+  "payload": {
+   "adj": "bad",
+   "kind": "count"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 874,
+   "tokens_out": 78,
+   "query": "Christina records her mood every day on a calendar. Over the past thirty days of moods, she had twelve good days and eight bad days and the rest were neutral. H"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c938c188e1a",
+  "type": "adj_map",
+  "payload": {
+   "adj": "neutral",
+   "kind": "count"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 874,
+   "tokens_out": 78,
+   "query": "Christina records her mood every day on a calendar. Over the past thirty days of moods, she had twelve good days and eight bad days and the rest were neutral. H"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cc8254b123d",
+  "type": "adj_map",
+  "payload": {
+   "adj": "left",
+   "kind": "count"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 874,
+   "tokens_out": 78,
+   "query": "Christina records her mood every day on a calendar. Over the past thirty days of moods, she had twelve good days and eight bad days and the rest were neutral. H"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c3548eac722",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "hamburgers"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 847,
+   "tokens_out": 207,
+   "query": "Carly wants to treat her friends. She orders five hamburgers at $4 each, ten packs of potato fries at $0.30 each pack, and five cans of fruit drinks at $2 each "
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c33ea82d7e3",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "packs"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 847,
+   "tokens_out": 207,
+   "query": "Carly wants to treat her friends. She orders five hamburgers at $4 each, ten packs of potato fries at $0.30 each pack, and five cans of fruit drinks at $2 each "
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c6d46f9670b",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "cans"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 847,
+   "tokens_out": 207,
+   "query": "Carly wants to treat her friends. She orders five hamburgers at $4 each, ten packs of potato fries at $0.30 each pack, and five cans of fruit drinks at $2 each "
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c291db91885",
+  "type": "adj_map",
+  "payload": {
+   "adj": "orders",
+   "kind": "cost_total"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 847,
+   "tokens_out": 207,
+   "query": "Carly wants to treat her friends. She orders five hamburgers at $4 each, ten packs of potato fries at $0.30 each pack, and five cans of fruit drinks at $2 each "
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cbf67376915",
+  "type": "new_cap",
+  "payload": {
+   "name": "line_cost",
+   "inputs": [
+    "count",
+    "price_per_unit"
+   ],
+   "output": "cost_total",
+   "expr": "count * price_per_unit"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 847,
+   "tokens_out": 207,
+   "query": "Carly wants to treat her friends. She orders five hamburgers at $4 each, ten packs of potato fries at $0.30 each pack, and five cans of fruit drinks at $2 each "
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cbadbcbbca2",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "revenue",
+   "noun": "allowance"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 820,
+   "tokens_out": 120,
+   "query": "Bailey starts with a certain amount of money. Then she receives a weekly allowance of $5 for 8 weeks. At the end of the 8 weeks, if she has a total of $100, how"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c791da3aa8b",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "weeks"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 820,
+   "tokens_out": 120,
+   "query": "Bailey starts with a certain amount of money. Then she receives a weekly allowance of $5 for 8 weeks. At the end of the 8 weeks, if she has a total of $100, how"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c59acbb5cfe",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "final_amount",
+   "noun": "total"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 820,
+   "tokens_out": 120,
+   "query": "Bailey starts with a certain amount of money. Then she receives a weekly allowance of $5 for 8 weeks. At the end of the 8 weeks, if she has a total of $100, how"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c1f1c462db6",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "chips"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 815,
+   "tokens_out": 132,
+   "query": "The vending machines sell chips for 40 cents and candy bars for 75 cents. George spent $5 and got 3 bags of chips and had 1% of his money left. How many candy b"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c12bb75a0f7",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "bars"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 815,
+   "tokens_out": 132,
+   "query": "The vending machines sell chips for 40 cents and candy bars for 75 cents. George spent $5 and got 3 bags of chips and had 1% of his money left. How many candy b"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c1a1bc3eadb",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "bags"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 815,
+   "tokens_out": 132,
+   "query": "The vending machines sell chips for 40 cents and candy bars for 75 cents. George spent $5 and got 3 bags of chips and had 1% of his money left. How many candy b"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cdd02082638",
+  "type": "adj_map",
+  "payload": {
+   "adj": "spent",
+   "kind": "cost_total"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 815,
+   "tokens_out": 132,
+   "query": "The vending machines sell chips for 40 cents and candy bars for 75 cents. George spent $5 and got 3 bags of chips and had 1% of his money left. How many candy b"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c3d1c9bf034",
+  "type": "adj_map",
+  "payload": {
+   "adj": "left",
+   "kind": "final_amount"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 815,
+   "tokens_out": 132,
+   "query": "The vending machines sell chips for 40 cents and candy bars for 75 cents. George spent $5 and got 3 bags of chips and had 1% of his money left. How many candy b"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c837b83788c",
+  "type": "unit_index",
+  "payload": {
+   "unit": "cents",
+   "kind": "price_per_unit"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 815,
+   "tokens_out": 132,
+   "query": "The vending machines sell chips for 40 cents and candy bars for 75 cents. George spent $5 and got 3 bags of chips and had 1% of his money left. How many candy b"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ce209338acf",
+  "type": "conversion",
+  "payload": {
+   "concept": "price_per_unit",
+   "units": [
+    "cents"
+   ],
+   "op": "div",
+   "factor": 100
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 815,
+   "tokens_out": 132,
+   "query": "The vending machines sell chips for 40 cents and candy bars for 75 cents. George spent $5 and got 3 bags of chips and had 1% of his money left. How many candy b"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c6325cfe28a",
+  "type": "new_cap",
+  "payload": {
+   "name": "items_cost",
+   "inputs": [
+    "count",
+    "price_per_unit"
+   ],
+   "output": "cost_total",
+   "expr": "count * price_per_unit"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 815,
+   "tokens_out": 132,
+   "query": "The vending machines sell chips for 40 cents and candy bars for 75 cents. George spent $5 and got 3 bags of chips and had 1% of his money left. How many candy b"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c4908a6e3a1",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "cars"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 889,
+   "tokens_out": 169,
+   "query": "Jason works as a salesperson at a car dealership.  He needs to sell 15 cars this month to earn a big bonus.  He knows based on historical averages, that for eve"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ca8619a1b88",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "calls"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 889,
+   "tokens_out": 169,
+   "query": "Jason works as a salesperson at a car dealership.  He needs to sell 15 cars this month to earn a big bonus.  He knows based on historical averages, that for eve"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c6903dae7c3",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "new_customers",
+   "noun": "customers"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 889,
+   "tokens_out": 169,
+   "query": "Jason works as a salesperson at a car dealership.  He needs to sell 15 cars this month to earn a big bonus.  He knows based on historical averages, that for eve"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c122f8caa47",
+  "type": "new_cap",
+  "payload": {
+   "name": "required_calls",
+   "inputs": [
+    "count",
+    "customers_per_sale",
+    "calls_per_customer"
+   ],
+   "output": "count",
+   "expr": "count * customers_per_sale * calls_per_customer"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 889,
+   "tokens_out": 169,
+   "query": "Jason works as a salesperson at a car dealership.  He needs to sell 15 cars this month to earn a big bonus.  He knows based on historical averages, that for eve"
+  },
+  "confirms": 3,
+  "requires": [
+   "c8e33569543",
+   "c3847863d97"
+  ]
+ },
+ {
+  "cid": "cddb5169ed3",
+  "type": "lexicon_noun",
+  "payload": {
+   "kind": "count",
+   "noun": "songs"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 795,
+   "tokens_out": 105,
+   "query": "John buys a cassette with 2 songs.  The first song is 5 minutes and the second song is 60% longer.  How much time was the total cassette?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c194adaee9e",
+  "type": "adj_map",
+  "payload": {
+   "adj": "longer",
+   "kind": "time"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 795,
+   "tokens_out": 105,
+   "query": "John buys a cassette with 2 songs.  The first song is 5 minutes and the second song is 60% longer.  How much time was the total cassette?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cd8b2396d25",
+  "type": "adj_map",
+  "payload": {
+   "adj": "total",
+   "kind": "time"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 795,
+   "tokens_out": 105,
+   "query": "John buys a cassette with 2 songs.  The first song is 5 minutes and the second song is 60% longer.  How much time was the total cassette?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cdaf72f3584",
+  "type": "conversion",
+  "payload": {
+   "concept": "rate",
+   "units": [
+    "%"
+   ],
+   "op": "div",
+   "factor": 100
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 795,
+   "tokens_out": 105,
+   "query": "John buys a cassette with 2 songs.  The first song is 5 minutes and the second song is 60% longer.  How much time was the total cassette?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cf2fa5dbd29",
+  "type": "new_cap",
+  "payload": {
+   "name": "total_with_percent_increase",
+   "inputs": [
+    "time",
+    "rate"
+   ],
+   "output": "time",
+   "expr": "time + time * (1 + rate)"
+  },
+  "source": "MINER",
+  "authorship": {
+   "model": "anthropic_bridge",
+   "tokens_in": 795,
+   "tokens_out": 105,
+   "query": "John buys a cassette with 2 songs.  The first song is 5 minutes and the second song is 60% longer.  How much time was the total cassette?"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c162be87de2",
+  "type": "text_qa",
+  "payload": {
+   "key": "what are the simplest organic compounds",
+   "answer": "Hydrocarbons are the simplest organic compounds, containing only carbon and hydrogen. The simplest of all is methane (CH4), the first member of the alkanes.",
+   "question": "What are the simplest organic compounds?",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ }
+]

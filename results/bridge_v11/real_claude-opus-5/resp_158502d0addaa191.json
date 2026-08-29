@@ -1,0 +1,5 @@
+{
+ "text": "{\"lexicon_nouns\": [], \"adj_maps\": [], \"unit_index\": [], \"conversions\": [], \"new_kinds\": [{\"name\": \"final_score\", \"dim\": [0, 0, 0, 0, 0, 1, 0], \"unit\": \"points\", \"nouns\": [\"score\"], \"aliases\": [\"points\"]}, {\"name\": \"opponent_score\", \"dim\": [0, 0, 0, 0, 0, 1, 0], \"unit\": \"points\", \"nouns\": [\"points\"], \"aliases\": [\"points\"]}, {\"name\": \"score_diff\", \"dim\": [0, 0, 0, 0, 0, 1, 0], \"unit\": \"points\", \"nouns\": [\"difference\"], \"aliases\": [\"points\"]}], \"new_caps\": [{\"name\": \"score_difference\", \"inputs\": [\"final_score\", \"opponent_score\"], \"output\": \"score_diff\", \"expr\": \"final_score - opponent_score\"}]}",
+ "tokens_in": 835,
+ "tokens_out": 150
+}

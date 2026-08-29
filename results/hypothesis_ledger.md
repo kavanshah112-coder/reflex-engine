@@ -146,3 +146,19 @@ at zero safety cost.
 
 Outcome: **A** (ladder letter), with the B2 violation stated beside
 the headline; open class logged as the arc's top safety item.
+
+## V1.2 (v1.2-final) — the ledger now spans V0.1 → V1.2
+
+| # | Hypothesis | Verdict | Evidence |
+|---|---|---|---|
+| K1 | Certification sweep zero wrong-fire | CONFIRMED | 10,160 trap items / 65 seeds / 0.000; guard+alias PARITY-PLUS green |
+| K2 | Vocab audit finds gaps | CONFIRMED (2) | comparatives closed; capture-hijack keys documented dead |
+| K3 | Safety transfers to real language | CONFIRMED | zero-shot 519/520 abstained; post-acq worst track 0.83% ≤ 2%; all wrongs itemized |
+| K4 | Real coverage (no bars) | 0.0% sealed | all tracks, both arms; TEXT.qa serves repeats only (19/arm traffic) |
+| K5 | Acquisition lifts real coverage | FALSIFIED both arms | gap = arithmetic composition; SCALE INVERSION: opus 17 vs sonnet 7 traffic wrongs, +1 sealed |
+| K6 | < 1.0 J/certified serve | CONFIRMED | 0.356±0.018 protocol; 0.0211±0.0009 batch-true (~21 mJ) |
+| K7 | certify.py regenerates | CONFIRMED | verdict CERTIFIED + one-page certificate |
+
+Outcome: **B** — safety + economics transfer to real human language;
+acquisition is in-universe-bound. "Dimensional gates certify physics,
+not story semantics" = V1.3's problem statement.

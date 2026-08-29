@@ -1,0 +1,5 @@
+{
+ "text": "{\n \"lexicon_nouns\": [\n  {\n   \"kind\": \"count\",\n   \"noun\": \"gallons\"\n  }\n ],\n \"adj_maps\": [\n  {\n   \"adj\": \"buys\",\n   \"kind\": \"cost_total\"\n  }\n ],\n \"unit_index\": [\n  {\n   \"unit\": \"gallon\",\n   \"kind\": \"count\"\n  }\n ],\n \"conversions\": [],\n \"new_kinds\": [\n  {\n   \"name\": \"cashback_per_unit\",\n   \"dim\": [\n    0,\n    0,\n    0,\n    0,\n    0,\n    -1,\n    1\n   ],\n   \"unit\": \"$/gallon\",\n   \"nouns\": [\n    \"cashback\"\n   ],\n   \"aliases\": [\n    \"cashback per gallon\"\n   ]\n  }\n ],\n \"new_caps\": [\n  {\n   \"name\": \"gross_fuel_cost\",\n   \"inputs\": [\n    \"price_per_unit\",\n    \"count\"\n   ],\n   \"output\": \"cost_total\",\n   \"expr\": \"price_per_unit * count\"\n  },\n  {\n   \"name\": \"net_cost_after_cashback\",\n   \"inputs\": [\n    \"price_per_unit\",\n    \"cashback_per_unit\",\n    \"count\"\n   ],\n   \"output\": \"cost_total\",\n   \"expr\": \"(price_per_unit - cashback_per_unit) * count\"\n  }\n ]\n}",
+ "tokens_in": 825,
+ "tokens_out": 213
+}
