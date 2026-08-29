@@ -259,6 +259,14 @@ class Engine:
                     rec["guard_fired"] = {
                         "competing_kinds": sorted(competing),
                         "entities": sorted(per_ent)}
+        # NOTE (V1.2): an unparsed-quantity guard was TRIED here
+        # after the first real-language wrong answer (gsm0403 —
+        # correct physics on the wrong reading) and REVERTED: the
+        # battery showed in-universe chains carry incidental
+        # unnameable mentions by design and answer correctly. The
+        # class (sub-problem answering on partially-parsed
+        # multi-step scenarios) is measured, itemized, and logged
+        # for V1.3 (violation_log: semantic load-bearing analysis).
         rec.update({k: r.get(k) for k in
                     ("status", "numeric_value", "abstain_reason",
                      "mode", "resolver_used", "redundancy_checked",

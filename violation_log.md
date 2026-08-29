@@ -39,3 +39,16 @@ packs/physics/README.md, plus what EXP-ACQ measured)
   of eligible reflexes (measured, scale comparison); content-level
   normalization (numeric/keyword extraction) would roughly double
   the mint rate at equal safety. V1.2 design item.
+
+## V1.2 addition (real-language contact)
+
+- **Sub-problem answering on partially-parsed multi-step scenarios**
+  (gsm0403: computed power×time correctly while "30 days" stayed
+  unnameable — answered a quantity nobody asked for; 1/300 = 0.33%
+  on the FULL real-language sealed track, under the 2% gate, above
+  the zero standard). A naive unparsed-quantity guard was tried and
+  REVERTED (battery: in-universe chains carry incidental unnameable
+  mentions by design). The real fix needs semantic load-bearing
+  analysis — are the unparsed quantities REQUIRED by the ask's
+  time/aggregation scope? — which is V1.3's top item alongside the
+  reference-fallthrough class it inherits.
