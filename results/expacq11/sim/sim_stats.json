@@ -1,0 +1,17 @@
+{
+ "n": 100000,
+ "covered_det": 88000,
+ "covered_text": 0,
+ "covered_memory": 0,
+ "wrong": 0,
+ "esc_executed": 0,
+ "esc_priced": 4000,
+ "bridge_pending": 8000,
+ "bridge": {
+  "adapter": "anthropic_bridge",
+  "calls": 8000,
+  "tokens_in": 0,
+  "tokens_out": 0
+ },
+ "pending_now": 20
+}

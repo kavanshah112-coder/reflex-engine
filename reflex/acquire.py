@@ -561,10 +561,15 @@ class MemoryFactTracker:
     value proposes only if no other value was ever observed for the
     same concept with an overlapping (or universal) context."""
 
+    SCOPE_FRACTION = 0.8    # a scope token must appear in >=80% of a
+    #                         value's observations (majority context —
+    #                         strict intersection dies to one odd
+    #                         observation in real traffic)
+
     def __init__(self, k_min=3):
         self.k = k_min
-        self.obs = {}       # concept -> {value_key: [count, ctx_set,
-        #                                  unit, raw_value]}
+        self.obs = {}       # concept -> {value_key: [count,
+        #                     token->count, unit, raw_value]}
         self.proposed = set()
 
     def observe(self, query, facts):
@@ -578,38 +583,45 @@ class MemoryFactTracker:
             slot = self.obs.setdefault(c, {})
             if vk in slot:
                 slot[vk][0] += 1
-                slot[vk][1] &= ctx
+                for t in ctx:
+                    slot[vk][1][t] = slot[vk][1].get(t, 0) + 1
             else:
-                slot[vk] = [1, set(ctx), f.get("unit") or "", v]
+                slot[vk] = [1, {t: 1 for t in ctx},
+                            f.get("unit") or "", v]
+
+    def _scope(self, n, tokcounts, noise):
+        need = max(1, int(n * self.SCOPE_FRACTION + 0.9999))
+        return {t for t, cnt in tokcounts.items()
+                if cnt >= need} - noise
 
     def harvest(self, store, kinds):
         out = []
         for c, values in self.obs.items():
-            for vk, (n, ctx, unit, raw) in values.items():
+            if c not in kinds:
+                continue
+            # concept-evidence tokens are noise: they appear BECAUSE
+            # the constant was stated, and requiring them would make
+            # the reflex unusable exactly where it is needed
+            noise = {w for noun in ([c] + list(kinds[c][2] or []))
+                     for w in noun.lower().split()}
+            scopes = {vk: self._scope(n, tc, noise)
+                      for vk, (n, tc, _u, _r) in values.items()}
+            for vk, (n, tc, unit, raw) in values.items():
                 if n < self.k or (c, vk) in self.proposed:
                     continue
-                clash = False
-                for vk2, (n2, ctx2, _u2, _r2) in values.items():
-                    if vk2 == vk:
-                        continue
-                    if not ctx or not ctx2 or (ctx & ctx2):
-                        clash = True    # disagreement in scope
-                        break
-                if clash or c not in kinds:
+                scope = scopes[vk]
+                if not scope:
+                    continue    # no discriminating scope -> never
+                # zero-disagreement IN SCOPE: another value whose
+                # scope shares a token is a genuine conflict
+                if any(vk2 != vk and (scope & scopes[vk2])
+                       for vk2 in values):
                     continue
-                # strip the concept's own noun tokens: they appear
-                # BECAUSE the constant was stated, so requiring them
-                # would make the reflex unusable exactly where it is
-                # needed (queries that omit the constant)
-                noise = {w for noun in
-                         ([c] + list(kinds[c][2] or []))
-                         for w in noun.lower().split()}
-                ctx_use = ctx - noise
                 self.proposed.add((c, vk))
                 out.append(store.add(
                     "memory_fact",
                     {"concept": c, "value": raw, "unit": unit,
-                     "context_tokens": sorted(ctx_use)[:6],
+                     "context_tokens": sorted(scope)[:6],
                      "n_observations": n}, "MINER",
                     {"producer": "MemoryFactTracker"}))
         return out
