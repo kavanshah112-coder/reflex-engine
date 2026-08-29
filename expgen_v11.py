@@ -170,20 +170,18 @@ def main():
     cov = ok_n / len(pool)
     print(f"G1 pool {len(pool)}: coverage {cov:.4f}, wrong "
           f"{wrong_n}, residual {len(residual)}")
-    need = G1_VAL + G1_TRAFFIC + G1_SEALED
-    assert len(residual) >= need, \
-        f"G1 residual {len(residual)} < {need}"
-    rng = random.Random(G1_SHUFFLE)
-    rng.shuffle(residual)
+    # AMENDMENT C: the W1b engine closed the generator universe; G1
+    # becomes a residual-PROOF record. Any straggler is itemized in
+    # full (no silent caps); the ablation runs only if a genuine
+    # frontier reappears (it should not).
     from collections import Counter
     fam = Counter((x.get("quadrant"), x.get("template"))
                   for x in residual)
-    print("G1 family concentration:", fam.most_common(8))
-    splits = {
-        "g1_val": residual[:G1_VAL],
-        "g1_traffic": residual[G1_VAL:G1_VAL + G1_TRAFFIC],
-        "g1_parse_sealed": residual[G1_VAL + G1_TRAFFIC:need],
-    }
+    splits = {"g1_residual_proof": [
+        {"pool_n": len(pool), "coverage": cov, "wrong": wrong_n,
+         "residual_n": len(residual),
+         "families": {str(k): v for k, v in fam.most_common(20)},
+         "stragglers": residual[:50]}]}
 
     # ---------------- G2: commercial 25k, varied topics
     rng2 = random.Random(G2_SEED)
