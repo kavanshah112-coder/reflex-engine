@@ -210,3 +210,16 @@ report must answer: per-fix lift; what each miner scale adds at the
 new frontier; the full list of MEMORY/TEXT reflexes acquired with
 their gates' evidence; the commercial cost curve and its asymptote;
 what still escalates after everything, and why.
+
+## AMENDMENT B (2026-08-29, user-directed, pre-data)
+
+Issued while generation was in flight and stopped BEFORE any split
+file existed (nothing consumed, nothing superseded):
+1. **W1b — remaining parser/recognition bottleneck**: the measured
+   1.3% post-fix residual families (pe-phrasing, rev, dimension-list
+   items) are now IN SCOPE for engine fixes rather than left to the
+   miners. Same PARITY-PLUS acceptance gate per fix. G1 regenerates
+   from the W1b engine (the true final frontier).
+2. **W5 commercial simulation: 100,000 queries** (was 25,000).
+   G2_N = 100000, same family weights and seeds; checkpoints every
+   10,000. J6 unchanged.
