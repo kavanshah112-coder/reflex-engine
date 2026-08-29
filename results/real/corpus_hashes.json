@@ -1,0 +1,40 @@
+{
+ "raw_files": {
+  "asdiv.xml": "ef8904068482919ac48c8eeaaf6df344b8a308ba66d048c2d4d87eab82dc4929",
+  "gsm8k_test.jsonl": "3730d312f6e3440559ace48831e51066acaca737f6eabec99bccb9e4b3c39d14",
+  "sciq.zip": "7f3312f6ac6b09970b32942d106a8c44ec0dad46a0369f17d635aff8e348a87c"
+ },
+ "licenses": {
+  "gsm8k": "MIT",
+  "asdiv": "CC BY-NC 4.0 (research use)",
+  "sciq": "CC BY-NC 3.0 (research use)"
+ },
+ "real_full_sealed": {
+  "n": 300,
+  "sha256": "656d1a1d28e86314809dd08e08941768c4d6c16954c001b891970ac9ee5ba9f2"
+ },
+ "real_full_traffic_pool": {
+  "n": 700,
+  "sha256": "cad988d46e87ff4a963f89a5868b641fa83bcc38d3cd9e70ed57e9a58011fe24"
+ },
+ "real_units_sealed": {
+  "n": 120,
+  "sha256": "b29e3018fa408acaaf37606b01c0b0d6ca09de3660dd9856114bf7e0e1483ca0"
+ },
+ "real_units_traffic_pool": {
+  "n": 280,
+  "sha256": "e2127e29d49127301b51d5d3498f1c53952f7d0580397f9445883d48c370e7f6"
+ },
+ "real_theory_sealed": {
+  "n": 100,
+  "sha256": "a18ec8dfdad334c71f5ac6b9ab457dacf18378d4160a824b58ebd9a615c09882"
+ },
+ "real_theory_traffic_pool": {
+  "n": 200,
+  "sha256": "5c67901a4dab1360440bfdb6f3116a407016380b7270969d353d8e114de68ade"
+ },
+ "real_traffic_stream": {
+  "n": 3000,
+  "sha256": "423a84a1f692524b56abf6f1c8764384ff10a8ee09a9f5420e017ec21820aa40"
+ }
+}
