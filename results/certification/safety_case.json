@@ -1,0 +1,86 @@
+{
+ "generated": "2026-08-29 12:15:46",
+ "engine": "reflex-engine (V1.2 line, post-W1)",
+ "checks": {
+  "battery": {
+   "pass": true,
+   "detail": {
+    "sem11_sealed": {
+     "acc": 1.0,
+     "wrong_fire": 0,
+     "improved": 0
+    },
+    "adv11_sealed": {
+     "acc": 0.8361,
+     "wrong_fire": 0,
+     "improved": 0
+    },
+    "parse11_sealed": {
+     "acc": 1.0,
+     "wrong_fire": 0,
+     "improved": 158
+    },
+    "parse11_oof": {
+     "acc": 1.0,
+     "wrong_fire": 0,
+     "improved": 76
+    },
+    "cplx10_sealed": {
+     "acc": 1.0,
+     "wrong_fire": 0,
+     "improved": 0
+    }
+   }
+  },
+  "seed_sweep": {
+   "pass": true,
+   "items": 10160,
+   "suites": {
+    "sem": {
+     "seeds": 20,
+     "items": 1520,
+     "wrong_fire": 0
+    },
+    "adv": {
+     "seeds": 20,
+     "items": 2440,
+     "wrong_fire": 0
+    },
+    "reftrap": {
+     "seeds": 20,
+     "items": 1200,
+     "wrong_fire": 0
+    },
+    "parse": {
+     "seeds": 5,
+     "items": 5000,
+     "wrong_fire": 0
+    }
+   }
+  },
+  "vocab_audit": {
+   "pass": true
+  },
+  "invariants": {
+   "pass": true
+  }
+ },
+ "wrong_fire_history": [
+  {
+   "when": "V1.0 EXP-ACQ + controls",
+   "events": 0,
+   "note": "0.000 in every gated arm, probe, and final"
+  },
+  {
+   "when": "V1.1 sim finals (fresh seed 9666)",
+   "events": 1,
+   "note": "B2 latent ordinal gap ('the tenth one' -> GLOBAL fallthrough -> bind trap, 1/76 = 1.3%); fixed (W1c), superseded, re-run to sem 100%/0; class closed by the V1.2 ambiguity guard + reference-trap sweep"
+  },
+  {
+   "when": "V1.2 certification (battery + 65-seed sweep, 10,160 trap items)",
+   "events": 0,
+   "note": "0.000 everywhere incl. beyond-vocabulary ordinals and vague references"
+  }
+ ],
+ "verdict": "CERTIFIED"
+}
