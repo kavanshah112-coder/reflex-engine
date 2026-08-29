@@ -1,0 +1,31 @@
+{
+ "recipe": "expgen_v11.py",
+ "generated": "2026-08-29 11:08:37",
+ "g1_pool": {
+  "n": 180000,
+  "coverage": 1.0,
+  "wrong": 0,
+  "residual": 0,
+  "families": {}
+ },
+ "g1_residual_proof": {
+  "n": 1,
+  "sha256": "973101827616553258aefa5fd401c40334943fbfc20d15d3cab326bd5d580e25"
+ },
+ "g2_commercial": {
+  "n": 100000,
+  "sha256": "e53b6e0124f79f0e9ddeef1e17ffa0114f27b6fd34ec7333778dee5a6203b6dc"
+ },
+ "g3_sim_sealed": {
+  "n": 600,
+  "sha256": "536591d49e810510c4e1b6fd148c5cfdc4cdac211dd6a576fba604e6ad6aaae9"
+ },
+ "g3_sem_sealed": {
+  "n": 76,
+  "sha256": "e6e8ea30ecc26d20426481ef02becea7a58d5831dc54889235c65d122053278d"
+ },
+ "g3_adv_sealed": {
+  "n": 122,
+  "sha256": "e62602ccb9f53db3bc96b546d9fdb6cebb0edfcb7649afe59dceccccd8e1ba31"
+ }
+}

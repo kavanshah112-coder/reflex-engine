@@ -1,0 +1,5840 @@
+[
+{
+"id": "p11x00378",
+"q": "Initially the vat holds 80 kg; finally it holds 65 kg. How much mass was lost?",
+"answer": 15,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00199",
+"q": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 38.333333333333336,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "g3f00013",
+"q": "A granite block of volume 0.89 m^3 - what mass?",
+"answer": 2358.5,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "granite"
+},
+{
+"id": "g3f00053",
+"q": "A solid copper casting, 5.04 m^3 in volume; its mass?",
+"answer": 45158.4,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "copper"
+},
+{
+"id": "g3f00002",
+"q": "The oak block (750 kg/m^3) measures 7.11 m^3; what does it weigh?",
+"answer": 5332.5,
+"family": "fact",
+"fact_mode": "stating",
+"material": "oak"
+},
+{
+"id": "p11x00019",
+"q": "At 6 m/s the ingot is observed; a mass of 1400 kg is recorded for it. Kinetic energy?",
+"answer": 25200.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00344",
+"q": "A slab 3 m long, 4 m wide and 0.5 m thick has density 2.40e+03 kg/m^3. What does it weigh?",
+"answer": 14400.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00213",
+"q": "A cart has a mass of 250 kg and travels at 18 m/s. What is its kinetic energy?",
+"answer": 40500.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00436",
+"q": "Initially the vat holds 80 kg; finally it holds 65 kg. How much mass was lost?",
+"answer": 15,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00093",
+"q": "A lab dissolves 180 g of solute (molar mass 180 g/mol) into 4 L. What is the concentration?",
+"answer": 0.25,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00226",
+"q": "At 9 m/s the crate is observed; a mass of 1000 kg is recorded for it. Kinetic energy?",
+"answer": 40500.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00100",
+"q": "A cart of 45 kg is lifted 12 m. How much potential energy does it gain?",
+"answer": 5292.000000000001,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00312",
+"q": "An element of 4 ohms sits on 220 V and runs for five minutes. How many joules?",
+"answer": 3630000.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00293",
+"q": "A crate of 120 kg is lifted 6 m. How much potential energy does it gain?",
+"answer": 7056.0,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00412",
+"q": "Profits of $22000 are taxed at 10%. What net profit remains?",
+"answer": 19800.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_seenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00073",
+"q": "Cart A weighs 1200 kg and travels at 12 m/s. Cart B weighs 700 kg and travels at 15 m/s. What is the kinetic energy of the faster cart?",
+"answer": 78750.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00265",
+"q": "Profits of $9000 are taxed at 20%. What net profit remains?",
+"answer": 7200.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_unseenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00388",
+"q": "Initially the vat holds 40 kg; finally it holds 25 kg. How much mass was lost?",
+"answer": 15,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "g3d00034",
+"q": "What is density defined as?",
+"family": "definition",
+"def_key": 14,
+"answer": null,
+"keywords": [
+"mass",
+"volume"
+],
+"expect": "text"
+},
+{
+"id": "p11x00272",
+"q": "A lab stirs 117 g of solute (molar mass 18 g/mol) into 4 L. What is the concentration?",
+"answer": 1.625,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00273",
+"q": "An element of 40 ohms sits on 400 V and runs for 5 minutes. How many joules?",
+"answer": 1200000.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00161",
+"q": "Cart A has a mass of 900 kg and travels at 8 m/s. Cart B weighs 700 kg and travels at 15 m/s. What is the kinetic energy of the faster cart?",
+"answer": 78750.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3d00025",
+"q": "How many joules is one kilowatt-hour?",
+"family": "definition",
+"def_key": 5,
+"answer": 3600000.0
+},
+{
+"id": "p11x00241",
+"q": "Each of 200 pieces sell for $7.5 apiece. Revenue?",
+"answer": 1500.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00351",
+"q": "120 units sell for $twelve each. What revenue results?",
+"answer": 1440.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00451",
+"q": "A block of 80 kg is lifted 3 m. How much potential energy does it gain?",
+"answer": 2352.0,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00038",
+"q": "A brass block of volume 5.05 m^3 - what mass?",
+"answer": 42925.0,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "brass"
+},
+{
+"id": "p11x00201",
+"q": "A lab dissolves 180 g of solute (molar mass 58.5 g/mol) into 1 L. What is the concentration?",
+"answer": 3.076923076923077,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00180",
+"q": "40 units go for $55 each. What revenue results?",
+"answer": 2200.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "g3d00023",
+"q": "How many metres are in one kilometre?",
+"family": "definition",
+"def_key": 3,
+"answer": 1000.0
+},
+{
+"id": "p11x00217",
+"q": "Initially the vat holds 40 kg; finally it holds 25 kg. How much mass was lost?",
+"answer": 15,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "g3f00050",
+"q": "Density of this steel piece is 7800 kg/m^3, volume 7.23 m^3. Mass?",
+"answer": 56394.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "steel"
+},
+{
+"id": "g3f00018",
+"q": "What does a 2.02 m^3 chunk of aluminium weigh?",
+"answer": 5454.0,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "aluminium"
+},
+{
+"id": "p11x00026",
+"q": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 3.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00289",
+"q": "Initially the vat holds 120 kg; finally it holds 95 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00222",
+"q": "120 units sell for $4 each. What revenue results?",
+"answer": 480.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00314",
+"q": "A slab 2 m long, 1 m wide and 0.1 m thick has density 7800 kg/m^3. What does it weigh?",
+"answer": 1560.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00059",
+"q": "Initially the vat holds 80 kg; finally it holds 55 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00038",
+"q": "At 9 m/s the gondola is observed; a mass of 700 kg is recorded for it. Kinetic energy?",
+"answer": 28350.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00123",
+"q": "A cart weighs 1.20e+03 kg and travels at 12 m/s. What is its kinetic energy?",
+"answer": 86400.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00471",
+"q": "120 units go for $55 each. What revenue results?",
+"answer": 6600.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00117",
+"q": "For an element on 230 V \u2014 its resistance being six ohms \u2014 what current flows?",
+"answer": 38.333333333333336,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00317",
+"q": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 14.375,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00112",
+"q": "A block of 20 kg is raised 25 m. How much potential energy does it gain?",
+"answer": 4900.0,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00057",
+"q": "Initially the vat holds 40 kg; finally it holds 35 kg. How much mass was lost?",
+"answer": 5,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00442",
+"q": "A slab 2 m long, 1 m wide and 0.25 m thick has density 7800 kg/m^3. What does it weigh?",
+"answer": 3900.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00413",
+"q": "A crate of 45 kg is raised 12 m. How much potential energy does it gain?",
+"answer": 5292.000000000001,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00465",
+"q": "Profits of $2.20e+04 are taxed at 20%. What net profit remains?",
+"answer": 17600.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_unseenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00113",
+"q": "Each of 480 pieces go for $12.5 apiece. Revenue?",
+"answer": 6000.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00120",
+"q": "A trolley weighs 1.10e+03 kg and travels at 7 m/s. The depot brochure is rated for 64 passes. Kinetic energy?",
+"answer": 26950.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3d00043",
+"q": "How many metres are in one kilometre?",
+"family": "definition",
+"def_key": 3,
+"answer": 1000.0
+},
+{
+"id": "p11x00018",
+"q": "At nine m/s the ingot is observed; a mass of 700 kg is recorded for it. Kinetic energy?",
+"answer": 28350.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00044",
+"q": "A lab folds 117 g of solute (molar mass 90 g/mol) into 2 L. What is the concentration?",
+"answer": 0.65,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_unseenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00469",
+"q": "Initially the vat holds 80 kg; finally it holds 55 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "g3d00022",
+"q": "How many seconds are there in an hour?",
+"family": "definition",
+"def_key": 2,
+"answer": 3600.0
+},
+{
+"id": "g3d00015",
+"q": "What does Hooke's law relate?",
+"family": "definition",
+"def_key": 15,
+"answer": null,
+"keywords": [
+"force",
+"extension"
+],
+"expect": "text"
+},
+{
+"id": "p11x00306",
+"q": "Initially the vat holds 120 kg; finally it holds 95 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00448",
+"q": "Initially the vat holds 120 kg; finally it holds 105 kg. How much mass was lost?",
+"answer": 15,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "g3d00030",
+"q": "State Ohm's law.",
+"family": "definition",
+"def_key": 10,
+"answer": null,
+"keywords": [
+"voltage",
+"current",
+"resistance"
+],
+"expect": "text"
+},
+{
+"id": "g3f00033",
+"q": "What does a 1.85 m^3 chunk of oak weigh?",
+"answer": 1387.5,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "oak"
+},
+{
+"id": "p11x00034",
+"q": "A slab 3 m long, 4 m wide and 0.5 m thick has density 2400 kg/m^3. What does it weigh?",
+"answer": 14400.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00391",
+"q": "750 units sell for $27 each. What revenue results?",
+"answer": 20250.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00299",
+"q": "Initially the vat holds 80 kg; finally it holds 55 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "g3d00039",
+"q": "What is revenue in terms of price and quantity?",
+"family": "definition",
+"def_key": 19,
+"answer": null,
+"keywords": [
+"price",
+"quantity"
+],
+"expect": "text"
+},
+{
+"id": "p11x00096",
+"q": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 3.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00402",
+"q": "A trolley weighs 900 kg and travels at 18 m/s. What is its kinetic energy?",
+"answer": 145800.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00141",
+"q": "An element of 4 ohms sits on 220 V and operates for 90 minutes. How many joules?",
+"answer": 65340000.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00490",
+"q": "An element of 40 ohms sits on 110 V and operates for 5 minutes. How many joules?",
+"answer": 90750.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00066",
+"q": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 8.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00454",
+"q": "750 units command $55 each. What revenue results?",
+"answer": 41250.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_unseenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00215",
+"q": "120 units fetch $twelve each. What revenue results?",
+"answer": 1440.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_unseenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00045",
+"q": "Each of 200 pieces command $7.5 apiece. Revenue?",
+"answer": 1500.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_unseenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00377",
+"q": "Initially the vat holds 120 kg; finally it holds 105 kg. How much mass was lost?",
+"answer": 15,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00407",
+"q": "At 16 m/s the trolley is observed; a mass of 300 kg is recorded for it. Kinetic energy?",
+"answer": 38400.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00341",
+"q": "300 units go for $55 each. What revenue results?",
+"answer": 16500.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00168",
+"q": "For an element on 230 V \u2014 its resistance being six ohms \u2014 what current flows?",
+"answer": 38.333333333333336,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00106",
+"q": "At 6 m/s the cart is observed; a mass of 1000 kg is recorded for it. Kinetic energy?",
+"answer": 18000.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00284",
+"q": "A slab 2 m long, 4 m wide and 0.5 m thick has density 1000 kg/m^3. What does it weigh?",
+"answer": 4000.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00105",
+"q": "An element of 11 ohms sits on 110 V and keeps going for 90 minutes. How many joules?",
+"answer": 5940000.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00239",
+"q": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 14.375,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00154",
+"q": "A slab five m long, 1 m wide and 0.25 m thick has density 7800 kg/m^3. What does it weigh?",
+"answer": 9750.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00322",
+"q": "Cart A weighs 900 kg and moves at 8 m/s. Cart B weighs 700 kg and moves at fifteen m/s. What is the kinetic energy of the faster cart?",
+"answer": 78750.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00101",
+"q": "A cart weighs 800 kg and travels at 14 m/s. The depot brochure is rated for 64 passes. Kinetic energy?",
+"answer": 78400.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00190",
+"q": "Profits of $9000 are taxed at 10%. What net profit remains?",
+"answer": 8100.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_seenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "g3f00040",
+"q": "A copper ingot with density 8960 kg/m^3 and volume 5.75 m^3 - mass?",
+"answer": 51520.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "copper"
+},
+{
+"id": "p11x00209",
+"q": "Initially the vat holds 40 kg; finally it holds 35 kg. How much mass was lost?",
+"answer": 5,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00308",
+"q": "Initially the vat holds 80 kg; finally it holds 55 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "g3d00010",
+"q": "State Ohm's law.",
+"family": "definition",
+"def_key": 10,
+"answer": null,
+"keywords": [
+"voltage",
+"current",
+"resistance"
+],
+"expect": "text"
+},
+{
+"id": "p11x00295",
+"q": "Each of 900 pieces command $2.5 apiece. Revenue?",
+"answer": 2250.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_unseenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00304",
+"q": "A palette tips the scales at 600 kg and glides at 18 m/s. What is its kinetic energy?",
+"answer": 97200.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00363",
+"q": "Cart A weighs 1200 kg and travels at 12 m/s. Cart B weighs 700 kg and moves at fifteen m/s. What is the kinetic energy of the faster cart?",
+"answer": 78750.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00207",
+"q": "At 6 m/s the trolley is observed; a mass of 700 kg is recorded for it. Kinetic energy?",
+"answer": 12600.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00408",
+"q": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 14.375,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00010",
+"q": "A cart has a mass of 800 kg and moves at 7 m/s. The depot brochure is rated for 96 passes. Kinetic energy?",
+"answer": 19600.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00196",
+"q": "Initially the vat holds 80 kg; finally it holds 65 kg. How much mass was lost?",
+"answer": 15,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00475",
+"q": "Profits of $9000 are taxed at 20%. What net profit remains?",
+"answer": 7200.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_unseenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00004",
+"q": "A gondola comes in at 800 kg and barrels along at seven m/s. The depot brochure is rated for 96 passes. Kinetic energy?",
+"answer": 19600.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00126",
+"q": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 8.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00430",
+"q": "A slab 2 m long, four m wide and 0.25 m thick has density 7800 kg/m^3. What does it weigh?",
+"answer": 15600.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00298",
+"q": "At 6 m/s the palette is observed; a mass of 300 kg is recorded for it. Kinetic energy?",
+"answer": 5400.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00089",
+"q": "Initially the vat holds 40 kg; finally it holds 15 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00292",
+"q": "An element of 40 ohms sits on 220 V and operates for twenty minutes. How many joules?",
+"answer": 1452000.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00042",
+"q": "A lab dissolves 90 g of solute (molar mass 58.5 g/mol) into 4 L. What is the concentration?",
+"answer": 0.38461538461538464,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00212",
+"q": "Profits of $2.20e+04 are taxed at 35%. What net profit remains?",
+"answer": 14300.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_seenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00179",
+"q": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 8.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00263",
+"q": "Each of 200 pieces go for $7.5 apiece. Revenue?",
+"answer": 1500.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "g3d00008",
+"q": "How many watts is one kilowatt?",
+"family": "definition",
+"def_key": 8,
+"answer": 1000.0
+},
+{
+"id": "p11x00095",
+"q": "Cart A registers 900 kg and clocks 8 m/s. Cart B registers 1000 kg and clocks 18 m/s. What is the kinetic energy of the faster cart?",
+"answer": 162000.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00367",
+"q": "Initially the vat holds 120 kg; finally it holds 95 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00037",
+"q": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 3.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00052",
+"q": "Profits of $22000 are taxed at 35%. What net profit remains?",
+"answer": 14300.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_seenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00362",
+"q": "Cart A weighs 900 kg and travels at 8 m/s. Cart B has a mass of 700 kg and travels at 15 m/s. What is the kinetic energy of the faster cart?",
+"answer": 78750.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00021",
+"q": "40 units go for $4 each. What revenue results?",
+"answer": 160.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00009",
+"q": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 8.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00393",
+"q": "A crate of 45 kg is lifted 25 m. How much potential energy does it gain?",
+"answer": 11025.000000000002,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00135",
+"q": "A ingot tips the scales at 500 kg and glides at 11 m/s. The depot brochure is rated for 64 passes. Kinetic energy?",
+"answer": 30250.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00067",
+"q": "At 6 m/s the cart is observed; a mass of 700 kg is recorded for it. Kinetic energy?",
+"answer": 12600.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00352",
+"q": "A slab 2 m long, 2 m wide and 0.5 m thick has density 1000 kg/m^3. What does it weigh?",
+"answer": 2000.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00238",
+"q": "At 14 m/s the ingot is observed; a mass of 1400 kg is recorded for it. Kinetic energy?",
+"answer": 137200.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00338",
+"q": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 8.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00102",
+"q": "Each of 480 pieces sell for $12.5 apiece. Revenue?",
+"answer": 6000.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00214",
+"q": "An element of 40 ohms sits on 400 V and stays energised for 90 minutes. How many joules?",
+"answer": 21600000.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00027",
+"q": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 38.333333333333336,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00074",
+"q": "Each of 480 pieces fetch $7.5 apiece. Revenue?",
+"answer": 3600.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_unseenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00077",
+"q": "Initially the vat holds 120 kg; finally it holds 115 kg. How much mass was lost?",
+"answer": 5,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "g3f00036",
+"q": "A granite ingot with density 2650 kg/m^3 and volume 7.66 m^3 - mass?",
+"answer": 20299.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "granite"
+},
+{
+"id": "p11x00418",
+"q": "Initially the vat holds 80 kg; finally it holds 55 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00349",
+"q": "Initially the vat holds 40 kg; finally it holds 35 kg. How much mass was lost?",
+"answer": 5,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00316",
+"q": "Initially the vat holds 40 kg; finally it holds 25 kg. How much mass was lost?",
+"answer": 15,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00390",
+"q": "Profits of $22000 are taxed at 20%. What net profit remains?",
+"answer": 17600.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_seenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "g3d00026",
+"q": "How many millilitres are in a litre?",
+"family": "definition",
+"def_key": 6,
+"answer": 1000.0
+},
+{
+"id": "p11x00249",
+"q": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 3.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00023",
+"q": "Cart A weighs 1200 kg and moves at 12 m/s. Cart B weighs 1.00e+03 kg and travels at 18 m/s. What is the kinetic energy of the faster cart?",
+"answer": 162000.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00422",
+"q": "A lab stirs 90 g of solute (molar mass 180 g/mol) into 4 L. What is the concentration?",
+"answer": 0.125,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00431",
+"q": "A cart weighs 800 kg and travels at 7 m/s. The depot brochure is rated for 33 passes. Kinetic energy?",
+"answer": 19600.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00336",
+"q": "Initially the vat holds 80 kg; finally it holds 75 kg. How much mass was lost?",
+"answer": 5,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00443",
+"q": "Each of 480 pieces sell for $2.5 apiece. Revenue?",
+"answer": 1200.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "g3f00046",
+"q": "A aluminium ingot with density 2700 kg/m^3 and volume 1.6 m^3 - mass?",
+"answer": 4320.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "aluminium"
+},
+{
+"id": "g3f00023",
+"q": "What does a 0.36 m^3 chunk of steel weigh?",
+"answer": 2808.0,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "steel"
+},
+{
+"id": "p11x00040",
+"q": "A trolley of 80 kg is lifted 12 m. How much potential energy does it gain?",
+"answer": 9408.0,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3d00017",
+"q": "What quantity does a joule measure?",
+"family": "definition",
+"def_key": 17,
+"answer": null,
+"keywords": [
+"energy"
+],
+"expect": "text"
+},
+{
+"id": "p11x00031",
+"q": "Cart A has a mass of 1200 kg and travels at 12 m/s. Cart B weighs 1.00e+03 kg and moves at 18 m/s. What is the kinetic energy of the faster cart?",
+"answer": 162000.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00028",
+"q": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 3.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00257",
+"q": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 14.375,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00403",
+"q": "Cart A has a mass of 1200 kg and travels at 12 m/s. Cart B has a mass of 1000 kg and travels at 18 m/s. What is the kinetic energy of the faster cart?",
+"answer": 162000.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00232",
+"q": "A crate has a mass of 500 kg and travels at 11 m/s. The depot brochure is rated for 96 passes. Kinetic energy?",
+"answer": 30250.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00489",
+"q": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 8.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00205",
+"q": "A lab folds 36 g of solute (molar mass 180 g/mol) into 2 L. What is the concentration?",
+"answer": 0.1,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_unseenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00062",
+"q": "Cart A has a mass of 1200 kg and travels at 12 m/s. Cart B has a mass of 700 kg and travels at 15 m/s. What is the kinetic energy of the faster cart?",
+"answer": 78750.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00175",
+"q": "A slab 2 m long, 2 m wide and 0.5 m thick has density 1.00e+03 kg/m^3. What does it weigh?",
+"answer": 2000.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "g3d00027",
+"q": "What is standard gravitational acceleration in m/s^2?",
+"family": "definition",
+"def_key": 7,
+"answer": 9.8
+},
+{
+"id": "p11x00133",
+"q": "A crate weighs 600 kg and travels at 18 m/s. What is its kinetic energy?",
+"answer": 97200.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00103",
+"q": "Profits of $4000 are taxed at 10%. What net profit remains?",
+"answer": 3600.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_seenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00111",
+"q": "A slab 3 m long, 1 m wide and 0.5 m thick has density 7800 kg/m^3. What does it weigh?",
+"answer": 11700.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00307",
+"q": "At 16 m/s the trolley is observed; a mass of 300 kg is recorded for it. Kinetic energy?",
+"answer": 38400.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00485",
+"q": "Each of 900 pieces fetch $2.5 apiece. Revenue?",
+"answer": 2250.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_unseenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00275",
+"q": "A skip tips the scales at 800 kg and barrels along at 14 m/s. The depot brochure is rated for 33 passes. Kinetic energy?",
+"answer": 78400.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00310",
+"q": "300 units sell for $twelve each. What revenue results?",
+"answer": 3600.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00223",
+"q": "300 units go for $55 each. What revenue results?",
+"answer": 16500.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00326",
+"q": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 38.333333333333336,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00242",
+"q": "A lab dissolves 90 g of solute (molar mass 90 g/mol) into two L. What is the concentration?",
+"answer": 0.5,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "g3d00046",
+"q": "How many millilitres are in a litre?",
+"family": "definition",
+"def_key": 6,
+"answer": 1000.0
+},
+{
+"id": "p11x00076",
+"q": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 38.333333333333336,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00339",
+"q": "Initially the vat holds 80 kg; finally it holds 55 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00039",
+"q": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 3.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00147",
+"q": "Initially the vat holds 80 kg; finally it holds 55 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00016",
+"q": "At 9 m/s the crate is observed; a mass of 700 kg is recorded for it. Kinetic energy?",
+"answer": 28350.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00361",
+"q": "A cart weighs 1200 kg and travels at 12 m/s. What is its kinetic energy?",
+"answer": 86400.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00250",
+"q": "A lab stirs 90 g of solute (molar mass 90 g/mol) into 2 L. What is the concentration?",
+"answer": 0.5,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00186",
+"q": "Initially the vat holds 80 kg; finally it holds 55 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00094",
+"q": "A slab 2 m long, 4 m wide and 0.1 m thick has density 2400 kg/m^3. What does it weigh?",
+"answer": 1920.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00281",
+"q": "A block has a mass of 600 kg and moves at 12 m/s. What is its kinetic energy?",
+"answer": 43200.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00045",
+"q": "The steel block (7800 kg/m^3) measures 7.3 m^3; what does it weigh?",
+"answer": 56940.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "steel"
+},
+{
+"id": "p11x00251",
+"q": "A slab 2 m long, 1 m wide and 0.1 m thick has density 7800 kg/m^3. What does it weigh?",
+"answer": 1560.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00210",
+"q": "Cart A weighs 1200 kg and travels at 12 m/s. Cart B has a mass of 1000 kg and moves at 18 m/s. What is the kinetic energy of the faster cart?",
+"answer": 162000.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3d00007",
+"q": "What is standard gravitational acceleration in m/s^2?",
+"family": "definition",
+"def_key": 7,
+"answer": 9.8
+},
+{
+"id": "p11x00012",
+"q": "A trolley has a mass of 600 kg and travels at 12 m/s. What is its kinetic energy?",
+"answer": 43200.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00019",
+"q": "A oak block of volume 0.68 m^3 - what mass?",
+"answer": 510.0,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "oak"
+},
+{
+"id": "p11x00283",
+"q": "A slab 5 m long, 1 m wide and 0.5 m thick has density 2400 kg/m^3. What does it weigh?",
+"answer": 6000.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00208",
+"q": "At 6 m/s the palette is observed; a mass of 300 kg is recorded for it. Kinetic energy?",
+"answer": 5400.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00420",
+"q": "Each of 480 pieces sell for $12.5 apiece. Revenue?",
+"answer": 6000.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00264",
+"q": "A ingot tips the scales at 800 kg and barrels along at eleven m/s. The depot brochure is rated for 33 passes. Kinetic energy?",
+"answer": 48400.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00330",
+"q": "A trolley has a mass of 800 kg and moves at 7 m/s. The depot brochure is rated for 33 passes. Kinetic energy?",
+"answer": 19600.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00467",
+"q": "At six m/s the trolley is observed; a mass of 700 kg is recorded for it. Kinetic energy?",
+"answer": 12600.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00252",
+"q": "A lab dissolves 180 g of solute (molar mass 90 g/mol) into two L. What is the concentration?",
+"answer": 1.0,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00153",
+"q": "Each of 480 pieces go for $7.5 apiece. Revenue?",
+"answer": 3600.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00129",
+"q": "At 14 m/s the ingot is observed; a mass of 1400 kg is recorded for it. Kinetic energy?",
+"answer": 137200.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00428",
+"q": "Initially the vat holds 40 kg; finally it holds 15 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00348",
+"q": "At 16 m/s the palette is observed; a mass of 300 kg is recorded for it. Kinetic energy?",
+"answer": 38400.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00444",
+"q": "A lab folds 36 g of solute (molar mass 90 g/mol) into 2 L. What is the concentration?",
+"answer": 0.2,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_unseenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00174",
+"q": "A slab five m long, 4 m wide and 0.5 m thick has density 2400 kg/m^3. What does it weigh?",
+"answer": 24000.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "g3f00034",
+"q": "A solid brass casting, 1.44 m^3 in volume; its mass?",
+"answer": 12240.0,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "brass"
+},
+{
+"id": "p11x00453",
+"q": "Each of 480 pieces sell for $7.5 apiece. Revenue?",
+"answer": 3600.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00078",
+"q": "Initially the vat holds 40 kg; finally it holds 25 kg. How much mass was lost?",
+"answer": 15,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00358",
+"q": "Initially the vat holds 40 kg; finally it holds 25 kg. How much mass was lost?",
+"answer": 15,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00247",
+"q": "Initially the vat holds 80 kg; finally it holds 55 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00460",
+"q": "A lab stirs 36 g of solute (molar mass 18 g/mol) into four L. What is the concentration?",
+"answer": 0.5,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00087",
+"q": "Initially the vat holds 40 kg; finally it holds 15 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "g3d00029",
+"q": "How many minutes are in a day?",
+"family": "definition",
+"def_key": 9,
+"answer": 1440.0
+},
+{
+"id": "p11x00320",
+"q": "A slab five m long, 1 m wide and 0.5 m thick has density 7800 kg/m^3. What does it weigh?",
+"answer": 19500.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00309",
+"q": "At 16 m/s the skip is observed; a mass of 300 kg is recorded for it. Kinetic energy?",
+"answer": 38400.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00313",
+"q": "A trolley has a mass of 250 kg and moves at 18 m/s. What is its kinetic energy?",
+"answer": 40500.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00041",
+"q": "A cart weighs 600 kg and moves at eighteen m/s. What is its kinetic energy?",
+"answer": 97200.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00409",
+"q": "At 14 m/s the palette is observed; a mass of 1000 kg is recorded for it. Kinetic energy?",
+"answer": 98000.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00145",
+"q": "A skip registers 1100 kg and clocks 7 m/s. The depot brochure is rated for 33 passes. Kinetic energy?",
+"answer": 26950.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00267",
+"q": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 38.333333333333336,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00345",
+"q": "Profits of $22000 are taxed at 20%. What net profit remains?",
+"answer": 17600.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_unseenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00092",
+"q": "A crate of 20 kg is lifted 3 m. How much potential energy does it gain?",
+"answer": 588.0,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00288",
+"q": "At 14 m/s the ingot is observed; a mass of 300 kg is recorded for it. Kinetic energy?",
+"answer": 29400.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00437",
+"q": "For an element on 48 V \u2014 its resistance being six ohms \u2014 what current flows?",
+"answer": 8.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "g3d00004",
+"q": "How many grams make one kilogram?",
+"family": "definition",
+"def_key": 4,
+"answer": 1000.0
+},
+{
+"id": "p11x00200",
+"q": "An element of 22 ohms sits on 110 V and runs for 5 minutes. How many joules?",
+"answer": 165000.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00164",
+"q": "A skip comes in at 500 kg and clocks 14 m/s. The depot brochure is rated for 96 passes. Kinetic energy?",
+"answer": 49000.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00054",
+"q": "What does a 1.08 m^3 chunk of concrete weigh?",
+"answer": 2592.0,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "concrete"
+},
+{
+"id": "p11x00270",
+"q": "A cart weighs 1100 kg and travels at 7 m/s. The depot brochure is rated for 96 passes. Kinetic energy?",
+"answer": 26950.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00143",
+"q": "A slab 2 m long, 4 m wide and 0.5 m thick has density 2400 kg/m^3. What does it weigh?",
+"answer": 9600.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00216",
+"q": "Initially the vat holds 40 kg; finally it holds 15 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00110",
+"q": "A trolley weighs 600 kg and travels at twelve m/s. What is its kinetic energy?",
+"answer": 43200.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00024",
+"q": "Cart A tips the scales at 1200 kg and clocks 12 m/s. Cart B comes in at 1000 kg and glides at 18 m/s. What is the kinetic energy of the faster cart?",
+"answer": 162000.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00323",
+"q": "A crate weighs 1.10e+03 kg and travels at 14 m/s. The depot brochure is rated for 96 passes. Kinetic energy?",
+"answer": 107800.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00187",
+"q": "Initially the vat holds 120 kg; finally it holds 105 kg. How much mass was lost?",
+"answer": 15,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00069",
+"q": "At 9 m/s the ingot is observed; a mass of 1000 kg is recorded for it. Kinetic energy?",
+"answer": 40500.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00015",
+"q": "Each of 900 pieces fetch $2.5 apiece. Revenue?",
+"answer": 2250.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_unseenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00245",
+"q": "A skip tips the scales at 1200 kg and clocks 18 m/s. What is its kinetic energy?",
+"answer": 194400.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00177",
+"q": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 14.375,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00127",
+"q": "At 6 m/s the trolley is observed; a mass of 300 kg is recorded for it. Kinetic energy?",
+"answer": 5400.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00472",
+"q": "A crate weighs 500 kg and travels at 11 m/s. The depot brochure is rated for 96 passes. Kinetic energy?",
+"answer": 30250.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00372",
+"q": "Cart A has a mass of 1200 kg and moves at 12 m/s. Cart B weighs 700 kg and travels at 15 m/s. What is the kinetic energy of the faster cart?",
+"answer": 78750.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00005",
+"q": "A concrete ingot with density 2400 kg/m^3 and volume 0.72 m^3 - mass?",
+"answer": 1728.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "concrete"
+},
+{
+"id": "p11x00058",
+"q": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 3.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "g3f00020",
+"q": "Density of this aluminium piece is 2700 kg/m^3, volume 3.2 m^3. Mass?",
+"answer": 8640.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "aluminium"
+},
+{
+"id": "p11x00457",
+"q": "Initially the vat holds 120 kg; finally it holds 95 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00356",
+"q": "At 16 m/s the trolley is observed; a mass of 700 kg is recorded for it. Kinetic energy?",
+"answer": 89600.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00029",
+"q": "A oak block of volume 4.21 m^3 - what mass?",
+"answer": 3157.5,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "oak"
+},
+{
+"id": "p11x00487",
+"q": "At 14 m/s the cart is observed; a mass of 300 kg is recorded for it. Kinetic energy?",
+"answer": 29400.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00274",
+"q": "Each of 200 pieces fetch $2.5 apiece. Revenue?",
+"answer": 500.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_unseenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00235",
+"q": "A skip of 45 kg gets winched up 6 m. How much potential energy does it gain?",
+"answer": 2646.0000000000005,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00383",
+"q": "A crate of 120 kg is raised 12 m. How much potential energy does it gain?",
+"answer": 14112.0,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00464",
+"q": "750 units command $12 each. What revenue results?",
+"answer": 9000.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_unseenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "g3d00006",
+"q": "How many millilitres are in a litre?",
+"family": "definition",
+"def_key": 6,
+"answer": 1000.0
+},
+{
+"id": "p11x00189",
+"q": "At 9 m/s the gondola is observed; a mass of 300 kg is recorded for it. Kinetic energy?",
+"answer": 12150.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3d00047",
+"q": "What is standard gravitational acceleration in m/s^2?",
+"family": "definition",
+"def_key": 7,
+"answer": 9.8
+},
+{
+"id": "g3f00025",
+"q": "The glass block (2500 kg/m^3) measures 7.97 m^3; what does it weigh?",
+"answer": 19925.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "glass"
+},
+{
+"id": "g3f00041",
+"q": "A glass ingot with density 2500 kg/m^3 and volume 0.28 m^3 - mass?",
+"answer": 700.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "glass"
+},
+{
+"id": "p11x00083",
+"q": "An element of 22 ohms sits on 220 V and operates for 5 minutes. How many joules?",
+"answer": 660000.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00384",
+"q": "A ingot of 45 kg gets winched up 25 m. How much potential energy does it gain?",
+"answer": 11025.000000000002,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00149",
+"q": "Initially the vat holds 120 kg; finally it holds 115 kg. How much mass was lost?",
+"answer": 5,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "g3f00044",
+"q": "A copper block of volume 3.61 m^3 - what mass?",
+"answer": 32345.6,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "copper"
+},
+{
+"id": "p11x00088",
+"q": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 3.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00256",
+"q": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 8.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00302",
+"q": "Profits of $4000 are taxed at 10%. What net profit remains?",
+"answer": 3600.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_seenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "g3f00035",
+"q": "A copper ingot with density 8960 kg/m^3 and volume 6.95 m^3 - mass?",
+"answer": 62272.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "copper"
+},
+{
+"id": "p11x00204",
+"q": "Profits of $22000 are taxed at 35%. What net profit remains?",
+"answer": 14300.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_unseenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00191",
+"q": "A slab 3 m long, 2 m wide and 0.5 m thick has density 1000 kg/m^3. What does it weigh?",
+"answer": 3000.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00144",
+"q": "A skip of 80 kg is hoisted 12 m. How much potential energy does it gain?",
+"answer": 9408.0,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00171",
+"q": "Profits of $22000 are taxed at 35%. What net profit remains?",
+"answer": 14300.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_seenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "g3d00001",
+"q": "At what Celsius temperature does water freeze?",
+"family": "definition",
+"def_key": 1,
+"answer": 0.0
+},
+{
+"id": "p11x00184",
+"q": "A lab blends 90 g of solute (molar mass 58.5 g/mol) into 2 L. What is the concentration?",
+"answer": 0.7692307692307693,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_unseenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "g3f00032",
+"q": "The granite block (2650 kg/m^3) measures 5.04 m^3; what does it weigh?",
+"answer": 13356.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "granite"
+},
+{
+"id": "p11x00119",
+"q": "Initially the vat holds 40 kg; finally it holds 15 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00203",
+"q": "A trolley of 45 kg is raised 3 m. How much potential energy does it gain?",
+"answer": 1323.0000000000002,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00152",
+"q": "A lab stirs 117 g of solute (molar mass 180 g/mol) into 4 L. What is the concentration?",
+"answer": 0.1625,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "g3d00041",
+"q": "At what Celsius temperature does water freeze?",
+"family": "definition",
+"def_key": 1,
+"answer": 0.0
+},
+{
+"id": "p11x00001",
+"q": "A crate weighs 500 kg and travels at 7 m/s. The depot brochure is rated for 96 passes. Kinetic energy?",
+"answer": 12250.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3d00014",
+"q": "What is density defined as?",
+"family": "definition",
+"def_key": 14,
+"answer": null,
+"keywords": [
+"mass",
+"volume"
+],
+"expect": "text"
+},
+{
+"id": "p11x00470",
+"q": "A cart of 120 kg is lifted 25 m. How much potential energy does it gain?",
+"answer": 29400.0,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00125",
+"q": "A lab folds 180 g of solute (molar mass 180 g/mol) into 1 L. What is the concentration?",
+"answer": 1.0,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_unseenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00138",
+"q": "Initially the vat holds 80 kg; finally it holds 65 kg. How much mass was lost?",
+"answer": 15,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00266",
+"q": "Initially the vat holds 120 kg; finally it holds 95 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00491",
+"q": "An element of 40 ohms sits on 110 V and operates for 45 minutes. How many joules?",
+"answer": 816750.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00058",
+"q": "What does a 5.59 m^3 chunk of aluminium weigh?",
+"answer": 15093.0,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "aluminium"
+},
+{
+"id": "p11x00007",
+"q": "At 14 m/s the block is observed; a mass of 1400 kg is recorded for it. Kinetic energy?",
+"answer": 137200.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00343",
+"q": "Each of 200 pieces go for $7.5 apiece. Revenue?",
+"answer": 1500.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "g3f00059",
+"q": "A solid concrete casting, 1.99 m^3 in volume; its mass?",
+"answer": 4776.0,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "concrete"
+},
+{
+"id": "p11x00360",
+"q": "A cart has a mass of 250 kg and moves at 8 m/s. What is its kinetic energy?",
+"answer": 8000.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00017",
+"q": "Initially the vat holds 40 kg; finally it holds 35 kg. How much mass was lost?",
+"answer": 5,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00082",
+"q": "Cart A weighs 900 kg and travels at 8 m/s. Cart B weighs 700 kg and moves at 15 m/s. What is the kinetic energy of the faster cart?",
+"answer": 78750.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00382",
+"q": "40 units sell for $4 each. What revenue results?",
+"answer": 160.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00219",
+"q": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 38.333333333333336,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00353",
+"q": "An element of 22 ohms sits on 110 V and operates for 5 minutes. How many joules?",
+"answer": 165000.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00029",
+"q": "Initially the vat holds 80 kg; finally it holds 55 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00401",
+"q": "A cart weighs 1200 kg and travels at 12 m/s. What is its kinetic energy?",
+"answer": 86400.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00481",
+"q": "A slab 3 m long, four m wide and 0.5 m thick has density 2400 kg/m^3. What does it weigh?",
+"answer": 14400.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00181",
+"q": "A cart has a mass of 1100 kg and moves at 7 m/s. The depot brochure is rated for 64 passes. Kinetic energy?",
+"answer": 26950.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00468",
+"q": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 8.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00368",
+"q": "Initially the vat holds 120 kg; finally it holds 105 kg. How much mass was lost?",
+"answer": 15,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00159",
+"q": "Initially the vat holds 40 kg; finally it holds 15 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00484",
+"q": "Cart A comes in at 900 kg and clocks 8 m/s. Cart B registers 1000 kg and barrels along at 18 m/s. What is the kinetic energy of the faster cart?",
+"answer": 162000.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00020",
+"q": "Profits of $2.20e+04 are taxed at 35%. What net profit remains?",
+"answer": 14300.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_seenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "g3f00014",
+"q": "A granite block of volume 6.21 m^3 - what mass?",
+"answer": 16456.5,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "granite"
+},
+{
+"id": "p11x00429",
+"q": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 14.375,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00373",
+"q": "A slab 5 m long, two m wide and 0.1 m thick has density 1000 kg/m^3. What does it weigh?",
+"answer": 1000.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00192",
+"q": "A lab stirs 117 g of solute (molar mass 18 g/mol) into 4 L. What is the concentration?",
+"answer": 1.625,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00434",
+"q": "A ingot registers 900 kg and clocks five m/s. What is its kinetic energy?",
+"answer": 11250.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00036",
+"q": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 3.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "g3f00009",
+"q": "What does a 7.34 m^3 chunk of aluminium weigh?",
+"answer": 19818.0,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "aluminium"
+},
+{
+"id": "p11x00079",
+"q": "At 14 m/s the skip is observed; a mass of 1400 kg is recorded for it. Kinetic energy?",
+"answer": 137200.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00007",
+"q": "The concrete block (2400 kg/m^3) measures 4.92 m^3; what does it weigh?",
+"answer": 11808.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "concrete"
+},
+{
+"id": "p11x00483",
+"q": "Profits of $2.20e+04 are taxed at 10%. What net profit remains?",
+"answer": 19800.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_seenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00425",
+"q": "120 units command $55 each. What revenue results?",
+"answer": 6600.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_unseenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00260",
+"q": "A block has a mass of 1200 kg and travels at 18 m/s. What is its kinetic energy?",
+"answer": 194400.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00163",
+"q": "Each of 900 pieces go for $2.5 apiece. Revenue?",
+"answer": 2250.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00182",
+"q": "A slab 3 m long, 2 m wide and 0.5 m thick has density 7.80e+03 kg/m^3. What does it weigh?",
+"answer": 23400.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00255",
+"q": "120 units fetch $27 each. What revenue results?",
+"answer": 3240.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_unseenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00389",
+"q": "At 9 m/s the skip is observed; a mass of 300 kg is recorded for it. Kinetic energy?",
+"answer": 12150.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00479",
+"q": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 14.375,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00324",
+"q": "A lab folds 117 g of solute (molar mass 58.5 g/mol) into 2 L. What is the concentration?",
+"answer": 1.0,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_unseenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00157",
+"q": "At 16 m/s the trolley is observed; a mass of 1000 kg is recorded for it. Kinetic energy?",
+"answer": 128000.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00240",
+"q": "An element of 11 ohms sits on 36 V and runs for 20 minutes. How many joules?",
+"answer": 141381.8181818182,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3d00011",
+"q": "State Newton's second law.",
+"family": "definition",
+"def_key": 11,
+"answer": null,
+"keywords": [
+"force",
+"mass",
+"acceleration"
+],
+"expect": "text"
+},
+{
+"id": "p11x00162",
+"q": "An element of 11 ohms sits on 220 V and operates for 5 minutes. How many joules?",
+"answer": 1320000.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00449",
+"q": "Initially the vat holds 40 kg; finally it holds 35 kg. How much mass was lost?",
+"answer": 5,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00221",
+"q": "A lab stirs 90 g of solute (molar mass 90 g/mol) into 1 L. What is the concentration?",
+"answer": 1.0,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00185",
+"q": "An element of 40 ohms sits on 400 V and keeps going for 45 minutes. How many joules?",
+"answer": 10800000.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00052",
+"q": "Density of this oak piece is 750 kg/m^3, volume 4.92 m^3. Mass?",
+"answer": 3690.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "oak"
+},
+{
+"id": "g3f00024",
+"q": "What does a 5.97 m^3 chunk of copper weigh?",
+"answer": 53491.2,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "copper"
+},
+{
+"id": "p11x00049",
+"q": "At 14 m/s the ingot is observed; a mass of 300 kg is recorded for it. Kinetic energy?",
+"answer": 29400.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00075",
+"q": "A palette comes in at 900 kg and barrels along at 18 m/s. What is its kinetic energy?",
+"answer": 145800.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00043",
+"q": "A lab stirs 117 g of solute (molar mass 18 g/mol) into one L. What is the concentration?",
+"answer": 6.5,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00342",
+"q": "Profits of $4.00e+03 are taxed at 10%. What net profit remains?",
+"answer": 3600.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_seenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00065",
+"q": "Profits of $4000 are taxed at 10%. What net profit remains?",
+"answer": 3600.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_unseenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "g3d00018",
+"q": "What does momentum equal?",
+"family": "definition",
+"def_key": 18,
+"answer": null,
+"keywords": [
+"mass",
+"velocity"
+],
+"expect": "text"
+},
+{
+"id": "p11x00371",
+"q": "40 units go for $12 each. What revenue results?",
+"answer": 480.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00218",
+"q": "For an element on 230 V \u2014 its resistance being six ohms \u2014 what current flows?",
+"answer": 38.333333333333336,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "g3f00004",
+"q": "A solid steel casting, 1.4 m^3 in volume; its mass?",
+"answer": 10920.0,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "steel"
+},
+{
+"id": "p11x00097",
+"q": "At 14 m/s the trolley is observed; a mass of 1.00e+03 kg is recorded for it. Kinetic energy?",
+"answer": 98000.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00438",
+"q": "At 6 m/s the ingot is observed; a mass of 1400 kg is recorded for it. Kinetic energy?",
+"answer": 25200.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00195",
+"q": "A ingot comes in at 800 kg and glides at 7 m/s. The depot brochure is rated for 96 passes. Kinetic energy?",
+"answer": 19600.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00022",
+"q": "A granite ingot with density 2650 kg/m^3 and volume 7.61 m^3 - mass?",
+"answer": 20166.5,
+"family": "fact",
+"fact_mode": "stating",
+"material": "granite"
+},
+{
+"id": "p11x00070",
+"q": "A slab five m long, 1 m wide and 0.1 m thick has density 2.40e+03 kg/m^3. What does it weigh?",
+"answer": 1200.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00300",
+"q": "A cart weighs 800 kg and travels at 11 m/s. The depot brochure is rated for 96 passes. Kinetic energy?",
+"answer": 48400.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00466",
+"q": "At 6 m/s the trolley is observed; a mass of 1000 kg is recorded for it. Kinetic energy?",
+"answer": 18000.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3d00013",
+"q": "What does power measure?",
+"family": "definition",
+"def_key": 13,
+"answer": null,
+"keywords": [
+"energy",
+"time"
+],
+"expect": "text"
+},
+{
+"id": "g3f00042",
+"q": "A copper ingot with density 8960 kg/m^3 and volume 4.76 m^3 - mass?",
+"answer": 42649.6,
+"family": "fact",
+"fact_mode": "stating",
+"material": "copper"
+},
+{
+"id": "p11x00234",
+"q": "750 units command $12 each. What revenue results?",
+"answer": 9000.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_unseenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00321",
+"q": "A crate of 120 kg is lifted 3 m. How much potential energy does it gain?",
+"answer": 3528.0,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00043",
+"q": "A solid steel casting, 0.45 m^3 in volume; its mass?",
+"answer": 3510.0,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "steel"
+},
+{
+"id": "p11x00156",
+"q": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 14.375,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00350",
+"q": "An element of 11 ohms sits on 400 V and runs for 45 minutes. How many joules?",
+"answer": 39272727.27272727,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00400",
+"q": "A trolley of 20 kg is lifted 25 m. How much potential energy does it gain?",
+"answer": 4900.0,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00476",
+"q": "For an element on 230 V \u2014 its resistance being sixteen ohms \u2014 what current flows?",
+"answer": 14.375,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00050",
+"q": "A trolley has a mass of 800 kg and travels at 11 m/s. The depot brochure is rated for 64 passes. Kinetic energy?",
+"answer": 48400.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00056",
+"q": "At 6 m/s the block is observed; a mass of 300 kg is recorded for it. Kinetic energy?",
+"answer": 5400.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00055",
+"q": "Density of this oak piece is 750 kg/m^3, volume 7.02 m^3. Mass?",
+"answer": 5265.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "oak"
+},
+{
+"id": "p11x00462",
+"q": "Each of 200 pieces sell for $12.5 apiece. Revenue?",
+"answer": 2500.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "g3d00016",
+"q": "What is electrical power in terms of voltage and current?",
+"family": "definition",
+"def_key": 16,
+"answer": null,
+"keywords": [
+"voltage",
+"current"
+],
+"expect": "text"
+},
+{
+"id": "p11x00477",
+"q": "Initially the vat holds 40 kg; finally it holds 35 kg. How much mass was lost?",
+"answer": 5,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00359",
+"q": "At 14 m/s the gondola is observed; a mass of 300 kg is recorded for it. Kinetic energy?",
+"answer": 29400.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00370",
+"q": "A slab 5 m long, 1 m wide and 0.5 m thick has density 7800 kg/m^3. What does it weigh?",
+"answer": 19500.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "g3f00006",
+"q": "The oak block (750 kg/m^3) measures 6.46 m^3; what does it weigh?",
+"answer": 4845.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "oak"
+},
+{
+"id": "p11x00188",
+"q": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 8.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00303",
+"q": "A trolley weighs 500 kg and travels at 11 m/s. The depot brochure is rated for 33 passes. Kinetic energy?",
+"answer": 30250.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00473",
+"q": "An element of 4 ohms sits on 220 V and runs for five minutes. How many joules?",
+"answer": 3630000.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00396",
+"q": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 14.375,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00346",
+"q": "Initially the vat holds 120 kg; finally it holds 95 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00155",
+"q": "A palette of 80 kg gets winched up 6 m. How much potential energy does it gain?",
+"answer": 4704.0,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00206",
+"q": "At nine m/s the trolley is observed; a mass of 700 kg is recorded for it. Kinetic energy?",
+"answer": 28350.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00333",
+"q": "A lab dissolves 90 g of solute (molar mass 180 g/mol) into 2 L. What is the concentration?",
+"answer": 0.25,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "g3d00042",
+"q": "How many seconds are there in an hour?",
+"family": "definition",
+"def_key": 2,
+"answer": 3600.0
+},
+{
+"id": "p11x00375",
+"q": "Each of 900 pieces fetch $12.5 apiece. Revenue?",
+"answer": 11250.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_unseenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00364",
+"q": "A skip tips the scales at 1500 kg and clocks 5 m/s. What is its kinetic energy?",
+"answer": 18750.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00261",
+"q": "A slab five m long, 1 m wide and 0.25 m thick has density 1.00e+03 kg/m^3. What does it weigh?",
+"answer": 1250.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00108",
+"q": "Initially the vat holds 80 kg; finally it holds 75 kg. How much mass was lost?",
+"answer": 5,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00374",
+"q": "A lab blends 117 g of solute (molar mass 58.5 g/mol) into two L. What is the concentration?",
+"answer": 1.0,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_unseenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00271",
+"q": "Profits of $9000 are taxed at 10%. What net profit remains?",
+"answer": 8100.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_seenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00441",
+"q": "A trolley of 45 kg is lifted 25 m. How much potential energy does it gain?",
+"answer": 11025.000000000002,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00455",
+"q": "A skip comes in at 800 kg and clocks 11 m/s. The depot brochure is rated for 64 passes. Kinetic energy?",
+"answer": 48400.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00227",
+"q": "Initially the vat holds 80 kg; finally it holds 75 kg. How much mass was lost?",
+"answer": 5,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00366",
+"q": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 38.333333333333336,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "g3f00011",
+"q": "A granite ingot with density 2650 kg/m^3 and volume 2.53 m^3 - mass?",
+"answer": 6704.5,
+"family": "fact",
+"fact_mode": "stating",
+"material": "granite"
+},
+{
+"id": "p11x00411",
+"q": "A lab dissolves 180 g of solute (molar mass 18 g/mol) into 2 L. What is the concentration?",
+"answer": 5.0,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "g3f00003",
+"q": "What does a 6.12 m^3 chunk of granite weigh?",
+"answer": 16218.0,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "granite"
+},
+{
+"id": "p11x00423",
+"q": "750 units go for $55 each. What revenue results?",
+"answer": 41250.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00315",
+"q": "An element of 11 ohms sits on 220 V and keeps going for 45 minutes. How many joules?",
+"answer": 11880000.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00414",
+"q": "A slab 5 m long, four m wide and 0.1 m thick has density 7800 kg/m^3. What does it weigh?",
+"answer": 15600.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00380",
+"q": "An element of 11 ohms sits on 36 V and operates for 45 minutes. How many joules?",
+"answer": 318109.09090909094,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00010",
+"q": "Density of this concrete piece is 2400 kg/m^3, volume 2.44 m^3. Mass?",
+"answer": 5856.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "concrete"
+},
+{
+"id": "p11x00386",
+"q": "Initially the vat holds 40 kg; finally it holds 35 kg. How much mass was lost?",
+"answer": 5,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00406",
+"q": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 38.333333333333336,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00398",
+"q": "Initially the vat holds 120 kg; finally it holds 95 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00297",
+"q": "Initially the vat holds 80 kg; finally it holds 75 kg. How much mass was lost?",
+"answer": 5,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00433",
+"q": "A crate of 80 kg is lifted 12 m. How much potential energy does it gain?",
+"answer": 9408.0,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00165",
+"q": "A lab blends 90 g of solute (molar mass 180 g/mol) into 1 L. What is the concentration?",
+"answer": 0.5,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_unseenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00166",
+"q": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 14.375,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00086",
+"q": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 8.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00421",
+"q": "An element of 4 ohms sits on 36 V and operates for 20 minutes. How many joules?",
+"answer": 388800.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3d00021",
+"q": "At what Celsius temperature does water freeze?",
+"family": "definition",
+"def_key": 1,
+"answer": 0.0
+},
+{
+"id": "p11x00290",
+"q": "A lab stirs 117 g of solute (molar mass 18 g/mol) into 1 L. What is the concentration?",
+"answer": 6.5,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00063",
+"q": "An element of 4 ohms sits on 36 V and operates for 5 minutes. How many joules?",
+"answer": 97200.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00329",
+"q": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 14.375,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00268",
+"q": "Initially the vat holds 120 kg; finally it holds 95 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00085",
+"q": "Cart A comes in at 900 kg and clocks 8 m/s. Cart B registers 700 kg and clocks 15 m/s. What is the kinetic energy of the faster cart?",
+"answer": 78750.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00432",
+"q": "A lab dissolves 180 g of solute (molar mass 90 g/mol) into two L. What is the concentration?",
+"answer": 1.0,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00098",
+"q": "Initially the vat holds 80 kg; finally it holds 55 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00445",
+"q": "Cart A tips the scales at 900 kg and barrels along at 8 m/s. Cart B tips the scales at 1000 kg and glides at 18 m/s. What is the kinetic energy of the faster cart?",
+"answer": 162000.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00035",
+"q": "A gondola of 45 kg is hoisted twelve m. How much potential energy does it gain?",
+"answer": 5292.000000000001,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00130",
+"q": "An element of 4 ohms sits on 220 V and runs for 45 minutes. How many joules?",
+"answer": 32670000.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00387",
+"q": "Initially the vat holds 40 kg; finally it holds 15 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00047",
+"q": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 38.333333333333336,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00435",
+"q": "Cart A tips the scales at 900 kg and glides at 8 m/s. Cart B tips the scales at 700 kg and barrels along at 15 m/s. What is the kinetic energy of the faster cart?",
+"answer": 78750.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00237",
+"q": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 3.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00003",
+"q": "An element of 22 ohms sits on 220 V and operates for 45 minutes. How many joules?",
+"answer": 5940000.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00459",
+"q": "At 6 m/s the ingot is observed; a mass of 300 kg is recorded for it. Kinetic energy?",
+"answer": 5400.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00006",
+"q": "At 9 m/s the trolley is observed; a mass of 300 kg is recorded for it. Kinetic energy?",
+"answer": 12150.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00064",
+"q": "A gondola of 120 kg is hoisted 6 m. How much potential energy does it gain?",
+"answer": 7056.0,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00061",
+"q": "Profits of $22000 are taxed at 35%. What net profit remains?",
+"answer": 14300.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_seenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00151",
+"q": "A slab 2 m long, 2 m wide and 0.1 m thick has density 7800 kg/m^3. What does it weigh?",
+"answer": 3120.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00318",
+"q": "At 14 m/s the ingot is observed; a mass of 300 kg is recorded for it. Kinetic energy?",
+"answer": 29400.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00456",
+"q": "Initially the vat holds 40 kg; finally it holds 15 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00225",
+"q": "A ingot of 45 kg is hoisted 3 m. How much potential energy does it gain?",
+"answer": 1323.0000000000002,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00278",
+"q": "At 6 m/s the gondola is observed; a mass of 1000 kg is recorded for it. Kinetic energy?",
+"answer": 18000.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00198",
+"q": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 8.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00220",
+"q": "A crate of 45 kg is lifted 3 m. How much potential energy does it gain?",
+"answer": 1323.0000000000002,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00417",
+"q": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 3.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00169",
+"q": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 3.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00013",
+"q": "Each of 480 pieces sell for $2.5 apiece. Revenue?",
+"answer": 1200.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00394",
+"q": "Profits of $9000 are taxed at 20%. What net profit remains?",
+"answer": 7200.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_unseenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00080",
+"q": "A cart weighs 1500 kg and travels at 12 m/s. What is its kinetic energy?",
+"answer": 108000.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00160",
+"q": "Each of 480 pieces go for $2.5 apiece. Revenue?",
+"answer": 1200.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00397",
+"q": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 8.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00337",
+"q": "Initially the vat holds 80 kg; finally it holds 55 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00248",
+"q": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 14.375,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00000",
+"q": "Cart A weighs 1200 kg and moves at 12 m/s. Cart B has a mass of 1000 kg and travels at 18 m/s. What is the kinetic energy of the faster cart?",
+"answer": 162000.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00033",
+"q": "Each of 900 pieces go for $2.5 apiece. Revenue?",
+"answer": 2250.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00173",
+"q": "A slab 3 m long, two m wide and 0.1 m thick has density 7800 kg/m^3. What does it weigh?",
+"answer": 4680.000000000001,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00170",
+"q": "An element of 40 ohms sits on 400 V and operates for 90 minutes. How many joules?",
+"answer": 21600000.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00291",
+"q": "Cart A has a mass of 900 kg and moves at 8 m/s. Cart B weighs 1000 kg and travels at 18 m/s. What is the kinetic energy of the faster cart?",
+"answer": 162000.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00008",
+"q": "A solid oak casting, 5.56 m^3 in volume; its mass?",
+"answer": 4170.0,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "oak"
+},
+{
+"id": "p11x00193",
+"q": "Each of 900 pieces sell for $2.5 apiece. Revenue?",
+"answer": 2250.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "g3d00028",
+"q": "How many watts is one kilowatt?",
+"family": "definition",
+"def_key": 8,
+"answer": 1000.0
+},
+{
+"id": "p11x00229",
+"q": "Initially the vat holds 40 kg; finally it holds 25 kg. How much mass was lost?",
+"answer": 15,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00115",
+"q": "A skip comes in at 250 kg and clocks 15 m/s. What is its kinetic energy?",
+"answer": 28125.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00282",
+"q": "An element of 4 ohms sits on 400 V and operates for 20 minutes. How many joules?",
+"answer": 48000000.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00137",
+"q": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 14.375,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00474",
+"q": "A gondola comes in at 1100 kg and barrels along at seven m/s. The depot brochure is rated for 64 passes. Kinetic energy?",
+"answer": 26950.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00048",
+"q": "A glass block of volume 3.54 m^3 - what mass?",
+"answer": 8850.0,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "glass"
+},
+{
+"id": "g3f00012",
+"q": "The steel block (7800 kg/m^3) measures 7.37 m^3; what does it weigh?",
+"answer": 57486.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "steel"
+},
+{
+"id": "p11x00376",
+"q": "Initially the vat holds 40 kg; finally it holds 25 kg. How much mass was lost?",
+"answer": 15,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "g3d00040",
+"q": "At what Celsius temperature does water boil at sea level?",
+"family": "definition",
+"def_key": 0,
+"answer": 100.0
+},
+{
+"id": "p11x00369",
+"q": "Initially the vat holds 80 kg; finally it holds 75 kg. How much mass was lost?",
+"answer": 5,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "g3f00037",
+"q": "Density of this granite piece is 2650 kg/m^3, volume 5.63 m^3. Mass?",
+"answer": 14919.5,
+"family": "fact",
+"fact_mode": "stating",
+"material": "granite"
+},
+{
+"id": "p11x00124",
+"q": "A lab blends 90 g of solute (molar mass 18 g/mol) into 1 L. What is the concentration?",
+"answer": 5.0,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_unseenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00379",
+"q": "Initially the vat holds 80 kg; finally it holds 75 kg. How much mass was lost?",
+"answer": 5,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00051",
+"q": "A slab 5 m long, 1 m wide and 0.25 m thick has density 7800 kg/m^3. What does it weigh?",
+"answer": 9750.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00385",
+"q": "Profits of $4000 are taxed at 20%. What net profit remains?",
+"answer": 3200.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_unseenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00054",
+"q": "A skip tips the scales at 1200 kg and clocks 12 m/s. What is its kinetic energy?",
+"answer": 86400.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00319",
+"q": "Initially the vat holds 40 kg; finally it holds 15 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00354",
+"q": "A skip tips the scales at 900 kg and barrels along at 18 m/s. What is its kinetic energy?",
+"answer": 145800.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00246",
+"q": "At 6 m/s the cart is observed; a mass of 1.40e+03 kg is recorded for it. Kinetic energy?",
+"answer": 25200.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00030",
+"q": "A slab five m long, 2 m wide and 0.25 m thick has density 1000 kg/m^3. What does it weigh?",
+"answer": 2500.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00279",
+"q": "At 6 m/s the skip is observed; a mass of 1.40e+03 kg is recorded for it. Kinetic energy?",
+"answer": 25200.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00480",
+"q": "300 units go for $twelve each. What revenue results?",
+"answer": 3600.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00404",
+"q": "A slab 5 m long, one m wide and 0.1 m thick has density 1.00e+03 kg/m^3. What does it weigh?",
+"answer": 500.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "g3f00039",
+"q": "A brass block of volume 1.77 m^3 - what mass?",
+"answer": 15045.0,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "brass"
+},
+{
+"id": "p11x00131",
+"q": "A block of 20 kg is lifted 12 m. How much potential energy does it gain?",
+"answer": 2352.0,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00231",
+"q": "A block weighs 1500 kg and moves at 15 m/s. What is its kinetic energy?",
+"answer": 168750.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00254",
+"q": "A slab 2 m long, 2 m wide and 0.5 m thick has density 7800 kg/m^3. What does it weigh?",
+"answer": 15600.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00419",
+"q": "Initially the vat holds 40 kg; finally it holds 35 kg. How much mass was lost?",
+"answer": 5,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "g3d00035",
+"q": "What does Hooke's law relate?",
+"family": "definition",
+"def_key": 15,
+"answer": null,
+"keywords": [
+"force",
+"extension"
+],
+"expect": "text"
+},
+{
+"id": "p11x00325",
+"q": "Profits of $4000 are taxed at 20%. What net profit remains?",
+"answer": 3200.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_unseenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "g3f00028",
+"q": "A solid copper casting, 6.76 m^3 in volume; its mass?",
+"answer": 60569.6,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "copper"
+},
+{
+"id": "p11x00197",
+"q": "Initially the vat holds 40 kg; finally it holds 15 kg. How much mass was lost?",
+"answer": 25,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00202",
+"q": "A lab stirs 117 g of solute (molar mass 18 g/mol) into 2 L. What is the concentration?",
+"answer": 3.25,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00253",
+"q": "A lab dissolves 36 g of solute (molar mass 58.5 g/mol) into four L. What is the concentration?",
+"answer": 0.15384615384615385,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00046",
+"q": "At 14 m/s the trolley is observed; a mass of 700 kg is recorded for it. Kinetic energy?",
+"answer": 68600.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3d00003",
+"q": "How many metres are in one kilometre?",
+"family": "definition",
+"def_key": 3,
+"answer": 1000.0
+},
+{
+"id": "p11x00011",
+"q": "Each of 480 pieces sell for $12.5 apiece. Revenue?",
+"answer": 6000.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00146",
+"q": "Initially the vat holds 80 kg; finally it holds 65 kg. How much mass was lost?",
+"answer": 15,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00211",
+"q": "A cart of 120 kg is raised 3 m. How much potential energy does it gain?",
+"answer": 3528.0,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00478",
+"q": "At 14 m/s the palette is observed; a mass of 700 kg is recorded for it. Kinetic energy?",
+"answer": 68600.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00025",
+"q": "Profits of $4000 are taxed at 10%. What net profit remains?",
+"answer": 3600.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_unseenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00071",
+"q": "Cart A has a mass of 1200 kg and moves at twelve m/s. Cart B has a mass of 1000 kg and travels at 18 m/s. What is the kinetic energy of the faster cart?",
+"answer": 162000.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00048",
+"q": "Initially the vat holds 120 kg; finally it holds 115 kg. How much mass was lost?",
+"answer": 5,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00410",
+"q": "120 units sell for $12 each. What revenue results?",
+"answer": 1440.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00224",
+"q": "A slab 5 m long, 2 m wide and 0.5 m thick has density 7.80e+03 kg/m^3. What does it weigh?",
+"answer": 39000.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "g3d00000",
+"q": "At what Celsius temperature does water boil at sea level?",
+"family": "definition",
+"def_key": 0,
+"answer": 100.0
+},
+{
+"id": "p11x00395",
+"q": "Profits of $4000 are taxed at 35%. What net profit remains?",
+"answer": 2600.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_unseenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00258",
+"q": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 3.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "g3d00045",
+"q": "How many joules is one kilowatt-hour?",
+"family": "definition",
+"def_key": 5,
+"answer": 3600000.0
+},
+{
+"id": "p11x00140",
+"q": "A slab 5 m long, 2 m wide and 0.5 m thick has density 1000 kg/m^3. What does it weigh?",
+"answer": 5000.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00178",
+"q": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 14.375,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00416",
+"q": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 38.333333333333336,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "g3d00009",
+"q": "How many minutes are in a day?",
+"family": "definition",
+"def_key": 9,
+"answer": 1440.0
+},
+{
+"id": "p11x00262",
+"q": "A crate has a mass of 800 kg and moves at 11 m/s. The depot brochure is rated for 96 passes. Kinetic energy?",
+"answer": 48400.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00488",
+"q": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 8.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "g3f00000",
+"q": "The granite block (2650 kg/m^3) measures 7.52 m^3; what does it weigh?",
+"answer": 19928.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "granite"
+},
+{
+"id": "p11x00392",
+"q": "A crate of 45 kg is lifted 12 m. How much potential energy does it gain?",
+"answer": 5292.000000000001,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3d00037",
+"q": "What quantity does a joule measure?",
+"family": "definition",
+"def_key": 17,
+"answer": null,
+"keywords": [
+"energy"
+],
+"expect": "text"
+},
+{
+"id": "p11x00285",
+"q": "A gondola of 20 kg gets winched up 12 m. How much potential energy does it gain?",
+"answer": 2352.0,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00068",
+"q": "Initially the vat holds 40 kg; finally it holds 25 kg. How much mass was lost?",
+"answer": 15,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00116",
+"q": "At 14 m/s the block is observed; a mass of 1400 kg is recorded for it. Kinetic energy?",
+"answer": 137200.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00424",
+"q": "Cart A tips the scales at 900 kg and barrels along at 8 m/s. Cart B tips the scales at 1000 kg and clocks eighteen m/s. What is the kinetic energy of the faster cart?",
+"answer": 162000.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00183",
+"q": "Each of 200 pieces sell for $2.5 apiece. Revenue?",
+"answer": 500.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "g3d00033",
+"q": "What does power measure?",
+"family": "definition",
+"def_key": 13,
+"answer": null,
+"keywords": [
+"energy",
+"time"
+],
+"expect": "text"
+},
+{
+"id": "g3d00031",
+"q": "State Newton's second law.",
+"family": "definition",
+"def_key": 11,
+"answer": null,
+"keywords": [
+"force",
+"mass",
+"acceleration"
+],
+"expect": "text"
+},
+{
+"id": "p11x00099",
+"q": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 8.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00084",
+"q": "120 units fetch $27 each. What revenue results?",
+"answer": 3240.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_unseenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00230",
+"q": "A block of 20 kg is lifted 12 m. How much potential energy does it gain?",
+"answer": 2352.0,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00439",
+"q": "At 16 m/s the ingot is observed; a mass of 1000 kg is recorded for it. Kinetic energy?",
+"answer": 128000.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00452",
+"q": "Cart A has a mass of 900 kg and travels at 8 m/s. Cart B has a mass of 1000 kg and travels at 18 m/s. What is the kinetic energy of the faster cart?",
+"answer": 162000.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00482",
+"q": "Cart A has a mass of 900 kg and travels at 8 m/s. Cart B weighs 700 kg and travels at 15 m/s. What is the kinetic energy of the faster cart?",
+"answer": 78750.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00228",
+"q": "Initially the vat holds 80 kg; finally it holds 75 kg. How much mass was lost?",
+"answer": 5,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "g3d00032",
+"q": "What is kinetic energy proportional to?",
+"family": "definition",
+"def_key": 12,
+"answer": null,
+"keywords": [
+"mass",
+"speed"
+],
+"expect": "text"
+},
+{
+"id": "g3d00036",
+"q": "What is electrical power in terms of voltage and current?",
+"family": "definition",
+"def_key": 16,
+"answer": null,
+"keywords": [
+"voltage",
+"current"
+],
+"expect": "text"
+},
+{
+"id": "g3f00021",
+"q": "The steel block (7800 kg/m^3) measures 6.43 m^3; what does it weigh?",
+"answer": 50154.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "steel"
+},
+{
+"id": "g3f00030",
+"q": "A brass ingot with density 8500 kg/m^3 and volume 5.74 m^3 - mass?",
+"answer": 48790.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "brass"
+},
+{
+"id": "p11x00332",
+"q": "Profits of $22000 are taxed at 20%. What net profit remains?",
+"answer": 17600.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_seenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00463",
+"q": "A crate has a mass of 250 kg and travels at 15 m/s. What is its kinetic energy?",
+"answer": 28125.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00447",
+"q": "At 9 m/s the crate is observed; a mass of 700 kg is recorded for it. Kinetic energy?",
+"answer": 28350.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00426",
+"q": "At 16 m/s the crate is observed; a mass of 1.40e+03 kg is recorded for it. Kinetic energy?",
+"answer": 179200.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00107",
+"q": "Initially the vat holds 40 kg; finally it holds 35 kg. How much mass was lost?",
+"answer": 5,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00277",
+"q": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 38.333333333333336,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00335",
+"q": "Profits of $4000 are taxed at 20%. What net profit remains?",
+"answer": 3200.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_unseenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00296",
+"q": "At 6 m/s the block is observed; a mass of 300 kg is recorded for it. Kinetic energy?",
+"answer": 5400.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00340",
+"q": "A lab stirs 36 g of solute (molar mass 58.5 g/mol) into 1 L. What is the concentration?",
+"answer": 0.6153846153846154,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00355",
+"q": "Cart A registers 900 kg and glides at 8 m/s. Cart B tips the scales at 1000 kg and barrels along at 18 m/s. What is the kinetic energy of the faster cart?",
+"answer": 162000.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00305",
+"q": "A lab folds 90 g of solute (molar mass 90 g/mol) into 4 L. What is the concentration?",
+"answer": 0.25,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_unseenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00269",
+"q": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 8.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00450",
+"q": "300 units go for $12 each. What revenue results?",
+"answer": 3600.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00109",
+"q": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 3.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00134",
+"q": "Cart A comes in at 900 kg and clocks 8 m/s. Cart B comes in at 1000 kg and glides at eighteen m/s. What is the kinetic energy of the faster cart?",
+"answer": 162000.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00132",
+"q": "An element of 11 ohms sits on 36 V and runs for 5 minutes. How many joules?",
+"answer": 35345.45454545455,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00015",
+"q": "The aluminium block (2700 kg/m^3) measures 7.34 m^3; what does it weigh?",
+"answer": 19818.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "aluminium"
+},
+{
+"id": "g3d00019",
+"q": "What is revenue in terms of price and quantity?",
+"family": "definition",
+"def_key": 19,
+"answer": null,
+"keywords": [
+"price",
+"quantity"
+],
+"expect": "text"
+},
+{
+"id": "g3f00047",
+"q": "The aluminium block (2700 kg/m^3) measures 0.84 m^3; what does it weigh?",
+"answer": 2268.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "aluminium"
+},
+{
+"id": "p11x00259",
+"q": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 3.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00280",
+"q": "A block has a mass of 1500 kg and moves at 8 m/s. What is its kinetic energy?",
+"answer": 48000.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00294",
+"q": "Cart A registers 900 kg and barrels along at 8 m/s. Cart B comes in at 1000 kg and barrels along at 18 m/s. What is the kinetic energy of the faster cart?",
+"answer": 162000.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00301",
+"q": "Profits of $4000 are taxed at 20%. What net profit remains?",
+"answer": 3200.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_seenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00357",
+"q": "At nine m/s the cart is observed; a mass of 1000 kg is recorded for it. Kinetic energy?",
+"answer": 40500.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00055",
+"q": "Profits of $22000 are taxed at 20%. What net profit remains?",
+"answer": 17600.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_unseenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00236",
+"q": "Initially the vat holds 120 kg; finally it holds 105 kg. How much mass was lost?",
+"answer": 15,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00148",
+"q": "For an element on 230 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 38.333333333333336,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00167",
+"q": "Initially the vat holds 120 kg; finally it holds 115 kg. How much mass was lost?",
+"answer": 5,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00287",
+"q": "At 14 m/s the cart is observed; a mass of 700 kg is recorded for it. Kinetic energy?",
+"answer": 68600.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00032",
+"q": "A crate has a mass of 1100 kg and travels at 14 m/s. The depot brochure is rated for 64 passes. Kinetic energy?",
+"answer": 107800.0,
+"template": "distractor",
+"phenomena": "M",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00051",
+"q": "A steel ingot with density 7800 kg/m^3 and volume 3.3 m^3 - mass?",
+"answer": 25740.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "steel"
+},
+{
+"id": "p11x00415",
+"q": "A lab blends 90 g of solute (molar mass 180 g/mol) into two L. What is the concentration?",
+"answer": 0.25,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_unseenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00233",
+"q": "A slab 2 m long, 1 m wide and 0.25 m thick has density 1.00e+03 kg/m^3. What does it weigh?",
+"answer": 500.0,
+"template": "mass_density",
+"phenomena": "AL",
+"quadrant": "seenT_seenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00118",
+"q": "At 16 m/s the palette is observed; a mass of 700 kg is recorded for it. Kinetic energy?",
+"answer": 89600.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00176",
+"q": "For an element on 230 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 14.375,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00008",
+"q": "Initially the vat holds 40 kg; finally it holds 25 kg. How much mass was lost?",
+"answer": 15,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00128",
+"q": "Initially the vat holds 120 kg; finally it holds 105 kg. How much mass was lost?",
+"answer": 15,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00014",
+"q": "An element of 22 ohms sits on 110 V and stays energised for 5 minutes. How many joules?",
+"answer": 165000.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00331",
+"q": "A block of 20 kg is lifted 12 m. How much potential energy does it gain?",
+"answer": 2352.0,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00347",
+"q": "At nine m/s the cart is observed; a mass of 1400 kg is recorded for it. Kinetic energy?",
+"answer": 56700.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3d00005",
+"q": "How many joules is one kilowatt-hour?",
+"family": "definition",
+"def_key": 5,
+"answer": 3600000.0
+},
+{
+"id": "p11x00072",
+"q": "Cart A weighs 900 kg and travels at 8 m/s. Cart B has a mass of 700 kg and moves at 15 m/s. What is the kinetic energy of the faster cart?",
+"answer": 78750.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00461",
+"q": "Profits of $9000 are taxed at 35%. What net profit remains?",
+"answer": 5850.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_seenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "g3d00044",
+"q": "How many grams make one kilogram?",
+"family": "definition",
+"def_key": 4,
+"answer": 1000.0
+},
+{
+"id": "g3d00012",
+"q": "What is kinetic energy proportional to?",
+"family": "definition",
+"def_key": 12,
+"answer": null,
+"keywords": [
+"mass",
+"speed"
+],
+"expect": "text"
+},
+{
+"id": "p11x00104",
+"q": "Profits of $22000 are taxed at 10%. What net profit remains?",
+"answer": 19800.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_unseenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00328",
+"q": "At 16 m/s the ingot is observed; a mass of 700 kg is recorded for it. Kinetic energy?",
+"answer": 89600.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00090",
+"q": "An element of 22 ohms sits on 400 V and runs for 45 minutes. How many joules?",
+"answer": 19636363.636363637,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00056",
+"q": "The oak block (750 kg/m^3) measures 2.92 m^3; what does it weigh?",
+"answer": 2190.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "oak"
+},
+{
+"id": "p11x00458",
+"q": "Initially the vat holds 120 kg; finally it holds 105 kg. How much mass was lost?",
+"answer": 15,
+"template": "temporal",
+"phenomena": "OX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "mass",
+"family": "physmix"
+},
+{
+"id": "p11x00122",
+"q": "An element of 22 ohms sits on 220 V and runs for 45 minutes. How many joules?",
+"answer": 5940000.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00158",
+"q": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 8.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00172",
+"q": "A crate of 45 kg is lifted 12 m. How much potential energy does it gain?",
+"answer": 5292.000000000001,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00243",
+"q": "An element of 40 ohms sits on 110 V and runs for 45 minutes. How many joules?",
+"answer": 816750.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00150",
+"q": "A cart of 45 kg is raised 6 m. How much potential energy does it gain?",
+"answer": 2646.0000000000005,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3d00002",
+"q": "How many seconds are there in an hour?",
+"family": "definition",
+"def_key": 2,
+"answer": 3600.0
+},
+{
+"id": "p11x00053",
+"q": "750 units go for $12 each. What revenue results?",
+"answer": 9000.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00327",
+"q": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 8.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00005",
+"q": "Profits of $9000 are taxed at ten%. What net profit remains?",
+"answer": 8100.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_unseenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "p11x00114",
+"q": "A gondola tips the scales at 600 kg and glides at eighteen m/s. What is its kinetic energy?",
+"answer": 97200.0,
+"template": "ke_active",
+"phenomena": "AB",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00427",
+"q": "At 16 m/s the cart is observed; a mass of 1000 kg is recorded for it. Kinetic energy?",
+"answer": 128000.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00136",
+"q": "At 9 m/s the block is observed; a mass of 1000 kg is recorded for it. Kinetic energy?",
+"answer": 40500.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3d00020",
+"q": "At what Celsius temperature does water boil at sea level?",
+"family": "definition",
+"def_key": 0,
+"answer": 100.0
+},
+{
+"id": "p11x00091",
+"q": "A lab stirs 117 g of solute (molar mass 18 g/mol) into 4 L. What is the concentration?",
+"answer": 1.625,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00060",
+"q": "Each of 480 pieces sell for $12.5 apiece. Revenue?",
+"answer": 6000.0,
+"template": "fraction",
+"phenomena": "R",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00139",
+"q": "For an element on 48 V \u2014 its resistance being 16 ohms \u2014 what current flows?",
+"answer": 3.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00002",
+"q": "A lab dissolves 90 g of solute (molar mass 90 g/mol) into 2 L. What is the concentration?",
+"answer": 0.5,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00311",
+"q": "300 units go for $27 each. What revenue results?",
+"answer": 8100.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_seenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00142",
+"q": "A crate of 20 kg is lifted 6 m. How much potential energy does it gain?",
+"answer": 1176.0,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00026",
+"q": "A oak ingot with density 750 kg/m^3 and volume 6.99 m^3 - mass?",
+"answer": 5242.5,
+"family": "fact",
+"fact_mode": "stating",
+"material": "oak"
+},
+{
+"id": "p11x00121",
+"q": "Profits of $2.20e+04 are taxed at 20%. What net profit remains?",
+"answer": 17600.0,
+"template": "percent_tax",
+"phenomena": "S",
+"quadrant": "seenT_seenW",
+"target_kind": "net_profit",
+"family": "physmix"
+},
+{
+"id": "g3d00038",
+"q": "What does momentum equal?",
+"family": "definition",
+"def_key": 18,
+"answer": null,
+"keywords": [
+"mass",
+"velocity"
+],
+"expect": "text"
+},
+{
+"id": "p11x00194",
+"q": "A gondola of 80 kg gets winched up 25 m. How much potential energy does it gain?",
+"answer": 19600.0,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00081",
+"q": "A lab dissolves 180 g of solute (molar mass 90 g/mol) into 4 L. What is the concentration?",
+"answer": 0.5,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "p11x00405",
+"q": "Cart A registers 900 kg and clocks 8 m/s. Cart B registers 700 kg and barrels along at 15 m/s. What is the kinetic energy of the faster cart?",
+"answer": 78750.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00001",
+"q": "A copper ingot with density 8960 kg/m^3 and volume 6.7 m^3 - mass?",
+"answer": 60032.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "copper"
+},
+{
+"id": "p11x00286",
+"q": "At 16 m/s the cart is observed; a mass of 700 kg is recorded for it. Kinetic energy?",
+"answer": 89600.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00057",
+"q": "The oak block (750 kg/m^3) measures 2.49 m^3; what does it weigh?",
+"answer": 1867.5,
+"family": "fact",
+"fact_mode": "stating",
+"material": "oak"
+},
+{
+"id": "g3f00016",
+"q": "A brass ingot with density 8500 kg/m^3 and volume 5.32 m^3 - mass?",
+"answer": 45220.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "brass"
+},
+{
+"id": "p11x00365",
+"q": "Cart A comes in at 1200 kg and barrels along at 12 m/s. Cart B comes in at 700 kg and clocks 15 m/s. What is the kinetic energy of the faster cart?",
+"answer": 78750.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00446",
+"q": "For an element on 48 V \u2014 its resistance being 6 ohms \u2014 what current flows?",
+"answer": 8.0,
+"template": "reorder",
+"phenomena": "FX",
+"quadrant": "unseenT_seenW",
+"target_kind": "current",
+"family": "physmix"
+},
+{
+"id": "p11x00381",
+"q": "An element of eleven ohms sits on 110 V and operates for 90 minutes. How many joules?",
+"answer": 5940000.0,
+"template": "elec",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00022",
+"q": "A block of 120 kg is raised 6 m. How much potential energy does it gain?",
+"answer": 7056.0,
+"template": "pe",
+"phenomena": "AB",
+"quadrant": "seenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00049",
+"q": "What does a 1.96 m^3 chunk of oak weigh?",
+"answer": 1470.0,
+"family": "fact",
+"fact_mode": "omitting",
+"material": "oak"
+},
+{
+"id": "g3f00027",
+"q": "The aluminium block (2700 kg/m^3) measures 4.79 m^3; what does it weigh?",
+"answer": 12933.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "aluminium"
+},
+{
+"id": "p11x00486",
+"q": "At 16 m/s the crate is observed; a mass of 1400 kg is recorded for it. Kinetic energy?",
+"answer": 179200.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00399",
+"q": "At fourteen m/s the ingot is observed; a mass of 1000 kg is recorded for it. Kinetic energy?",
+"answer": 98000.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "p11x00334",
+"q": "120 units fetch $4 each. What revenue results?",
+"answer": 480.0,
+"template": "rev",
+"phenomena": "AR",
+"quadrant": "seenT_unseenW",
+"target_kind": "revenue",
+"family": "physmix"
+},
+{
+"id": "p11x00244",
+"q": "Cart A registers 900 kg and clocks 8 m/s. Cart B registers 700 kg and glides at 15 m/s. What is the kinetic energy of the faster cart?",
+"answer": 78750.0,
+"template": "two_entity",
+"phenomena": "KO",
+"quadrant": "seenT_unseenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00031",
+"q": "The glass block (2500 kg/m^3) measures 5.51 m^3; what does it weigh?",
+"answer": 13775.0,
+"family": "fact",
+"fact_mode": "stating",
+"material": "glass"
+},
+{
+"id": "p11x00276",
+"q": "At 14 m/s the block is observed; a mass of 700 kg is recorded for it. Kinetic energy?",
+"answer": 68600.0,
+"template": "ke_passive",
+"phenomena": "GX",
+"quadrant": "unseenT_seenW",
+"target_kind": "energy",
+"family": "physmix"
+},
+{
+"id": "g3f00017",
+"q": "Density of this copper piece is 8960 kg/m^3, volume 4.68 m^3. Mass?",
+"answer": 41932.8,
+"family": "fact",
+"fact_mode": "stating",
+"material": "copper"
+},
+{
+"id": "p11x00440",
+"q": "A lab dissolves 36 g of solute (molar mass 90 g/mol) into 1 L. What is the concentration?",
+"answer": 0.4,
+"template": "chem",
+"phenomena": "AQ",
+"quadrant": "seenT_seenW",
+"target_kind": "concentration",
+"family": "physmix"
+},
+{
+"id": "g3d00024",
+"q": "How many grams make one kilogram?",
+"family": "definition",
+"def_key": 4,
+"answer": 1000.0
+}
+]
