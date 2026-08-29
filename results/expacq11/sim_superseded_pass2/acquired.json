@@ -1,0 +1,353 @@
+[
+ {
+  "cid": "cec4d8243b5",
+  "type": "memory_fact",
+  "payload": {
+   "concept": "density",
+   "value": 2650.0,
+   "unit": "kg/m^3",
+   "context_tokens": [
+    "granite"
+   ],
+   "n_observations": 4
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "MemoryFactTracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ca4d79fde87",
+  "type": "memory_fact",
+  "payload": {
+   "concept": "density",
+   "value": 8960.0,
+   "unit": "kg/m^3",
+   "context_tokens": [
+    "copper"
+   ],
+   "n_observations": 5
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "MemoryFactTracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c81362f9644",
+  "type": "memory_fact",
+  "payload": {
+   "concept": "density",
+   "value": 2500.0,
+   "unit": "kg/m^3",
+   "context_tokens": [
+    "glass"
+   ],
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "MemoryFactTracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "ccea7c892f2",
+  "type": "text_qa",
+  "payload": {
+   "key": "at what celsius temperature does water freeze",
+   "answer": "Water freezes at 0\u00b0C at standard atmospheric pressure.",
+   "question": "At what Celsius temperature does water freeze?",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "caf3e589a21",
+  "type": "text_qa",
+  "payload": {
+   "key": "state ohms law",
+   "answer": "Ohm's law states that the current through a conductor is directly proportional to the voltage across it and inversely proportional to its resistance: V = IR.",
+   "question": "State Ohm's law.",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c455a9928bd",
+  "type": "text_qa",
+  "payload": {
+   "key": "how many seconds are there in an hour",
+   "answer": "There are 3600 seconds in an hour (60 minutes \u00d7 60 seconds).",
+   "question": "How many seconds are there in an hour?",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c318db56de5",
+  "type": "text_qa",
+  "payload": {
+   "key": "how many minutes are in a day",
+   "answer": "There are 1440 minutes in a day (24 hours \u00d7 60 minutes).",
+   "question": "How many minutes are in a day?",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c1a23444de5",
+  "type": "text_qa",
+  "payload": {
+   "key": "what is revenue in terms of price and quantity",
+   "answer": "Revenue equals price multiplied by quantity sold: Revenue = Price \u00d7 Quantity.",
+   "question": "What is revenue in terms of price and quantity?",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c2c62cde7bc",
+  "type": "text_qa",
+  "payload": {
+   "key": "what is density defined as",
+   "answer": "Density is defined as mass per unit volume: \u03c1 = m/V.",
+   "question": "What is density defined as?",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c8c1a915e01",
+  "type": "text_qa",
+  "payload": {
+   "key": "state newtons second law",
+   "answer": "Newton's second law states that the net force on an object equals its mass times its acceleration: F = ma.",
+   "question": "State Newton's second law.",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cf531284e9b",
+  "type": "text_qa",
+  "payload": {
+   "key": "what does hookes law relate",
+   "answer": "Hooke's law relates the force needed to stretch or compress a spring to the displacement, within the elastic limit: F = -kx.",
+   "question": "What does Hooke's law relate?",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c2db3fa3f3c",
+  "type": "memory_fact",
+  "payload": {
+   "concept": "density",
+   "value": 750.0,
+   "unit": "kg/m^3",
+   "context_tokens": [
+    "oak"
+   ],
+   "n_observations": 4
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "MemoryFactTracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c91ccac4d16",
+  "type": "text_qa",
+  "payload": {
+   "key": "how many watts is one kilowatt",
+   "answer": "One kilowatt equals 1000 watts.",
+   "question": "How many watts is one kilowatt?",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c2083bad53b",
+  "type": "text_qa",
+  "payload": {
+   "key": "how many millilitres are in a litre",
+   "answer": "One litre equals 1000 millilitres.",
+   "question": "How many millilitres are in a litre?",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c763e7d1242",
+  "type": "memory_fact",
+  "payload": {
+   "concept": "density",
+   "value": 8500.0,
+   "unit": "kg/m^3",
+   "context_tokens": [
+    "brass"
+   ],
+   "n_observations": 12
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "MemoryFactTracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c8092f9f6e9",
+  "type": "memory_fact",
+  "payload": {
+   "concept": "density",
+   "value": 2700.0,
+   "unit": "kg/m^3",
+   "context_tokens": [
+    "aluminium",
+    "mass",
+    "volume"
+   ],
+   "n_observations": 12
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "MemoryFactTracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "cf445f0dedf",
+  "type": "text_qa",
+  "payload": {
+   "key": "how many joules is one kilowatthour",
+   "answer": "One kilowatt-hour equals 3,600,000 joules (3.6 \u00d7 10\u2076 J).",
+   "question": "How many joules is one kilowatt-hour?",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c35af57bba9",
+  "type": "text_qa",
+  "payload": {
+   "key": "how many grams make one kilogram",
+   "answer": "One kilogram equals 1000 grams.",
+   "question": "How many grams make one kilogram?",
+   "n_observations": 3
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "TextQATracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c41b5a37fbe",
+  "type": "memory_fact",
+  "payload": {
+   "concept": "density",
+   "value": 1000.0,
+   "unit": "kg/m^3",
+   "context_tokens": [
+    "has",
+    "long",
+    "slab",
+    "thick",
+    "weigh",
+    "wide"
+   ],
+   "n_observations": 410
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "MemoryFactTracker"
+  },
+  "confirms": 3,
+  "requires": []
+ },
+ {
+  "cid": "c01ef26ac71",
+  "type": "memory_fact",
+  "payload": {
+   "concept": "volume",
+   "value": 7.54,
+   "unit": "m^3",
+   "context_tokens": [
+    "brass"
+   ],
+   "n_observations": 5
+  },
+  "source": "MINER",
+  "authorship": {
+   "producer": "MemoryFactTracker"
+  },
+  "confirms": 3,
+  "requires": []
+ }
+]

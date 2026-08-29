@@ -27,3 +27,15 @@ packs/physics/README.md, plus what EXP-ACQ measured)
   number vocabulary gaps ("a dozen"), hyphenated unit forms
   ("2-tonne"), ask-focus scoring. These, not domain mappings, are
   the bulk of the sealed residual — the V1.1 engine worklist.
+
+## V1.1 additions
+
+- W1c ordinal extension (loader regex): closes the "tenth one"
+  instance of bug_audit_v1_1 B2. THE CLASS remains open for V1.2:
+  an unresolved entity reference over a multi-entity state must be
+  ambiguous-by-default (abstain), never a GLOBAL first-facts solve.
+  This is the highest-priority safety item the arc has open.
+- TEXT.qa gate normalization: strict verbatim equality mints 30-60%
+  of eligible reflexes (measured, scale comparison); content-level
+  normalization (numeric/keyword extraction) would roughly double
+  the mint rate at equal safety. V1.2 design item.

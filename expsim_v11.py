@@ -55,6 +55,13 @@ def grade_item(it, value):
         t = (value or "").lower() if isinstance(value, str) else ""
         return bool(t) and all(k.lower() in t
                                for k in (it.get("keywords") or []))
+    if isinstance(value, str):
+        # numeric truth served as text (TEXT.qa): grade by
+        # first-number extraction (bug_audit_v1_1 B1)
+        import re as _re
+        m = _re.search(r"-?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?",
+                       value.replace(",", ""))
+        value = float(m.group(0)) if m else None
     return grade_num(value, it.get("answer"))
 
 
@@ -215,12 +222,8 @@ def main():
                 expect = it.get("expect", "answer")
                 if expect == "abstain":
                     correct = served is None
-                elif expect == "text":
-                    correct = grade_item(it, served)
                 else:
-                    correct = grade_num(served if not
-                                        isinstance(served, str)
-                                        else None, it.get("answer"))
+                    correct = grade_item(it, served)
                 f.write(json.dumps({
                     "query_id": it["id"], "value": served,
                     "how": how, "correct": correct,

@@ -78,8 +78,14 @@ def _ref_re(nouns, comparatives, hypernyms):
     n = "|".join(nouns)
     c = "|".join(comparatives)
     h = "|".join(nouns + hypernyms)
+    # V1.1 W1c: ordinals extended to tenth — the vendored pattern
+    # stopped at fifth while the ORDINALS table went to tenth; on a
+    # fresh seed, "the tenth one" fell through to a GLOBAL solve and
+    # executed a bind trap (the one wrong-fire of the V1.1 sim
+    # finals; bug_audit_v1_1)
     return re.compile(
-        rf"\b(?:the\s+(first|second|third|fourth|fifth|last)\s+(?:one|"
+        rf"\b(?:the\s+(first|second|third|fourth|fifth|sixth|"
+        rf"seventh|eighth|ninth|tenth|last)\s+(?:one|"
         rf"{n})|"
         rf"the\s+({c})\s+"
         rf"\w+|(it|its)|"
