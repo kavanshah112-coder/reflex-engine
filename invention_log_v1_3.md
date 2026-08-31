@@ -11,7 +11,7 @@ Status key: CONFIRMED · PARTIAL · FALSIFIED · NOT TESTED · PENDING.
 | # | Hypothesis | Prediction | Status | Evidence |
 |---|---|---|---|---|
 | L1 | Real traffic recurs in structure (gates W5 scope) | uncertain | **CONFIRMED** | W0 on the traffic pool (sealed never inspected): medium-granularity top-200 structures cover **83.3%** vs a 35% gate; coarse 170 distinct structures cover 100%; fine (with dataflow linkage) 82.8%. Reference solutions parsed, not our engine's reading. Caveat: measured on 726/944 numeric items — see bug_audit B2. **W5 runs as specced.** |
-| L2 | Frames improve parse precision; no-frame is a reliable abstention signal | pass | PENDING | |
+| L2 | Frames improve parse precision; no-frame is a reliable abstention signal | pass | **PARTIAL** | Signal half CONFIRMED emphatically: perfect in/out-of-domain separation — real language scores max 0.273 vs in-universe min 0.801, 0/300 real items above the weakest in-universe item. Narrowing half CONFIRMED in-universe only: 95.2% recall while carrying 3.4 of 77 kinds (95.6% prompt reduction). It cannot yet narrow REAL language, because the index has no labelled real-language rows. Forced Amendment A (frame advises, never gates). |
 | L3 | Parse/verify split lifts real-language coverage from 0% at wrong-fire <= 2% | pass — THE headline | PENDING | |
 | L4 | The five checks catch constructed misreadings without rejecting good parses | pass | PENDING | |
 | L5 | Plan reflexes compound on T-repeat; the T-unique gap quantifies sampling | uncertain | PENDING | |
@@ -50,3 +50,26 @@ was expected to know or infer. That is a direct preview of what the
 parse agent will face, and it means a non-trivial slice of real
 problems cannot be solved from the text alone even with perfect
 reading.
+
+**D3 — the frame is a free, model-free out-of-domain detector, and
+that is worth more than the narrowing it was built for.** Hashed
+n-grams with no training, no embedder and no model separate
+in-universe from real-language queries with *zero overlap* across 450
+items — a 3x gap between distributions (in-universe median 1.000,
+real-language median ~0.125). V0.2 measured this family at ~1/200,000
+the cost of embeddings and the arc has under-used it ever since. Two
+consequences: (i) the engine can know it is off its own map before
+spending a single model call, which is exactly the cheap coverage
+boundary a commercial deployment needs; (ii) it also means the frame
+cannot narrow vocabulary for real language *yet*, because narrowing
+requires labelled neighbours and there are none.
+
+**D4 — the frame should bootstrap from the engine's own successes.**
+The index is labelled for free by running the engine and harvesting
+the kinds it used. So every VERIFIED real-language solve produced by
+W2-W4 becomes a labelled real-language row, and real-language framing
+improves precisely as real-language solving improves. This is a
+self-improving loop the arc has not tried before — and unlike the
+four falsified acquisition attempts, it acquires *retrieval evidence*
+rather than engine vocabulary, so a bad row degrades ranking rather
+than corrupting certified state. Wired into W5.

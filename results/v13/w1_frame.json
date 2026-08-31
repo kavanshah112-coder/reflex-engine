@@ -1,0 +1,33 @@
+{
+ "index_rows": 1500,
+ "kinds_total": 77,
+ "no_frame_threshold": 0.8938193572966862,
+ "in_universe_heldout": {
+  "n": 400,
+  "frame_contains_needed_kinds": 381,
+  "frame_missing_kinds": 0,
+  "no_frame": 19,
+  "recall": 0.9525,
+  "avg_kinds_in_frame": 3.4,
+  "narrowing": "3.4 of 77"
+ },
+ "no_frame_rate": {
+  "in_universe": {
+   "rate": 0.02,
+   "n": 200
+  },
+  "real_numeric": {
+   "rate": 1.0,
+   "n": 400
+  },
+  "real_theory": {
+   "rate": 1.0,
+   "n": 200
+  }
+ },
+ "prompt_size": {
+  "v1_2_kinds_listed": 77,
+  "v1_3_kinds_listed": 3.4,
+  "reduction": 0.956
+ }
+}

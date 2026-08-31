@@ -359,3 +359,24 @@ traffic modes · misparse-suite results · paired parse-model comparison
 · two-tier certify.py and certificate · logs (invention / bug /
 violation) · v1.3-final tag + snapshot + report + PDF + artifact +
 memory · run_v1_3_experiment.py.
+
+---
+
+## AMENDMENT A (2026-08-31, pre-data for W2+, forced by W1)
+
+W1 exposed an internal contradiction in this spec. §1's pipeline says
+"NO frame -> abstain/escalate immediately"; §4's standing rule says
+"the frame is EVIDENCE, NOT AUTHORITY". W1 measured the frame
+declining **100%** of real human language (perfect separation: real
+scores max 0.273, in-universe min 0.801, zero overlap in 450 items).
+Under §1 the pipeline would therefore abstain on every real query and
+L3 — the version's headline hypothesis — could never be tested at all.
+
+Resolved in favour of §4. **A no-frame result is a recorded RISK
+SIGNAL, not a gate.** On no-frame the parse proceeds with the full
+kind vocabulary, the item is flagged `out_of_frame`, and the flag is
+carried into verification (available as a stricter-threshold input)
+and reported. §1's "abstain immediately" is struck.
+
+No V1.3 parse results existed when this was made; W0's results are
+unaffected (W0 does not use frames).
