@@ -23,7 +23,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 BRIDGE = HERE / "results" / "bridge_v13"
-BATCH = 200
+BATCH = 100   # V1.1 lesson: large single-file writes fail (64k output limit)
 
 
 def pending(model):

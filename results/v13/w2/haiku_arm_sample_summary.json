@@ -1,0 +1,17 @@
+{
+ "tag": "haiku_arm_sample",
+ "model": "claude-haiku-4-5",
+ "n": 300,
+ "status": {
+  "pending": 300
+ },
+ "first_failing_check": {},
+ "bridge_pending": 600,
+ "adapter": {
+  "adapter": "anthropic_bridge",
+  "calls": 600,
+  "tokens_in": 0,
+  "tokens_out": 0
+ },
+ "wall_s": 9
+}
