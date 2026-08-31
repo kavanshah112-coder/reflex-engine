@@ -467,7 +467,20 @@ express, and for ~11% of real word problems the IR is the wall.
 
 ---
 
-## 13. Reproduction
+## 13. Artifacts
+
+- `V1_3_REPORT.pdf` — this report, 12 pages
+- `V1_3_SPEC.md` — the frozen spec, with Amendments A and B
+- `bug_audit_v1_3.md` — 16 bugs, each with what it cost
+- `invention_log_v1_3.md` — discoveries D1–D12
+- `wrong_answer_ledger_v1_3.md` — every wrong answer, nothing excused
+- Web summary: https://claude.ai/code/artifact/6c7ab461-58c4-48eb-b9ce-633bdff76540
+- Tag `v1.3-final`; snapshot `reflex-engine-v1.3-frozen` (9,723 files,
+  `.env` excluded)
+
+---
+
+## 13b. Reproduction
 
 ```bash
 python run_v1_3_experiment.py
