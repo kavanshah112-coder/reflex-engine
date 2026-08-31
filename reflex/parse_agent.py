@@ -127,9 +127,7 @@ def dual_parse(adapter, query, frame=None):
 
 
 CORROB_TEMPLATE = ("Solve this problem. Reply with ONLY the final "
-                   "number, no words, no units.
-
-PROBLEM: {q}")
+                   "number, no words, no units.\n\nPROBLEM: {q}")
 _NUM = re.compile(r"-?\d[\d,]*(?:\.\d+)?")
 
 
