@@ -1,0 +1,7 @@
+{
+ "model": "claude-haiku-4-5",
+ "system": "",
+ "prompt": "Use ONLY these documents to answer.\n\n[G-EQ-004 v1, valid 2025-01-01..2027-12-31]\nEQUIPMENT SPECIFICATION - Air Compressor AC-104\nRated power: 42.5 kW\nNominal duty: 12 hours per day\nDrive efficiency: 0.84\nInstalled at the Northland site.\n\n[G-EQ-009 v1, valid 2025-01-01..2027-12-31]\nEQUIPMENT SPECIFICATION - Air Compressor AC-109\nRated power: 34.0 kW\nNominal duty: 4 hours per day\nDrive efficiency: 0.72\nInstalled at the Eastport site.\n\n[G-EQ-011 v1, valid 2025-01-01..2027-12-31]\nEQUIPMENT SPECIFICATION - Booster Pump BP-111\nRated power: 9.0 kW\nNominal duty: 8 hours per day\nDrive efficiency: 0.9\nInstalled at the Westmere site.\n\n[G-EQ-002 v1, valid 2025-01-01..2027-12-31]\nEQUIPMENT SPECIFICATION - Vacuum Pump VP-102\nRated power: 40.8 kW\nNominal duty: 24 hours per day\nDrive efficiency: 0.78\nInstalled at the Southgate site.\n\n[G-EQ-008 v1, valid 2025-01-01..2027-12-31]\nEQUIPMENT SPECIFICATION - Chiller Unit CU-108\nRated power: 6.9 kW\nNominal duty: 24 hours per day\nDrive efficiency: 0.9\nInstalled at the Northland site.\n\n[G-EQ-000 v1, valid 2025-01-01..2027-12-31]\nEQUIPMENT SPECIFICATION - Centrifugal Pump CP-100\nRated power: 17.4 kW\nNominal duty: 16 hours per day\nDrive efficiency: 0.84\nInstalled at the Northland site.\n\nQUESTION: What is the nominal duty in hours per day for Air Compressor AC-109?\n\nReply with ONLY the final number, no words, no units.",
+ "max_tokens": 32,
+ "queued_at": 1788190259.084085
+}

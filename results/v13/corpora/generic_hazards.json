@@ -1,0 +1,74 @@
+[
+ {
+  "type": "conflict",
+  "title": "Vacuum Pump VP-107",
+  "key": "duty_h",
+  "true": 4,
+  "false": 6.48,
+  "doc": "G-CF-000"
+ },
+ {
+  "type": "conflict",
+  "title": "Service SS-2",
+  "key": "interval_h",
+  "true": 1000,
+  "false": 1371.0,
+  "doc": "G-CF-001"
+ },
+ {
+  "type": "conflict",
+  "title": "Chiller Unit CU-103",
+  "key": "duty_h",
+  "true": 4,
+  "false": 6.48,
+  "doc": "G-CF-002"
+ },
+ {
+  "type": "stale",
+  "title": "Tariff Northland S0",
+  "key": "rate",
+  "true": 0.1588,
+  "expired": 0.129,
+  "doc": "G-ST-003"
+ },
+ {
+  "type": "stale",
+  "title": "Service SS-5",
+  "key": "interval_h",
+  "true": 4000,
+  "expired": 3240.0,
+  "doc": "G-ST-004"
+ },
+ {
+  "type": "stale",
+  "title": "Vacuum Pump VP-102",
+  "key": "duty_h",
+  "true": 24,
+  "expired": 19.44,
+  "doc": "G-ST-005"
+ },
+ {
+  "type": "superseded",
+  "title": "Invoice 9011",
+  "key": "qty",
+  "true": 220,
+  "old": 261.8,
+  "doc": "G-SU-006"
+ },
+ {
+  "type": "superseded",
+  "title": "Invoice 9007",
+  "key": "qty",
+  "true": 18,
+  "old": 21.42,
+  "doc": "G-SU-007"
+ },
+ {
+  "type": "superseded",
+  "title": "Tariff Eastport S5",
+  "key": "rate",
+  "true": 0.1659,
+  "old": 0.197,
+  "doc": "G-SU-008"
+ }
+]

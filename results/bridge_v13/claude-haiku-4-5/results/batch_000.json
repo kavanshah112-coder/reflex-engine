@@ -1,602 +1,302 @@
 ﻿[
- {
-  "key": "00d762dd0928867a",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remainder\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"There are 5 flowers and 3 bees.\",\"unit\":\"\",\"id\":\"q1\",\"value\":5,\"kind\":\"count\"},{\"span\":\"e are 5 flowers and 3 bees. What\\u0027s the di\",\"unit\":\"\",\"id\":\"q2\",\"value\":3,\"kind\":\"count\"}]}",
-  "tokens_in": 372,
-  "tokens_out": 190
- },
- {
-  "key": "01f4a9cc6584bf11",
-  "text": "{\"plan\":[],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"de. If Suzanne made 36 cookies, how many d\",\"unit\":\"\",\"id\":\"q1\",\"value\":36,\"kind\":\"count\"}]}",
-  "tokens_in": 397,
-  "tokens_out": 170
- },
- {
-  "key": "02371e7e26f81a20",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"Cindy has 105 stickers. She uses\",\"unit\":\"\",\"id\":\"q1\",\"value\":105,\"kind\":\"count\"},{\"span\":\"stickers. She uses 23 stickers. She buys\",\"unit\":\"\",\"id\":\"q2\",\"value\":23,\"kind\":\"count\"},{\"span\":\"stickers. She buys 45 more stickers. How\",\"unit\":\"\",\"id\":\"q3\",\"value\":45,\"kind\":\"count\"}]}",
-  "tokens_in": 375,
-  "tokens_out": 210
- },
- {
-  "key": "02e0956770af349d",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"Oscar needs to ship 14 rock CDs, 12 classi\",\"unit\":\"\",\"id\":\"q1\",\"value\":14,\"kind\":\"count\"},{\"span\":\"o ship 14 rock CDs, 12 classical CDs, and\",\"unit\":\"\",\"id\":\"q2\",\"value\":12,\"kind\":\"count\"},{\"span\":\"classical CDs, and 8 pop CDs. He can pac\",\"unit\":\"\",\"id\":\"q3\",\"value\":8,\"kind\":\"count\"}]}",
-  "tokens_in": 403,
-  "tokens_out": 210
- },
- {
-  "key": "0403af7da8f90322",
-  "text": "{\"plan\":[],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[]}",
-  "tokens_in": 379,
-  "tokens_out": 150
- },
- {
-  "key": "0410dd141cce8cd8",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remainder\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"Ms. Baker has 17 cupcakes. She wants\",\"unit\":\"\",\"id\":\"q1\",\"value\":17,\"kind\":\"count\"},{\"span\":\"m equally among her 3 children so that no\",\"unit\":\"\",\"id\":\"q2\",\"value\":3,\"kind\":\"count\"}]}",
-  "tokens_in": 405,
-  "tokens_out": 190
- },
- {
-  "key": "0509247d23ef617a",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"A garden has 52 rows and 15 columns\",\"unit\":\"\",\"id\":\"q1\",\"value\":52,\"kind\":\"count\"},{\"span\":\"den has 52 rows and 15 columns of bean pla\",\"unit\":\"\",\"id\":\"q2\",\"value\":15,\"kind\":\"count\"}]}",
-  "tokens_in": 368,
-  "tokens_out": 190
- },
- {
-  "key": "0562d908286992e6",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"e fruit if you have 30 chunks of cantaloup\",\"unit\":\"\",\"id\":\"q1\",\"value\":30,\"kind\":\"count\"},{\"span\":\"s of cantaloupe and 42 chunks of honeydew?\",\"unit\":\"\",\"id\":\"q2\",\"value\":42,\"kind\":\"count\"}]}",
-  "tokens_in": 403,
-  "tokens_out": 190
- },
- {
-  "key": "0621d3ff0fed1698",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"My car gets 20 miles per gallon of\",\"unit\":\"\",\"id\":\"q1\",\"value\":20,\"kind\":\"count\"},{\"span\":\"Grandma\\u0027s house is 100 miles away, how man\",\"unit\":\"\",\"id\":\"q2\",\"value\":100,\"kind\":\"count\"}]}",
-  "tokens_in": 381,
-  "tokens_out": 190
- },
- {
-  "key": "06400fd09517b078",
-  "text": "{\"plan\":[],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[]}",
-  "tokens_in": 379,
-  "tokens_out": 150
- },
- {
-  "key": "06c22cf30110f35b",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"n a kindergarten is 2:3. If the number of\",\"unit\":\"\",\"id\":\"q1\",\"value\":2,\"kind\":\"count\"},{\"span\":\"a kindergarten is 2:3. If the number of b\",\"unit\":\"\",\"id\":\"q2\",\"value\":3,\"kind\":\"count\"},{\"span\":\"e number of boys is 12, find the number of\",\"unit\":\"\",\"id\":\"q3\",\"value\":12,\"kind\":\"count\"}]}",
-  "tokens_in": 374,
-  "tokens_out": 210
- },
- {
-  "key": "08341f7ff3319016",
-  "text": "{\"plan\":[],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[]}",
-  "tokens_in": 379,
-  "tokens_out": 150
- },
- {
-  "key": "08a995843265c568",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"teacher pointed out 22 crocodiles, 23 alli\",\"unit\":\"\",\"id\":\"q1\",\"value\":22,\"kind\":\"count\"},{\"span\":\"out 22 crocodiles, 23 alligators and 5 vi\",\"unit\":\"\",\"id\":\"q2\",\"value\":23,\"kind\":\"count\"},{\"span\":\", 23 alligators and 5 vipers. How many da\",\"unit\":\"\",\"id\":\"q3\",\"value\":5,\"kind\":\"count\"}]}",
-  "tokens_in": 399,
-  "tokens_out": 210
- },
- {
-  "key": "09308c16e2529326",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"first week he read 5 different books. Th\",\"unit\":\"\",\"id\":\"q1\",\"value\":5,\"kind\":\"count\"},{\"span\":\"e next week he read 8 books. How many boo\",\"unit\":\"\",\"id\":\"q2\",\"value\":8,\"kind\":\"count\"}]}",
-  "tokens_in": 386,
-  "tokens_out": 190
- },
- {
-  "key": "093c0d5f75b98550",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"a new year\\u0027s party 2 red balloons, 12 gr\",\"unit\":\"\",\"id\":\"q1\",\"value\":2,\"kind\":\"count\"},{\"span\":\"rty 2 red balloons, 12 green balloons and\",\"unit\":\"\",\"id\":\"q2\",\"value\":12,\"kind\":\"count\"},{\"span\":\"green balloons and 6 white balloons were\",\"unit\":\"\",\"id\":\"q3\",\"value\":6,\"kind\":\"count\"}]}",
-  "tokens_in": 380,
-  "tokens_out": 210
- },
- {
-  "key": "094821de6c1c81b3",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remainder\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"k bought his family 14 pieces of chicken f\",\"unit\":\"\",\"id\":\"q1\",\"value\":14,\"kind\":\"count\"},{\"span\":\"r. If they only ate 7, how many pieces do\",\"unit\":\"\",\"id\":\"q2\",\"value\":7,\"kind\":\"count\"}]}",
-  "tokens_in": 375,
-  "tokens_out": 190
- },
- {
-  "key": "096fd5f197992ab3",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"Edward spent $2 on a board game and\",\"unit\":\"\",\"id\":\"q1\",\"value\":2,\"kind\":\"count\"},{\"span\":\"and then he bought 4 action figures for\",\"unit\":\"\",\"id\":\"q2\",\"value\":4,\"kind\":\"count\"},{\"span\":\"action figures for $7 each. How much mone\",\"unit\":\"\",\"id\":\"q3\",\"value\":7,\"kind\":\"count\"}]}",
-  "tokens_in": 380,
-  "tokens_out": 210
- },
- {
-  "key": "099de39f478ad855",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"Katherine has 5 hanging baskets to\",\"unit\":\"\",\"id\":\"q1\",\"value\":5,\"kind\":\"count\"},{\"span\":\"et she wants to add 3 petunias and 2 swee\",\"unit\":\"\",\"id\":\"q2\",\"value\":3,\"kind\":\"count\"},{\"span\":\"add 3 petunias and 2 sweet potato vines.\",\"unit\":\"\",\"id\":\"q3\",\"value\":2,\"kind\":\"count\"}]}",
-  "tokens_in": 408,
-  "tokens_out": 210
- },
- {
-  "key": "09eff3a3ba6090cc",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"ee pieces of timber 42 m, 49 m and 63 m lo\",\"unit\":\"\",\"id\":\"q1\",\"value\":42,\"kind\":\"count\"},{\"span\":\"ces of timber 42 m, 49 m and 63 m long hav\",\"unit\":\"\",\"id\":\"q2\",\"value\":49,\"kind\":\"count\"},{\"span\":\"mber 42 m, 49 m and 63 m long have to be d\",\"unit\":\"\",\"id\":\"q3\",\"value\":63,\"kind\":\"count\"}]}",
-  "tokens_in": 384,
-  "tokens_out": 210
- },
- {
-  "key": "0a96c2e3077f9c48",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"Tom used 2 batteries on his fl\",\"unit\":\"\",\"id\":\"q1\",\"value\":2,\"kind\":\"count\"},{\"span\":\"on his flashlights, 15 in his toys and 2 i\",\"unit\":\"\",\"id\":\"q2\",\"value\":15,\"kind\":\"count\"}]}",
-  "tokens_in": 375,
-  "tokens_out": 190
- },
- {
-  "key": "0ac3b0688af80f6e",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"Each tray can hold 24 eggs. If he has 64\",\"unit\":\"\",\"id\":\"q1\",\"value\":24,\"kind\":\"count\"},{\"span\":\"24 eggs. If he has 64 eggs and 2 trays, h\",\"unit\":\"\",\"id\":\"q2\",\"value\":64,\"kind\":\"count\"},{\"span\":\"he has 64 eggs and 2 trays, how many egg\",\"unit\":\"\",\"id\":\"q3\",\"value\":2,\"kind\":\"count\"}]}",
-  "tokens_in": 382,
-  "tokens_out": 210
- },
- {
-  "key": "0ac53cc7eb08c60e",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"Alice is 7 years older than Be\",\"unit\":\"\",\"id\":\"q1\",\"value\":7,\"kind\":\"count\"},{\"span\":\"r than Beth, who is 5 years older than Er\",\"unit\":\"\",\"id\":\"q2\",\"value\":5,\"kind\":\"count\"},{\"span\":\"Erica, if Erica is 30 years old?\",\"unit\":\"\",\"id\":\"q3\",\"value\":30,\"kind\":\"count\"}]}",
-  "tokens_in": 385,
-  "tokens_out": 210
- },
- {
-  "key": "0aee67d115509948",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"y were able to make 6 institutions happy.\",\"unit\":\"\",\"id\":\"q1\",\"value\":6,\"kind\":\"count\"},{\"span\":\"ach institution has 80 people. How many pe\",\"unit\":\"\",\"id\":\"q2\",\"value\":80,\"kind\":\"count\"}]}",
-  "tokens_in": 386,
-  "tokens_out": 190
- },
- {
-  "key": "0af2af0920cebde6",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"potatoes. She used 15 of the potatoes to\",\"unit\":\"\",\"id\":\"q1\",\"value\":15,\"kind\":\"count\"},{\"span\":\"to make salads and 24 of the potatoes for\",\"unit\":\"\",\"id\":\"q2\",\"value\":24,\"kind\":\"count\"},{\"span\":\"toes. If there were 13 potatoes left, how\",\"unit\":\"\",\"id\":\"q3\",\"value\":13,\"kind\":\"count\"}]}",
-  "tokens_in": 394,
-  "tokens_out": 210
- },
- {
-  "key": "0b2693cfc28620e8",
-  "text": "{\"plan\":[],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[]}",
-  "tokens_in": 390,
-  "tokens_out": 150
- },
- {
-  "key": "0bdf32b63dea3c95",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"There are 15 boys and 18 girls i\",\"unit\":\"\",\"id\":\"q1\",\"value\":15,\"kind\":\"count\"},{\"span\":\"ere are 15 boys and 18 girls in fifth grad\",\"unit\":\"\",\"id\":\"q2\",\"value\":18,\"kind\":\"count\"}]}",
-  "tokens_in": 370,
-  "tokens_out": 190
- },
- {
-  "key": "0cef3a78f8347408",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remainder\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"bought x lollipops. 5 were eaten by the t\",\"unit\":\"\",\"id\":\"q1\",\"value\":5,\"kind\":\"count\"},{\"span\":\"he the children. If 7 lollipops are left,\",\"unit\":\"\",\"id\":\"q2\",\"value\":7,\"kind\":\"count\"}]}",
-  "tokens_in": 381,
-  "tokens_out": 190
- },
- {
-  "key": "0d2205348793e5f4",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"add first two\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":[\"s2\",\"q4\"],\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":[\"s3\",\"q5\"],\"out\":\"s4\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":[\"s4\",\"q6\"],\"out\":\"s5\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"arts off by picking 3 flowers with 5 peta\",\"unit\":\"\",\"id\":\"q1\",\"value\":3,\"kind\":\"count\"},{\"span\":\"king 3 flowers with 5 petals each.  She t\",\"unit\":\"\",\"id\":\"q2\",\"value\":5,\"kind\":\"count\"},{\"span\":\"ch.  She then picks 4 flowers with 6 peta\",\"unit\":\"\",\"id\":\"q3\",\"value\":4,\"kind\":\"count\"},{\"span\":\"icks 4 flowers with 6 petals each.  She t\",\"unit\":\"\",\"id\":\"q4\",\"value\":6,\"kind\":\"count\"},{\"span\":\"icks 6 flowers with 7 petals each.  As sh\",\"unit\":\"\",\"id\":\"q5\",\"value\":7,\"kind\":\"count\"},{\"span\":\"the vase, she drops 1 of each and the win\",\"unit\":\"\",\"id\":\"q6\",\"value\":1,\"kind\":\"count\"}]}",
-  "tokens_in": 464,
-  "tokens_out": 270
- },
- {
-  "key": "0d5d70283280f360",
-  "text": "{\"plan\":[],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"\\u0027s dad brought home 24 marble potatoes. If\",\"unit\":\"\",\"id\":\"q1\",\"value\":24,\"kind\":\"count\"}]}",
-  "tokens_in": 397,
-  "tokens_out": 170
- },
- {
-  "key": "0d978e6eed808be7",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"switch already has 234 lbs. of weights and\",\"unit\":\"\",\"id\":\"q1\",\"value\":234,\"kind\":\"count\"},{\"span\":\"the total needed is 712 lbs., how much more\",\"unit\":\"\",\"id\":\"q2\",\"value\":712,\"kind\":\"count\"}]}",
-  "tokens_in": 406,
-  "tokens_out": 190
- },
- {
-  "key": "0de963cd8a6e9e0e",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"ake sale there were 104 items sold total. I\",\"unit\":\"\",\"id\":\"q1\",\"value\":104,\"kind\":\"count\"},{\"span\":\"tems sold total. If 48 of the items sold w\",\"unit\":\"\",\"id\":\"q2\",\"value\":48,\"kind\":\"count\"}]}",
-  "tokens_in": 388,
-  "tokens_out": 190
- },
- {
-  "key": "0df884999a37dff9",
-  "text": "{\"plan\":[],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"e of sheet metal is 7 meters long. What i\",\"unit\":\"\",\"id\":\"q1\",\"value\":7,\"kind\":\"count\"}]}",
-  "tokens_in": 371,
-  "tokens_out": 170
- },
- {
-  "key": "0dfa7c5b0bc75a55",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remainder\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"ball cards. She had 304 cards. She gave som\",\"unit\":\"\",\"id\":\"q1\",\"value\":304,\"kind\":\"count\"},{\"span\":\"to Jeff and now has 276 cards left. How man\",\"unit\":\"\",\"id\":\"q2\",\"value\":276,\"kind\":\"count\"}]}",
-  "tokens_in": 384,
-  "tokens_out": 190
- },
- {
-  "key": "0e0421a5f012c9b7",
-  "text": "{\"plan\":[],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[]}",
-  "tokens_in": 381,
-  "tokens_out": 150
- },
- {
-  "key": "0e5915d37f7e9619",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"Nancy picked 12 carrots from her ga\",\"unit\":\"\",\"id\":\"q1\",\"value\":12,\"kind\":\"count\"},{\"span\":\"n. If she threw out 2 of them and then pi\",\"unit\":\"\",\"id\":\"q2\",\"value\":2,\"kind\":\"count\"},{\"span\":\"hem and then picked 21 more the next day,\",\"unit\":\"\",\"id\":\"q3\",\"value\":21,\"kind\":\"count\"}]}",
-  "tokens_in": 383,
-  "tokens_out": 210
- },
- {
-  "key": "0f2f47d0f168bfc7",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remainder\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"upcakes. She bought 2 chocolate, 13 vanil\",\"unit\":\"\",\"id\":\"q1\",\"value\":2,\"kind\":\"count\"},{\"span\":\"bought 2 chocolate, 13 vanilla and 2 straw\",\"unit\":\"\",\"id\":\"q2\",\"value\":13,\"kind\":\"count\"}]}",
-  "tokens_in": 394,
-  "tokens_out": 190
- },
- {
-  "key": "0fd39a47afee0379",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"add first two\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":[\"s2\",\"q4\"],\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"nna starts out with 8 sapphires. She trad\",\"unit\":\"\",\"id\":\"q1\",\"value\":8,\"kind\":\"count\"},{\"span\":\"pphires. She trades 3 sapphires for two r\",\"unit\":\"\",\"id\":\"q2\",\"value\":3,\"kind\":\"count\"},{\"span\":\"apphires are worth $800 and rubies are wort\",\"unit\":\"\",\"id\":\"q3\",\"value\":800,\"kind\":\"count\"},{\"span\":\"d rubies are worth $1200, how much money are\",\"unit\":\"\",\"id\":\"q4\",\"value\":1200,\"kind\":\"count\"}]}",
-  "tokens_in": 389,
-  "tokens_out": 230
- },
- {
-  "key": "0feb85a66b8354de",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"tic-tac-toe. He won 2 times, lost 2 times\",\"unit\":\"\",\"id\":\"q1\",\"value\":2,\"kind\":\"count\"},{\"span\":\"s and it was a draw 10 times. How many tim\",\"unit\":\"\",\"id\":\"q2\",\"value\":10,\"kind\":\"count\"}]}",
-  "tokens_in": 376,
-  "tokens_out": 190
- },
- {
-  "key": "11048d8f345c645d",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"print, he will need 376 pieces of wood. If\",\"unit\":\"\",\"id\":\"q1\",\"value\":376,\"kind\":\"count\"},{\"span\":\"his friend gave him 123 pieces and his brot\",\"unit\":\"\",\"id\":\"q2\",\"value\":123,\"kind\":\"count\"},{\"span\":\"is brother gave him 136 pieces, how many mo\",\"unit\":\"\",\"id\":\"q3\",\"value\":136,\"kind\":\"count\"}]}",
-  "tokens_in": 427,
-  "tokens_out": 210
- },
- {
-  "key": "1106ac9bab57b914",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"add first two\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":[\"s2\",\"q4\"],\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":[\"s3\",\"q5\"],\"out\":\"s4\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":[\"s4\",\"q6\"],\"out\":\"s5\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"knew it would take 20 minutes to make the\",\"unit\":\"\",\"id\":\"q1\",\"value\":20,\"kind\":\"count\"},{\"span\":\"the cake batter and 30 minutes to bake the\",\"unit\":\"\",\"id\":\"q2\",\"value\":30,\"kind\":\"count\"},{\"span\":\"cake would require 2 hours to cool and a\",\"unit\":\"\",\"id\":\"q3\",\"value\":2,\"kind\":\"count\"},{\"span\":\"l and an additional 10 minutes to frost th\",\"unit\":\"\",\"id\":\"q4\",\"value\":10,\"kind\":\"count\"},{\"span\":\"eady to serve it at 5:00 pm?\",\"unit\":\"\",\"id\":\"q5\",\"value\":5,\"kind\":\"count\"},{\"span\":\"dy to serve it at 5:00 pm?\",\"unit\":\"\",\"id\":\"q6\",\"value\":0,\"kind\":\"count\"}]}",
-  "tokens_in": 455,
-  "tokens_out": 270
- },
- {
-  "key": "1242cbed3adaf7b0",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"add first two\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":[\"s2\",\"q4\"],\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":[\"s3\",\"q5\"],\"out\":\"s4\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"Andrew bakes 200 mini cinnamon rolls\",\"unit\":\"\",\"id\":\"q1\",\"value\":200,\"kind\":\"count\"},{\"span\":\"cinnamon rolls and 300 mini blueberry muff\",\"unit\":\"\",\"id\":\"q2\",\"value\":300,\"kind\":\"count\"},{\"span\":\"l cinnamon roll has 600 calories and a norm\",\"unit\":\"\",\"id\":\"q3\",\"value\":600,\"kind\":\"count\"},{\"span\":\"lueberry muffin has 450 calories. If a mini\",\"unit\":\"\",\"id\":\"q4\",\"value\":450,\"kind\":\"count\"},{\"span\":\"f a mini pastry has 1/3rd of the calories\",\"unit\":\"\",\"id\":\"q5\",\"value\":1,\"kind\":\"count\"}]}",
-  "tokens_in": 414,
-  "tokens_out": 250
- },
- {
-  "key": "128da5cb1f7b843a",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"After scoring 14 points, Erin now ha\",\"unit\":\"\",\"id\":\"q1\",\"value\":14,\"kind\":\"count\"},{\"span\":\"an Sara, who scored 8. How many points di\",\"unit\":\"\",\"id\":\"q2\",\"value\":8,\"kind\":\"count\"}]}",
-  "tokens_in": 378,
-  "tokens_out": 190
- },
- {
-  "key": "12b034f1777aaf35",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"that they will use 20 ounces of white pai\",\"unit\":\"\",\"id\":\"q1\",\"value\":20,\"kind\":\"count\"},{\"span\":\"ces of white paint, 15 ounces of green pai\",\"unit\":\"\",\"id\":\"q2\",\"value\":15,\"kind\":\"count\"},{\"span\":\"of green paint and 34 ounces of brown pai\",\"unit\":\"\",\"id\":\"q3\",\"value\":34,\"kind\":\"count\"}]}",
-  "tokens_in": 404,
-  "tokens_out": 210
- },
- {
-  "key": "12ce1cdc0f7acad9",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"ed for one hour and 21 minutes on the phon\",\"unit\":\"\",\"id\":\"q1\",\"value\":21,\"kind\":\"count\"},{\"span\":\"ey ended talking at 1:06 a.m. What time d\",\"unit\":\"\",\"id\":\"q2\",\"value\":1,\"kind\":\"count\"},{\"span\":\"ended talking at 1:06 a.m. What time did\",\"unit\":\"\",\"id\":\"q3\",\"value\":6,\"kind\":\"count\"}]}",
-  "tokens_in": 383,
-  "tokens_out": 210
- },
- {
-  "key": "12feb620ecc5e982",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"add first two\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":[\"s2\",\"q4\"],\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"t he would give up $10 for each orange he\",\"unit\":\"\",\"id\":\"q1\",\"value\":10,\"kind\":\"count\"},{\"span\":\"e farm, Stetson ate 2/5 of the oranges th\",\"unit\":\"\",\"id\":\"q2\",\"value\":2,\"kind\":\"count\"},{\"span\":\"farm, Stetson ate 2/5 of the oranges they\",\"unit\":\"\",\"id\":\"q3\",\"value\":5,\"kind\":\"count\"},{\"span\":\"ked. If they picked 60 oranges, calculate\",\"unit\":\"\",\"id\":\"q4\",\"value\":60,\"kind\":\"count\"}]}",
-  "tokens_in": 402,
-  "tokens_out": 230
- },
- {
-  "key": "1308dcce0f388ce1",
-  "text": "{\"plan\":[],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"A football team has 105 members.  There are\",\"unit\":\"\",\"id\":\"q1\",\"value\":105,\"kind\":\"count\"}]}",
-  "tokens_in": 405,
-  "tokens_out": 170
- },
- {
-  "key": "13a926a2a8aff21f",
-  "text": "{\"plan\":[],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[]}",
-  "tokens_in": 378,
-  "tokens_out": 150
- },
- {
-  "key": "13cfbb45a550e9b4",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"ased in packages of 6. If Mom buys 71 pac\",\"unit\":\"\",\"id\":\"q1\",\"value\":6,\"kind\":\"count\"},{\"span\":\"s of 6. If Mom buys 71 packages, how many\",\"unit\":\"\",\"id\":\"q2\",\"value\":71,\"kind\":\"count\"}]}",
-  "tokens_in": 375,
-  "tokens_out": 190
- },
- {
-  "key": "145e32ee88b0193d",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"Billy had 72 Lemon Heads. If Bil\",\"unit\":\"\",\"id\":\"q1\",\"value\":72,\"kind\":\"count\"},{\"span\":\"Lemon Heads to his 6 friends, how many L\",\"unit\":\"\",\"id\":\"q2\",\"value\":6,\"kind\":\"count\"}]}",
-  "tokens_in": 379,
-  "tokens_out": 190
- },
- {
-  "key": "148d863c5a1c5e26",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"e freezer there are 2 grape popsicles, 13\",\"unit\":\"\",\"id\":\"q1\",\"value\":2,\"kind\":\"count\"},{\"span\":\"2 grape popsicles, 13 cherry popsicles an\",\"unit\":\"\",\"id\":\"q2\",\"value\":13,\"kind\":\"count\"}]}",
-  "tokens_in": 378,
-  "tokens_out": 190
- },
- {
-  "key": "1520dedbf8e6cb8f",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"Andrea has 8 more apples than Ja\",\"unit\":\"\",\"id\":\"q1\",\"value\":8,\"kind\":\"count\"},{\"span\":\"as Jamal. Jamal has 4 more bananas than a\",\"unit\":\"\",\"id\":\"q2\",\"value\":4,\"kind\":\"count\"},{\"span\":\"there if Andrea has 52 apples?\",\"unit\":\"\",\"id\":\"q3\",\"value\":52,\"kind\":\"count\"}]}",
-  "tokens_in": 387,
-  "tokens_out": 210
- },
- {
-  "key": "1540e37757a878da",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"ut a piece that was 3 centimeters wide an\",\"unit\":\"\",\"id\":\"q1\",\"value\":3,\"kind\":\"count\"},{\"span\":\"and had an area of 24 square centimeters.\",\"unit\":\"\",\"id\":\"q2\",\"value\":24,\"kind\":\"count\"}]}",
-  "tokens_in": 386,
-  "tokens_out": 190
- },
- {
-  "key": "159394d07370600c",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"add first two\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":[\"s2\",\"q4\"],\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":[\"s3\",\"q5\"],\"out\":\"s4\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"his friend\\u0027s house 200 miles away.  He dri\",\"unit\":\"\",\"id\":\"q1\",\"value\":200,\"kind\":\"count\"},{\"span\":\"rives at a speed of 70 mph.  He had to tak\",\"unit\":\"\",\"id\":\"q2\",\"value\":70,\"kind\":\"count\"},{\"span\":\"a detour that added 10 miles to his trip.\",\"unit\":\"\",\"id\":\"q3\",\"value\":10,\"kind\":\"count\"},{\"span\":\"route home that is 240 miles but he goes 8\",\"unit\":\"\",\"id\":\"q4\",\"value\":240,\"kind\":\"count\"},{\"span\":\"0 miles but he goes 80 mph.  How long did\",\"unit\":\"\",\"id\":\"q5\",\"value\":80,\"kind\":\"count\"}]}",
-  "tokens_in": 409,
-  "tokens_out": 250
- },
- {
-  "key": "1650a3152f7c377e",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"a day. He digs for 14 days while Nate is\",\"unit\":\"\",\"id\":\"q1\",\"value\":14,\"kind\":\"count\"},{\"span\":\"e starts filling in 9 holes a day, but th\",\"unit\":\"\",\"id\":\"q2\",\"value\":9,\"kind\":\"count\"},{\"span\":\"e dog keeps digging 6 new holes every nig\",\"unit\":\"\",\"id\":\"q3\",\"value\":6,\"kind\":\"count\"}]}",
-  "tokens_in": 409,
-  "tokens_out": 210
- },
- {
-  "key": "17716cfb951cc071",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"There are 15 boys and 18 girls i\",\"unit\":\"\",\"id\":\"q1\",\"value\":15,\"kind\":\"count\"},{\"span\":\"ere are 15 boys and 18 girls in fifth grad\",\"unit\":\"\",\"id\":\"q2\",\"value\":18,\"kind\":\"count\"}]}",
-  "tokens_in": 370,
-  "tokens_out": 190
- },
- {
-  "key": "17be286fae8d6c40",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"ter, wanted to have 3 bracelets with star\",\"unit\":\"\",\"id\":\"q1\",\"value\":3,\"kind\":\"count\"},{\"span\":\"es. She also bought 36 star-shaped stones\",\"unit\":\"\",\"id\":\"q2\",\"value\":36,\"kind\":\"count\"}]}",
-  "tokens_in": 408,
-  "tokens_out": 190
- },
- {
-  "key": "17cf12e6be7bfca9",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"e eggs. If he needs 222 eggs for his cake a\",\"unit\":\"\",\"id\":\"q1\",\"value\":222,\"kind\":\"count\"},{\"span\":\"end Andrew gave him 155, how many more eggs\",\"unit\":\"\",\"id\":\"q2\",\"value\":155,\"kind\":\"count\"}]}",
-  "tokens_in": 383,
-  "tokens_out": 190
- },
- {
-  "key": "17d08733f554da8c",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"We ordered 21 pizzas. Each pizza\",\"unit\":\"\",\"id\":\"q1\",\"value\":21,\"kind\":\"count\"},{\"span\":\"zas. Each pizza has 8 slices. How many sl\",\"unit\":\"\",\"id\":\"q2\",\"value\":8,\"kind\":\"count\"}]}",
-  "tokens_in": 370,
-  "tokens_out": 190
- },
- {
-  "key": "1852f3523849158c",
-  "text": "{\"plan\":[],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[]}",
-  "tokens_in": 375,
-  "tokens_out": 150
- },
- {
-  "key": "19a6e0b26534ba5a",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"Kim has 4 cousins. She wants\",\"unit\":\"\",\"id\":\"q1\",\"value\":4,\"kind\":\"count\"},{\"span\":\"ts to give each one 5 pieces of gum. How\",\"unit\":\"\",\"id\":\"q2\",\"value\":5,\"kind\":\"count\"}]}",
-  "tokens_in": 369,
-  "tokens_out": 190
- },
- {
-  "key": "19ae4b181a004fbc",
-  "text": "{\"plan\":[],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"om will need to pay 3 times the original\",\"unit\":\"\",\"id\":\"q1\",\"value\":3,\"kind\":\"count\"}]}",
-  "tokens_in": 409,
-  "tokens_out": 170
- },
- {
-  "key": "19b514277e5ed59f",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"was able to collect 387 pounds of garbage a\",\"unit\":\"\",\"id\":\"q1\",\"value\":387,\"kind\":\"count\"},{\"span\":\"ther group gathered 39 pounds less than Li\",\"unit\":\"\",\"id\":\"q2\",\"value\":39,\"kind\":\"count\"}]}",
-  "tokens_in": 444,
-  "tokens_out": 190
- },
- {
-  "key": "1b80ddae3164ebd6",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"wants to divide its 90 members into some l\",\"unit\":\"\",\"id\":\"q1\",\"value\":90,\"kind\":\"count\"},{\"span\":\"ome large groups at 7 members each and so\",\"unit\":\"\",\"id\":\"q2\",\"value\":7,\"kind\":\"count\"},{\"span\":\"ome small groups at 3 members each. In or\",\"unit\":\"\",\"id\":\"q3\",\"value\":3,\"kind\":\"count\"}]}",
-  "tokens_in": 399,
-  "tokens_out": 210
- },
- {
-  "key": "1b83626d7bc84296",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\", and Mitchell sold 32 glasses of lemonade\",\"unit\":\"\",\"id\":\"q1\",\"value\":32,\"kind\":\"count\"},{\"span\":\"e stand. Julie sold 14 glasses and the boy\",\"unit\":\"\",\"id\":\"q2\",\"value\":14,\"kind\":\"count\"}]}",
-  "tokens_in": 396,
-  "tokens_out": 190
- },
- {
-  "key": "1bac06224cbaf509",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"a new year\\u0027s party 2 red balloons, 12 gr\",\"unit\":\"\",\"id\":\"q1\",\"value\":2,\"kind\":\"count\"},{\"span\":\"rty 2 red balloons, 12 green balloons and\",\"unit\":\"\",\"id\":\"q2\",\"value\":12,\"kind\":\"count\"},{\"span\":\"green balloons and 6 white balloons were\",\"unit\":\"\",\"id\":\"q3\",\"value\":6,\"kind\":\"count\"}]}",
-  "tokens_in": 380,
-  "tokens_out": 210
- },
- {
-  "key": "1c9525452ffded99",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remainder\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"up a book that has 17 pages in it. She re\",\"unit\":\"\",\"id\":\"q1\",\"value\":17,\"kind\":\"count\"},{\"span\":\"ges in it. She read 11 of the pages. How m\",\"unit\":\"\",\"id\":\"q2\",\"value\":11,\"kind\":\"count\"}]}",
-  "tokens_in": 377,
-  "tokens_out": 190
- },
- {
-  "key": "1caa0b15c0ffbb57",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remainder\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"Virginia had 13 Sweettarts. If Virg\",\"unit\":\"\",\"id\":\"q1\",\"value\":13,\"kind\":\"count\"},{\"span\":\"f Sweettarts to her 4 friends and then sh\",\"unit\":\"\",\"id\":\"q2\",\"value\":4,\"kind\":\"count\"}]}",
-  "tokens_in": 387,
-  "tokens_out": 190
- },
- {
-  "key": "1cce2151e5ecd7df",
-  "text": "{\"plan\":[],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"Chris. If Chris is 4, how old is Carolin\",\"unit\":\"\",\"id\":\"q1\",\"value\":4,\"kind\":\"count\"}]}",
-  "tokens_in": 374,
-  "tokens_out": 170
- },
- {
-  "key": "1cd2c6790ea925a8",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"logy and so he read 8 pages a day of a 96\",\"unit\":\"\",\"id\":\"q1\",\"value\":8,\"kind\":\"count\"},{\"span\":\"8 pages a day of a 96-page book entitled\",\"unit\":\"\",\"id\":\"q2\",\"value\":96,\"kind\":\"count\"}]}",
-  "tokens_in": 392,
-  "tokens_out": 190
- },
- {
-  "key": "1cff8a9fcf059128",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remainder\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"There were 8 friends playing a v\",\"unit\":\"\",\"id\":\"q1\",\"value\":8,\"kind\":\"count\"},{\"span\":\"eo game online when 3 players quit. If ea\",\"unit\":\"\",\"id\":\"q2\",\"value\":3,\"kind\":\"count\"}]}",
-  "tokens_in": 381,
-  "tokens_out": 190
- },
- {
-  "key": "1d337d31222ab921",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"add first two\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":[\"s2\",\"q4\"],\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"play a game. After 3 rounds Mike has 21\",\"unit\":\"\",\"id\":\"q1\",\"value\":3,\"kind\":\"count\"},{\"span\":\"r 3 rounds Mike has 21 points, Jim 3 point\",\"unit\":\"\",\"id\":\"q2\",\"value\":21,\"kind\":\"count\"},{\"span\":\"than Mike, and Tony 2 times more than Mik\",\"unit\":\"\",\"id\":\"q3\",\"value\":2,\"kind\":\"count\"},{\"span\":\"t if they have over 20 points. How many po\",\"unit\":\"\",\"id\":\"q4\",\"value\":20,\"kind\":\"count\"}]}",
-  "tokens_in": 430,
-  "tokens_out": 230
- },
- {
-  "key": "1ded4c6061933bd8",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"rope. One piece is 10 inches longer than\",\"unit\":\"\",\"id\":\"q1\",\"value\":10,\"kind\":\"count\"},{\"span\":\"f the two pieces is 40 inches. How long is\",\"unit\":\"\",\"id\":\"q2\",\"value\":40,\"kind\":\"count\"}]}",
-  "tokens_in": 385,
-  "tokens_out": 190
- },
- {
-  "key": "1df59b930779067f",
-  "text": "{\"plan\":[],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[]}",
-  "tokens_in": 403,
-  "tokens_out": 150
- },
- {
-  "key": "1eb7753fa6cd4dd3",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"Edward spent $2 on a board game and\",\"unit\":\"\",\"id\":\"q1\",\"value\":2,\"kind\":\"count\"},{\"span\":\"and then he bought 4 action figures for\",\"unit\":\"\",\"id\":\"q2\",\"value\":4,\"kind\":\"count\"},{\"span\":\"action figures for $7 each. How much mone\",\"unit\":\"\",\"id\":\"q3\",\"value\":7,\"kind\":\"count\"}]}",
-  "tokens_in": 380,
-  "tokens_out": 210
- },
- {
-  "key": "1f1a07191cfdf6f6",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"ve cell phones for $150 each for a 3-month\",\"unit\":\"\",\"id\":\"q1\",\"value\":150,\"kind\":\"count\"},{\"span\":\"for $150 each for a 3-month installment.\",\"unit\":\"\",\"id\":\"q2\",\"value\":3,\"kind\":\"count\"},{\"span\":\"onth installment. A 2% interest will be c\",\"unit\":\"\",\"id\":\"q3\",\"value\":2,\"kind\":\"count\"}]}",
-  "tokens_in": 388,
-  "tokens_out": 210
- },
- {
-  "key": "1ffe35e195e21b54",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"add first two\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":[\"s2\",\"q4\"],\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"Two boys have 480 marbles between the\",\"unit\":\"\",\"id\":\"q1\",\"value\":480,\"kind\":\"count\"},{\"span\":\"es them in heaps of 6 marbles and the oth\",\"unit\":\"\",\"id\":\"q2\",\"value\":6,\"kind\":\"count\"},{\"span\":\"e other in heaps of 9 each. If the total\",\"unit\":\"\",\"id\":\"q3\",\"value\":9,\"kind\":\"count\"},{\"span\":\"number of heaps is 72, how many marbles d\",\"unit\":\"\",\"id\":\"q4\",\"value\":72,\"kind\":\"count\"}]}",
-  "tokens_in": 392,
-  "tokens_out": 230
- },
- {
-  "key": "215e2d43d5dd920d",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"2 birds were sitting\",\"unit\":\"\",\"id\":\"q1\",\"value\":2,\"kind\":\"count\"},{\"span\":\"tting on the fence. 4 more birds came to\",\"unit\":\"\",\"id\":\"q2\",\"value\":4,\"kind\":\"count\"}]}",
-  "tokens_in": 374,
-  "tokens_out": 190
- },
- {
-  "key": "2167f1f5171ca293",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"A company donates 935 pencils to a school\",\"unit\":\"\",\"id\":\"q1\",\"value\":935,\"kind\":\"count\"},{\"span\":\"ivided evenly among 9 classrooms. The res\",\"unit\":\"\",\"id\":\"q2\",\"value\":9,\"kind\":\"count\"}]}",
-  "tokens_in": 394,
-  "tokens_out": 190
- },
- {
-  "key": "21ac36f293ad4cf4",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"Charmaine will be 16 years old in 12 yea\",\"unit\":\"\",\"id\":\"q1\",\"value\":16,\"kind\":\"count\"},{\"span\":\"be 16 years old in 12 years. How old will\",\"unit\":\"\",\"id\":\"q2\",\"value\":12,\"kind\":\"count\"},{\"span\":\"How old will she be 4 years from now?\",\"unit\":\"\",\"id\":\"q3\",\"value\":4,\"kind\":\"count\"}]}",
-  "tokens_in": 367,
-  "tokens_out": 210
- },
- {
-  "key": "21c4894f412ff473",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"Luke was played 5 rounds of a trivia\",\"unit\":\"\",\"id\":\"q1\",\"value\":5,\"kind\":\"count\"},{\"span\":\"via game and scored 300 points. If he gaine\",\"unit\":\"\",\"id\":\"q2\",\"value\":300,\"kind\":\"count\"}]}",
-  "tokens_in": 386,
-  "tokens_out": 190
- },
- {
-  "key": "2319ba4f065169cd",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"add first two\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":[\"s2\",\"q4\"],\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":[\"s3\",\"q5\"],\"out\":\"s4\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":[\"s4\",\"q6\"],\"out\":\"s5\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"he same company for 40 years, she gets an\",\"unit\":\"\",\"id\":\"q1\",\"value\":40,\"kind\":\"count\"},{\"span\":\"annual pension of $50,000/year. Starting\",\"unit\":\"\",\"id\":\"q2\",\"value\":50,\"kind\":\"count\"},{\"span\":\"nual pension of $50,000/year. Starting afte\",\"unit\":\"\",\"id\":\"q3\",\"value\":0,\"kind\":\"count\"},{\"span\":\"ear. Starting after 20 years, she becomes\",\"unit\":\"\",\"id\":\"q4\",\"value\":20,\"kind\":\"count\"},{\"span\":\"becomes entitled to 5% of the value of th\",\"unit\":\"\",\"id\":\"q5\",\"value\":5,\"kind\":\"count\"},{\"span\":\"If she quits after 30 years, what will he\",\"unit\":\"\",\"id\":\"q6\",\"value\":30,\"kind\":\"count\"}]}",
-  "tokens_in": 408,
-  "tokens_out": 270
- },
- {
-  "key": "232e0310f9e7ac11",
-  "text": "{\"plan\":[],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[]}",
-  "tokens_in": 397,
-  "tokens_out": 150
- },
- {
-  "key": "23bab6b3b5dda849",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"add first two\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":[\"s2\",\"q4\"],\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"taxes. He can help 2 people per hour for\",\"unit\":\"\",\"id\":\"q1\",\"value\":2,\"kind\":\"count\"},{\"span\":\"people per hour for 3 hours a day. If he\",\"unit\":\"\",\"id\":\"q2\",\"value\":3,\"kind\":\"count\"},{\"span\":\"a day. If he takes 20% of the days betwee\",\"unit\":\"\",\"id\":\"q3\",\"value\":20,\"kind\":\"count\"},{\"span\":\"(Remember there are 31 days in March.)\",\"unit\":\"\",\"id\":\"q4\",\"value\":31,\"kind\":\"count\"}]}",
-  "tokens_in": 418,
-  "tokens_out": 230
- },
- {
-  "key": "24270e94c432e682",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"add first two\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":[\"s2\",\"q4\"],\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":[\"s3\",\"q5\"],\"out\":\"s4\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":[\"s4\",\"q6\"],\"out\":\"s5\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"he same company for 40 years, she gets an\",\"unit\":\"\",\"id\":\"q1\",\"value\":40,\"kind\":\"count\"},{\"span\":\"annual pension of $50,000/year. Starting\",\"unit\":\"\",\"id\":\"q2\",\"value\":50,\"kind\":\"count\"},{\"span\":\"nual pension of $50,000/year. Starting afte\",\"unit\":\"\",\"id\":\"q3\",\"value\":0,\"kind\":\"count\"},{\"span\":\"ear. Starting after 20 years, she becomes\",\"unit\":\"\",\"id\":\"q4\",\"value\":20,\"kind\":\"count\"},{\"span\":\"becomes entitled to 5% of the value of th\",\"unit\":\"\",\"id\":\"q5\",\"value\":5,\"kind\":\"count\"},{\"span\":\"If she quits after 30 years, what will he\",\"unit\":\"\",\"id\":\"q6\",\"value\":30,\"kind\":\"count\"}]}",
-  "tokens_in": 408,
-  "tokens_out": 270
- },
- {
-  "key": "243b54fcec5ec417",
-  "text": "{\"plan\":[],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[]}",
-  "tokens_in": 374,
-  "tokens_out": 150
- },
- {
-  "key": "25789f6f7aa2898b",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"add first two\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":[\"s2\",\"q4\"],\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"Dean has 30 marbles. He gives 1\",\"unit\":\"\",\"id\":\"q1\",\"value\":30,\"kind\":\"count\"},{\"span\":\"0 marbles. He gives 1/5  of them to Jamie\",\"unit\":\"\",\"id\":\"q2\",\"value\":1,\"kind\":\"count\"},{\"span\":\"marbles. He gives 1/5  of them to Jamie a\",\"unit\":\"\",\"id\":\"q3\",\"value\":5,\"kind\":\"count\"},{\"span\":\"to Jamie and gives 10 to Donald. How many\",\"unit\":\"\",\"id\":\"q4\",\"value\":10,\"kind\":\"count\"}]}",
-  "tokens_in": 375,
-  "tokens_out": 230
- },
- {
-  "key": "268a8318703fbad6",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"Mike has 64 action figures he w\",\"unit\":\"\",\"id\":\"q1\",\"value\":64,\"kind\":\"count\"},{\"span\":\"n his room can hold 8 figures, how many s\",\"unit\":\"\",\"id\":\"q2\",\"value\":8,\"kind\":\"count\"}]}",
-  "tokens_in": 378,
-  "tokens_out": 190
- },
- {
-  "key": "26de6ac55deb28eb",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"ter in the ratio of 7:13. If she used a t\",\"unit\":\"\",\"id\":\"q1\",\"value\":7,\"kind\":\"count\"},{\"span\":\"r in the ratio of 7:13. If she used a tota\",\"unit\":\"\",\"id\":\"q2\",\"value\":13,\"kind\":\"count\"},{\"span\":\"she used a total of 120 teaspoons of sugar\",\"unit\":\"\",\"id\":\"q3\",\"value\":120,\"kind\":\"count\"}]}",
-  "tokens_in": 398,
-  "tokens_out": 210
- },
- {
-  "key": "2723b7fa45adc135",
-  "text": "{\"plan\":[],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[]}",
-  "tokens_in": 371,
-  "tokens_out": 150
- },
- {
-  "key": "28054ac3059d9391",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"A pet store sold 12 siamese cats. If th\",\"unit\":\"\",\"id\":\"q1\",\"value\":12,\"kind\":\"count\"},{\"span\":\"house cats sold was 2:1, what is the comb\",\"unit\":\"\",\"id\":\"q2\",\"value\":2,\"kind\":\"count\"},{\"span\":\"use cats sold was 2:1, what is the combin\",\"unit\":\"\",\"id\":\"q3\",\"value\":1,\"kind\":\"count\"}]}",
-  "tokens_in": 380,
-  "tokens_out": 210
- },
- {
-  "key": "28f558256760e694",
-  "text": "{\"plan\":[],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[]}",
-  "tokens_in": 372,
-  "tokens_out": 150
- },
- {
-  "key": "29a91b28d233ffdf",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"andy shipment every 35 days. There are 25\",\"unit\":\"\",\"id\":\"q1\",\"value\":35,\"kind\":\"count\"},{\"span\":\"35 days. There are 25 cases of chocolate\",\"unit\":\"\",\"id\":\"q2\",\"value\":25,\"kind\":\"count\"},{\"span\":\"ate bars. There are 55 cases of lollipops.\",\"unit\":\"\",\"id\":\"q3\",\"value\":55,\"kind\":\"count\"}]}",
-  "tokens_in": 387,
-  "tokens_out": 210
- },
- {
-  "key": "2a9d05ee8ae713a6",
-  "text": "{\"plan\":[],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[]}",
-  "tokens_in": 398,
-  "tokens_out": 150
- },
- {
-  "key": "2a9f2a50a37075e7",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"Kendra learns 12 new spelling words\",\"unit\":\"\",\"id\":\"q1\",\"value\":12,\"kind\":\"count\"},{\"span\":\"er goal is to learn 60 new words before he\",\"unit\":\"\",\"id\":\"q2\",\"value\":60,\"kind\":\"count\"},{\"span\":\"has already learned 36 new words. How many\",\"unit\":\"\",\"id\":\"q3\",\"value\":36,\"kind\":\"count\"}]}",
-  "tokens_in": 395,
-  "tokens_out": 210
- },
- {
-  "key": "2b2dc0146d251a3b",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"th homework. He has 100 math problems to co\",\"unit\":\"\",\"id\":\"q1\",\"value\":100,\"kind\":\"count\"},{\"span\":\"total. He completes 12 problems on Monday\",\"unit\":\"\",\"id\":\"q2\",\"value\":12,\"kind\":\"count\"},{\"span\":\"esday, he completes 3 times as many probl\",\"unit\":\"\",\"id\":\"q3\",\"value\":3,\"kind\":\"count\"}]}",
-  "tokens_in": 431,
-  "tokens_out": 210
- },
- {
-  "key": "2c3800febbc9a299",
-  "text": "{\"plan\":[],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[]}",
-  "tokens_in": 379,
-  "tokens_out": 150
- },
- {
-  "key": "2d0f509ba4a11034",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"y served a total of 179 adults and 141 chil\",\"unit\":\"\",\"id\":\"q1\",\"value\":179,\"kind\":\"count\"},{\"span\":\"l of 179 adults and 141 children, if 156 of\",\"unit\":\"\",\"id\":\"q2\",\"value\":141,\"kind\":\"count\"},{\"span\":\"nd 141 children, if 156 of all the people t\",\"unit\":\"\",\"id\":\"q3\",\"value\":156,\"kind\":\"count\"}]}",
-  "tokens_in": 377,
-  "tokens_out": 210
- },
- {
-  "key": "2d2ec640acf6eb09",
-  "text": "{\"plan\":[{\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"op\":\"sub\",\"note\":\"first operation\"},{\"args\":[\"s1\",\"q3\"],\"out\":\"s2\",\"op\":\"add\",\"note\":\"second operation\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"th homework. He has 100 math problems to co\",\"unit\":\"\",\"id\":\"q1\",\"value\":100,\"kind\":\"count\"},{\"span\":\"total. He completes 12 problems on Monday\",\"unit\":\"\",\"id\":\"q2\",\"value\":12,\"kind\":\"count\"},{\"span\":\"esday, he completes 3 times as many probl\",\"unit\":\"\",\"id\":\"q3\",\"value\":3,\"kind\":\"count\"}]}",
-  "tokens_in": 431,
-  "tokens_out": 210
- },
- {
-  "key": "2db7824e64594ebc",
-  "text": "{\"plan\":[],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[{\"span\":\"ay season. She made 47 gingerbread cookies\",\"unit\":\"\",\"id\":\"q1\",\"value\":47,\"kind\":\"count\"}]}",
-  "tokens_in": 418,
-  "tokens_out": 170
- },
- {
-  "key": "2dc805cb4a89a5ea",
-  "text": "{\"plan\":[],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer\"},\"quantities\":[]}",
-  "tokens_in": 393,
-  "tokens_out": 150
- }
+    {
+        "tokens_out":  0,
+        "key":  "377365bfe5256087",
+        "tokens_in":  0,
+        "text":  "Information for Part PN-3006 not provided in the reference documents"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "77dbd6ae4f27c1e8",
+        "tokens_in":  0,
+        "text":  "{\"quantities\": [{\"id\": \"q1\", \"value\": 71, \"unit\": \"\", \"kind\": \"count\", \"span\": \"seventy-one cans\"}, {\"id\": \"q2\", \"value\": 27, \"unit\": \"\", \"kind\": \"count\", \"span\": \"twenty-seven more\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"total cans collected\"}], \"target\": {\"kind\": \"count\", \"scope\": \"total number of cans collected\"}, \"dismissed\": []}"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "89b5735e4a97603e",
+        "tokens_in":  0,
+        "text":  "{\"quantities\": [{\"id\": \"q1\", \"value\": 91, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ninety-one hotdogs\"}, {\"id\": \"q2\", \"value\": 20, \"unit\": \"\", \"kind\": \"count\", \"span\": \"twenty left\"}], \"plan\": [{\"op\": \"sub\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"difference\"}], \"target\": {\"kind\": \"count\", \"scope\": \"difference\"}, \"dismissed\": []}"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "b02679d5e256eb54",
+        "tokens_in":  0,
+        "text":  "Tariff Southgate S2 specifications not provided in reference documents"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "bffe635250303405",
+        "tokens_in":  0,
+        "text":  "{\"quantities\": [{\"id\": \"q1\", \"value\": 5, \"unit\": \"\", \"kind\": \"count\", \"span\": \"Sophie size five\"}, {\"id\": \"q2\", \"value\": 5, \"unit\": \"\", \"kind\": \"count\", \"span\": \"five times\"}], \"plan\": [{\"op\": \"mul\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"Charlie size\"}, {\"op\": \"add\", \"args\": [\"q1\", \"s1\"], \"out\": \"s2\", \"note\": \"sum\"}, {\"op\": \"div\", \"args\": [\"s2\", \"2\"], \"out\": \"s3\", \"note\": \"average\"}], \"target\": {\"kind\": \"count\", \"scope\": \"average\"}, \"dismissed\": []}"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "cd6b18ac0660451b",
+        "tokens_in":  0,
+        "text":  "{\"quantities\": [{\"id\": \"q1\", \"value\": 3, \"unit\": \"\", \"kind\": \"count\", \"span\": \"three days\"}, {\"id\": \"q2\", \"value\": 5, \"unit\": \"\", \"kind\": \"count\", \"span\": \"five days\"}, {\"id\": \"q3\", \"value\": 15, \"unit\": \"\", \"kind\": \"count\", \"span\": \"fifteen days\"}], \"plan\": [{\"op\": \"div\", \"args\": [\"q3\", \"q1\"], \"out\": \"s1\", \"note\": \"arms\"}, {\"op\": \"div\", \"args\": [\"q3\", \"q2\"], \"out\": \"s2\", \"note\": \"legs\"}, {\"op\": \"add\", \"args\": [\"s1\", \"s2\"], \"out\": \"s3\", \"note\": \"total\"}], \"target\": {\"kind\": \"count\", \"scope\": \"total limbs\"}, \"dismissed\": []}"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e3ae835e2d3acef6",
+        "tokens_in":  0,
+        "text":  "{\"quantities\": [{\"id\": \"q1\", \"value\": 1000, \"unit\": \"\", \"kind\": \"count\", \"span\": \"1000 shots\"}, {\"id\": \"q2\", \"value\": 16, \"unit\": \"\", \"kind\": \"count\", \"span\": \"cavities\"}, {\"id\": \"q3\", \"value\": 18.3, \"unit\": \"seconds\", \"kind\": \"count\", \"span\": \"cycle\"}, {\"id\": \"q4\", \"value\": 110.57, \"unit\": \"USD per hour\", \"kind\": \"money\", \"span\": \"rate\"}, {\"id\": \"q5\", \"value\": 2.52, \"unit\": \"hours\", \"kind\": \"count\", \"span\": \"setup\"}], \"plan\": [{\"op\": \"div\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"cycles\"}, {\"op\": \"mul\", \"args\": [\"s1\", \"q3\"], \"out\": \"s2\", \"note\": \"time seconds\"}, {\"op\": \"div\", \"args\": [\"s2\", \"3600\"], \"out\": \"s3\", \"note\": \"time hours\"}, {\"op\": \"add\", \"args\": [\"s3\", \"q5\"], \"out\": \"s4\", \"note\": \"total time\"}, {\"op\": \"mul\", \"args\": [\"s4\", \"q4\"], \"out\": \"s5\", \"note\": \"cost\"}], \"target\": {\"kind\": \"money\", \"scope\": \"machine cost\"}, \"dismissed\": []}"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e468417ca40acdd4",
+        "tokens_in":  0,
+        "text":  "4665.50"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e48a02d74e202dde",
+        "tokens_in":  0,
+        "text":  "525.86"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e536881c973295dd",
+        "tokens_in":  0,
+        "text":  "39"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e54c9bfd1025751b",
+        "tokens_in":  0,
+        "text":  "4"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e5ab94d4fd8fc4a3",
+        "tokens_in":  0,
+        "text":  "16"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e5b5ea1fc881c172",
+        "tokens_in":  0,
+        "text":  "{\"quantities\": [{\"id\": \"q1\", \"value\": 30, \"unit\": \"days\", \"kind\": \"count\", \"span\": \"30 days\"}, {\"id\": \"q2\", \"value\": 42.5, \"unit\": \"kW\", \"kind\": \"count\", \"span\": \"power\"}, {\"id\": \"q3\", \"value\": 12, \"unit\": \"hours per day\", \"kind\": \"count\", \"span\": \"duty\"}, {\"id\": \"q4\", \"value\": 0.1659, \"unit\": \"USD per kWh\", \"kind\": \"money\", \"span\": \"rate\"}], \"plan\": [{\"op\": \"mul\", \"args\": [\"q2\", \"q3\"], \"out\": \"s1\", \"note\": \"daily energy\"}, {\"op\": \"mul\", \"args\": [\"s1\", \"q1\"], \"out\": \"s2\", \"note\": \"total energy\"}, {\"op\": \"mul\", \"args\": [\"s2\", \"q4\"], \"out\": \"s3\", \"note\": \"cost\"}], \"target\": {\"kind\": \"money\", \"scope\": \"energy cost\"}, \"dismissed\": []}"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e5c9df08944f85d8",
+        "tokens_in":  0,
+        "text":  "{\"quantities\": [{\"id\": \"q1\", \"value\": 5000, \"unit\": \"\", \"kind\": \"count\", \"span\": \"5000 shots\"}, {\"id\": \"q2\", \"value\": 1, \"unit\": \"\", \"kind\": \"count\", \"span\": \"cavities\"}, {\"id\": \"q3\", \"value\": 19.3, \"unit\": \"seconds\", \"kind\": \"count\", \"span\": \"cycle\"}, {\"id\": \"q4\", \"value\": 84.18, \"unit\": \"USD per hour\", \"kind\": \"money\", \"span\": \"rate\"}, {\"id\": \"q5\", \"value\": 3.88, \"unit\": \"hours\", \"kind\": \"count\", \"span\": \"setup\"}], \"plan\": [{\"op\": \"div\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"cycles\"}, {\"op\": \"mul\", \"args\": [\"s1\", \"q3\"], \"out\": \"s2\", \"note\": \"time\"}, {\"op\": \"div\", \"args\": [\"s2\", \"3600\"], \"out\": \"s3\", \"note\": \"hours\"}, {\"op\": \"add\", \"args\": [\"s3\", \"q5\"], \"out\": \"s4\", \"note\": \"total\"}, {\"op\": \"mul\", \"args\": [\"s4\", \"q4\"], \"out\": \"s5\", \"note\": \"cost\"}], \"target\": {\"kind\": \"money\", \"scope\": \"cost\"}, \"dismissed\": []}"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e5d7a7ba20599c63",
+        "tokens_in":  0,
+        "text":  "451.25"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e646b504e154a9fd",
+        "tokens_in":  0,
+        "text":  "675.49"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e6655ea8a44e64e4",
+        "tokens_in":  0,
+        "text":  "495.27"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e66f3801faa96d0e",
+        "tokens_in":  0,
+        "text":  "438.29"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e67ee8093d03ec02",
+        "tokens_in":  0,
+        "text":  "163.29"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e6d0dae463c4caf1",
+        "tokens_in":  0,
+        "text":  "{\"quantities\": [{\"id\": \"q1\", \"value\": 12, \"unit\": \"miles\", \"kind\": \"count\", \"span\": \"trail\"}, {\"id\": \"q2\", \"value\": 4, \"unit\": \"miles\", \"kind\": \"count\", \"span\": \"first miles\"}, {\"id\": \"q3\", \"value\": 1, \"unit\": \"hour\", \"kind\": \"count\", \"span\": \"time1\"}, {\"id\": \"q4\", \"value\": 2, \"unit\": \"miles\", \"kind\": \"count\", \"span\": \"next miles\"}, {\"id\": \"q5\", \"value\": 1, \"unit\": \"hour\", \"kind\": \"count\", \"span\": \"time2\"}, {\"id\": \"q6\", \"value\": 4, \"unit\": \"miles per hour\", \"kind\": \"count\", \"span\": \"target speed\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q2\", \"q4\"], \"out\": \"s1\", \"note\": \"covered\"}, {\"op\": \"sub\", \"args\": [\"q1\", \"s1\"], \"out\": \"s2\", \"note\": \"remaining\"}, {\"op\": \"add\", \"args\": [\"q3\", \"q5\"], \"out\": \"s3\", \"note\": \"time spent\"}, {\"op\": \"mul\", \"args\": [\"q1\", \"q6\"], \"out\": \"s4\", \"note\": \"total time needed\"}, {\"op\": \"sub\", \"args\": [\"s4\", \"s3\"], \"out\": \"s5\", \"note\": \"time remaining\"}, {\"op\": \"div\", \"args\": [\"s2\", \"s5\"], \"out\": \"s6\", \"note\": \"required speed\"}], \"target\": {\"kind\": \"count\", \"scope\": \"speed in mph\"}, \"dismissed\": []}"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e70de944ded4bb9d",
+        "tokens_in":  0,
+        "text":  "346.86"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e75ef7c3e3dbd619",
+        "tokens_in":  0,
+        "text":  "1781.74"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e7b5068d53af1e4c",
+        "tokens_in":  0,
+        "text":  "182"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e841daa5b8eeee6a",
+        "tokens_in":  0,
+        "text":  "360"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e91299ad819180de",
+        "tokens_in":  0,
+        "text":  "420.10"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e9210048215a2a01",
+        "tokens_in":  0,
+        "text":  "35"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e925d9ff8911ac15",
+        "tokens_in":  0,
+        "text":  "0.2419"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e935a717b90dd003",
+        "tokens_in":  0,
+        "text":  "525.86"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e938ab9a6c5c12d6",
+        "tokens_in":  0,
+        "text":  "110.57"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "e97f4dbe1bd60101",
+        "tokens_in":  0,
+        "text":  "97.32"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "ea0d3d7d8519bf89",
+        "tokens_in":  0,
+        "text":  "163.29"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "ea3032ad7c5dd6f0",
+        "tokens_in":  0,
+        "text":  "3.8"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "ea3d9dcdb367d73d",
+        "tokens_in":  0,
+        "text":  "{\"quantities\": [{\"id\": \"q1\", \"value\": 30, \"unit\": \"days\", \"kind\": \"count\", \"span\": \"30 days\"}, {\"id\": \"q2\", \"value\": 42.5, \"unit\": \"kW\", \"kind\": \"count\", \"span\": \"power\"}, {\"id\": \"q3\", \"value\": 12, \"unit\": \"hours\", \"kind\": \"count\", \"span\": \"duty\"}, {\"id\": \"q4\", \"value\": 0.1505, \"unit\": \"USD per kWh\", \"kind\": \"money\", \"span\": \"rate\"}], \"plan\": [{\"op\": \"mul\", \"args\": [\"q2\", \"q3\"], \"out\": \"s1\", \"note\": \"daily\"}, {\"op\": \"mul\", \"args\": [\"s1\", \"q1\"], \"out\": \"s2\", \"note\": \"total\"}, {\"op\": \"mul\", \"args\": [\"s2\", \"q4\"], \"out\": \"s3\", \"note\": \"cost\"}], \"target\": {\"kind\": \"money\", \"scope\": \"cost\"}, \"dismissed\": []}"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "ea51dec59a7a47a0",
+        "tokens_in":  0,
+        "text":  "217"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "ea8c81439b60e1b2",
+        "tokens_in":  0,
+        "text":  "{\"quantities\": [{\"id\": \"q1\", \"value\": 22, \"unit\": \"days\", \"kind\": \"count\", \"span\": \"22 days\"}, {\"id\": \"q2\", \"value\": 9.0, \"unit\": \"kW\", \"kind\": \"count\", \"span\": \"power\"}, {\"id\": \"q3\", \"value\": 8, \"unit\": \"hours\", \"kind\": \"count\", \"span\": \"duty\"}, {\"id\": \"q4\", \"value\": 0.1659, \"unit\": \"USD per kWh\", \"kind\": \"money\", \"span\": \"rate\"}], \"plan\": [{\"op\": \"mul\", \"args\": [\"q2\", \"q3\"], \"out\": \"s1\", \"note\": \"daily\"}, {\"op\": \"mul\", \"args\": [\"s1\", \"q1\"], \"out\": \"s2\", \"note\": \"total\"}, {\"op\": \"mul\", \"args\": [\"s2\", \"q4\"], \"out\": \"s3\", \"note\": \"cost\"}], \"target\": {\"kind\": \"money\", \"scope\": \"cost\"}, \"dismissed\": []}"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "eb025d537175f011",
+        "tokens_in":  0,
+        "text":  "23.9"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "eb0a1b575291fa17",
+        "tokens_in":  0,
+        "text":  "63.96"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "eb4208e917b0d0c9",
+        "tokens_in":  0,
+        "text":  "2.52"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "eb4ad6cb0259f8c1",
+        "tokens_in":  0,
+        "text":  "40.8"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "eb82fdb3d74fabea",
+        "tokens_in":  0,
+        "text":  "{\"quantities\": [{\"id\": \"q1\", \"value\": 500, \"unit\": \"\", \"kind\": \"count\", \"span\": \"500 shots\"}, {\"id\": \"q2\", \"value\": 1, \"unit\": \"\", \"kind\": \"count\", \"span\": \"cavities\"}, {\"id\": \"q3\", \"value\": 38.3, \"unit\": \"seconds\", \"kind\": \"count\", \"span\": \"cycle\"}, {\"id\": \"q4\", \"value\": 81.46, \"unit\": \"USD per hour\", \"kind\": \"money\", \"span\": \"rate\"}, {\"id\": \"q5\", \"value\": 2.15, \"unit\": \"hours\", \"kind\": \"count\", \"span\": \"setup\"}], \"plan\": [{\"op\": \"div\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"cycles\"}, {\"op\": \"mul\", \"args\": [\"s1\", \"q3\"], \"out\": \"s2\", \"note\": \"time s\"}, {\"op\": \"div\", \"args\": [\"s2\", \"3600\"], \"out\": \"s3\", \"note\": \"time h\"}, {\"op\": \"add\", \"args\": [\"s3\", \"q5\"], \"out\": \"s4\", \"note\": \"total\"}, {\"op\": \"mul\", \"args\": [\"s4\", \"q4\"], \"out\": \"s5\", \"note\": \"cost\"}], \"target\": {\"kind\": \"money\", \"scope\": \"cost\"}, \"dismissed\": []}"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "ebcd36b0fc4ad1d4",
+        "tokens_in":  0,
+        "text":  "0.1097"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "ec2924cd17582680",
+        "tokens_in":  0,
+        "text":  "{\"quantities\": [{\"id\": \"q1\", \"value\": 5000, \"unit\": \"\", \"kind\": \"count\", \"span\": \"5000 shots\"}, {\"id\": \"q2\", \"value\": 1, \"unit\": \"\", \"kind\": \"count\", \"span\": \"cavities\"}, {\"id\": \"q3\", \"value\": 62.4, \"unit\": \"seconds\", \"kind\": \"count\", \"span\": \"cycle\"}, {\"id\": \"q4\", \"value\": 110.57, \"unit\": \"USD per hour\", \"kind\": \"money\", \"span\": \"rate\"}, {\"id\": \"q5\", \"value\": 2.52, \"unit\": \"hours\", \"kind\": \"count\", \"span\": \"setup\"}], \"plan\": [{\"op\": \"div\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"cycles\"}, {\"op\": \"mul\", \"args\": [\"s1\", \"q3\"], \"out\": \"s2\", \"note\": \"time s\"}, {\"op\": \"div\", \"args\": [\"s2\", \"3600\"], \"out\": \"s3\", \"note\": \"time h\"}, {\"op\": \"add\", \"args\": [\"s3\", \"q5\"], \"out\": \"s4\", \"note\": \"total\"}, {\"op\": \"mul\", \"args\": [\"s4\", \"q4\"], \"out\": \"s5\", \"note\": \"cost\"}], \"target\": {\"kind\": \"money\", \"scope\": \"cost\"}, \"dismissed\": []}"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "ec512da70bf87b83",
+        "tokens_in":  0,
+        "text":  "2.52"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "ecb11956b9d434ce",
+        "tokens_in":  0,
+        "text":  "15"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "ecb87173b2a12535",
+        "tokens_in":  0,
+        "text":  "{\"quantities\": [{\"id\": \"q1\", \"value\": 7, \"unit\": \"\", \"kind\": \"count\", \"span\": \"7 crickets\"}, {\"id\": \"q2\", \"value\": 11, \"unit\": \"\", \"kind\": \"count\", \"span\": \"11 crickets\"}], \"plan\": [{\"op\": \"sub\", \"args\": [\"q2\", \"q1\"], \"out\": \"s1\", \"note\": \"more needed\"}], \"target\": {\"kind\": \"count\", \"scope\": \"more needed\"}, \"dismissed\": []}"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "eccd76fb10d74c4b",
+        "tokens_in":  0,
+        "text":  "1"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "ecd232d2b0783355",
+        "tokens_in":  0,
+        "text":  "438.29"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "ecf0c86cb0ac8c9e",
+        "tokens_in":  0,
+        "text":  "110.57"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "ed331a387ccbf6a0",
+        "tokens_in":  0,
+        "text":  "71"
+    },
+    {
+        "tokens_out":  0,
+        "key":  "ed38632cef042833",
+        "tokens_in":  0,
+        "text":  "81.46"
+    }
 ]

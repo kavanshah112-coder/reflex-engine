@@ -1,0 +1,24 @@
+{
+ "tag": "haiku_arm_sample",
+ "model": "claude-haiku-4-5",
+ "n": 300,
+ "status": {
+  "verification_failed": 213,
+  "pending": 71,
+  "model_refused": 16
+ },
+ "first_failing_check": {
+  "agreement": 174,
+  "structure": 22,
+  "roundtrip": 10,
+  "consumption": 7
+ },
+ "bridge_pending": 284,
+ "adapter": {
+  "adapter": "anthropic_bridge",
+  "calls": 884,
+  "tokens_in": 215204,
+  "tokens_out": 60205
+ },
+ "wall_s": 25
+}

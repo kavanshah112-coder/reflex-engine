@@ -1,0 +1,7 @@
+{
+ "model": "claude-haiku-4-5",
+ "system": "",
+ "prompt": "Use ONLY these documents to answer.\n\n[U-CF-000 v1, valid 2026-01-01..2027-12-31]\nSUPPLEMENTARY RECORD - Part PN-3011\ncavities: 2.37\n\n[U-CF-002 v1, valid 2026-01-01..2027-12-31]\nSUPPLEMENTARY RECORD - Part PN-3010\ncavities: 22.92\n\n[U-PT-000 v1, valid 2026-03-01..2027-12-31]\nPART SPECIFICATION - Part PN-3000\nShot weight per part: 160.4 g\nCavities in tool: 4\nCycle time: 57.8 seconds\nRunner weight per shot: 12.5 g\n\n[U-PT-001 v1, valid 2026-03-01..2027-12-31]\nPART SPECIFICATION - Part PN-3001\nShot weight per part: 36.1 g\nCavities in tool: 16\nCycle time: 18.3 seconds\nRunner weight per shot: 3.8 g\n\n[U-PT-010 v1, valid 2026-03-01..2027-12-31]\nPART SPECIFICATION - Part PN-3010\nShot weight per part: 17.6 g\nCavities in tool: 16\nCycle time: 25.1 seconds\nRunner weight per shot: 6.1 g\n\n[U-PT-009 v1, valid 2026-03-01..2027-12-31]\nPART SPECIFICATION - Part PN-3009\nShot weight per part: 13.8 g\nCavities in tool: 1\nCycle time: 38.3 seconds\nRunner weight per shot: 9.4 g\n\nQUESTION: What is the number of cavities for Part PN-3000?\n\nReply with ONLY the final number, no words, no units.",
+ "max_tokens": 32,
+ "queued_at": 1788190278.534887
+}

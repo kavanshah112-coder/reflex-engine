@@ -1,0 +1,373 @@
+{
+ "w0_recurrence": {
+  "pool": 1180,
+  "parsed": 726,
+  "distinct_medium": 321,
+  "top200_coverage": 0.8333,
+  "gate": 0.35,
+  "verdict": "L1 CONFIRMED"
+ },
+ "w1_frame": null,
+ "w2_arms": [
+  {
+   "arm": "haiku_arm_sample",
+   "n": 300,
+   "certified": 38,
+   "correct": 37,
+   "wrong": 1,
+   "corroboration_abstain": 146,
+   "verification_failed": 101,
+   "model_refused": 12,
+   "unresolved": 3,
+   "first_failing": {
+    "agreement": 78,
+    "consumption": 7,
+    "structure": 13,
+    "nondegenerate": 1,
+    "roundtrip": 2
+   },
+   "coverage": 0.1267,
+   "wrong_fire": 0.0263,
+   "excluded_from_model_claims": false,
+   "token_source": "synthetic-bridge"
+  },
+  {
+   "arm": "opus_arm_sample",
+   "n": 300,
+   "certified": 199,
+   "correct": 198,
+   "wrong": 1,
+   "corroboration_abstain": 1,
+   "verification_failed": 8,
+   "model_refused": 80,
+   "unresolved": 12,
+   "first_failing": {
+    "agreement": 5,
+    "nondegenerate": 3
+   },
+   "coverage": 0.6633,
+   "wrong_fire": 0.005,
+   "excluded_from_model_claims": true,
+   "token_source": "synthetic-bridge"
+  },
+  {
+   "arm": "sonnet_arm_sample",
+   "n": 300,
+   "certified": 209,
+   "correct": 206,
+   "wrong": 3,
+   "corroboration_abstain": 12,
+   "verification_failed": 30,
+   "model_refused": 49,
+   "unresolved": 0,
+   "first_failing": {
+    "nondegenerate": 4,
+    "agreement": 23,
+    "roundtrip": 3
+   },
+   "coverage": 0.6967,
+   "wrong_fire": 0.0144,
+   "excluded_from_model_claims": false,
+   "token_source": "synthetic-bridge"
+  }
+ ],
+ "w5_plan_reflexes": {
+  "repeat_plain": {
+   "corpus_plans": 203,
+   "hit_rate": 0.002,
+   "served": 6,
+   "wrong": 6,
+   "wrong_fire": 1.0,
+   "schemas": 203
+  },
+  "unique_plain": {
+   "corpus_plans": 203,
+   "hit_rate": 0.0008,
+   "served": 1,
+   "wrong": 1,
+   "wrong_fire": 1.0,
+   "schemas": 203
+  }
+ },
+ "w6_rag": [
+  {
+   "corpus": "generic",
+   "arm": "r1",
+   "n": 120,
+   "served": 84,
+   "correct": 58,
+   "wrong": 26,
+   "abstained": 0,
+   "pending": 36,
+   "retrieval_recall": 0.9,
+   "by_family": {
+    "factual": {
+     "n": 60,
+     "served": 56,
+     "correct": 41,
+     "WRONG": 15
+    },
+    "derived": {
+     "n": 60,
+     "served": 28,
+     "correct": 17,
+     "WRONG": 11
+    }
+   },
+   "wrong_fire": 0.3095
+  },
+  {
+   "corpus": "generic",
+   "arm": "r2",
+   "n": 120,
+   "served": 60,
+   "correct": 27,
+   "wrong": 33,
+   "abstained": 0,
+   "pending": 60,
+   "retrieval_recall": 0.8583,
+   "by_family": {
+    "factual": {
+     "n": 60,
+     "served": 39,
+     "correct": 26,
+     "WRONG": 13
+    },
+    "derived": {
+     "n": 60,
+     "served": 21,
+     "correct": 1,
+     "WRONG": 20
+    }
+   },
+   "wrong_fire": 0.55
+  },
+  {
+   "corpus": "generic",
+   "arm": "r3",
+   "n": 120,
+   "served": 60,
+   "correct": 60,
+   "wrong": 0,
+   "abstained": 0,
+   "pending": 46,
+   "retrieval_recall": 0.85,
+   "by_family": {
+    "factual": {
+     "n": 60,
+     "served": 60,
+     "correct": 60,
+     "WRONG": 0
+    },
+    "derived": {
+     "n": 60,
+     "served": 0,
+     "correct": 0,
+     "WRONG": 0
+    }
+   },
+   "wrong_fire": 0.0
+  },
+  {
+   "corpus": "generic",
+   "arm": "r3",
+   "n": 300,
+   "served": 149,
+   "correct": 149,
+   "wrong": 0,
+   "abstained": 1,
+   "pending": 0,
+   "retrieval_recall": 0.8733,
+   "by_family": {
+    "factual": {
+     "n": 150,
+     "served": 149,
+     "correct": 149,
+     "WRONG": 0
+    },
+    "derived": {
+     "n": 150,
+     "served": 0,
+     "correct": 0,
+     "WRONG": 0
+    }
+   },
+   "wrong_fire": 0.0
+  },
+  {
+   "corpus": "user",
+   "arm": "r1",
+   "n": 120,
+   "served": 30,
+   "correct": 14,
+   "wrong": 16,
+   "abstained": 0,
+   "pending": 90,
+   "retrieval_recall": 0.975,
+   "by_family": {
+    "factual": {
+     "n": 60,
+     "served": 30,
+     "correct": 14,
+     "WRONG": 16
+    },
+    "derived": {
+     "n": 60,
+     "served": 0,
+     "correct": 0,
+     "WRONG": 0
+    }
+   },
+   "wrong_fire": 0.5333
+  },
+  {
+   "corpus": "user",
+   "arm": "r2",
+   "n": 120,
+   "served": 22,
+   "correct": 8,
+   "wrong": 14,
+   "abstained": 0,
+   "pending": 98,
+   "retrieval_recall": 0.975,
+   "by_family": {
+    "factual": {
+     "n": 60,
+     "served": 17,
+     "correct": 8,
+     "WRONG": 9
+    },
+    "derived": {
+     "n": 60,
+     "served": 5,
+     "correct": 0,
+     "WRONG": 5
+    }
+   },
+   "wrong_fire": 0.6364
+  },
+  {
+   "corpus": "user",
+   "arm": "r3",
+   "n": 120,
+   "served": 57,
+   "correct": 57,
+   "wrong": 0,
+   "abstained": 3,
+   "pending": 59,
+   "retrieval_recall": 0.975,
+   "by_family": {
+    "factual": {
+     "n": 60,
+     "served": 57,
+     "correct": 57,
+     "WRONG": 0
+    },
+    "derived": {
+     "n": 60,
+     "served": 0,
+     "correct": 0,
+     "WRONG": 0
+    }
+   },
+   "wrong_fire": 0.0
+  },
+  {
+   "corpus": "user",
+   "arm": "r3",
+   "n": 300,
+   "served": 140,
+   "correct": 140,
+   "wrong": 0,
+   "abstained": 10,
+   "pending": 0,
+   "retrieval_recall": 0.9767,
+   "by_family": {
+    "factual": {
+     "n": 150,
+     "served": 140,
+     "correct": 140,
+     "WRONG": 0
+    },
+    "derived": {
+     "n": 150,
+     "served": 0,
+     "correct": 0,
+     "WRONG": 0
+    }
+   },
+   "wrong_fire": 0.0
+  }
+ ],
+ "w7": {
+  "tier_a": {
+   "pass": true
+  },
+  "tier_b": {
+   "measurable": true,
+   "arms": [
+    {
+     "arm": "sonnet_arm_sample",
+     "n": 300,
+     "served": 209,
+     "correct": 206,
+     "wrong": 3,
+     "verifier_aware": false
+    }
+   ],
+   "rag": [
+    {
+     "corpus": "generic",
+     "served": 149,
+     "n": 150,
+     "correct": 149,
+     "wrong": 0
+    },
+    {
+     "corpus": "user",
+     "served": 140,
+     "n": 150,
+     "correct": 140,
+     "wrong": 0
+    }
+   ],
+   "excluded": [
+    {
+     "arm": "haiku_arm_sample",
+     "why": "incomplete",
+     "pending": 14
+    },
+    {
+     "arm": "opus_arm_sample",
+     "why": "incomplete",
+     "pending": 12
+    }
+   ],
+   "served": 498,
+   "wrong": 3,
+   "wrong_rate": 0.00602
+  },
+  "verdict": "CERTIFIED"
+ },
+ "headline": {
+  "arithmetic_real_language": {
+   "arms_counted": [
+    "haiku_arm_sample",
+    "sonnet_arm_sample"
+   ],
+   "certified": 247,
+   "wrong": 4,
+   "wrong_fire": 0.01619
+  },
+  "retrieval_non_arithmetic": {
+   "certified": 289,
+   "wrong": 0,
+   "wrong_fire": 0.0
+  },
+  "unresolved_scored_as_abstention": 15,
+  "excluded_arms": [
+   "opus_arm_sample"
+  ],
+  "energy_claim": "NOT COMPUTED FROM BRIDGE ARMS (B7)"
+ }
+}

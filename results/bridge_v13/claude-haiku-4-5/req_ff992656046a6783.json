@@ -1,0 +1,7 @@
+{
+ "model": "claude-haiku-4-5",
+ "system": "",
+ "prompt": "Use ONLY these documents to answer.\n\n[U-MT-009 v1, valid 2026-01-01..2027-12-31]\nMATERIAL DATA SHEET - HDPE HD-509\nDensity: 0.933 g/cm3\nResin price: 4.55 USD per kg\nMould shrinkage: 1.04 percent\n\n[U-MT-004 v1, valid 2026-01-01..2027-12-31]\nMATERIAL DATA SHEET - HDPE HD-504\nDensity: 1.39 g/cm3\nResin price: 3.7 USD per kg\nMould shrinkage: 1.5 percent\n\n[U-MT-008 v1, valid 2026-01-01..2027-12-31]\nMATERIAL DATA SHEET - Polycarbonate PC-508\nDensity: 1.129 g/cm3\nResin price: 4.3 USD per kg\nMould shrinkage: 2.07 percent\n\n[U-MT-010 v1, valid 2026-01-01..2027-12-31]\nMATERIAL DATA SHEET - ABS GP-510\nDensity: 1.373 g/cm3\nResin price: 1.49 USD per kg\nMould shrinkage: 0.66 percent\n\n[U-MT-000 v1, valid 2026-01-01..2027-12-31]\nMATERIAL DATA SHEET - ABS GP-500\nDensity: 1.112 g/cm3\nResin price: 4.33 USD per kg\nMould shrinkage: 1.51 percent\n\n[U-MT-006 v1, valid 2026-01-01..2027-12-31]\nMATERIAL DATA SHEET - Polypropylene PP-506\nDensity: 1.028 g/cm3\nResin price: 3.41 USD per kg\nMould shrinkage: 2.01 percent\n\nQUESTION: What is the density in g/cm3 for HDPE HD-509?\n\nReply with ONLY the final number, no words, no units.",
+ "max_tokens": 32,
+ "queued_at": 1788192265.5806487
+}

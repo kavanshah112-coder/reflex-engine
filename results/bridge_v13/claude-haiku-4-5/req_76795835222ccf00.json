@@ -1,0 +1,7 @@
+{
+ "model": "claude-haiku-4-5",
+ "system": "",
+ "prompt": "Use ONLY these documents to answer.\n\n[U-MT-002 v1, valid 2026-01-01..2027-12-31]\nMATERIAL DATA SHEET - Nylon PA6-502\nDensity: 1.045 g/cm3\nResin price: 2.3 USD per kg\nMould shrinkage: 1.68 percent\n\n[U-MT-004 v1, valid 2026-01-01..2027-12-31]\nMATERIAL DATA SHEET - HDPE HD-504\nDensity: 1.39 g/cm3\nResin price: 3.7 USD per kg\nMould shrinkage: 1.5 percent\n\n[U-MT-007 v1, valid 2026-01-01..2027-12-31]\nMATERIAL DATA SHEET - Nylon PA6-507\nDensity: 1.391 g/cm3\nResin price: 4.0 USD per kg\nMould shrinkage: 0.46 percent\n\n[U-MT-003 v1, valid 2026-01-01..2027-12-31]\nMATERIAL DATA SHEET - Polycarbonate PC-503\nDensity: 1.413 g/cm3\nResin price: 2.49 USD per kg\nMould shrinkage: 1.79 percent\n\n[U-MT-010 v1, valid 2026-01-01..2027-12-31]\nMATERIAL DATA SHEET - ABS GP-510\nDensity: 1.373 g/cm3\nResin price: 1.49 USD per kg\nMould shrinkage: 0.66 percent\n\n[U-MT-000 v1, valid 2026-01-01..2027-12-31]\nMATERIAL DATA SHEET - ABS GP-500\nDensity: 1.112 g/cm3\nResin price: 4.33 USD per kg\nMould shrinkage: 1.51 percent\n\nQUESTION: What is the mould shrinkage in percent for Nylon PA6-502?\n\nReply with ONLY the final number, no words, no units.",
+ "max_tokens": 32,
+ "queued_at": 1788191252.2166433
+}

@@ -41,6 +41,10 @@ def main():
     ap.add_argument("--model", required=True)
     ap.add_argument("--split", default="arm_sample")
     ap.add_argument("--limit", type=int, default=None)
+    ap.add_argument("--seal", action="store_true",
+                    help="stop servicing: score every still-pending "
+                         "item as an ABSTENTION and emit final "
+                         "numbers")
     a = ap.parse_args()
 
     from reflex.packs import loader
@@ -92,6 +96,7 @@ def main():
             f.write(json.dumps(r, default=str) + "\n")
     pend = len(adapter.pending())
     summ = {"tag": tag, "model": a.model, "n": len(items),
+            "token_source": "synthetic-bridge",   # B7: NOT measured
             "status": dict(st), "first_failing_check": dict(fail_at),
             "bridge_pending": pend,
             "adapter": adapter.stats(),

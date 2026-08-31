@@ -1,0 +1,7 @@
+{
+ "model": "claude-haiku-4-5",
+ "system": "",
+ "prompt": "Use ONLY these documents to answer.\n\n[G-SV-000 v1, valid 2026-01-01..2027-06-30]\nSERVICE SCHEDULE SS-0\nService interval: 2000 operating hours\nLabour rate: 50.07 USD per hour\n\n[G-SV-007 v1, valid 2026-01-01..2027-06-30]\nSERVICE SCHEDULE SS-7\nService interval: 4000 operating hours\nLabour rate: 138.68 USD per hour\n\n[G-SV-006 v1, valid 2026-01-01..2027-06-30]\nSERVICE SCHEDULE SS-6\nService interval: 2000 operating hours\nLabour rate: 64.04 USD per hour\n\n[G-SV-005 v1, valid 2026-01-01..2027-06-30]\nSERVICE SCHEDULE SS-5\nService interval: 4000 operating hours\nLabour rate: 97.32 USD per hour\n\n[G-SV-004 v1, valid 2026-01-01..2027-06-30]\nSERVICE SCHEDULE SS-4\nService interval: 1000 operating hours\nLabour rate: 47.17 USD per hour\n\n[G-SV-002 v1, valid 2026-01-01..2027-06-30]\nSERVICE SCHEDULE SS-2\nService interval: 1000 operating hours\nLabour rate: 63.96 USD per hour\n\nQUESTION: What is the service interval in operating hours for Service SS-0?\n\nReply with ONLY the final number, no words, no units.",
+ "max_tokens": 32,
+ "queued_at": 1788190259.0808399
+}

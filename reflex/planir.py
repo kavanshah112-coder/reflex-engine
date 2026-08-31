@@ -102,14 +102,54 @@ def execute(ir):
 
 
 # ------------------------------------------------------------ checks
-def _nums_in_text(text):
+def _word_numbers(text):
+    """Spelled-out numbers ("ninety-one hotdogs", "three more stops").
+    V1.3: real word problems are full of these. Without them the
+    round-trip and consumption checks reject any plan that correctly
+    writes 'ninety-one' as 91, which silently made an entire class of
+    problem unsolvable rather than merely hard."""
+    try:
+        import sys
+        from pathlib import Path as _P
+        arc = _P(__file__).resolve().parent / "_arc"
+        if str(arc) not in sys.path:
+            sys.path.insert(0, str(arc))
+        from v10.nlpw10 import WORDNUM_RE
+        from v9.sqr9 import words_to_number
+    except Exception:
+        return []
+    out = []
+    for m in WORDNUM_RE.finditer(text):
+        v = words_to_number(m.group(1).lower().replace("-", " "))
+        if v is not None:
+            out.append(float(v))
+    return out
+
+
+def _nums_in_text(text, include_words=True):
+    """`include_words` is deliberately asymmetric between the two
+    checks that call this, and the asymmetry is the point (B12).
+
+    The word-number extractor is a RECOGNISER, not a quantity
+    detector: it reads "the third team" as 0.333 and "One stack" as
+    1, because those spans really do denote numbers in some contexts.
+    That is exactly what ROUND-TRIP wants -- it asks whether a value
+    the model wrote can be JUSTIFIED by the text, so a permissive
+    reading only ever admits honest parses.
+
+    CONSUMPTION asks the opposite question: is there a number here the
+    plan FAILED to account for. Feeding it the same permissive
+    extractor makes it demand that "one" in "one of his robot sets" be
+    used or dismissed, and correct plans start failing on phantoms.
+    So consumption sees digits only.
+    """
     out = []
     for m in NUM_RE.finditer(text):
         try:
             out.append(float(m.group(0).replace(",", "")))
         except ValueError:
             continue
-    return out
+    return out + _word_numbers(text) if include_words else out
 
 
 def check_roundtrip(ir, text):
@@ -133,7 +173,7 @@ def check_roundtrip(ir, text):
 def check_consumption(ir, text):
     """Every number in the text is used by a step or explicitly
     dismissed. gsm0403 answered while '30 days' sat unused."""
-    nums = _nums_in_text(text)
+    nums = _nums_in_text(text, include_words=False)   # B12
     claimed = {float(q["value"]) for q in ir["quantities"]}
     dismissed = {float(d["value"]) for d in (ir.get("dismissed") or [])
                  if isinstance(d, dict) and "value" in d}
@@ -149,6 +189,27 @@ def check_consumption(ir, text):
         # a number that is part of a year/ordinal/etc. still counts:
         # the parser must say why it is not needed
         orphans.append(n)
+
+    # B16. The loop above walks numbers found in the TEXT, so after
+    # B12 restricted it to digits it goes silent on a problem written
+    # entirely in words -- and a plan may then declare a quantity,
+    # never use it, and never dismiss it, with nothing objecting.
+    # That is how "Kaleb won eight tickets and seven tickets, candy
+    # costs five tickets each, how many could he buy?" certified as
+    # add(8,7) = 15 with q3 = 5 sitting unused. Truth 3.
+    #
+    # This clause asks the question plan-internally instead, where no
+    # text extraction can weaken it: a quantity the parser bothered to
+    # DECLARE must be used by a step or explicitly dismissed. It
+    # restores what consumption was always meant to enforce.
+    for q in ir["quantities"]:
+        if q["id"] in used_ids:
+            continue
+        v = float(q["value"])
+        if any(abs(v - c) < 1e-9 for c in dismissed):
+            continue
+        orphans.append({"id": q["id"], "value": v,
+                        "why": "declared_but_never_used"})
     return (not orphans), orphans
 
 

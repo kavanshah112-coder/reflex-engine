@@ -1,0 +1,7 @@
+{
+ "model": "claude-haiku-4-5",
+ "system": "",
+ "prompt": "Use ONLY these documents to answer.\n\n[U-PT-005 v1, valid 2026-03-01..2027-12-31]\nPART SPECIFICATION - Part PN-3005\nShot weight per part: 25.8 g\nCavities in tool: 1\nCycle time: 19.3 seconds\nRunner weight per shot: 4.7 g\n\n[U-MC-002 v1, valid 2026-01-01..2027-12-31]\nMACHINE RATE CARD - Electric Press EP-100\nClamping force: 180 tonnes\nHourly rate: 123.88 USD per hour\nSetup allowance: 0.97 hours\n\n[U-PT-001 v1, valid 2026-03-01..2027-12-31]\nPART SPECIFICATION - Part PN-3001\nShot weight per part: 36.1 g\nCavities in tool: 16\nCycle time: 18.3 seconds\nRunner weight per shot: 3.8 g\n\n[U-PT-010 v1, valid 2026-03-01..2027-12-31]\nPART SPECIFICATION - Part PN-3010\nShot weight per part: 17.6 g\nCavities in tool: 16\nCycle time: 25.1 seconds\nRunner weight per shot: 6.1 g\n\n[U-PT-003 v1, valid 2026-03-01..2027-12-31]\nPART SPECIFICATION - Part PN-3003\nShot weight per part: 237.9 g\nCavities in tool: 16\nCycle time: 31.9 seconds\nRunner weight per shot: 5.4 g\n\n[U-PT-011 v1, valid 2026-03-01..2027-12-31]\nPART SPECIFICATION - Part PN-3011\nShot weight per part: 271.3 g\nCavities in tool: 1\nCycle time: 62.4 seconds\nRunner weight per shot: 22.0 g\n\nQUESTION: A run of 1000 shots of Part PN-3005 is quoted on Electric Press EP-100. What is the machine cost in USD?\n\nReply with ONLY the final number, no words, no units.",
+ "max_tokens": 32,
+ "queued_at": 1788191252.4226506
+}

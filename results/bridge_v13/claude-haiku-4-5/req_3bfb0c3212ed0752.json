@@ -1,0 +1,7 @@
+{
+ "model": "claude-haiku-4-5",
+ "system": "",
+ "prompt": "Use ONLY these documents to answer.\n\n[U-MC-006 v1, valid 2026-01-01..2027-12-31]\nMACHINE RATE CARD - Injection Press IP-140\nClamping force: 80 tonnes\nHourly rate: 81.46 USD per hour\nSetup allowance: 2.11 hours\n\n[U-ST-004 v3, valid 2024-01-01..2025-06-30]\nREVISION (EXPIRED) - Injection Press IP-140\nrate_h: 65.983\n\n[U-MC-003 v1, valid 2026-01-01..2027-12-31]\nMACHINE RATE CARD - Injection Press IP-110\nClamping force: 180 tonnes\nHourly rate: 138.24 USD per hour\nSetup allowance: 3.54 hours\n\n[U-PT-005 v1, valid 2026-03-01..2027-12-31]\nPART SPECIFICATION - Part PN-3005\nShot weight per part: 25.8 g\nCavities in tool: 1\nCycle time: 19.3 seconds\nRunner weight per shot: 4.7 g\n\n[U-CF-000 v1, valid 2026-01-01..2027-12-31]\nSUPPLEMENTARY RECORD - Part PN-3011\ncavities: 2.37\n\n[U-CF-002 v1, valid 2026-01-01..2027-12-31]\nSUPPLEMENTARY RECORD - Part PN-3010\ncavities: 22.92\n\nQUESTION: A run of 1000 shots of Part PN-3005 is quoted on Injection Press IP-140. What is the machine cost in USD?\n\nReply with ONLY the final number, no words, no units.",
+ "max_tokens": 32,
+ "queued_at": 1788192266.147961
+}

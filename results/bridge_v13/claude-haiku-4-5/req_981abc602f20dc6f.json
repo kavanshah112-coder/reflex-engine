@@ -1,0 +1,7 @@
+{
+ "model": "claude-haiku-4-5",
+ "system": "",
+ "prompt": "Use ONLY these documents to answer.\n\n[G-ST-005 v3, valid 2024-01-01..2025-06-30]\nREVISION (EXPIRED) - Vacuum Pump VP-102\nduty_h: 19.44\n\n[G-TF-002 v2, valid 2026-01-01..2026-12-31]\nELECTRICITY TARIFF - Southgate - Schedule 2\nEnergy rate: 0.1777 USD per kWh\nStanding charge: 19.18 USD per month\n\n[G-EQ-002 v1, valid 2025-01-01..2027-12-31]\nEQUIPMENT SPECIFICATION - Vacuum Pump VP-102\nRated power: 40.8 kW\nNominal duty: 24 hours per day\nDrive efficiency: 0.78\nInstalled at the Southgate site.\n\n[G-CF-000 v1, valid 2026-01-01..2027-12-31]\nSUPPLEMENTARY RECORD - Vacuum Pump VP-107\nduty_h: 6.48\n\n[G-TF-006 v2, valid 2026-01-01..2026-12-31]\nELECTRICITY TARIFF - Southgate - Schedule 6\nEnergy rate: 0.1169 USD per kWh\nStanding charge: 18.99 USD per month\n\n[G-EQ-007 v1, valid 2025-01-01..2027-12-31]\nEQUIPMENT SPECIFICATION - Vacuum Pump VP-107\nRated power: 36.9 kW\nNominal duty: 4 hours per day\nDrive efficiency: 0.84\nInstalled at the Westmere site.\n\nQUESTION: The Vacuum Pump VP-102 runs its nominal daily duty for 30 days. Priced on Tariff Southgate S2, what is the energy cost in USD?\n\nReply with ONLY the final number, no words, no units.",
+ "max_tokens": 32,
+ "queued_at": 1788192231.410019
+}

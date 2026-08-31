@@ -1,0 +1,36 @@
+{
+ "corpus": "generic",
+ "arm": "r3",
+ "model": "claude-haiku-4-5",
+ "n": 120,
+ "topk": 6,
+ "status": {
+  "retrieval_hit": 102,
+  "certified": 60,
+  "correct": 60,
+  "verification_failed": 14,
+  "retrieval_miss": 18,
+  "pending": 46
+ },
+ "served": 60,
+ "coverage": 0.5,
+ "accuracy_of_served": 1.0,
+ "wrong_rate_of_served": 0.0,
+ "retrieval_recall": 0.85,
+ "by_family": {
+  "factual": {
+   "n": 60,
+   "served": 60,
+   "correct": 60,
+   "WRONG": 0
+  },
+  "derived": {
+   "n": 60,
+   "served": 0,
+   "correct": 0,
+   "WRONG": 0
+  }
+ },
+ "token_source": "synthetic-bridge",
+ "bridge_pending": 249
+}

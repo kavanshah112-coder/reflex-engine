@@ -13,7 +13,7 @@ class OllamaAdapter(LLMAdapter):
 
     def __init__(self, model="llama3.1:latest",
                  base_url="http://localhost:11434",
-                 temperature=0.0, seed=1, timeout=180):
+                 temperature=0.0, seed=1, timeout=600):
         super().__init__()
         self.model = model
         self.base_url = base_url.rstrip("/")

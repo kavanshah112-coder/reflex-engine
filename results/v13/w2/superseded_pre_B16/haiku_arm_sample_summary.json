@@ -1,0 +1,30 @@
+{
+ "tag": "haiku_arm_sample",
+ "model": "claude-haiku-4-5",
+ "n": 300,
+ "token_source": "synthetic-bridge",
+ "status": {
+  "corroboration_mismatch": 146,
+  "certified": 38,
+  "correct": 37,
+  "verification_failed": 101,
+  "model_refused": 12,
+  "pending": 3,
+  "WRONG": 1
+ },
+ "first_failing_check": {
+  "agreement": 78,
+  "consumption": 7,
+  "structure": 13,
+  "nondegenerate": 1,
+  "roundtrip": 2
+ },
+ "bridge_pending": 433,
+ "adapter": {
+  "adapter": "anthropic_bridge",
+  "calls": 996,
+  "tokens_in": 208147,
+  "tokens_out": 60048
+ },
+ "wall_s": 5
+}

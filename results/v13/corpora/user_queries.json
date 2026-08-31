@@ -1,0 +1,4202 @@
+[
+ {
+  "id": "u0000",
+  "family": "factual",
+  "q": "What is the resin price in USD per kg for Nylon PA6-507?",
+  "answer": 4.0,
+  "needs": [
+   "U-MT-007"
+  ],
+  "title": "Nylon PA6-507",
+  "key": "price_kg"
+ },
+ {
+  "id": "u0001",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3011 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 9582.7333,
+  "needs": [
+   "U-PT-011",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3011",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0002",
+  "family": "factual",
+  "q": "What is the freight cost in USD per kg for Packing PF-3?",
+  "answer": 1.58,
+  "needs": [
+   "U-FN-003"
+  ],
+  "title": "Packing PF-3",
+  "key": "freight_kg"
+ },
+ {
+  "id": "u0003",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3005 is quoted on Toggle Press TP-120. What is the machine cost in USD?",
+  "answer": 3147.7764,
+  "needs": [
+   "U-PT-005",
+   "U-MC-004"
+  ],
+  "titles": [
+   "Part PN-3005",
+   "Toggle Press TP-120"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0004",
+  "family": "factual",
+  "q": "What is the runner weight per shot in g for Part PN-3006?",
+  "answer": 12.0,
+  "needs": [
+   "U-PT-006"
+  ],
+  "title": "Part PN-3006",
+  "key": "runner_g"
+ },
+ {
+  "id": "u0005",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3000 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 8876.3139,
+  "needs": [
+   "U-PT-000",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3000",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0006",
+  "family": "factual",
+  "q": "What is the runner weight per shot in g for Part PN-3004?",
+  "answer": 20.9,
+  "needs": [
+   "U-PT-004"
+  ],
+  "title": "Part PN-3004",
+  "key": "runner_g"
+ },
+ {
+  "id": "u0007",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3004 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 3433.7653,
+  "needs": [
+   "U-PT-004",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3004",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0008",
+  "family": "factual",
+  "q": "What is the cycle time in seconds for Part PN-3007?",
+  "answer": 59.6,
+  "needs": [
+   "U-PT-007"
+  ],
+  "title": "Part PN-3007",
+  "key": "cycle_s"
+ },
+ {
+  "id": "u0009",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3005 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 2963.8903,
+  "needs": [
+   "U-PT-005",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3005",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0010",
+  "family": "factual",
+  "q": "What is the mould shrinkage in percent for Polycarbonate PC-508?",
+  "answer": 2.07,
+  "needs": [
+   "U-MT-008"
+  ],
+  "title": "Polycarbonate PC-508",
+  "key": "shrinkage"
+ },
+ {
+  "id": "u0011",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3011 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 1916.5467,
+  "needs": [
+   "U-PT-011",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3011",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0012",
+  "family": "factual",
+  "q": "What is the hourly machine rate in USD for Electric Press EP-100?",
+  "answer": 123.88,
+  "needs": [
+   "U-MC-002"
+  ],
+  "title": "Electric Press EP-100",
+  "key": "rate_h"
+ },
+ {
+  "id": "u0013",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3006 is quoted on Injection Press IP-110. What is the machine cost in USD?",
+  "answer": 689.28,
+  "needs": [
+   "U-PT-006",
+   "U-MC-003"
+  ],
+  "titles": [
+   "Part PN-3006",
+   "Injection Press IP-110"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0014",
+  "family": "factual",
+  "q": "What is the number of cavities for Part PN-3000?",
+  "answer": 4.0,
+  "needs": [
+   "U-PT-000"
+  ],
+  "title": "Part PN-3000",
+  "key": "cavities"
+ },
+ {
+  "id": "u0015",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3003 is quoted on Injection Press IP-80. What is the machine cost in USD?",
+  "answer": 191.0899,
+  "needs": [
+   "U-PT-003",
+   "U-MC-000"
+  ],
+  "titles": [
+   "Part PN-3003",
+   "Injection Press IP-80"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0016",
+  "family": "factual",
+  "q": "What is the runner weight per shot in g for Part PN-3010?",
+  "answer": 6.1,
+  "needs": [
+   "U-PT-010"
+  ],
+  "title": "Part PN-3010",
+  "key": "runner_g"
+ },
+ {
+  "id": "u0017",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3010 is quoted on Toggle Press TP-150. What is the machine cost in USD?",
+  "answer": 293.4608,
+  "needs": [
+   "U-PT-010",
+   "U-MC-007"
+  ],
+  "titles": [
+   "Part PN-3010",
+   "Toggle Press TP-150"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0018",
+  "family": "factual",
+  "q": "What is the resin price in USD per kg for Nylon PA6-507?",
+  "answer": 4.0,
+  "needs": [
+   "U-MT-007"
+  ],
+  "title": "Nylon PA6-507",
+  "key": "price_kg"
+ },
+ {
+  "id": "u0019",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3008 is quoted on Electric Press EP-130. What is the machine cost in USD?",
+  "answer": 548.6222,
+  "needs": [
+   "U-PT-008",
+   "U-MC-005"
+  ],
+  "titles": [
+   "Part PN-3008",
+   "Electric Press EP-130"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0020",
+  "family": "factual",
+  "q": "What is the shot weight per part in g for Part PN-3010?",
+  "answer": 17.6,
+  "needs": [
+   "U-PT-010"
+  ],
+  "title": "Part PN-3010",
+  "key": "weight_g"
+ },
+ {
+  "id": "u0021",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3007 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 1830.5478,
+  "needs": [
+   "U-PT-007",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3007",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0022",
+  "family": "factual",
+  "q": "What is the clamping force in tonnes for Toggle Press TP-150?",
+  "answer": 120.0,
+  "needs": [
+   "U-MC-007"
+  ],
+  "title": "Toggle Press TP-150",
+  "key": "tonnage"
+ },
+ {
+  "id": "u0023",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3005 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 218.3581,
+  "needs": [
+   "U-PT-005",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3005",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0024",
+  "family": "factual",
+  "q": "What is the mould shrinkage in percent for HDPE HD-509?",
+  "answer": 1.04,
+  "needs": [
+   "U-MT-009"
+  ],
+  "title": "HDPE HD-509",
+  "key": "shrinkage"
+ },
+ {
+  "id": "u0025",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3000 is quoted on Toggle Press TP-150. What is the machine cost in USD?",
+  "answer": 6757.7833,
+  "needs": [
+   "U-PT-000",
+   "U-MC-007"
+  ],
+  "titles": [
+   "Part PN-3000",
+   "Toggle Press TP-150"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0026",
+  "family": "factual",
+  "q": "What is the mould shrinkage in percent for ABS GP-500?",
+  "answer": 1.51,
+  "needs": [
+   "U-MT-000"
+  ],
+  "title": "ABS GP-500",
+  "key": "shrinkage"
+ },
+ {
+  "id": "u0027",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3009 is quoted on Injection Press IP-80. What is the machine cost in USD?",
+  "answer": 2294.2764,
+  "needs": [
+   "U-PT-009",
+   "U-MC-000"
+  ],
+  "titles": [
+   "Part PN-3009",
+   "Injection Press IP-80"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0028",
+  "family": "factual",
+  "q": "What is the number of cavities for Part PN-3003?",
+  "answer": 16.0,
+  "needs": [
+   "U-PT-003"
+  ],
+  "title": "Part PN-3003",
+  "key": "cavities"
+ },
+ {
+  "id": "u0029",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3000 is quoted on Injection Press IP-110. What is the machine cost in USD?",
+  "answer": 2219.52,
+  "needs": [
+   "U-PT-000",
+   "U-MC-003"
+  ],
+  "titles": [
+   "Part PN-3000",
+   "Injection Press IP-110"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0030",
+  "family": "factual",
+  "q": "What is the mould shrinkage in percent for Polycarbonate PC-508?",
+  "answer": 2.07,
+  "needs": [
+   "U-MT-008"
+  ],
+  "title": "Polycarbonate PC-508",
+  "key": "shrinkage"
+ },
+ {
+  "id": "u0031",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3011 is quoted on Injection Press IP-80. What is the machine cost in USD?",
+  "answer": 373.7933,
+  "needs": [
+   "U-PT-011",
+   "U-MC-000"
+  ],
+  "titles": [
+   "Part PN-3011",
+   "Injection Press IP-80"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0032",
+  "family": "factual",
+  "q": "What is the hourly machine rate in USD for Injection Press IP-140?",
+  "answer": 81.46,
+  "needs": [
+   "U-MC-006"
+  ],
+  "title": "Injection Press IP-140",
+  "key": "rate_h"
+ },
+ {
+  "id": "u0033",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3002 is quoted on Toggle Press TP-150. What is the machine cost in USD?",
+  "answer": 326.1975,
+  "needs": [
+   "U-PT-002",
+   "U-MC-007"
+  ],
+  "titles": [
+   "Part PN-3002",
+   "Toggle Press TP-150"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0034",
+  "family": "factual",
+  "q": "What is the density in g/cm3 for ABS GP-500?",
+  "answer": 1.112,
+  "needs": [
+   "U-MT-000"
+  ],
+  "title": "ABS GP-500",
+  "key": "density"
+ },
+ {
+  "id": "u0035",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3007 is quoted on Toggle Press TP-120. What is the machine cost in USD?",
+  "answer": 972.0594,
+  "needs": [
+   "U-PT-007",
+   "U-MC-004"
+  ],
+  "titles": [
+   "Part PN-3007",
+   "Toggle Press TP-120"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0036",
+  "family": "factual",
+  "q": "What is the number of cavities for Part PN-3001?",
+  "answer": 16.0,
+  "needs": [
+   "U-PT-001"
+  ],
+  "title": "Part PN-3001",
+  "key": "cavities"
+ },
+ {
+  "id": "u0037",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3008 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 1572.5511,
+  "needs": [
+   "U-PT-008",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3008",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0038",
+  "family": "factual",
+  "q": "What is the density in g/cm3 for HDPE HD-509?",
+  "answer": 0.933,
+  "needs": [
+   "U-MT-009"
+  ],
+  "title": "HDPE HD-509",
+  "key": "density"
+ },
+ {
+  "id": "u0039",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3007 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 6743.0778,
+  "needs": [
+   "U-PT-007",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3007",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0040",
+  "family": "factual",
+  "q": "What is the setup allowance in hours for Toggle Press TP-120?",
+  "answer": 2.42,
+  "needs": [
+   "U-MC-004"
+  ],
+  "title": "Toggle Press TP-120",
+  "key": "setup_h"
+ },
+ {
+  "id": "u0041",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3006 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 551.3143,
+  "needs": [
+   "U-PT-006",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3006",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0042",
+  "family": "factual",
+  "q": "What is the setup allowance in hours for Toggle Press TP-90?",
+  "answer": 2.52,
+  "needs": [
+   "U-MC-001"
+  ],
+  "title": "Toggle Press TP-90",
+  "key": "setup_h"
+ },
+ {
+  "id": "u0043",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3009 is quoted on Injection Press IP-80. What is the machine cost in USD?",
+  "answer": 1147.1382,
+  "needs": [
+   "U-PT-009",
+   "U-MC-000"
+  ],
+  "titles": [
+   "Part PN-3009",
+   "Injection Press IP-80"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0044",
+  "family": "factual",
+  "q": "What is the parts per carton for Packing PF-6?",
+  "answer": 151.0,
+  "needs": [
+   "U-FN-006"
+  ],
+  "title": "Packing PF-6",
+  "key": "per_carton"
+ },
+ {
+  "id": "u0045",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3003 is quoted on Toggle Press TP-150. What is the machine cost in USD?",
+  "answer": 3729.6417,
+  "needs": [
+   "U-PT-003",
+   "U-MC-007"
+  ],
+  "titles": [
+   "Part PN-3003",
+   "Toggle Press TP-150"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0046",
+  "family": "factual",
+  "q": "What is the clamping force in tonnes for Injection Press IP-110?",
+  "answer": 180.0,
+  "needs": [
+   "U-MC-003"
+  ],
+  "title": "Injection Press IP-110",
+  "key": "tonnage"
+ },
+ {
+  "id": "u0047",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3010 is quoted on Injection Press IP-80. What is the machine cost in USD?",
+  "answer": 300.7119,
+  "needs": [
+   "U-PT-010",
+   "U-MC-000"
+  ],
+  "titles": [
+   "Part PN-3010",
+   "Injection Press IP-80"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0048",
+  "family": "factual",
+  "q": "What is the resin price in USD per kg for HDPE HD-509?",
+  "answer": 4.55,
+  "needs": [
+   "U-MT-009"
+  ],
+  "title": "HDPE HD-509",
+  "key": "price_kg"
+ },
+ {
+  "id": "u0049",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3001 is quoted on Electric Press EP-100. What is the machine cost in USD?",
+  "answer": 314.8617,
+  "needs": [
+   "U-PT-001",
+   "U-MC-002"
+  ],
+  "titles": [
+   "Part PN-3001",
+   "Electric Press EP-100"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0050",
+  "family": "factual",
+  "q": "What is the mould shrinkage in percent for Nylon PA6-502?",
+  "answer": 1.68,
+  "needs": [
+   "U-MT-002"
+  ],
+  "title": "Nylon PA6-502",
+  "key": "shrinkage"
+ },
+ {
+  "id": "u0051",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3004 is quoted on Injection Press IP-110. What is the machine cost in USD?",
+  "answer": 1165.44,
+  "needs": [
+   "U-PT-004",
+   "U-MC-003"
+  ],
+  "titles": [
+   "Part PN-3004",
+   "Injection Press IP-110"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0052",
+  "family": "factual",
+  "q": "What is the setup allowance in hours for Injection Press IP-110?",
+  "answer": 3.54,
+  "needs": [
+   "U-MC-003"
+  ],
+  "title": "Injection Press IP-110",
+  "key": "setup_h"
+ },
+ {
+  "id": "u0053",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3006 is quoted on Electric Press EP-130. What is the machine cost in USD?",
+  "answer": 1923.3924,
+  "needs": [
+   "U-PT-006",
+   "U-MC-005"
+  ],
+  "titles": [
+   "Part PN-3006",
+   "Electric Press EP-130"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0054",
+  "family": "factual",
+  "q": "What is the parts per carton for Packing PF-3?",
+  "answer": 161.0,
+  "needs": [
+   "U-FN-003"
+  ],
+  "title": "Packing PF-3",
+  "key": "per_carton"
+ },
+ {
+  "id": "u0055",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3002 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 315.6575,
+  "needs": [
+   "U-PT-002",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3002",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0056",
+  "family": "factual",
+  "q": "What is the runner weight per shot in g for Part PN-3003?",
+  "answer": 5.4,
+  "needs": [
+   "U-PT-003"
+  ],
+  "title": "Part PN-3003",
+  "key": "runner_g"
+ },
+ {
+  "id": "u0057",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3007 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 1830.5478,
+  "needs": [
+   "U-PT-007",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3007",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0058",
+  "family": "factual",
+  "q": "What is the mould shrinkage in percent for Polypropylene PP-511?",
+  "answer": 1.26,
+  "needs": [
+   "U-MT-011"
+  ],
+  "title": "Polypropylene PP-511",
+  "key": "shrinkage"
+ },
+ {
+  "id": "u0059",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3004 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 4660.8326,
+  "needs": [
+   "U-PT-004",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3004",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0060",
+  "family": "factual",
+  "q": "What is the setup allowance in hours for Injection Press IP-110?",
+  "answer": 3.54,
+  "needs": [
+   "U-MC-003"
+  ],
+  "title": "Injection Press IP-110",
+  "key": "setup_h"
+ },
+ {
+  "id": "u0061",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3008 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 786.2756,
+  "needs": [
+   "U-PT-008",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3008",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0062",
+  "family": "factual",
+  "q": "What is the hourly machine rate in USD for Toggle Press TP-150?",
+  "answer": 84.18,
+  "needs": [
+   "U-MC-007"
+  ],
+  "title": "Toggle Press TP-150",
+  "key": "rate_h"
+ },
+ {
+  "id": "u0063",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3004 is quoted on Electric Press EP-100. What is the machine cost in USD?",
+  "answer": 2088.7544,
+  "needs": [
+   "U-PT-004",
+   "U-MC-002"
+  ],
+  "titles": [
+   "Part PN-3004",
+   "Electric Press EP-100"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0064",
+  "family": "factual",
+  "q": "What is the resin price in USD per kg for ABS GP-500?",
+  "answer": 4.33,
+  "needs": [
+   "U-MT-000"
+  ],
+  "title": "ABS GP-500",
+  "key": "price_kg"
+ },
+ {
+  "id": "u0065",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3002 is quoted on Injection Press IP-110. What is the machine cost in USD?",
+  "answer": 1071.36,
+  "needs": [
+   "U-PT-002",
+   "U-MC-003"
+  ],
+  "titles": [
+   "Part PN-3002",
+   "Injection Press IP-110"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0066",
+  "family": "factual",
+  "q": "What is the clamping force in tonnes for Electric Press EP-100?",
+  "answer": 180.0,
+  "needs": [
+   "U-MC-002"
+  ],
+  "title": "Electric Press EP-100",
+  "key": "tonnage"
+ },
+ {
+  "id": "u0067",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3009 is quoted on Toggle Press TP-120. What is the machine cost in USD?",
+  "answer": 3123.3118,
+  "needs": [
+   "U-PT-009",
+   "U-MC-004"
+  ],
+  "titles": [
+   "Part PN-3009",
+   "Toggle Press TP-120"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0068",
+  "family": "factual",
+  "q": "What is the parts per carton for Packing PF-5?",
+  "answer": 166.0,
+  "needs": [
+   "U-FN-005"
+  ],
+  "title": "Packing PF-5",
+  "key": "per_carton"
+ },
+ {
+  "id": "u0069",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3005 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 2183.5806,
+  "needs": [
+   "U-PT-005",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3005",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0070",
+  "family": "factual",
+  "q": "What is the hourly machine rate in USD for Injection Press IP-80?",
+  "answer": 43.13,
+  "needs": [
+   "U-MC-000"
+  ],
+  "title": "Injection Press IP-80",
+  "key": "rate_h"
+ },
+ {
+  "id": "u0071",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3005 is quoted on Electric Press EP-100. What is the machine cost in USD?",
+  "answer": 1660.3361,
+  "needs": [
+   "U-PT-005",
+   "U-MC-002"
+  ],
+  "titles": [
+   "Part PN-3005",
+   "Electric Press EP-100"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0072",
+  "family": "factual",
+  "q": "What is the setup allowance in hours for Injection Press IP-110?",
+  "answer": 3.54,
+  "needs": [
+   "U-MC-003"
+  ],
+  "title": "Injection Press IP-110",
+  "key": "setup_h"
+ },
+ {
+  "id": "u0073",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3009 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 433.3219,
+  "needs": [
+   "U-PT-009",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3009",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0074",
+  "family": "factual",
+  "q": "What is the resin price in USD per kg for ABS GP-500?",
+  "answer": 4.33,
+  "needs": [
+   "U-MT-000"
+  ],
+  "title": "ABS GP-500",
+  "key": "price_kg"
+ },
+ {
+  "id": "u0075",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3008 is quoted on Toggle Press TP-120. What is the machine cost in USD?",
+  "answer": 8350.5778,
+  "needs": [
+   "U-PT-008",
+   "U-MC-004"
+  ],
+  "titles": [
+   "Part PN-3008",
+   "Toggle Press TP-120"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0076",
+  "family": "factual",
+  "q": "What is the clamping force in tonnes for Toggle Press TP-150?",
+  "answer": 120.0,
+  "needs": [
+   "U-MC-007"
+  ],
+  "title": "Toggle Press TP-150",
+  "key": "tonnage"
+ },
+ {
+  "id": "u0077",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3001 is quoted on Electric Press EP-100. What is the machine cost in USD?",
+  "answer": 3148.6167,
+  "needs": [
+   "U-PT-001",
+   "U-MC-002"
+  ],
+  "titles": [
+   "Part PN-3001",
+   "Electric Press EP-100"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0078",
+  "family": "factual",
+  "q": "What is the shot weight per part in g for Part PN-3010?",
+  "answer": 17.6,
+  "needs": [
+   "U-PT-010"
+  ],
+  "title": "Part PN-3010",
+  "key": "weight_g"
+ },
+ {
+  "id": "u0079",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3008 is quoted on Toggle Press TP-120. What is the machine cost in USD?",
+  "answer": 1670.1156,
+  "needs": [
+   "U-PT-008",
+   "U-MC-004"
+  ],
+  "titles": [
+   "Part PN-3008",
+   "Toggle Press TP-120"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0080",
+  "family": "factual",
+  "q": "What is the setup allowance in hours for Electric Press EP-130?",
+  "answer": 1.3,
+  "needs": [
+   "U-MC-005"
+  ],
+  "title": "Electric Press EP-130",
+  "key": "setup_h"
+ },
+ {
+  "id": "u0081",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3001 is quoted on Electric Press EP-130. What is the machine cost in USD?",
+  "answer": 1960.8958,
+  "needs": [
+   "U-PT-001",
+   "U-MC-005"
+  ],
+  "titles": [
+   "Part PN-3001",
+   "Electric Press EP-130"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0082",
+  "family": "factual",
+  "q": "What is the parts per carton for Packing PF-6?",
+  "answer": 151.0,
+  "needs": [
+   "U-FN-006"
+  ],
+  "title": "Packing PF-6",
+  "key": "per_carton"
+ },
+ {
+  "id": "u0083",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3007 is quoted on Injection Press IP-110. What is the machine cost in USD?",
+  "answer": 1144.32,
+  "needs": [
+   "U-PT-007",
+   "U-MC-003"
+  ],
+  "titles": [
+   "Part PN-3007",
+   "Injection Press IP-110"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0084",
+  "family": "factual",
+  "q": "What is the number of cavities for Part PN-3005?",
+  "answer": 1.0,
+  "needs": [
+   "U-PT-005"
+  ],
+  "title": "Part PN-3005",
+  "key": "cavities"
+ },
+ {
+  "id": "u0085",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3008 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 1572.5511,
+  "needs": [
+   "U-PT-008",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3008",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0086",
+  "family": "factual",
+  "q": "What is the setup allowance in hours for Injection Press IP-110?",
+  "answer": 3.54,
+  "needs": [
+   "U-MC-003"
+  ],
+  "title": "Injection Press IP-110",
+  "key": "setup_h"
+ },
+ {
+  "id": "u0087",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3003 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 489.8865,
+  "needs": [
+   "U-PT-003",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3003",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0088",
+  "family": "factual",
+  "q": "What is the cycle time in seconds for Part PN-3001?",
+  "answer": 18.3,
+  "needs": [
+   "U-PT-001"
+  ],
+  "title": "Part PN-3001",
+  "key": "cycle_s"
+ },
+ {
+  "id": "u0089",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3005 is quoted on Electric Press EP-100. What is the machine cost in USD?",
+  "answer": 1660.3361,
+  "needs": [
+   "U-PT-005",
+   "U-MC-002"
+  ],
+  "titles": [
+   "Part PN-3005",
+   "Electric Press EP-100"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0090",
+  "family": "factual",
+  "q": "What is the runner weight per shot in g for Part PN-3006?",
+  "answer": 12.0,
+  "needs": [
+   "U-PT-006"
+  ],
+  "title": "Part PN-3006",
+  "key": "runner_g"
+ },
+ {
+  "id": "u0091",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3001 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 281.0321,
+  "needs": [
+   "U-PT-001",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3001",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0092",
+  "family": "factual",
+  "q": "What is the cycle time in seconds for Part PN-3001?",
+  "answer": 18.3,
+  "needs": [
+   "U-PT-001"
+  ],
+  "title": "Part PN-3001",
+  "key": "cycle_s"
+ },
+ {
+  "id": "u0093",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3002 is quoted on Electric Press EP-100. What is the machine cost in USD?",
+  "answer": 4800.35,
+  "needs": [
+   "U-PT-002",
+   "U-MC-002"
+  ],
+  "titles": [
+   "Part PN-3002",
+   "Electric Press EP-100"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0094",
+  "family": "factual",
+  "q": "What is the mould shrinkage in percent for Polypropylene PP-511?",
+  "answer": 1.26,
+  "needs": [
+   "U-MT-011"
+  ],
+  "title": "Polypropylene PP-511",
+  "key": "shrinkage"
+ },
+ {
+  "id": "u0095",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3008 is quoted on Injection Press IP-80. What is the machine cost in USD?",
+  "answer": 306.7022,
+  "needs": [
+   "U-PT-008",
+   "U-MC-000"
+  ],
+  "titles": [
+   "Part PN-3008",
+   "Injection Press IP-80"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0096",
+  "family": "factual",
+  "q": "What is the resin price in USD per kg for HDPE HD-504?",
+  "answer": 3.7,
+  "needs": [
+   "U-MT-004"
+  ],
+  "title": "HDPE HD-504",
+  "key": "price_kg"
+ },
+ {
+  "id": "u0097",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3001 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 562.0642,
+  "needs": [
+   "U-PT-001",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3001",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0098",
+  "family": "factual",
+  "q": "What is the density in g/cm3 for Nylon PA6-507?",
+  "answer": 1.391,
+  "needs": [
+   "U-MT-007"
+  ],
+  "title": "Nylon PA6-507",
+  "key": "density"
+ },
+ {
+  "id": "u0099",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3001 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 207.0442,
+  "needs": [
+   "U-PT-001",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3001",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0100",
+  "family": "factual",
+  "q": "What is the runner weight per shot in g for Part PN-3010?",
+  "answer": 6.1,
+  "needs": [
+   "U-PT-010"
+  ],
+  "title": "Part PN-3010",
+  "key": "runner_g"
+ },
+ {
+  "id": "u0101",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3004 is quoted on Electric Press EP-100. What is the machine cost in USD?",
+  "answer": 2088.7544,
+  "needs": [
+   "U-PT-004",
+   "U-MC-002"
+  ],
+  "titles": [
+   "Part PN-3004",
+   "Electric Press EP-100"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0102",
+  "family": "factual",
+  "q": "What is the freight cost in USD per kg for Packing PF-0?",
+  "answer": 2.33,
+  "needs": [
+   "U-FN-000"
+  ],
+  "title": "Packing PF-0",
+  "key": "freight_kg"
+ },
+ {
+  "id": "u0103",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3005 is quoted on Electric Press EP-100. What is the machine cost in USD?",
+  "answer": 664.1344,
+  "needs": [
+   "U-PT-005",
+   "U-MC-002"
+  ],
+  "titles": [
+   "Part PN-3005",
+   "Electric Press EP-100"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0104",
+  "family": "factual",
+  "q": "What is the shot weight per part in g for Part PN-3001?",
+  "answer": 36.1,
+  "needs": [
+   "U-PT-001"
+  ],
+  "title": "Part PN-3001",
+  "key": "weight_g"
+ },
+ {
+  "id": "u0105",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3005 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 436.7161,
+  "needs": [
+   "U-PT-005",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3005",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0106",
+  "family": "factual",
+  "q": "What is the parts per carton for Packing PF-4?",
+  "answer": 221.0,
+  "needs": [
+   "U-FN-004"
+  ],
+  "title": "Packing PF-4",
+  "key": "per_carton"
+ },
+ {
+  "id": "u0107",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3000 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 1307.8856,
+  "needs": [
+   "U-PT-000",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3000",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0108",
+  "family": "factual",
+  "q": "What is the mould shrinkage in percent for Nylon PA6-502?",
+  "answer": 1.68,
+  "needs": [
+   "U-MT-002"
+  ],
+  "title": "Nylon PA6-502",
+  "key": "shrinkage"
+ },
+ {
+  "id": "u0109",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3007 is quoted on Electric Press EP-100. What is the machine cost in USD?",
+  "answer": 10254.5111,
+  "needs": [
+   "U-PT-007",
+   "U-MC-002"
+  ],
+  "titles": [
+   "Part PN-3007",
+   "Electric Press EP-100"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0110",
+  "family": "factual",
+  "q": "What is the parts per carton for Packing PF-3?",
+  "answer": 161.0,
+  "needs": [
+   "U-FN-003"
+  ],
+  "title": "Packing PF-3",
+  "key": "per_carton"
+ },
+ {
+  "id": "u0111",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3005 is quoted on Injection Press IP-80. What is the machine cost in USD?",
+  "answer": 1156.1236,
+  "needs": [
+   "U-PT-005",
+   "U-MC-000"
+  ],
+  "titles": [
+   "Part PN-3005",
+   "Injection Press IP-80"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0112",
+  "family": "factual",
+  "q": "What is the number of cavities for Part PN-3000?",
+  "answer": 4.0,
+  "needs": [
+   "U-PT-000"
+  ],
+  "title": "Part PN-3000",
+  "key": "cavities"
+ },
+ {
+  "id": "u0113",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3005 is quoted on Toggle Press TP-150. What is the machine cost in USD?",
+  "answer": 2256.4917,
+  "needs": [
+   "U-PT-005",
+   "U-MC-007"
+  ],
+  "titles": [
+   "Part PN-3005",
+   "Toggle Press TP-150"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0114",
+  "family": "factual",
+  "q": "What is the parts per carton for Packing PF-5?",
+  "answer": 166.0,
+  "needs": [
+   "U-FN-005"
+  ],
+  "title": "Packing PF-5",
+  "key": "per_carton"
+ },
+ {
+  "id": "u0115",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3010 is quoted on Toggle Press TP-150. What is the machine cost in USD?",
+  "answer": 1467.3042,
+  "needs": [
+   "U-PT-010",
+   "U-MC-007"
+  ],
+  "titles": [
+   "Part PN-3010",
+   "Toggle Press TP-150"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0116",
+  "family": "factual",
+  "q": "What is the number of cavities for Part PN-3007?",
+  "answer": 8.0,
+  "needs": [
+   "U-PT-007"
+  ],
+  "title": "Part PN-3007",
+  "key": "cavities"
+ },
+ {
+  "id": "u0117",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3009 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 433.3219,
+  "needs": [
+   "U-PT-009",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3009",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0118",
+  "family": "factual",
+  "q": "What is the hourly machine rate in USD for Electric Press EP-100?",
+  "answer": 123.88,
+  "needs": [
+   "U-MC-002"
+  ],
+  "title": "Electric Press EP-100",
+  "key": "rate_h"
+ },
+ {
+  "id": "u0119",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3005 is quoted on Injection Press IP-110. What is the machine cost in USD?",
+  "answer": 741.12,
+  "needs": [
+   "U-PT-005",
+   "U-MC-003"
+  ],
+  "titles": [
+   "Part PN-3005",
+   "Injection Press IP-110"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0120",
+  "family": "factual",
+  "q": "What is the parts per carton for Packing PF-5?",
+  "answer": 166.0,
+  "needs": [
+   "U-FN-005"
+  ],
+  "title": "Packing PF-5",
+  "key": "per_carton"
+ },
+ {
+  "id": "u0121",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3000 is quoted on Injection Press IP-110. What is the machine cost in USD?",
+  "answer": 11097.6,
+  "needs": [
+   "U-PT-000",
+   "U-MC-003"
+  ],
+  "titles": [
+   "Part PN-3000",
+   "Injection Press IP-110"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0122",
+  "family": "factual",
+  "q": "What is the freight cost in USD per kg for Packing PF-4?",
+  "answer": 2.9,
+  "needs": [
+   "U-FN-004"
+  ],
+  "title": "Packing PF-4",
+  "key": "freight_kg"
+ },
+ {
+  "id": "u0123",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3004 is quoted on Injection Press IP-110. What is the machine cost in USD?",
+  "answer": 1165.44,
+  "needs": [
+   "U-PT-004",
+   "U-MC-003"
+  ],
+  "titles": [
+   "Part PN-3004",
+   "Injection Press IP-110"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0124",
+  "family": "factual",
+  "q": "What is the shot weight per part in g for Part PN-3008?",
+  "answer": 160.0,
+  "needs": [
+   "U-PT-008"
+  ],
+  "title": "Part PN-3008",
+  "key": "weight_g"
+ },
+ {
+  "id": "u0125",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3010 is quoted on Toggle Press TP-150. What is the machine cost in USD?",
+  "answer": 293.4608,
+  "needs": [
+   "U-PT-010",
+   "U-MC-007"
+  ],
+  "titles": [
+   "Part PN-3010",
+   "Toggle Press TP-150"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0126",
+  "family": "factual",
+  "q": "What is the hourly machine rate in USD for Injection Press IP-110?",
+  "answer": 138.24,
+  "needs": [
+   "U-MC-003"
+  ],
+  "title": "Injection Press IP-110",
+  "key": "rate_h"
+ },
+ {
+  "id": "u0127",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3007 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 1830.5478,
+  "needs": [
+   "U-PT-007",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3007",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0128",
+  "family": "factual",
+  "q": "What is the cycle time in seconds for Part PN-3005?",
+  "answer": 19.3,
+  "needs": [
+   "U-PT-005"
+  ],
+  "title": "Part PN-3005",
+  "key": "cycle_s"
+ },
+ {
+  "id": "u0129",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3011 is quoted on Toggle Press TP-120. What is the machine cost in USD?",
+  "answer": 5088.6333,
+  "needs": [
+   "U-PT-011",
+   "U-MC-004"
+  ],
+  "titles": [
+   "Part PN-3011",
+   "Toggle Press TP-120"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0130",
+  "family": "factual",
+  "q": "What is the parts per carton for Packing PF-1?",
+  "answer": 111.0,
+  "needs": [
+   "U-FN-001"
+  ],
+  "title": "Packing PF-1",
+  "key": "per_carton"
+ },
+ {
+  "id": "u0131",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3003 is quoted on Injection Press IP-110. What is the machine cost in USD?",
+  "answer": 3062.4,
+  "needs": [
+   "U-PT-003",
+   "U-MC-003"
+  ],
+  "titles": [
+   "Part PN-3003",
+   "Injection Press IP-110"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0132",
+  "family": "factual",
+  "q": "What is the density in g/cm3 for Polypropylene PP-511?",
+  "answer": 1.096,
+  "needs": [
+   "U-MT-011"
+  ],
+  "title": "Polypropylene PP-511",
+  "key": "density"
+ },
+ {
+  "id": "u0133",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3010 is quoted on Toggle Press TP-120. What is the machine cost in USD?",
+  "answer": 4093.7403,
+  "needs": [
+   "U-PT-010",
+   "U-MC-004"
+  ],
+  "titles": [
+   "Part PN-3010",
+   "Toggle Press TP-120"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0134",
+  "family": "factual",
+  "q": "What is the number of cavities for Part PN-3007?",
+  "answer": 8.0,
+  "needs": [
+   "U-PT-007"
+  ],
+  "title": "Part PN-3007",
+  "key": "cavities"
+ },
+ {
+  "id": "u0135",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3007 is quoted on Injection Press IP-80. What is the machine cost in USD?",
+  "answer": 1785.1028,
+  "needs": [
+   "U-PT-007",
+   "U-MC-000"
+  ],
+  "titles": [
+   "Part PN-3007",
+   "Injection Press IP-80"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0136",
+  "family": "factual",
+  "q": "What is the parts per carton for Packing PF-5?",
+  "answer": 166.0,
+  "needs": [
+   "U-FN-005"
+  ],
+  "title": "Packing PF-5",
+  "key": "per_carton"
+ },
+ {
+  "id": "u0137",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3005 is quoted on Toggle Press TP-150. What is the machine cost in USD?",
+  "answer": 451.2983,
+  "needs": [
+   "U-PT-005",
+   "U-MC-007"
+  ],
+  "titles": [
+   "Part PN-3005",
+   "Toggle Press TP-150"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0138",
+  "family": "factual",
+  "q": "What is the mould shrinkage in percent for HDPE HD-509?",
+  "answer": 1.04,
+  "needs": [
+   "U-MT-009"
+  ],
+  "title": "HDPE HD-509",
+  "key": "shrinkage"
+ },
+ {
+  "id": "u0139",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3005 is quoted on Toggle Press TP-150. What is the machine cost in USD?",
+  "answer": 225.6492,
+  "needs": [
+   "U-PT-005",
+   "U-MC-007"
+  ],
+  "titles": [
+   "Part PN-3005",
+   "Toggle Press TP-150"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0140",
+  "family": "factual",
+  "q": "What is the shot weight per part in g for Part PN-3010?",
+  "answer": 17.6,
+  "needs": [
+   "U-PT-010"
+  ],
+  "title": "Part PN-3010",
+  "key": "weight_g"
+ },
+ {
+  "id": "u0141",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3002 is quoted on Toggle Press TP-150. What is the machine cost in USD?",
+  "answer": 1630.9875,
+  "needs": [
+   "U-PT-002",
+   "U-MC-007"
+  ],
+  "titles": [
+   "Part PN-3002",
+   "Toggle Press TP-150"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0142",
+  "family": "factual",
+  "q": "What is the number of cavities for Part PN-3004?",
+  "answer": 8.0,
+  "needs": [
+   "U-PT-004"
+  ],
+  "title": "Part PN-3004",
+  "key": "cavities"
+ },
+ {
+  "id": "u0143",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3005 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 436.7161,
+  "needs": [
+   "U-PT-005",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3005",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0144",
+  "family": "factual",
+  "q": "What is the clamping force in tonnes for Injection Press IP-80?",
+  "answer": 250.0,
+  "needs": [
+   "U-MC-000"
+  ],
+  "title": "Injection Press IP-80",
+  "key": "tonnage"
+ },
+ {
+  "id": "u0145",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3011 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 3529.9333,
+  "needs": [
+   "U-PT-011",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3011",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0146",
+  "family": "factual",
+  "q": "What is the runner weight per shot in g for Part PN-3005?",
+  "answer": 4.7,
+  "needs": [
+   "U-PT-005"
+  ],
+  "title": "Part PN-3005",
+  "key": "runner_g"
+ },
+ {
+  "id": "u0147",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3004 is quoted on Toggle Press TP-150. What is the machine cost in USD?",
+  "answer": 3548.4208,
+  "needs": [
+   "U-PT-004",
+   "U-MC-007"
+  ],
+  "titles": [
+   "Part PN-3004",
+   "Toggle Press TP-150"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0148",
+  "family": "factual",
+  "q": "What is the resin price in USD per kg for HDPE HD-504?",
+  "answer": 3.7,
+  "needs": [
+   "U-MT-004"
+  ],
+  "title": "HDPE HD-504",
+  "key": "price_kg"
+ },
+ {
+  "id": "u0149",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3011 is quoted on Injection Press IP-80. What is the machine cost in USD?",
+  "answer": 3737.9333,
+  "needs": [
+   "U-PT-011",
+   "U-MC-000"
+  ],
+  "titles": [
+   "Part PN-3011",
+   "Injection Press IP-80"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0150",
+  "family": "factual",
+  "q": "What is the runner weight per shot in g for Part PN-3003?",
+  "answer": 5.4,
+  "needs": [
+   "U-PT-003"
+  ],
+  "title": "Part PN-3003",
+  "key": "runner_g"
+ },
+ {
+  "id": "u0151",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3006 is quoted on Electric Press EP-130. What is the machine cost in USD?",
+  "answer": 384.6785,
+  "needs": [
+   "U-PT-006",
+   "U-MC-005"
+  ],
+  "titles": [
+   "Part PN-3006",
+   "Electric Press EP-130"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0152",
+  "family": "factual",
+  "q": "What is the resin price in USD per kg for ABS GP-510?",
+  "answer": 1.49,
+  "needs": [
+   "U-MT-010"
+  ],
+  "title": "ABS GP-510",
+  "key": "price_kg"
+ },
+ {
+  "id": "u0153",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3003 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 2449.4326,
+  "needs": [
+   "U-PT-003",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3003",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0154",
+  "family": "factual",
+  "q": "What is the density in g/cm3 for Polycarbonate PC-508?",
+  "answer": 1.129,
+  "needs": [
+   "U-MT-008"
+  ],
+  "title": "Polycarbonate PC-508",
+  "key": "density"
+ },
+ {
+  "id": "u0155",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3004 is quoted on Toggle Press TP-120. What is the machine cost in USD?",
+  "answer": 1980.0003,
+  "needs": [
+   "U-PT-004",
+   "U-MC-004"
+  ],
+  "titles": [
+   "Part PN-3004",
+   "Toggle Press TP-120"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0156",
+  "family": "factual",
+  "q": "What is the runner weight per shot in g for Part PN-3009?",
+  "answer": 9.4,
+  "needs": [
+   "U-PT-009"
+  ],
+  "title": "Part PN-3009",
+  "key": "runner_g"
+ },
+ {
+  "id": "u0157",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3006 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 406.1686,
+  "needs": [
+   "U-PT-006",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3006",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0158",
+  "family": "factual",
+  "q": "What is the shot weight per part in g for Part PN-3000?",
+  "answer": 160.4,
+  "needs": [
+   "U-PT-000"
+  ],
+  "title": "Part PN-3000",
+  "key": "weight_g"
+ },
+ {
+  "id": "u0159",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3009 is quoted on Electric Press EP-130. What is the machine cost in USD?",
+  "answer": 410.3951,
+  "needs": [
+   "U-PT-009",
+   "U-MC-005"
+  ],
+  "titles": [
+   "Part PN-3009",
+   "Electric Press EP-130"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0160",
+  "family": "factual",
+  "q": "What is the parts per carton for Packing PF-6?",
+  "answer": 151.0,
+  "needs": [
+   "U-FN-006"
+  ],
+  "title": "Packing PF-6",
+  "key": "per_carton"
+ },
+ {
+  "id": "u0161",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3006 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 2030.8431,
+  "needs": [
+   "U-PT-006",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3006",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0162",
+  "family": "factual",
+  "q": "What is the number of cavities for Part PN-3007?",
+  "answer": 8.0,
+  "needs": [
+   "U-PT-007"
+  ],
+  "title": "Part PN-3007",
+  "key": "cavities"
+ },
+ {
+  "id": "u0163",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3006 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 1102.6286,
+  "needs": [
+   "U-PT-006",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3006",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0164",
+  "family": "factual",
+  "q": "What is the density in g/cm3 for Nylon PA6-507?",
+  "answer": 1.391,
+  "needs": [
+   "U-MT-007"
+  ],
+  "title": "Nylon PA6-507",
+  "key": "density"
+ },
+ {
+  "id": "u0165",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3003 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 721.8261,
+  "needs": [
+   "U-PT-003",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3003",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0166",
+  "family": "factual",
+  "q": "What is the runner weight per shot in g for Part PN-3009?",
+  "answer": 9.4,
+  "needs": [
+   "U-PT-009"
+  ],
+  "title": "Part PN-3009",
+  "key": "runner_g"
+ },
+ {
+  "id": "u0167",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3004 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 932.1665,
+  "needs": [
+   "U-PT-004",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3004",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0168",
+  "family": "factual",
+  "q": "What is the density in g/cm3 for Nylon PA6-502?",
+  "answer": 1.045,
+  "needs": [
+   "U-MT-002"
+  ],
+  "title": "Nylon PA6-502",
+  "key": "density"
+ },
+ {
+  "id": "u0169",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3000 is quoted on Toggle Press TP-150. What is the machine cost in USD?",
+  "answer": 6757.7833,
+  "needs": [
+   "U-PT-000",
+   "U-MC-007"
+  ],
+  "titles": [
+   "Part PN-3000",
+   "Toggle Press TP-150"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0170",
+  "family": "factual",
+  "q": "What is the freight cost in USD per kg for Packing PF-6?",
+  "answer": 1.79,
+  "needs": [
+   "U-FN-006"
+  ],
+  "title": "Packing PF-6",
+  "key": "freight_kg"
+ },
+ {
+  "id": "u0171",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3009 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 866.6439,
+  "needs": [
+   "U-PT-009",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3009",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0172",
+  "family": "factual",
+  "q": "What is the hourly machine rate in USD for Injection Press IP-140?",
+  "answer": 81.46,
+  "needs": [
+   "U-MC-006"
+  ],
+  "title": "Injection Press IP-140",
+  "key": "rate_h"
+ },
+ {
+  "id": "u0173",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3011 is quoted on Electric Press EP-100. What is the machine cost in USD?",
+  "answer": 10736.2667,
+  "needs": [
+   "U-PT-011",
+   "U-MC-002"
+  ],
+  "titles": [
+   "Part PN-3011",
+   "Electric Press EP-100"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0174",
+  "family": "factual",
+  "q": "What is the number of cavities for Part PN-3010?",
+  "answer": 16.0,
+  "needs": [
+   "U-PT-010"
+  ],
+  "title": "Part PN-3010",
+  "key": "cavities"
+ },
+ {
+  "id": "u0175",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3002 is quoted on Electric Press EP-130. What is the machine cost in USD?",
+  "answer": 1494.7812,
+  "needs": [
+   "U-PT-002",
+   "U-MC-005"
+  ],
+  "titles": [
+   "Part PN-3002",
+   "Electric Press EP-130"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0176",
+  "family": "factual",
+  "q": "What is the cycle time in seconds for Part PN-3003?",
+  "answer": 31.9,
+  "needs": [
+   "U-PT-003"
+  ],
+  "title": "Part PN-3003",
+  "key": "cycle_s"
+ },
+ {
+  "id": "u0177",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3004 is quoted on Toggle Press TP-120. What is the machine cost in USD?",
+  "answer": 1980.0003,
+  "needs": [
+   "U-PT-004",
+   "U-MC-004"
+  ],
+  "titles": [
+   "Part PN-3004",
+   "Toggle Press TP-120"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0178",
+  "family": "factual",
+  "q": "What is the density in g/cm3 for Polypropylene PP-501?",
+  "answer": 1.401,
+  "needs": [
+   "U-MT-001"
+  ],
+  "title": "Polypropylene PP-501",
+  "key": "density"
+ },
+ {
+  "id": "u0179",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3008 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 786.2756,
+  "needs": [
+   "U-PT-008",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3008",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0180",
+  "family": "factual",
+  "q": "What is the density in g/cm3 for HDPE HD-509?",
+  "answer": 0.933,
+  "needs": [
+   "U-MT-009"
+  ],
+  "title": "HDPE HD-509",
+  "key": "density"
+ },
+ {
+  "id": "u0181",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3005 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 592.7781,
+  "needs": [
+   "U-PT-005",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3005",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0182",
+  "family": "factual",
+  "q": "What is the density in g/cm3 for Polypropylene PP-511?",
+  "answer": 1.096,
+  "needs": [
+   "U-MT-011"
+  ],
+  "title": "Polypropylene PP-511",
+  "key": "density"
+ },
+ {
+  "id": "u0183",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3004 is quoted on Electric Press EP-130. What is the machine cost in USD?",
+  "answer": 1300.8347,
+  "needs": [
+   "U-PT-004",
+   "U-MC-005"
+  ],
+  "titles": [
+   "Part PN-3004",
+   "Electric Press EP-130"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0184",
+  "family": "factual",
+  "q": "What is the parts per carton for Packing PF-0?",
+  "answer": 208.0,
+  "needs": [
+   "U-FN-000"
+  ],
+  "title": "Packing PF-0",
+  "key": "per_carton"
+ },
+ {
+  "id": "u0185",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3007 is quoted on Electric Press EP-100. What is the machine cost in USD?",
+  "answer": 5127.2556,
+  "needs": [
+   "U-PT-007",
+   "U-MC-002"
+  ],
+  "titles": [
+   "Part PN-3007",
+   "Electric Press EP-100"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0186",
+  "family": "factual",
+  "q": "What is the mould shrinkage in percent for Polycarbonate PC-508?",
+  "answer": 2.07,
+  "needs": [
+   "U-MT-008"
+  ],
+  "title": "Polycarbonate PC-508",
+  "key": "shrinkage"
+ },
+ {
+  "id": "u0187",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3006 is quoted on Electric Press EP-130. What is the machine cost in USD?",
+  "answer": 1923.3924,
+  "needs": [
+   "U-PT-006",
+   "U-MC-005"
+  ],
+  "titles": [
+   "Part PN-3006",
+   "Electric Press EP-130"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0188",
+  "family": "factual",
+  "q": "What is the mould shrinkage in percent for Nylon PA6-507?",
+  "answer": 0.46,
+  "needs": [
+   "U-MT-007"
+  ],
+  "title": "Nylon PA6-507",
+  "key": "shrinkage"
+ },
+ {
+  "id": "u0189",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3010 is quoted on Injection Press IP-110. What is the machine cost in USD?",
+  "answer": 963.84,
+  "needs": [
+   "U-PT-010",
+   "U-MC-003"
+  ],
+  "titles": [
+   "Part PN-3010",
+   "Injection Press IP-110"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0190",
+  "family": "factual",
+  "q": "What is the freight cost in USD per kg for Packing PF-0?",
+  "answer": 2.33,
+  "needs": [
+   "U-FN-000"
+  ],
+  "title": "Packing PF-0",
+  "key": "freight_kg"
+ },
+ {
+  "id": "u0191",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3009 is quoted on Electric Press EP-130. What is the machine cost in USD?",
+  "answer": 820.7903,
+  "needs": [
+   "U-PT-009",
+   "U-MC-005"
+  ],
+  "titles": [
+   "Part PN-3009",
+   "Electric Press EP-130"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0192",
+  "family": "factual",
+  "q": "What is the number of cavities for Part PN-3001?",
+  "answer": 16.0,
+  "needs": [
+   "U-PT-001"
+  ],
+  "title": "Part PN-3001",
+  "key": "cavities"
+ },
+ {
+  "id": "u0193",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3007 is quoted on Injection Press IP-80. What is the machine cost in USD?",
+  "answer": 1785.1028,
+  "needs": [
+   "U-PT-007",
+   "U-MC-000"
+  ],
+  "titles": [
+   "Part PN-3007",
+   "Injection Press IP-80"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0194",
+  "family": "factual",
+  "q": "What is the mould shrinkage in percent for Polycarbonate PC-503?",
+  "answer": 1.79,
+  "needs": [
+   "U-MT-003"
+  ],
+  "title": "Polycarbonate PC-503",
+  "key": "shrinkage"
+ },
+ {
+  "id": "u0195",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3010 is quoted on Electric Press EP-130. What is the machine cost in USD?",
+  "answer": 268.9535,
+  "needs": [
+   "U-PT-010",
+   "U-MC-005"
+  ],
+  "titles": [
+   "Part PN-3010",
+   "Electric Press EP-130"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0196",
+  "family": "factual",
+  "q": "What is the mould shrinkage in percent for Nylon PA6-507?",
+  "answer": 0.46,
+  "needs": [
+   "U-MT-007"
+  ],
+  "title": "Nylon PA6-507",
+  "key": "shrinkage"
+ },
+ {
+  "id": "u0197",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3011 is quoted on Toggle Press TP-150. What is the machine cost in USD?",
+  "answer": 729.56,
+  "needs": [
+   "U-PT-011",
+   "U-MC-007"
+  ],
+  "titles": [
+   "Part PN-3011",
+   "Toggle Press TP-150"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0198",
+  "family": "factual",
+  "q": "What is the mould shrinkage in percent for Polypropylene PP-506?",
+  "answer": 2.01,
+  "needs": [
+   "U-MT-006"
+  ],
+  "title": "Polypropylene PP-506",
+  "key": "shrinkage"
+ },
+ {
+  "id": "u0199",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3006 is quoted on Electric Press EP-130. What is the machine cost in USD?",
+  "answer": 769.3569,
+  "needs": [
+   "U-PT-006",
+   "U-MC-005"
+  ],
+  "titles": [
+   "Part PN-3006",
+   "Electric Press EP-130"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0200",
+  "family": "factual",
+  "q": "What is the hourly machine rate in USD for Electric Press EP-100?",
+  "answer": 123.88,
+  "needs": [
+   "U-MC-002"
+  ],
+  "title": "Electric Press EP-100",
+  "key": "rate_h"
+ },
+ {
+  "id": "u0201",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3007 is quoted on Toggle Press TP-150. What is the machine cost in USD?",
+  "answer": 6968.2333,
+  "needs": [
+   "U-PT-007",
+   "U-MC-007"
+  ],
+  "titles": [
+   "Part PN-3007",
+   "Toggle Press TP-150"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0202",
+  "family": "factual",
+  "q": "What is the shot weight per part in g for Part PN-3000?",
+  "answer": 160.4,
+  "needs": [
+   "U-PT-000"
+  ],
+  "title": "Part PN-3000",
+  "key": "weight_g"
+ },
+ {
+  "id": "u0203",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3003 is quoted on Electric Press EP-100. What is the machine cost in USD?",
+  "answer": 1097.7144,
+  "needs": [
+   "U-PT-003",
+   "U-MC-002"
+  ],
+  "titles": [
+   "Part PN-3003",
+   "Electric Press EP-100"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0204",
+  "family": "factual",
+  "q": "What is the resin price in USD per kg for Polycarbonate PC-503?",
+  "answer": 2.49,
+  "needs": [
+   "U-MT-003"
+  ],
+  "title": "Polycarbonate PC-503",
+  "key": "price_kg"
+ },
+ {
+  "id": "u0205",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3004 is quoted on Toggle Press TP-150. What is the machine cost in USD?",
+  "answer": 1419.3683,
+  "needs": [
+   "U-PT-004",
+   "U-MC-007"
+  ],
+  "titles": [
+   "Part PN-3004",
+   "Toggle Press TP-150"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0206",
+  "family": "factual",
+  "q": "What is the mould shrinkage in percent for ABS GP-510?",
+  "answer": 0.66,
+  "needs": [
+   "U-MT-010"
+  ],
+  "title": "ABS GP-510",
+  "key": "shrinkage"
+ },
+ {
+  "id": "u0207",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3008 is quoted on Toggle Press TP-150. What is the machine cost in USD?",
+  "answer": 5986.1333,
+  "needs": [
+   "U-PT-008",
+   "U-MC-007"
+  ],
+  "titles": [
+   "Part PN-3008",
+   "Toggle Press TP-150"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0208",
+  "family": "factual",
+  "q": "What is the clamping force in tonnes for Injection Press IP-80?",
+  "answer": 250.0,
+  "needs": [
+   "U-MC-000"
+  ],
+  "title": "Injection Press IP-80",
+  "key": "tonnage"
+ },
+ {
+  "id": "u0209",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3006 is quoted on Injection Press IP-110. What is the machine cost in USD?",
+  "answer": 6892.8,
+  "needs": [
+   "U-PT-006",
+   "U-MC-003"
+  ],
+  "titles": [
+   "Part PN-3006",
+   "Injection Press IP-110"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0210",
+  "family": "factual",
+  "q": "What is the hourly machine rate in USD for Toggle Press TP-90?",
+  "answer": 110.57,
+  "needs": [
+   "U-MC-001"
+  ],
+  "title": "Toggle Press TP-90",
+  "key": "rate_h"
+ },
+ {
+  "id": "u0211",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3002 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 428.4587,
+  "needs": [
+   "U-PT-002",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3002",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0212",
+  "family": "factual",
+  "q": "What is the setup allowance in hours for Electric Press EP-100?",
+  "answer": 0.97,
+  "needs": [
+   "U-MC-002"
+  ],
+  "title": "Electric Press EP-100",
+  "key": "setup_h"
+ },
+ {
+  "id": "u0213",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3010 is quoted on Toggle Press TP-150. What is the machine cost in USD?",
+  "answer": 586.9217,
+  "needs": [
+   "U-PT-010",
+   "U-MC-007"
+  ],
+  "titles": [
+   "Part PN-3010",
+   "Toggle Press TP-150"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0214",
+  "family": "factual",
+  "q": "What is the number of cavities for Part PN-3006?",
+  "answer": 2.0,
+  "needs": [
+   "U-PT-006"
+  ],
+  "title": "Part PN-3006",
+  "key": "cavities"
+ },
+ {
+  "id": "u0215",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3001 is quoted on Toggle Press TP-120. What is the machine cost in USD?",
+  "answer": 2984.6792,
+  "needs": [
+   "U-PT-001",
+   "U-MC-004"
+  ],
+  "titles": [
+   "Part PN-3001",
+   "Toggle Press TP-120"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0216",
+  "family": "factual",
+  "q": "What is the hourly machine rate in USD for Toggle Press TP-90?",
+  "answer": 110.57,
+  "needs": [
+   "U-MC-001"
+  ],
+  "title": "Toggle Press TP-90",
+  "key": "rate_h"
+ },
+ {
+  "id": "u0217",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3003 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 1804.5653,
+  "needs": [
+   "U-PT-003",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3003",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0218",
+  "family": "factual",
+  "q": "What is the setup allowance in hours for Toggle Press TP-150?",
+  "answer": 3.88,
+  "needs": [
+   "U-MC-007"
+  ],
+  "title": "Toggle Press TP-150",
+  "key": "setup_h"
+ },
+ {
+  "id": "u0219",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3010 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 567.9572,
+  "needs": [
+   "U-PT-010",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3010",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0220",
+  "family": "factual",
+  "q": "What is the density in g/cm3 for ABS GP-505?",
+  "answer": 1.21,
+  "needs": [
+   "U-MT-005"
+  ],
+  "title": "ABS GP-505",
+  "key": "density"
+ },
+ {
+  "id": "u0221",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3001 is quoted on Electric Press EP-130. What is the machine cost in USD?",
+  "answer": 980.4479,
+  "needs": [
+   "U-PT-001",
+   "U-MC-005"
+  ],
+  "titles": [
+   "Part PN-3001",
+   "Electric Press EP-130"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0222",
+  "family": "factual",
+  "q": "What is the setup allowance in hours for Injection Press IP-140?",
+  "answer": 2.11,
+  "needs": [
+   "U-MC-006"
+  ],
+  "title": "Injection Press IP-140",
+  "key": "setup_h"
+ },
+ {
+  "id": "u0223",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3000 is quoted on Injection Press IP-80. What is the machine cost in USD?",
+  "answer": 1731.1903,
+  "needs": [
+   "U-PT-000",
+   "U-MC-000"
+  ],
+  "titles": [
+   "Part PN-3000",
+   "Injection Press IP-80"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0224",
+  "family": "factual",
+  "q": "What is the setup allowance in hours for Injection Press IP-140?",
+  "answer": 2.11,
+  "needs": [
+   "U-MC-006"
+  ],
+  "title": "Injection Press IP-140",
+  "key": "setup_h"
+ },
+ {
+  "id": "u0225",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3009 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 2166.6097,
+  "needs": [
+   "U-PT-009",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3009",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0226",
+  "family": "factual",
+  "q": "What is the runner weight per shot in g for Part PN-3007?",
+  "answer": 8.9,
+  "needs": [
+   "U-PT-007"
+  ],
+  "title": "Part PN-3007",
+  "key": "runner_g"
+ },
+ {
+  "id": "u0227",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3004 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 3433.7653,
+  "needs": [
+   "U-PT-004",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3004",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0228",
+  "family": "factual",
+  "q": "What is the setup allowance in hours for Injection Press IP-80?",
+  "answer": 2.28,
+  "needs": [
+   "U-MC-000"
+  ],
+  "title": "Injection Press IP-80",
+  "key": "setup_h"
+ },
+ {
+  "id": "u0229",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3009 is quoted on Injection Press IP-110. What is the machine cost in USD?",
+  "answer": 3676.8,
+  "needs": [
+   "U-PT-009",
+   "U-MC-003"
+  ],
+  "titles": [
+   "Part PN-3009",
+   "Injection Press IP-110"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0230",
+  "family": "factual",
+  "q": "What is the runner weight per shot in g for Part PN-3010?",
+  "answer": 6.1,
+  "needs": [
+   "U-PT-010"
+  ],
+  "title": "Part PN-3010",
+  "key": "runner_g"
+ },
+ {
+  "id": "u0231",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3006 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 2030.8431,
+  "needs": [
+   "U-PT-006",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3006",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0232",
+  "family": "factual",
+  "q": "What is the density in g/cm3 for Polycarbonate PC-503?",
+  "answer": 1.413,
+  "needs": [
+   "U-MT-003"
+  ],
+  "title": "Polycarbonate PC-503",
+  "key": "density"
+ },
+ {
+  "id": "u0233",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3002 is quoted on Electric Press EP-100. What is the machine cost in USD?",
+  "answer": 4800.35,
+  "needs": [
+   "U-PT-002",
+   "U-MC-002"
+  ],
+  "titles": [
+   "Part PN-3002",
+   "Electric Press EP-100"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0234",
+  "family": "factual",
+  "q": "What is the number of cavities for Part PN-3003?",
+  "answer": 16.0,
+  "needs": [
+   "U-PT-003"
+  ],
+  "title": "Part PN-3003",
+  "key": "cavities"
+ },
+ {
+  "id": "u0235",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3008 is quoted on Electric Press EP-130. What is the machine cost in USD?",
+  "answer": 2743.1111,
+  "needs": [
+   "U-PT-008",
+   "U-MC-005"
+  ],
+  "titles": [
+   "Part PN-3008",
+   "Electric Press EP-130"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0236",
+  "family": "factual",
+  "q": "What is the setup allowance in hours for Injection Press IP-110?",
+  "answer": 3.54,
+  "needs": [
+   "U-MC-003"
+  ],
+  "title": "Injection Press IP-110",
+  "key": "setup_h"
+ },
+ {
+  "id": "u0237",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3008 is quoted on Injection Press IP-80. What is the machine cost in USD?",
+  "answer": 613.4044,
+  "needs": [
+   "U-PT-008",
+   "U-MC-000"
+  ],
+  "titles": [
+   "Part PN-3008",
+   "Injection Press IP-80"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0238",
+  "family": "factual",
+  "q": "What is the density in g/cm3 for Nylon PA6-502?",
+  "answer": 1.045,
+  "needs": [
+   "U-MT-002"
+  ],
+  "title": "Nylon PA6-502",
+  "key": "density"
+ },
+ {
+  "id": "u0239",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3000 is quoted on Electric Press EP-100. What is the machine cost in USD?",
+  "answer": 1988.9622,
+  "needs": [
+   "U-PT-000",
+   "U-MC-002"
+  ],
+  "titles": [
+   "Part PN-3000",
+   "Electric Press EP-100"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0240",
+  "family": "factual",
+  "q": "What is the clamping force in tonnes for Injection Press IP-140?",
+  "answer": 80.0,
+  "needs": [
+   "U-MC-006"
+  ],
+  "title": "Injection Press IP-140",
+  "key": "tonnage"
+ },
+ {
+  "id": "u0241",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3002 is quoted on Injection Press IP-110. What is the machine cost in USD?",
+  "answer": 535.68,
+  "needs": [
+   "U-PT-002",
+   "U-MC-003"
+  ],
+  "titles": [
+   "Part PN-3002",
+   "Injection Press IP-110"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0242",
+  "family": "factual",
+  "q": "What is the resin price in USD per kg for Polypropylene PP-506?",
+  "answer": 3.41,
+  "needs": [
+   "U-MT-006"
+  ],
+  "title": "Polypropylene PP-506",
+  "key": "price_kg"
+ },
+ {
+  "id": "u0243",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3011 is quoted on Toggle Press TP-120. What is the machine cost in USD?",
+  "answer": 5088.6333,
+  "needs": [
+   "U-PT-011",
+   "U-MC-004"
+  ],
+  "titles": [
+   "Part PN-3011",
+   "Toggle Press TP-120"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0244",
+  "family": "factual",
+  "q": "What is the density in g/cm3 for ABS GP-500?",
+  "answer": 1.112,
+  "needs": [
+   "U-MT-000"
+  ],
+  "title": "ABS GP-500",
+  "key": "density"
+ },
+ {
+  "id": "u0245",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3008 is quoted on Injection Press IP-80. What is the machine cost in USD?",
+  "answer": 613.4044,
+  "needs": [
+   "U-PT-008",
+   "U-MC-000"
+  ],
+  "titles": [
+   "Part PN-3008",
+   "Injection Press IP-80"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0246",
+  "family": "factual",
+  "q": "What is the freight cost in USD per kg for Packing PF-7?",
+  "answer": 1.41,
+  "needs": [
+   "U-FN-007"
+  ],
+  "title": "Packing PF-7",
+  "key": "freight_kg"
+ },
+ {
+  "id": "u0247",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3007 is quoted on Injection Press IP-110. What is the machine cost in USD?",
+  "answer": 11443.2,
+  "needs": [
+   "U-PT-007",
+   "U-MC-003"
+  ],
+  "titles": [
+   "Part PN-3007",
+   "Injection Press IP-110"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0248",
+  "family": "factual",
+  "q": "What is the density in g/cm3 for Polypropylene PP-506?",
+  "answer": 1.028,
+  "needs": [
+   "U-MT-006"
+  ],
+  "title": "Polypropylene PP-506",
+  "key": "density"
+ },
+ {
+  "id": "u0249",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3009 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 588.171,
+  "needs": [
+   "U-PT-009",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3009",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0250",
+  "family": "factual",
+  "q": "What is the mould shrinkage in percent for HDPE HD-509?",
+  "answer": 1.04,
+  "needs": [
+   "U-MT-009"
+  ],
+  "title": "HDPE HD-509",
+  "key": "shrinkage"
+ },
+ {
+  "id": "u0251",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3010 is quoted on Electric Press EP-100. What is the machine cost in USD?",
+  "answer": 4318.5944,
+  "needs": [
+   "U-PT-010",
+   "U-MC-002"
+  ],
+  "titles": [
+   "Part PN-3010",
+   "Electric Press EP-100"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0252",
+  "family": "factual",
+  "q": "What is the clamping force in tonnes for Toggle Press TP-120?",
+  "answer": 350.0,
+  "needs": [
+   "U-MC-004"
+  ],
+  "title": "Toggle Press TP-120",
+  "key": "tonnage"
+ },
+ {
+  "id": "u0253",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3001 is quoted on Electric Press EP-100. What is the machine cost in USD?",
+  "answer": 629.7233,
+  "needs": [
+   "U-PT-001",
+   "U-MC-002"
+  ],
+  "titles": [
+   "Part PN-3001",
+   "Electric Press EP-100"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0254",
+  "family": "factual",
+  "q": "What is the clamping force in tonnes for Injection Press IP-110?",
+  "answer": 180.0,
+  "needs": [
+   "U-MC-003"
+  ],
+  "title": "Injection Press IP-110",
+  "key": "tonnage"
+ },
+ {
+  "id": "u0255",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3001 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 281.0321,
+  "needs": [
+   "U-PT-001",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3001",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0256",
+  "family": "factual",
+  "q": "What is the number of cavities for Part PN-3001?",
+  "answer": 16.0,
+  "needs": [
+   "U-PT-001"
+  ],
+  "title": "Part PN-3001",
+  "key": "cavities"
+ },
+ {
+  "id": "u0257",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3003 is quoted on Injection Press IP-80. What is the machine cost in USD?",
+  "answer": 382.1797,
+  "needs": [
+   "U-PT-003",
+   "U-MC-000"
+  ],
+  "titles": [
+   "Part PN-3003",
+   "Injection Press IP-80"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0258",
+  "family": "factual",
+  "q": "What is the freight cost in USD per kg for Packing PF-4?",
+  "answer": 2.9,
+  "needs": [
+   "U-FN-004"
+  ],
+  "title": "Packing PF-4",
+  "key": "freight_kg"
+ },
+ {
+  "id": "u0259",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3001 is quoted on Toggle Press TP-120. What is the machine cost in USD?",
+  "answer": 298.4679,
+  "needs": [
+   "U-PT-001",
+   "U-MC-004"
+  ],
+  "titles": [
+   "Part PN-3001",
+   "Toggle Press TP-120"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0260",
+  "family": "factual",
+  "q": "What is the resin price in USD per kg for Polypropylene PP-506?",
+  "answer": 3.41,
+  "needs": [
+   "U-MT-006"
+  ],
+  "title": "Polypropylene PP-506",
+  "key": "price_kg"
+ },
+ {
+  "id": "u0261",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3008 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 5792.7111,
+  "needs": [
+   "U-PT-008",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3008",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0262",
+  "family": "factual",
+  "q": "What is the number of cavities for Part PN-3000?",
+  "answer": 4.0,
+  "needs": [
+   "U-PT-000"
+  ],
+  "title": "Part PN-3000",
+  "key": "cavities"
+ },
+ {
+  "id": "u0263",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3006 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 4061.6861,
+  "needs": [
+   "U-PT-006",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3006",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0264",
+  "family": "factual",
+  "q": "What is the density in g/cm3 for ABS GP-500?",
+  "answer": 1.112,
+  "needs": [
+   "U-MT-000"
+  ],
+  "title": "ABS GP-500",
+  "key": "density"
+ },
+ {
+  "id": "u0265",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3008 is quoted on Electric Press EP-130. What is the machine cost in USD?",
+  "answer": 5486.2222,
+  "needs": [
+   "U-PT-008",
+   "U-MC-005"
+  ],
+  "titles": [
+   "Part PN-3008",
+   "Electric Press EP-130"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0266",
+  "family": "factual",
+  "q": "What is the parts per carton for Packing PF-7?",
+  "answer": 36.0,
+  "needs": [
+   "U-FN-007"
+  ],
+  "title": "Packing PF-7",
+  "key": "per_carton"
+ },
+ {
+  "id": "u0267",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3006 is quoted on Injection Press IP-110. What is the machine cost in USD?",
+  "answer": 3446.4,
+  "needs": [
+   "U-PT-006",
+   "U-MC-003"
+  ],
+  "titles": [
+   "Part PN-3006",
+   "Injection Press IP-110"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0268",
+  "family": "factual",
+  "q": "What is the parts per carton for Packing PF-0?",
+  "answer": 208.0,
+  "needs": [
+   "U-FN-000"
+  ],
+  "title": "Packing PF-0",
+  "key": "per_carton"
+ },
+ {
+  "id": "u0269",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3001 is quoted on Toggle Press TP-120. What is the machine cost in USD?",
+  "answer": 1492.3396,
+  "needs": [
+   "U-PT-001",
+   "U-MC-004"
+  ],
+  "titles": [
+   "Part PN-3001",
+   "Toggle Press TP-120"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0270",
+  "family": "factual",
+  "q": "What is the density in g/cm3 for Polypropylene PP-501?",
+  "answer": 1.401,
+  "needs": [
+   "U-MT-001"
+  ],
+  "title": "Polypropylene PP-501",
+  "key": "density"
+ },
+ {
+  "id": "u0271",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3010 is quoted on Electric Press EP-130. What is the machine cost in USD?",
+  "answer": 1344.7674,
+  "needs": [
+   "U-PT-010",
+   "U-MC-005"
+  ],
+  "titles": [
+   "Part PN-3010",
+   "Electric Press EP-130"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0272",
+  "family": "factual",
+  "q": "What is the freight cost in USD per kg for Packing PF-7?",
+  "answer": 1.41,
+  "needs": [
+   "U-FN-007"
+  ],
+  "title": "Packing PF-7",
+  "key": "freight_kg"
+ },
+ {
+  "id": "u0273",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3010 is quoted on Injection Press IP-80. What is the machine cost in USD?",
+  "answer": 1503.5597,
+  "needs": [
+   "U-PT-010",
+   "U-MC-000"
+  ],
+  "titles": [
+   "Part PN-3010",
+   "Injection Press IP-80"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0274",
+  "family": "factual",
+  "q": "What is the cycle time in seconds for Part PN-3006?",
+  "answer": 35.9,
+  "needs": [
+   "U-PT-006"
+  ],
+  "title": "Part PN-3006",
+  "key": "cycle_s"
+ },
+ {
+  "id": "u0275",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3009 is quoted on Toggle Press TP-120. What is the machine cost in USD?",
+  "answer": 1249.3247,
+  "needs": [
+   "U-PT-009",
+   "U-MC-004"
+  ],
+  "titles": [
+   "Part PN-3009",
+   "Toggle Press TP-120"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0276",
+  "family": "factual",
+  "q": "What is the freight cost in USD per kg for Packing PF-7?",
+  "answer": 1.41,
+  "needs": [
+   "U-FN-007"
+  ],
+  "title": "Packing PF-7",
+  "key": "freight_kg"
+ },
+ {
+  "id": "u0277",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3000 is quoted on Toggle Press TP-120. What is the machine cost in USD?",
+  "answer": 4713.5097,
+  "needs": [
+   "U-PT-000",
+   "U-MC-004"
+  ],
+  "titles": [
+   "Part PN-3000",
+   "Toggle Press TP-120"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0278",
+  "family": "factual",
+  "q": "What is the parts per carton for Packing PF-5?",
+  "answer": 166.0,
+  "needs": [
+   "U-FN-005"
+  ],
+  "title": "Packing PF-5",
+  "key": "per_carton"
+ },
+ {
+  "id": "u0279",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3011 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 9582.7333,
+  "needs": [
+   "U-PT-011",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3011",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0280",
+  "family": "factual",
+  "q": "What is the density in g/cm3 for Nylon PA6-507?",
+  "answer": 1.391,
+  "needs": [
+   "U-MT-007"
+  ],
+  "title": "Nylon PA6-507",
+  "key": "density"
+ },
+ {
+  "id": "u0281",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3000 is quoted on Toggle Press TP-150. What is the machine cost in USD?",
+  "answer": 6757.7833,
+  "needs": [
+   "U-PT-000",
+   "U-MC-007"
+  ],
+  "titles": [
+   "Part PN-3000",
+   "Toggle Press TP-150"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0282",
+  "family": "factual",
+  "q": "What is the parts per carton for Packing PF-3?",
+  "answer": 161.0,
+  "needs": [
+   "U-FN-003"
+  ],
+  "title": "Packing PF-3",
+  "key": "per_carton"
+ },
+ {
+  "id": "u0283",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3009 is quoted on Injection Press IP-80. What is the machine cost in USD?",
+  "answer": 1147.1382,
+  "needs": [
+   "U-PT-009",
+   "U-MC-000"
+  ],
+  "titles": [
+   "Part PN-3009",
+   "Injection Press IP-80"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0284",
+  "family": "factual",
+  "q": "What is the runner weight per shot in g for Part PN-3000?",
+  "answer": 12.5,
+  "needs": [
+   "U-PT-000"
+  ],
+  "title": "Part PN-3000",
+  "key": "runner_g"
+ },
+ {
+  "id": "u0285",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3009 is quoted on Toggle Press TP-150. What is the machine cost in USD?",
+  "answer": 895.5817,
+  "needs": [
+   "U-PT-009",
+   "U-MC-007"
+  ],
+  "titles": [
+   "Part PN-3009",
+   "Toggle Press TP-150"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0286",
+  "family": "factual",
+  "q": "What is the freight cost in USD per kg for Packing PF-5?",
+  "answer": 0.93,
+  "needs": [
+   "U-FN-005"
+  ],
+  "title": "Packing PF-5",
+  "key": "freight_kg"
+ },
+ {
+  "id": "u0287",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3003 is quoted on Injection Press IP-110. What is the machine cost in USD?",
+  "answer": 1224.96,
+  "needs": [
+   "U-PT-003",
+   "U-MC-003"
+  ],
+  "titles": [
+   "Part PN-3003",
+   "Injection Press IP-110"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0288",
+  "family": "factual",
+  "q": "What is the mould shrinkage in percent for ABS GP-505?",
+  "answer": 0.5,
+  "needs": [
+   "U-MT-005"
+  ],
+  "title": "ABS GP-505",
+  "key": "shrinkage"
+ },
+ {
+  "id": "u0289",
+  "family": "derived",
+  "q": "A run of 1000 shots of Part PN-3009 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 1176.3419,
+  "needs": [
+   "U-PT-009",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3009",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 1000
+  }
+ },
+ {
+  "id": "u0290",
+  "family": "factual",
+  "q": "What is the cycle time in seconds for Part PN-3003?",
+  "answer": 31.9,
+  "needs": [
+   "U-PT-003"
+  ],
+  "title": "Part PN-3003",
+  "key": "cycle_s"
+ },
+ {
+  "id": "u0291",
+  "family": "derived",
+  "q": "A run of 5000 shots of Part PN-3008 is quoted on Toggle Press TP-90. What is the machine cost in USD?",
+  "answer": 7862.7556,
+  "needs": [
+   "U-PT-008",
+   "U-MC-001"
+  ],
+  "titles": [
+   "Part PN-3008",
+   "Toggle Press TP-90"
+  ],
+  "given": {
+   "shots": 5000
+  }
+ },
+ {
+  "id": "u0292",
+  "family": "factual",
+  "q": "What is the setup allowance in hours for Injection Press IP-140?",
+  "answer": 2.11,
+  "needs": [
+   "U-MC-006"
+  ],
+  "title": "Injection Press IP-140",
+  "key": "setup_h"
+ },
+ {
+  "id": "u0293",
+  "family": "derived",
+  "q": "A run of 500 shots of Part PN-3011 is quoted on Electric Press EP-100. What is the machine cost in USD?",
+  "answer": 1073.6267,
+  "needs": [
+   "U-PT-011",
+   "U-MC-002"
+  ],
+  "titles": [
+   "Part PN-3011",
+   "Electric Press EP-100"
+  ],
+  "given": {
+   "shots": 500
+  }
+ },
+ {
+  "id": "u0294",
+  "family": "factual",
+  "q": "What is the freight cost in USD per kg for Packing PF-2?",
+  "answer": 0.54,
+  "needs": [
+   "U-FN-002"
+  ],
+  "title": "Packing PF-2",
+  "key": "freight_kg"
+ },
+ {
+  "id": "u0295",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3010 is quoted on Injection Press IP-140. What is the machine cost in USD?",
+  "answer": 1419.8931,
+  "needs": [
+   "U-PT-010",
+   "U-MC-006"
+  ],
+  "titles": [
+   "Part PN-3010",
+   "Injection Press IP-140"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0296",
+  "family": "factual",
+  "q": "What is the number of cavities for Part PN-3001?",
+  "answer": 16.0,
+  "needs": [
+   "U-PT-001"
+  ],
+  "title": "Part PN-3001",
+  "key": "cavities"
+ },
+ {
+  "id": "u0297",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3004 is quoted on Electric Press EP-100. What is the machine cost in USD?",
+  "answer": 5221.8861,
+  "needs": [
+   "U-PT-004",
+   "U-MC-002"
+  ],
+  "titles": [
+   "Part PN-3004",
+   "Electric Press EP-100"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ },
+ {
+  "id": "u0298",
+  "family": "factual",
+  "q": "What is the mould shrinkage in percent for ABS GP-500?",
+  "answer": 1.51,
+  "needs": [
+   "U-MT-000"
+  ],
+  "title": "ABS GP-500",
+  "key": "shrinkage"
+ },
+ {
+  "id": "u0299",
+  "family": "derived",
+  "q": "A run of 2500 shots of Part PN-3011 is quoted on Electric Press EP-130. What is the machine cost in USD?",
+  "answer": 3343.1667,
+  "needs": [
+   "U-PT-011",
+   "U-MC-005"
+  ],
+  "titles": [
+   "Part PN-3011",
+   "Electric Press EP-130"
+  ],
+  "given": {
+   "shots": 2500
+  }
+ }
+]

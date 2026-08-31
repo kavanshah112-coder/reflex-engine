@@ -1,0 +1,214 @@
+{
+ "Centrifugal Pump CP-100": {
+  "power_kw": 17.4,
+  "duty_h": 16,
+  "efficiency": 0.84,
+  "doc": "G-EQ-000"
+ },
+ "Booster Pump BP-101": {
+  "power_kw": 34.5,
+  "duty_h": 4,
+  "efficiency": 0.72,
+  "doc": "G-EQ-001"
+ },
+ "Vacuum Pump VP-102": {
+  "power_kw": 40.8,
+  "duty_h": 24,
+  "efficiency": 0.78,
+  "doc": "G-EQ-002"
+ },
+ "Chiller Unit CU-103": {
+  "power_kw": 34.8,
+  "duty_h": 4,
+  "efficiency": 0.78,
+  "doc": "G-EQ-003"
+ },
+ "Air Compressor AC-104": {
+  "power_kw": 42.5,
+  "duty_h": 12,
+  "efficiency": 0.84,
+  "doc": "G-EQ-004"
+ },
+ "Centrifugal Pump CP-105": {
+  "power_kw": 17.2,
+  "duty_h": 24,
+  "efficiency": 0.9,
+  "doc": "G-EQ-005"
+ },
+ "Booster Pump BP-106": {
+  "power_kw": 37.9,
+  "duty_h": 16,
+  "efficiency": 0.84,
+  "doc": "G-EQ-006"
+ },
+ "Vacuum Pump VP-107": {
+  "power_kw": 36.9,
+  "duty_h": 4,
+  "efficiency": 0.84,
+  "doc": "G-EQ-007"
+ },
+ "Chiller Unit CU-108": {
+  "power_kw": 6.9,
+  "duty_h": 24,
+  "efficiency": 0.9,
+  "doc": "G-EQ-008"
+ },
+ "Air Compressor AC-109": {
+  "power_kw": 34.0,
+  "duty_h": 4,
+  "efficiency": 0.72,
+  "doc": "G-EQ-009"
+ },
+ "Centrifugal Pump CP-110": {
+  "power_kw": 23.9,
+  "duty_h": 12,
+  "efficiency": 0.78,
+  "doc": "G-EQ-010"
+ },
+ "Booster Pump BP-111": {
+  "power_kw": 9.0,
+  "duty_h": 8,
+  "efficiency": 0.9,
+  "doc": "G-EQ-011"
+ },
+ "Tariff Northland S0": {
+  "rate": 0.1588,
+  "standing": 9.74,
+  "doc": "G-TF-000"
+ },
+ "Tariff Eastport S1": {
+  "rate": 0.1097,
+  "standing": 32.97,
+  "doc": "G-TF-001"
+ },
+ "Tariff Southgate S2": {
+  "rate": 0.1777,
+  "standing": 19.18,
+  "doc": "G-TF-002"
+ },
+ "Tariff Westmere S3": {
+  "rate": 0.3039,
+  "standing": 19.07,
+  "doc": "G-TF-003"
+ },
+ "Tariff Northland S4": {
+  "rate": 0.1632,
+  "standing": 28.57,
+  "doc": "G-TF-004"
+ },
+ "Tariff Eastport S5": {
+  "rate": 0.1659,
+  "standing": 40.36,
+  "doc": "G-TF-005"
+ },
+ "Tariff Southgate S6": {
+  "rate": 0.1169,
+  "standing": 18.99,
+  "doc": "G-TF-006"
+ },
+ "Tariff Westmere S7": {
+  "rate": 0.2419,
+  "standing": 35.83,
+  "doc": "G-TF-007"
+ },
+ "Invoice 9000": {
+  "qty": 191,
+  "unit_price": 304.35,
+  "doc": "G-IN-000"
+ },
+ "Invoice 9001": {
+  "qty": 177,
+  "unit_price": 201.95,
+  "doc": "G-IN-001"
+ },
+ "Invoice 9002": {
+  "qty": 78,
+  "unit_price": 332.65,
+  "doc": "G-IN-002"
+ },
+ "Invoice 9003": {
+  "qty": 26,
+  "unit_price": 4.44,
+  "doc": "G-IN-003"
+ },
+ "Invoice 9004": {
+  "qty": 182,
+  "unit_price": 163.29,
+  "doc": "G-IN-004"
+ },
+ "Invoice 9005": {
+  "qty": 52,
+  "unit_price": 288.89,
+  "doc": "G-IN-005"
+ },
+ "Invoice 9006": {
+  "qty": 6,
+  "unit_price": 195.02,
+  "doc": "G-IN-006"
+ },
+ "Invoice 9007": {
+  "qty": 18,
+  "unit_price": 100.14,
+  "doc": "G-IN-007"
+ },
+ "Invoice 9008": {
+  "qty": 217,
+  "unit_price": 194.25,
+  "doc": "G-IN-008"
+ },
+ "Invoice 9009": {
+  "qty": 74,
+  "unit_price": 67.08,
+  "doc": "G-IN-009"
+ },
+ "Invoice 9010": {
+  "qty": 11,
+  "unit_price": 262.78,
+  "doc": "G-IN-010"
+ },
+ "Invoice 9011": {
+  "qty": 220,
+  "unit_price": 304.13,
+  "doc": "G-IN-011"
+ },
+ "Service SS-0": {
+  "interval_h": 2000,
+  "labour": 50.07,
+  "doc": "G-SV-000"
+ },
+ "Service SS-1": {
+  "interval_h": 4000,
+  "labour": 98.75,
+  "doc": "G-SV-001"
+ },
+ "Service SS-2": {
+  "interval_h": 1000,
+  "labour": 63.96,
+  "doc": "G-SV-002"
+ },
+ "Service SS-3": {
+  "interval_h": 500,
+  "labour": 102.41,
+  "doc": "G-SV-003"
+ },
+ "Service SS-4": {
+  "interval_h": 1000,
+  "labour": 47.17,
+  "doc": "G-SV-004"
+ },
+ "Service SS-5": {
+  "interval_h": 4000,
+  "labour": 97.32,
+  "doc": "G-SV-005"
+ },
+ "Service SS-6": {
+  "interval_h": 2000,
+  "labour": 64.04,
+  "doc": "G-SV-006"
+ },
+ "Service SS-7": {
+  "interval_h": 4000,
+  "labour": 138.68,
+  "doc": "G-SV-007"
+ }
+}

@@ -1,0 +1,7 @@
+{
+ "model": "claude-haiku-4-5",
+ "system": "",
+ "prompt": "Use ONLY these documents to answer.\n\n[U-FN-006 v1, valid 2026-01-01..2027-12-31]\nPACKING AND FREIGHT SHEET PF-6\nParts per carton: 151\nFreight cost: 1.79 USD per kg\n\n[U-FN-004 v1, valid 2026-01-01..2027-12-31]\nPACKING AND FREIGHT SHEET PF-4\nParts per carton: 221\nFreight cost: 2.9 USD per kg\n\n[U-FN-007 v1, valid 2026-01-01..2027-12-31]\nPACKING AND FREIGHT SHEET PF-7\nParts per carton: 36\nFreight cost: 1.41 USD per kg\n\n[U-FN-002 v1, valid 2026-01-01..2027-12-31]\nPACKING AND FREIGHT SHEET PF-2\nParts per carton: 51\nFreight cost: 0.54 USD per kg\n\n[U-FN-005 v1, valid 2026-01-01..2027-12-31]\nPACKING AND FREIGHT SHEET PF-5\nParts per carton: 166\nFreight cost: 0.93 USD per kg\n\n[U-FN-003 v1, valid 2026-01-01..2027-12-31]\nPACKING AND FREIGHT SHEET PF-3\nParts per carton: 161\nFreight cost: 1.58 USD per kg\n\nQUESTION: What is the parts per carton for Packing PF-6?\n\nReply with ONLY the final number, no words, no units.",
+ "max_tokens": 32,
+ "queued_at": 1788190278.6122458
+}

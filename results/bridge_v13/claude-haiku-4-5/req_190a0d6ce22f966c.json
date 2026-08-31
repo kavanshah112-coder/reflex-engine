@@ -1,0 +1,7 @@
+{
+ "model": "claude-haiku-4-5",
+ "system": "",
+ "prompt": "Use ONLY these documents to answer.\n\n[G-TF-000 v2, valid 2026-01-01..2026-12-31]\nELECTRICITY TARIFF - Northland - Schedule 0\nEnergy rate: 0.1588 USD per kWh\nStanding charge: 9.74 USD per month\n\n[G-TF-007 v2, valid 2026-01-01..2026-12-31]\nELECTRICITY TARIFF - Westmere - Schedule 7\nEnergy rate: 0.2419 USD per kWh\nStanding charge: 35.83 USD per month\n\n[G-TF-005 v2, valid 2026-01-01..2026-12-31]\nELECTRICITY TARIFF - Eastport - Schedule 5\nEnergy rate: 0.1659 USD per kWh\nStanding charge: 40.36 USD per month\n\n[G-TF-003 v2, valid 2026-01-01..2026-12-31]\nELECTRICITY TARIFF - Westmere - Schedule 3\nEnergy rate: 0.3039 USD per kWh\nStanding charge: 19.07 USD per month\n\n[G-TF-001 v2, valid 2026-01-01..2026-12-31]\nELECTRICITY TARIFF - Eastport - Schedule 1\nEnergy rate: 0.1097 USD per kWh\nStanding charge: 32.97 USD per month\n\n[G-TF-004 v2, valid 2026-01-01..2026-12-31]\nELECTRICITY TARIFF - Northland - Schedule 4\nEnergy rate: 0.1632 USD per kWh\nStanding charge: 28.57 USD per month\n\nQUESTION: What is the standing charge per month in USD for Tariff Northland S0?\n\nReply with ONLY the final number, no words, no units.",
+ "max_tokens": 32,
+ "queued_at": 1788190258.965575
+}

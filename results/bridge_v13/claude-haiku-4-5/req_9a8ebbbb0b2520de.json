@@ -1,0 +1,7 @@
+{
+ "model": "claude-haiku-4-5",
+ "system": "",
+ "prompt": "Use ONLY these documents to answer.\n\n[G-EQ-004 v1, valid 2025-01-01..2027-12-31]\nEQUIPMENT SPECIFICATION - Air Compressor AC-104\nRated power: 42.5 kW\nNominal duty: 12 hours per day\nDrive efficiency: 0.84\nInstalled at the Northland site.\n\n[G-EQ-009 v1, valid 2025-01-01..2027-12-31]\nEQUIPMENT SPECIFICATION - Air Compressor AC-109\nRated power: 34.0 kW\nNominal duty: 4 hours per day\nDrive efficiency: 0.72\nInstalled at the Eastport site.\n\n[G-EQ-002 v1, valid 2025-01-01..2027-12-31]\nEQUIPMENT SPECIFICATION - Vacuum Pump VP-102\nRated power: 40.8 kW\nNominal duty: 24 hours per day\nDrive efficiency: 0.78\nInstalled at the Southgate site.\n\n[G-TF-006 v2, valid 2026-01-01..2026-12-31]\nELECTRICITY TARIFF - Southgate - Schedule 6\nEnergy rate: 0.1169 USD per kWh\nStanding charge: 18.99 USD per month\n\n[G-EQ-006 v1, valid 2025-01-01..2027-12-31]\nEQUIPMENT SPECIFICATION - Booster Pump BP-106\nRated power: 37.9 kW\nNominal duty: 16 hours per day\nDrive efficiency: 0.84\nInstalled at the Southgate site.\n\n[G-EQ-010 v1, valid 2025-01-01..2027-12-31]\nEQUIPMENT SPECIFICATION - Centrifugal Pump CP-110\nRated power: 23.9 kW\nNominal duty: 12 hours per day\nDrive efficiency: 0.78\nInstalled at the Southgate site.\n\nQUESTION: The Air Compressor AC-104 runs its nominal daily duty for 22 days. Priced on Tariff Southgate S6, what is the energy cost in USD?\n\nReply with ONLY the final number, no words, no units.",
+ "max_tokens": 32,
+ "queued_at": 1788191244.384865
+}

@@ -1,0 +1,36 @@
+{
+ "corpus": "user",
+ "arm": "r1",
+ "model": "claude-haiku-4-5",
+ "n": 120,
+ "topk": 6,
+ "status": {
+  "retrieval_hit": 117,
+  "answered": 30,
+  "correct": 14,
+  "pending": 90,
+  "retrieval_miss": 3,
+  "WRONG": 16
+ },
+ "served": 30,
+ "coverage": 0.25,
+ "accuracy_of_served": 0.4667,
+ "wrong_rate_of_served": 0.5333,
+ "retrieval_recall": 0.975,
+ "by_family": {
+  "factual": {
+   "n": 60,
+   "served": 30,
+   "correct": 14,
+   "WRONG": 16
+  },
+  "derived": {
+   "n": 60,
+   "served": 0,
+   "correct": 0,
+   "WRONG": 0
+  }
+ },
+ "token_source": "synthetic-bridge",
+ "bridge_pending": 327
+}

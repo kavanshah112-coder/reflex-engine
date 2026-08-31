@@ -1,0 +1,7 @@
+{
+ "model": "claude-haiku-4-5",
+ "system": "",
+ "prompt": "Use ONLY these documents to answer.\n\n[G-IN-002 v1, valid 2026-02-01..2027-02-01]\nINVOICE 9002\nLine 1: Filter cartridge FC-202\nQuantity: 78 units\nUnit price: 332.65 USD\n\n[G-IN-006 v1, valid 2026-02-01..2027-02-01]\nINVOICE 9006\nLine 1: Filter cartridge FC-206\nQuantity: 6 units\nUnit price: 195.02 USD\n\n[G-IN-011 v1, valid 2026-02-01..2027-02-01]\nINVOICE 9011\nLine 1: Filter cartridge FC-211\nQuantity: 220 units\nUnit price: 304.13 USD\n\n[G-IN-008 v1, valid 2026-02-01..2027-02-01]\nINVOICE 9008\nLine 1: Filter cartridge FC-208\nQuantity: 217 units\nUnit price: 194.25 USD\n\n[G-IN-004 v1, valid 2026-02-01..2027-02-01]\nINVOICE 9004\nLine 1: Filter cartridge FC-204\nQuantity: 182 units\nUnit price: 163.29 USD\n\n[G-IN-000 v1, valid 2026-02-01..2027-02-01]\nINVOICE 9000\nLine 1: Filter cartridge FC-200\nQuantity: 191 units\nUnit price: 304.35 USD\n\nVERIFIED VALUES (certified by a deterministic engine; these supersede anything above):\n  qty = 78.0  [G-IN-002]\n  unit_price = 332.65  [G-IN-002]\n  qty = 6.0  [G-IN-006]\n  unit_price = 195.02  [G-IN-006]\n  qty = 220.0  [G-IN-011]\n  unit_price = 304.13  [G-IN-011]\n  qty = 217.0  [G-IN-008]\n  unit_price = 194.25  [G-IN-008]\n  qty = 182.0  [G-IN-004]\n  unit_price = 163.29  [G-IN-004]\n  qty = 191.0  [G-IN-000]\n  unit_price = 304.35  [G-IN-000]\n\nQUESTION: What is the unit price in USD for Invoice 9002?\n\nReply with ONLY the final number, no words, no units.",
+ "max_tokens": 32,
+ "queued_at": 1788190265.472308
+}

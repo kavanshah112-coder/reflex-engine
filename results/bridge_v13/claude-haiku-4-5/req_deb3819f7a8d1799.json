@@ -1,0 +1,7 @@
+{
+ "model": "claude-haiku-4-5",
+ "system": "",
+ "prompt": "Use ONLY these documents to answer.\n\n[U-PT-001 v1, valid 2026-03-01..2027-12-31]\nPART SPECIFICATION - Part PN-3001\nShot weight per part: 36.1 g\nCavities in tool: 16\nCycle time: 18.3 seconds\nRunner weight per shot: 3.8 g\n\n[U-ST-004 v3, valid 2024-01-01..2025-06-30]\nREVISION (EXPIRED) - Injection Press IP-140\nrate_h: 65.983\n\n[U-MC-000 v1, valid 2026-01-01..2027-12-31]\nMACHINE RATE CARD - Injection Press IP-80\nClamping force: 250 tonnes\nHourly rate: 43.13 USD per hour\nSetup allowance: 2.28 hours\n\n[U-MC-006 v1, valid 2026-01-01..2027-12-31]\nMACHINE RATE CARD - Injection Press IP-140\nClamping force: 80 tonnes\nHourly rate: 81.46 USD per hour\nSetup allowance: 2.11 hours\n\n[U-PT-003 v1, valid 2026-03-01..2027-12-31]\nPART SPECIFICATION - Part PN-3003\nShot weight per part: 237.9 g\nCavities in tool: 16\nCycle time: 31.9 seconds\nRunner weight per shot: 5.4 g\n\n[U-PT-009 v1, valid 2026-03-01..2027-12-31]\nPART SPECIFICATION - Part PN-3009\nShot weight per part: 13.8 g\nCavities in tool: 1\nCycle time: 38.3 seconds\nRunner weight per shot: 9.4 g\n\nQUESTION: A run of 500 shots of Part PN-3001 is quoted on Injection Press IP-140. What is the machine cost in USD?\n\nReply with ONLY the final number, no words, no units.",
+ "max_tokens": 32,
+ "queued_at": 1788191252.412617
+}

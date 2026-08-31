@@ -1,0 +1,7 @@
+{
+ "model": "claude-haiku-4-5",
+ "system": "",
+ "prompt": "Use ONLY these documents to answer.\n\n[U-MC-002 v1, valid 2026-01-01..2027-12-31]\nMACHINE RATE CARD - Electric Press EP-100\nClamping force: 180 tonnes\nHourly rate: 123.88 USD per hour\nSetup allowance: 0.97 hours\n\n[U-MC-005 v1, valid 2026-01-01..2027-12-31]\nMACHINE RATE CARD - Electric Press EP-130\nClamping force: 350 tonnes\nHourly rate: 77.15 USD per hour\nSetup allowance: 1.3 hours\n\n[U-MC-000 v1, valid 2026-01-01..2027-12-31]\nMACHINE RATE CARD - Injection Press IP-80\nClamping force: 250 tonnes\nHourly rate: 43.13 USD per hour\nSetup allowance: 2.28 hours\n\n[U-MC-001 v1, valid 2026-01-01..2027-12-31]\nMACHINE RATE CARD - Toggle Press TP-90\nClamping force: 120 tonnes\nHourly rate: 110.57 USD per hour\nSetup allowance: 2.52 hours\n\n[U-MC-003 v1, valid 2026-01-01..2027-12-31]\nMACHINE RATE CARD - Injection Press IP-110\nClamping force: 180 tonnes\nHourly rate: 138.24 USD per hour\nSetup allowance: 3.54 hours\n\n[U-MC-006 v1, valid 2026-01-01..2027-12-31]\nMACHINE RATE CARD - Injection Press IP-140\nClamping force: 80 tonnes\nHourly rate: 81.46 USD per hour\nSetup allowance: 2.11 hours\n\nQUESTION: What is the clamping force in tonnes for Electric Press EP-100?\n\nReply with ONLY the final number, no words, no units.",
+ "max_tokens": 32,
+ "queued_at": 1788190278.6706092
+}

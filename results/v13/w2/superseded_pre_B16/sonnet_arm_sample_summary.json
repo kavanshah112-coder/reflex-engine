@@ -1,0 +1,27 @@
+{
+ "tag": "sonnet_arm_sample",
+ "model": "claude-sonnet-5",
+ "n": 300,
+ "token_source": "synthetic-bridge",
+ "status": {
+  "corroboration_mismatch": 12,
+  "certified": 209,
+  "correct": 206,
+  "verification_failed": 30,
+  "model_refused": 49,
+  "WRONG": 3
+ },
+ "first_failing_check": {
+  "nondegenerate": 4,
+  "agreement": 23,
+  "roundtrip": 3
+ },
+ "bridge_pending": 0,
+ "adapter": {
+  "adapter": "anthropic_bridge",
+  "calls": 880,
+  "tokens_in": 235082,
+  "tokens_out": 105640
+ },
+ "wall_s": 6
+}

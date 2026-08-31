@@ -1,0 +1,168 @@
+{
+ "mode": "repeat",
+ "n": 3000,
+ "design": "preloaded-transfer",
+ "corpus_verified_plans": 203,
+ "schemas_preloaded": 203,
+ "schemas_from_wrong_solves": 2,
+ "threshold": 0.62,
+ "min_conf": 2,
+ "status": {
+  "escalated": 2994,
+  "cache_served": 6,
+  "CACHE_WRONG": 6
+ },
+ "cache_hit_rate": 0.002,
+ "cache_accuracy": 0.0,
+ "wrong_fire_rate": 1.0,
+ "rejected_first_check": {},
+ "cache": {
+  "schemas": 203,
+  "pending_signatures": 66,
+  "total_hits": 6,
+  "top": [
+   {
+    "sig": "sub(count,count)",
+    "hits": 6,
+    "q": "For a party Janet bought some cupcakes. She bought 2 chocolate, 13 van"
+   },
+   {
+    "sig": "add(count,count)",
+    "hits": 0,
+    "q": "Allan brought two balloons and Jake brought four balloons to the park."
+   },
+   {
+    "sig": "add(count,count)",
+    "hits": 0,
+    "q": "David has zero fewer apples than Marin. Marin has three apples. How ma"
+   },
+   {
+    "sig": "add(count,count)",
+    "hits": 0,
+    "q": "2 birds were sitting on the fence. 4 more birds came to join them. How"
+   },
+   {
+    "sig": "sub(count,count)",
+    "hits": 0,
+    "q": "You have collected 7 crickets. How many more crickets do you need to c"
+   },
+   {
+    "sig": "sub(count,count)",
+    "hits": 0,
+    "q": "4 birds are sitting on a branch. 1 flies away. How many birds are left"
+   },
+   {
+    "sig": "add(count,count)",
+    "hits": 0,
+    "q": "3 owls were sitting on the fence. 2 more owls joined them. How many ow"
+   },
+   {
+    "sig": "add(count,count)|add(derived,count)",
+    "hits": 0,
+    "q": "Mrs. Hilt's favorite first grade classes are baking muffins. Mrs. Brie"
+   },
+   {
+    "sig": "add(count,count)|add(derived,count)",
+    "hits": 0,
+    "q": "Mrs. Hilt ran 3 miles on Monday, 2 miles on Wednesday, and 7 miles on "
+   },
+   {
+    "sig": "sub(count,count)",
+    "hits": 0,
+    "q": "Mrs. Hilt picked up a book that has 17 pages in it. She read 11 of the"
+   }
+  ]
+ },
+ "curve": [
+  {
+   "n": 200,
+   "served": 1,
+   "wrong": 1,
+   "schemas": 203
+  },
+  {
+   "n": 400,
+   "served": 1,
+   "wrong": 1,
+   "schemas": 203
+  },
+  {
+   "n": 600,
+   "served": 1,
+   "wrong": 1,
+   "schemas": 203
+  },
+  {
+   "n": 800,
+   "served": 1,
+   "wrong": 1,
+   "schemas": 203
+  },
+  {
+   "n": 1000,
+   "served": 1,
+   "wrong": 1,
+   "schemas": 203
+  },
+  {
+   "n": 1200,
+   "served": 1,
+   "wrong": 1,
+   "schemas": 203
+  },
+  {
+   "n": 1400,
+   "served": 1,
+   "wrong": 1,
+   "schemas": 203
+  },
+  {
+   "n": 1600,
+   "served": 2,
+   "wrong": 2,
+   "schemas": 203
+  },
+  {
+   "n": 1800,
+   "served": 2,
+   "wrong": 2,
+   "schemas": 203
+  },
+  {
+   "n": 2000,
+   "served": 3,
+   "wrong": 3,
+   "schemas": 203
+  },
+  {
+   "n": 2200,
+   "served": 4,
+   "wrong": 4,
+   "schemas": 203
+  },
+  {
+   "n": 2400,
+   "served": 4,
+   "wrong": 4,
+   "schemas": 203
+  },
+  {
+   "n": 2600,
+   "served": 4,
+   "wrong": 4,
+   "schemas": 203
+  },
+  {
+   "n": 2800,
+   "served": 6,
+   "wrong": 6,
+   "schemas": 203
+  },
+  {
+   "n": 3000,
+   "served": 6,
+   "wrong": 6,
+   "schemas": 203
+  }
+ ]
+}

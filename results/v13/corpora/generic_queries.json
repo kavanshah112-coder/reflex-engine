@@ -1,0 +1,4202 @@
+[
+ {
+  "id": "g0000",
+  "family": "factual",
+  "q": "What is the service interval in operating hours for Service SS-7?",
+  "answer": 4000.0,
+  "needs": [
+   "G-SV-007"
+  ],
+  "title": "Service SS-7",
+  "key": "interval_h"
+ },
+ {
+  "id": "g0001",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-105 runs its nominal daily duty for 30 days. Priced on Tariff Westmere S3, what is the energy cost in USD?",
+  "answer": 3763.4976,
+  "needs": [
+   "G-EQ-005",
+   "G-TF-003"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-105",
+   "Tariff Westmere S3"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0002",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9007?",
+  "answer": 18.0,
+  "needs": [
+   "G-IN-007"
+  ],
+  "title": "Invoice 9007",
+  "key": "qty"
+ },
+ {
+  "id": "g0003",
+  "family": "derived",
+  "q": "The Booster Pump BP-106 runs its nominal daily duty for 22 days. Priced on Tariff Northland S4, what is the energy cost in USD?",
+  "answer": 2177.2186,
+  "needs": [
+   "G-EQ-006",
+   "G-TF-004"
+  ],
+  "titles": [
+   "Booster Pump BP-106",
+   "Tariff Northland S4"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0004",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9000?",
+  "answer": 191.0,
+  "needs": [
+   "G-IN-000"
+  ],
+  "title": "Invoice 9000",
+  "key": "qty"
+ },
+ {
+  "id": "g0005",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-102 runs its nominal daily duty for 30 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 5220.1152,
+  "needs": [
+   "G-EQ-002",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Vacuum Pump VP-102",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0006",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9007?",
+  "answer": 18.0,
+  "needs": [
+   "G-IN-007"
+  ],
+  "title": "Invoice 9007",
+  "key": "qty"
+ },
+ {
+  "id": "g0007",
+  "family": "derived",
+  "q": "The Air Compressor AC-104 runs its nominal daily duty for 30 days. Priced on Tariff Eastport S5, what is the energy cost in USD?",
+  "answer": 2538.27,
+  "needs": [
+   "G-EQ-004",
+   "G-TF-005"
+  ],
+  "titles": [
+   "Air Compressor AC-104",
+   "Tariff Eastport S5"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0008",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9003?",
+  "answer": 4.44,
+  "needs": [
+   "G-IN-003"
+  ],
+  "title": "Invoice 9003",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0009",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-102 runs its nominal daily duty for 22 days. Priced on Tariff Eastport S5, what is the energy cost in USD?",
+  "answer": 3573.8842,
+  "needs": [
+   "G-EQ-002",
+   "G-TF-005"
+  ],
+  "titles": [
+   "Vacuum Pump VP-102",
+   "Tariff Eastport S5"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0010",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9010?",
+  "answer": 11.0,
+  "needs": [
+   "G-IN-010"
+  ],
+  "title": "Invoice 9010",
+  "key": "qty"
+ },
+ {
+  "id": "g0011",
+  "family": "derived",
+  "q": "The Air Compressor AC-104 runs its nominal daily duty for 22 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 1781.736,
+  "needs": [
+   "G-EQ-004",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Air Compressor AC-104",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0012",
+  "family": "factual",
+  "q": "What is the standing charge per month in USD for Tariff Southgate S2?",
+  "answer": 19.18,
+  "needs": [
+   "G-TF-002"
+  ],
+  "title": "Tariff Southgate S2",
+  "key": "standing"
+ },
+ {
+  "id": "g0013",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-100 runs its nominal daily duty for 22 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 1088.377,
+  "needs": [
+   "G-EQ-000",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-100",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0014",
+  "family": "factual",
+  "q": "What is the labour rate in USD per hour for Service SS-7?",
+  "answer": 138.68,
+  "needs": [
+   "G-SV-007"
+  ],
+  "title": "Service SS-7",
+  "key": "labour"
+ },
+ {
+  "id": "g0015",
+  "family": "derived",
+  "q": "The Booster Pump BP-111 runs its nominal daily duty for 22 days. Priced on Tariff Eastport S5, what is the energy cost in USD?",
+  "answer": 262.7856,
+  "needs": [
+   "G-EQ-011",
+   "G-TF-005"
+  ],
+  "titles": [
+   "Booster Pump BP-111",
+   "Tariff Eastport S5"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0016",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9004?",
+  "answer": 163.29,
+  "needs": [
+   "G-IN-004"
+  ],
+  "title": "Invoice 9004",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0017",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-105 runs its nominal daily duty for 22 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 1613.8003,
+  "needs": [
+   "G-EQ-005",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-105",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0018",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9003?",
+  "answer": 26.0,
+  "needs": [
+   "G-IN-003"
+  ],
+  "title": "Invoice 9003",
+  "key": "qty"
+ },
+ {
+  "id": "g0019",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-110 runs its nominal daily duty for 20 days. Priced on Tariff Northland S4, what is the energy cost in USD?",
+  "answer": 936.1152,
+  "needs": [
+   "G-EQ-010",
+   "G-TF-004"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-110",
+   "Tariff Northland S4"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0020",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9002?",
+  "answer": 332.65,
+  "needs": [
+   "G-IN-002"
+  ],
+  "title": "Invoice 9002",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0021",
+  "family": "derived",
+  "q": "The Air Compressor AC-109 runs its nominal daily duty for 20 days. Priced on Tariff Southgate S6, what is the energy cost in USD?",
+  "answer": 317.968,
+  "needs": [
+   "G-EQ-009",
+   "G-TF-006"
+  ],
+  "titles": [
+   "Air Compressor AC-109",
+   "Tariff Southgate S6"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0022",
+  "family": "factual",
+  "q": "What is the standing charge per month in USD for Tariff Northland S0?",
+  "answer": 9.74,
+  "needs": [
+   "G-TF-000"
+  ],
+  "title": "Tariff Northland S0",
+  "key": "standing"
+ },
+ {
+  "id": "g0023",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-110 runs its nominal daily duty for 20 days. Priced on Tariff Westmere S7, what is the energy cost in USD?",
+  "answer": 1387.5384,
+  "needs": [
+   "G-EQ-010",
+   "G-TF-007"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-110",
+   "Tariff Westmere S7"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0024",
+  "family": "factual",
+  "q": "What is the drive efficiency for Centrifugal Pump CP-105?",
+  "answer": 0.9,
+  "needs": [
+   "G-EQ-005"
+  ],
+  "title": "Centrifugal Pump CP-105",
+  "key": "efficiency"
+ },
+ {
+  "id": "g0025",
+  "family": "derived",
+  "q": "The Air Compressor AC-104 runs its nominal daily duty for 20 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 1812.54,
+  "needs": [
+   "G-EQ-004",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Air Compressor AC-104",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0026",
+  "family": "factual",
+  "q": "What is the standing charge per month in USD for Tariff Southgate S2?",
+  "answer": 19.18,
+  "needs": [
+   "G-TF-002"
+  ],
+  "title": "Tariff Southgate S2",
+  "key": "standing"
+ },
+ {
+  "id": "g0027",
+  "family": "derived",
+  "q": "The Chiller Unit CU-108 runs its nominal daily duty for 20 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 525.9456,
+  "needs": [
+   "G-EQ-008",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Chiller Unit CU-108",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0028",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9011?",
+  "answer": 304.13,
+  "needs": [
+   "G-IN-011"
+  ],
+  "title": "Invoice 9011",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0029",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-100 runs its nominal daily duty for 30 days. Priced on Tariff Westmere S3, what is the energy cost in USD?",
+  "answer": 2538.1728,
+  "needs": [
+   "G-EQ-000",
+   "G-TF-003"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-100",
+   "Tariff Westmere S3"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0030",
+  "family": "factual",
+  "q": "What is the labour rate in USD per hour for Service SS-7?",
+  "answer": 138.68,
+  "needs": [
+   "G-SV-007"
+  ],
+  "title": "Service SS-7",
+  "key": "labour"
+ },
+ {
+  "id": "g0031",
+  "family": "derived",
+  "q": "The Air Compressor AC-109 runs its nominal daily duty for 20 days. Priced on Tariff Eastport S1, what is the energy cost in USD?",
+  "answer": 298.384,
+  "needs": [
+   "G-EQ-009",
+   "G-TF-001"
+  ],
+  "titles": [
+   "Air Compressor AC-109",
+   "Tariff Eastport S1"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0032",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9002?",
+  "answer": 332.65,
+  "needs": [
+   "G-IN-002"
+  ],
+  "title": "Invoice 9002",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0033",
+  "family": "derived",
+  "q": "The Booster Pump BP-101 runs its nominal daily duty for 30 days. Priced on Tariff Westmere S3, what is the energy cost in USD?",
+  "answer": 1258.146,
+  "needs": [
+   "G-EQ-001",
+   "G-TF-003"
+  ],
+  "titles": [
+   "Booster Pump BP-101",
+   "Tariff Westmere S3"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0034",
+  "family": "factual",
+  "q": "What is the labour rate in USD per hour for Service SS-5?",
+  "answer": 97.32,
+  "needs": [
+   "G-SV-005"
+  ],
+  "title": "Service SS-5",
+  "key": "labour"
+ },
+ {
+  "id": "g0035",
+  "family": "derived",
+  "q": "The Chiller Unit CU-103 runs its nominal daily duty for 20 days. Priced on Tariff Eastport S1, what is the energy cost in USD?",
+  "answer": 305.4048,
+  "needs": [
+   "G-EQ-003",
+   "G-TF-001"
+  ],
+  "titles": [
+   "Chiller Unit CU-103",
+   "Tariff Eastport S1"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0036",
+  "family": "factual",
+  "q": "What is the standing charge per month in USD for Tariff Eastport S1?",
+  "answer": 32.97,
+  "needs": [
+   "G-TF-001"
+  ],
+  "title": "Tariff Eastport S1",
+  "key": "standing"
+ },
+ {
+  "id": "g0037",
+  "family": "derived",
+  "q": "The Chiller Unit CU-103 runs its nominal daily duty for 22 days. Priced on Tariff Eastport S5, what is the energy cost in USD?",
+  "answer": 508.0522,
+  "needs": [
+   "G-EQ-003",
+   "G-TF-005"
+  ],
+  "titles": [
+   "Chiller Unit CU-103",
+   "Tariff Eastport S5"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0038",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9009?",
+  "answer": 67.08,
+  "needs": [
+   "G-IN-009"
+  ],
+  "title": "Invoice 9009",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0039",
+  "family": "derived",
+  "q": "The Air Compressor AC-109 runs its nominal daily duty for 30 days. Priced on Tariff Westmere S3, what is the energy cost in USD?",
+  "answer": 1239.912,
+  "needs": [
+   "G-EQ-009",
+   "G-TF-003"
+  ],
+  "titles": [
+   "Air Compressor AC-109",
+   "Tariff Westmere S3"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0040",
+  "family": "factual",
+  "q": "What is the service interval in operating hours for Service SS-5?",
+  "answer": 4000.0,
+  "needs": [
+   "G-SV-005"
+  ],
+  "title": "Service SS-5",
+  "key": "interval_h"
+ },
+ {
+  "id": "g0041",
+  "family": "derived",
+  "q": "The Chiller Unit CU-103 runs its nominal daily duty for 20 days. Priced on Tariff Northland S4, what is the energy cost in USD?",
+  "answer": 454.3488,
+  "needs": [
+   "G-EQ-003",
+   "G-TF-004"
+  ],
+  "titles": [
+   "Chiller Unit CU-103",
+   "Tariff Northland S4"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0042",
+  "family": "factual",
+  "q": "What is the standing charge per month in USD for Tariff Eastport S1?",
+  "answer": 32.97,
+  "needs": [
+   "G-TF-001"
+  ],
+  "title": "Tariff Eastport S1",
+  "key": "standing"
+ },
+ {
+  "id": "g0043",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-100 runs its nominal daily duty for 20 days. Priced on Tariff Northland S4, what is the energy cost in USD?",
+  "answer": 908.6976,
+  "needs": [
+   "G-EQ-000",
+   "G-TF-004"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-100",
+   "Tariff Northland S4"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0044",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9007?",
+  "answer": 100.14,
+  "needs": [
+   "G-IN-007"
+  ],
+  "title": "Invoice 9007",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0045",
+  "family": "derived",
+  "q": "The Booster Pump BP-106 runs its nominal daily duty for 20 days. Priced on Tariff Westmere S7, what is the energy cost in USD?",
+  "answer": 2933.7632,
+  "needs": [
+   "G-EQ-006",
+   "G-TF-007"
+  ],
+  "titles": [
+   "Booster Pump BP-106",
+   "Tariff Westmere S7"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0046",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9004?",
+  "answer": 182.0,
+  "needs": [
+   "G-IN-004"
+  ],
+  "title": "Invoice 9004",
+  "key": "qty"
+ },
+ {
+  "id": "g0047",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-102 runs its nominal daily duty for 30 days. Priced on Tariff Eastport S1, what is the energy cost in USD?",
+  "answer": 3222.5472,
+  "needs": [
+   "G-EQ-002",
+   "G-TF-001"
+  ],
+  "titles": [
+   "Vacuum Pump VP-102",
+   "Tariff Eastport S1"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0048",
+  "family": "factual",
+  "q": "What is the standing charge per month in USD for Tariff Westmere S7?",
+  "answer": 35.83,
+  "needs": [
+   "G-TF-007"
+  ],
+  "title": "Tariff Westmere S7",
+  "key": "standing"
+ },
+ {
+  "id": "g0049",
+  "family": "derived",
+  "q": "The Booster Pump BP-101 runs its nominal daily duty for 20 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 438.288,
+  "needs": [
+   "G-EQ-001",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Booster Pump BP-101",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0050",
+  "family": "factual",
+  "q": "What is the rated power in kW for Chiller Unit CU-103?",
+  "answer": 34.8,
+  "needs": [
+   "G-EQ-003"
+  ],
+  "title": "Chiller Unit CU-103",
+  "key": "power_kw"
+ },
+ {
+  "id": "g0051",
+  "family": "derived",
+  "q": "The Air Compressor AC-109 runs its nominal daily duty for 22 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 531.6784,
+  "needs": [
+   "G-EQ-009",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Air Compressor AC-109",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0052",
+  "family": "factual",
+  "q": "What is the rated power in kW for Centrifugal Pump CP-110?",
+  "answer": 23.9,
+  "needs": [
+   "G-EQ-010"
+  ],
+  "title": "Centrifugal Pump CP-110",
+  "key": "power_kw"
+ },
+ {
+  "id": "g0053",
+  "family": "derived",
+  "q": "The Booster Pump BP-106 runs its nominal daily duty for 22 days. Priced on Tariff Southgate S6, what is the energy cost in USD?",
+  "answer": 1559.5395,
+  "needs": [
+   "G-EQ-006",
+   "G-TF-006"
+  ],
+  "titles": [
+   "Booster Pump BP-106",
+   "Tariff Southgate S6"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0054",
+  "family": "factual",
+  "q": "What is the nominal duty in hours per day for Booster Pump BP-101?",
+  "answer": 4.0,
+  "needs": [
+   "G-EQ-001"
+  ],
+  "title": "Booster Pump BP-101",
+  "key": "duty_h"
+ },
+ {
+  "id": "g0055",
+  "family": "derived",
+  "q": "The Booster Pump BP-111 runs its nominal daily duty for 22 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 251.5392,
+  "needs": [
+   "G-EQ-011",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Booster Pump BP-111",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0056",
+  "family": "factual",
+  "q": "What is the service interval in operating hours for Service SS-2?",
+  "answer": 1000.0,
+  "needs": [
+   "G-SV-002"
+  ],
+  "title": "Service SS-2",
+  "key": "interval_h"
+ },
+ {
+  "id": "g0057",
+  "family": "derived",
+  "q": "The Air Compressor AC-104 runs its nominal daily duty for 20 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 1619.76,
+  "needs": [
+   "G-EQ-004",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Air Compressor AC-104",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0058",
+  "family": "factual",
+  "q": "What is the standing charge per month in USD for Tariff Northland S0?",
+  "answer": 9.74,
+  "needs": [
+   "G-TF-000"
+  ],
+  "title": "Tariff Northland S0",
+  "key": "standing"
+ },
+ {
+  "id": "g0059",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-110 runs its nominal daily duty for 22 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 1001.9645,
+  "needs": [
+   "G-EQ-010",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-110",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0060",
+  "family": "factual",
+  "q": "What is the rated power in kW for Air Compressor AC-104?",
+  "answer": 42.5,
+  "needs": [
+   "G-EQ-004"
+  ],
+  "title": "Air Compressor AC-104",
+  "key": "power_kw"
+ },
+ {
+  "id": "g0061",
+  "family": "derived",
+  "q": "The Air Compressor AC-104 runs its nominal daily duty for 30 days. Priced on Tariff Eastport S1, what is the energy cost in USD?",
+  "answer": 1678.41,
+  "needs": [
+   "G-EQ-004",
+   "G-TF-001"
+  ],
+  "titles": [
+   "Air Compressor AC-104",
+   "Tariff Eastport S1"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0062",
+  "family": "factual",
+  "q": "What is the service interval in operating hours for Service SS-0?",
+  "answer": 2000.0,
+  "needs": [
+   "G-SV-000"
+  ],
+  "title": "Service SS-0",
+  "key": "interval_h"
+ },
+ {
+  "id": "g0063",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-110 runs its nominal daily duty for 20 days. Priced on Tariff Westmere S7, what is the energy cost in USD?",
+  "answer": 1387.5384,
+  "needs": [
+   "G-EQ-010",
+   "G-TF-007"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-110",
+   "Tariff Westmere S7"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0064",
+  "family": "factual",
+  "q": "What is the nominal duty in hours per day for Air Compressor AC-109?",
+  "answer": 4.0,
+  "needs": [
+   "G-EQ-009"
+  ],
+  "title": "Air Compressor AC-109",
+  "key": "duty_h"
+ },
+ {
+  "id": "g0065",
+  "family": "derived",
+  "q": "The Booster Pump BP-101 runs its nominal daily duty for 22 days. Priced on Tariff Eastport S5, what is the energy cost in USD?",
+  "answer": 503.6724,
+  "needs": [
+   "G-EQ-001",
+   "G-TF-005"
+  ],
+  "titles": [
+   "Booster Pump BP-101",
+   "Tariff Eastport S5"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0066",
+  "family": "factual",
+  "q": "What is the nominal duty in hours per day for Centrifugal Pump CP-105?",
+  "answer": 24.0,
+  "needs": [
+   "G-EQ-005"
+  ],
+  "title": "Centrifugal Pump CP-105",
+  "key": "duty_h"
+ },
+ {
+  "id": "g0067",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-105 runs its nominal daily duty for 20 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 1467.0912,
+  "needs": [
+   "G-EQ-005",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-105",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0068",
+  "family": "factual",
+  "q": "What is the rated power in kW for Air Compressor AC-109?",
+  "answer": 34.0,
+  "needs": [
+   "G-EQ-009"
+  ],
+  "title": "Air Compressor AC-109",
+  "key": "power_kw"
+ },
+ {
+  "id": "g0069",
+  "family": "derived",
+  "q": "The Chiller Unit CU-108 runs its nominal daily duty for 20 days. Priced on Tariff Northland S4, what is the energy cost in USD?",
+  "answer": 540.5184,
+  "needs": [
+   "G-EQ-008",
+   "G-TF-004"
+  ],
+  "titles": [
+   "Chiller Unit CU-108",
+   "Tariff Northland S4"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0070",
+  "family": "factual",
+  "q": "What is the rated power in kW for Centrifugal Pump CP-100?",
+  "answer": 17.4,
+  "needs": [
+   "G-EQ-000"
+  ],
+  "title": "Centrifugal Pump CP-100",
+  "key": "power_kw"
+ },
+ {
+  "id": "g0071",
+  "family": "derived",
+  "q": "The Booster Pump BP-106 runs its nominal daily duty for 30 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 2888.8896,
+  "needs": [
+   "G-EQ-006",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Booster Pump BP-106",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0072",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9000?",
+  "answer": 191.0,
+  "needs": [
+   "G-IN-000"
+  ],
+  "title": "Invoice 9000",
+  "key": "qty"
+ },
+ {
+  "id": "g0073",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-105 runs its nominal daily duty for 30 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 2200.6368,
+  "needs": [
+   "G-EQ-005",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-105",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0074",
+  "family": "factual",
+  "q": "What is the nominal duty in hours per day for Air Compressor AC-109?",
+  "answer": 4.0,
+  "needs": [
+   "G-EQ-009"
+  ],
+  "title": "Air Compressor AC-109",
+  "key": "duty_h"
+ },
+ {
+  "id": "g0075",
+  "family": "derived",
+  "q": "The Booster Pump BP-106 runs its nominal daily duty for 20 days. Priced on Tariff Westmere S7, what is the energy cost in USD?",
+  "answer": 2933.7632,
+  "needs": [
+   "G-EQ-006",
+   "G-TF-007"
+  ],
+  "titles": [
+   "Booster Pump BP-106",
+   "Tariff Westmere S7"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0076",
+  "family": "factual",
+  "q": "What is the nominal duty in hours per day for Centrifugal Pump CP-105?",
+  "answer": 24.0,
+  "needs": [
+   "G-EQ-005"
+  ],
+  "title": "Centrifugal Pump CP-105",
+  "key": "duty_h"
+ },
+ {
+  "id": "g0077",
+  "family": "derived",
+  "q": "The Booster Pump BP-101 runs its nominal daily duty for 30 days. Priced on Tariff Northland S4, what is the energy cost in USD?",
+  "answer": 675.648,
+  "needs": [
+   "G-EQ-001",
+   "G-TF-004"
+  ],
+  "titles": [
+   "Booster Pump BP-101",
+   "Tariff Northland S4"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0078",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9008?",
+  "answer": 217.0,
+  "needs": [
+   "G-IN-008"
+  ],
+  "title": "Invoice 9008",
+  "key": "qty"
+ },
+ {
+  "id": "g0079",
+  "family": "derived",
+  "q": "The Chiller Unit CU-103 runs its nominal daily duty for 20 days. Priced on Tariff Westmere S3, what is the energy cost in USD?",
+  "answer": 846.0576,
+  "needs": [
+   "G-EQ-003",
+   "G-TF-003"
+  ],
+  "titles": [
+   "Chiller Unit CU-103",
+   "Tariff Westmere S3"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0080",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9004?",
+  "answer": 182.0,
+  "needs": [
+   "G-IN-004"
+  ],
+  "title": "Invoice 9004",
+  "key": "qty"
+ },
+ {
+  "id": "g0081",
+  "family": "derived",
+  "q": "The Air Compressor AC-104 runs its nominal daily duty for 30 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 2718.81,
+  "needs": [
+   "G-EQ-004",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Air Compressor AC-104",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0082",
+  "family": "factual",
+  "q": "What is the drive efficiency for Air Compressor AC-109?",
+  "answer": 0.72,
+  "needs": [
+   "G-EQ-009"
+  ],
+  "title": "Air Compressor AC-109",
+  "key": "efficiency"
+ },
+ {
+  "id": "g0083",
+  "family": "derived",
+  "q": "The Chiller Unit CU-103 runs its nominal daily duty for 30 days. Priced on Tariff Westmere S3, what is the energy cost in USD?",
+  "answer": 1269.0864,
+  "needs": [
+   "G-EQ-003",
+   "G-TF-003"
+  ],
+  "titles": [
+   "Chiller Unit CU-103",
+   "Tariff Westmere S3"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0084",
+  "family": "factual",
+  "q": "What is the nominal duty in hours per day for Centrifugal Pump CP-105?",
+  "answer": 24.0,
+  "needs": [
+   "G-EQ-005"
+  ],
+  "title": "Centrifugal Pump CP-105",
+  "key": "duty_h"
+ },
+ {
+  "id": "g0085",
+  "family": "derived",
+  "q": "The Chiller Unit CU-108 runs its nominal daily duty for 22 days. Priced on Tariff Southgate S6, what is the energy cost in USD?",
+  "answer": 425.8901,
+  "needs": [
+   "G-EQ-008",
+   "G-TF-006"
+  ],
+  "titles": [
+   "Chiller Unit CU-108",
+   "Tariff Southgate S6"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0086",
+  "family": "factual",
+  "q": "What is the standing charge per month in USD for Tariff Eastport S5?",
+  "answer": 40.36,
+  "needs": [
+   "G-TF-005"
+  ],
+  "title": "Tariff Eastport S5",
+  "key": "standing"
+ },
+ {
+  "id": "g0087",
+  "family": "derived",
+  "q": "The Air Compressor AC-104 runs its nominal daily duty for 22 days. Priced on Tariff Southgate S6, what is the energy cost in USD?",
+  "answer": 1311.618,
+  "needs": [
+   "G-EQ-004",
+   "G-TF-006"
+  ],
+  "titles": [
+   "Air Compressor AC-104",
+   "Tariff Southgate S6"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0088",
+  "family": "factual",
+  "q": "What is the nominal duty in hours per day for Booster Pump BP-106?",
+  "answer": 16.0,
+  "needs": [
+   "G-EQ-006"
+  ],
+  "title": "Booster Pump BP-106",
+  "key": "duty_h"
+ },
+ {
+  "id": "g0089",
+  "family": "derived",
+  "q": "The Booster Pump BP-101 runs its nominal daily duty for 20 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 438.288,
+  "needs": [
+   "G-EQ-001",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Booster Pump BP-101",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0090",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9000?",
+  "answer": 304.35,
+  "needs": [
+   "G-IN-000"
+  ],
+  "title": "Invoice 9000",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0091",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-100 runs its nominal daily duty for 30 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 1326.2976,
+  "needs": [
+   "G-EQ-000",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-100",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0092",
+  "family": "factual",
+  "q": "What is the nominal duty in hours per day for Air Compressor AC-109?",
+  "answer": 4.0,
+  "needs": [
+   "G-EQ-009"
+  ],
+  "title": "Air Compressor AC-109",
+  "key": "duty_h"
+ },
+ {
+  "id": "g0093",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-102 runs its nominal daily duty for 30 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 4664.9088,
+  "needs": [
+   "G-EQ-002",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Vacuum Pump VP-102",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0094",
+  "family": "factual",
+  "q": "What is the service interval in operating hours for Service SS-0?",
+  "answer": 2000.0,
+  "needs": [
+   "G-SV-000"
+  ],
+  "title": "Service SS-0",
+  "key": "interval_h"
+ },
+ {
+  "id": "g0095",
+  "family": "derived",
+  "q": "The Air Compressor AC-109 runs its nominal daily duty for 20 days. Priced on Tariff Eastport S5, what is the energy cost in USD?",
+  "answer": 451.248,
+  "needs": [
+   "G-EQ-009",
+   "G-TF-005"
+  ],
+  "titles": [
+   "Air Compressor AC-109",
+   "Tariff Eastport S5"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0096",
+  "family": "factual",
+  "q": "What is the service interval in operating hours for Service SS-0?",
+  "answer": 2000.0,
+  "needs": [
+   "G-SV-000"
+  ],
+  "title": "Service SS-0",
+  "key": "interval_h"
+ },
+ {
+  "id": "g0097",
+  "family": "derived",
+  "q": "The Chiller Unit CU-108 runs its nominal daily duty for 20 days. Priced on Tariff Eastport S5, what is the energy cost in USD?",
+  "answer": 549.4608,
+  "needs": [
+   "G-EQ-008",
+   "G-TF-005"
+  ],
+  "titles": [
+   "Chiller Unit CU-108",
+   "Tariff Eastport S5"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0098",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9008?",
+  "answer": 194.25,
+  "needs": [
+   "G-IN-008"
+  ],
+  "title": "Invoice 9008",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0099",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-102 runs its nominal daily duty for 22 days. Priced on Tariff Westmere S7, what is the energy cost in USD?",
+  "answer": 5211.1066,
+  "needs": [
+   "G-EQ-002",
+   "G-TF-007"
+  ],
+  "titles": [
+   "Vacuum Pump VP-102",
+   "Tariff Westmere S7"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0100",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9007?",
+  "answer": 100.14,
+  "needs": [
+   "G-IN-007"
+  ],
+  "title": "Invoice 9007",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0101",
+  "family": "derived",
+  "q": "The Air Compressor AC-104 runs its nominal daily duty for 22 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 1781.736,
+  "needs": [
+   "G-EQ-004",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Air Compressor AC-104",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0102",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9002?",
+  "answer": 78.0,
+  "needs": [
+   "G-IN-002"
+  ],
+  "title": "Invoice 9002",
+  "key": "qty"
+ },
+ {
+  "id": "g0103",
+  "family": "derived",
+  "q": "The Air Compressor AC-104 runs its nominal daily duty for 20 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 1812.54,
+  "needs": [
+   "G-EQ-004",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Air Compressor AC-104",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0104",
+  "family": "factual",
+  "q": "What is the nominal duty in hours per day for Centrifugal Pump CP-100?",
+  "answer": 16.0,
+  "needs": [
+   "G-EQ-000"
+  ],
+  "title": "Centrifugal Pump CP-100",
+  "key": "duty_h"
+ },
+ {
+  "id": "g0105",
+  "family": "derived",
+  "q": "The Air Compressor AC-109 runs its nominal daily duty for 30 days. Priced on Tariff Northland S4, what is the energy cost in USD?",
+  "answer": 665.856,
+  "needs": [
+   "G-EQ-009",
+   "G-TF-004"
+  ],
+  "titles": [
+   "Air Compressor AC-109",
+   "Tariff Northland S4"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0106",
+  "family": "factual",
+  "q": "What is the energy rate in USD per kWh for Tariff Northland S4?",
+  "answer": 0.1632,
+  "needs": [
+   "G-TF-004"
+  ],
+  "title": "Tariff Northland S4",
+  "key": "rate"
+ },
+ {
+  "id": "g0107",
+  "family": "derived",
+  "q": "The Booster Pump BP-106 runs its nominal daily duty for 20 days. Priced on Tariff Eastport S1, what is the energy cost in USD?",
+  "answer": 1330.4416,
+  "needs": [
+   "G-EQ-006",
+   "G-TF-001"
+  ],
+  "titles": [
+   "Booster Pump BP-106",
+   "Tariff Eastport S1"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0108",
+  "family": "factual",
+  "q": "What is the standing charge per month in USD for Tariff Northland S4?",
+  "answer": 28.57,
+  "needs": [
+   "G-TF-004"
+  ],
+  "title": "Tariff Northland S4",
+  "key": "standing"
+ },
+ {
+  "id": "g0109",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-107 runs its nominal daily duty for 30 days. Priced on Tariff Westmere S3, what is the energy cost in USD?",
+  "answer": 1345.6692,
+  "needs": [
+   "G-EQ-007",
+   "G-TF-003"
+  ],
+  "titles": [
+   "Vacuum Pump VP-107",
+   "Tariff Westmere S3"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0110",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9009?",
+  "answer": 67.08,
+  "needs": [
+   "G-IN-009"
+  ],
+  "title": "Invoice 9009",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0111",
+  "family": "derived",
+  "q": "The Chiller Unit CU-103 runs its nominal daily duty for 20 days. Priced on Tariff Southgate S6, what is the energy cost in USD?",
+  "answer": 325.4496,
+  "needs": [
+   "G-EQ-003",
+   "G-TF-006"
+  ],
+  "titles": [
+   "Chiller Unit CU-103",
+   "Tariff Southgate S6"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0112",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9004?",
+  "answer": 163.29,
+  "needs": [
+   "G-IN-004"
+  ],
+  "title": "Invoice 9004",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0113",
+  "family": "derived",
+  "q": "The Booster Pump BP-106 runs its nominal daily duty for 20 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 2155.1456,
+  "needs": [
+   "G-EQ-006",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Booster Pump BP-106",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0114",
+  "family": "factual",
+  "q": "What is the standing charge per month in USD for Tariff Southgate S2?",
+  "answer": 19.18,
+  "needs": [
+   "G-TF-002"
+  ],
+  "title": "Tariff Southgate S2",
+  "key": "standing"
+ },
+ {
+  "id": "g0115",
+  "family": "derived",
+  "q": "The Chiller Unit CU-103 runs its nominal daily duty for 30 days. Priced on Tariff Northland S4, what is the energy cost in USD?",
+  "answer": 681.5232,
+  "needs": [
+   "G-EQ-003",
+   "G-TF-004"
+  ],
+  "titles": [
+   "Chiller Unit CU-103",
+   "Tariff Northland S4"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0116",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9003?",
+  "answer": 26.0,
+  "needs": [
+   "G-IN-003"
+  ],
+  "title": "Invoice 9003",
+  "key": "qty"
+ },
+ {
+  "id": "g0117",
+  "family": "derived",
+  "q": "The Booster Pump BP-106 runs its nominal daily duty for 20 days. Priced on Tariff Northland S4, what is the energy cost in USD?",
+  "answer": 1979.2896,
+  "needs": [
+   "G-EQ-006",
+   "G-TF-004"
+  ],
+  "titles": [
+   "Booster Pump BP-106",
+   "Tariff Northland S4"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0118",
+  "family": "factual",
+  "q": "What is the drive efficiency for Chiller Unit CU-108?",
+  "answer": 0.9,
+  "needs": [
+   "G-EQ-008"
+  ],
+  "title": "Chiller Unit CU-108",
+  "key": "efficiency"
+ },
+ {
+  "id": "g0119",
+  "family": "derived",
+  "q": "The Chiller Unit CU-103 runs its nominal daily duty for 22 days. Priced on Tariff Eastport S5, what is the energy cost in USD?",
+  "answer": 508.0522,
+  "needs": [
+   "G-EQ-003",
+   "G-TF-005"
+  ],
+  "titles": [
+   "Chiller Unit CU-103",
+   "Tariff Eastport S5"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0120",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9002?",
+  "answer": 332.65,
+  "needs": [
+   "G-IN-002"
+  ],
+  "title": "Invoice 9002",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0121",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-105 runs its nominal daily duty for 20 days. Priced on Tariff Westmere S7, what is the energy cost in USD?",
+  "answer": 1997.1264,
+  "needs": [
+   "G-EQ-005",
+   "G-TF-007"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-105",
+   "Tariff Westmere S7"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0122",
+  "family": "factual",
+  "q": "What is the rated power in kW for Booster Pump BP-111?",
+  "answer": 9.0,
+  "needs": [
+   "G-EQ-011"
+  ],
+  "title": "Booster Pump BP-111",
+  "key": "power_kw"
+ },
+ {
+  "id": "g0123",
+  "family": "derived",
+  "q": "The Air Compressor AC-104 runs its nominal daily duty for 30 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 2718.81,
+  "needs": [
+   "G-EQ-004",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Air Compressor AC-104",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0124",
+  "family": "factual",
+  "q": "What is the drive efficiency for Booster Pump BP-101?",
+  "answer": 0.72,
+  "needs": [
+   "G-EQ-001"
+  ],
+  "title": "Booster Pump BP-101",
+  "key": "efficiency"
+ },
+ {
+  "id": "g0125",
+  "family": "derived",
+  "q": "The Booster Pump BP-106 runs its nominal daily duty for 30 days. Priced on Tariff Eastport S1, what is the energy cost in USD?",
+  "answer": 1995.6624,
+  "needs": [
+   "G-EQ-006",
+   "G-TF-001"
+  ],
+  "titles": [
+   "Booster Pump BP-106",
+   "Tariff Eastport S1"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0126",
+  "family": "factual",
+  "q": "What is the energy rate in USD per kWh for Tariff Southgate S6?",
+  "answer": 0.1169,
+  "needs": [
+   "G-TF-006"
+  ],
+  "title": "Tariff Southgate S6",
+  "key": "rate"
+ },
+ {
+  "id": "g0127",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-107 runs its nominal daily duty for 22 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 577.0274,
+  "needs": [
+   "G-EQ-007",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Vacuum Pump VP-107",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0128",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9011?",
+  "answer": 220.0,
+  "needs": [
+   "G-IN-011"
+  ],
+  "title": "Invoice 9011",
+  "key": "qty"
+ },
+ {
+  "id": "g0129",
+  "family": "derived",
+  "q": "The Air Compressor AC-104 runs its nominal daily duty for 30 days. Priced on Tariff Eastport S1, what is the energy cost in USD?",
+  "answer": 1678.41,
+  "needs": [
+   "G-EQ-004",
+   "G-TF-001"
+  ],
+  "titles": [
+   "Air Compressor AC-104",
+   "Tariff Eastport S1"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0130",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9009?",
+  "answer": 67.08,
+  "needs": [
+   "G-IN-009"
+  ],
+  "title": "Invoice 9009",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0131",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-100 runs its nominal daily duty for 20 days. Priced on Tariff Eastport S1, what is the energy cost in USD?",
+  "answer": 610.8096,
+  "needs": [
+   "G-EQ-000",
+   "G-TF-001"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-100",
+   "Tariff Eastport S1"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0132",
+  "family": "factual",
+  "q": "What is the labour rate in USD per hour for Service SS-3?",
+  "answer": 102.41,
+  "needs": [
+   "G-SV-003"
+  ],
+  "title": "Service SS-3",
+  "key": "labour"
+ },
+ {
+  "id": "g0133",
+  "family": "derived",
+  "q": "The Booster Pump BP-101 runs its nominal daily duty for 20 days. Priced on Tariff Westmere S7, what is the energy cost in USD?",
+  "answer": 667.644,
+  "needs": [
+   "G-EQ-001",
+   "G-TF-007"
+  ],
+  "titles": [
+   "Booster Pump BP-101",
+   "Tariff Westmere S7"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0134",
+  "family": "factual",
+  "q": "What is the standing charge per month in USD for Tariff Westmere S3?",
+  "answer": 19.07,
+  "needs": [
+   "G-TF-003"
+  ],
+  "title": "Tariff Westmere S3",
+  "key": "standing"
+ },
+ {
+  "id": "g0135",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-110 runs its nominal daily duty for 22 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 1121.2159,
+  "needs": [
+   "G-EQ-010",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-110",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0136",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9000?",
+  "answer": 304.35,
+  "needs": [
+   "G-IN-000"
+  ],
+  "title": "Invoice 9000",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0137",
+  "family": "derived",
+  "q": "The Booster Pump BP-101 runs its nominal daily duty for 30 days. Priced on Tariff Northland S4, what is the energy cost in USD?",
+  "answer": 675.648,
+  "needs": [
+   "G-EQ-001",
+   "G-TF-004"
+  ],
+  "titles": [
+   "Booster Pump BP-101",
+   "Tariff Northland S4"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0138",
+  "family": "factual",
+  "q": "What is the labour rate in USD per hour for Service SS-0?",
+  "answer": 50.07,
+  "needs": [
+   "G-SV-000"
+  ],
+  "title": "Service SS-0",
+  "key": "labour"
+ },
+ {
+  "id": "g0139",
+  "family": "derived",
+  "q": "The Booster Pump BP-111 runs its nominal daily duty for 20 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 255.888,
+  "needs": [
+   "G-EQ-011",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Booster Pump BP-111",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0140",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9008?",
+  "answer": 217.0,
+  "needs": [
+   "G-IN-008"
+  ],
+  "title": "Invoice 9008",
+  "key": "qty"
+ },
+ {
+  "id": "g0141",
+  "family": "derived",
+  "q": "The Air Compressor AC-109 runs its nominal daily duty for 30 days. Priced on Tariff Westmere S7, what is the energy cost in USD?",
+  "answer": 986.952,
+  "needs": [
+   "G-EQ-009",
+   "G-TF-007"
+  ],
+  "titles": [
+   "Air Compressor AC-109",
+   "Tariff Westmere S7"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0142",
+  "family": "factual",
+  "q": "What is the labour rate in USD per hour for Service SS-7?",
+  "answer": 138.68,
+  "needs": [
+   "G-SV-007"
+  ],
+  "title": "Service SS-7",
+  "key": "labour"
+ },
+ {
+  "id": "g0143",
+  "family": "derived",
+  "q": "The Booster Pump BP-101 runs its nominal daily duty for 22 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 482.1168,
+  "needs": [
+   "G-EQ-001",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Booster Pump BP-101",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0144",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9006?",
+  "answer": 195.02,
+  "needs": [
+   "G-IN-006"
+  ],
+  "title": "Invoice 9006",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0145",
+  "family": "derived",
+  "q": "The Chiller Unit CU-103 runs its nominal daily duty for 22 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 486.3091,
+  "needs": [
+   "G-EQ-003",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Chiller Unit CU-103",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0146",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9002?",
+  "answer": 332.65,
+  "needs": [
+   "G-IN-002"
+  ],
+  "title": "Invoice 9002",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0147",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-110 runs its nominal daily duty for 20 days. Priced on Tariff Eastport S1, what is the energy cost in USD?",
+  "answer": 629.2392,
+  "needs": [
+   "G-EQ-010",
+   "G-TF-001"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-110",
+   "Tariff Eastport S1"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0148",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9000?",
+  "answer": 191.0,
+  "needs": [
+   "G-IN-000"
+  ],
+  "title": "Invoice 9000",
+  "key": "qty"
+ },
+ {
+  "id": "g0149",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-102 runs its nominal daily duty for 20 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 3480.0768,
+  "needs": [
+   "G-EQ-002",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Vacuum Pump VP-102",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0150",
+  "family": "factual",
+  "q": "What is the energy rate in USD per kWh for Tariff Westmere S7?",
+  "answer": 0.2419,
+  "needs": [
+   "G-TF-007"
+  ],
+  "title": "Tariff Westmere S7",
+  "key": "rate"
+ },
+ {
+  "id": "g0151",
+  "family": "derived",
+  "q": "The Booster Pump BP-106 runs its nominal daily duty for 20 days. Priced on Tariff Eastport S5, what is the energy cost in USD?",
+  "answer": 2012.0352,
+  "needs": [
+   "G-EQ-006",
+   "G-TF-005"
+  ],
+  "titles": [
+   "Booster Pump BP-106",
+   "Tariff Eastport S5"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0152",
+  "family": "factual",
+  "q": "What is the nominal duty in hours per day for Chiller Unit CU-103?",
+  "answer": 4.0,
+  "needs": [
+   "G-EQ-003"
+  ],
+  "title": "Chiller Unit CU-103",
+  "key": "duty_h"
+ },
+ {
+  "id": "g0153",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-102 runs its nominal daily duty for 20 days. Priced on Tariff Eastport S1, what is the energy cost in USD?",
+  "answer": 2148.3648,
+  "needs": [
+   "G-EQ-002",
+   "G-TF-001"
+  ],
+  "titles": [
+   "Vacuum Pump VP-102",
+   "Tariff Eastport S1"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0154",
+  "family": "factual",
+  "q": "What is the standing charge per month in USD for Tariff Northland S0?",
+  "answer": 9.74,
+  "needs": [
+   "G-TF-000"
+  ],
+  "title": "Tariff Northland S0",
+  "key": "standing"
+ },
+ {
+  "id": "g0155",
+  "family": "derived",
+  "q": "The Chiller Unit CU-108 runs its nominal daily duty for 20 days. Priced on Tariff Northland S4, what is the energy cost in USD?",
+  "answer": 540.5184,
+  "needs": [
+   "G-EQ-008",
+   "G-TF-004"
+  ],
+  "titles": [
+   "Chiller Unit CU-108",
+   "Tariff Northland S4"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0156",
+  "family": "factual",
+  "q": "What is the service interval in operating hours for Service SS-2?",
+  "answer": 1000.0,
+  "needs": [
+   "G-SV-002"
+  ],
+  "title": "Service SS-2",
+  "key": "interval_h"
+ },
+ {
+  "id": "g0157",
+  "family": "derived",
+  "q": "The Booster Pump BP-106 runs its nominal daily duty for 20 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 2155.1456,
+  "needs": [
+   "G-EQ-006",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Booster Pump BP-106",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0158",
+  "family": "factual",
+  "q": "What is the labour rate in USD per hour for Service SS-1?",
+  "answer": 98.75,
+  "needs": [
+   "G-SV-001"
+  ],
+  "title": "Service SS-1",
+  "key": "labour"
+ },
+ {
+  "id": "g0159",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-107 runs its nominal daily duty for 22 days. Priced on Tariff Eastport S1, what is the energy cost in USD?",
+  "answer": 356.2178,
+  "needs": [
+   "G-EQ-007",
+   "G-TF-001"
+  ],
+  "titles": [
+   "Vacuum Pump VP-107",
+   "Tariff Eastport S1"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0160",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9000?",
+  "answer": 191.0,
+  "needs": [
+   "G-IN-000"
+  ],
+  "title": "Invoice 9000",
+  "key": "qty"
+ },
+ {
+  "id": "g0161",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-100 runs its nominal daily duty for 30 days. Priced on Tariff Eastport S5, what is the energy cost in USD?",
+  "answer": 1385.5968,
+  "needs": [
+   "G-EQ-000",
+   "G-TF-005"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-100",
+   "Tariff Eastport S5"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0162",
+  "family": "factual",
+  "q": "What is the rated power in kW for Vacuum Pump VP-107?",
+  "answer": 36.9,
+  "needs": [
+   "G-EQ-007"
+  ],
+  "title": "Vacuum Pump VP-107",
+  "key": "power_kw"
+ },
+ {
+  "id": "g0163",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-102 runs its nominal daily duty for 30 days. Priced on Tariff Northland S4, what is the energy cost in USD?",
+  "answer": 4794.1632,
+  "needs": [
+   "G-EQ-002",
+   "G-TF-004"
+  ],
+  "titles": [
+   "Vacuum Pump VP-102",
+   "Tariff Northland S4"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0164",
+  "family": "factual",
+  "q": "What is the rated power in kW for Centrifugal Pump CP-100?",
+  "answer": 17.4,
+  "needs": [
+   "G-EQ-000"
+  ],
+  "title": "Centrifugal Pump CP-100",
+  "key": "power_kw"
+ },
+ {
+  "id": "g0165",
+  "family": "derived",
+  "q": "The Booster Pump BP-106 runs its nominal daily duty for 20 days. Priced on Tariff Eastport S1, what is the energy cost in USD?",
+  "answer": 1330.4416,
+  "needs": [
+   "G-EQ-006",
+   "G-TF-001"
+  ],
+  "titles": [
+   "Booster Pump BP-106",
+   "Tariff Eastport S1"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0166",
+  "family": "factual",
+  "q": "What is the drive efficiency for Booster Pump BP-101?",
+  "answer": 0.72,
+  "needs": [
+   "G-EQ-001"
+  ],
+  "title": "Booster Pump BP-101",
+  "key": "efficiency"
+ },
+ {
+  "id": "g0167",
+  "family": "derived",
+  "q": "The Chiller Unit CU-108 runs its nominal daily duty for 20 days. Priced on Tariff Westmere S7, what is the energy cost in USD?",
+  "answer": 801.1728,
+  "needs": [
+   "G-EQ-008",
+   "G-TF-007"
+  ],
+  "titles": [
+   "Chiller Unit CU-108",
+   "Tariff Westmere S7"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0168",
+  "family": "factual",
+  "q": "What is the rated power in kW for Centrifugal Pump CP-100?",
+  "answer": 17.4,
+  "needs": [
+   "G-EQ-000"
+  ],
+  "title": "Centrifugal Pump CP-100",
+  "key": "power_kw"
+ },
+ {
+  "id": "g0169",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-102 runs its nominal daily duty for 22 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 3420.9331,
+  "needs": [
+   "G-EQ-002",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Vacuum Pump VP-102",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0170",
+  "family": "factual",
+  "q": "What is the standing charge per month in USD for Tariff Northland S4?",
+  "answer": 28.57,
+  "needs": [
+   "G-TF-004"
+  ],
+  "title": "Tariff Northland S4",
+  "key": "standing"
+ },
+ {
+  "id": "g0171",
+  "family": "derived",
+  "q": "The Air Compressor AC-109 runs its nominal daily duty for 22 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 531.6784,
+  "needs": [
+   "G-EQ-009",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Air Compressor AC-109",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0172",
+  "family": "factual",
+  "q": "What is the service interval in operating hours for Service SS-6?",
+  "answer": 2000.0,
+  "needs": [
+   "G-SV-006"
+  ],
+  "title": "Service SS-6",
+  "key": "interval_h"
+ },
+ {
+  "id": "g0173",
+  "family": "derived",
+  "q": "The Booster Pump BP-106 runs its nominal daily duty for 20 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 1925.9264,
+  "needs": [
+   "G-EQ-006",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Booster Pump BP-106",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0174",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9000?",
+  "answer": 191.0,
+  "needs": [
+   "G-IN-000"
+  ],
+  "title": "Invoice 9000",
+  "key": "qty"
+ },
+ {
+  "id": "g0175",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-107 runs its nominal daily duty for 20 days. Priced on Tariff Eastport S1, what is the energy cost in USD?",
+  "answer": 323.8344,
+  "needs": [
+   "G-EQ-007",
+   "G-TF-001"
+  ],
+  "titles": [
+   "Vacuum Pump VP-107",
+   "Tariff Eastport S1"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0176",
+  "family": "factual",
+  "q": "What is the energy rate in USD per kWh for Tariff Eastport S1?",
+  "answer": 0.1097,
+  "needs": [
+   "G-TF-001"
+  ],
+  "title": "Tariff Eastport S1",
+  "key": "rate"
+ },
+ {
+  "id": "g0177",
+  "family": "derived",
+  "q": "The Booster Pump BP-111 runs its nominal daily duty for 20 days. Priced on Tariff Eastport S1, what is the energy cost in USD?",
+  "answer": 157.968,
+  "needs": [
+   "G-EQ-011",
+   "G-TF-001"
+  ],
+  "titles": [
+   "Booster Pump BP-111",
+   "Tariff Eastport S1"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0178",
+  "family": "factual",
+  "q": "What is the rated power in kW for Booster Pump BP-106?",
+  "answer": 37.9,
+  "needs": [
+   "G-EQ-006"
+  ],
+  "title": "Booster Pump BP-106",
+  "key": "power_kw"
+ },
+ {
+  "id": "g0179",
+  "family": "derived",
+  "q": "The Booster Pump BP-101 runs its nominal daily duty for 20 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 490.452,
+  "needs": [
+   "G-EQ-001",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Booster Pump BP-101",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0180",
+  "family": "factual",
+  "q": "What is the nominal duty in hours per day for Booster Pump BP-111?",
+  "answer": 8.0,
+  "needs": [
+   "G-EQ-011"
+  ],
+  "title": "Booster Pump BP-111",
+  "key": "duty_h"
+ },
+ {
+  "id": "g0181",
+  "family": "derived",
+  "q": "The Chiller Unit CU-103 runs its nominal daily duty for 30 days. Priced on Tariff Westmere S7, what is the energy cost in USD?",
+  "answer": 1010.1744,
+  "needs": [
+   "G-EQ-003",
+   "G-TF-007"
+  ],
+  "titles": [
+   "Chiller Unit CU-103",
+   "Tariff Westmere S7"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0182",
+  "family": "factual",
+  "q": "What is the energy rate in USD per kWh for Tariff Northland S0?",
+  "answer": 0.1588,
+  "needs": [
+   "G-TF-000"
+  ],
+  "title": "Tariff Northland S0",
+  "key": "rate"
+ },
+ {
+  "id": "g0183",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-100 runs its nominal daily duty for 22 days. Priced on Tariff Eastport S5, what is the energy cost in USD?",
+  "answer": 1016.1043,
+  "needs": [
+   "G-EQ-000",
+   "G-TF-005"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-100",
+   "Tariff Eastport S5"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0184",
+  "family": "factual",
+  "q": "What is the drive efficiency for Chiller Unit CU-103?",
+  "answer": 0.78,
+  "needs": [
+   "G-EQ-003"
+  ],
+  "title": "Chiller Unit CU-103",
+  "key": "efficiency"
+ },
+ {
+  "id": "g0185",
+  "family": "derived",
+  "q": "The Air Compressor AC-109 runs its nominal daily duty for 22 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 531.6784,
+  "needs": [
+   "G-EQ-009",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Air Compressor AC-109",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0186",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9006?",
+  "answer": 6.0,
+  "needs": [
+   "G-IN-006"
+  ],
+  "title": "Invoice 9006",
+  "key": "qty"
+ },
+ {
+  "id": "g0187",
+  "family": "derived",
+  "q": "The Air Compressor AC-109 runs its nominal daily duty for 22 days. Priced on Tariff Westmere S3, what is the energy cost in USD?",
+  "answer": 909.2688,
+  "needs": [
+   "G-EQ-009",
+   "G-TF-003"
+  ],
+  "titles": [
+   "Air Compressor AC-109",
+   "Tariff Westmere S3"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0188",
+  "family": "factual",
+  "q": "What is the service interval in operating hours for Service SS-4?",
+  "answer": 1000.0,
+  "needs": [
+   "G-SV-004"
+  ],
+  "title": "Service SS-4",
+  "key": "interval_h"
+ },
+ {
+  "id": "g0189",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-107 runs its nominal daily duty for 30 days. Priced on Tariff Southgate S6, what is the energy cost in USD?",
+  "answer": 517.6332,
+  "needs": [
+   "G-EQ-007",
+   "G-TF-006"
+  ],
+  "titles": [
+   "Vacuum Pump VP-107",
+   "Tariff Southgate S6"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0190",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9008?",
+  "answer": 217.0,
+  "needs": [
+   "G-IN-008"
+  ],
+  "title": "Invoice 9008",
+  "key": "qty"
+ },
+ {
+  "id": "g0191",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-107 runs its nominal daily duty for 22 days. Priced on Tariff Southgate S6, what is the energy cost in USD?",
+  "answer": 379.5977,
+  "needs": [
+   "G-EQ-007",
+   "G-TF-006"
+  ],
+  "titles": [
+   "Vacuum Pump VP-107",
+   "Tariff Southgate S6"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0192",
+  "family": "factual",
+  "q": "What is the rated power in kW for Booster Pump BP-101?",
+  "answer": 34.5,
+  "needs": [
+   "G-EQ-001"
+  ],
+  "title": "Booster Pump BP-101",
+  "key": "power_kw"
+ },
+ {
+  "id": "g0193",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-102 runs its nominal daily duty for 20 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 3109.9392,
+  "needs": [
+   "G-EQ-002",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Vacuum Pump VP-102",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0194",
+  "family": "factual",
+  "q": "What is the rated power in kW for Centrifugal Pump CP-105?",
+  "answer": 17.2,
+  "needs": [
+   "G-EQ-005"
+  ],
+  "title": "Centrifugal Pump CP-105",
+  "key": "power_kw"
+ },
+ {
+  "id": "g0195",
+  "family": "derived",
+  "q": "The Booster Pump BP-111 runs its nominal daily duty for 20 days. Priced on Tariff Eastport S1, what is the energy cost in USD?",
+  "answer": 157.968,
+  "needs": [
+   "G-EQ-011",
+   "G-TF-001"
+  ],
+  "titles": [
+   "Booster Pump BP-111",
+   "Tariff Eastport S1"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0196",
+  "family": "factual",
+  "q": "What is the rated power in kW for Vacuum Pump VP-107?",
+  "answer": 36.9,
+  "needs": [
+   "G-EQ-007"
+  ],
+  "title": "Vacuum Pump VP-107",
+  "key": "power_kw"
+ },
+ {
+  "id": "g0197",
+  "family": "derived",
+  "q": "The Booster Pump BP-101 runs its nominal daily duty for 20 days. Priced on Tariff Westmere S7, what is the energy cost in USD?",
+  "answer": 667.644,
+  "needs": [
+   "G-EQ-001",
+   "G-TF-007"
+  ],
+  "titles": [
+   "Booster Pump BP-101",
+   "Tariff Westmere S7"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0198",
+  "family": "factual",
+  "q": "What is the labour rate in USD per hour for Service SS-7?",
+  "answer": 138.68,
+  "needs": [
+   "G-SV-007"
+  ],
+  "title": "Service SS-7",
+  "key": "labour"
+ },
+ {
+  "id": "g0199",
+  "family": "derived",
+  "q": "The Chiller Unit CU-108 runs its nominal daily duty for 20 days. Priced on Tariff Southgate S6, what is the energy cost in USD?",
+  "answer": 387.1728,
+  "needs": [
+   "G-EQ-008",
+   "G-TF-006"
+  ],
+  "titles": [
+   "Chiller Unit CU-108",
+   "Tariff Southgate S6"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0200",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9004?",
+  "answer": 163.29,
+  "needs": [
+   "G-IN-004"
+  ],
+  "title": "Invoice 9004",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0201",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-100 runs its nominal daily duty for 20 days. Priced on Tariff Northland S4, what is the energy cost in USD?",
+  "answer": 908.6976,
+  "needs": [
+   "G-EQ-000",
+   "G-TF-004"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-100",
+   "Tariff Northland S4"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0202",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9004?",
+  "answer": 182.0,
+  "needs": [
+   "G-IN-004"
+  ],
+  "title": "Invoice 9004",
+  "key": "qty"
+ },
+ {
+  "id": "g0203",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-102 runs its nominal daily duty for 30 days. Priced on Tariff Westmere S7, what is the energy cost in USD?",
+  "answer": 7106.0544,
+  "needs": [
+   "G-EQ-002",
+   "G-TF-007"
+  ],
+  "titles": [
+   "Vacuum Pump VP-102",
+   "Tariff Westmere S7"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0204",
+  "family": "factual",
+  "q": "What is the labour rate in USD per hour for Service SS-1?",
+  "answer": 98.75,
+  "needs": [
+   "G-SV-001"
+  ],
+  "title": "Service SS-1",
+  "key": "labour"
+ },
+ {
+  "id": "g0205",
+  "family": "derived",
+  "q": "The Booster Pump BP-106 runs its nominal daily duty for 30 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 3232.7184,
+  "needs": [
+   "G-EQ-006",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Booster Pump BP-106",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0206",
+  "family": "factual",
+  "q": "What is the rated power in kW for Booster Pump BP-106?",
+  "answer": 37.9,
+  "needs": [
+   "G-EQ-006"
+  ],
+  "title": "Booster Pump BP-106",
+  "key": "power_kw"
+ },
+ {
+  "id": "g0207",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-102 runs its nominal daily duty for 22 days. Priced on Tariff Westmere S7, what is the energy cost in USD?",
+  "answer": 5211.1066,
+  "needs": [
+   "G-EQ-002",
+   "G-TF-007"
+  ],
+  "titles": [
+   "Vacuum Pump VP-102",
+   "Tariff Westmere S7"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0208",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9006?",
+  "answer": 6.0,
+  "needs": [
+   "G-IN-006"
+  ],
+  "title": "Invoice 9006",
+  "key": "qty"
+ },
+ {
+  "id": "g0209",
+  "family": "derived",
+  "q": "The Booster Pump BP-101 runs its nominal daily duty for 20 days. Priced on Tariff Eastport S5, what is the energy cost in USD?",
+  "answer": 457.884,
+  "needs": [
+   "G-EQ-001",
+   "G-TF-005"
+  ],
+  "titles": [
+   "Booster Pump BP-101",
+   "Tariff Eastport S5"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0210",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9005?",
+  "answer": 288.89,
+  "needs": [
+   "G-IN-005"
+  ],
+  "title": "Invoice 9005",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0211",
+  "family": "derived",
+  "q": "The Booster Pump BP-106 runs its nominal daily duty for 22 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 2370.6602,
+  "needs": [
+   "G-EQ-006",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Booster Pump BP-106",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0212",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9003?",
+  "answer": 26.0,
+  "needs": [
+   "G-IN-003"
+  ],
+  "title": "Invoice 9003",
+  "key": "qty"
+ },
+ {
+  "id": "g0213",
+  "family": "derived",
+  "q": "The Chiller Unit CU-103 runs its nominal daily duty for 22 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 486.3091,
+  "needs": [
+   "G-EQ-003",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Chiller Unit CU-103",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0214",
+  "family": "factual",
+  "q": "What is the service interval in operating hours for Service SS-4?",
+  "answer": 1000.0,
+  "needs": [
+   "G-SV-004"
+  ],
+  "title": "Service SS-4",
+  "key": "interval_h"
+ },
+ {
+  "id": "g0215",
+  "family": "derived",
+  "q": "The Air Compressor AC-104 runs its nominal daily duty for 20 days. Priced on Tariff Westmere S3, what is the energy cost in USD?",
+  "answer": 3099.78,
+  "needs": [
+   "G-EQ-004",
+   "G-TF-003"
+  ],
+  "titles": [
+   "Air Compressor AC-104",
+   "Tariff Westmere S3"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0216",
+  "family": "factual",
+  "q": "What is the drive efficiency for Air Compressor AC-109?",
+  "answer": 0.72,
+  "needs": [
+   "G-EQ-009"
+  ],
+  "title": "Air Compressor AC-109",
+  "key": "efficiency"
+ },
+ {
+  "id": "g0217",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-102 runs its nominal daily duty for 20 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 3109.9392,
+  "needs": [
+   "G-EQ-002",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Vacuum Pump VP-102",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0218",
+  "family": "factual",
+  "q": "What is the service interval in operating hours for Service SS-7?",
+  "answer": 4000.0,
+  "needs": [
+   "G-SV-007"
+  ],
+  "title": "Service SS-7",
+  "key": "interval_h"
+ },
+ {
+  "id": "g0219",
+  "family": "derived",
+  "q": "The Booster Pump BP-111 runs its nominal daily duty for 30 days. Priced on Tariff Eastport S1, what is the energy cost in USD?",
+  "answer": 236.952,
+  "needs": [
+   "G-EQ-011",
+   "G-TF-001"
+  ],
+  "titles": [
+   "Booster Pump BP-111",
+   "Tariff Eastport S1"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0220",
+  "family": "factual",
+  "q": "What is the rated power in kW for Air Compressor AC-109?",
+  "answer": 34.0,
+  "needs": [
+   "G-EQ-009"
+  ],
+  "title": "Air Compressor AC-109",
+  "key": "power_kw"
+ },
+ {
+  "id": "g0221",
+  "family": "derived",
+  "q": "The Booster Pump BP-111 runs its nominal daily duty for 30 days. Priced on Tariff Northland S4, what is the energy cost in USD?",
+  "answer": 352.512,
+  "needs": [
+   "G-EQ-011",
+   "G-TF-004"
+  ],
+  "titles": [
+   "Booster Pump BP-111",
+   "Tariff Northland S4"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0222",
+  "family": "factual",
+  "q": "What is the energy rate in USD per kWh for Tariff Southgate S6?",
+  "answer": 0.1169,
+  "needs": [
+   "G-TF-006"
+  ],
+  "title": "Tariff Southgate S6",
+  "key": "rate"
+ },
+ {
+  "id": "g0223",
+  "family": "derived",
+  "q": "The Air Compressor AC-104 runs its nominal daily duty for 30 days. Priced on Tariff Northland S4, what is the energy cost in USD?",
+  "answer": 2496.96,
+  "needs": [
+   "G-EQ-004",
+   "G-TF-004"
+  ],
+  "titles": [
+   "Air Compressor AC-104",
+   "Tariff Northland S4"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0224",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9006?",
+  "answer": 6.0,
+  "needs": [
+   "G-IN-006"
+  ],
+  "title": "Invoice 9006",
+  "key": "qty"
+ },
+ {
+  "id": "g0225",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-107 runs its nominal daily duty for 20 days. Priced on Tariff Eastport S5, what is the energy cost in USD?",
+  "answer": 489.7368,
+  "needs": [
+   "G-EQ-007",
+   "G-TF-005"
+  ],
+  "titles": [
+   "Vacuum Pump VP-107",
+   "Tariff Eastport S5"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0226",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9008?",
+  "answer": 194.25,
+  "needs": [
+   "G-IN-008"
+  ],
+  "title": "Invoice 9008",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0227",
+  "family": "derived",
+  "q": "The Chiller Unit CU-108 runs its nominal daily duty for 30 days. Priced on Tariff Southgate S6, what is the energy cost in USD?",
+  "answer": 580.7592,
+  "needs": [
+   "G-EQ-008",
+   "G-TF-006"
+  ],
+  "titles": [
+   "Chiller Unit CU-108",
+   "Tariff Southgate S6"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0228",
+  "family": "factual",
+  "q": "What is the energy rate in USD per kWh for Tariff Northland S4?",
+  "answer": 0.1632,
+  "needs": [
+   "G-TF-004"
+  ],
+  "title": "Tariff Northland S4",
+  "key": "rate"
+ },
+ {
+  "id": "g0229",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-102 runs its nominal daily duty for 30 days. Priced on Tariff Eastport S5, what is the energy cost in USD?",
+  "answer": 4873.4784,
+  "needs": [
+   "G-EQ-002",
+   "G-TF-005"
+  ],
+  "titles": [
+   "Vacuum Pump VP-102",
+   "Tariff Eastport S5"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0230",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9001?",
+  "answer": 177.0,
+  "needs": [
+   "G-IN-001"
+  ],
+  "title": "Invoice 9001",
+  "key": "qty"
+ },
+ {
+  "id": "g0231",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-105 runs its nominal daily duty for 20 days. Priced on Tariff Northland S4, what is the energy cost in USD?",
+  "answer": 1347.3792,
+  "needs": [
+   "G-EQ-005",
+   "G-TF-004"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-105",
+   "Tariff Northland S4"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0232",
+  "family": "factual",
+  "q": "What is the energy rate in USD per kWh for Tariff Eastport S1?",
+  "answer": 0.1097,
+  "needs": [
+   "G-TF-001"
+  ],
+  "title": "Tariff Eastport S1",
+  "key": "rate"
+ },
+ {
+  "id": "g0233",
+  "family": "derived",
+  "q": "The Air Compressor AC-104 runs its nominal daily duty for 22 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 1781.736,
+  "needs": [
+   "G-EQ-004",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Air Compressor AC-104",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0234",
+  "family": "factual",
+  "q": "What is the service interval in operating hours for Service SS-2?",
+  "answer": 1000.0,
+  "needs": [
+   "G-SV-002"
+  ],
+  "title": "Service SS-2",
+  "key": "interval_h"
+ },
+ {
+  "id": "g0235",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-100 runs its nominal daily duty for 22 days. Priced on Tariff Westmere S3, what is the energy cost in USD?",
+  "answer": 1861.3267,
+  "needs": [
+   "G-EQ-000",
+   "G-TF-003"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-100",
+   "Tariff Westmere S3"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0236",
+  "family": "factual",
+  "q": "What is the energy rate in USD per kWh for Tariff Northland S4?",
+  "answer": 0.1632,
+  "needs": [
+   "G-TF-004"
+  ],
+  "title": "Tariff Northland S4",
+  "key": "rate"
+ },
+ {
+  "id": "g0237",
+  "family": "derived",
+  "q": "The Air Compressor AC-109 runs its nominal daily duty for 22 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 475.1296,
+  "needs": [
+   "G-EQ-009",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Air Compressor AC-109",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0238",
+  "family": "factual",
+  "q": "What is the rated power in kW for Chiller Unit CU-108?",
+  "answer": 6.9,
+  "needs": [
+   "G-EQ-008"
+  ],
+  "title": "Chiller Unit CU-108",
+  "key": "power_kw"
+ },
+ {
+  "id": "g0239",
+  "family": "derived",
+  "q": "The Chiller Unit CU-103 runs its nominal daily duty for 20 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 494.7168,
+  "needs": [
+   "G-EQ-003",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Chiller Unit CU-103",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0240",
+  "family": "factual",
+  "q": "What is the standing charge per month in USD for Tariff Northland S4?",
+  "answer": 28.57,
+  "needs": [
+   "G-TF-004"
+  ],
+  "title": "Tariff Northland S4",
+  "key": "standing"
+ },
+ {
+  "id": "g0241",
+  "family": "derived",
+  "q": "The Booster Pump BP-101 runs its nominal daily duty for 22 days. Priced on Tariff Eastport S1, what is the energy cost in USD?",
+  "answer": 333.0492,
+  "needs": [
+   "G-EQ-001",
+   "G-TF-001"
+  ],
+  "titles": [
+   "Booster Pump BP-101",
+   "Tariff Eastport S1"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0242",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9010?",
+  "answer": 11.0,
+  "needs": [
+   "G-IN-010"
+  ],
+  "title": "Invoice 9010",
+  "key": "qty"
+ },
+ {
+  "id": "g0243",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-105 runs its nominal daily duty for 20 days. Priced on Tariff Northland S4, what is the energy cost in USD?",
+  "answer": 1347.3792,
+  "needs": [
+   "G-EQ-005",
+   "G-TF-004"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-105",
+   "Tariff Northland S4"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0244",
+  "family": "factual",
+  "q": "What is the energy rate in USD per kWh for Tariff Westmere S3?",
+  "answer": 0.3039,
+  "needs": [
+   "G-TF-003"
+  ],
+  "title": "Tariff Westmere S3",
+  "key": "rate"
+ },
+ {
+  "id": "g0245",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-107 runs its nominal daily duty for 30 days. Priced on Tariff Westmere S3, what is the energy cost in USD?",
+  "answer": 1345.6692,
+  "needs": [
+   "G-EQ-007",
+   "G-TF-003"
+  ],
+  "titles": [
+   "Vacuum Pump VP-107",
+   "Tariff Westmere S3"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0246",
+  "family": "factual",
+  "q": "What is the standing charge per month in USD for Tariff Westmere S3?",
+  "answer": 19.07,
+  "needs": [
+   "G-TF-003"
+  ],
+  "title": "Tariff Westmere S3",
+  "key": "standing"
+ },
+ {
+  "id": "g0247",
+  "family": "derived",
+  "q": "The Booster Pump BP-106 runs its nominal daily duty for 20 days. Priced on Tariff Eastport S1, what is the energy cost in USD?",
+  "answer": 1330.4416,
+  "needs": [
+   "G-EQ-006",
+   "G-TF-001"
+  ],
+  "titles": [
+   "Booster Pump BP-106",
+   "Tariff Eastport S1"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0248",
+  "family": "factual",
+  "q": "What is the standing charge per month in USD for Tariff Westmere S3?",
+  "answer": 19.07,
+  "needs": [
+   "G-TF-003"
+  ],
+  "title": "Tariff Westmere S3",
+  "key": "standing"
+ },
+ {
+  "id": "g0249",
+  "family": "derived",
+  "q": "The Booster Pump BP-101 runs its nominal daily duty for 30 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 657.432,
+  "needs": [
+   "G-EQ-001",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Booster Pump BP-101",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0250",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9005?",
+  "answer": 52.0,
+  "needs": [
+   "G-IN-005"
+  ],
+  "title": "Invoice 9005",
+  "key": "qty"
+ },
+ {
+  "id": "g0251",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-100 runs its nominal daily duty for 30 days. Priced on Tariff Westmere S7, what is the energy cost in USD?",
+  "answer": 2020.3488,
+  "needs": [
+   "G-EQ-000",
+   "G-TF-007"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-100",
+   "Tariff Westmere S7"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0252",
+  "family": "factual",
+  "q": "What is the nominal duty in hours per day for Chiller Unit CU-108?",
+  "answer": 24.0,
+  "needs": [
+   "G-EQ-008"
+  ],
+  "title": "Chiller Unit CU-108",
+  "key": "duty_h"
+ },
+ {
+  "id": "g0253",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-107 runs its nominal daily duty for 20 days. Priced on Tariff Westmere S3, what is the energy cost in USD?",
+  "answer": 897.1128,
+  "needs": [
+   "G-EQ-007",
+   "G-TF-003"
+  ],
+  "titles": [
+   "Vacuum Pump VP-107",
+   "Tariff Westmere S3"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0254",
+  "family": "factual",
+  "q": "What is the labour rate in USD per hour for Service SS-4?",
+  "answer": 47.17,
+  "needs": [
+   "G-SV-004"
+  ],
+  "title": "Service SS-4",
+  "key": "labour"
+ },
+ {
+  "id": "g0255",
+  "family": "derived",
+  "q": "The Chiller Unit CU-103 runs its nominal daily duty for 20 days. Priced on Tariff Westmere S7, what is the energy cost in USD?",
+  "answer": 673.4496,
+  "needs": [
+   "G-EQ-003",
+   "G-TF-007"
+  ],
+  "titles": [
+   "Chiller Unit CU-103",
+   "Tariff Westmere S7"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0256",
+  "family": "factual",
+  "q": "What is the drive efficiency for Vacuum Pump VP-102?",
+  "answer": 0.78,
+  "needs": [
+   "G-EQ-002"
+  ],
+  "title": "Vacuum Pump VP-102",
+  "key": "efficiency"
+ },
+ {
+  "id": "g0257",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-110 runs its nominal daily duty for 30 days. Priced on Tariff Westmere S3, what is the energy cost in USD?",
+  "answer": 2614.7556,
+  "needs": [
+   "G-EQ-010",
+   "G-TF-003"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-110",
+   "Tariff Westmere S3"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0258",
+  "family": "factual",
+  "q": "What is the nominal duty in hours per day for Centrifugal Pump CP-110?",
+  "answer": 12.0,
+  "needs": [
+   "G-EQ-010"
+  ],
+  "title": "Centrifugal Pump CP-110",
+  "key": "duty_h"
+ },
+ {
+  "id": "g0259",
+  "family": "derived",
+  "q": "The Chiller Unit CU-103 runs its nominal daily duty for 22 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 544.1885,
+  "needs": [
+   "G-EQ-003",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Chiller Unit CU-103",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0260",
+  "family": "factual",
+  "q": "What is the rated power in kW for Chiller Unit CU-103?",
+  "answer": 34.8,
+  "needs": [
+   "G-EQ-003"
+  ],
+  "title": "Chiller Unit CU-103",
+  "key": "power_kw"
+ },
+ {
+  "id": "g0261",
+  "family": "derived",
+  "q": "The Booster Pump BP-106 runs its nominal daily duty for 22 days. Priced on Tariff Northland S4, what is the energy cost in USD?",
+  "answer": 2177.2186,
+  "needs": [
+   "G-EQ-006",
+   "G-TF-004"
+  ],
+  "titles": [
+   "Booster Pump BP-106",
+   "Tariff Northland S4"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0262",
+  "family": "factual",
+  "q": "What is the energy rate in USD per kWh for Tariff Eastport S5?",
+  "answer": 0.1659,
+  "needs": [
+   "G-TF-005"
+  ],
+  "title": "Tariff Eastport S5",
+  "key": "rate"
+ },
+ {
+  "id": "g0263",
+  "family": "derived",
+  "q": "The Chiller Unit CU-103 runs its nominal daily duty for 20 days. Priced on Tariff Northland S4, what is the energy cost in USD?",
+  "answer": 454.3488,
+  "needs": [
+   "G-EQ-003",
+   "G-TF-004"
+  ],
+  "titles": [
+   "Chiller Unit CU-103",
+   "Tariff Northland S4"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0264",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9001?",
+  "answer": 201.95,
+  "needs": [
+   "G-IN-001"
+  ],
+  "title": "Invoice 9001",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0265",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-110 runs its nominal daily duty for 22 days. Priced on Tariff Westmere S7, what is the energy cost in USD?",
+  "answer": 1526.2922,
+  "needs": [
+   "G-EQ-010",
+   "G-TF-007"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-110",
+   "Tariff Westmere S7"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0266",
+  "family": "factual",
+  "q": "What is the standing charge per month in USD for Tariff Northland S0?",
+  "answer": 9.74,
+  "needs": [
+   "G-TF-000"
+  ],
+  "title": "Tariff Northland S0",
+  "key": "standing"
+ },
+ {
+  "id": "g0267",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-105 runs its nominal daily duty for 20 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 1467.0912,
+  "needs": [
+   "G-EQ-005",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-105",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0268",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9004?",
+  "answer": 163.29,
+  "needs": [
+   "G-IN-004"
+  ],
+  "title": "Invoice 9004",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0269",
+  "family": "derived",
+  "q": "The Centrifugal Pump CP-110 runs its nominal daily duty for 22 days. Priced on Tariff Eastport S5, what is the energy cost in USD?",
+  "answer": 1046.7626,
+  "needs": [
+   "G-EQ-010",
+   "G-TF-005"
+  ],
+  "titles": [
+   "Centrifugal Pump CP-110",
+   "Tariff Eastport S5"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0270",
+  "family": "factual",
+  "q": "What is the nominal duty in hours per day for Chiller Unit CU-108?",
+  "answer": 24.0,
+  "needs": [
+   "G-EQ-008"
+  ],
+  "title": "Chiller Unit CU-108",
+  "key": "duty_h"
+ },
+ {
+  "id": "g0271",
+  "family": "derived",
+  "q": "The Air Compressor AC-109 runs its nominal daily duty for 22 days. Priced on Tariff Eastport S1, what is the energy cost in USD?",
+  "answer": 328.2224,
+  "needs": [
+   "G-EQ-009",
+   "G-TF-001"
+  ],
+  "titles": [
+   "Air Compressor AC-109",
+   "Tariff Eastport S1"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0272",
+  "family": "factual",
+  "q": "What is the energy rate in USD per kWh for Tariff Southgate S2?",
+  "answer": 0.1777,
+  "needs": [
+   "G-TF-002"
+  ],
+  "title": "Tariff Southgate S2",
+  "key": "rate"
+ },
+ {
+  "id": "g0273",
+  "family": "derived",
+  "q": "The Booster Pump BP-111 runs its nominal daily duty for 20 days. Priced on Tariff Northland S4, what is the energy cost in USD?",
+  "answer": 235.008,
+  "needs": [
+   "G-EQ-011",
+   "G-TF-004"
+  ],
+  "titles": [
+   "Booster Pump BP-111",
+   "Tariff Northland S4"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0274",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9008?",
+  "answer": 217.0,
+  "needs": [
+   "G-IN-008"
+  ],
+  "title": "Invoice 9008",
+  "key": "qty"
+ },
+ {
+  "id": "g0275",
+  "family": "derived",
+  "q": "The Chiller Unit CU-103 runs its nominal daily duty for 20 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 442.0992,
+  "needs": [
+   "G-EQ-003",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Chiller Unit CU-103",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0276",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9006?",
+  "answer": 6.0,
+  "needs": [
+   "G-IN-006"
+  ],
+  "title": "Invoice 9006",
+  "key": "qty"
+ },
+ {
+  "id": "g0277",
+  "family": "derived",
+  "q": "The Chiller Unit CU-108 runs its nominal daily duty for 30 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 882.8136,
+  "needs": [
+   "G-EQ-008",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Chiller Unit CU-108",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0278",
+  "family": "factual",
+  "q": "What is the energy rate in USD per kWh for Tariff Northland S4?",
+  "answer": 0.1632,
+  "needs": [
+   "G-TF-004"
+  ],
+  "title": "Tariff Northland S4",
+  "key": "rate"
+ },
+ {
+  "id": "g0279",
+  "family": "derived",
+  "q": "The Booster Pump BP-111 runs its nominal daily duty for 20 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 228.672,
+  "needs": [
+   "G-EQ-011",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Booster Pump BP-111",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0280",
+  "family": "factual",
+  "q": "What is the drive efficiency for Booster Pump BP-106?",
+  "answer": 0.84,
+  "needs": [
+   "G-EQ-006"
+  ],
+  "title": "Booster Pump BP-106",
+  "key": "efficiency"
+ },
+ {
+  "id": "g0281",
+  "family": "derived",
+  "q": "The Booster Pump BP-106 runs its nominal daily duty for 20 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 2155.1456,
+  "needs": [
+   "G-EQ-006",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Booster Pump BP-106",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0282",
+  "family": "factual",
+  "q": "What is the energy rate in USD per kWh for Tariff Westmere S3?",
+  "answer": 0.3039,
+  "needs": [
+   "G-TF-003"
+  ],
+  "title": "Tariff Westmere S3",
+  "key": "rate"
+ },
+ {
+  "id": "g0283",
+  "family": "derived",
+  "q": "The Booster Pump BP-106 runs its nominal daily duty for 22 days. Priced on Tariff Westmere S3, what is the energy cost in USD?",
+  "answer": 4054.2691,
+  "needs": [
+   "G-EQ-006",
+   "G-TF-003"
+  ],
+  "titles": [
+   "Booster Pump BP-106",
+   "Tariff Westmere S3"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0284",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9007?",
+  "answer": 100.14,
+  "needs": [
+   "G-IN-007"
+  ],
+  "title": "Invoice 9007",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0285",
+  "family": "derived",
+  "q": "The Chiller Unit CU-103 runs its nominal daily duty for 30 days. Priced on Tariff Eastport S1, what is the energy cost in USD?",
+  "answer": 458.1072,
+  "needs": [
+   "G-EQ-003",
+   "G-TF-001"
+  ],
+  "titles": [
+   "Chiller Unit CU-103",
+   "Tariff Eastport S1"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0286",
+  "family": "factual",
+  "q": "What is the unit price in USD for Invoice 9009?",
+  "answer": 67.08,
+  "needs": [
+   "G-IN-009"
+  ],
+  "title": "Invoice 9009",
+  "key": "unit_price"
+ },
+ {
+  "id": "g0287",
+  "family": "derived",
+  "q": "The Booster Pump BP-106 runs its nominal daily duty for 20 days. Priced on Tariff Northland S4, what is the energy cost in USD?",
+  "answer": 1979.2896,
+  "needs": [
+   "G-EQ-006",
+   "G-TF-004"
+  ],
+  "titles": [
+   "Booster Pump BP-106",
+   "Tariff Northland S4"
+  ],
+  "given": {
+   "days": 20
+  }
+ },
+ {
+  "id": "g0288",
+  "family": "factual",
+  "q": "What is the quantity of units for Invoice 9006?",
+  "answer": 6.0,
+  "needs": [
+   "G-IN-006"
+  ],
+  "title": "Invoice 9006",
+  "key": "qty"
+ },
+ {
+  "id": "g0289",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-102 runs its nominal daily duty for 30 days. Priced on Tariff Westmere S7, what is the energy cost in USD?",
+  "answer": 7106.0544,
+  "needs": [
+   "G-EQ-002",
+   "G-TF-007"
+  ],
+  "titles": [
+   "Vacuum Pump VP-102",
+   "Tariff Westmere S7"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0290",
+  "family": "factual",
+  "q": "What is the drive efficiency for Vacuum Pump VP-107?",
+  "answer": 0.84,
+  "needs": [
+   "G-EQ-007"
+  ],
+  "title": "Vacuum Pump VP-107",
+  "key": "efficiency"
+ },
+ {
+  "id": "g0291",
+  "family": "derived",
+  "q": "The Booster Pump BP-106 runs its nominal daily duty for 30 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 3232.7184,
+  "needs": [
+   "G-EQ-006",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Booster Pump BP-106",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0292",
+  "family": "factual",
+  "q": "What is the rated power in kW for Chiller Unit CU-103?",
+  "answer": 34.8,
+  "needs": [
+   "G-EQ-003"
+  ],
+  "title": "Chiller Unit CU-103",
+  "key": "power_kw"
+ },
+ {
+  "id": "g0293",
+  "family": "derived",
+  "q": "The Air Compressor AC-109 runs its nominal daily duty for 30 days. Priced on Tariff Northland S0, what is the energy cost in USD?",
+  "answer": 647.904,
+  "needs": [
+   "G-EQ-009",
+   "G-TF-000"
+  ],
+  "titles": [
+   "Air Compressor AC-109",
+   "Tariff Northland S0"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0294",
+  "family": "factual",
+  "q": "What is the labour rate in USD per hour for Service SS-0?",
+  "answer": 50.07,
+  "needs": [
+   "G-SV-000"
+  ],
+  "title": "Service SS-0",
+  "key": "labour"
+ },
+ {
+  "id": "g0295",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-102 runs its nominal daily duty for 30 days. Priced on Tariff Westmere S3, what is the energy cost in USD?",
+  "answer": 8927.3664,
+  "needs": [
+   "G-EQ-002",
+   "G-TF-003"
+  ],
+  "titles": [
+   "Vacuum Pump VP-102",
+   "Tariff Westmere S3"
+  ],
+  "given": {
+   "days": 30
+  }
+ },
+ {
+  "id": "g0296",
+  "family": "factual",
+  "q": "What is the drive efficiency for Centrifugal Pump CP-110?",
+  "answer": 0.78,
+  "needs": [
+   "G-EQ-010"
+  ],
+  "title": "Centrifugal Pump CP-110",
+  "key": "efficiency"
+ },
+ {
+  "id": "g0297",
+  "family": "derived",
+  "q": "The Vacuum Pump VP-102 runs its nominal daily duty for 22 days. Priced on Tariff Southgate S2, what is the energy cost in USD?",
+  "answer": 3828.0845,
+  "needs": [
+   "G-EQ-002",
+   "G-TF-002"
+  ],
+  "titles": [
+   "Vacuum Pump VP-102",
+   "Tariff Southgate S2"
+  ],
+  "given": {
+   "days": 22
+  }
+ },
+ {
+  "id": "g0298",
+  "family": "factual",
+  "q": "What is the service interval in operating hours for Service SS-1?",
+  "answer": 4000.0,
+  "needs": [
+   "G-SV-001"
+  ],
+  "title": "Service SS-1",
+  "key": "interval_h"
+ },
+ {
+  "id": "g0299",
+  "family": "derived",
+  "q": "The Air Compressor AC-104 runs its nominal daily duty for 20 days. Priced on Tariff Westmere S7, what is the energy cost in USD?",
+  "answer": 2467.38,
+  "needs": [
+   "G-EQ-004",
+   "G-TF-007"
+  ],
+  "titles": [
+   "Air Compressor AC-104",
+   "Tariff Westmere S7"
+  ],
+  "given": {
+   "days": 20
+  }
+ }
+]

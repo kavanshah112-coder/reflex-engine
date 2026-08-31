@@ -1,602 +1,302 @@
 [
- {
-  "key": "2e51bd5d85509d7a",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 9, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ets reduced by 9 square units,\"}, {\"id\": \"q2\", \"value\": 5, \"unit\": \"\", \"kind\": \"count\", \"span\": \"is reduced by 5 units and brea\"}, {\"id\": \"q3\", \"value\": 3, \"unit\": \"\", \"kind\": \"count\", \"span\": \"s increased by 3 units. If we i\"}, {\"id\": \"q4\", \"value\": 3, \"unit\": \"\", \"kind\": \"count\", \"span\": \"the length by 3 units and the\"}, {\"id\": \"q5\", \"value\": 2, \"unit\": \"\", \"kind\": \"count\", \"span\": \"the breadth by 2 units, the are\"}, {\"id\": \"q6\", \"value\": 67, \"unit\": \"\", \"kind\": \"count\", \"span\": \"a increases by 67 square units.\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 358,
-  "tokens_out": 166
- },
- {
-  "key": "2e6c6766d49dab96",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 6, \"unit\": \"\", \"kind\": \"count\", \"span\": \". If there are 6 children on ea\"}, {\"id\": \"q2\", \"value\": 9, \"unit\": \"\", \"kind\": \"count\", \"span\": \"on each of the 9 blocks, how ma\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 337,
-  "tokens_out": 85
- },
- {
-  "key": "2f2801815e95038d",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 23, \"unit\": \"\", \"kind\": \"count\", \"span\": \"h bag contains 23 pounds of oran\"}, {\"id\": \"q2\", \"value\": 45, \"unit\": \"\", \"kind\": \"count\", \"span\": \"oranges are in 45 bags?\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 309,
-  "tokens_out": 80
- },
- {
-  "key": "2f438b593a1352db",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 134, \"unit\": \"\", \"kind\": \"count\", \"span\": \"wants to load 134 tons of his fr\"}, {\"id\": \"q2\", \"value\": 15, \"unit\": \"\", \"kind\": \"count\", \"span\": \"truck can load 15 tons of fruits\"}, {\"id\": \"q3\", \"value\": 7, \"unit\": \"\", \"kind\": \"count\", \"span\": \"truck can load 7 tons. In order\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 352,
-  "tokens_out": 105
- },
- {
-  "key": "2f6332f14b468817",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 28, \"unit\": \"\", \"kind\": \"count\", \"span\": \"If 28 less than five\"}, {\"id\": \"q2\", \"value\": 232, \"unit\": \"\", \"kind\": \"count\", \"span\": \"tain number is 232. What is the n\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 308,
-  "tokens_out": 81
- },
- {
-  "key": "2f7b61f7e355b68f",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 50, \"unit\": \"\", \"kind\": \"count\", \"span\": \"saw a total of 50 birds. On day\"}, {\"id\": \"q2\", \"value\": 120, \"unit\": \"\", \"kind\": \"count\", \"span\": \"d five, he saw 120 birds. On day\"}, {\"id\": \"q3\", \"value\": 20, \"unit\": \"\", \"kind\": \"count\", \"span\": \"day six he saw 20 and on day sev\"}, {\"id\": \"q4\", \"value\": 90, \"unit\": \"\", \"kind\": \"count\", \"span\": \"y seven he saw 90. On average, h\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 384,
-  "tokens_out": 132
- },
- {
-  "key": "2fc0413517db4886",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 72, \"unit\": \"\", \"kind\": \"count\", \"span\": \"m. They scored 72 points and the\"}, {\"id\": \"q2\", \"value\": 55, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ow Team scored 55, how large was\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 341,
-  "tokens_out": 82
- },
- {
-  "key": "307056d73fd3ba1a",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 8, \"unit\": \"\", \"kind\": \"count\", \"span\": \"tarts out with 8 sapphires. She\"}, {\"id\": \"q2\", \"value\": 3, \"unit\": \"\", \"kind\": \"count\", \"span\": \"es. She trades 3 sapphires for\"}, {\"id\": \"q3\", \"value\": 800, \"unit\": \"\", \"kind\": \"count\", \"span\": \"res are worth $800 and rubies are\"}, {\"id\": \"q4\", \"value\": 1200, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ies are worth $1200, how much mone\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 329,
-  "tokens_out": 122
- },
- {
-  "key": "31a5105849ec2b5c",
-  "text": "{\"quantities\": [], \"plan\": [], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 313,
-  "tokens_out": 26
- },
- {
-  "key": "31d2eaa587311020",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 2, \"unit\": \"\", \"kind\": \"count\", \"span\": \"earn he needed 2 more toys than\"}, {\"id\": \"q2\", \"value\": 80, \"unit\": \"\", \"kind\": \"count\", \"span\": \"set, which had 80 toys. How many\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 344,
-  "tokens_out": 82
- },
- {
-  "key": "31fce38fc474ae9e",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 20, \"unit\": \"\", \"kind\": \"count\", \"span\": \"It takes 20 minutes for th\"}, {\"id\": \"q2\", \"value\": 300, \"unit\": \"\", \"kind\": \"count\", \"span\": \"to heat up to 300 degrees.  It t\"}, {\"id\": \"q3\", \"value\": 40, \"unit\": \"\", \"kind\": \"count\", \"span\": \"It then takes 40% longer for th\"}, {\"id\": \"q4\", \"value\": 400, \"unit\": \"\", \"kind\": \"count\", \"span\": \"temperature of 400 degrees.  Afte\"}, {\"id\": \"q5\", \"value\": 5, \"unit\": \"\", \"kind\": \"count\", \"span\": \"e oil it takes 5 minutes less t\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 372,
-  "tokens_out": 145
- },
- {
-  "key": "32487c85d1f3480b",
-  "text": "{\"quantities\": [], \"plan\": [], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 324,
-  "tokens_out": 26
- },
- {
-  "key": "332e471e54ee83e6",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 50, \"unit\": \"\", \"kind\": \"count\", \"span\": \"red ties cost 50% more than blu\"}, {\"id\": \"q2\", \"value\": 200, \"unit\": \"\", \"kind\": \"count\", \"span\": \"es.  He spent $200 on blue ties t\"}, {\"id\": \"q3\", \"value\": 40, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ies that cost $40 each. How much\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 336,
-  "tokens_out": 105
- },
- {
-  "key": "33b11528147738f0",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 6, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ch room needed 6 outlets. If th\"}, {\"id\": \"q2\", \"value\": 7, \"unit\": \"\", \"kind\": \"count\", \"span\": \"the house has 7 rooms, how man\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 329,
-  "tokens_out": 82
- },
- {
-  "key": "33cc4f46fc6c3213",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 4, \"unit\": \"\", \"kind\": \"count\", \"span\": \"e in the ratio 4:7. The sum of\"}, {\"id\": \"q2\", \"value\": 7, \"unit\": \"\", \"kind\": \"count\", \"span\": \"in the ratio 4:7. The sum of th\"}, {\"id\": \"q3\", \"value\": 22, \"unit\": \"\", \"kind\": \"count\", \"span\": \"their ages is 22. Find the ages\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 321,
-  "tokens_out": 106
- },
- {
-  "key": "342bc7c924705573",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 60, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ber of dogs is 60, how many pets\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\"], \"out\": \"s1\", \"note\": \"reference the quantity\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 346,
-  "tokens_out": 60
- },
- {
-  "key": "35173ff16cf958eb",
-  "text": "{\"quantities\": [], \"plan\": [], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 321,
-  "tokens_out": 26
- },
- {
-  "key": "351918eae97daf91",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 42, \"unit\": \"\", \"kind\": \"count\", \"span\": \"eces of timber 42 m, 49 m and 63\"}, {\"id\": \"q2\", \"value\": 49, \"unit\": \"\", \"kind\": \"count\", \"span\": \"f timber 42 m, 49 m and 63 m lon\"}, {\"id\": \"q3\", \"value\": 63, \"unit\": \"\", \"kind\": \"count\", \"span\": \"42 m, 49 m and 63 m long have to\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 329,
-  "tokens_out": 114
- },
- {
-  "key": "35c15f76735d52e8",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 467.0, \"unit\": \"\", \"kind\": \"count\", \"span\": \"iginally cost $467.00 and he was abl\"}, {\"id\": \"q2\", \"value\": 399.0, \"unit\": \"\", \"kind\": \"count\", \"span\": \"able to get a $399.00 discount, how\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 344,
-  "tokens_out": 82
- },
- {
-  "key": "3644bf7348099426",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 125, \"unit\": \"\", \"kind\": \"count\", \"span\": \"den. She needs 125 rocks to compl\"}, {\"id\": \"q2\", \"value\": 64, \"unit\": \"\", \"kind\": \"count\", \"span\": \"order. She has 64 rocks. How man\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 332,
-  "tokens_out": 82
- },
- {
-  "key": "3720da9278fe387c",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 5, \"unit\": \"\", \"kind\": \"count\", \"span\": \"n. If Mary has 5 chewing gums,\"}, {\"id\": \"q2\", \"value\": 10, \"unit\": \"\", \"kind\": \"count\", \"span\": \"gums, Sam has 10 chewing gums a\"}, {\"id\": \"q3\", \"value\": 15, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ms and Sue has 15 chewing gums,\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 362,
-  "tokens_out": 104
- },
- {
-  "key": "3831d2dc09d24954",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 11, \"unit\": \"\", \"kind\": \"count\", \"span\": \"London is 11 years old and\"}, {\"id\": \"q2\", \"value\": 16, \"unit\": \"\", \"kind\": \"count\", \"span\": \"d and Blair is 16 years old. Sev\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 322,
-  "tokens_out": 82
- },
- {
-  "key": "3884c81f46b3e729",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 6000, \"unit\": \"\", \"kind\": \"count\", \"span\": \"has space for 6000 people.  After\"}, {\"id\": \"q2\", \"value\": 950, \"unit\": \"\", \"kind\": \"count\", \"span\": \"accounting for 950 seats for grad\"}, {\"id\": \"q3\", \"value\": 300, \"unit\": \"\", \"kind\": \"count\", \"span\": \"graduates and 300 seats for facu\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 357,
-  "tokens_out": 100
- },
- {
-  "key": "38bf265c9632724a",
-  "text": "{\"quantities\": [], \"plan\": [], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 322,
-  "tokens_out": 26
- },
- {
-  "key": "39345a4ea15c50ce",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 52, \"unit\": \"\", \"kind\": \"count\", \"span\": \"A garden has 52 rows and 15 co\"}, {\"id\": \"q2\", \"value\": 15, \"unit\": \"\", \"kind\": \"count\", \"span\": \"as 52 rows and 15 columns of bea\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 312,
-  "tokens_out": 85
- },
- {
-  "key": "39838b10aae4aff5",
-  "text": "{\"quantities\": [], \"plan\": [], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 313,
-  "tokens_out": 26
- },
- {
-  "key": "39cfb92c399bd3ca",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 55, \"unit\": \"\", \"kind\": \"count\", \"span\": \"Farm Y. He has 55 goats in Farm\"}, {\"id\": \"q2\", \"value\": 45, \"unit\": \"\", \"kind\": \"count\", \"span\": \"in Farm X and 45 goats in Farm\"}, {\"id\": \"q3\", \"value\": 10, \"unit\": \"\", \"kind\": \"count\", \"span\": \"arm Y. He sold 10 goats from Far\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 352,
-  "tokens_out": 108
- },
- {
-  "key": "3b04282916abb687",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 2, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ezer there are 2 grape popsicle\"}, {\"id\": \"q2\", \"value\": 13, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ape popsicles, 13 cherry popsicl\"}, {\"id\": \"q3\", \"value\": 2, \"unit\": \"\", \"kind\": \"count\", \"span\": \"popsicles and 2 banana popsicl\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 316,
-  "tokens_out": 97
- },
- {
-  "key": "3b7ffd75292f2f8c",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 6, \"unit\": \"\", \"kind\": \"count\", \"span\": \"r they planted 6 rows of potato\"}, {\"id\": \"q2\", \"value\": 9, \"unit\": \"\", \"kind\": \"count\", \"span\": \"potatoes with 9 seeds in each\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 328,
-  "tokens_out": 81
- },
- {
-  "key": "3bb802deabb7022b",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 140, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ty also bought 140 shiny blue rou\"}, {\"id\": \"q2\", \"value\": 14, \"unit\": \"\", \"kind\": \"count\", \"span\": \"und stones. If 14 pieces of this\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 326,
-  "tokens_out": 82
- },
- {
-  "key": "3bd6119ab453336f",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 104, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ale there were 104 items sold tot\"}, {\"id\": \"q2\", \"value\": 48, \"unit\": \"\", \"kind\": \"count\", \"span\": \"sold total. If 48 of the items s\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 332,
-  "tokens_out": 84
- },
- {
-  "key": "3c8f5d669daff3d2",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 2, \"unit\": \"\", \"kind\": \"count\", \"span\": \"There are 2 American peopl\"}, {\"id\": \"q2\", \"value\": 4, \"unit\": \"\", \"kind\": \"count\", \"span\": \"erican people, 4 French people\"}, {\"id\": \"q3\", \"value\": 4, \"unit\": \"\", \"kind\": \"count\", \"span\": \"nch people and 4 Chinese people\"}, {\"id\": \"q4\", \"value\": 3, \"unit\": \"\", \"kind\": \"count\", \"span\": \"meeting room. 3 of them leave.\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 324,
-  "tokens_out": 117
- },
- {
-  "key": "3cb658da15196d84",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 16, \"unit\": \"\", \"kind\": \"count\", \"span\": \"r bag can hold 16 cookies. If Ed\"}, {\"id\": \"q2\", \"value\": 292, \"unit\": \"\", \"kind\": \"count\", \"span\": \"If Edgar buys 292 cookies, how m\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 313,
-  "tokens_out": 84
- },
- {
-  "key": "3cc254f935424f82",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 234, \"unit\": \"\", \"kind\": \"count\", \"span\": \"There are 234 people attendi\"}, {\"id\": \"q2\", \"value\": 9, \"unit\": \"\", \"kind\": \"count\", \"span\": \"table can hold 9 people, how ma\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 314,
-  "tokens_out": 80
- },
- {
-  "key": "3d432fe3b9e489b2",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 42, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ale there were 42 raisin cookies\"}, {\"id\": \"q2\", \"value\": 6, \"unit\": \"\", \"kind\": \"count\", \"span\": \"okies sold was 6:1, what is the\"}, {\"id\": \"q3\", \"value\": 1, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ies sold was 6:1, what is the c\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 333,
-  "tokens_out": 104
- },
- {
-  "key": "3d57f926194a79f5",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 20, \"unit\": \"\", \"kind\": \"count\", \"span\": \"Laverne has 20 baseballs and\"}, {\"id\": \"q2\", \"value\": 15, \"unit\": \"\", \"kind\": \"count\", \"span\": \"baseballs and 15 basketballs. I\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 329,
-  "tokens_out": 77
- },
- {
-  "key": "3d80f74f07c466f7",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 3, \"unit\": \"\", \"kind\": \"count\", \"span\": \"rdware ordered 3 hammers in Jun\"}, {\"id\": \"q2\", \"value\": 4, \"unit\": \"\", \"kind\": \"count\", \"span\": \"mmers in June, 4 hammers in Jul\"}, {\"id\": \"q3\", \"value\": 6, \"unit\": \"\", \"kind\": \"count\", \"span\": \"mmers in July, 6 hammers in Aug\"}, {\"id\": \"q4\", \"value\": 9, \"unit\": \"\", \"kind\": \"count\", \"span\": \"in August, and 9 hammers in Sep\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 334,
-  "tokens_out": 124
- },
- {
-  "key": "3d9aa101edebde9f",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 5, \"unit\": \"\", \"kind\": \"count\", \"span\": \"t week he read 5 different book\"}, {\"id\": \"q2\", \"value\": 8, \"unit\": \"\", \"kind\": \"count\", \"span\": \"t week he read 8 books. How man\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 328,
-  "tokens_out": 84
- },
- {
-  "key": "3d9bead7a4309d12",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 15, \"unit\": \"\", \"kind\": \"count\", \"span\": \"After 15 years, Ariel w\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\"], \"out\": \"s1\", \"note\": \"reference the quantity\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 312,
-  "tokens_out": 56
- },
- {
-  "key": "3dae266b05079013",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 77, \"unit\": \"\", \"kind\": \"count\", \"span\": \"l she received 77 gifts to put u\"}, {\"id\": \"q2\", \"value\": 66, \"unit\": \"\", \"kind\": \"count\", \"span\": \"py so she sent 66 of her gifts t\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 344,
-  "tokens_out": 86
- },
- {
-  "key": "3e7873316ccc313b",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 6, \"unit\": \"\", \"kind\": \"count\", \"span\": \"rs is equal to 6. Find the numb\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\"], \"out\": \"s1\", \"note\": \"reference the quantity\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 310,
-  "tokens_out": 60
- },
- {
-  "key": "401bfc2aae59c77b",
-  "text": "{\"quantities\": [], \"plan\": [], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 314,
-  "tokens_out": 26
- },
- {
-  "key": "40ba3bf0ea3d44ba",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 12, \"unit\": \"\", \"kind\": \"count\", \"span\": \"dwarf can mine 12 pounds of ore\"}, {\"id\": \"q2\", \"value\": 50, \"unit\": \"\", \"kind\": \"count\", \"span\": \"on pickaxe and 50% more with a s\"}, {\"id\": \"q3\", \"value\": 40, \"unit\": \"\", \"kind\": \"count\", \"span\": \"nds of ore can 40 dwarves with s\"}, {\"id\": \"q4\", \"value\": 30, \"unit\": \"\", \"kind\": \"count\", \"span\": \"n a month with 30 days?\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 360,
-  "tokens_out": 126
- },
- {
-  "key": "40e6919c8eb55be9",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 143, \"unit\": \"\", \"kind\": \"count\", \"span\": \"le Dave bought 143 ice cream sand\"}, {\"id\": \"q2\", \"value\": 11, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ve them to his 11 hungry nieces,\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 320,
-  "tokens_out": 82
- },
- {
-  "key": "40f330d1fd93ce0c",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 3, \"unit\": \"\", \"kind\": \"count\", \"span\": \"3 owls were sitt\"}, {\"id\": \"q2\", \"value\": 2, \"unit\": \"\", \"kind\": \"count\", \"span\": \"on the fence. 2 more owls join\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 314,
-  "tokens_out": 78
- },
- {
-  "key": "414112e42735fa85",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 2, \"unit\": \"\", \"kind\": \"count\", \"span\": \"a triangle is 2:5. The rectang\"}, {\"id\": \"q2\", \"value\": 5, \"unit\": \"\", \"kind\": \"count\", \"span\": \"triangle is 2:5. The rectangle\"}, {\"id\": \"q3\", \"value\": 6, \"unit\": \"\", \"kind\": \"count\", \"span\": \"as a length of 6 cm and a width\"}, {\"id\": \"q4\", \"value\": 4, \"unit\": \"\", \"kind\": \"count\", \"span\": \"and a width of 4 cm. What is th\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 337,
-  "tokens_out": 126
- },
- {
-  "key": "416be3acc5af7c22",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 6, \"unit\": \"\", \"kind\": \"count\", \"span\": \"There are 6 birds and 3 ne\"}, {\"id\": \"q2\", \"value\": 3, \"unit\": \"\", \"kind\": \"count\", \"span\": \"re 6 birds and 3 nests. What's\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 313,
-  "tokens_out": 82
- },
- {
-  "key": "41e05f8bc88d117c",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 2, \"unit\": \"\", \"kind\": \"count\", \"span\": \"of the middle 2 shelves can ho\"}, {\"id\": \"q2\", \"value\": 10, \"unit\": \"\", \"kind\": \"count\", \"span\": \"elves can hold 10 books. The bot\"}, {\"id\": \"q3\", \"value\": 5, \"unit\": \"\", \"kind\": \"count\", \"span\": \"shelf can hold 5 fewer books th\"}, {\"id\": \"q4\", \"value\": 110, \"unit\": \"\", \"kind\": \"count\", \"span\": \"lf. If she has 110 books, how man\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 373,
-  "tokens_out": 126
- },
- {
-  "key": "41ede60298e694b6",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 210, \"unit\": \"\", \"kind\": \"count\", \"span\": \"Marcus has 210 baseball cards\"}, {\"id\": \"q2\", \"value\": 58, \"unit\": \"\", \"kind\": \"count\", \"span\": \"cards. He has 58 more than Cart\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 312,
-  "tokens_out": 80
- },
- {
-  "key": "4205cdb6babcb40e",
-  "text": "{\"quantities\": [], \"plan\": [], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 318,
-  "tokens_out": 26
- },
- {
-  "key": "4210a94a69c07f70",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 200, \"unit\": \"\", \"kind\": \"count\", \"span\": \"Andrew bakes 200 mini cinnamon\"}, {\"id\": \"q2\", \"value\": 300, \"unit\": \"\", \"kind\": \"count\", \"span\": \"amon rolls and 300 mini blueberry\"}, {\"id\": \"q3\", \"value\": 600, \"unit\": \"\", \"kind\": \"count\", \"span\": \"namon roll has 600 calories and a\"}, {\"id\": \"q4\", \"value\": 450, \"unit\": \"\", \"kind\": \"count\", \"span\": \"rry muffin has 450 calories. If a\"}, {\"id\": \"q5\", \"value\": 1, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ini pastry has 1/3rd of the cal\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 352,
-  "tokens_out": 142
- },
- {
-  "key": "426b503c0d6e1bd9",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 20, \"unit\": \"\", \"kind\": \"count\", \"span\": \"Solomon bought 20 marbles from h\"}, {\"id\": \"q2\", \"value\": 50, \"unit\": \"\", \"kind\": \"count\", \"span\": \"store that had 50. If his father\"}, {\"id\": \"q3\", \"value\": 2, \"unit\": \"\", \"kind\": \"count\", \"span\": \"also gave him 2/5 times as man\"}, {\"id\": \"q4\", \"value\": 5, \"unit\": \"\", \"kind\": \"count\", \"span\": \"lso gave him 2/5 times as many\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 353,
-  "tokens_out": 124
- },
- {
-  "key": "429afadd4abcdcb1",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 4, \"unit\": \"\", \"kind\": \"count\", \"span\": \"s. If Chris is 4, how old is Ca\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\"], \"out\": \"s1\", \"note\": \"reference the quantity\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 317,
-  "tokens_out": 61
- },
- {
-  "key": "42d15e65db69a708",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 29, \"unit\": \"\", \"kind\": \"count\", \"span\": \"tially, he had 29 endangered bir\"}, {\"id\": \"q2\", \"value\": 7, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ch species has 7 pairs of birds\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 369,
-  "tokens_out": 81
- },
- {
-  "key": "434ef60b6a29b56a",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 10000, \"unit\": \"\", \"kind\": \"count\", \"span\": \"There are 10000 gallons of wat\"}, {\"id\": \"q2\", \"value\": 500, \"unit\": \"\", \"kind\": \"count\", \"span\": \"d at a rate of 500 gallons of wat\"}, {\"id\": \"q3\", \"value\": 6, \"unit\": \"\", \"kind\": \"count\", \"span\": \"the tank after 6 days?\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 380,
-  "tokens_out": 102
- },
- {
-  "key": "4368b147c091731e",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 6, \"unit\": \"\", \"kind\": \"count\", \"span\": \"in packages of 6. If Mom buys 7\"}, {\"id\": \"q2\", \"value\": 71, \"unit\": \"\", \"kind\": \"count\", \"span\": \"6. If Mom buys 71 packages, how\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 316,
-  "tokens_out": 84
- },
- {
-  "key": "436cbb7f67cc3e4d",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 16, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ne can arrange 16 vases of flowe\"}, {\"id\": \"q2\", \"value\": 248, \"unit\": \"\", \"kind\": \"count\", \"span\": \". If there are 248 vases of flowe\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 332,
-  "tokens_out": 84
- },
- {
-  "key": "43c8078b207370f8",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 2, \"unit\": \"\", \"kind\": \"count\", \"span\": \"John buys 2 pairs of shoes\"}, {\"id\": \"q2\", \"value\": 3, \"unit\": \"\", \"kind\": \"count\", \"span\": \"or each of his 3 children.  The\"}, {\"id\": \"q3\", \"value\": 60, \"unit\": \"\", \"kind\": \"count\", \"span\": \"n.  They cost $60 each.  How muc\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 316,
-  "tokens_out": 102
- },
- {
-  "key": "446495e2672ee4be",
-  "text": "{\"quantities\": [], \"plan\": [], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 316,
-  "tokens_out": 26
- },
- {
-  "key": "44aceeaf7e632924",
-  "text": "{\"quantities\": [], \"plan\": [], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 356,
-  "tokens_out": 26
- },
- {
-  "key": "44f5706419f8f441",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 45, \"unit\": \"\", \"kind\": \"count\", \"span\": \"oom containing 45 students there\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\"], \"out\": \"s1\", \"note\": \"reference the quantity\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 314,
-  "tokens_out": 56
- },
- {
-  "key": "45707a2bbda806a8",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 3, \"unit\": \"\", \"kind\": \"count\", \"span\": \"cipe calls for 3 cups of flour\"}, {\"id\": \"q2\", \"value\": 1, \"unit\": \"\", \"kind\": \"count\", \"span\": \"s of flour and 1 cup milk. If f\"}, {\"id\": \"q3\", \"value\": 2, \"unit\": \"\", \"kind\": \"count\", \"span\": \"our is sold in 2-cup bags and m\"}, {\"id\": \"q4\", \"value\": 2, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ilk is sold in 2-cup bottles, h\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 354,
-  "tokens_out": 129
- },
- {
-  "key": "457b14a5c41abe38",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 2, \"unit\": \"\", \"kind\": \"count\", \"span\": \"that measures 2 centimeters. T\"}, {\"id\": \"q2\", \"value\": 92, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ler squares is 92 square centime\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 349,
-  "tokens_out": 78
- },
- {
-  "key": "45e1079939b5a146",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 16, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ne can arrange 16 vases of flowe\"}, {\"id\": \"q2\", \"value\": 248, \"unit\": \"\", \"kind\": \"count\", \"span\": \". If there are 248 vases of flowe\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 332,
-  "tokens_out": 84
- },
- {
-  "key": "476d0ca8c3a5f075",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 18, \"unit\": \"\", \"kind\": \"count\", \"span\": \"Peter has 18 oranges, 27 pe\"}, {\"id\": \"q2\", \"value\": 27, \"unit\": \"\", \"kind\": \"count\", \"span\": \"as 18 oranges, 27 pears and 12 b\"}, {\"id\": \"q3\", \"value\": 12, \"unit\": \"\", \"kind\": \"count\", \"span\": \", 27 pears and 12 bananas. He wa\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 336,
-  "tokens_out": 105
- },
- {
-  "key": "47d9652f7fbbb1d1",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 16, \"unit\": \"\", \"kind\": \"count\", \"span\": \"are currently 16 years apart in\"}, {\"id\": \"q2\", \"value\": 40, \"unit\": \"\", \"kind\": \"count\", \"span\": \"than Emma, is 40 years old, wha\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 324,
-  "tokens_out": 81
- },
- {
-  "key": "480d4ef578e5c914",
-  "text": "{\"quantities\": [], \"plan\": [], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 330,
-  "tokens_out": 26
- },
- {
-  "key": "481d7f2452280b8a",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 6, \"unit\": \"\", \"kind\": \"count\", \"span\": \"e able to make 6 institutions h\"}, {\"id\": \"q2\", \"value\": 80, \"unit\": \"\", \"kind\": \"count\", \"span\": \"nstitution has 80 people. How ma\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 325,
-  "tokens_out": 81
- },
- {
-  "key": "4973b37cf84a5ebc",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 17, \"unit\": \"\", \"kind\": \"count\", \"span\": \"els in sets of 17 and bath towel\"}, {\"id\": \"q2\", \"value\": 6, \"unit\": \"\", \"kind\": \"count\", \"span\": \"els in sets of 6. If the store\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 345,
-  "tokens_out": 85
- },
- {
-  "key": "4a0a704df09224db",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 125, \"unit\": \"\", \"kind\": \"count\", \"span\": \"den. She needs 125 rocks to compl\"}, {\"id\": \"q2\", \"value\": 64, \"unit\": \"\", \"kind\": \"count\", \"span\": \"order. She has 64 rocks. How man\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 332,
-  "tokens_out": 82
- },
- {
-  "key": "4b2622f66f697034",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 16, \"unit\": \"\", \"kind\": \"count\", \"span\": \"Lindsey has 16 cans of regula\"}, {\"id\": \"q2\", \"value\": 8, \"unit\": \"\", \"kind\": \"count\", \"span\": \"gular soda and 8 cans of diet s\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 354,
-  "tokens_out": 82
- },
- {
-  "key": "4bab8913aae5f20b",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 145, \"unit\": \"\", \"kind\": \"count\", \"span\": \"e building has 145 stories and th\"}, {\"id\": \"q2\", \"value\": 255, \"unit\": \"\", \"kind\": \"count\", \"span\": \"econd half has 255 stories. How m\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 360,
-  "tokens_out": 82
- },
- {
-  "key": "4bb38647673533b3",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 3, \"unit\": \"\", \"kind\": \"count\", \"span\": \"Castle bought 3 boxes of Coco\"}, {\"id\": \"q2\", \"value\": 5, \"unit\": \"\", \"kind\": \"count\", \"span\": \"oco Crunch and 5 boxes of Fruit\"}, {\"id\": \"q3\", \"value\": 4, \"unit\": \"\", \"kind\": \"count\", \"span\": \"eek she bought 4 boxes of cerea\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 337,
-  "tokens_out": 102
- },
- {
-  "key": "4bf129b6b590e97c",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 72, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ook store sold 72 books. If the\"}, {\"id\": \"q2\", \"value\": 9, \"unit\": \"\", \"kind\": \"count\", \"span\": \"marks sold was 9:2, how many bo\"}, {\"id\": \"q3\", \"value\": 2, \"unit\": \"\", \"kind\": \"count\", \"span\": \"rks sold was 9:2, how many book\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 321,
-  "tokens_out": 104
- },
- {
-  "key": "4d1b198959324882",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 8, \"unit\": \"\", \"kind\": \"count\", \"span\": \"and so he read 8 pages a day of\"}, {\"id\": \"q2\", \"value\": 96, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ges a day of a 96-page book enti\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 333,
-  "tokens_out": 86
- },
- {
-  "key": "4d81e5a93113d4cf",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 100, \"unit\": \"\", \"kind\": \"count\", \"span\": \"Thaddeus slew 100 dragons with h\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\"], \"out\": \"s1\", \"note\": \"reference the quantity\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 377,
-  "tokens_out": 57
- },
- {
-  "key": "4dfaa9afd316f17c",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 84, \"unit\": \"\", \"kind\": \"count\", \"span\": \"Wendy bought 84 inches of ribb\"}, {\"id\": \"q2\", \"value\": 46, \"unit\": \"\", \"kind\": \"count\", \"span\": \"bbon. She used 46 inches to wrap\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 314,
-  "tokens_out": 81
- },
- {
-  "key": "4efbe8f9fc677050",
-  "text": "{\"quantities\": [], \"plan\": [], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 325,
-  "tokens_out": 26
- },
- {
-  "key": "4f5c0e3b277fb173",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 6, \"unit\": \"\", \"kind\": \"count\", \"span\": \"arcade Amy had 6 tickets she sa\"}, {\"id\": \"q2\", \"value\": 7, \"unit\": \"\", \"kind\": \"count\", \"span\": \"played a game 7 times and earn\"}, {\"id\": \"q3\", \"value\": 5, \"unit\": \"\", \"kind\": \"count\", \"span\": \"mes and earned 5 tickets each t\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 338,
-  "tokens_out": 104
- },
- {
-  "key": "501400dac06c968f",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 18, \"unit\": \"\", \"kind\": \"count\", \"span\": \"in packages of 18. Betty ate 45\"}, {\"id\": \"q2\", \"value\": 45, \"unit\": \"\", \"kind\": \"count\", \"span\": \"18. Betty ate 45 crackers. How\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 310,
-  "tokens_out": 81
- },
- {
-  "key": "50145556df37adf0",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 85.0, \"unit\": \"\", \"kind\": \"count\", \"span\": \"Using $85.00 left buying fr\"}, {\"id\": \"q2\", \"value\": 16.0, \"unit\": \"\", \"kind\": \"count\", \"span\": \"If she spent $16.00 on cookies, ho\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 320,
-  "tokens_out": 80
- },
- {
-  "key": "5018199473fc2be6",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 14, \"unit\": \"\", \"kind\": \"count\", \"span\": \"y. He digs for 14 days while Nat\"}, {\"id\": \"q2\", \"value\": 9, \"unit\": \"\", \"kind\": \"count\", \"span\": \"rts filling in 9 holes a day, b\"}, {\"id\": \"q3\", \"value\": 6, \"unit\": \"\", \"kind\": \"count\", \"span\": \"keeps digging 6 new holes ever\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 358,
-  "tokens_out": 105
- },
- {
-  "key": "505067047e0f11cc",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 30, \"unit\": \"\", \"kind\": \"count\", \"span\": \"it if you have 30 chunks of cant\"}, {\"id\": \"q2\", \"value\": 42, \"unit\": \"\", \"kind\": \"count\", \"span\": \"cantaloupe and 42 chunks of hone\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 344,
-  "tokens_out": 82
- },
- {
-  "key": "50a4e0fd2ea26639",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 9, \"unit\": \"\", \"kind\": \"count\", \"span\": \"Katie had 9 math problems\"}, {\"id\": \"q2\", \"value\": 5, \"unit\": \"\", \"kind\": \"count\", \"span\": \"f she finished 5 of them on the\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 322,
-  "tokens_out": 81
- },
- {
-  "key": "516976a01faaaace",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 234, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ch already has 234 lbs. of weight\"}, {\"id\": \"q2\", \"value\": 712, \"unit\": \"\", \"kind\": \"count\", \"span\": \"otal needed is 712 lbs., how much\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 353,
-  "tokens_out": 82
- },
- {
-  "key": "5211dbf824af231f",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 90, \"unit\": \"\", \"kind\": \"count\", \"span\": \"to divide its 90 members into s\"}, {\"id\": \"q2\", \"value\": 7, \"unit\": \"\", \"kind\": \"count\", \"span\": \"arge groups at 7 members each a\"}, {\"id\": \"q3\", \"value\": 3, \"unit\": \"\", \"kind\": \"count\", \"span\": \"mall groups at 3 members each.\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 342,
-  "tokens_out": 102
- },
- {
-  "key": "52170e111a3bb4ae",
-  "text": "{\"quantities\": [], \"plan\": [], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 313,
-  "tokens_out": 26
- },
- {
-  "key": "5352617262fa57bf",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 16, \"unit\": \"\", \"kind\": \"count\", \"span\": \"r bag can hold 16 cookies. If Ed\"}, {\"id\": \"q2\", \"value\": 292, \"unit\": \"\", \"kind\": \"count\", \"span\": \"If Edgar buys 292 cookies, how m\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 313,
-  "tokens_out": 84
- },
- {
-  "key": "5382aeb426c70fa3",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 24, \"unit\": \"\", \"kind\": \"count\", \"span\": \"f Hazel caught 24 salmons and he\"}, {\"id\": \"q2\", \"value\": 27, \"unit\": \"\", \"kind\": \"count\", \"span\": \"her dad caught 27, how many salm\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 368,
-  "tokens_out": 82
- },
- {
-  "key": "543d51b504c9a3ff",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 20, \"unit\": \"\", \"kind\": \"count\", \"span\": \"If there were 20 helmets, calcu\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\"], \"out\": \"s1\", \"note\": \"reference the quantity\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 337,
-  "tokens_out": 57
- },
- {
-  "key": "54a65fa99ea88768",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 5, \"unit\": \"\", \"kind\": \"count\", \"span\": \"Katherine has 5 hanging basket\"}, {\"id\": \"q2\", \"value\": 3, \"unit\": \"\", \"kind\": \"count\", \"span\": \"e wants to add 3 petunias and 2\"}, {\"id\": \"q3\", \"value\": 2, \"unit\": \"\", \"kind\": \"count\", \"span\": \"3 petunias and 2 sweet potato v\"}, {\"id\": \"q4\", \"value\": 3.0, \"unit\": \"\", \"kind\": \"count\", \"span\": \"petunias cost $3.00 apiece and the\"}, {\"id\": \"q5\", \"value\": 2.5, \"unit\": \"\", \"kind\": \"count\", \"span\": \"to vines cost $2.50 apiece.  How m\"}, {\"id\": \"q6\", \"value\": 5, \"unit\": \"\", \"kind\": \"count\", \"span\": \"nd filling all 5 hanging basket\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 346,
-  "tokens_out": 164
- },
- {
-  "key": "550d3b647243936e",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 10000, \"unit\": \"\", \"kind\": \"count\", \"span\": \"There are 10000 gallons of wat\"}, {\"id\": \"q2\", \"value\": 500, \"unit\": \"\", \"kind\": \"count\", \"span\": \"d at a rate of 500 gallons of wat\"}, {\"id\": \"q3\", \"value\": 6, \"unit\": \"\", \"kind\": \"count\", \"span\": \"the tank after 6 days?\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 380,
-  "tokens_out": 102
- },
- {
-  "key": "553d060d924cb296",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 85.0, \"unit\": \"\", \"kind\": \"count\", \"span\": \"Using $85.00 left buying fr\"}, {\"id\": \"q2\", \"value\": 16.0, \"unit\": \"\", \"kind\": \"count\", \"span\": \"If she spent $16.00 on cookies, ho\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 320,
-  "tokens_out": 80
- },
- {
-  "key": "555cde0446d214bb",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 12, \"unit\": \"\", \"kind\": \"count\", \"span\": \"Kendra learns 12 new spelling w\"}, {\"id\": \"q2\", \"value\": 60, \"unit\": \"\", \"kind\": \"count\", \"span\": \"al is to learn 60 new words befo\"}, {\"id\": \"q3\", \"value\": 36, \"unit\": \"\", \"kind\": \"count\", \"span\": \"lready learned 36 new words. How\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 336,
-  "tokens_out": 102
- },
- {
-  "key": "560fbfc416111bee",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 3, \"unit\": \"\", \"kind\": \"count\", \"span\": \"rdware ordered 3 hammers in Jun\"}, {\"id\": \"q2\", \"value\": 4, \"unit\": \"\", \"kind\": \"count\", \"span\": \"mmers in June, 4 hammers in Jul\"}, {\"id\": \"q3\", \"value\": 6, \"unit\": \"\", \"kind\": \"count\", \"span\": \"mmers in July, 6 hammers in Aug\"}, {\"id\": \"q4\", \"value\": 9, \"unit\": \"\", \"kind\": \"count\", \"span\": \"in August, and 9 hammers in Sep\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 334,
-  "tokens_out": 124
- },
- {
-  "key": "5689a926f6a9aed9",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 376, \"unit\": \"\", \"kind\": \"count\", \"span\": \", he will need 376 pieces of wood\"}, {\"id\": \"q2\", \"value\": 123, \"unit\": \"\", \"kind\": \"count\", \"span\": \"riend gave him 123 pieces and his\"}, {\"id\": \"q3\", \"value\": 136, \"unit\": \"\", \"kind\": \"count\", \"span\": \"other gave him 136 pieces, how ma\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 372,
-  "tokens_out": 105
- },
- {
-  "key": "56aa6cbbdb8595c5",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 30, \"unit\": \"\", \"kind\": \"count\", \"span\": \"Kiara baked 30 oatmeal cookie\"}, {\"id\": \"q2\", \"value\": 48, \"unit\": \"\", \"kind\": \"count\", \"span\": \"al cookies and 48 chocolate chip\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 372,
-  "tokens_out": 78
- },
- {
-  "key": "57465814bceefc9b",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 112, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ng a period of 112 minutes, a mus\"}, {\"id\": \"q2\", \"value\": 40, \"unit\": \"\", \"kind\": \"count\", \"span\": \"station played 40 minutes of com\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 322,
-  "tokens_out": 82
- },
- {
-  "key": "57640fbbb1b29f5d",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 20, \"unit\": \"\", \"kind\": \"count\", \"span\": \"it would take 20 minutes to mak\"}, {\"id\": \"q2\", \"value\": 30, \"unit\": \"\", \"kind\": \"count\", \"span\": \"ake batter and 30 minutes to bak\"}, {\"id\": \"q3\", \"value\": 2, \"unit\": \"\", \"kind\": \"count\", \"span\": \"would require 2 hours to cool\"}, {\"id\": \"q4\", \"value\": 10, \"unit\": \"\", \"kind\": \"count\", \"span\": \"an additional 10 minutes to fro\"}, {\"id\": \"q5\", \"value\": 5, \"unit\": \"\", \"kind\": \"count\", \"span\": \"to serve it at 5:00 pm?\"}, {\"id\": \"q6\", \"value\": 0, \"unit\": \"\", \"kind\": \"count\", \"span\": \"serve it at 5:00 pm?\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 402,
-  "tokens_out": 161
- },
- {
-  "key": "57781fa0ef711f14",
-  "text": "{\"quantities\": [{\"id\": \"q1\", \"value\": 6, \"unit\": \"\", \"kind\": \"count\", \"span\": \". If there are 6 children on ea\"}, {\"id\": \"q2\", \"value\": 9, \"unit\": \"\", \"kind\": \"count\", \"span\": \"on each of the 9 blocks, how ma\"}], \"plan\": [{\"op\": \"add\", \"args\": [\"q1\", \"q2\"], \"out\": \"s1\", \"note\": \"combine first two quantities\"}], \"target\": {\"kind\": \"count\", \"scope\": \"find the answer to the question posed in the problem\"}, \"dismissed\": []}",
-  "tokens_in": 337,
-  "tokens_out": 85
- }
+    {
+        "key":  "ed3af4417c4cee6a",
+        "text":  "3219.49",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "ed68ef08e9bbd99b",
+        "text":  "{\r\n    \"plan\":  [\r\n                 {\r\n                     \"args\":  [\r\n                                  \"q1\",\r\n                                  \"q2\"\r\n                              ],\r\n                     \"out\":  \"s1\",\r\n                     \"op\":  \"mul\",\r\n                     \"note\":  \"total cost calculation\"\r\n                 }\r\n             ],\r\n    \"dismissed\":  [\r\n\r\n                  ],\r\n    \"target\":  {\r\n                   \"kind\":  \"money\",\r\n                   \"scope\":  \"total machine cost in USD\"\r\n               },\r\n    \"quantities\":  [\r\n\r\n                   ]\r\n}",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "ed6979822c4f28b7",
+        "text":  "1600.90",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "eda8536091e83166",
+        "text":  "671.77",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "ee3b5c8384604cef",
+        "text":  "255",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "eef64eb92bbbf2bf",
+        "text":  "331.20",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "ef07e4e1ced62245",
+        "text":  "{\r\n    \"plan\":  [\r\n                 {\r\n                     \"args\":  [\r\n                                  \"q1\",\r\n                                  \"q2\"\r\n                              ],\r\n                     \"out\":  \"s1\",\r\n                     \"op\":  \"mul\",\r\n                     \"note\":  \"total cost calculation\"\r\n                 }\r\n             ],\r\n    \"dismissed\":  [\r\n\r\n                  ],\r\n    \"target\":  {\r\n                   \"kind\":  \"money\",\r\n                   \"scope\":  \"total machine cost in USD\"\r\n               },\r\n    \"quantities\":  [\r\n                       {\r\n                           \"span\":  \"A run of 1000 shots\",\r\n                           \"unit\":  \"shots\",\r\n                           \"id\":  \"q1\",\r\n                           \"value\":  1000,\r\n                           \"kind\":  \"count\"\r\n                       }\r\n                   ]\r\n}",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "efb13660a268db24",
+        "text":  "16",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "efc9505737f17d95",
+        "text":  "16",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "eff135c1f19be82f",
+        "text":  "143.79",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f0b8dce37cd56855",
+        "text":  "489.72",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f0d37454e81129c5",
+        "text":  "3242.53",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f104bed84b7e91ea",
+        "text":  "3525.12",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f125afdc2b559a1d",
+        "text":  "12",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f16300f57d7c1a2b",
+        "text":  "316.95",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f1ee235bafb05827",
+        "text":  "326.40",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f2b76a6a28a9fc95",
+        "text":  "331.20",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f2cdb1a3c670cd92",
+        "text":  "49",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f2e0394da05a8709",
+        "text":  "{\r\n    \"plan\":  [\r\n                 {\r\n                     \"args\":  [\r\n                                  \"q1\",\r\n                                  \"q2\"\r\n                              ],\r\n                     \"out\":  \"s1\",\r\n                     \"op\":  \"mul\",\r\n                     \"note\":  \"total cost calculation\"\r\n                 }\r\n             ],\r\n    \"dismissed\":  [\r\n\r\n                  ],\r\n    \"target\":  {\r\n                   \"kind\":  \"money\",\r\n                   \"scope\":  \"total machine cost in USD\"\r\n               },\r\n    \"quantities\":  [\r\n                       {\r\n                           \"span\":  \"A run of 5000 shots\",\r\n                           \"unit\":  \"shots\",\r\n                           \"id\":  \"q1\",\r\n                           \"value\":  5000,\r\n                           \"kind\":  \"count\"\r\n                       }\r\n                   ]\r\n}",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f30dcc8a71dbfac4",
+        "text":  "601.10",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f31898a82216fdef",
+        "text":  "{\r\n    \"plan\":  [\r\n                 {\r\n                     \"args\":  [\r\n                                  \"q1\",\r\n                                  \"q2\"\r\n                              ],\r\n                     \"out\":  \"s1\",\r\n                     \"op\":  \"mul\",\r\n                     \"note\":  \"total cost calculation\"\r\n                 }\r\n             ],\r\n    \"dismissed\":  [\r\n\r\n                  ],\r\n    \"target\":  {\r\n                   \"kind\":  \"money\",\r\n                   \"scope\":  \"total machine cost in USD\"\r\n               },\r\n    \"quantities\":  [\r\n                       {\r\n                           \"span\":  \"A run of 500 shots\",\r\n                           \"unit\":  \"shots\",\r\n                           \"id\":  \"q1\",\r\n                           \"value\":  500,\r\n                           \"kind\":  \"count\"\r\n                       }\r\n                   ]\r\n}",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f32b329123384433",
+        "text":  "4",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f33a3f70b3b36e61",
+        "text":  "{\r\n    \"plan\":  [\r\n                 {\r\n                     \"args\":  [\r\n                                  \"q1\",\r\n                                  \"q2\"\r\n                              ],\r\n                     \"out\":  \"s1\",\r\n                     \"op\":  \"mul\",\r\n                     \"note\":  \"total cost calculation\"\r\n                 }\r\n             ],\r\n    \"dismissed\":  [\r\n\r\n                  ],\r\n    \"target\":  {\r\n                   \"kind\":  \"money\",\r\n                   \"scope\":  \"total machine cost in USD\"\r\n               },\r\n    \"quantities\":  [\r\n                       {\r\n                           \"span\":  \"A run of 500 shots\",\r\n                           \"unit\":  \"shots\",\r\n                           \"id\":  \"q1\",\r\n                           \"value\":  500,\r\n                           \"kind\":  \"count\"\r\n                       }\r\n                   ]\r\n}",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f386c4fd3af531ba",
+        "text":  "601.10",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f3bbb4fa385bd10c",
+        "text":  "16",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f3f57a022b33cb77",
+        "text":  "84.18",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f41490c3d99118ef",
+        "text":  "668.16",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f4404da8ec7e2108",
+        "text":  "32.97",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f4e921fe054215bf",
+        "text":  "1",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f507791b7959d4fd",
+        "text":  "3525.12",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f52a5aabd8279372",
+        "text":  "{\r\n    \"plan\":  [\r\n                 {\r\n                     \"args\":  [\r\n                                  \"q1\",\r\n                                  \"q2\"\r\n                              ],\r\n                     \"out\":  \"s1\",\r\n                     \"op\":  \"mul\",\r\n                     \"note\":  \"total cost calculation\"\r\n                 }\r\n             ],\r\n    \"dismissed\":  [\r\n\r\n                  ],\r\n    \"target\":  {\r\n                   \"kind\":  \"money\",\r\n                   \"scope\":  \"total machine cost in USD\"\r\n               },\r\n    \"quantities\":  [\r\n                       {\r\n                           \"span\":  \"A run of 1000 shots\",\r\n                           \"unit\":  \"shots\",\r\n                           \"id\":  \"q1\",\r\n                           \"value\":  1000,\r\n                           \"kind\":  \"count\"\r\n                       }\r\n                   ]\r\n}",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f53d794e15fa6983",
+        "text":  "359.04",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f5d130721fc2c552",
+        "text":  "{\r\n    \"plan\":  [\r\n                 {\r\n                     \"args\":  [\r\n                                  \"q1\",\r\n                                  \"q2\"\r\n                              ],\r\n                     \"out\":  \"s1\",\r\n                     \"op\":  \"mul\",\r\n                     \"note\":  \"total cost calculation\"\r\n                 }\r\n             ],\r\n    \"dismissed\":  [\r\n\r\n                  ],\r\n    \"target\":  {\r\n                   \"kind\":  \"money\",\r\n                   \"scope\":  \"total machine cost in USD\"\r\n               },\r\n    \"quantities\":  [\r\n                       {\r\n                           \"span\":  \"A run of 1000 shots\",\r\n                           \"unit\":  \"shots\",\r\n                           \"id\":  \"q1\",\r\n                           \"value\":  1000,\r\n                           \"kind\":  \"count\"\r\n                       }\r\n                   ]\r\n}",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f5d98754f02e9ce1",
+        "text":  "15",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f66ffec360d0dcd1",
+        "text":  "{\r\n    \"plan\":  [\r\n                 {\r\n                     \"args\":  [\r\n                                  \"q1\",\r\n                                  \"q2\"\r\n                              ],\r\n                     \"out\":  \"s1\",\r\n                     \"op\":  \"mul\",\r\n                     \"note\":  \"total cost calculation\"\r\n                 }\r\n             ],\r\n    \"dismissed\":  [\r\n\r\n                  ],\r\n    \"target\":  {\r\n                   \"kind\":  \"money\",\r\n                   \"scope\":  \"total machine cost in USD\"\r\n               },\r\n    \"quantities\":  [\r\n\r\n                   ]\r\n}",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f6d58d5d32930b9a",
+        "text":  "1455.36",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f6f28a869e47f6d4",
+        "text":  "5",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f720cf6dbc69328f",
+        "text":  "1230.49",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f76cc9b8ebf28e5a",
+        "text":  "{\r\n    \"plan\":  [\r\n                 {\r\n                     \"args\":  [\r\n                                  \"q1\",\r\n                                  \"q2\"\r\n                              ],\r\n                     \"out\":  \"s1\",\r\n                     \"op\":  \"mul\",\r\n                     \"note\":  \"total cost calculation\"\r\n                 }\r\n             ],\r\n    \"dismissed\":  [\r\n\r\n                  ],\r\n    \"target\":  {\r\n                   \"kind\":  \"money\",\r\n                   \"scope\":  \"total machine cost in USD\"\r\n               },\r\n    \"quantities\":  [\r\n\r\n                   ]\r\n}",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f776725d98618685",
+        "text":  "{\r\n    \"plan\":  [\r\n                 {\r\n                     \"args\":  [\r\n                                  \"q1\",\r\n                                  \"q2\"\r\n                              ],\r\n                     \"out\":  \"s1\",\r\n                     \"op\":  \"mul\",\r\n                     \"note\":  \"total cost calculation\"\r\n                 }\r\n             ],\r\n    \"dismissed\":  [\r\n\r\n                  ],\r\n    \"target\":  {\r\n                   \"kind\":  \"money\",\r\n                   \"scope\":  \"total machine cost in USD\"\r\n               },\r\n    \"quantities\":  [\r\n\r\n                   ]\r\n}",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f79bebc871601325",
+        "text":  "{\r\n    \"plan\":  [\r\n                 {\r\n                     \"args\":  [\r\n                                  \"q1\",\r\n                                  \"q2\"\r\n                              ],\r\n                     \"out\":  \"s1\",\r\n                     \"op\":  \"mul\",\r\n                     \"note\":  \"total cost calculation\"\r\n                 }\r\n             ],\r\n    \"dismissed\":  [\r\n\r\n                  ],\r\n    \"target\":  {\r\n                   \"kind\":  \"money\",\r\n                   \"scope\":  \"total machine cost in USD\"\r\n               },\r\n    \"quantities\":  [\r\n\r\n                   ]\r\n}",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f7b6181684d0964b",
+        "text":  "5",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f80abd4f2d2aa8ef",
+        "text":  "{\r\n    \"plan\":  [\r\n                 {\r\n                     \"args\":  [\r\n                                  \"q1\",\r\n                                  \"q2\"\r\n                              ],\r\n                     \"out\":  \"s1\",\r\n                     \"op\":  \"mul\",\r\n                     \"note\":  \"total cost calculation\"\r\n                 }\r\n             ],\r\n    \"dismissed\":  [\r\n\r\n                  ],\r\n    \"target\":  {\r\n                   \"kind\":  \"money\",\r\n                   \"scope\":  \"total machine cost in USD\"\r\n               },\r\n    \"quantities\":  [\r\n\r\n                   ]\r\n}",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f82cdd75df92e22e",
+        "text":  "489.60",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f86e8b38a36ae1bf",
+        "text":  "{\r\n    \"plan\":  [\r\n                 {\r\n                     \"args\":  [\r\n                                  \"q1\",\r\n                                  \"q2\"\r\n                              ],\r\n                     \"out\":  \"s1\",\r\n                     \"op\":  \"mul\",\r\n                     \"note\":  \"total cost calculation\"\r\n                 }\r\n             ],\r\n    \"dismissed\":  [\r\n\r\n                  ],\r\n    \"target\":  {\r\n                   \"kind\":  \"money\",\r\n                   \"scope\":  \"total machine cost in USD\"\r\n               },\r\n    \"quantities\":  [\r\n\r\n                   ]\r\n}",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f88a7c5dab169c20",
+        "text":  "5",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f8f356ddf4d844b7",
+        "text":  "1",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "f95556d885dff64e",
+        "text":  "{\r\n    \"plan\":  [\r\n                 {\r\n                     \"args\":  [\r\n                                  \"q1\",\r\n                                  \"q2\"\r\n                              ],\r\n                     \"out\":  \"s1\",\r\n                     \"op\":  \"mul\",\r\n                     \"note\":  \"total cost calculation\"\r\n                 }\r\n             ],\r\n    \"dismissed\":  [\r\n\r\n                  ],\r\n    \"target\":  {\r\n                   \"kind\":  \"money\",\r\n                   \"scope\":  \"total machine cost in USD\"\r\n               },\r\n    \"quantities\":  [\r\n\r\n                   ]\r\n}",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "fa37ac19324ac62b",
+        "text":  "84.18",
+        "tokens_in":  0,
+        "tokens_out":  0
+    },
+    {
+        "key":  "fa8ea2fc6d83fba5",
+        "text":  "{\r\n    \"plan\":  [\r\n                 {\r\n                     \"args\":  [\r\n                                  \"q1\",\r\n                                  \"q2\"\r\n                              ],\r\n                     \"out\":  \"s1\",\r\n                     \"op\":  \"mul\",\r\n                     \"note\":  \"total cost calculation\"\r\n                 }\r\n             ],\r\n    \"dismissed\":  [\r\n\r\n                  ],\r\n    \"target\":  {\r\n                   \"kind\":  \"money\",\r\n                   \"scope\":  \"total machine cost in USD\"\r\n               },\r\n    \"quantities\":  [\r\n                       {\r\n                           \"span\":  \"A run of 5000 shots\",\r\n                           \"unit\":  \"shots\",\r\n                           \"id\":  \"q1\",\r\n                           \"value\":  5000,\r\n                           \"kind\":  \"count\"\r\n                       }\r\n                   ]\r\n}",
+        "tokens_in":  0,
+        "tokens_out":  0
+    }
 ]

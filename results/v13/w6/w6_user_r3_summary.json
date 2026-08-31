@@ -1,0 +1,34 @@
+{
+ "corpus": "user",
+ "arm": "r3",
+ "model": null,
+ "n": 300,
+ "topk": 6,
+ "status": {
+  "retrieval_hit": 293,
+  "certified": 140,
+  "correct": 140,
+  "skipped_no_model": 150,
+  "retrieval_miss": 7,
+  "abstained": 10
+ },
+ "served": 140,
+ "coverage": 0.4667,
+ "accuracy_of_served": 1.0,
+ "wrong_rate_of_served": 0.0,
+ "retrieval_recall": 0.9767,
+ "by_family": {
+  "factual": {
+   "n": 150,
+   "served": 140,
+   "correct": 140,
+   "WRONG": 0
+  },
+  "derived": {
+   "n": 150,
+   "served": 0,
+   "correct": 0,
+   "WRONG": 0
+  }
+ }
+}

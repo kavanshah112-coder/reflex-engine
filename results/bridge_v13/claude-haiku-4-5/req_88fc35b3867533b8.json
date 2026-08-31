@@ -1,0 +1,7 @@
+{
+ "model": "claude-haiku-4-5",
+ "system": "",
+ "prompt": "Use ONLY these documents to answer.\n\n[G-TF-002 v2, valid 2026-01-01..2026-12-31]\nELECTRICITY TARIFF - Southgate - Schedule 2\nEnergy rate: 0.1777 USD per kWh\nStanding charge: 19.18 USD per month\n\n[G-TF-007 v2, valid 2026-01-01..2026-12-31]\nELECTRICITY TARIFF - Westmere - Schedule 7\nEnergy rate: 0.2419 USD per kWh\nStanding charge: 35.83 USD per month\n\n[G-TF-005 v2, valid 2026-01-01..2026-12-31]\nELECTRICITY TARIFF - Eastport - Schedule 5\nEnergy rate: 0.1659 USD per kWh\nStanding charge: 40.36 USD per month\n\n[G-TF-003 v2, valid 2026-01-01..2026-12-31]\nELECTRICITY TARIFF - Westmere - Schedule 3\nEnergy rate: 0.3039 USD per kWh\nStanding charge: 19.07 USD per month\n\n[G-TF-001 v2, valid 2026-01-01..2026-12-31]\nELECTRICITY TARIFF - Eastport - Schedule 1\nEnergy rate: 0.1097 USD per kWh\nStanding charge: 32.97 USD per month\n\n[G-TF-006 v2, valid 2026-01-01..2026-12-31]\nELECTRICITY TARIFF - Southgate - Schedule 6\nEnergy rate: 0.1169 USD per kWh\nStanding charge: 18.99 USD per month\n\nQUESTION: What is the standing charge per month in USD for Tariff Southgate S2?\n\nReply with ONLY the final number, no words, no units.",
+ "max_tokens": 32,
+ "queued_at": 1788190258.9474988
+}

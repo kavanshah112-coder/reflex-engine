@@ -1,0 +1,7 @@
+{
+ "model": "claude-haiku-4-5",
+ "system": "",
+ "prompt": "Use ONLY these documents to answer.\n\n[U-PT-003 v1, valid 2026-03-01..2027-12-31]\nPART SPECIFICATION - Part PN-3003\nShot weight per part: 237.9 g\nCavities in tool: 16\nCycle time: 31.9 seconds\nRunner weight per shot: 5.4 g\n\n[U-MC-007 v1, valid 2026-01-01..2027-12-31]\nMACHINE RATE CARD - Toggle Press TP-150\nClamping force: 120 tonnes\nHourly rate: 84.18 USD per hour\nSetup allowance: 3.88 hours\n\n[U-MC-004 v1, valid 2026-01-01..2027-12-31]\nMACHINE RATE CARD - Toggle Press TP-120\nClamping force: 350 tonnes\nHourly rate: 117.43 USD per hour\nSetup allowance: 2.42 hours\n\n[U-MC-001 v1, valid 2026-01-01..2027-12-31]\nMACHINE RATE CARD - Toggle Press TP-90\nClamping force: 120 tonnes\nHourly rate: 110.57 USD per hour\nSetup allowance: 2.52 hours\n\n[U-PT-009 v1, valid 2026-03-01..2027-12-31]\nPART SPECIFICATION - Part PN-3009\nShot weight per part: 13.8 g\nCavities in tool: 1\nCycle time: 38.3 seconds\nRunner weight per shot: 9.4 g\n\n[U-PT-005 v1, valid 2026-03-01..2027-12-31]\nPART SPECIFICATION - Part PN-3005\nShot weight per part: 25.8 g\nCavities in tool: 1\nCycle time: 19.3 seconds\nRunner weight per shot: 4.7 g\n\nQUESTION: A run of 500 shots of Part PN-3003 is quoted on Toggle Press TP-90. What is the machine cost in USD?\n\nReply with ONLY the final number, no words, no units.",
+ "max_tokens": 32,
+ "queued_at": 1788190278.7253747
+}

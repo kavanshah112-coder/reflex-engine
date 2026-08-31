@@ -1,0 +1,74 @@
+[
+ {
+  "type": "conflict",
+  "title": "Part PN-3011",
+  "key": "cavities",
+  "true": 1,
+  "false": 2.37,
+  "doc": "U-CF-000"
+ },
+ {
+  "type": "conflict",
+  "title": "Nylon PA6-502",
+  "key": "density",
+  "true": 1.045,
+  "false": 2.432,
+  "doc": "U-CF-001"
+ },
+ {
+  "type": "conflict",
+  "title": "Part PN-3010",
+  "key": "cavities",
+  "true": 16,
+  "false": 22.92,
+  "doc": "U-CF-002"
+ },
+ {
+  "type": "stale",
+  "title": "Packing PF-3",
+  "key": "freight_kg",
+  "true": 1.58,
+  "expired": 1.28,
+  "doc": "U-ST-003"
+ },
+ {
+  "type": "stale",
+  "title": "Injection Press IP-140",
+  "key": "rate_h",
+  "true": 81.46,
+  "expired": 65.983,
+  "doc": "U-ST-004"
+ },
+ {
+  "type": "stale",
+  "title": "Packing PF-2",
+  "key": "freight_kg",
+  "true": 0.54,
+  "expired": 0.437,
+  "doc": "U-ST-005"
+ },
+ {
+  "type": "superseded",
+  "title": "Packing PF-1",
+  "key": "freight_kg",
+  "true": 2.05,
+  "old": 2.439,
+  "doc": "U-SU-006"
+ },
+ {
+  "type": "superseded",
+  "title": "Packing PF-4",
+  "key": "freight_kg",
+  "true": 2.9,
+  "old": 3.451,
+  "doc": "U-SU-007"
+ },
+ {
+  "type": "superseded",
+  "title": "Polypropylene PP-501",
+  "key": "density",
+  "true": 1.401,
+  "old": 1.667,
+  "doc": "U-SU-008"
+ }
+]
