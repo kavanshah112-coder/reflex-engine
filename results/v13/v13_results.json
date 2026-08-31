@@ -15,13 +15,13 @@
    "certified": 38,
    "correct": 37,
    "wrong": 1,
-   "corroboration_abstain": 146,
-   "verification_failed": 101,
+   "corroboration_abstain": 142,
+   "verification_failed": 105,
    "model_refused": 12,
    "unresolved": 3,
    "first_failing": {
-    "agreement": 78,
-    "consumption": 7,
+    "agreement": 80,
+    "consumption": 9,
     "structure": 13,
     "nondegenerate": 1,
     "roundtrip": 2
@@ -73,20 +73,20 @@
  ],
  "w5_plan_reflexes": {
   "repeat_plain": {
-   "corpus_plans": 203,
-   "hit_rate": 0.002,
-   "served": 6,
-   "wrong": 6,
-   "wrong_fire": 1.0,
-   "schemas": 203
+   "corpus_plans": 217,
+   "hit_rate": 0.0,
+   "served": null,
+   "wrong": null,
+   "wrong_fire": 0.0,
+   "schemas": 217
   },
   "unique_plain": {
-   "corpus_plans": 203,
-   "hit_rate": 0.0008,
-   "served": 1,
-   "wrong": 1,
-   "wrong_fire": 1.0,
-   "schemas": 203
+   "corpus_plans": 217,
+   "hit_rate": 0.0,
+   "served": null,
+   "wrong": null,
+   "wrong_fire": 0.0,
+   "schemas": 217
   }
  },
  "w6_rag": [
@@ -281,7 +281,7 @@
    "wrong": 0,
    "abstained": 10,
    "pending": 0,
-   "retrieval_recall": 0.9767,
+   "retrieval_recall": 0.9533,
    "by_family": {
     "factual": {
      "n": 150,
@@ -335,7 +335,7 @@
     {
      "arm": "haiku_arm_sample",
      "why": "incomplete",
-     "pending": 14
+     "pending": 3
     },
     {
      "arm": "opus_arm_sample",

@@ -1,0 +1,294 @@
+
+=== W0  structural recurrence (L1) ===
+coarse :   170 distinct structures, top200 covers 100.0%
+medium :   321 distinct structures, top200 covers 83.3%
+fine   :   325 distinct structures, top200 covers 82.8%
+parsed 726/944 numeric items (218 unparseable, reported not dropped)
+W0 GATE (medium top200 >= 35%): PASS at 83.3%
+    rc=0
+
+=== W1  frame index + calibration (L2) ===
+index built: 1500 labelled rows from 1500 in-universe items (77 kinds total)
+no-frame threshold (5th pct of held-out in-universe best-match): 0.8938
+(a) held-out in-universe: recall 95.2% (381/400), frame carries 3.4 of 77 kinds
+(b) no-frame rate: in-universe 2.0% | real numeric 100.0% | real theory 100.0%
+(c) prompt narrowing: 95.6% fewer kinds listed
+    rc=0
+
+=== W6  build both corpora ===
+generic  docs= 49 facts= 40 hazards=9 queries=300 {'factual': 150, 'derived': 150}
+user     docs= 49 facts= 40 hazards=9 queries=300 {'factual': 150, 'derived': 150}
+    rc=0
+
+=== W6  R3 provenance, generic (L8) ===
+{
+ "corpus": "generic",
+ "arm": "r3",
+ "model": null,
+ "n": 300,
+ "topk": 6,
+ "status": {
+  "retrieval_hit": 262,
+  "certified": 149,
+  "correct": 149,
+  "skipped_no_model": 150,
+  "retrieval_miss": 38,
+  "abstained": 1
+ },
+ "served": 149,
+ "coverage": 0.4967,
+ "accuracy_of_served": 1.0,
+ "wrong_rate_of_served": 0.0,
+ "retrieval_recall": 0.8733,
+ "by_family": {
+  "factual": {
+   "n": 150,
+   "served": 149,
+   "correct": 149,
+   "WRONG": 0
+  },
+  "derived": {
+   "n": 150,
+   "served": 0,
+   "correct": 0,
+   "WRONG": 0
+  }
+ }
+}
+    rc=0
+
+=== W6  R3 provenance, user (L8/L11) ===
+{
+ "corpus": "user",
+ "arm": "r3",
+ "model": null,
+ "n": 300,
+ "topk": 6,
+ "status": {
+  "retrieval_hit": 286,
+  "certified": 140,
+  "correct": 140,
+  "skipped_no_model": 150,
+  "retrieval_miss": 14,
+  "abstained": 10
+ },
+ "served": 140,
+ "coverage": 0.4667,
+ "accuracy_of_served": 1.0,
+ "wrong_rate_of_served": 0.0,
+ "retrieval_recall": 0.9533,
+ "by_family": {
+  "factual": {
+   "n": 150,
+   "served": 140,
+   "correct": 140,
+   "WRONG": 0
+  },
+  "derived": {
+   "n": 150,
+   "served": 0,
+   "correct": 0,
+   "WRONG": 0
+  }
+ }
+}
+    rc=0
+
+=== W5  plan reflexes, repeat traffic (L5) ===
+{
+ "mode": "repeat",
+ "n": 3000,
+ "design": "preloaded-transfer",
+ "corpus_verified_plans": 217,
+ "schemas_preloaded": 217,
+ "schemas_from_wrong_solves": 4,
+ "threshold": 0.62,
+ "min_conf": 2,
+ "status": {
+  "escalated": 3000,
+  "cache_rejected": 6
+ },
+ "cache_hit_rate": 0.0,
+ "cache_accuracy": null,
+ "wrong_fire_rate": 0.0,
+ "rejected_first_check": {
+  "consumption": 6
+ },
+ "corroborated": false
+}
+    rc=0
+
+=== W5  plan reflexes, unique traffic (L5) ===
+{
+ "mode": "unique",
+ "n": 1180,
+ "design": "preloaded-transfer",
+ "corpus_verified_plans": 217,
+ "schemas_preloaded": 217,
+ "schemas_from_wrong_solves": 4,
+ "threshold": 0.62,
+ "min_conf": 2,
+ "status": {
+  "escalated": 1180,
+  "cache_rejected": 1
+ },
+ "cache_hit_rate": 0.0,
+ "cache_accuracy": null,
+ "wrong_fire_rate": 0.0,
+ "rejected_first_check": {
+  "consumption": 1
+ },
+ "corroborated": false
+}
+    rc=0
+
+=== W2  replay haiku arm from frozen cache ===
+{
+ "tag": "haiku_arm_sample",
+ "model": "claude-haiku-4-5",
+ "n": 300,
+ "token_source": "synthetic-bridge",
+ "status": {
+  "corroboration_mismatch": 142,
+  "certified": 38,
+  "correct": 37,
+  "verification_failed": 105,
+  "model_refused": 12,
+  "pending": 3,
+  "WRONG": 1
+ },
+ "first_failing_check": {
+  "agreement": 80,
+  "consumption": 9,
+  "structure": 13,
+  "nondegenerate": 1,
+  "roundtrip": 2
+ },
+ "bridge_pending": 442,
+ "adapter": {
+  "adapter": "anthropic_bridge",
+  "calls": 992,
+  "tokens_in": 208147,
+  "tokens_out": 60048
+ },
+ "wall_s": 3
+}
+
+BRIDGE PENDING 442 — run:
+  python service_bridge13.py list claude-haiku-4-5
+  (service the batches with claude-haiku-4-5 agents)
+  python service_bridge13.py ingest claude-haiku-4-5
+  python w2_bridge.py --model claude-haiku-4-5 --split arm_sample
+    rc=3
+
+=== W2  replay sonnet arm from frozen cache ===
+{
+ "tag": "sonnet_arm_sample",
+ "model": "claude-sonnet-5",
+ "n": 300,
+ "token_source": "synthetic-bridge",
+ "status": {
+  "corroboration_mismatch": 12,
+  "certified": 209,
+  "correct": 206,
+  "verification_failed": 30,
+  "model_refused": 49,
+  "WRONG": 3
+ },
+ "first_failing_check": {
+  "nondegenerate": 4,
+  "agreement": 23,
+  "roundtrip": 3
+ },
+ "bridge_pending": 0,
+ "adapter": {
+  "adapter": "anthropic_bridge",
+  "calls": 880,
+  "tokens_in": 235082,
+  "tokens_out": 105640
+ },
+ "wall_s": 4
+}
+    rc=0
+
+=== W2  replay opus arm from frozen cache (EXCLUDED, B9) ===
+{
+ "tag": "opus_arm_sample",
+ "model": "claude-opus-5",
+ "n": 300,
+ "token_source": "synthetic-bridge",
+ "status": {
+  "model_refused": 80,
+  "certified": 199,
+  "correct": 198,
+  "pending": 12,
+  "verification_failed": 8,
+  "WRONG": 1,
+  "corroboration_mismatch": 1
+ },
+ "first_failing_check": {
+  "agreement": 5,
+  "nondegenerate": 3
+ },
+ "bridge_pending": 12,
+ "adapter": {
+  "adapter": "anthropic_bridge",
+  "calls": 843,
+  "tokens_in": 0,
+  "tokens_out": 0
+ },
+ "wall_s": 15
+}
+
+BRIDGE PENDING 12 — run:
+  python service_bridge13.py list claude-opus-5
+  (service the batches with claude-opus-5 agents)
+  python service_bridge13.py ingest claude-opus-5
+  python w2_bridge.py --model claude-opus-5 --split arm_sample
+    rc=3
+
+=== W7  Tier A + two-tier certificate (L9) ===
+safety case: CERTIFIED; checks: {'battery': True, 'seed_sweep': True, 'vocab_audit': True, 'invariants': True}
+    rc=0
+
+===      aggregate results table ===
+{
+ "arithmetic_real_language": {
+  "arms_counted": [
+   "haiku_arm_sample",
+   "sonnet_arm_sample"
+  ],
+  "certified": 247,
+  "wrong": 4,
+  "wrong_fire": 0.01619
+ },
+ "retrieval_non_arithmetic": {
+  "certified": 289,
+  "wrong": 0,
+  "wrong_fire": 0.0
+ },
+ "unresolved_scored_as_abstention": 15,
+ "excluded_arms": [
+  "opus_arm_sample"
+ ],
+ "energy_claim": "NOT COMPUTED FROM BRIDGE ARMS (B7)"
+}
+
+arm                        n   cert   corr  WRONG   abst  unres
+haiku_arm_sample         300     38     37      1    142      3
+opus_arm_sample          300    199    198      1      1     12  [EXCLUDED B9]
+sonnet_arm_sample        300    209    206      3     12      0
+
+corpus     arm      n served   corr  WRONG  recall
+generic    r1     120     84     58     26  0.9
+generic    r2     120     60     27     33  0.8583
+generic    r3     120     60     60      0  0.85
+generic    r3     300    149    149      0  0.8733
+user       r1     120     30     14     16  0.975
+user       r2     120     22      8     14  0.975
+user       r3     120     57     57      0  0.975
+user       r3     300    140    140      0  0.9533
+\nwrote C:\Users\admin\Downloads\reflex-engine\results\v13\v13_results.json
+    rc=0
+
+12/12 stages clean (rc 3 = arm sealed with unresolved items, expected)

@@ -2,23 +2,24 @@
  "mode": "unique",
  "n": 1180,
  "design": "preloaded-transfer",
- "corpus_verified_plans": 203,
- "schemas_preloaded": 203,
- "schemas_from_wrong_solves": 2,
+ "corpus_verified_plans": 217,
+ "schemas_preloaded": 217,
+ "schemas_from_wrong_solves": 4,
  "threshold": 0.62,
  "min_conf": 2,
  "status": {
-  "escalated": 1179,
-  "cache_served": 1,
-  "CACHE_WRONG": 1
+  "escalated": 1180,
+  "cache_rejected": 1
  },
- "cache_hit_rate": 0.0008,
- "cache_accuracy": 0.0,
- "wrong_fire_rate": 1.0,
- "rejected_first_check": {},
+ "cache_hit_rate": 0.0,
+ "cache_accuracy": null,
+ "wrong_fire_rate": 0.0,
+ "rejected_first_check": {
+  "consumption": 1
+ },
  "cache": {
-  "schemas": 203,
-  "pending_signatures": 66,
+  "schemas": 217,
+  "pending_signatures": 77,
   "total_hits": 1,
   "top": [
    {
@@ -78,31 +79,31 @@
    "n": 200,
    "served": 0,
    "wrong": 0,
-   "schemas": 203
+   "schemas": 217
   },
   {
    "n": 400,
    "served": 0,
    "wrong": 0,
-   "schemas": 203
+   "schemas": 217
   },
   {
    "n": 600,
    "served": 0,
    "wrong": 0,
-   "schemas": 203
+   "schemas": 217
   },
   {
    "n": 800,
-   "served": 1,
-   "wrong": 1,
-   "schemas": 203
+   "served": 0,
+   "wrong": 0,
+   "schemas": 217
   },
   {
    "n": 1000,
-   "served": 1,
-   "wrong": 1,
-   "schemas": 203
+   "served": 0,
+   "wrong": 0,
+   "schemas": 217
   }
  ]
 }

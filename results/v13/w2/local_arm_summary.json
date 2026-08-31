@@ -1,0 +1,17 @@
+{
+ "tag": "local_arm",
+ "n": 21,
+ "status": {
+  "verification_failed": 13,
+  "certified": 8,
+  "correct": 8,
+  "corroboration_mismatch": 7
+ },
+ "first_failing_check": {
+  "consumption": 1,
+  "structure": 10,
+  "agreement": 1,
+  "nondegenerate": 1
+ },
+ "wall_s": 4409
+}

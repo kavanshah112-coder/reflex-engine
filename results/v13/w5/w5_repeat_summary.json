@@ -2,23 +2,24 @@
  "mode": "repeat",
  "n": 3000,
  "design": "preloaded-transfer",
- "corpus_verified_plans": 203,
- "schemas_preloaded": 203,
- "schemas_from_wrong_solves": 2,
+ "corpus_verified_plans": 217,
+ "schemas_preloaded": 217,
+ "schemas_from_wrong_solves": 4,
  "threshold": 0.62,
  "min_conf": 2,
  "status": {
-  "escalated": 2994,
-  "cache_served": 6,
-  "CACHE_WRONG": 6
+  "escalated": 3000,
+  "cache_rejected": 6
  },
- "cache_hit_rate": 0.002,
- "cache_accuracy": 0.0,
- "wrong_fire_rate": 1.0,
- "rejected_first_check": {},
+ "cache_hit_rate": 0.0,
+ "cache_accuracy": null,
+ "wrong_fire_rate": 0.0,
+ "rejected_first_check": {
+  "consumption": 6
+ },
  "cache": {
-  "schemas": 203,
-  "pending_signatures": 66,
+  "schemas": 217,
+  "pending_signatures": 77,
   "total_hits": 6,
   "top": [
    {
@@ -76,93 +77,93 @@
  "curve": [
   {
    "n": 200,
-   "served": 1,
-   "wrong": 1,
-   "schemas": 203
+   "served": 0,
+   "wrong": 0,
+   "schemas": 217
   },
   {
    "n": 400,
-   "served": 1,
-   "wrong": 1,
-   "schemas": 203
+   "served": 0,
+   "wrong": 0,
+   "schemas": 217
   },
   {
    "n": 600,
-   "served": 1,
-   "wrong": 1,
-   "schemas": 203
+   "served": 0,
+   "wrong": 0,
+   "schemas": 217
   },
   {
    "n": 800,
-   "served": 1,
-   "wrong": 1,
-   "schemas": 203
+   "served": 0,
+   "wrong": 0,
+   "schemas": 217
   },
   {
    "n": 1000,
-   "served": 1,
-   "wrong": 1,
-   "schemas": 203
+   "served": 0,
+   "wrong": 0,
+   "schemas": 217
   },
   {
    "n": 1200,
-   "served": 1,
-   "wrong": 1,
-   "schemas": 203
+   "served": 0,
+   "wrong": 0,
+   "schemas": 217
   },
   {
    "n": 1400,
-   "served": 1,
-   "wrong": 1,
-   "schemas": 203
+   "served": 0,
+   "wrong": 0,
+   "schemas": 217
   },
   {
    "n": 1600,
-   "served": 2,
-   "wrong": 2,
-   "schemas": 203
+   "served": 0,
+   "wrong": 0,
+   "schemas": 217
   },
   {
    "n": 1800,
-   "served": 2,
-   "wrong": 2,
-   "schemas": 203
+   "served": 0,
+   "wrong": 0,
+   "schemas": 217
   },
   {
    "n": 2000,
-   "served": 3,
-   "wrong": 3,
-   "schemas": 203
+   "served": 0,
+   "wrong": 0,
+   "schemas": 217
   },
   {
    "n": 2200,
-   "served": 4,
-   "wrong": 4,
-   "schemas": 203
+   "served": 0,
+   "wrong": 0,
+   "schemas": 217
   },
   {
    "n": 2400,
-   "served": 4,
-   "wrong": 4,
-   "schemas": 203
+   "served": 0,
+   "wrong": 0,
+   "schemas": 217
   },
   {
    "n": 2600,
-   "served": 4,
-   "wrong": 4,
-   "schemas": 203
+   "served": 0,
+   "wrong": 0,
+   "schemas": 217
   },
   {
    "n": 2800,
-   "served": 6,
-   "wrong": 6,
-   "schemas": 203
+   "served": 0,
+   "wrong": 0,
+   "schemas": 217
   },
   {
    "n": 3000,
-   "served": 6,
-   "wrong": 6,
-   "schemas": 203
+   "served": 0,
+   "wrong": 0,
+   "schemas": 217
   }
  ]
 }

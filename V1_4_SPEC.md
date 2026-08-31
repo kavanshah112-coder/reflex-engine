@@ -1,9 +1,9 @@
 # V1.4 SPEC — SEMANTIC COMPOSITION VIA A RELATIONAL STATE SUBSTRATE
 ## Open state · relations as stated · engine-derived types · capability applicability · semantic integrity
 
-**STATUS: DRAFT.** Freezes as tag `v1.4-plan`. §17–§19 are FROZEN on
-freeze and never change after the first sealed run. §20 lists the five
-decisions needed before freezing.
+**STATUS: FROZEN 2026-09-01, tag `v1.4-plan`.** §17–§19 and the
+AMENDMENT block never change after the first sealed run. The five §20
+decisions are RESOLVED in the AMENDMENT at the end of this file.
 
 Companion document: `V1_4_PLAN.md` holds the full V1.3 architecture map
 (§2 there) and the research framing. This file is the implementable
@@ -600,3 +600,140 @@ Not *"can the system understand more?"* but:
 > **Can the system represent enough of the meaning of a query that
 > deterministic reflex computation safely replaces expensive LLM
 > reasoning in real workloads?**
+
+
+---
+
+# AMENDMENT — decisions resolved, 2026-09-01, BEFORE any sealed run
+
+## D-i · Compute policy: BRIDGE, hardened (§2)
+
+Bridge again, no API spend. Binding hardening, all of it enforced in
+code rather than in prompt wording alone:
+
+- the bridge is serviced from a directory that does **not** contain
+  `reflex/`, so a servicing agent cannot read the verifier even if it
+  tries (B9 made the opus arm inadmissible in V1.3);
+- servicing prompts forbid reading engine source explicitly;
+- token counts are **zero or measured, never estimated** (B7);
+- ingest rejects every known stub shape: empty, `{}`, `UNKNOWN` /
+  `ERROR` / `N/A` / `ABSTAIN`, non-numeric answers to numeric prompts,
+  and refusals whose reason names the agent rather than the problem
+  (B11);
+- dual samples are interleaved so twins never share a batch (B14).
+
+## D-ii · Sealed size: 2,400 items — and a decision RULE, not a fixed n
+
+**My n ≈ 1,500 figure in the draft was wrong** and is corrected here
+before it could enter a pre-registration. It came from a plain normal
+approximation; recomputed with the Wilson interval the arc actually
+reports:
+
+    observed wrong-fire   certified n needed for upper bound < 2%
+        1.4%                    2,025
+        0.9%                      600
+        0.5%                      375
+        0.0%                      200
+
+The required n therefore depends on the rate achieved — which is the
+very thing V1.4 is trying to change. Fixing n at 1,500 would
+pre-commit to a number that clears the gate only if the substrate
+works.
+
+**Resolved.** The SEALED SET is fixed at **2,400 items**; the CLAIM is
+governed by a rule:
+
+> An arm may state "wrong-fire ≤ 2%" only if its Wilson 95% **upper
+> bound** is below 2%, at whatever n that arm reached. Otherwise it
+> reports the point estimate and the interval and makes no gate claim.
+
+Corpus capacity is the binding constraint and is stated rather than
+discovered: GSM8K test (1,319) + ASDiv (2,306) = 3,625 real-language
+items total, of which V1.3 consumed ~1,780. So the 2,400 splits:
+
+    S1  generated adversarial semantic suite   1,200   (pool unlimited)
+    S3  fresh real language, disjoint from all
+        V1.3 usage                             1,200   (pool allows it)
+    S2  V1.3's 300-item sealed sample, retained unchanged for direct
+        comparability (reported separately, never pooled into the above)
+
+Projected certified counts at V1.3 coverage rates, stated in advance so
+nobody is surprised later:
+
+    sonnet          ~1,672    can clear 2% if the rate falls below ~1.1%
+    opus            ~1,591    same
+    llama-8B local  ~  763    can clear if the rate falls below ~0.8%
+    haiku           ~  304    can clear only at ~0.5% or below
+
+**Haiku cannot reach a 2,000-scale n at any budget** — at 12.7%
+coverage it would need ~16,000 items and the corpus holds 3,625. This
+is a property of the arm, not of the funding, and it is recorded now so
+that haiku's interval is read as expected rather than as a shortfall.
+
+## D-iii · Energy: measured on the local arm, longer run
+
+The energy claim rests on the **local ollama arm**, metered end to end,
+run long. V1.3's local arm reached n=22 before a socket timeout; the
+timeout is already raised to 600 s and the arm is budgeted for a
+multi-hour run at n ≥ 400.
+
+Accounting boundary unchanged and binding: every model call inside it,
+semantic worker included; bridge arms may report calls and check
+outcomes but **never** energy; comparison against pure LLM at equivalent
+task difficulty.
+
+## D-iv · Scope: FULL W1–W9. Nothing skipped.
+
+All nine packages and the complete C0–C5 ablation. The staged option in
+the draft is withdrawn.
+
+## D-v · AMBIGUITY SET extended (FROZEN as of this amendment)
+
+Original seven retained, plus seven more, each grounded in a V1.3
+observation:
+
+```
+ 8  percentage with no stated base ("50% more", "60% of")
+       - V1.3 refusal class: the 100 is never in the text
+ 9  bare multiplier with implicit base ("half", "twice", "double",
+    "triple") - V1.3 extracted "half" as 0.5 where 2 was needed
+10  "remaining" / "left" after >=2 depletion events with no anchor
+       - which remainder is being asked for
+11  "between X and Y" - inclusive vs exclusive boundary
+12  "up to" / "at least" / "no more than" - a BOUND stated where a
+    VALUE is expected
+13  comparative against an unstated population ("above average",
+    "faster than usual")
+14  "per" / "a piece" / "each" where the distributee is ambiguous
+    between two entities  (extends entry 7)
+```
+
+Every entry needs a positive and a negative case in S1. **This set is
+now frozen and may not be extended after the first sealed run.**
+
+## D-vi · Opus included, and a cross-model architecture comparison
+
+Opus runs as a first-class arm under the D-i hardening, which is what
+made it inadmissible in V1.3. Beyond wrong-fire and coverage, V1.4
+reports a **cross-model comparison of the relational state itself** —
+newly possible because the state is now inspectable rather than a flat
+plan:
+
+    RELATIONAL STATE QUALITY   nodes/query, relations/query, span
+                               fidelity, entity-graph completeness,
+                               order coverage, unresolved-relation rate
+    REFLEX BEHAVIOUR           reflexes used/query, reflexes minted,
+                               applicability refusals, path length,
+                               path completion, gap-step rate
+    SEMANTIC ERROR PROFILE     per-class detection and per-class escape,
+                               by model
+
+Arms: **llama-8B · haiku · sonnet · opus**, identical sealed sets,
+identical substrate. V1.1's "opus mints most" claim is treated as
+UNREPLICATED and is re-tested here from scratch, not assumed.
+
+## What did not change
+
+§17 hypotheses, §18 ladder (rung C — "the substrate is worse" — still
+sits above B and A), and §19 discipline are unchanged and are frozen
+with this amendment.

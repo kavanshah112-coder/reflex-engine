@@ -1,0 +1,53 @@
+{
+ "stages": [
+  {
+   "stage": "W0  structural recurrence (L1)",
+   "rc": 0
+  },
+  {
+   "stage": "W1  frame index + calibration (L2)",
+   "rc": 0
+  },
+  {
+   "stage": "W6  build both corpora",
+   "rc": 0
+  },
+  {
+   "stage": "W6  R3 provenance, generic (L8)",
+   "rc": 0
+  },
+  {
+   "stage": "W6  R3 provenance, user (L8/L11)",
+   "rc": 0
+  },
+  {
+   "stage": "W5  plan reflexes, repeat traffic (L5)",
+   "rc": 0
+  },
+  {
+   "stage": "W5  plan reflexes, unique traffic (L5)",
+   "rc": 0
+  },
+  {
+   "stage": "W2  replay haiku arm from frozen cache",
+   "rc": 3
+  },
+  {
+   "stage": "W2  replay sonnet arm from frozen cache",
+   "rc": 0
+  },
+  {
+   "stage": "W2  replay opus arm from frozen cache (EXCLUDED, B9)",
+   "rc": 3
+  },
+  {
+   "stage": "W7  Tier A + two-tier certificate (L9)",
+   "rc": 0
+  },
+  {
+   "stage": "     aggregate results table",
+   "rc": 0
+  }
+ ],
+ "wall_s": 73
+}
