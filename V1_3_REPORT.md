@@ -133,7 +133,7 @@ that is the single most valuable cheap experiment available to V1.4.
 | L3 | parse/verify lifts coverage, wrong-fire ≤ 2% | pass | **SPLIT** — coverage lift emphatic (0.2% → 69.7%); the gate holds on sonnet (1.44%) and **fails on haiku (2.63%)**, which sets the outcome |
 | L4 | checks catch misreadings without rejecting good parses | pass | **PARTIAL** — they catch; they also reject good parses (B10) |
 | L5 | plan reflexes compound | uncertain | **FALSIFIED** — 7 served, 7 wrong (§6) |
-| L6 | a cheap parser suffices | uncertain | **NOT MEASURED** — local arm died on an ollama timeout at n=15 |
+| L6 | a cheap parser suffices | uncertain | **PARTIAL, well short of the pre-registered comparison** — llama3.1:8b, n=22: 7 certified, 7 correct, **0 wrong**, 31.8% coverage vs sonnet's 69.7%. A ~38pp gap on 22 items is not the ±10pp verdict the spec asked for, and no claim is made from it |
 | L7 | R3 beats R1; R2 forfeits certification | pass | **PASS, and stronger than predicted** (§5) |
 | L8 | provenance ≤ 2% wrong-fire, staleness + conflict caught | pass | **PASS** — 0/289, both hazard classes caught |
 | L9 | PARITY-PLUS, Tier A intact | pass | **PASS** — battery, 65-seed sweep, vocab audit, invariants |
@@ -414,8 +414,13 @@ express, and for ~11% of real word problems the IR is the wall.
 
 - **No energy or cost figure.** The models ran on a subscription
   through the bridge, and bridge token counts are fabricated (B7). The
-  local arm — the only honest meter — died on an ollama socket timeout
-  at n=15. **L6 is unmeasured**, and it is the commercial crux.
+  local arm is the only source of real token counts — it reports
+  40,527 genuine tokens over 22 items — but no joule meter was run
+  against it, so V1.3 states token counts and **no energy figure at
+  all**. L6, the commercial crux, is answered only directionally: the
+  cheap local parser certified 7 of 22 at zero wrong, roughly 38
+  points of coverage behind sonnet. That is a signal, not the ±10pp
+  verdict the spec asked for.
 - **No cross-model ranking.** One of three arms is disqualified (B9);
   two clean arms are not a ranking.
 - **No claim that plan reflexes work.** They do not (§6).
