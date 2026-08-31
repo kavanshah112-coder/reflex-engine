@@ -123,3 +123,39 @@ Related and working as intended: `15.5 dollars` derives UNKNOWN because
 `dollars` is on the measure stoplist, so check 8 does not fire on money.
 Money is legitimately fractional; a check that abstained on $15.50 would
 be a coverage tax with no safety return.
+
+
+---
+
+## B20 — a shell-mangled escape produced a detector that matched nothing
+
+While narrowing the integrity detectors, a patch applied through a
+shell heredoc turned every  into a literal BACKSPACE character
+(0x08). The referential-reference detector compiled to
+
+    re.compile(chr(8) + "(it|they|the other|...)" + chr(8))
+
+which is a valid regex that matches a control character, so it matched
+nothing, raised nothing, and reported a clean result on every state.
+Detection for that class read 0% and looked like a modelling failure.
+
+The bug is mundane; its SHAPE is the one this arc keeps meeting. A
+check that is present in the code, runs without error, and is
+structurally incapable of firing:
+
+    V1.3 B16  consumption went silent on all-word problems
+    V1.3 B8   supersession starved the conflict check of its input
+    V1.4 B19  a colliding surface resolved by sort order
+    V1.4 B20  a mangled escape produced an inert regex
+
+Four instances in two versions of the same failure mode -- a green
+check that cannot go red. The fix here was mechanical (repair the
+escape). The lesson is not: **a detector reporting zero findings needs
+a positive control before it is believed.** The dev/sealed split caught
+this one only because a class that should have detected 100% reported
+0% and was worth chasing. A class with a plausible-looking 60% would
+have shipped.
+
+Recorded as a standing test requirement for V1.4: every detector needs
+a case it MUST fire on, and that case runs in CI alongside the case it
+must not fire on.

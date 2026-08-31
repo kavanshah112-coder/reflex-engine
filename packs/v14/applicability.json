@@ -1,0 +1,87 @@
+{
+ "_provenance": {
+  "why": "V1.4 W4 overlay. NEVER merged into packs/physics/caps.json, which feeds Tier A and its 0.000 wrong-fire baseline.",
+  "note": "The spec's canonical example, distance = speed * time, is NOT in this pack. The same-shape hazards that ARE present are extensive quantities accumulated over a run: p*t, i*t, f*d. Each computes as if the run were single, continuous and one-way. Conditions are authored for those, and for simple_interest, where a repetition marker signals compounding the capability does not model.",
+  "coverage": "4 of 58 capabilities. Deliberately narrow: an unconditioned capability keeps V1.3 behaviour, so ablation C3 measures exactly what these four buy."
+ },
+ "electrical_energy": {
+  "spec_ref": "p0 * t0 -> energy",
+  "applicability": [
+   {
+    "require": "same_segment",
+    "args": [
+     "p0",
+     "t0"
+    ]
+   },
+   {
+    "require": "segment_identified"
+   },
+   {
+    "forbid": "unresolved_relation",
+    "arg": "repetition"
+   },
+   {
+    "forbid": "unresolved_relation",
+    "arg": "multi_segment"
+   },
+   {
+    "forbid": "conflicting_relation",
+    "arg": "journey_state"
+   }
+  ],
+  "rationale": "power x time is energy only if the power was drawn continuously over that one interval. Intermittent or repeated operation makes the product an overestimate."
+ },
+ "charge_from_it": {
+  "spec_ref": "i0 * t0 -> charge",
+  "applicability": [
+   {
+    "require": "same_segment",
+    "args": [
+     "i0",
+     "t0"
+    ]
+   },
+   {
+    "forbid": "unresolved_relation",
+    "arg": "repetition"
+   },
+   {
+    "forbid": "unresolved_relation",
+    "arg": "multi_segment"
+   }
+  ],
+  "rationale": "same shape as p*t: a single continuous interval."
+ },
+ "work_from_force": {
+  "spec_ref": "f0 * d0 -> energy",
+  "applicability": [
+   {
+    "require": "same_segment",
+    "args": [
+     "f0",
+     "d0"
+    ]
+   },
+   {
+    "forbid": "unresolved_relation",
+    "arg": "return_trip"
+   },
+   {
+    "forbid": "unresolved_relation",
+    "arg": "multi_segment"
+   }
+  ],
+  "rationale": "the clearest case in this pack. Work is force through DISPLACEMENT; over a round trip the net displacement is zero and f*d is not merely imprecise but answering a different question. Dimensionally impeccable throughout."
+ },
+ "simple_interest": {
+  "spec_ref": "p0 * r0 * y0 -> interest",
+  "applicability": [
+   {
+    "forbid": "unresolved_relation",
+    "arg": "repetition"
+   }
+  ],
+  "rationale": "a repetition marker (each year, per year) is the signature of compounding, which this capability does not model. bred_final_amount does."
+ }
+}

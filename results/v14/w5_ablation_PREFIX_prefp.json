@@ -1,0 +1,183 @@
+{
+ "suite": "s1_adversarial.json",
+ "n": 600,
+ "by_class": {
+  "contradictory_relations": {
+   "C0_flat_ir": {
+    "detected": 60,
+    "false_positive": 0,
+    "n": 60,
+    "detection_rate": 1.0,
+    "false_positive_rate": 0.0
+   },
+   "C2_substrate_integrity": {
+    "detected": 60,
+    "false_positive": 60,
+    "n": 60,
+    "detection_rate": 1.0,
+    "false_positive_rate": 1.0
+   }
+  },
+  "cross_entity_contamination": {
+   "C0_flat_ir": {
+    "detected": 0,
+    "false_positive": 0,
+    "n": 60,
+    "detection_rate": 0.0,
+    "false_positive_rate": 0.0
+   },
+   "C2_substrate_integrity": {
+    "detected": 60,
+    "false_positive": 60,
+    "n": 60,
+    "detection_rate": 1.0,
+    "false_positive_rate": 1.0
+   }
+  },
+  "duplicate_conflicting_entities": {
+   "C0_flat_ir": {
+    "detected": 0,
+    "false_positive": 0,
+    "n": 60,
+    "detection_rate": 0.0,
+    "false_positive_rate": 0.0
+   },
+   "C2_substrate_integrity": {
+    "detected": 60,
+    "false_positive": 60,
+    "n": 60,
+    "detection_rate": 1.0,
+    "false_positive_rate": 1.0
+   }
+  },
+  "entity_mismatch": {
+   "C0_flat_ir": {
+    "detected": 0,
+    "false_positive": 0,
+    "n": 60,
+    "detection_rate": 0.0,
+    "false_positive_rate": 0.0
+   },
+   "C2_substrate_integrity": {
+    "detected": 60,
+    "false_positive": 60,
+    "n": 60,
+    "detection_rate": 1.0,
+    "false_positive_rate": 1.0
+   }
+  },
+  "incorrect_grouping": {
+   "C0_flat_ir": {
+    "detected": 0,
+    "false_positive": 0,
+    "n": 60,
+    "detection_rate": 0.0,
+    "false_positive_rate": 0.0
+   },
+   "C2_substrate_integrity": {
+    "detected": 60,
+    "false_positive": 60,
+    "n": 60,
+    "detection_rate": 1.0,
+    "false_positive_rate": 1.0
+   }
+  },
+  "missing_state_transition": {
+   "C0_flat_ir": {
+    "detected": 0,
+    "false_positive": 0,
+    "n": 60,
+    "detection_rate": 0.0,
+    "false_positive_rate": 0.0
+   },
+   "C2_substrate_integrity": {
+    "detected": 60,
+    "false_positive": 0,
+    "n": 60,
+    "detection_rate": 1.0,
+    "false_positive_rate": 0.0
+   }
+  },
+  "plan_query_semantic_mismatch": {
+   "C0_flat_ir": {
+    "detected": 0,
+    "false_positive": 0,
+    "n": 60,
+    "detection_rate": 0.0,
+    "false_positive_rate": 0.0
+   },
+   "C2_substrate_integrity": {
+    "detected": 60,
+    "false_positive": 60,
+    "n": 60,
+    "detection_rate": 1.0,
+    "false_positive_rate": 1.0
+   }
+  },
+  "unresolved_references": {
+   "C0_flat_ir": {
+    "detected": 0,
+    "false_positive": 0,
+    "n": 60,
+    "detection_rate": 0.0,
+    "false_positive_rate": 0.0
+   },
+   "C2_substrate_integrity": {
+    "detected": 60,
+    "false_positive": 60,
+    "n": 60,
+    "detection_rate": 1.0,
+    "false_positive_rate": 1.0
+   }
+  },
+  "wrong_scope": {
+   "C0_flat_ir": {
+    "detected": 0,
+    "false_positive": 0,
+    "n": 60,
+    "detection_rate": 0.0,
+    "false_positive_rate": 0.0
+   },
+   "C2_substrate_integrity": {
+    "detected": 60,
+    "false_positive": 60,
+    "n": 60,
+    "detection_rate": 1.0,
+    "false_positive_rate": 1.0
+   }
+  },
+  "wrong_temporal_ordering": {
+   "C0_flat_ir": {
+    "detected": 0,
+    "false_positive": 0,
+    "n": 60,
+    "detection_rate": 0.0,
+    "false_positive_rate": 0.0
+   },
+   "C2_substrate_integrity": {
+    "detected": 60,
+    "false_positive": 60,
+    "n": 60,
+    "detection_rate": 1.0,
+    "false_positive_rate": 1.0
+   }
+  }
+ },
+ "totals": {
+  "C0_flat_ir": {
+   "n": 600,
+   "detected": 60,
+   "false_positive": 0,
+   "detection_rate": 0.1,
+   "false_positive_rate": 0.0
+  },
+  "C2_substrate_integrity": {
+   "n": 600,
+   "detected": 600,
+   "false_positive": 540,
+   "detection_rate": 1.0,
+   "false_positive_rate": 0.9
+  }
+ },
+ "c2_misses": {}
+}

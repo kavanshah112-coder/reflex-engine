@@ -1,0 +1,148 @@
+{
+ "matrix": {
+  "different": {
+   "refused": 3,
+   "accepted": 0
+  },
+  "equivalent": {
+   "refused": 0,
+   "accepted": 3
+  }
+ },
+ "correct": 6,
+ "n": 6,
+ "pairs": [
+  {
+   "name": "V1.3 W-5 (Mrs Hilt / cupcakes)",
+   "truth": "different",
+   "text_similarity": 0.124,
+   "v13_would": "(below thr)",
+   "v14_does": "REFUSE",
+   "why": {
+    "why": "signature mismatch",
+    "stored": [
+     [
+      "unknown",
+      [
+       "pages"
+      ]
+     ]
+    ],
+    "candidate": [
+     [
+      "add",
+      [
+       "cupcakes"
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "name": "gave away vs received",
+   "truth": "different",
+   "text_similarity": 0.615,
+   "v13_would": "(below thr)",
+   "v14_does": "REFUSE",
+   "why": {
+    "why": "signature mismatch",
+    "stored": [
+     [
+      "sub",
+      [
+       "coins"
+      ]
+     ]
+    ],
+    "candidate": [
+     [
+      "add",
+      [
+       "coins"
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "name": "shared equally vs bought more",
+   "truth": "different",
+   "text_similarity": 0.301,
+   "v13_would": "(below thr)",
+   "v14_does": "REFUSE",
+   "why": {
+    "why": "signature mismatch",
+    "stored": [
+     [
+      "div",
+      [
+       "books"
+      ]
+     ]
+    ],
+    "candidate": [
+     [
+      "add",
+      [
+       "books"
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "name": "sold vs gave away (both deplete)",
+   "truth": "equivalent",
+   "text_similarity": 0.81,
+   "v13_would": "(would reuse)",
+   "v14_does": "REUSE",
+   "why": {
+    "why": "signatures agree",
+    "signature": [
+     [
+      "sub",
+      [
+       "stock"
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "name": "bought vs collected (both add)",
+   "truth": "equivalent",
+   "text_similarity": 0.676,
+   "v13_would": "(would reuse)",
+   "v14_does": "REUSE",
+   "why": {
+    "why": "signatures agree",
+    "signature": [
+     [
+      "add",
+      [
+       "stock"
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "name": "lost vs used (both deplete)",
+   "truth": "equivalent",
+   "text_similarity": 0.811,
+   "v13_would": "(would reuse)",
+   "v14_does": "REUSE",
+   "why": {
+    "why": "signatures agree",
+    "signature": [
+     [
+      "sub",
+      [
+       "stock"
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
