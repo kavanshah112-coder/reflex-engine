@@ -21,13 +21,20 @@ class OllamaAdapter(LLMAdapter):
         self.seed = seed
         self.timeout = timeout
 
-    def _complete(self, prompt, system, max_tokens):
+    def _complete(self, prompt, system, max_tokens, seed=None,
+                  temperature=None):
+        # V1.3: seed/temperature overridable per call so DUAL-PARSE is
+        # two genuinely independent samples. At temperature 0 both
+        # parses are byte-identical and the agreement check is
+        # vacuous; a fixed seed keeps each sample reproducible.
         body = {
             "model": self.model,
             "prompt": prompt,
             "stream": False,
-            "options": {"temperature": self.temperature,
-                        "seed": self.seed,
+            "options": {"temperature": (self.temperature
+                                        if temperature is None
+                                        else temperature),
+                        "seed": self.seed if seed is None else seed,
                         "num_predict": max_tokens},
         }
         if system:

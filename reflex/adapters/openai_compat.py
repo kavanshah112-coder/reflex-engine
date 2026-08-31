@@ -23,7 +23,7 @@ class OpenAICompatAdapter(LLMAdapter):
         self.temperature = temperature
         self.timeout = timeout
 
-    def _complete(self, prompt, system, max_tokens):
+    def _complete(self, prompt, system, max_tokens, **kw):
         msgs = []
         if system:
             msgs.append({"role": "system", "content": system})

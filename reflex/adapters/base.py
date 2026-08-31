@@ -32,14 +32,16 @@ class LLMAdapter:
         self.tokens_out = 0
 
     def complete(self, prompt: str, system: Optional[str] = None,
-                 max_tokens: int = 512) -> Completion:
-        c = self._complete(prompt, system=system, max_tokens=max_tokens)
+                 max_tokens: int = 512, **kw) -> Completion:
+        c = self._complete(prompt, system=system,
+                           max_tokens=max_tokens, **kw)
         self.calls += 1
         self.tokens_in += c.tokens_in
         self.tokens_out += c.tokens_out
         return c
 
-    def _complete(self, prompt, system, max_tokens) -> Completion:
+    def _complete(self, prompt, system, max_tokens,
+                  **kw) -> Completion:
         raise NotImplementedError
 
     def stats(self):

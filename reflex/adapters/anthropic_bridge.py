@@ -36,14 +36,19 @@ class AnthropicBridgeAdapter(LLMAdapter):
                         "results" / "bridge" / model)
         self.dir.mkdir(parents=True, exist_ok=True)
 
-    def _key(self, prompt, system, max_tokens):
+    def _key(self, prompt, system, max_tokens, key_salt=""):
+        # V1.3: key_salt participates in the cache key but is NEVER
+        # sent to the servicing agent, so DUAL-PARSE gets two
+        # independent answers to the same prompt instead of one
+        # cached answer returned twice.
         h = hashlib.sha256()
         h.update(json.dumps([self.model, system or "", prompt,
-                             max_tokens]).encode())
+                             max_tokens, key_salt]).encode())
         return h.hexdigest()[:16]
 
-    def _complete(self, prompt, system, max_tokens):
-        k = self._key(prompt, system, max_tokens)
+    def _complete(self, prompt, system, max_tokens, key_salt="",
+                  **kw):
+        k = self._key(prompt, system, max_tokens, key_salt)
         resp = self.dir / f"resp_{k}.json"
         if resp.exists():
             d = json.loads(resp.read_text(encoding="utf-8"))

@@ -88,9 +88,28 @@ def extract_json(text):
     return None
 
 
-def parse_once(adapter, query, frame=None, max_tokens=900):
-    c = adapter.complete(build_prompt(query, frame), system=SYSTEM,
-                         max_tokens=max_tokens)
+def parse_once(adapter, query, frame=None, max_tokens=900,
+               variant=0):
+    """`variant` selects an independent sample of the SAME prompt:
+    a different sampling seed locally, a different bridge cache slot
+    remotely. Without it both parses are identical and the agreement
+    check means nothing."""
+    kw = {}
+    if variant:
+        kw["seed"] = 1000 + variant
+        kw["temperature"] = 0.6
+        kw["key_salt"] = f"v{variant}"
+    else:
+        kw["seed"] = 1000
+        kw["temperature"] = 0.6
+        kw["key_salt"] = "v0"
+    try:
+        c = adapter.complete(build_prompt(query, frame),
+                             system=SYSTEM, max_tokens=max_tokens,
+                             **kw)
+    except TypeError:
+        c = adapter.complete(build_prompt(query, frame),
+                             system=SYSTEM, max_tokens=max_tokens)
     if getattr(c, "pending", False):
         return {"pending": True, "request_id": c.request_id}
     ir = extract_json(c.text)
@@ -102,8 +121,8 @@ def parse_once(adapter, query, frame=None, max_tokens=900):
 def dual_parse(adapter, query, frame=None):
     """Two independent parses (V1_3_SPEC decision vi). Disagreement
     is a measured confidence signal, not a coin flip."""
-    a = parse_once(adapter, query, frame)
-    b = parse_once(adapter, query, frame)
+    a = parse_once(adapter, query, frame, variant=0)
+    b = parse_once(adapter, query, frame, variant=1)
     return a, b
 
 

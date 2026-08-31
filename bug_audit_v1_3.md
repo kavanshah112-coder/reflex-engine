@@ -63,3 +63,27 @@ structurally unmeasurable from their own reference solutions.
 multi-clause problems, which are plausibly *less* repetitive than
 average — so 83.3% should be read as an upper-leaning estimate, and
 the report must say so.
+
+**B3 — dual-parse was vacuous by construction (caught before any
+results; the smoke run was stopped mid-flight).** Decision (vi) of the
+frozen spec makes every item parsed twice, with AGREEMENT as the first
+of five checks and L10 devoted to whether disagreement is a useful
+confidence signal. But the local adapter ran at temperature 0 with a
+fixed seed, and the bridge adapter keys its cache on the prompt text —
+so in both paths the "two independent parses" were byte-identical by
+construction. Agreement would have passed 100% of the time, L10 would
+have measured nothing, and the headline safety mechanism the user
+specifically asked for would have been decorative.
+
+Fixed on both paths: the local adapter now takes per-call `seed` and
+`temperature` (verified: different seeds vary the output, the same
+seed reproduces it exactly, so samples are independent AND the run
+stays deterministic); the bridge adapter takes a `key_salt` that
+participates in the cache key but is NEVER sent to the servicing
+agent, so two identical prompts land in two slots answered
+independently by two different agents.
+
+Lesson, and it generalises past this project: a self-consistency check
+is only as real as the independence of the samples it compares.
+Nothing in the code would have failed, and every number would have
+looked excellent.

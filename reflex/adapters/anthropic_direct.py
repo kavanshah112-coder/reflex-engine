@@ -43,7 +43,7 @@ class AnthropicDirectAdapter(LLMAdapter):
         if not self.key or "PASTE" in self.key:
             raise RuntimeError("no ANTHROPIC_API_KEY in env/.env")
 
-    def _complete(self, prompt, system, max_tokens):
+    def _complete(self, prompt, system, max_tokens, **kw):
         body = {"model": self.model, "max_tokens": max_tokens,
                 "messages": [{"role": "user", "content": prompt}]}
         if system:
