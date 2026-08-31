@@ -126,7 +126,37 @@ def dual_parse(adapter, query, frame=None):
     return a, b
 
 
-def solve(adapter, query, frame, kinds, retry=True):
+CORROB_TEMPLATE = ("Solve this problem. Reply with ONLY the final "
+                   "number, no words, no units.
+
+PROBLEM: {q}")
+_NUM = re.compile(r"-?\d[\d,]*(?:\.\d+)?")
+
+
+def corroborate(adapter, query, seed=2000):
+    """An INDEPENDENT solve, used only as a veto (V1_3_SPEC
+    Amendment B). Never a source of the answer: the engine's
+    plan-computed value stays authoritative, and a disagreement
+    abstains. The corroborator does not need to be right, only
+    independent."""
+    try:
+        c = adapter.complete(CORROB_TEMPLATE.format(q=query),
+                             max_tokens=24, seed=seed,
+                             temperature=0.3, key_salt="corrob")
+    except TypeError:
+        c = adapter.complete(CORROB_TEMPLATE.format(q=query),
+                             max_tokens=24)
+    if getattr(c, "pending", False):
+        return None, True
+    m = _NUM.findall((c.text or "").replace(",", ""))
+    try:
+        return (float(m[-1]) if m else None), False
+    except ValueError:
+        return None, False
+
+
+def solve(adapter, query, frame, kinds, retry=True,
+          corroboration=True):
     """Full W2->W4 path for one item. Returns a record; `value` is
     None unless every check passed and the ENGINE computed it."""
     rec = {"out_of_frame": frame is None, "checks": None,
@@ -168,6 +198,20 @@ def solve(adapter, query, frame, kinds, retry=True):
         rec["status"] = "execution_failed"
         rec["exec_error"] = trace
         return rec
+    if corroboration:
+        cval, pending = corroborate(adapter, query)
+        rec["corroboration"] = cval
+        if pending:
+            rec["status"] = "pending"
+            return rec
+        agree = (cval is not None and
+                 abs(cval - value) <= 2e-2 * max(1e-9, abs(value)))
+        rec["checks"]["corroboration"] = {
+            "ok": agree, "independent_value": cval,
+            "plan_value": value}
+        if not agree:
+            rec["status"] = "corroboration_mismatch"
+            return rec
     rec["value"] = value
     rec["trace"] = trace
     rec["ir"] = a["ir"]

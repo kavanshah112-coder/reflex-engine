@@ -1,0 +1,17 @@
+{
+ "tag": "smoke_local",
+ "n": 25,
+ "status": {
+  "verification_failed": 16,
+  "certified": 9,
+  "WRONG": 4,
+  "correct": 5
+ },
+ "first_failing_check": {
+  "roundtrip": 8,
+  "structure": 5,
+  "consumption": 2,
+  "agreement": 1
+ },
+ "wall_s": 4223
+}

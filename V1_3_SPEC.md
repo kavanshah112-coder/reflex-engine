@@ -380,3 +380,32 @@ and reported. §1's "abstain immediately" is struck.
 
 No V1.3 parse results existed when this was made; W0's results are
 unaffected (W0 does not use frames).
+
+## AMENDMENT B (2026-08-31, forced by the first real-language smoke)
+
+The five checks of §6 plus B4's non-degeneracy check leave a residual
+class they cannot touch: plans that are well-formed, fully consumed,
+convergent, non-degenerate and dimensionally legal, but semantically
+mis-composed — `90 - (49 - 19) = 60` where the answer is
+`90 - 49 - 19 = 22`; same operators, same operands, wrong grouping,
+and BOTH independent parses make the identical error. Measured
+wrong-fire on the smoke with six checks: 8.0% against a 2% gate.
+
+Added as check 7, CORROBORATION: an independent solve of the same
+problem must agree with the plan's computed value, or the item
+abstains.
+
+  - The engine's value remains THE ANSWER. The independent solve is a
+    veto, never a source — the invariant that no model-supplied
+    number enters certified state is unchanged.
+  - The corroborator does not need to be RIGHT, only INDEPENDENT: on
+    the smoke it abstained correctly on an item where it was itself
+    wrong (plan 460, corroboration 76, truth 150), because
+    disagreement is the signal.
+  - Measured on the smoke's survivors: kept 5/5 correct, abstained on
+    2/2 wrong, wrong-fire 8.0% -> 0.0%, coverage 28% -> 20%.
+  - Cost: one extra model call per certified candidate.
+
+L4's scope widens accordingly (the checks now number seven) and the
+per-check attribution required by §6 must report corroboration's
+independent contribution.
