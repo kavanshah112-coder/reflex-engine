@@ -1,0 +1,36 @@
+{
+ "recipe": "expgen_v13.py",
+ "v12_consumed_ids": 1562,
+ "seeds": {
+  "shuffle": 51001,
+  "stream": 51002
+ },
+ "v13_theory_sealed": {
+  "n": 100,
+  "sha256": "e9d5d0173ce5b3052791355f7f8258b3a2f18d3859a776024f724d7057df2d5b"
+ },
+ "v13_units_sealed": {
+  "n": 150,
+  "sha256": "1e3e155adf4d424cd6af0ae97363f6d5a6b4ed1ed554b3b501f8991b457d44dd"
+ },
+ "v13_full_sealed": {
+  "n": 300,
+  "sha256": "2bd186ecd3e415a6ead750bd454bb6884ed8be92b2ad55b8798b4ec515463b14"
+ },
+ "v13_arm_sample": {
+  "n": 300,
+  "sha256": "6b3d006f64219497330a46512977c80bbf173241634022c40edb490c6bddbcf3"
+ },
+ "v13_traffic_pool": {
+  "n": 1180,
+  "sha256": "b30998a589d1428861c8c0be53599688fbac4475b83f647bf6c22b18cc7a243e"
+ },
+ "v13_traffic_repeat": {
+  "n": 3000,
+  "sha256": "52e3ea29ad0efc8ad510653beae25ee3dcac1c782d070ef53074895dc2069232"
+ },
+ "v13_traffic_unique": {
+  "n": 1180,
+  "sha256": "b4ce673e626221d01c56d2399624bf889e33b863c52fb9f9b2995015b2fa4348"
+ }
+}
