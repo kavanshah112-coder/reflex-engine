@@ -10,7 +10,7 @@ annotations, ASDiv carries a Formula field. Both are parsed with
 
   coarse  operator sequence only                (upper bound on reuse)
   medium  operators + operand unit classes      (the gated metric)
-  fine    medium + literal/derived dataflow     (lower bound)
+  fine    medium + dataflow linkage             (lower bound)
 
 Runs on the TRAFFIC POOL ONLY — sealed splits are never inspected, so
 no sealed item informs any design decision.
@@ -66,22 +66,35 @@ def unit_class(text, value):
 
 
 def walk(node, q, prior, steps):
-    """Post-order walk; emits (op, [operand classes]) per BinOp."""
+    """Post-order walk; emits (op, [operands]) per BinOp, where each
+    operand is (medium_class, fine_class).
+
+    medium = unit class, with every derived operand collapsed to
+             "derived"  — the metric the W0 gate is defined on.
+    fine   = the same, except a derived operand carries DATAFLOW
+             LINKAGE (which earlier step produced it, as a relative
+             offset, or "nested" for an in-expression sub-result), so
+             a linear chain a->b->c is distinguished from a tree
+             a,b->c. B1: before this fix the two levels were identical
+             by construction, because the literal/derived marker was
+             fully determined by the unit class."""
     if isinstance(node, ast.BinOp):
         lc = walk(node.left, q, prior, steps)
         rc = walk(node.right, q, prior, steps)
         op = OPS.get(type(node.op), "op")
         steps.append((op, [lc, rc]))
-        return ("der", "der")
+        return ("derived", "nested")
     if isinstance(node, ast.UnaryOp):
         return walk(node.operand, q, prior, steps)
     if isinstance(node, ast.Constant) and \
             isinstance(node.value, (int, float)):
         v = float(node.value)
-        if any(abs(v - p) < 1e-9 for p in prior):
-            return ("der", "derived")
-        return ("lit", unit_class(q, v))
-    return ("lit", "unknown")
+        for back, p in enumerate(reversed(prior), start=1):
+            if abs(v - p) < 1e-9:
+                return ("derived", f"step-{back}")
+        cls = unit_class(q, v)
+        return (cls, cls)
+    return ("unknown", "unknown")
 
 
 def signatures(item):
@@ -93,9 +106,21 @@ def signatures(item):
                              item.get("solution") or ""):
             exprs.append((m.group(1), m.group(2)))
     else:
-        f = (item.get("solution") or "").split("=")[0]
-        if f.strip():
-            exprs.append((f, ""))
+        # B2 fix: ASDiv formulas carry parenthetical unit annotations
+        # ("2*60 (min/hour) + 34 (min) = 154 (min); ...") and multiple
+        # semicolon-separated clauses. Strip annotations, split
+        # clauses, and keep each clause's LHS. Algebraic formulas
+        # ("x:The larger number; x-y=70") remain genuinely
+        # unparseable and are counted, not silently dropped.
+        raw = item.get("solution") or ""
+        raw = re.sub(r"\([^)]*\)", " ", raw)
+        for clause in raw.split(";"):
+            if ":" in clause:
+                continue
+            lhs = clause.split("=")[0].strip()
+            if lhs and re.search(r"\d", lhs) and                     not re.search(r"[A-Za-z]{2,}", lhs):
+                exprs.append((lhs, clause.split("=")[1].strip()
+                              if "=" in clause else ""))
     if not exprs:
         return None
     all_steps = []
@@ -119,11 +144,10 @@ def signatures(item):
     if not all_steps:
         return None
     coarse = "|".join(op for op, _ in all_steps)
-    medium = "|".join(f"{op}({','.join(c for _, c in ops)})"
+    medium = "|".join(f"{op}({','.join(m for m, _ in ops)})"
                       for op, ops in all_steps)
-    fine = "|".join(
-        f"{op}({','.join(f'{k}:{c}' for k, c in ops)})"
-        for op, ops in all_steps)
+    fine = "|".join(f"{op}({','.join(f for _, f in ops)})"
+                    for op, ops in all_steps)
     return coarse, medium, fine
 
 
@@ -142,10 +166,12 @@ def main():
     numeric = [x for x in pool if x.get("answer") is not None]
     cs, ms, fs = Counter(), Counter(), Counter()
     parsed = failed = 0
+    fail_src = Counter()
     for it in numeric:
         sig = signatures(it)
         if sig is None:
             failed += 1
+            fail_src[it.get("source")] += 1
             continue
         parsed += 1
         cs[sig[0]] += 1
@@ -153,6 +179,7 @@ def main():
         fs[sig[2]] += 1
     res = {"pool_n": len(pool), "numeric_n": len(numeric),
            "parsed": parsed, "unparseable": failed,
+           "unparseable_by_source": dict(fail_src),
            "levels": {}}
     for name, ctr in (("coarse", cs), ("medium", ms), ("fine", fs)):
         cur = curve(ctr, parsed)

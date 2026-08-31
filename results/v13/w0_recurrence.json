@@ -1,0 +1,2442 @@
+{
+ "pool_n": 1180,
+ "numeric_n": 944,
+ "parsed": 726,
+ "unparseable": 218,
+ "unparseable_by_source": {
+  "asdiv": 213,
+  "gsm8k": 5
+ },
+ "levels": {
+  "coarse": {
+   "distinct": 170,
+   "top200_coverage": 1.0,
+   "top10": [
+    {
+     "sig": "sub",
+     "n": 134
+    },
+    {
+     "sig": "div",
+     "n": 109
+    },
+    {
+     "sig": "add",
+     "n": 87
+    },
+    {
+     "sig": "mul",
+     "n": 63
+    },
+    {
+     "sig": "add|add",
+     "n": 28
+    },
+    {
+     "sig": "sub|add",
+     "n": 21
+    },
+    {
+     "sig": "mul|mul",
+     "n": 14
+    },
+    {
+     "sig": "sub|sub",
+     "n": 13
+    },
+    {
+     "sig": "div|sub",
+     "n": 12
+    },
+    {
+     "sig": "add|sub",
+     "n": 9
+    }
+   ],
+   "curve": [
+    {
+     "rank": 1,
+     "cum_coverage": 0.18457300275482094
+    },
+    {
+     "rank": 2,
+     "cum_coverage": 0.3347107438016529
+    },
+    {
+     "rank": 3,
+     "cum_coverage": 0.45454545454545453
+    },
+    {
+     "rank": 4,
+     "cum_coverage": 0.5413223140495868
+    },
+    {
+     "rank": 5,
+     "cum_coverage": 0.5798898071625345
+    },
+    {
+     "rank": 6,
+     "cum_coverage": 0.6088154269972452
+    },
+    {
+     "rank": 7,
+     "cum_coverage": 0.628099173553719
+    },
+    {
+     "rank": 8,
+     "cum_coverage": 0.6460055096418733
+    },
+    {
+     "rank": 9,
+     "cum_coverage": 0.662534435261708
+    },
+    {
+     "rank": 10,
+     "cum_coverage": 0.6749311294765841
+    },
+    {
+     "rank": 11,
+     "cum_coverage": 0.6873278236914601
+    },
+    {
+     "rank": 12,
+     "cum_coverage": 0.6955922865013774
+    },
+    {
+     "rank": 13,
+     "cum_coverage": 0.7038567493112947
+    },
+    {
+     "rank": 14,
+     "cum_coverage": 0.7121212121212122
+    },
+    {
+     "rank": 15,
+     "cum_coverage": 0.71900826446281
+    },
+    {
+     "rank": 16,
+     "cum_coverage": 0.7258953168044077
+    },
+    {
+     "rank": 17,
+     "cum_coverage": 0.7327823691460055
+    },
+    {
+     "rank": 18,
+     "cum_coverage": 0.7382920110192838
+    },
+    {
+     "rank": 19,
+     "cum_coverage": 0.743801652892562
+    },
+    {
+     "rank": 20,
+     "cum_coverage": 0.7493112947658402
+    },
+    {
+     "rank": 21,
+     "cum_coverage": 0.7534435261707989
+    },
+    {
+     "rank": 22,
+     "cum_coverage": 0.7575757575757576
+    },
+    {
+     "rank": 23,
+     "cum_coverage": 0.7617079889807162
+    },
+    {
+     "rank": 24,
+     "cum_coverage": 0.7658402203856749
+    },
+    {
+     "rank": 25,
+     "cum_coverage": 0.7699724517906336
+    },
+    {
+     "rank": 26,
+     "cum_coverage": 0.7741046831955923
+    },
+    {
+     "rank": 27,
+     "cum_coverage": 0.7768595041322314
+    },
+    {
+     "rank": 28,
+     "cum_coverage": 0.7796143250688705
+    },
+    {
+     "rank": 29,
+     "cum_coverage": 0.7823691460055097
+    },
+    {
+     "rank": 30,
+     "cum_coverage": 0.7851239669421488
+    },
+    {
+     "rank": 31,
+     "cum_coverage": 0.7878787878787878
+    },
+    {
+     "rank": 32,
+     "cum_coverage": 0.790633608815427
+    },
+    {
+     "rank": 33,
+     "cum_coverage": 0.7933884297520661
+    },
+    {
+     "rank": 34,
+     "cum_coverage": 0.7961432506887053
+    },
+    {
+     "rank": 35,
+     "cum_coverage": 0.7988980716253443
+    },
+    {
+     "rank": 36,
+     "cum_coverage": 0.8016528925619835
+    },
+    {
+     "rank": 37,
+     "cum_coverage": 0.8044077134986226
+    },
+    {
+     "rank": 38,
+     "cum_coverage": 0.8071625344352618
+    },
+    {
+     "rank": 39,
+     "cum_coverage": 0.8099173553719008
+    },
+    {
+     "rank": 40,
+     "cum_coverage": 0.8126721763085399
+    },
+    {
+     "rank": 41,
+     "cum_coverage": 0.8154269972451791
+    },
+    {
+     "rank": 42,
+     "cum_coverage": 0.8181818181818182
+    },
+    {
+     "rank": 43,
+     "cum_coverage": 0.8209366391184573
+    },
+    {
+     "rank": 44,
+     "cum_coverage": 0.8236914600550964
+    },
+    {
+     "rank": 45,
+     "cum_coverage": 0.8264462809917356
+    },
+    {
+     "rank": 46,
+     "cum_coverage": 0.8292011019283747
+    },
+    {
+     "rank": 47,
+     "cum_coverage": 0.8305785123966942
+    },
+    {
+     "rank": 48,
+     "cum_coverage": 0.8319559228650137
+    },
+    {
+     "rank": 49,
+     "cum_coverage": 0.8333333333333334
+    },
+    {
+     "rank": 50,
+     "cum_coverage": 0.8347107438016529
+    },
+    {
+     "rank": 51,
+     "cum_coverage": 0.8360881542699724
+    },
+    {
+     "rank": 52,
+     "cum_coverage": 0.837465564738292
+    },
+    {
+     "rank": 53,
+     "cum_coverage": 0.8388429752066116
+    },
+    {
+     "rank": 54,
+     "cum_coverage": 0.8402203856749312
+    },
+    {
+     "rank": 55,
+     "cum_coverage": 0.8415977961432507
+    },
+    {
+     "rank": 56,
+     "cum_coverage": 0.8429752066115702
+    },
+    {
+     "rank": 57,
+     "cum_coverage": 0.8443526170798898
+    },
+    {
+     "rank": 58,
+     "cum_coverage": 0.8457300275482094
+    },
+    {
+     "rank": 59,
+     "cum_coverage": 0.8471074380165289
+    },
+    {
+     "rank": 60,
+     "cum_coverage": 0.8484848484848485
+    },
+    {
+     "rank": 61,
+     "cum_coverage": 0.849862258953168
+    },
+    {
+     "rank": 62,
+     "cum_coverage": 0.8512396694214877
+    },
+    {
+     "rank": 63,
+     "cum_coverage": 0.8526170798898072
+    },
+    {
+     "rank": 64,
+     "cum_coverage": 0.8539944903581267
+    },
+    {
+     "rank": 65,
+     "cum_coverage": 0.8553719008264463
+    },
+    {
+     "rank": 66,
+     "cum_coverage": 0.8567493112947658
+    },
+    {
+     "rank": 67,
+     "cum_coverage": 0.8581267217630854
+    },
+    {
+     "rank": 68,
+     "cum_coverage": 0.859504132231405
+    },
+    {
+     "rank": 69,
+     "cum_coverage": 0.8608815426997245
+    },
+    {
+     "rank": 70,
+     "cum_coverage": 0.8622589531680441
+    },
+    {
+     "rank": 71,
+     "cum_coverage": 0.8636363636363636
+    },
+    {
+     "rank": 72,
+     "cum_coverage": 0.8650137741046832
+    },
+    {
+     "rank": 73,
+     "cum_coverage": 0.8663911845730028
+    },
+    {
+     "rank": 74,
+     "cum_coverage": 0.8677685950413223
+    },
+    {
+     "rank": 75,
+     "cum_coverage": 0.8691460055096418
+    },
+    {
+     "rank": 76,
+     "cum_coverage": 0.8705234159779615
+    },
+    {
+     "rank": 77,
+     "cum_coverage": 0.871900826446281
+    },
+    {
+     "rank": 78,
+     "cum_coverage": 0.8732782369146006
+    },
+    {
+     "rank": 79,
+     "cum_coverage": 0.8746556473829201
+    },
+    {
+     "rank": 80,
+     "cum_coverage": 0.8760330578512396
+    },
+    {
+     "rank": 81,
+     "cum_coverage": 0.8774104683195593
+    },
+    {
+     "rank": 82,
+     "cum_coverage": 0.8787878787878788
+    },
+    {
+     "rank": 83,
+     "cum_coverage": 0.8801652892561983
+    },
+    {
+     "rank": 84,
+     "cum_coverage": 0.8815426997245179
+    },
+    {
+     "rank": 85,
+     "cum_coverage": 0.8829201101928374
+    },
+    {
+     "rank": 86,
+     "cum_coverage": 0.8842975206611571
+    },
+    {
+     "rank": 87,
+     "cum_coverage": 0.8856749311294766
+    },
+    {
+     "rank": 88,
+     "cum_coverage": 0.8870523415977961
+    },
+    {
+     "rank": 89,
+     "cum_coverage": 0.8884297520661157
+    },
+    {
+     "rank": 90,
+     "cum_coverage": 0.8898071625344353
+    },
+    {
+     "rank": 91,
+     "cum_coverage": 0.8911845730027548
+    },
+    {
+     "rank": 92,
+     "cum_coverage": 0.8925619834710744
+    },
+    {
+     "rank": 93,
+     "cum_coverage": 0.8939393939393939
+    },
+    {
+     "rank": 94,
+     "cum_coverage": 0.8953168044077136
+    },
+    {
+     "rank": 95,
+     "cum_coverage": 0.8966942148760331
+    },
+    {
+     "rank": 96,
+     "cum_coverage": 0.8980716253443526
+    },
+    {
+     "rank": 97,
+     "cum_coverage": 0.8994490358126722
+    },
+    {
+     "rank": 98,
+     "cum_coverage": 0.9008264462809917
+    },
+    {
+     "rank": 99,
+     "cum_coverage": 0.9022038567493113
+    },
+    {
+     "rank": 100,
+     "cum_coverage": 0.9035812672176309
+    },
+    {
+     "rank": 101,
+     "cum_coverage": 0.9049586776859504
+    },
+    {
+     "rank": 102,
+     "cum_coverage": 0.90633608815427
+    },
+    {
+     "rank": 103,
+     "cum_coverage": 0.9077134986225895
+    },
+    {
+     "rank": 104,
+     "cum_coverage": 0.9090909090909091
+    },
+    {
+     "rank": 105,
+     "cum_coverage": 0.9104683195592287
+    },
+    {
+     "rank": 106,
+     "cum_coverage": 0.9118457300275482
+    },
+    {
+     "rank": 107,
+     "cum_coverage": 0.9132231404958677
+    },
+    {
+     "rank": 108,
+     "cum_coverage": 0.9146005509641874
+    },
+    {
+     "rank": 109,
+     "cum_coverage": 0.9159779614325069
+    },
+    {
+     "rank": 110,
+     "cum_coverage": 0.9173553719008265
+    },
+    {
+     "rank": 111,
+     "cum_coverage": 0.918732782369146
+    },
+    {
+     "rank": 112,
+     "cum_coverage": 0.9201101928374655
+    },
+    {
+     "rank": 113,
+     "cum_coverage": 0.9214876033057852
+    },
+    {
+     "rank": 114,
+     "cum_coverage": 0.9228650137741047
+    },
+    {
+     "rank": 115,
+     "cum_coverage": 0.9242424242424242
+    },
+    {
+     "rank": 116,
+     "cum_coverage": 0.9256198347107438
+    },
+    {
+     "rank": 117,
+     "cum_coverage": 0.9269972451790633
+    },
+    {
+     "rank": 118,
+     "cum_coverage": 0.928374655647383
+    },
+    {
+     "rank": 119,
+     "cum_coverage": 0.9297520661157025
+    },
+    {
+     "rank": 120,
+     "cum_coverage": 0.931129476584022
+    },
+    {
+     "rank": 121,
+     "cum_coverage": 0.9325068870523416
+    },
+    {
+     "rank": 122,
+     "cum_coverage": 0.9338842975206612
+    },
+    {
+     "rank": 123,
+     "cum_coverage": 0.9352617079889807
+    },
+    {
+     "rank": 124,
+     "cum_coverage": 0.9366391184573003
+    },
+    {
+     "rank": 125,
+     "cum_coverage": 0.9380165289256198
+    },
+    {
+     "rank": 126,
+     "cum_coverage": 0.9393939393939394
+    },
+    {
+     "rank": 127,
+     "cum_coverage": 0.940771349862259
+    },
+    {
+     "rank": 128,
+     "cum_coverage": 0.9421487603305785
+    },
+    {
+     "rank": 129,
+     "cum_coverage": 0.9435261707988981
+    },
+    {
+     "rank": 130,
+     "cum_coverage": 0.9449035812672176
+    },
+    {
+     "rank": 131,
+     "cum_coverage": 0.9462809917355371
+    },
+    {
+     "rank": 132,
+     "cum_coverage": 0.9476584022038568
+    },
+    {
+     "rank": 133,
+     "cum_coverage": 0.9490358126721763
+    },
+    {
+     "rank": 134,
+     "cum_coverage": 0.9504132231404959
+    },
+    {
+     "rank": 135,
+     "cum_coverage": 0.9517906336088154
+    },
+    {
+     "rank": 136,
+     "cum_coverage": 0.953168044077135
+    },
+    {
+     "rank": 137,
+     "cum_coverage": 0.9545454545454546
+    },
+    {
+     "rank": 138,
+     "cum_coverage": 0.9559228650137741
+    },
+    {
+     "rank": 139,
+     "cum_coverage": 0.9573002754820936
+    },
+    {
+     "rank": 140,
+     "cum_coverage": 0.9586776859504132
+    },
+    {
+     "rank": 141,
+     "cum_coverage": 0.9600550964187328
+    },
+    {
+     "rank": 142,
+     "cum_coverage": 0.9614325068870524
+    },
+    {
+     "rank": 143,
+     "cum_coverage": 0.9628099173553719
+    },
+    {
+     "rank": 144,
+     "cum_coverage": 0.9641873278236914
+    },
+    {
+     "rank": 145,
+     "cum_coverage": 0.9655647382920111
+    },
+    {
+     "rank": 146,
+     "cum_coverage": 0.9669421487603306
+    },
+    {
+     "rank": 147,
+     "cum_coverage": 0.9683195592286501
+    },
+    {
+     "rank": 148,
+     "cum_coverage": 0.9696969696969697
+    },
+    {
+     "rank": 149,
+     "cum_coverage": 0.9710743801652892
+    },
+    {
+     "rank": 150,
+     "cum_coverage": 0.9724517906336089
+    },
+    {
+     "rank": 151,
+     "cum_coverage": 0.9738292011019284
+    },
+    {
+     "rank": 152,
+     "cum_coverage": 0.9752066115702479
+    },
+    {
+     "rank": 153,
+     "cum_coverage": 0.9765840220385675
+    },
+    {
+     "rank": 154,
+     "cum_coverage": 0.977961432506887
+    },
+    {
+     "rank": 155,
+     "cum_coverage": 0.9793388429752066
+    },
+    {
+     "rank": 156,
+     "cum_coverage": 0.9807162534435262
+    },
+    {
+     "rank": 157,
+     "cum_coverage": 0.9820936639118457
+    },
+    {
+     "rank": 158,
+     "cum_coverage": 0.9834710743801653
+    },
+    {
+     "rank": 159,
+     "cum_coverage": 0.9848484848484849
+    },
+    {
+     "rank": 160,
+     "cum_coverage": 0.9862258953168044
+    },
+    {
+     "rank": 161,
+     "cum_coverage": 0.987603305785124
+    },
+    {
+     "rank": 162,
+     "cum_coverage": 0.9889807162534435
+    },
+    {
+     "rank": 163,
+     "cum_coverage": 0.990358126721763
+    },
+    {
+     "rank": 164,
+     "cum_coverage": 0.9917355371900827
+    },
+    {
+     "rank": 165,
+     "cum_coverage": 0.9931129476584022
+    },
+    {
+     "rank": 166,
+     "cum_coverage": 0.9944903581267218
+    },
+    {
+     "rank": 167,
+     "cum_coverage": 0.9958677685950413
+    },
+    {
+     "rank": 168,
+     "cum_coverage": 0.9972451790633609
+    },
+    {
+     "rank": 169,
+     "cum_coverage": 0.9986225895316805
+    },
+    {
+     "rank": 170,
+     "cum_coverage": 1.0
+    }
+   ]
+  },
+  "medium": {
+   "distinct": 321,
+   "top200_coverage": 0.8333,
+   "top10": [
+    {
+     "sig": "div(count,count)",
+     "n": 60
+    },
+    {
+     "sig": "sub(count,count)",
+     "n": 55
+    },
+    {
+     "sig": "sub(unseen,unseen)",
+     "n": 46
+    },
+    {
+     "sig": "add(unseen,unseen)",
+     "n": 38
+    },
+    {
+     "sig": "add(count,count)",
+     "n": 34
+    },
+    {
+     "sig": "mul(count,count)",
+     "n": 25
+    },
+    {
+     "sig": "div(unseen,unseen)",
+     "n": 21
+    },
+    {
+     "sig": "add(count,count)|add(derived,count)",
+     "n": 20
+    },
+    {
+     "sig": "sub(count,count)|add(derived,count)",
+     "n": 18
+    },
+    {
+     "sig": "sub(money,money)",
+     "n": 14
+    }
+   ],
+   "curve": [
+    {
+     "rank": 1,
+     "cum_coverage": 0.08264462809917356
+    },
+    {
+     "rank": 2,
+     "cum_coverage": 0.1584022038567493
+    },
+    {
+     "rank": 3,
+     "cum_coverage": 0.22176308539944903
+    },
+    {
+     "rank": 4,
+     "cum_coverage": 0.2741046831955923
+    },
+    {
+     "rank": 5,
+     "cum_coverage": 0.3209366391184573
+    },
+    {
+     "rank": 6,
+     "cum_coverage": 0.35537190082644626
+    },
+    {
+     "rank": 7,
+     "cum_coverage": 0.384297520661157
+    },
+    {
+     "rank": 8,
+     "cum_coverage": 0.4118457300275482
+    },
+    {
+     "rank": 9,
+     "cum_coverage": 0.4366391184573003
+    },
+    {
+     "rank": 10,
+     "cum_coverage": 0.4559228650137741
+    },
+    {
+     "rank": 11,
+     "cum_coverage": 0.46831955922865015
+    },
+    {
+     "rank": 12,
+     "cum_coverage": 0.4793388429752066
+    },
+    {
+     "rank": 13,
+     "cum_coverage": 0.4889807162534435
+    },
+    {
+     "rank": 14,
+     "cum_coverage": 0.4986225895316804
+    },
+    {
+     "rank": 15,
+     "cum_coverage": 0.5055096418732782
+    },
+    {
+     "rank": 16,
+     "cum_coverage": 0.512396694214876
+    },
+    {
+     "rank": 17,
+     "cum_coverage": 0.5179063360881543
+    },
+    {
+     "rank": 18,
+     "cum_coverage": 0.5234159779614325
+    },
+    {
+     "rank": 19,
+     "cum_coverage": 0.5289256198347108
+    },
+    {
+     "rank": 20,
+     "cum_coverage": 0.5344352617079889
+    },
+    {
+     "rank": 21,
+     "cum_coverage": 0.5399449035812672
+    },
+    {
+     "rank": 22,
+     "cum_coverage": 0.5440771349862259
+    },
+    {
+     "rank": 23,
+     "cum_coverage": 0.5482093663911846
+    },
+    {
+     "rank": 24,
+     "cum_coverage": 0.5523415977961432
+    },
+    {
+     "rank": 25,
+     "cum_coverage": 0.5564738292011019
+    },
+    {
+     "rank": 26,
+     "cum_coverage": 0.5606060606060606
+    },
+    {
+     "rank": 27,
+     "cum_coverage": 0.5647382920110193
+    },
+    {
+     "rank": 28,
+     "cum_coverage": 0.568870523415978
+    },
+    {
+     "rank": 29,
+     "cum_coverage": 0.5730027548209367
+    },
+    {
+     "rank": 30,
+     "cum_coverage": 0.5757575757575758
+    },
+    {
+     "rank": 31,
+     "cum_coverage": 0.5785123966942148
+    },
+    {
+     "rank": 32,
+     "cum_coverage": 0.581267217630854
+    },
+    {
+     "rank": 33,
+     "cum_coverage": 0.5840220385674931
+    },
+    {
+     "rank": 34,
+     "cum_coverage": 0.5867768595041323
+    },
+    {
+     "rank": 35,
+     "cum_coverage": 0.5895316804407713
+    },
+    {
+     "rank": 36,
+     "cum_coverage": 0.5922865013774105
+    },
+    {
+     "rank": 37,
+     "cum_coverage": 0.5950413223140496
+    },
+    {
+     "rank": 38,
+     "cum_coverage": 0.5977961432506887
+    },
+    {
+     "rank": 39,
+     "cum_coverage": 0.6005509641873278
+    },
+    {
+     "rank": 40,
+     "cum_coverage": 0.6033057851239669
+    },
+    {
+     "rank": 41,
+     "cum_coverage": 0.6060606060606061
+    },
+    {
+     "rank": 42,
+     "cum_coverage": 0.6088154269972452
+    },
+    {
+     "rank": 43,
+     "cum_coverage": 0.6115702479338843
+    },
+    {
+     "rank": 44,
+     "cum_coverage": 0.6143250688705234
+    },
+    {
+     "rank": 45,
+     "cum_coverage": 0.6170798898071626
+    },
+    {
+     "rank": 46,
+     "cum_coverage": 0.6198347107438017
+    },
+    {
+     "rank": 47,
+     "cum_coverage": 0.6225895316804407
+    },
+    {
+     "rank": 48,
+     "cum_coverage": 0.6239669421487604
+    },
+    {
+     "rank": 49,
+     "cum_coverage": 0.6253443526170799
+    },
+    {
+     "rank": 50,
+     "cum_coverage": 0.6267217630853994
+    },
+    {
+     "rank": 51,
+     "cum_coverage": 0.628099173553719
+    },
+    {
+     "rank": 52,
+     "cum_coverage": 0.6294765840220385
+    },
+    {
+     "rank": 53,
+     "cum_coverage": 0.6308539944903582
+    },
+    {
+     "rank": 54,
+     "cum_coverage": 0.6322314049586777
+    },
+    {
+     "rank": 55,
+     "cum_coverage": 0.6336088154269972
+    },
+    {
+     "rank": 56,
+     "cum_coverage": 0.6349862258953168
+    },
+    {
+     "rank": 57,
+     "cum_coverage": 0.6363636363636364
+    },
+    {
+     "rank": 58,
+     "cum_coverage": 0.6377410468319559
+    },
+    {
+     "rank": 59,
+     "cum_coverage": 0.6391184573002755
+    },
+    {
+     "rank": 60,
+     "cum_coverage": 0.640495867768595
+    },
+    {
+     "rank": 61,
+     "cum_coverage": 0.6418732782369146
+    },
+    {
+     "rank": 62,
+     "cum_coverage": 0.6432506887052342
+    },
+    {
+     "rank": 63,
+     "cum_coverage": 0.6446280991735537
+    },
+    {
+     "rank": 64,
+     "cum_coverage": 0.6460055096418733
+    },
+    {
+     "rank": 65,
+     "cum_coverage": 0.6473829201101928
+    },
+    {
+     "rank": 66,
+     "cum_coverage": 0.6487603305785123
+    },
+    {
+     "rank": 67,
+     "cum_coverage": 0.650137741046832
+    },
+    {
+     "rank": 68,
+     "cum_coverage": 0.6515151515151515
+    },
+    {
+     "rank": 69,
+     "cum_coverage": 0.6528925619834711
+    },
+    {
+     "rank": 70,
+     "cum_coverage": 0.6542699724517906
+    },
+    {
+     "rank": 71,
+     "cum_coverage": 0.6556473829201102
+    },
+    {
+     "rank": 72,
+     "cum_coverage": 0.6570247933884298
+    },
+    {
+     "rank": 73,
+     "cum_coverage": 0.6584022038567493
+    },
+    {
+     "rank": 74,
+     "cum_coverage": 0.6597796143250688
+    },
+    {
+     "rank": 75,
+     "cum_coverage": 0.6611570247933884
+    },
+    {
+     "rank": 76,
+     "cum_coverage": 0.662534435261708
+    },
+    {
+     "rank": 77,
+     "cum_coverage": 0.6639118457300276
+    },
+    {
+     "rank": 78,
+     "cum_coverage": 0.6652892561983471
+    },
+    {
+     "rank": 79,
+     "cum_coverage": 0.6666666666666666
+    },
+    {
+     "rank": 80,
+     "cum_coverage": 0.6680440771349863
+    },
+    {
+     "rank": 81,
+     "cum_coverage": 0.6694214876033058
+    },
+    {
+     "rank": 82,
+     "cum_coverage": 0.6707988980716253
+    },
+    {
+     "rank": 83,
+     "cum_coverage": 0.6721763085399449
+    },
+    {
+     "rank": 84,
+     "cum_coverage": 0.6735537190082644
+    },
+    {
+     "rank": 85,
+     "cum_coverage": 0.6749311294765841
+    },
+    {
+     "rank": 86,
+     "cum_coverage": 0.6763085399449036
+    },
+    {
+     "rank": 87,
+     "cum_coverage": 0.6776859504132231
+    },
+    {
+     "rank": 88,
+     "cum_coverage": 0.6790633608815427
+    },
+    {
+     "rank": 89,
+     "cum_coverage": 0.6804407713498623
+    },
+    {
+     "rank": 90,
+     "cum_coverage": 0.6818181818181818
+    },
+    {
+     "rank": 91,
+     "cum_coverage": 0.6831955922865014
+    },
+    {
+     "rank": 92,
+     "cum_coverage": 0.6845730027548209
+    },
+    {
+     "rank": 93,
+     "cum_coverage": 0.6859504132231405
+    },
+    {
+     "rank": 94,
+     "cum_coverage": 0.6873278236914601
+    },
+    {
+     "rank": 95,
+     "cum_coverage": 0.6887052341597796
+    },
+    {
+     "rank": 96,
+     "cum_coverage": 0.6900826446280992
+    },
+    {
+     "rank": 97,
+     "cum_coverage": 0.6914600550964187
+    },
+    {
+     "rank": 98,
+     "cum_coverage": 0.6928374655647382
+    },
+    {
+     "rank": 99,
+     "cum_coverage": 0.6942148760330579
+    },
+    {
+     "rank": 100,
+     "cum_coverage": 0.6955922865013774
+    },
+    {
+     "rank": 101,
+     "cum_coverage": 0.696969696969697
+    },
+    {
+     "rank": 102,
+     "cum_coverage": 0.6983471074380165
+    },
+    {
+     "rank": 103,
+     "cum_coverage": 0.699724517906336
+    },
+    {
+     "rank": 104,
+     "cum_coverage": 0.7011019283746557
+    },
+    {
+     "rank": 105,
+     "cum_coverage": 0.7024793388429752
+    },
+    {
+     "rank": 106,
+     "cum_coverage": 0.7038567493112947
+    },
+    {
+     "rank": 107,
+     "cum_coverage": 0.7052341597796143
+    },
+    {
+     "rank": 108,
+     "cum_coverage": 0.7066115702479339
+    },
+    {
+     "rank": 109,
+     "cum_coverage": 0.7079889807162535
+    },
+    {
+     "rank": 110,
+     "cum_coverage": 0.709366391184573
+    },
+    {
+     "rank": 111,
+     "cum_coverage": 0.7107438016528925
+    },
+    {
+     "rank": 112,
+     "cum_coverage": 0.7121212121212122
+    },
+    {
+     "rank": 113,
+     "cum_coverage": 0.7134986225895317
+    },
+    {
+     "rank": 114,
+     "cum_coverage": 0.7148760330578512
+    },
+    {
+     "rank": 115,
+     "cum_coverage": 0.7162534435261708
+    },
+    {
+     "rank": 116,
+     "cum_coverage": 0.7176308539944903
+    },
+    {
+     "rank": 117,
+     "cum_coverage": 0.71900826446281
+    },
+    {
+     "rank": 118,
+     "cum_coverage": 0.7203856749311295
+    },
+    {
+     "rank": 119,
+     "cum_coverage": 0.721763085399449
+    },
+    {
+     "rank": 120,
+     "cum_coverage": 0.7231404958677686
+    },
+    {
+     "rank": 121,
+     "cum_coverage": 0.7245179063360881
+    },
+    {
+     "rank": 122,
+     "cum_coverage": 0.7258953168044077
+    },
+    {
+     "rank": 123,
+     "cum_coverage": 0.7272727272727273
+    },
+    {
+     "rank": 124,
+     "cum_coverage": 0.7286501377410468
+    },
+    {
+     "rank": 125,
+     "cum_coverage": 0.7300275482093664
+    },
+    {
+     "rank": 126,
+     "cum_coverage": 0.731404958677686
+    },
+    {
+     "rank": 127,
+     "cum_coverage": 0.7327823691460055
+    },
+    {
+     "rank": 128,
+     "cum_coverage": 0.7341597796143251
+    },
+    {
+     "rank": 129,
+     "cum_coverage": 0.7355371900826446
+    },
+    {
+     "rank": 130,
+     "cum_coverage": 0.7369146005509641
+    },
+    {
+     "rank": 131,
+     "cum_coverage": 0.7382920110192838
+    },
+    {
+     "rank": 132,
+     "cum_coverage": 0.7396694214876033
+    },
+    {
+     "rank": 133,
+     "cum_coverage": 0.7410468319559229
+    },
+    {
+     "rank": 134,
+     "cum_coverage": 0.7424242424242424
+    },
+    {
+     "rank": 135,
+     "cum_coverage": 0.743801652892562
+    },
+    {
+     "rank": 136,
+     "cum_coverage": 0.7451790633608816
+    },
+    {
+     "rank": 137,
+     "cum_coverage": 0.7465564738292011
+    },
+    {
+     "rank": 138,
+     "cum_coverage": 0.7479338842975206
+    },
+    {
+     "rank": 139,
+     "cum_coverage": 0.7493112947658402
+    },
+    {
+     "rank": 140,
+     "cum_coverage": 0.7506887052341598
+    },
+    {
+     "rank": 141,
+     "cum_coverage": 0.7520661157024794
+    },
+    {
+     "rank": 142,
+     "cum_coverage": 0.7534435261707989
+    },
+    {
+     "rank": 143,
+     "cum_coverage": 0.7548209366391184
+    },
+    {
+     "rank": 144,
+     "cum_coverage": 0.756198347107438
+    },
+    {
+     "rank": 145,
+     "cum_coverage": 0.7575757575757576
+    },
+    {
+     "rank": 146,
+     "cum_coverage": 0.7589531680440771
+    },
+    {
+     "rank": 147,
+     "cum_coverage": 0.7603305785123967
+    },
+    {
+     "rank": 148,
+     "cum_coverage": 0.7617079889807162
+    },
+    {
+     "rank": 149,
+     "cum_coverage": 0.7630853994490359
+    },
+    {
+     "rank": 150,
+     "cum_coverage": 0.7644628099173554
+    },
+    {
+     "rank": 151,
+     "cum_coverage": 0.7658402203856749
+    },
+    {
+     "rank": 152,
+     "cum_coverage": 0.7672176308539945
+    },
+    {
+     "rank": 153,
+     "cum_coverage": 0.768595041322314
+    },
+    {
+     "rank": 154,
+     "cum_coverage": 0.7699724517906336
+    },
+    {
+     "rank": 155,
+     "cum_coverage": 0.7713498622589532
+    },
+    {
+     "rank": 156,
+     "cum_coverage": 0.7727272727272727
+    },
+    {
+     "rank": 157,
+     "cum_coverage": 0.7741046831955923
+    },
+    {
+     "rank": 158,
+     "cum_coverage": 0.7754820936639119
+    },
+    {
+     "rank": 159,
+     "cum_coverage": 0.7768595041322314
+    },
+    {
+     "rank": 160,
+     "cum_coverage": 0.778236914600551
+    },
+    {
+     "rank": 161,
+     "cum_coverage": 0.7796143250688705
+    },
+    {
+     "rank": 162,
+     "cum_coverage": 0.78099173553719
+    },
+    {
+     "rank": 163,
+     "cum_coverage": 0.7823691460055097
+    },
+    {
+     "rank": 164,
+     "cum_coverage": 0.7837465564738292
+    },
+    {
+     "rank": 165,
+     "cum_coverage": 0.7851239669421488
+    },
+    {
+     "rank": 166,
+     "cum_coverage": 0.7865013774104683
+    },
+    {
+     "rank": 167,
+     "cum_coverage": 0.7878787878787878
+    },
+    {
+     "rank": 168,
+     "cum_coverage": 0.7892561983471075
+    },
+    {
+     "rank": 169,
+     "cum_coverage": 0.790633608815427
+    },
+    {
+     "rank": 170,
+     "cum_coverage": 0.7920110192837465
+    },
+    {
+     "rank": 171,
+     "cum_coverage": 0.7933884297520661
+    },
+    {
+     "rank": 172,
+     "cum_coverage": 0.7947658402203857
+    },
+    {
+     "rank": 173,
+     "cum_coverage": 0.7961432506887053
+    },
+    {
+     "rank": 174,
+     "cum_coverage": 0.7975206611570248
+    },
+    {
+     "rank": 175,
+     "cum_coverage": 0.7988980716253443
+    },
+    {
+     "rank": 176,
+     "cum_coverage": 0.800275482093664
+    },
+    {
+     "rank": 177,
+     "cum_coverage": 0.8016528925619835
+    },
+    {
+     "rank": 178,
+     "cum_coverage": 0.803030303030303
+    },
+    {
+     "rank": 179,
+     "cum_coverage": 0.8044077134986226
+    },
+    {
+     "rank": 180,
+     "cum_coverage": 0.8057851239669421
+    },
+    {
+     "rank": 181,
+     "cum_coverage": 0.8071625344352618
+    },
+    {
+     "rank": 182,
+     "cum_coverage": 0.8085399449035813
+    },
+    {
+     "rank": 183,
+     "cum_coverage": 0.8099173553719008
+    },
+    {
+     "rank": 184,
+     "cum_coverage": 0.8112947658402204
+    },
+    {
+     "rank": 185,
+     "cum_coverage": 0.8126721763085399
+    },
+    {
+     "rank": 186,
+     "cum_coverage": 0.8140495867768595
+    },
+    {
+     "rank": 187,
+     "cum_coverage": 0.8154269972451791
+    },
+    {
+     "rank": 188,
+     "cum_coverage": 0.8168044077134986
+    },
+    {
+     "rank": 189,
+     "cum_coverage": 0.8181818181818182
+    },
+    {
+     "rank": 190,
+     "cum_coverage": 0.8195592286501377
+    },
+    {
+     "rank": 191,
+     "cum_coverage": 0.8209366391184573
+    },
+    {
+     "rank": 192,
+     "cum_coverage": 0.8223140495867769
+    },
+    {
+     "rank": 193,
+     "cum_coverage": 0.8236914600550964
+    },
+    {
+     "rank": 194,
+     "cum_coverage": 0.8250688705234159
+    },
+    {
+     "rank": 195,
+     "cum_coverage": 0.8264462809917356
+    },
+    {
+     "rank": 196,
+     "cum_coverage": 0.8278236914600551
+    },
+    {
+     "rank": 197,
+     "cum_coverage": 0.8292011019283747
+    },
+    {
+     "rank": 198,
+     "cum_coverage": 0.8305785123966942
+    },
+    {
+     "rank": 199,
+     "cum_coverage": 0.8319559228650137
+    },
+    {
+     "rank": 200,
+     "cum_coverage": 0.8333333333333334
+    }
+   ]
+  },
+  "fine": {
+   "distinct": 325,
+   "top200_coverage": 0.8278,
+   "top10": [
+    {
+     "sig": "div(count,count)",
+     "n": 60
+    },
+    {
+     "sig": "sub(count,count)",
+     "n": 55
+    },
+    {
+     "sig": "sub(unseen,unseen)",
+     "n": 46
+    },
+    {
+     "sig": "add(unseen,unseen)",
+     "n": 38
+    },
+    {
+     "sig": "add(count,count)",
+     "n": 34
+    },
+    {
+     "sig": "mul(count,count)",
+     "n": 25
+    },
+    {
+     "sig": "div(unseen,unseen)",
+     "n": 21
+    },
+    {
+     "sig": "add(count,count)|add(nested,count)",
+     "n": 20
+    },
+    {
+     "sig": "sub(count,count)|add(nested,count)",
+     "n": 16
+    },
+    {
+     "sig": "sub(money,money)",
+     "n": 14
+    }
+   ],
+   "curve": [
+    {
+     "rank": 1,
+     "cum_coverage": 0.08264462809917356
+    },
+    {
+     "rank": 2,
+     "cum_coverage": 0.1584022038567493
+    },
+    {
+     "rank": 3,
+     "cum_coverage": 0.22176308539944903
+    },
+    {
+     "rank": 4,
+     "cum_coverage": 0.2741046831955923
+    },
+    {
+     "rank": 5,
+     "cum_coverage": 0.3209366391184573
+    },
+    {
+     "rank": 6,
+     "cum_coverage": 0.35537190082644626
+    },
+    {
+     "rank": 7,
+     "cum_coverage": 0.384297520661157
+    },
+    {
+     "rank": 8,
+     "cum_coverage": 0.4118457300275482
+    },
+    {
+     "rank": 9,
+     "cum_coverage": 0.43388429752066116
+    },
+    {
+     "rank": 10,
+     "cum_coverage": 0.453168044077135
+    },
+    {
+     "rank": 11,
+     "cum_coverage": 0.465564738292011
+    },
+    {
+     "rank": 12,
+     "cum_coverage": 0.4765840220385675
+    },
+    {
+     "rank": 13,
+     "cum_coverage": 0.48622589531680444
+    },
+    {
+     "rank": 14,
+     "cum_coverage": 0.49586776859504134
+    },
+    {
+     "rank": 15,
+     "cum_coverage": 0.5027548209366391
+    },
+    {
+     "rank": 16,
+     "cum_coverage": 0.5082644628099173
+    },
+    {
+     "rank": 17,
+     "cum_coverage": 0.5137741046831956
+    },
+    {
+     "rank": 18,
+     "cum_coverage": 0.5192837465564738
+    },
+    {
+     "rank": 19,
+     "cum_coverage": 0.5247933884297521
+    },
+    {
+     "rank": 20,
+     "cum_coverage": 0.5303030303030303
+    },
+    {
+     "rank": 21,
+     "cum_coverage": 0.5358126721763086
+    },
+    {
+     "rank": 22,
+     "cum_coverage": 0.5399449035812672
+    },
+    {
+     "rank": 23,
+     "cum_coverage": 0.5440771349862259
+    },
+    {
+     "rank": 24,
+     "cum_coverage": 0.5482093663911846
+    },
+    {
+     "rank": 25,
+     "cum_coverage": 0.5523415977961432
+    },
+    {
+     "rank": 26,
+     "cum_coverage": 0.5564738292011019
+    },
+    {
+     "rank": 27,
+     "cum_coverage": 0.5606060606060606
+    },
+    {
+     "rank": 28,
+     "cum_coverage": 0.5647382920110193
+    },
+    {
+     "rank": 29,
+     "cum_coverage": 0.568870523415978
+    },
+    {
+     "rank": 30,
+     "cum_coverage": 0.571625344352617
+    },
+    {
+     "rank": 31,
+     "cum_coverage": 0.5743801652892562
+    },
+    {
+     "rank": 32,
+     "cum_coverage": 0.5771349862258953
+    },
+    {
+     "rank": 33,
+     "cum_coverage": 0.5798898071625345
+    },
+    {
+     "rank": 34,
+     "cum_coverage": 0.5826446280991735
+    },
+    {
+     "rank": 35,
+     "cum_coverage": 0.5853994490358126
+    },
+    {
+     "rank": 36,
+     "cum_coverage": 0.5881542699724518
+    },
+    {
+     "rank": 37,
+     "cum_coverage": 0.5909090909090909
+    },
+    {
+     "rank": 38,
+     "cum_coverage": 0.59366391184573
+    },
+    {
+     "rank": 39,
+     "cum_coverage": 0.5964187327823691
+    },
+    {
+     "rank": 40,
+     "cum_coverage": 0.5991735537190083
+    },
+    {
+     "rank": 41,
+     "cum_coverage": 0.6019283746556474
+    },
+    {
+     "rank": 42,
+     "cum_coverage": 0.6046831955922864
+    },
+    {
+     "rank": 43,
+     "cum_coverage": 0.6074380165289256
+    },
+    {
+     "rank": 44,
+     "cum_coverage": 0.6101928374655647
+    },
+    {
+     "rank": 45,
+     "cum_coverage": 0.6129476584022039
+    },
+    {
+     "rank": 46,
+     "cum_coverage": 0.6157024793388429
+    },
+    {
+     "rank": 47,
+     "cum_coverage": 0.6170798898071626
+    },
+    {
+     "rank": 48,
+     "cum_coverage": 0.6184573002754821
+    },
+    {
+     "rank": 49,
+     "cum_coverage": 0.6198347107438017
+    },
+    {
+     "rank": 50,
+     "cum_coverage": 0.6212121212121212
+    },
+    {
+     "rank": 51,
+     "cum_coverage": 0.6225895316804407
+    },
+    {
+     "rank": 52,
+     "cum_coverage": 0.6239669421487604
+    },
+    {
+     "rank": 53,
+     "cum_coverage": 0.6253443526170799
+    },
+    {
+     "rank": 54,
+     "cum_coverage": 0.6267217630853994
+    },
+    {
+     "rank": 55,
+     "cum_coverage": 0.628099173553719
+    },
+    {
+     "rank": 56,
+     "cum_coverage": 0.6294765840220385
+    },
+    {
+     "rank": 57,
+     "cum_coverage": 0.6308539944903582
+    },
+    {
+     "rank": 58,
+     "cum_coverage": 0.6322314049586777
+    },
+    {
+     "rank": 59,
+     "cum_coverage": 0.6336088154269972
+    },
+    {
+     "rank": 60,
+     "cum_coverage": 0.6349862258953168
+    },
+    {
+     "rank": 61,
+     "cum_coverage": 0.6363636363636364
+    },
+    {
+     "rank": 62,
+     "cum_coverage": 0.6377410468319559
+    },
+    {
+     "rank": 63,
+     "cum_coverage": 0.6391184573002755
+    },
+    {
+     "rank": 64,
+     "cum_coverage": 0.640495867768595
+    },
+    {
+     "rank": 65,
+     "cum_coverage": 0.6418732782369146
+    },
+    {
+     "rank": 66,
+     "cum_coverage": 0.6432506887052342
+    },
+    {
+     "rank": 67,
+     "cum_coverage": 0.6446280991735537
+    },
+    {
+     "rank": 68,
+     "cum_coverage": 0.6460055096418733
+    },
+    {
+     "rank": 69,
+     "cum_coverage": 0.6473829201101928
+    },
+    {
+     "rank": 70,
+     "cum_coverage": 0.6487603305785123
+    },
+    {
+     "rank": 71,
+     "cum_coverage": 0.650137741046832
+    },
+    {
+     "rank": 72,
+     "cum_coverage": 0.6515151515151515
+    },
+    {
+     "rank": 73,
+     "cum_coverage": 0.6528925619834711
+    },
+    {
+     "rank": 74,
+     "cum_coverage": 0.6542699724517906
+    },
+    {
+     "rank": 75,
+     "cum_coverage": 0.6556473829201102
+    },
+    {
+     "rank": 76,
+     "cum_coverage": 0.6570247933884298
+    },
+    {
+     "rank": 77,
+     "cum_coverage": 0.6584022038567493
+    },
+    {
+     "rank": 78,
+     "cum_coverage": 0.6597796143250688
+    },
+    {
+     "rank": 79,
+     "cum_coverage": 0.6611570247933884
+    },
+    {
+     "rank": 80,
+     "cum_coverage": 0.662534435261708
+    },
+    {
+     "rank": 81,
+     "cum_coverage": 0.6639118457300276
+    },
+    {
+     "rank": 82,
+     "cum_coverage": 0.6652892561983471
+    },
+    {
+     "rank": 83,
+     "cum_coverage": 0.6666666666666666
+    },
+    {
+     "rank": 84,
+     "cum_coverage": 0.6680440771349863
+    },
+    {
+     "rank": 85,
+     "cum_coverage": 0.6694214876033058
+    },
+    {
+     "rank": 86,
+     "cum_coverage": 0.6707988980716253
+    },
+    {
+     "rank": 87,
+     "cum_coverage": 0.6721763085399449
+    },
+    {
+     "rank": 88,
+     "cum_coverage": 0.6735537190082644
+    },
+    {
+     "rank": 89,
+     "cum_coverage": 0.6749311294765841
+    },
+    {
+     "rank": 90,
+     "cum_coverage": 0.6763085399449036
+    },
+    {
+     "rank": 91,
+     "cum_coverage": 0.6776859504132231
+    },
+    {
+     "rank": 92,
+     "cum_coverage": 0.6790633608815427
+    },
+    {
+     "rank": 93,
+     "cum_coverage": 0.6804407713498623
+    },
+    {
+     "rank": 94,
+     "cum_coverage": 0.6818181818181818
+    },
+    {
+     "rank": 95,
+     "cum_coverage": 0.6831955922865014
+    },
+    {
+     "rank": 96,
+     "cum_coverage": 0.6845730027548209
+    },
+    {
+     "rank": 97,
+     "cum_coverage": 0.6859504132231405
+    },
+    {
+     "rank": 98,
+     "cum_coverage": 0.6873278236914601
+    },
+    {
+     "rank": 99,
+     "cum_coverage": 0.6887052341597796
+    },
+    {
+     "rank": 100,
+     "cum_coverage": 0.6900826446280992
+    },
+    {
+     "rank": 101,
+     "cum_coverage": 0.6914600550964187
+    },
+    {
+     "rank": 102,
+     "cum_coverage": 0.6928374655647382
+    },
+    {
+     "rank": 103,
+     "cum_coverage": 0.6942148760330579
+    },
+    {
+     "rank": 104,
+     "cum_coverage": 0.6955922865013774
+    },
+    {
+     "rank": 105,
+     "cum_coverage": 0.696969696969697
+    },
+    {
+     "rank": 106,
+     "cum_coverage": 0.6983471074380165
+    },
+    {
+     "rank": 107,
+     "cum_coverage": 0.699724517906336
+    },
+    {
+     "rank": 108,
+     "cum_coverage": 0.7011019283746557
+    },
+    {
+     "rank": 109,
+     "cum_coverage": 0.7024793388429752
+    },
+    {
+     "rank": 110,
+     "cum_coverage": 0.7038567493112947
+    },
+    {
+     "rank": 111,
+     "cum_coverage": 0.7052341597796143
+    },
+    {
+     "rank": 112,
+     "cum_coverage": 0.7066115702479339
+    },
+    {
+     "rank": 113,
+     "cum_coverage": 0.7079889807162535
+    },
+    {
+     "rank": 114,
+     "cum_coverage": 0.709366391184573
+    },
+    {
+     "rank": 115,
+     "cum_coverage": 0.7107438016528925
+    },
+    {
+     "rank": 116,
+     "cum_coverage": 0.7121212121212122
+    },
+    {
+     "rank": 117,
+     "cum_coverage": 0.7134986225895317
+    },
+    {
+     "rank": 118,
+     "cum_coverage": 0.7148760330578512
+    },
+    {
+     "rank": 119,
+     "cum_coverage": 0.7162534435261708
+    },
+    {
+     "rank": 120,
+     "cum_coverage": 0.7176308539944903
+    },
+    {
+     "rank": 121,
+     "cum_coverage": 0.71900826446281
+    },
+    {
+     "rank": 122,
+     "cum_coverage": 0.7203856749311295
+    },
+    {
+     "rank": 123,
+     "cum_coverage": 0.721763085399449
+    },
+    {
+     "rank": 124,
+     "cum_coverage": 0.7231404958677686
+    },
+    {
+     "rank": 125,
+     "cum_coverage": 0.7245179063360881
+    },
+    {
+     "rank": 126,
+     "cum_coverage": 0.7258953168044077
+    },
+    {
+     "rank": 127,
+     "cum_coverage": 0.7272727272727273
+    },
+    {
+     "rank": 128,
+     "cum_coverage": 0.7286501377410468
+    },
+    {
+     "rank": 129,
+     "cum_coverage": 0.7300275482093664
+    },
+    {
+     "rank": 130,
+     "cum_coverage": 0.731404958677686
+    },
+    {
+     "rank": 131,
+     "cum_coverage": 0.7327823691460055
+    },
+    {
+     "rank": 132,
+     "cum_coverage": 0.7341597796143251
+    },
+    {
+     "rank": 133,
+     "cum_coverage": 0.7355371900826446
+    },
+    {
+     "rank": 134,
+     "cum_coverage": 0.7369146005509641
+    },
+    {
+     "rank": 135,
+     "cum_coverage": 0.7382920110192838
+    },
+    {
+     "rank": 136,
+     "cum_coverage": 0.7396694214876033
+    },
+    {
+     "rank": 137,
+     "cum_coverage": 0.7410468319559229
+    },
+    {
+     "rank": 138,
+     "cum_coverage": 0.7424242424242424
+    },
+    {
+     "rank": 139,
+     "cum_coverage": 0.743801652892562
+    },
+    {
+     "rank": 140,
+     "cum_coverage": 0.7451790633608816
+    },
+    {
+     "rank": 141,
+     "cum_coverage": 0.7465564738292011
+    },
+    {
+     "rank": 142,
+     "cum_coverage": 0.7479338842975206
+    },
+    {
+     "rank": 143,
+     "cum_coverage": 0.7493112947658402
+    },
+    {
+     "rank": 144,
+     "cum_coverage": 0.7506887052341598
+    },
+    {
+     "rank": 145,
+     "cum_coverage": 0.7520661157024794
+    },
+    {
+     "rank": 146,
+     "cum_coverage": 0.7534435261707989
+    },
+    {
+     "rank": 147,
+     "cum_coverage": 0.7548209366391184
+    },
+    {
+     "rank": 148,
+     "cum_coverage": 0.756198347107438
+    },
+    {
+     "rank": 149,
+     "cum_coverage": 0.7575757575757576
+    },
+    {
+     "rank": 150,
+     "cum_coverage": 0.7589531680440771
+    },
+    {
+     "rank": 151,
+     "cum_coverage": 0.7603305785123967
+    },
+    {
+     "rank": 152,
+     "cum_coverage": 0.7617079889807162
+    },
+    {
+     "rank": 153,
+     "cum_coverage": 0.7630853994490359
+    },
+    {
+     "rank": 154,
+     "cum_coverage": 0.7644628099173554
+    },
+    {
+     "rank": 155,
+     "cum_coverage": 0.7658402203856749
+    },
+    {
+     "rank": 156,
+     "cum_coverage": 0.7672176308539945
+    },
+    {
+     "rank": 157,
+     "cum_coverage": 0.768595041322314
+    },
+    {
+     "rank": 158,
+     "cum_coverage": 0.7699724517906336
+    },
+    {
+     "rank": 159,
+     "cum_coverage": 0.7713498622589532
+    },
+    {
+     "rank": 160,
+     "cum_coverage": 0.7727272727272727
+    },
+    {
+     "rank": 161,
+     "cum_coverage": 0.7741046831955923
+    },
+    {
+     "rank": 162,
+     "cum_coverage": 0.7754820936639119
+    },
+    {
+     "rank": 163,
+     "cum_coverage": 0.7768595041322314
+    },
+    {
+     "rank": 164,
+     "cum_coverage": 0.778236914600551
+    },
+    {
+     "rank": 165,
+     "cum_coverage": 0.7796143250688705
+    },
+    {
+     "rank": 166,
+     "cum_coverage": 0.78099173553719
+    },
+    {
+     "rank": 167,
+     "cum_coverage": 0.7823691460055097
+    },
+    {
+     "rank": 168,
+     "cum_coverage": 0.7837465564738292
+    },
+    {
+     "rank": 169,
+     "cum_coverage": 0.7851239669421488
+    },
+    {
+     "rank": 170,
+     "cum_coverage": 0.7865013774104683
+    },
+    {
+     "rank": 171,
+     "cum_coverage": 0.7878787878787878
+    },
+    {
+     "rank": 172,
+     "cum_coverage": 0.7892561983471075
+    },
+    {
+     "rank": 173,
+     "cum_coverage": 0.790633608815427
+    },
+    {
+     "rank": 174,
+     "cum_coverage": 0.7920110192837465
+    },
+    {
+     "rank": 175,
+     "cum_coverage": 0.7933884297520661
+    },
+    {
+     "rank": 176,
+     "cum_coverage": 0.7947658402203857
+    },
+    {
+     "rank": 177,
+     "cum_coverage": 0.7961432506887053
+    },
+    {
+     "rank": 178,
+     "cum_coverage": 0.7975206611570248
+    },
+    {
+     "rank": 179,
+     "cum_coverage": 0.7988980716253443
+    },
+    {
+     "rank": 180,
+     "cum_coverage": 0.800275482093664
+    },
+    {
+     "rank": 181,
+     "cum_coverage": 0.8016528925619835
+    },
+    {
+     "rank": 182,
+     "cum_coverage": 0.803030303030303
+    },
+    {
+     "rank": 183,
+     "cum_coverage": 0.8044077134986226
+    },
+    {
+     "rank": 184,
+     "cum_coverage": 0.8057851239669421
+    },
+    {
+     "rank": 185,
+     "cum_coverage": 0.8071625344352618
+    },
+    {
+     "rank": 186,
+     "cum_coverage": 0.8085399449035813
+    },
+    {
+     "rank": 187,
+     "cum_coverage": 0.8099173553719008
+    },
+    {
+     "rank": 188,
+     "cum_coverage": 0.8112947658402204
+    },
+    {
+     "rank": 189,
+     "cum_coverage": 0.8126721763085399
+    },
+    {
+     "rank": 190,
+     "cum_coverage": 0.8140495867768595
+    },
+    {
+     "rank": 191,
+     "cum_coverage": 0.8154269972451791
+    },
+    {
+     "rank": 192,
+     "cum_coverage": 0.8168044077134986
+    },
+    {
+     "rank": 193,
+     "cum_coverage": 0.8181818181818182
+    },
+    {
+     "rank": 194,
+     "cum_coverage": 0.8195592286501377
+    },
+    {
+     "rank": 195,
+     "cum_coverage": 0.8209366391184573
+    },
+    {
+     "rank": 196,
+     "cum_coverage": 0.8223140495867769
+    },
+    {
+     "rank": 197,
+     "cum_coverage": 0.8236914600550964
+    },
+    {
+     "rank": 198,
+     "cum_coverage": 0.8250688705234159
+    },
+    {
+     "rank": 199,
+     "cum_coverage": 0.8264462809917356
+    },
+    {
+     "rank": 200,
+     "cum_coverage": 0.8278236914600551
+    }
+   ]
+  }
+ },
+ "gate": {
+  "metric": "medium",
+  "threshold": 0.35,
+  "value": 0.8333,
+  "passed": true
+ }
+}
