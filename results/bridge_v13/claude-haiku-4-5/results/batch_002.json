@@ -1,0 +1,602 @@
+﻿[
+    {
+        "tokens_out":  117,
+        "key":  "57799b0633147291",
+        "tokens_in":  398,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":63,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":14,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":7,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "5825d0e5f5981ed3",
+        "tokens_in":  370,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":18,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":45,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "58a900d1bbdcf453",
+        "tokens_in":  374,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":3,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":1,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "5900fc64409b586e",
+        "tokens_in":  377,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":17,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":11,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  214,
+        "key":  "59b5b23b103cadae",
+        "tokens_in":  387,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":\"s2 q4\",\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[{\"value\":5,\"reason\":\"not needed for calculation\"},{\"value\":4,\"reason\":\"not needed for calculation\"}],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":20,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":2,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":40,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q4\",\"value\":1,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q5\",\"value\":5,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q6\",\"value\":4,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "5a69e4e05e455553",
+        "tokens_in":  388,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":6,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":9,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  184,
+        "key":  "5ab3d011de8119cb",
+        "tokens_in":  409,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":\"s2 q4\",\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[{\"value\":80,\"reason\":\"not needed for calculation\"}],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":200,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":70,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":10,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q4\",\"value\":240,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q5\",\"value\":80,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  116,
+        "key":  "5ac17b67095be1d3",
+        "tokens_in":  386,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":12,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":3,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":2,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  152,
+        "key":  "5ae31073f77b5e76",
+        "tokens_in":  385,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":\"s2 q4\",\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":55,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":4,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":45,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q4\",\"value\":10,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  62,
+        "key":  "5b5c2439d648c42b",
+        "tokens_in":  377,
+        "text":  "{\"plan\":[{\"args\":\"q1 q1\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"reference the quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":12,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "5b7ac66c01c0cea8",
+        "tokens_in":  410,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":12,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":16,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  152,
+        "key":  "5ba913fb38843ad9",
+        "tokens_in":  385,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":\"s2 q4\",\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":55,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":4,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":45,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q4\",\"value\":10,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "5bca87be5750cf1b",
+        "tokens_in":  377,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":9,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":8,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  117,
+        "key":  "5bffd29e4d890fe9",
+        "tokens_in":  387,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":35,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":25,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":55,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  152,
+        "key":  "5c4c5dcfc7d363f9",
+        "tokens_in":  400,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":\"s2 q4\",\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":2,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":55,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":45,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q4\",\"value\":10,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  116,
+        "key":  "5c51e0b8dddd1f5c",
+        "tokens_in":  418,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":1,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":47,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":6,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  116,
+        "key":  "5d5fc1328d14b258",
+        "tokens_in":  383,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":1,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":21,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":6,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "5db1acba333c5235",
+        "tokens_in":  403,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":77,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":66,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  62,
+        "key":  "5dd972be879826b9",
+        "tokens_in":  387,
+        "text":  "{\"plan\":[{\"args\":\"q1 q1\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"reference the quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":246,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  215,
+        "key":  "5e9fb20e429279c6",
+        "tokens_in":  392,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":\"s2 q4\",\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[{\"value\":9,\"reason\":\"not needed for calculation\"},{\"value\":72,\"reason\":\"not needed for calculation\"}],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":2,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":480,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":1,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q4\",\"value\":6,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q5\",\"value\":9,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q6\",\"value\":72,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  151,
+        "key":  "5ecbea39635d9476",
+        "tokens_in":  403,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":\"s2 q4\",\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":4,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":7,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":3,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q4\",\"value\":37,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "5ef79bce9a253c0a",
+        "tokens_in":  378,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":2,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":4,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "5f597c941f0a6b43",
+        "tokens_in":  429,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":24,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":27,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  183,
+        "key":  "5f6b6d1b8241ffda",
+        "tokens_in":  414,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":\"s2 q4\",\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[{\"value\":67,\"reason\":\"not needed for calculation\"}],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":9,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":5,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":3,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q4\",\"value\":2,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q5\",\"value\":67,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  62,
+        "key":  "5f7b5c9953db521f",
+        "tokens_in":  382,
+        "text":  "{\"plan\":[{\"args\":\"q1 q1\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"reference the quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":4,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "60165b577656c966",
+        "tokens_in":  395,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":119,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":9,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  117,
+        "key":  "605dc949bc558d85",
+        "tokens_in":  382,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":67,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":20,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":24,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "609a87f3fbfc1fd6",
+        "tokens_in":  382,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":5,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":2,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "60b362368bdadb55",
+        "tokens_in":  403,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":232,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":54,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  117,
+        "key":  "6133114ec5780e84",
+        "tokens_in":  393,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":18,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":27,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":12,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "6151a7cb7bbd89a7",
+        "tokens_in":  400,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":81,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":9,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  117,
+        "key":  "6151e65e024dc727",
+        "tokens_in":  444,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":387,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":39,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":2,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "621ffcb562928e78",
+        "tokens_in":  394,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":7,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":20,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  116,
+        "key":  "62ad42a5b342dbca",
+        "tokens_in":  397,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":2,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":1,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":36,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  117,
+        "key":  "62f6689fe86c34ff",
+        "tokens_in":  369,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":5,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":17,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":23,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  151,
+        "key":  "636f2d7356fc7600",
+        "tokens_in":  388,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":\"s2 q4\",\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":5,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":150,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":3,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q4\",\"value\":2,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "63aecca62c70ef64",
+        "tokens_in":  418,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":16,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":8,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "63b1ecbc2397b9a1",
+        "tokens_in":  422,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":20,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":30,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "64041240c3bedcde",
+        "tokens_in":  402,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":67,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":32,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  62,
+        "key":  "64199c927d0d77ef",
+        "tokens_in":  398,
+        "text":  "{\"plan\":[{\"args\":\"q1 q1\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"reference the quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":20,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  151,
+        "key":  "6454e93a47089761",
+        "tokens_in":  375,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":\"s2 q4\",\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":30,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":1,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":5,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q4\",\"value\":10,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "64c217e38fe6866b",
+        "tokens_in":  381,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":3,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":12,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "65010a5a66f380f9",
+        "tokens_in":  390,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":3,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":27,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  116,
+        "key":  "659254b9d35bc46e",
+        "tokens_in":  401,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":15,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":2,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":8,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  116,
+        "key":  "6593a456eb517e78",
+        "tokens_in":  378,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":5,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":90,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":3,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "65b7e24a419b5f92",
+        "tokens_in":  386,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":5,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":300,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  116,
+        "key":  "65ed96ab31e694a2",
+        "tokens_in":  371,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":2,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":3,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":60,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "662b91c4eabc8ee2",
+        "tokens_in":  376,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":14,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":6,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "66c821c0fe1febf2",
+        "tokens_in":  408,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":3,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":36,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  117,
+        "key":  "66dbdd47bf183b39",
+        "tokens_in":  403,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":583,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":246,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":2,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  116,
+        "key":  "678f89486b6e6a55",
+        "tokens_in":  396,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":7,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":99,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":6,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  118,
+        "key":  "679ef698f411b49c",
+        "tokens_in":  377,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":179,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":141,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":156,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "681f002a295a1311",
+        "tokens_in":  371,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":0,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":3,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "68482602f2847294",
+        "tokens_in":  422,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":20,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":30,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  151,
+        "key":  "6851e90820dc32aa",
+        "tokens_in":  385,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":\"s2 q4\",\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":2,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":1,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":10,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q4\",\"value\":40,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  62,
+        "key":  "6879c8cde222d2e6",
+        "tokens_in":  382,
+        "text":  "{\"plan\":[{\"args\":\"q1 q1\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"reference the quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":4,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "68de44e59546e3eb",
+        "tokens_in":  377,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":15,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":4,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  62,
+        "key":  "69a693c7713aae71",
+        "tokens_in":  407,
+        "text":  "{\"plan\":[{\"args\":\"q1 q1\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"reference the quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":9,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  151,
+        "key":  "69b6e5091dc875d3",
+        "tokens_in":  398,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":\"s2 q4\",\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":96,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":43,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":5,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q4\",\"value\":4,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  116,
+        "key":  "69ec3405257689fa",
+        "tokens_in":  375,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":2,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":3,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":60,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "6a9038a1f1dd4a68",
+        "tokens_in":  378,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":28,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":17,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  183,
+        "key":  "6accb38fbe304af2",
+        "tokens_in":  404,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":\"s2 q4\",\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[{\"value\":42,\"reason\":\"not needed for calculation\"}],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":3,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":1,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":16,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q4\",\"value\":22,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q5\",\"value\":42,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  117,
+        "key":  "6acebc125f179314",
+        "tokens_in":  406,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":134,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":15,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":7,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "6b452bb1192c3fc6",
+        "tokens_in":  394,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":2,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":13,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  117,
+        "key":  "6ba4a1ca12bc2723",
+        "tokens_in":  406,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":6,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":12,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":18,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  116,
+        "key":  "6c17e187c2dcc484",
+        "tokens_in":  378,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":14,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":3,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":8,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  117,
+        "key":  "6d0d2ddb08ec1c11",
+        "tokens_in":  393,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":14,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":8,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":60,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "6ed3868ec52456bf",
+        "tokens_in":  390,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":59,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":8,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "6fb3cb733e223a25",
+        "tokens_in":  391,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":8,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":1785,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  183,
+        "key":  "704a4b5376fdf903",
+        "tokens_in":  401,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":\"s2 q4\",\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[{\"value\":10,\"reason\":\"not needed for calculation\"}],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":200,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":3,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":2,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q4\",\"value\":1,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q5\",\"value\":10,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "70751ed88727879e",
+        "tokens_in":  394,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":7,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":20,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "710f722c436b72a1",
+        "tokens_in":  417,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":32,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":80,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  117,
+        "key":  "71f88ea1238e6f3e",
+        "tokens_in":  382,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":54,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":18,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":26,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "728faa0d451c37bf",
+        "tokens_in":  378,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":2,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":4,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  116,
+        "key":  "73efb0e01271954c",
+        "tokens_in":  381,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":8,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":2,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":3,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "73f6905b04e92ad6",
+        "tokens_in":  394,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":935,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":9,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "745d2a0d7271a42a",
+        "tokens_in":  367,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":23,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":45,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  374,
+        "key":  "75a50052af5e526e",
+        "tokens_in":  427,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":\"s2 q4\",\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[{\"value\":4,\"reason\":\"not needed for calculation\"},{\"value\":5,\"reason\":\"not needed for calculation\"},{\"value\":120,\"reason\":\"not needed for calculation\"},{\"value\":6,\"reason\":\"not needed for calculation\"},{\"value\":20,\"reason\":\"not needed for calculation\"},{\"value\":7,\"reason\":\"not needed for calculation\"},{\"value\":90,\"reason\":\"not needed for calculation\"}],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":1,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":2,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":50,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q4\",\"value\":3,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q5\",\"value\":4,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q6\",\"value\":5,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q7\",\"value\":120,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q8\",\"value\":6,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q9\",\"value\":20,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q10\",\"value\":7,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q11\",\"value\":90,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  151,
+        "key":  "76003a14d7a68810",
+        "tokens_in":  402,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":\"s2 q4\",\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":10,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":2,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":5,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q4\",\"value\":60,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "76456da2bfe37167",
+        "tokens_in":  375,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":13,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":6,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  116,
+        "key":  "76caee258a9c7e17",
+        "tokens_in":  375,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":2,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":3,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":60,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "76d3efa7d846c791",
+        "tokens_in":  371,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":7,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":11,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "7781db27675958d1",
+        "tokens_in":  369,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":3,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":1,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  151,
+        "key":  "7797f839392b1fab",
+        "tokens_in":  395,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":\"s2 q4\",\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":3,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":4,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":43,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q4\",\"value\":23,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "77b18766cfc2d9d6",
+        "tokens_in":  384,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":112,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":40,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "791bb8327b0245cc",
+        "tokens_in":  381,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":5,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":7,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  116,
+        "key":  "793686c2d1bb4fb2",
+        "tokens_in":  376,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":54,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":4,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":9,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  152,
+        "key":  "795d71890451159d",
+        "tokens_in":  383,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"combine quantities\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"add\",\"note\":\"add next quantity\"},{\"args\":\"s2 q4\",\"out\":\"s3\",\"op\":\"add\",\"note\":\"add next quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":16,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":18,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":21,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q4\",\"value\":15,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "7a0100a74080b217",
+        "tokens_in":  396,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":32,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":14,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  117,
+        "key":  "7a540d9607b0270e",
+        "tokens_in":  365,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":28,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":5,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":232,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "7ac9deb60e0ae18a",
+        "tokens_in":  394,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":5,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":10,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "7bed93482709e280",
+        "tokens_in":  377,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":22,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":11,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "7c0eb304c430b136",
+        "tokens_in":  377,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":56,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":18,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  116,
+        "key":  "7c186209fe784af8",
+        "tokens_in":  402,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":1,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":47,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":6,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  117,
+        "key":  "7d4d65f335dd1e05",
+        "tokens_in":  404,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":18,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":20,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":17,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "7ee16a8ee7096f23",
+        "tokens_in":  391,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":3,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":5,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  117,
+        "key":  "7f09c381db2e5bf7",
+        "tokens_in":  393,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate remaining\"},{\"args\":\"s1 q3\",\"out\":\"s2\",\"op\":\"div\",\"note\":\"divide by unit cost\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":64,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":36,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q3\",\"value\":16,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  62,
+        "key":  "7fedf203ef873e3f",
+        "tokens_in":  372,
+        "text":  "{\"plan\":[{\"args\":\"q1 q1\",\"out\":\"s1\",\"op\":\"add\",\"note\":\"reference the quantity\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":45,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "8022fbc58637083c",
+        "tokens_in":  373,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":6,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":3,\"kind\":\"count\"}]}"
+    },
+    {
+        "tokens_out":  84,
+        "key":  "829b49149cf7ff7d",
+        "tokens_in":  373,
+        "text":  "{\"plan\":[{\"args\":\"q1 q2\",\"out\":\"s1\",\"op\":\"sub\",\"note\":\"calculate difference or remaining\"}],\"dismissed\":[],\"target\":{\"kind\":\"count\",\"scope\":\"answer to the question\"},\"quantities\":[{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q1\",\"value\":5,\"kind\":\"count\"},{\"span\":\"number from problem\",\"unit\":\"\",\"id\":\"q2\",\"value\":7,\"kind\":\"count\"}]}"
+    }
+]

@@ -1,0 +1,602 @@
+﻿[
+    {
+        "key":  "ac8ce43fc2792a24",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":27,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":16,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  414,
+        "tokens_out":  69
+    },
+    {
+        "key":  "ae79717c6c3b597b",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":2,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":3,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":20,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q4\",\"value\":31,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":20,\"reason\":\"not required\"},{\"value\":31,\"reason\":\"not required\"}]}",
+        "tokens_in":  418,
+        "tokens_out":  119
+    },
+    {
+        "key":  "aeb10fa78563a9f5",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":12,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":2,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":21,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":21,\"reason\":\"not required\"}]}",
+        "tokens_in":  383,
+        "tokens_out":  94
+    },
+    {
+        "key":  "aed3dc553d8d730c",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":4,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":5,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"mul\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"multiply\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  369,
+        "tokens_out":  67
+    },
+    {
+        "key":  "aed640bfe9ece927",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":10,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":15,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":20,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":20,\"reason\":\"not required\"}]}",
+        "tokens_in":  413,
+        "tokens_out":  94
+    },
+    {
+        "key":  "aeedcd8b20c607ca",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":86,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":9,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  371,
+        "tokens_out":  68
+    },
+    {
+        "key":  "af77b386a7ef5a89",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":67,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":32,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  402,
+        "tokens_out":  68
+    },
+    {
+        "key":  "afb9c4e5d2706617",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":6,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":6,\"reason\":\"not required\"}]}",
+        "tokens_in":  385,
+        "tokens_out":  50
+    },
+    {
+        "key":  "afe50de47a4525cf",
+        "text":  "{\"quantities\":[],\"plan\":[],\"target\":{},\"dismissed\":[],\"refuse\":\"No numbers found\"}",
+        "tokens_in":  398,
+        "tokens_out":  50
+    },
+    {
+        "key":  "b04a52685ef3fae7",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":8,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":5,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  380,
+        "tokens_out":  69
+    },
+    {
+        "key":  "b05662909171037b",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":3,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":24,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"combine\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  386,
+        "tokens_out":  67
+    },
+    {
+        "key":  "b069ad2dec7418d2",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":14,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":14,\"reason\":\"not required\"}]}",
+        "tokens_in":  405,
+        "tokens_out":  50
+    },
+    {
+        "key":  "b07c7cd39b1c78a7",
+        "text":  "{\"quantities\":[],\"plan\":[],\"target\":{},\"dismissed\":[],\"refuse\":\"No numbers found\"}",
+        "tokens_in":  390,
+        "tokens_out":  50
+    },
+    {
+        "key":  "b0c94aa716444fe4",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":14,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":6,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"combine\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  376,
+        "tokens_out":  67
+    },
+    {
+        "key":  "b0d497cb993a9814",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":2,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":10,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":5,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q4\",\"value\":110,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":5,\"reason\":\"not required\"},{\"value\":110,\"reason\":\"not required\"}]}",
+        "tokens_in":  427,
+        "tokens_out":  119
+    },
+    {
+        "key":  "b0e9b7aec3d02556",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":54,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":18,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":26,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":26,\"reason\":\"not required\"}]}",
+        "tokens_in":  382,
+        "tokens_out":  93
+    },
+    {
+        "key":  "b0f6ac20befa8c53",
+        "text":  "{\"quantities\":[],\"plan\":[],\"target\":{},\"dismissed\":[],\"refuse\":\"No numbers found\"}",
+        "tokens_in":  417,
+        "tokens_out":  50
+    },
+    {
+        "key":  "b10b8c623466475b",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":5,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":3,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  372,
+        "tokens_out":  67
+    },
+    {
+        "key":  "b1617e0fe92c8737",
+        "text":  "{\"quantities\":[],\"plan\":[],\"target\":{},\"dismissed\":[],\"refuse\":\"No numbers found\"}",
+        "tokens_in":  399,
+        "tokens_out":  50
+    },
+    {
+        "key":  "b1f10bf8c7be1535",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":16,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":16,\"reason\":\"not required\"}]}",
+        "tokens_in":  392,
+        "tokens_out":  50
+    },
+    {
+        "key":  "b205bb9f7ada39e5",
+        "text":  "{\"quantities\":[],\"plan\":[],\"target\":{},\"dismissed\":[],\"refuse\":\"No numbers found\"}",
+        "tokens_in":  380,
+        "tokens_out":  50
+    },
+    {
+        "key":  "b296130df62d38ad",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":304,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":276,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  384,
+        "tokens_out":  70
+    },
+    {
+        "key":  "b345e146305702bb",
+        "text":  "{\"quantities\":[],\"plan\":[],\"target\":{},\"dismissed\":[],\"refuse\":\"No numbers found\"}",
+        "tokens_in":  382,
+        "tokens_out":  50
+    },
+    {
+        "key":  "b386cdd157e582ae",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":4,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":8,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  378,
+        "tokens_out":  69
+    },
+    {
+        "key":  "b3b0f59d435d4615",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":6,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":17,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  405,
+        "tokens_out":  69
+    },
+    {
+        "key":  "b3b6779917ebf75a",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":86,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":9,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  371,
+        "tokens_out":  68
+    },
+    {
+        "key":  "b44b68adda797a32",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":2,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":4,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  374,
+        "tokens_out":  67
+    },
+    {
+        "key":  "b4a702722f92018d",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":20,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":17,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"mul\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"multiply\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  391,
+        "tokens_out":  68
+    },
+    {
+        "key":  "b55c147878bf674d",
+        "text":  "{\"quantities\":[],\"plan\":[],\"target\":{},\"dismissed\":[],\"refuse\":\"No numbers found\"}",
+        "tokens_in":  394,
+        "tokens_out":  50
+    },
+    {
+        "key":  "b603a92e5879055a",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":49,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":7,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  404,
+        "tokens_out":  69
+    },
+    {
+        "key":  "b7a480187248bb48",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":6,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":3,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  371,
+        "tokens_out":  67
+    },
+    {
+        "key":  "b7adeba2d6e020aa",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":7,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":13,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":120,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":120,\"reason\":\"not required\"}]}",
+        "tokens_in":  398,
+        "tokens_out":  94
+    },
+    {
+        "key":  "b7dc742c1d80ea40",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":22,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":23,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":5,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":5,\"reason\":\"not required\"}]}",
+        "tokens_in":  399,
+        "tokens_out":  94
+    },
+    {
+        "key":  "b82793c891b6c866",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":234,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":9,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  372,
+        "tokens_out":  68
+    },
+    {
+        "key":  "b8499ce5b932c32d",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":6,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":12,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":18,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":18,\"reason\":\"not required\"}]}",
+        "tokens_in":  406,
+        "tokens_out":  94
+    },
+    {
+        "key":  "b8aaa7f1a4c35f14",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":4,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":1,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  368,
+        "tokens_out":  67
+    },
+    {
+        "key":  "b9241ae102535bdc",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":53,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":18,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  384,
+        "tokens_out":  68
+    },
+    {
+        "key":  "b975f3e05581922b",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":81,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":9,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  400,
+        "tokens_out":  69
+    },
+    {
+        "key":  "b97a2d58ca9846ce",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":12,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":1,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":4,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q4\",\"value\":4,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"mul\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"multiply\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":4,\"reason\":\"not required\"},{\"value\":4,\"reason\":\"not required\"}]}",
+        "tokens_in":  411,
+        "tokens_out":  116
+    },
+    {
+        "key":  "b995640c7ab1ab0d",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":3000,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":1000,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":10,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"mul\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"multiply\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":10,\"reason\":\"not required\"}]}",
+        "tokens_in":  400,
+        "tokens_out":  94
+    },
+    {
+        "key":  "b9a735b5afa7d190",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":26,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":3,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":2,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":2,\"reason\":\"not required\"}]}",
+        "tokens_in":  408,
+        "tokens_out":  93
+    },
+    {
+        "key":  "ba32c2eabb0aaa69",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":6,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":8,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  384,
+        "tokens_out":  67
+    },
+    {
+        "key":  "bb6cebd18354adb9",
+        "text":  "{\"quantities\":[],\"plan\":[],\"target\":{},\"dismissed\":[],\"refuse\":\"No numbers found\"}",
+        "tokens_in":  381,
+        "tokens_out":  50
+    },
+    {
+        "key":  "bb78d8f52dc7c172",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":12,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":5,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":3,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":3,\"reason\":\"not required\"}]}",
+        "tokens_in":  388,
+        "tokens_out":  93
+    },
+    {
+        "key":  "bbb830923d8a6afb",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":68,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":29,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"combine\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  380,
+        "tokens_out":  68
+    },
+    {
+        "key":  "bbcf8c0fb39831d1",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":6,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":6,\"reason\":\"not required\"}]}",
+        "tokens_in":  424,
+        "tokens_out":  50
+    },
+    {
+        "key":  "bc08f0b84892e03c",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":20,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":17,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"mul\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"multiply\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  391,
+        "tokens_out":  68
+    },
+    {
+        "key":  "bc4d2aed82867830",
+        "text":  "{\"quantities\":[],\"plan\":[],\"target\":{},\"dismissed\":[],\"refuse\":\"No numbers found\"}",
+        "tokens_in":  396,
+        "tokens_out":  50
+    },
+    {
+        "key":  "bccff4ee2434bc04",
+        "text":  "{\"quantities\":[],\"plan\":[],\"target\":{},\"dismissed\":[],\"refuse\":\"No numbers found\"}",
+        "tokens_in":  373,
+        "tokens_out":  50
+    },
+    {
+        "key":  "bde0d2cfac132f44",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":18,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":55,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  386,
+        "tokens_out":  68
+    },
+    {
+        "key":  "bed4c8c1508aedec",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":4,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":18,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  421,
+        "tokens_out":  68
+    },
+    {
+        "key":  "bf63c64d8cfbfd92",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":115,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":115,\"reason\":\"not required\"}]}",
+        "tokens_in":  362,
+        "tokens_out":  50
+    },
+    {
+        "key":  "bf84bf1f7cfa125f",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":6,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":6,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  372,
+        "tokens_out":  67
+    },
+    {
+        "key":  "bfe3290866605625",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":56,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":18,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  377,
+        "tokens_out":  69
+    },
+    {
+        "key":  "bff4b2bb9178f641",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":3,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":1,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":3,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q4\",\"value\":1,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q5\",\"value\":2,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"combine\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":3,\"reason\":\"not required\"},{\"value\":1,\"reason\":\"not required\"},{\"value\":2,\"reason\":\"not required\"}]}",
+        "tokens_in":  396,
+        "tokens_out":  140
+    },
+    {
+        "key":  "c02bb79979bfe77e",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":467,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":0,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":399,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q4\",\"value\":0,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":399,\"reason\":\"not required\"},{\"value\":0,\"reason\":\"not required\"}]}",
+        "tokens_in":  404,
+        "tokens_out":  119
+    },
+    {
+        "key":  "c084190474431cb0",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":6,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":7,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":5,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":5,\"reason\":\"not required\"}]}",
+        "tokens_in":  393,
+        "tokens_out":  92
+    },
+    {
+        "key":  "c0eb25178c4fdb85",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":42,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":6,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":1,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":1,\"reason\":\"not required\"}]}",
+        "tokens_in":  392,
+        "tokens_out":  93
+    },
+    {
+        "key":  "c12ea38c89294f13",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":20,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":15,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  392,
+        "tokens_out":  69
+    },
+    {
+        "key":  "c14d36b7ec9e762b",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":12,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":2,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":3,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":3,\"reason\":\"not required\"}]}",
+        "tokens_in":  386,
+        "tokens_out":  92
+    },
+    {
+        "key":  "c23501c543656bbe",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":129,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":140,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  377,
+        "tokens_out":  68
+    },
+    {
+        "key":  "c2b7afab109a1da9",
+        "text":  "{\"quantities\":[],\"plan\":[],\"target\":{},\"dismissed\":[],\"refuse\":\"No numbers found\"}",
+        "tokens_in":  381,
+        "tokens_out":  50
+    },
+    {
+        "key":  "c2d608fc6e779759",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":6,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":6,\"reason\":\"not required\"}]}",
+        "tokens_in":  424,
+        "tokens_out":  50
+    },
+    {
+        "key":  "c2f7cf281f9b2367",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":3,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":12,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":1,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q4\",\"value\":6,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q5\",\"value\":4,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q6\",\"value\":6,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":1,\"reason\":\"not required\"},{\"value\":6,\"reason\":\"not required\"},{\"value\":4,\"reason\":\"not required\"},{\"value\":6,\"reason\":\"not required\"}]}",
+        "tokens_in":  401,
+        "tokens_out":  165
+    },
+    {
+        "key":  "c3292275a9b3e7e9",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":21,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":8,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  370,
+        "tokens_out":  69
+    },
+    {
+        "key":  "c34ef545930ee0c3",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":12,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":6,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  388,
+        "tokens_out":  69
+    },
+    {
+        "key":  "c387f276f416f0e9",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":12,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":16,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  410,
+        "tokens_out":  69
+    },
+    {
+        "key":  "c43de542abbcbf10",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":100,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":100,\"reason\":\"not required\"}]}",
+        "tokens_in":  445,
+        "tokens_out":  50
+    },
+    {
+        "key":  "c528eb26acaf7b7e",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":4,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":20,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":1,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q4\",\"value\":4,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q5\",\"value\":10,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q6\",\"value\":60,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":1,\"reason\":\"not required\"},{\"value\":4,\"reason\":\"not required\"},{\"value\":10,\"reason\":\"not required\"},{\"value\":60,\"reason\":\"not required\"}]}",
+        "tokens_in":  446,
+        "tokens_out":  166
+    },
+    {
+        "key":  "c539b45d1caa4f39",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":19,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":19,\"reason\":\"not required\"}]}",
+        "tokens_in":  370,
+        "tokens_out":  50
+    },
+    {
+        "key":  "c60b78213967c082",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":15,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":20,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":3,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":3,\"reason\":\"not required\"}]}",
+        "tokens_in":  400,
+        "tokens_out":  92
+    },
+    {
+        "key":  "c664376673d11e3e",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":94,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":8,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  395,
+        "tokens_out":  69
+    },
+    {
+        "key":  "c7dfc879d96ceaa8",
+        "text":  "{\"quantities\":[],\"plan\":[],\"target\":{},\"dismissed\":[],\"refuse\":\"No numbers found\"}",
+        "tokens_in":  375,
+        "tokens_out":  50
+    },
+    {
+        "key":  "c8319aebedd8fff6",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":4,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":1,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  368,
+        "tokens_out":  67
+    },
+    {
+        "key":  "c8b8af1f964ed70e",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":20,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":2,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":40,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q4\",\"value\":1,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q5\",\"value\":4,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":40,\"reason\":\"not required\"},{\"value\":1,\"reason\":\"not required\"},{\"value\":4,\"reason\":\"not required\"}]}",
+        "tokens_in":  387,
+        "tokens_out":  141
+    },
+    {
+        "key":  "c8f45252bd6491f4",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":105,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":105,\"reason\":\"not required\"}]}",
+        "tokens_in":  405,
+        "tokens_out":  50
+    },
+    {
+        "key":  "c988303103bec469",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":4,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":2,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":3,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q4\",\"value\":2,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q5\",\"value\":25,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q6\",\"value\":20,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q7\",\"value\":8,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":3,\"reason\":\"not required\"},{\"value\":2,\"reason\":\"not required\"},{\"value\":25,\"reason\":\"not required\"},{\"value\":20,\"reason\":\"not required\"},{\"value\":8,\"reason\":\"not required\"}]}",
+        "tokens_in":  400,
+        "tokens_out":  192
+    },
+    {
+        "key":  "c9946aef620478de",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":2,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":5,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":6,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q4\",\"value\":4,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"combine\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":6,\"reason\":\"not required\"},{\"value\":4,\"reason\":\"not required\"}]}",
+        "tokens_in":  387,
+        "tokens_out":  116
+    },
+    {
+        "key":  "c9d51cd1f0a0fa5e",
+        "text":  "{\"quantities\":[],\"plan\":[],\"target\":{},\"dismissed\":[],\"refuse\":\"No numbers found\"}",
+        "tokens_in":  402,
+        "tokens_out":  50
+    },
+    {
+        "key":  "c9d6d28afa3529a3",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":60,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":60,\"reason\":\"not required\"}]}",
+        "tokens_in":  402,
+        "tokens_out":  50
+    },
+    {
+        "key":  "ca735bb5600b1ec0",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":72,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":55,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"combine\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  402,
+        "tokens_out":  68
+    },
+    {
+        "key":  "cbbf821163500805",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":119,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":9,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  395,
+        "tokens_out":  69
+    },
+    {
+        "key":  "cdf93933a81e82b8",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":12,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":10,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":2,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":2,\"reason\":\"not required\"}]}",
+        "tokens_in":  386,
+        "tokens_out":  94
+    },
+    {
+        "key":  "ce01e60354e8720c",
+        "text":  "{\"quantities\":[],\"plan\":[],\"target\":{},\"dismissed\":[],\"refuse\":\"No numbers found\"}",
+        "tokens_in":  398,
+        "tokens_out":  50
+    },
+    {
+        "key":  "cecca5eb4cb61fa1",
+        "text":  "{\"quantities\":[],\"plan\":[],\"target\":{},\"dismissed\":[],\"refuse\":\"No numbers found\"}",
+        "tokens_in":  371,
+        "tokens_out":  50
+    },
+    {
+        "key":  "cf0e059b01a12b74",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":12,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":1,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":4,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q4\",\"value\":4,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"mul\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"multiply\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":4,\"reason\":\"not required\"},{\"value\":4,\"reason\":\"not required\"}]}",
+        "tokens_in":  411,
+        "tokens_out":  116
+    },
+    {
+        "key":  "cf1b729e21d0210d",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":7,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":11,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  371,
+        "tokens_out":  68
+    },
+    {
+        "key":  "cf9fc44b5c539df5",
+        "text":  "{\"quantities\":[],\"plan\":[],\"target\":{},\"dismissed\":[],\"refuse\":\"No numbers found\"}",
+        "tokens_in":  380,
+        "tokens_out":  50
+    },
+    {
+        "key":  "d05f058cc75b9687",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":54,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":4,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":9,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":9,\"reason\":\"not required\"}]}",
+        "tokens_in":  376,
+        "tokens_out":  92
+    },
+    {
+        "key":  "d0b97229adde1f6e",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":3000,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":1000,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":10,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"mul\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"multiply\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":10,\"reason\":\"not required\"}]}",
+        "tokens_in":  400,
+        "tokens_out":  94
+    },
+    {
+        "key":  "d1b434824738144b",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":24,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":64,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":2,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":2,\"reason\":\"not required\"}]}",
+        "tokens_in":  382,
+        "tokens_out":  92
+    },
+    {
+        "key":  "d3bcf4f30192620c",
+        "text":  "{\"quantities\":[],\"plan\":[],\"target\":{},\"dismissed\":[],\"refuse\":\"No numbers found\"}",
+        "tokens_in":  394,
+        "tokens_out":  50
+    },
+    {
+        "key":  "d3fa3ec276fc8703",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":232,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":54,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  403,
+        "tokens_out":  70
+    },
+    {
+        "key":  "d45e8e514afa4aed",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":63,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":50,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  371,
+        "tokens_out":  69
+    },
+    {
+        "key":  "d4f267671dcbece7",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":16,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":18,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":21,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q4\",\"value\":15,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":21,\"reason\":\"not required\"},{\"value\":15,\"reason\":\"not required\"}]}",
+        "tokens_in":  383,
+        "tokens_out":  118
+    },
+    {
+        "key":  "d52bd9ff858f9fcc",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":12,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":12,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[]}",
+        "tokens_in":  377,
+        "tokens_out":  69
+    },
+    {
+        "key":  "d57916824fa0e641",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":750,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":3,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":235,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q4\",\"value\":275,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":235,\"reason\":\"not required\"},{\"value\":275,\"reason\":\"not required\"}]}",
+        "tokens_in":  417,
+        "tokens_out":  119
+    },
+    {
+        "key":  "d6a815bf4f7b00d1",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":8,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":4,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":52,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"sub\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"subtract\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":52,\"reason\":\"not required\"}]}",
+        "tokens_in":  387,
+        "tokens_out":  92
+    },
+    {
+        "key":  "d6d1fbd0db1c7b22",
+        "text":  "{\"quantities\":[],\"plan\":[],\"target\":{},\"dismissed\":[],\"refuse\":\"No numbers found\"}",
+        "tokens_in":  385,
+        "tokens_out":  50
+    },
+    {
+        "key":  "d7b6f0f870b14d90",
+        "text":  "{\"quantities\":[{\"id\":\"q1\",\"value\":32,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q2\",\"value\":42,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"},{\"id\":\"q3\",\"value\":35,\"unit\":\"\",\"kind\":\"count\",\"span\":\"value\"}],\"plan\":[{\"op\":\"add\",\"args\":[\"q1\",\"q2\"],\"out\":\"s1\",\"note\":\"add quantities\"}],\"target\":{\"kind\":\"count\",\"scope\":\"result\"},\"dismissed\":[{\"value\":35,\"reason\":\"not required\"}]}",
+        "tokens_in":  396,
+        "tokens_out":  94
+    }
+]
