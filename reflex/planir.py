@@ -196,6 +196,59 @@ def check_dimensional(ir, kinds):
                   "verified": checked}
 
 
+def _symbolic(ir):
+    """Reduce the plan symbolically over its input ids. Returns a
+    canonical string, plus the set of input ids that actually affect
+    the result."""
+    expr = {q["id"]: (q["id"],) for q in ir["quantities"]}
+    for s in ir["plan"]:
+        a, b = expr.get(s["args"][0]), expr.get(s["args"][1])
+        if a is None or b is None:
+            return None, set()
+        expr[s["out"]] = (s["op"], a, b)
+    outs = {s["out"] for s in ir["plan"]}
+    consumed = {a for s in ir["plan"] for a in s["args"]}
+    term = list(outs - consumed) or [ir["plan"][-1]["out"]]
+    root = expr[term[0]]
+
+    def leaves(e):
+        if isinstance(e, tuple) and len(e) == 1:
+            return {e[0]}
+        if isinstance(e, tuple) and len(e) == 3:
+            return leaves(e[1]) | leaves(e[2])
+        return set()
+    return root, leaves(root)
+
+
+def check_nondegenerate(ir, value):
+    """V1.3 B4: reject plans that do arithmetic and arrive back at an
+    input. Two failure shapes seen in the first real-language smoke,
+    both certified and both wrong:
+      (25-35)+35   -> 25      "Adam ran 25 more than Katie"
+      (2584-704)+704 -> 2584  "tuition is $704 more than room+board"
+    The model builds a plausible-looking multi-step plan that is
+    algebraically the identity, and every other check passes: the
+    values are in the text, all numbers are consumed, the plan
+    converges, and the kinds are too generic to type-check.
+    """
+    steps = ir.get("plan") or []
+    if len(steps) < 2:
+        return True, {}
+    vals = {q["id"]: float(q["value"]) for q in ir["quantities"]}
+    if value is not None:
+        for qid, v in vals.items():
+            if abs(v - value) < 1e-9:
+                return False, {"why": "answer_equals_an_input",
+                               "input": qid, "value": v}
+    root, used = _symbolic(ir)
+    if root is not None and isinstance(root, tuple) and             len(root) == 1:
+        return False, {"why": "plan_reduces_to_an_input"}
+    if len(used) < 2:
+        return False, {"why": "plan_depends_on_one_input_only",
+                       "inputs_used": sorted(used)}
+    return True, {}
+
+
 def agreement(ir_a, ir_b):
     """Two parses agree if they claim the same quantity values, the
     same target kind, and the same multiset of operations."""
@@ -244,6 +297,14 @@ def verify(ir_a, ir_b, text, kinds):
         return False, rep
     ok, detail = check_dimensional(ir, kinds)
     rep["dimensional"] = {"ok": ok, **detail}
+    if not ok:
+        return False, rep
+    # B4: non-degeneracy runs last because it needs the executed
+    # value; a plan that computes its way back to an input is not an
+    # answer, however well-formed it looks.
+    value, _trace = execute(ir)
+    ok, detail = check_nondegenerate(ir, value)
+    rep["nondegenerate"] = {"ok": ok, **detail}
     if not ok:
         return False, rep
     return True, rep

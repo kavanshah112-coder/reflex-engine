@@ -73,3 +73,18 @@ self-improving loop the arc has not tried before — and unlike the
 four falsified acquisition attempts, it acquires *retrieval evidence*
 rather than engine vocabulary, so a bad row degrades ranking rather
 than corrupting certified state. Wired into W5.
+
+**D5 — on real language, dimensional checking barely engages.** The
+arc's central safety mechanism since V0.3 is dimensional
+verification, and V1.2 already narrowed its claim ("dimensional gates
+certify physics, not story semantics"). The first real-language smoke
+sharpens that into something starker: of the plans that reached the
+dimensional check, most had **0-1 of 2 steps dimensionally
+verifiable**, because a model reading grade-school English types its
+quantities as `count` and `money` — generic kinds that carry no
+distinguishing dimension. One wrong answer certified with *zero*
+verifiable steps. So on real language the safety burden falls almost
+entirely on the STRUCTURAL checks (round-trip, consumption,
+non-degeneracy) and on agreement — not on the dimensional machinery
+the arc spent eleven versions building. The engine's best safety
+mechanism is domain-bound in a way nobody had measured.

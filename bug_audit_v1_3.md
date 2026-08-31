@@ -87,3 +87,36 @@ Lesson, and it generalises past this project: a self-consistency check
 is only as real as the independence of the samples it compares.
 Nothing in the code would have failed, and every number would have
 looked excellent.
+
+**B4 — degenerate ("identity") plans certified as answers. Found on
+the first real-language smoke, 20 items.** Six items certified; three
+were wrong. Two of the three shared one shape:
+
+    "Adam ran 25 miles more than Katie. Adam ran 35."
+        plan: (25 - 35) + 35  ->  25      truth 10
+    "Tuition costs $704 more than room and board; total $2,584."
+        plan: (2584 - 704) + 704 -> 2584  truth 1644
+
+The model builds a plausible multi-step plan that is algebraically the
+IDENTITY and returns one of its own inputs. Every existing check
+passed: both samples agreed (the error is systematic, not random),
+every value appears in the text, every number is consumed, the plan
+converges to one terminal, and the kinds are too generic
+(`count`, `money`) for dimensional analysis to engage.
+
+Fixed by a sixth check, `nondegenerate`, run last because it needs the
+executed value: reject when the answer equals one of the inputs
+exactly (for plans of >= 2 steps), when symbolic reduction collapses
+the plan to a bare input, or when the result depends on only one
+input. Re-scoring the smoke rows: certified 6 -> 4, wrong 3 -> 1.
+
+**The third wrong answer is not catchable this way and is recorded as
+an open class.** "Lillian builds 3 feeders and buys 3 others; each
+attracts 20 birds" -> the plan computed `(3 + 20) * 20 = 460`
+(truth 150). It is well-formed, non-degenerate, fully consumed, and
+dimensionally legal because `count + count` is legal. Nothing
+deterministic distinguishes it from a correct plan; catching it needs
+a model-based verifier reading the plan against the story. This is the
+same class as V1.2's gsm1120 and is the strongest argument yet that
+the deterministic checks are necessary but not sufficient once a model
+does the reading.
