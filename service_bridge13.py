@@ -66,7 +66,7 @@ def do_ingest(model):
     wrote = rejected = 0
     for rf in sorted(rdir.glob("*.json")):
         try:
-            rows = json.loads(rf.read_text(encoding="utf-8"))
+            rows = json.loads(rf.read_text(encoding="utf-8-sig"))
         except Exception as e:
             print(f"  unreadable {rf.name}: {e}")
             continue
