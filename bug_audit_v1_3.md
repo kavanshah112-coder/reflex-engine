@@ -563,3 +563,31 @@ one.
 Pre-fix arm outputs are preserved verbatim in
 `results/v13/w2/superseded_pre_B16/`. Both readings stand, and they
 happen to be the same reading.
+
+---
+
+## Process note — post-seal agent output, quarantined not ingested
+
+A W6 servicing agent finished after the arms were sealed, the version
+tagged, the snapshot taken and the report published. Its file held 112
+rows: 97 already ingested before the seal, **15 not**.
+
+The 15 are not ingested. `results/` for that model is renamed
+`results_POST_SEAL_DO_NOT_INGEST/` so a later `ingest` cannot pick them
+up by accident, and the directory carries a README with the reasoning.
+
+The reasoning matters more than the incident. Those rows would most
+likely have RAISED haiku's coverage, and haiku's 1/38 = 2.63% is the
+single measurement that produced OUTCOME D. Ingesting late work after
+learning which measurement decided the verdict is the most damaging
+form of tuning on an evaluation available in this arc -- it would not
+look like cheating from the inside, it would look like being thorough.
+
+The convergence rule was declared before any number was read precisely
+to make this decision automatic rather than a judgement call: bounded
+rounds, unresolved scored as abstentions, done. Re-running both sealed
+arms after quarantining confirms the published figures are unmoved
+(haiku 38/37/1, sonnet 209/206/3).
+
+Anything wanted from those rows belongs in V1.4 as a fresh
+pre-registered run, never as an amendment to a sealed one.
