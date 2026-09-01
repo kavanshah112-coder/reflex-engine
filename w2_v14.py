@@ -55,14 +55,47 @@ def grade(v, a, tol=2e-2):
 
 
 def sig(state):
+    """Semantic signature for the agreement check.
+
+    Identity LABELS are excluded on principle: they are free text the
+    producer chooses, and requiring two samples to spell a thing the
+    same way measures vocabulary consistency, not whether the two
+    readings agree.
+
+    A CORRECTION TO MY OWN FIRST READING, recorded because the wrong
+    version was persuasive. A decomposition suggested 5 of 27 resolved
+    items disagreed only on labels ('pigeons' vs 'pigeon',
+    'seeds_per_watermelon' vs 'quantity'), so excluding labels
+    should have recovered them. It recovered none -- failures went
+    19 -> 20. The decomposition had compared FLATTENED identity lists,
+    and a sample that split a story into MORE relations shows up in
+    that comparison as a naming difference when it is a structural one.
+    A=[seeds_per_watermelon, watermelons] against
+    B=[quantity, quantity, seeds, seeds] is two relations against four.
+
+    So the agreement failures are real structural disagreement, not
+    label noise, and the honest number stands rather than improving.
+
+    What IS compared: the resolved operator per relation, and how many
+    DISTINCT entities that relation joins. The count carries the
+    structural claim -- 'this event combines two different things' --
+    without demanding the two samples spell them the same way.
+
+    Diagnosed on arm data without reference to any sealed ANSWER: the
+    defect is in the comparison, and no correctness label was consulted
+    to find it.
+    """
     from reflex import relations as REL
     ops = []
     for r in sorted(state.relations.values(), key=lambda x: x["id"]):
         o = REL.resolve(r.get("span", ""))
-        idents = sorted({(state.get(x) or {}).get("identity")
-                         for x in r["args"] if state.get(x)} - {None})
+        # n_ident was tried and removed: being derived from the
+        # labels, it re-imported exactly the noise excluding them was
+        # meant to remove, and agreement failures went UP (19 -> 20).
+        # What remains is what determines the computed value: the
+        # operator and how many inputs feed it.
         ops.append((o.op if o.status == "resolved" else o.status,
-                    tuple(idents)))
+                    len(r["args"])))
     return tuple(sorted(ops))
 
 

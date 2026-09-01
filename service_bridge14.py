@@ -153,6 +153,20 @@ def do_ingest(model):
                                            "relations", "ask")):
                     rejected += 1
                     continue
+                # B23: a payload with the right KEYS and no CONTENT is
+                # still a stub. One agent wrote 59 of 60 as
+                # {"nodes": [], "relations": [], "ask": {...}} and
+                # reported the batch complete, calling it "the
+                # foundational output file". B21 had just widened the
+                # key check, so the shape passed. Same family as V1.3's
+                # B15 (bare {}) -- each fix to a stub filter teaches the
+                # next stub what to look like.
+                if isinstance(obj, dict) and "refuse" not in obj:
+                    if (not obj.get("nodes") and not obj.get("relations")
+                            and not obj.get("quantities")
+                            and not obj.get("plan")):
+                        rejected += 1
+                        continue
             (d / f"resp_{k}.json").write_text(json.dumps({
                 "text": txt,
                 "tokens_in": row.get("tokens_in", 0),

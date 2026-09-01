@@ -104,4 +104,26 @@ def execute(state):
             return None, {"why": "multiple terminals",
                           "terminals": [t["id"] for t in terms]}
     t = terms[0]
+
+    # B22 -- NON-DEGENERACY, the direct analogue of V1.3's check 6.
+    #
+    # A terminal with no derivation is a GIVEN, and returning it as the
+    # answer restates the question's own input. Every wrong answer the
+    # C1 arm served was this shape:
+    #
+    #   "I see 349 frogs. How many legs do they have?"   served 349
+    #   "18 cubes long ... it doubles"                   served 18
+    #   "2 books per day ... in one week"                served 2
+    #
+    # V1.3 caught this class with check_nondegenerate and V1.4's
+    # substrate path shipped without it -- a regression I introduced by
+    # replacing the representation and not re-deriving its guards.
+    #
+    # Justified by the MECHANISM, not by the answers: a terminal that
+    # nothing derives is a restated input whatever the gold happens to
+    # be. Pre-fix arm results are preserved under
+    # results/v14/arms/superseded_pre_B22/.
+    if not t.get("derived_from"):
+        return None, {"why": "degenerate: terminal is a given, not a "
+                             "derivation", "terminal": t["id"]}
     return vals[t["id"]], {"terminal": t["id"], "steps": trace}
