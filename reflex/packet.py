@@ -46,6 +46,18 @@ def build(query, query_id=None, known=None, pack_dir=None):
     from v10 import nlpw10
     t0 = time.perf_counter()
     matrix, winfo = nlpw10.parse(query, query_id, known)
+    # Attach each quantity's character offset. `source_span` is a
+    # WINDOW around the mention, not the number itself, so locating a
+    # quantity by searching for its span returns the window start and
+    # every quantity in one window collapses to the same position.
+    # `extract_mentions` yields mentions in the same order the
+    # quantities are built, so the offsets align by index.
+    try:
+        mentions, _cl = nlpw10.extract_mentions(query)
+        for q, m in zip(matrix.get("quantities") or [], mentions):
+            q["char_start"] = m.get("start")
+    except Exception:
+        pass
     reground(matrix, pack_dir)
     verdict, detail = assess(matrix)
     packet = dict(matrix)
