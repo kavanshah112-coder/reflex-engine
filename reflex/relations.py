@@ -202,20 +202,45 @@ AMBIGUITY_SET = [
 # operator. Coverage lost this way is recoverable in a later version;
 # a wrong answer served is not.
 # ---------------------------------------------------------------------
+# Vocabulary extended 2026-09-01 from the NON-SEALED traffic pool
+# (v13_traffic_pool.json), by harvesting the phrases that occur
+# adjacent to numbers and grouping them by the arithmetic they
+# denote. No sealed item contributed a phrase.
+#
+# First contact with real language made the extension necessary and
+# showed why it must be conservative: on 12 S3 items the original
+    # seven rules abstained on 5 for `unknown_relation` alone. A closed
+    # relation vocabulary costs coverage before it buys anything, which
+    # the spec predicted and which is the price of never guessing an
+# operator.
+#
+# Genuinely ambiguous verbs are deliberately LEFT OUT rather than
+    # assigned a best guess -- "into" is partition in "divided into 5
+# groups" and nothing in "walked into the shop", and "needs",
+# "after" and "another" carry no operator at all. They abstain,
+# which is the safe direction and is logged to the residual.
 RELATION_TABLE = [
-    ("accumulate", r"\b(bought|got|gained|found|received|added|earned|"
-                   r"collected|picked up|won)\b", "add"),
-    ("deplete", r"\b(left|leave|leaves|lost|gave away|gave|sold|ate|"
-                r"used|spent|removed|took away|broke)\b", "sub"),
+    ("accumulate", r"\b(bought|buys|buy|got|gets|gained|found|receives?|"
+                   r"received|added|adds|earned|earns|collected|collects|"
+                   r"picked up|picks up|won|wins|made|makes|ordered|"
+                   r"orders|scored|scores|planted|plants|caught|catches|"
+                   r"saw|sees|put|puts|brought|brings)\b", "add"),
+    ("deplete", r"\b(left|leave|leaves|lost|loses|gave away|gave|gives|"
+                r"sold|sells|sell|ate|eats|eaten|used|uses|use|spent|"
+                r"spends|removed|removes|took away|takes away|broke|"
+                r"breaks|dropped|drops|read|reads|threw away|"
+                r"gave out)\b", "sub"),
     ("total", r"\b(in all|altogether|all together|in total|combined|"
-              r"total of|sum of)\b", "add"),
+              r"total of|sum of|together)\b", "add"),
     ("difference", r"\b(how many more|how many fewer|how much more|"
                    r"difference between|difference in|fewer than|"
-                   r"more than)\b", "sub"),
-    ("rate", r"\b(per|apiece|a piece|each|every)\b", "mul"),
+                   r"more than|less than)\b", "sub"),
+    ("rate", r"\b(per|apiece|a piece|each|every|holds?|contains?|"
+             r"weighs?|costs?|takes?)\b", "mul"),
     ("partition", r"\b(shared equally|split equally|divided among|"
-                  r"divided equally|split among|distributed equally|"
-                  r"equal amount|equally)\b", "div"),
+                  r"divided equally|divided into|split among|split into|"
+                  r"distributed equally|equal amount|equally|"
+                  r"shared among|among)\b", "div"),
     ("scale_explicit", r"\btimes\s+as\s+(many|much)\s+\w*\s*as\b", "mul"),
 ]
 

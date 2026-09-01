@@ -1,0 +1,23 @@
+{
+ "model": "claude-haiku-4-5",
+ "arm": "C5",
+ "split": "s3_real_language",
+ "n": 240,
+ "status": {
+  "abstained": 12,
+  "pending": 228
+ },
+ "abstain_reasons": {
+  "unknown_relation": 5,
+  "agreement": 4,
+  "integrity:missing_state_transition": 3
+ },
+ "certified": 0,
+ "correct": 0,
+ "wrong": 0,
+ "coverage": 0.0,
+ "wrong_fire": null,
+ "bridge_pending": 456,
+ "token_source": "synthetic-bridge",
+ "wall_s": 0
+}
