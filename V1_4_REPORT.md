@@ -1,218 +1,255 @@
 # V1.4 — The Relational State Substrate
 
-**Reflex Engine, experiment V1.4 · INTERIM · 2026-09-01**
+**Reflex Engine, experiment V1.4 · OUTCOME D · 2026-09-01**
 
-**The outcome ladder cannot be adjudicated yet, and this report does not
-claim a rung.** Rung A requires H3 *and* (H4 or H5) *and* H9. H3 and H5
-are measured and confirmed on the deterministic layers. **H9 — the
-end-to-end energy advantage — is not measured at all**, and the model
-arms that would produce relational states from real language have not
-been run. Claiming A on a partial ladder is exactly the move the
-pre-registration exists to prevent.
+The substrate does what it was built to do. A model cannot feed it.
 
-What follows is what was actually measured.
+On a sealed 600-case adversarial suite the substrate catches every
+seeded semantic error V1.3's representation could not see — 100%
+against 10%, both at zero false positives. On 240 sealed real-language
+items, driven by a model, it certifies **nothing at all**.
 
 ---
 
-## 1. The result
+## 1. Verdict against the frozen ladder
 
-Sealed adversarial suite, 600 cases, 10 semantic error classes, no model
-in the loop. Every case carries a **correct** state and a **corrupt**
-state over the same text, so each arm is scored twice.
+| | condition | result |
+|---|---|---|
+| **F** | Tier A regressed, or C0 stops reproducing V1.3 | **not triggered** — verified |
+| **D** | any sealed suite above its wrong-fire gate | **TRIGGERED** — C1/C2/C3 at 100% wrong-fire before B22 |
+| **C** | substrate worse than C0 on semantic wrong-fire | not reached |
+| **B** | H3 null at materially higher cost | not reached |
+| **A** | H3 + (H4 or H5) + H9 | **unreachable** — H9 unmeasured, H3 unassessable at zero served |
+
+**OUTCOME D.** Three sealed ablation arms served 17 answers on real
+language and every one was wrong (§4). The defect was found and fixed
+(B22); post-fix every arm serves zero and wrongs zero.
+
+**The ladder has a gap, and saying so is part of the result.** After
+the fix no rung fits: D no longer fires (nothing is served, so nothing
+is wrong), C's literal condition fails (0% wrong-fire is not worse than
+C0's 1.44%), B describes a tie that did not happen, and A needs
+measurements that do not exist. The pre-registration never anticipated
+a system that is **safe and inert**. D is reported because it fired on
+a genuine sealed measurement during the run and because nothing above
+it is reachable — not because the corrected system is unsafe.
+
+---
+
+## 2. The result that holds
+
+Sealed adversarial suite, 600 cases, 10 semantic error classes, correct
+and corrupt state for every case, no model in the loop.
 
 | arm | detection | false positive |
 |---|---|---|
 | **C0** — V1.3's flat plan IR | **10.0%** | 0.0% |
-| **C2** — substrate + semantic integrity | **100.0%** | 0.0% |
+| **C2** — substrate + integrity | **100.0%** | 0.0% |
 
-C0 catches exactly one class: `contradictory_relations`. It misses
-incorrect grouping, entity mismatch, cross-entity contamination, wrong
-scope, temporal inversion, duplicate entities, missing state
-transitions and unresolved references — **because the flat IR discards
-the material those errors are about.** Projecting a relational state
-down to `quantities / plan / target / dismissed` throws away identity,
-order, scope and context, and nothing downstream can ask about what is
-no longer there.
+C0 catches one class. It misses incorrect grouping, entity mismatch,
+cross-entity contamination, wrong scope, temporal inversion, duplicate
+entities, missing state transitions and unresolved references —
+**because the flat IR discards the material those errors are about.**
 
-Two deliberate generosities to C0, so its 10% is an upper bound rather
-than a convenient number: `agreement` was handed the same IR twice and
-always passes (with no model there is no second parse), and the
-projection preserves the plan DAG, so groupings the flat IR *can*
-express are expressed. Where C0 misses those, it misses because nothing
-**checks** the grouping — not because the notation was too weak.
+Two deliberate generosities keep C0's 10% an upper bound rather than a
+convenient number: `agreement` was handed the same IR twice and always
+passes, and the projection preserves the plan DAG so groupings the flat
+IR *can* express are expressed.
 
----
+Your `90 − (49 − 19)` case is **unrepresentable** in the substrate: the
+second event's argument names the derived node, so no edge lets 19
+reach 49.
 
-## 2. What this measures, and what it does not
-
-**Measured:** whether the representation can *hold* the distinction, and
-whether deterministic rules over it can *find* the error.
-
-**Not measured:** whether a model can *produce* a faithful relational
-state from real language. Both states in every case were constructed.
-
-That boundary is the honest limit of this run and it is not a small
-one. V1.3's coverage came from a model reading English; V1.4 has
-replaced the representation that reading lands in, and has not yet
-tested the reading. The bridge arms (llama-8B, haiku, sonnet, opus) are
-built into the plan and unrun.
+**Reuse and equivalence, 6/6.** All three structurally-similar /
+semantically-different pairs refused — including V1.3's Mrs Hilt /
+cupcakes failure — and all three lexically-different /
+semantically-equivalent pairs accepted. `gave away` vs `received` is
+refused at 0.615 text similarity, just under V1.3's 0.62 reuse
+threshold.
 
 ---
 
-## 3. V1.3's specific failures, revisited
+## 3. The result that does not
 
-| V1.3 event | status in V1.4 |
-|---|---|
-| **W-1** "three times more" — identical wrong value from opus *and* sonnet, corroborator agreed each time | **Caught deterministically.** The phrase is in the frozen ambiguity set; it abstains with no model call. Cross-model corroboration could not have caught it — both families read it the same way — because ambiguity is a property of the phrase. |
-| **W-4** non-integer under an integral target (3.222 trees, 15.5 days) | **Half caught.** Check 8 fires on `248/16 → 15.5 days`. It misses `29/9 → 3.222 trees` because *trees* did not reach the lexicon's frequency threshold. **The threshold was not lowered to fix this** — see §6. |
-| **W-5** plan reuse, 7 served / 7 wrong | **Refused.** Reuse now gates on a semantic signature (resolved operators + the identities they act on), not surface text. The Mrs Hilt / cupcakes pair is refused. |
-| **W-6** vacuous dismissal, plan stopped early | **Caught by `wrong_target`**, not by the detector written for it — see §5. |
-| the `90 − (49 − 19)` grouping hazard | **Unrepresentable.** The second event's argument names the derived node, so there is no edge by which 19 could modify 49. Where V1.3 needed a check to catch it, the substrate makes it inexpressible. |
+240 sealed real-language items (S3, disjointness from all V1.3 usage
+proved by id intersection), produced by haiku through the isolated
+bridge.
 
----
+| arm | served | correct | wrong | coverage |
+|---|---|---|---|---|
+| C1 substrate only | 0 | 0 | 0 | 0.0% |
+| C2 + integrity | 0 | 0 | 0 | 0.0% |
+| C3 + applicability | 0 | 0 | 0 | 0.0% |
+| **C5 complete** | **0** | **0** | **0** | **0.0%** |
 
-## 4. Reuse and semantic equivalence
-
-Confusion matrix, both directions, because passing one by collapsing
-the other is the obvious degenerate solution:
+Where C5's coverage went:
 
 ```
-structurally similar / semantically DIFFERENT   refused   3 / 3
-lexically different / semantically EQUIVALENT   accepted  3 / 3
-                                                overall   6 / 6
+agreement                             164   68.3%
+integrity: wrong_target                42   17.5%
+not_evaluable                          13    5.4%
+integrity: missing_state_transition    10    4.2%
+unknown_relation                        8    3.3%
+integrity: entity_mismatch              1    0.4%
 ```
 
-`sold` ≡ `gave away` ≡ `lost` ≡ `used` (all deplete) are accepted as
-equivalent. `gave away` vs `received` are refused as different despite
-0.615 text similarity — near V1.3's 0.62 reuse threshold, which is the
-point.
+Against V1.3's flat IR on real language — 209 certified at 1.44% wrong
+— this is a total collapse of coverage in exchange for the elimination
+of wrong answers. **The bottleneck moved rather than lifted:** from
+*checking* the reading to *producing* it.
 
 ---
 
-## 5. The false-positive column earned its place
+## 4. Seventeen wrong answers, and whose fault they were
 
-**The first sealed run scored C2 at 100% detection and 90% false
-positives.** A detector firing on nine correct states out of ten is
-worthless, and only the paired design exposed it. This is V1.3's B10
-repeating — non-degeneracy rejecting correct plans whose answer
-coincided with an input — and it was caught this time by construction
-rather than by luck.
+Before the fix, the arms served 17 answers and every one was wrong. Not
+17 mistakes — one mistake, 17 times:
 
-Diagnosis found two different faults, which matters because they have
-different remedies: four detectors were over-broad, and two of my own
-"correct" states were not well-formed (an event with no resulting
-node). Both were fixed **on a separate dev suite** (seed 9999); the
-sealed suite was regenerated and run **once**. Superseded hash
-`355803f5…`, current `b8921bfa…`.
+```
+"I see 349 frogs. How many legs do they have?"    served 349
+"18 cubes long ... it doubles her length"         served 18
+"Mrs. Hilt read 2 books per day ... in one week"  served 2
+```
 
-### One detector retired as a negative result
+Each is a state with no resolved relation, whose only terminal is a
+stated given, executed and returned unchanged. The answer was the
+question's own input.
 
-`plan_query_semantic_mismatch` by unconsumed-givens **cannot work**, and
-the reason is not fixable by tuning. A distractor is legitimately
-unconsumed:
+**V1.3 caught this class.** `check_nondegenerate` has guarded it since
+V1.3's own B4. I replaced the representation and did not re-derive what
+the old one was protecting against.
 
-> *"Dev collected 11 shells and Elle collected 15. How many did Dev
-> collect?"* — Elle's 15 **must** take no part in the answer.
+> **A new representation inherits none of the old one's scar tissue.**
+> Every guard the previous design accumulated has to be re-argued in
+> the new terms, and the ones that get missed are exactly the ones
+> nobody remembers needing.
 
-No deterministic rule separates that from V1.3's W-6, where a *needed*
-quantity was dropped. Telling them apart requires knowing which
-quantities the question depends on, which is the semantic judgement the
-version is trying to avoid asserting. The rule is disabled and kept in
-the code as documentation; the W-6 shape is caught by `wrong_target`
-instead, which compares the terminal's identity to the ask and needs no
-notion of relevance.
+Fixed (B22); pre-fix arms preserved under
+`results/v14/arms/superseded_pre_B22/`.
 
 ---
 
-## 6. Discipline notes
+## 5. A correction to my own analysis
 
-**A threshold that was not tuned.** Check 8 misses `29 trees` because
-*trees* fell below `MIN_FREQ = 3` in the lexicon harvest. Lowering it
-to 2 would very likely fix that case. `"29 trees"` is a **V1.3 sealed
-item**, and tuning a method parameter against a known sealed answer is
-tuning on the evaluation however innocuous the mechanism looks. The
-threshold stands and check 8's hit rate is reported at whatever the
-lexicon's coverage turns out to be.
+Agreement dominates C5's abstentions at 68.3%, so the first question
+was V1.3's D7 question: is the check rejecting equivalent readings over
+naming?
 
-**Tier A untouched.** The everyday-noun lexicon lives in a separate
-V1.4-only pack and is never merged into `packs/physics`. Re-verified
-after every change: battery, 65-seed sweep, vocabulary audit,
-invariants — all pass. C0 reproduces V1.3 byte-for-byte (haiku 38/37/1,
-sonnet 209/206/3, opus 199/198/1, retrieval 289/0). Rung F does not
-fire.
+A decomposition said yes for 5 of 27 resolved items — operators matched
+while identity labels differed (`pigeons`/`pigeon`,
+`seeds_per_watermelon`/`quantity`). Labels are free text a producer
+chooses, so excluding them looked clearly right.
+
+**Excluding them recovered nothing.** Failures went 19 → 20.
+
+The decomposition was wrong. It compared *flattened* identity lists, so
+a sample that split a story into more relations appeared as a naming
+difference:
+
+```
+A = [seeds_per_watermelon, watermelons]   2 relations
+B = [quantity, quantity, seeds, seeds]    4 relations
+```
+
+That is structural disagreement wearing the costume of a vocabulary
+disagreement. **Two samples of one model produce structurally different
+relational states for the same problem in roughly three quarters of
+resolved cases.**
+
+The wrong reading was the comfortable one — it would have turned a hard
+finding about producer instability into a tidy comparison bug. Only the
+fix failing caught it.
 
 ---
 
-## 7. Bugs (4, all pre-measurement)
+## 6. Hypotheses
 
-- **B17** — one-letter unit aliases matched English words; `"16 vases a
-  day"` derived *amperes*. Unit symbols now require numeric context.
-- **B19** — `m` is claimed by both metres and molar, and `"60 m of
-  rope"` returned *concentration* because a sorted list picked a
-  winner. **This is V1.3's B8 in a new layer** — an ordering standing
-  in for a conflict check. Colliding surfaces now abstain and name both
-  claimants.
-- **B18** — the physics lexicon has no everyday nouns, so derivation
-  was UNKNOWN on nearly all real language and check 8 never fired: V1.3's
-  D5 reproduced in a new place. Fixed with a separate lexicon harvested
-  from **non-sealed** traffic.
-- **B20** — a shell-mangled escape compiled a detector to match a
-  backspace character. Valid regex, no error, clean result on every
-  state, detection silently 0%.
+| | claim | result |
+|---|---|---|
+| H1 | substrate improves semantic composition over the fixed representation | **CONFIRMED on the representation, FALSIFIED end-to-end** |
+| H2 | reduces wrong entity binding | **CONFIRMED** — 100% detection, 0% FP |
+| H3 | reduces structurally-valid-but-semantically-wrong computation | **CONFIRMED deterministically; UNASSESSABLE on the model path** (zero served) |
+| H4 | applicability conditions reduce semantic wrong-fire | **NOT EXERCISED** — 4 of 58 capabilities conditioned; C3 = C1 on every item |
+| H5 | integrity improves safety without unacceptable coverage loss | **HALF CONFIRMED** — safety yes; the coverage loss is total, so "unacceptable" is answered against it |
+| H6 | safe plan reuse becomes possible | **CONFIRMED on the confusion matrix**, 6/6 |
+| H7 | improves Path Manager orchestration | **NOT RUN** (W6 deferred) |
+| H8 | improves real-language coverage | **FALSIFIED** — 69.7% (V1.3) → 0.0% |
+| H9 | preserves the end-to-end energy advantage | **NOT MEASURED** — local metered arm still running at report time |
+| H10 | stays tractable as complexity grows | **NOT RUN** (W9 deferred) |
 
-### The recurrence worth naming
+---
 
-B20 is the fourth instance in two versions of one failure mode:
+## 7. Bugs (7)
+
+- **B17** one-letter unit aliases matched English words — `"16 vases a day"` derived *amperes*.
+- **B18** the physics lexicon has no everyday nouns, so derivation was UNKNOWN on nearly all real language and check 8 never fired — V1.3's D5 in a new place. Fixed with a separate lexicon harvested from **non-sealed** traffic.
+- **B19** `m` is claimed by metres *and* molar; `"60 m of rope"` returned *concentration* because sort order picked a winner. **V1.3's B8 in a new layer.**
+- **B20** a shell-mangled escape compiled a detector to match a backspace character — valid regex, no error, silently 0% detection.
+- **B21** the inherited V1.3 stub filter discarded every valid V1.4 payload (it demanded `quantities`/`plan`, V1.4 sends `nodes`/`relations`).
+- **B22** the substrate executor shipped without non-degeneracy — §4.
+- **B23** a payload with the right keys and no content is still a stub. One agent wrote 59 of 60 as `{"nodes": [], "relations": []}` and called it "the foundational output file"; B21 had just widened the key check, so it passed. 121 purged. **Each fix to a stub filter teaches the next stub what to look like.**
+
+### The recurrence, now at five
 
 ```
 V1.3 B16   consumption went silent on all-word problems
 V1.3 B8    supersession starved the conflict check of its input
 V1.4 B19   a colliding surface resolved by sort order
 V1.4 B20   a mangled escape produced an inert regex
+V1.4 B22   a guard that simply was not carried across a rewrite
 ```
 
-**A green check that cannot go red.** Each was present in the code, ran
-without error, and was structurally incapable of firing. B20 was caught
-only because a class that should have detected 100% reported 0% and was
-worth chasing — a plausible-looking 60% would have shipped.
-
-Standing requirement adopted: **every detector needs a positive control
-— a case it MUST fire on — running alongside the case it must not.**
+**A green check that cannot go red.** Standing requirement adopted:
+every detector needs a positive control — a case it MUST fire on —
+running alongside the case it must not.
 
 ---
 
-## 8. What remains
+## 8. What this version establishes
 
-Built and passing: W0 baseline lock · W1 substrate · W2 relation
-resolution + frozen 14-entry ambiguity gate · W3 engine-derived kinds +
-check 8 · W4 applicability overlay (4 of 58 capabilities conditioned) ·
-W5 integrity (15 classes) · W7/W8 reuse and equivalence.
-
-Not yet run, and each is required before the ladder can be adjudicated:
-
-1. **Bridge arms** — llama-8B, haiku, sonnet, opus producing relational
-   states from real language. This is the question §2 leaves open and
-   the largest remaining cost (~2,400 items × 4 arms).
-2. **H9, energy** — end-to-end on the local metered arm. V1.3's local
-   arm ran 21 items in 4,409 s (210 s/item), which sizes an n=400 run at
-   roughly 23 hours.
-3. **C1/C3/C4/C5** — the full ablation; only C0 and C2 are measured.
-4. **W6** — Path Manager rewiring over the substrate.
-5. **W9** — long-horizon tractability (H10).
-6. **S3** — the fresh human-language set.
+1. **The representation was never the hard part.** Moving from a flat
+   plan IR to a relational substrate takes semantic-error detection
+   from 10% to 100% at no false-positive cost. That is real and it is
+   cheap.
+2. **Producing the representation is the hard part.** Three quarters of
+   dual samples disagree structurally; a fifth of surviving states
+   answer a different question than the one asked. Neither is a
+   checking problem.
+3. **The gates work exactly as designed, and that is the problem.**
+   Every abstention in §3 is defensible in isolation. Together they
+   refuse everything.
+4. **V1.3's flat IR is still the only configuration that has ever
+   answered real language at scale** — 209 certified, 1.44% wrong. V1.4
+   is safer and useless; V1.3 is useful and imperfect. Nothing yet is
+   both.
 
 ---
 
-## 9. The one-paragraph version
+## 9. What V1.4 does not claim
 
-On a sealed 600-case suite the substrate catches every seeded semantic
-error that V1.3's representation could not see — 100% against 10%, both
-at zero false positives — and refuses the exact plan-reuse pair that
-served V1.3 a wrong answer, while still accepting genuinely equivalent
-rephrasings. That is a real result about the representation and a
-bounded one: both states in every case were constructed, so it shows
-the substrate can hold the distinction, not that a model can produce
-it. The energy question is untouched. The ladder stays unadjudicated,
-and the most useful thing found along the way was not a capability but
-a pattern — four instances in two versions of a check that was present,
-silent, and incapable of firing.
+- **No energy figure.** The metered local arm was still running at
+  report time (n=60 reflex + n=60 pure-LLM on identical items,
+  ~200 s/item). H9 is unmeasured for the second version running, and it
+  remains the commercial crux.
+- **No cross-model comparison.** Only the haiku arm ran; sonnet, opus
+  and llama-8B are unrun, so D-vi's architecture-and-reflex comparison
+  is not delivered.
+- **No applicability result.** 4 of 58 capabilities carry conditions
+  and none fired on S3; C3 is identical to C1 on every item.
+- **No Path Manager or tractability result** (W6, W9 deferred).
+
+---
+
+## 10. The one-paragraph version
+
+V1.4 replaced the representation and the bottleneck moved with it. The
+substrate holds every distinction the flat IR could not — 100% versus
+10% semantic-error detection at zero false positives, the `90 −
+(49 − 19)` hazard made unrepresentable rather than merely caught, and
+V1.3's plan-reuse failure correctly refused — but on real language a
+model cannot produce states the substrate will accept, and the
+complete system certified nothing at all on 240 sealed items. The
+outcome is D, fired by seventeen wrong answers that turned out to be a
+guard I failed to carry across the rewrite; and the most useful thing
+learned is that a new representation inherits none of the old one's
+scar tissue.

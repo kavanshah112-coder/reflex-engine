@@ -4,16 +4,15 @@
  "split": "s3_real_language",
  "n": 240,
  "status": {
-  "abstained": 213,
-  "model_refused": 2,
-  "abstained_unresolved": 25
+  "abstained": 238,
+  "model_refused": 2
  },
  "abstain_reasons": {
-  "unknown_relation": 51,
-  "not_evaluable": 6,
-  "integrity:entity_mismatch": 8,
-  "integrity:missing_state_transition": 29,
-  "integrity:wrong_target": 118,
+  "unknown_relation": 78,
+  "not_evaluable": 18,
+  "integrity:entity_mismatch": 10,
+  "integrity:missing_state_transition": 51,
+  "integrity:wrong_target": 80,
   "integrity:contradictory_relations": 1
  },
  "certified": 0,
@@ -21,8 +20,7 @@
  "wrong": 0,
  "coverage": 0.0,
  "wrong_fire": null,
- "bridge_pending": 55,
+ "bridge_pending": 0,
  "token_source": "synthetic-bridge",
- "wall_s": 2,
- "sealed_with_pending": 55
+ "wall_s": 0
 }

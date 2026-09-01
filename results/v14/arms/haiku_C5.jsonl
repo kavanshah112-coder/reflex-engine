@@ -10,107 +10,107 @@
 {"id": "asdiv0053", "answer": 7.0, "value": null, "status": "abstained", "abstain": "integrity:missing_state_transition", "dropped_spans": 0, "nodes": 2, "relations": 1, "relations_resolved": 1, "findings": ["missing_state_transition"]}
 {"id": "asdiv0055", "answer": 7.0, "value": null, "status": "abstained", "abstain": "integrity:missing_state_transition", "dropped_spans": 0, "nodes": 2, "relations": 1, "relations_resolved": 1, "findings": ["missing_state_transition"]}
 {"id": "asdiv0056", "answer": 5.0, "value": null, "status": "abstained", "abstain": "unknown_relation", "dropped_spans": 0, "nodes": 2, "relations": 1, "relations_resolved": 0, "detail": [{"id": "r1", "span": "flew away"}]}
-{"id": "asdiv0057", "answer": 28.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0058", "answer": 22.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0057", "answer": 28.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
+{"id": "asdiv0058", "answer": 22.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
 {"id": "asdiv0061", "answer": 62.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
-{"id": "asdiv0065", "answer": 803.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0066", "answer": 700.0, "value": null, "status": "pending", "abstain": null}
+{"id": "asdiv0065", "answer": 803.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0066", "answer": 700.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
 {"id": "asdiv0071", "answer": 43.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
-{"id": "asdiv0072", "answer": 32.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0078", "answer": 37.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0079", "answer": 21.0, "value": null, "status": "pending", "abstain": null}
+{"id": "asdiv0072", "answer": 32.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
+{"id": "asdiv0078", "answer": 37.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
+{"id": "asdiv0079", "answer": 21.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
 {"id": "asdiv0083", "answer": 36.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 1, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0085", "answer": 31.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 1, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0089", "answer": 79.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0085", "answer": 31.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 1, "nodes": 2, "relations": 0}
+{"id": "asdiv0089", "answer": 79.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
 {"id": "asdiv0090", "answer": 31.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 2}
-{"id": "asdiv0093", "answer": 9.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0093", "answer": 9.0, "value": null, "status": "abstained", "abstain": "not_evaluable", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "detail": {"why": "multiple terminals", "terminals": ["n1", "n2"]}}
 {"id": "asdiv0094", "answer": 6.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
-{"id": "asdiv0098", "answer": 32.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0099", "answer": 22.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0101", "answer": 50.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0105", "answer": 278.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
+{"id": "asdiv0098", "answer": 32.0, "value": null, "status": "abstained", "abstain": "not_evaluable", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "detail": {"why": "multiple terminals", "terminals": ["n1", "n2"]}}
+{"id": "asdiv0099", "answer": 22.0, "value": null, "status": "abstained", "abstain": "integrity:missing_state_transition", "dropped_spans": 0, "nodes": 2, "relations": 1, "relations_resolved": 1, "findings": ["missing_state_transition"]}
+{"id": "asdiv0101", "answer": 50.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
+{"id": "asdiv0105", "answer": 278.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
 {"id": "asdiv0108", "answer": 26.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
-{"id": "asdiv0113", "answer": 244.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0122", "answer": 61.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0113", "answer": 244.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0122", "answer": 61.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
 {"id": "asdiv0124", "answer": 38.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
 {"id": "asdiv0127", "answer": 51.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
 {"id": "asdiv0134", "answer": 61.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
-{"id": "asdiv0135", "answer": 22.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0138", "answer": 21.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
-{"id": "asdiv0141", "answer": 6.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0142", "answer": 9.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0148", "answer": 46.0, "value": null, "status": "pending", "abstain": null}
+{"id": "asdiv0135", "answer": 22.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 4, "relations": 1}
+{"id": "asdiv0138", "answer": 21.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
+{"id": "asdiv0141", "answer": 6.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0142", "answer": 9.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0148", "answer": 46.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 1}
 {"id": "asdiv0152", "answer": 10.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
 {"id": "asdiv0155", "answer": 18.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 1, "nodes": 3, "relations": 1}
-{"id": "asdiv0157", "answer": 3.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
+{"id": "asdiv0157", "answer": 3.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
 {"id": "asdiv0158", "answer": 24.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 2}
-{"id": "asdiv0160", "answer": 21.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
-{"id": "asdiv0165", "answer": 3.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0166", "answer": 3.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0175", "answer": 0.46, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0160", "answer": 21.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
+{"id": "asdiv0165", "answer": 3.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
+{"id": "asdiv0166", "answer": 3.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 1, "relations": 0}
+{"id": "asdiv0175", "answer": 0.46, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
 {"id": "asdiv0179", "answer": 2.0, "value": null, "status": "abstained", "abstain": "integrity:missing_state_transition", "dropped_spans": 0, "nodes": 2, "relations": 1, "relations_resolved": 1, "findings": ["missing_state_transition", "wrong_target"]}
-{"id": "asdiv0182", "answer": 12.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0190", "answer": 66.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0191", "answer": 2.42, "value": null, "status": "pending", "abstain": null}
+{"id": "asdiv0182", "answer": 12.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
+{"id": "asdiv0190", "answer": 66.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 1}
+{"id": "asdiv0191", "answer": 2.42, "value": null, "status": "abstained", "abstain": "not_evaluable", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "detail": {"why": "no evaluable terminal"}}
 {"id": "asdiv0196", "answer": 30.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
 {"id": "asdiv0198", "answer": 8.0, "value": null, "status": "abstained", "abstain": "unknown_relation", "dropped_spans": 0, "nodes": 2, "relations": 2, "relations_resolved": 1, "detail": [{"id": "r2", "span": "arrives at"}]}
 {"id": "asdiv0204", "answer": 30.0, "value": null, "status": "abstained", "abstain": "not_evaluable", "dropped_spans": 0, "nodes": 3, "relations": 0, "relations_resolved": 0, "detail": {"why": "multiple terminals", "terminals": ["n1", "n2", "n3"]}}
 {"id": "asdiv0208", "answer": 70.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 2}
 {"id": "asdiv0215", "answer": 110.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 1}
 {"id": "asdiv0219", "answer": 80.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 0}
-{"id": "asdiv0223", "answer": 95.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
-{"id": "asdiv0226", "answer": 65.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0229", "answer": 93.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0237", "answer": 74.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0241", "answer": 94.0, "value": null, "status": "pending", "abstain": null}
+{"id": "asdiv0223", "answer": 95.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 1}
+{"id": "asdiv0226", "answer": 65.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 2, "nodes": 1, "relations": 0}
+{"id": "asdiv0229", "answer": 93.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
+{"id": "asdiv0237", "answer": 74.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
+{"id": "asdiv0241", "answer": 94.0, "value": null, "status": "abstained", "abstain": "not_evaluable", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "detail": {"why": "multiple terminals", "terminals": ["n1", "n2"]}}
 {"id": "asdiv0244", "answer": 97.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 1}
-{"id": "asdiv0247", "answer": 40.0, "value": null, "status": "pending", "abstain": null}
+{"id": "asdiv0247", "answer": 40.0, "value": null, "status": "abstained", "abstain": "not_evaluable", "dropped_spans": 0, "nodes": 3, "relations": 0, "relations_resolved": 0, "detail": {"why": "multiple terminals", "terminals": ["n1", "n2", "n3"]}}
 {"id": "asdiv0249", "answer": 63.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
 {"id": "asdiv0250", "answer": 574.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
 {"id": "asdiv0252", "answer": 667.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
 {"id": "asdiv0253", "answer": 480.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
 {"id": "asdiv0254", "answer": 203.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
-{"id": "asdiv0255", "answer": 892.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
-{"id": "asdiv0256", "answer": 601.0, "value": null, "status": "pending", "abstain": null}
+{"id": "asdiv0255", "answer": 892.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
+{"id": "asdiv0256", "answer": 601.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
 {"id": "asdiv0259", "answer": 952.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0262", "answer": 934.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0262", "answer": 934.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
 {"id": "asdiv0271", "answer": 1454.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
-{"id": "asdiv0274", "answer": 582.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0275", "answer": 814.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0300", "answer": 48.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0318", "answer": 386.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0274", "answer": 582.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
+{"id": "asdiv0275", "answer": 814.0, "value": null, "status": "abstained", "abstain": "not_evaluable", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "detail": {"why": "multiple terminals", "terminals": ["n1", "n2"]}}
+{"id": "asdiv0300", "answer": 48.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 3, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0318", "answer": 386.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
 {"id": "asdiv0322", "answer": 192.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
-{"id": "asdiv0324", "answer": 149.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0324", "answer": 149.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
 {"id": "asdiv0332", "answer": 163.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
-{"id": "asdiv0333", "answer": 47.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 1, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0334", "answer": 151.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 1, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0333", "answer": 47.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 1, "nodes": 2, "relations": 0}
+{"id": "asdiv0334", "answer": 151.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 1, "nodes": 2, "relations": 0}
 {"id": "asdiv0335", "answer": 834.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 3, "nodes": 0, "relations": 0}
-{"id": "asdiv0342", "answer": 405.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0343", "answer": 180.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0348", "answer": 98.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0351", "answer": 385.0, "value": null, "status": "pending", "abstain": null}
+{"id": "asdiv0342", "answer": 405.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 3}
+{"id": "asdiv0343", "answer": 180.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 1}
+{"id": "asdiv0348", "answer": 98.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 1, "nodes": 3, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0351", "answer": 385.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 0}
 {"id": "asdiv0354", "answer": 48.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 2}
 {"id": "asdiv0357", "answer": 69.0, "value": null, "status": "abstained", "abstain": "integrity:missing_state_transition", "dropped_spans": 0, "nodes": 3, "relations": 3, "relations_resolved": 3, "findings": ["missing_state_transition", "wrong_target"]}
 {"id": "asdiv0360", "answer": 68.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 6, "relations": 0}
 {"id": "asdiv0362", "answer": 136.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 3, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0364", "answer": 548.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0367", "answer": 315.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
+{"id": "asdiv0364", "answer": 548.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
+{"id": "asdiv0367", "answer": 315.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 2}
 {"id": "asdiv0368", "answer": 1000.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
 {"id": "asdiv0377", "answer": 54.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
-{"id": "asdiv0385", "answer": 21.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
-{"id": "asdiv0388", "answer": 18.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0385", "answer": 21.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
+{"id": "asdiv0388", "answer": 18.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
 {"id": "asdiv0393", "answer": 72.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
 {"id": "asdiv0394", "answer": 8.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
-{"id": "asdiv0404", "answer": 800.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0410", "answer": 480.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0404", "answer": 800.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 3, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0410", "answer": 480.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
 {"id": "asdiv0413", "answer": 270.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
 {"id": "asdiv0417", "answer": 400.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
 {"id": "asdiv0423", "answer": 490.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 2}
-{"id": "asdiv0427", "answer": 60.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0428", "answer": 320.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
+{"id": "asdiv0427", "answer": 60.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
+{"id": "asdiv0428", "answer": 320.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
 {"id": "asdiv0433", "answer": 488.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 2}
 {"id": "asdiv0436", "answer": 1876.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
-{"id": "asdiv0439", "answer": 6835.0, "value": null, "status": "pending", "abstain": null}
+{"id": "asdiv0439", "answer": 6835.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
 {"id": "asdiv0442", "answer": 512.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
 {"id": "asdiv0445", "answer": 308.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
 {"id": "asdiv0451", "answer": 1415.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
@@ -118,123 +118,123 @@
 {"id": "asdiv0456", "answer": 441.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
 {"id": "asdiv0457", "answer": 3962.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
 {"id": "asdiv0459", "answer": 3285.0, "value": null, "status": "abstained", "abstain": "integrity:missing_state_transition", "dropped_spans": 0, "nodes": 2, "relations": 1, "relations_resolved": 1, "findings": ["missing_state_transition", "wrong_target"]}
-{"id": "asdiv0461", "answer": 12.0, "value": null, "status": "pending", "abstain": null}
+{"id": "asdiv0461", "answer": 12.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
 {"id": "asdiv0463", "answer": 8.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 1, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
 {"id": "asdiv0465", "answer": 60.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
-{"id": "asdiv0479", "answer": 7.0, "value": null, "status": "pending", "abstain": null}
+{"id": "asdiv0479", "answer": 7.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
 {"id": "asdiv0480", "answer": 11.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
 {"id": "asdiv0484", "answer": 7.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
 {"id": "asdiv0485", "answer": 6.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
-{"id": "asdiv0486", "answer": 7.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
-{"id": "asdiv0492", "answer": 23.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0496", "answer": 14.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
-{"id": "asdiv0504", "answer": 34.0, "value": null, "status": "pending", "abstain": null}
+{"id": "asdiv0486", "answer": 7.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
+{"id": "asdiv0492", "answer": 23.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0496", "answer": 14.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
+{"id": "asdiv0504", "answer": 34.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
 {"id": "asdiv0507", "answer": 2.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
-{"id": "asdiv0510", "answer": 1.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0511", "answer": 12.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0514", "answer": 20.0, "value": null, "status": "pending", "abstain": null}
+{"id": "asdiv0510", "answer": 1.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
+{"id": "asdiv0511", "answer": 12.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
+{"id": "asdiv0514", "answer": 20.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
 {"id": "asdiv0516", "answer": 3.0, "value": null, "status": "abstained", "abstain": "integrity:entity_mismatch", "dropped_spans": 0, "nodes": 2, "relations": 1, "relations_resolved": 1, "findings": ["entity_mismatch", "missing_state_transition", "wrong_event_association", "wrong_target"]}
-{"id": "asdiv0518", "answer": 6.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0520", "answer": 13.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0524", "answer": 52.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
-{"id": "asdiv0527", "answer": 23.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
+{"id": "asdiv0518", "answer": 6.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
+{"id": "asdiv0520", "answer": 13.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
+{"id": "asdiv0524", "answer": 52.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
+{"id": "asdiv0527", "answer": 23.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
 {"id": "asdiv0528", "answer": 62.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
-{"id": "asdiv0529", "answer": 63.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
+{"id": "asdiv0529", "answer": 63.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
 {"id": "asdiv0544", "answer": 45552.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
 {"id": "asdiv0554", "answer": 1396.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 1, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0555", "answer": 11676.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0557", "answer": 17408.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0561", "answer": 3000.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0562", "answer": 5.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0566", "answer": 30.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0575", "answer": 400.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
-{"id": "asdiv0577", "answer": 20.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0581", "answer": 2205.0, "value": null, "status": "pending", "abstain": null}
+{"id": "asdiv0555", "answer": 11676.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0557", "answer": 17408.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
+{"id": "asdiv0561", "answer": 3000.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 3, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0562", "answer": 5.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0566", "answer": 30.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
+{"id": "asdiv0575", "answer": 400.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
+{"id": "asdiv0577", "answer": 20.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0581", "answer": 2205.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
 {"id": "asdiv0583", "answer": 7.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
-{"id": "asdiv0587", "answer": 1110.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0588", "answer": 220.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
+{"id": "asdiv0587", "answer": 1110.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0588", "answer": 220.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
 {"id": "asdiv0589", "answer": 12.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
 {"id": "asdiv0594", "answer": 326.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
 {"id": "asdiv0597", "answer": 776.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
-{"id": "asdiv0602", "answer": 486.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0603", "answer": 0.72, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
-{"id": "asdiv0609", "answer": 8243.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0610", "answer": 1.2, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0611", "answer": 3264.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0617", "answer": 204.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0623", "answer": 24.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0626", "answer": 6.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 3, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0602", "answer": 486.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
+{"id": "asdiv0603", "answer": 0.72, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
+{"id": "asdiv0609", "answer": 8243.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
+{"id": "asdiv0610", "answer": 1.2, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0611", "answer": 3264.0, "value": null, "status": "abstained", "abstain": "not_evaluable", "dropped_spans": 0, "nodes": 3, "relations": 0, "relations_resolved": 0, "detail": {"why": "multiple terminals", "terminals": ["n1", "n2", "n3"]}}
+{"id": "asdiv0617", "answer": 204.0, "value": null, "status": "abstained", "abstain": "not_evaluable", "dropped_spans": 0, "nodes": 1, "relations": 0, "relations_resolved": 0, "detail": {"why": "degenerate: terminal is a given, not a derivation", "terminal": "n1"}}
+{"id": "asdiv0623", "answer": 24.0, "value": null, "status": "abstained", "abstain": "not_evaluable", "dropped_spans": 0, "nodes": 1, "relations": 0, "relations_resolved": 0, "detail": {"why": "degenerate: terminal is a given, not a derivation", "terminal": "n1"}}
+{"id": "asdiv0626", "answer": 6.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 0}
 {"id": "asdiv0633", "answer": 44.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
 {"id": "asdiv0635", "answer": 4.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 1, "relations": 2}
 {"id": "asdiv0637", "answer": 21.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 2}
-{"id": "asdiv0638", "answer": 432.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0639", "answer": 120.0, "value": null, "status": "pending", "abstain": null}
+{"id": "asdiv0638", "answer": 432.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0639", "answer": 120.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 1, "relations": 1}
 {"id": "asdiv0643", "answer": 400.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
 {"id": "asdiv0645", "answer": 273.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 1, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
 {"id": "asdiv0651", "answer": 48.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 1, "nodes": 5, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0655", "answer": 102.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0658", "answer": 0.65, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
+{"id": "asdiv0655", "answer": 102.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 4, "relations": 0}
+{"id": "asdiv0658", "answer": 0.65, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 4, "relations": 2}
 {"id": "asdiv0666", "answer": 76.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 4, "relations": 2}
-{"id": "asdiv0670", "answer": 18.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0676", "answer": 8.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0679", "answer": 83.2, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0680", "answer": 480.0, "value": null, "status": "pending", "abstain": null}
+{"id": "asdiv0670", "answer": 18.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
+{"id": "asdiv0676", "answer": 8.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
+{"id": "asdiv0679", "answer": 83.2, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
+{"id": "asdiv0680", "answer": 480.0, "value": null, "status": "abstained", "abstain": "not_evaluable", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "detail": {"why": "multiple terminals", "terminals": ["n1", "n2"]}}
 {"id": "asdiv0684", "answer": 15840.0, "value": null, "status": "abstained", "abstain": "integrity:missing_state_transition", "dropped_spans": 0, "nodes": 1, "relations": 1, "relations_resolved": 1, "findings": ["missing_state_transition", "wrong_target"]}
 {"id": "asdiv0687", "answer": 2.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 1, "nodes": 4, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0688", "answer": 4.0, "value": null, "status": "pending", "abstain": null}
+{"id": "asdiv0688", "answer": 4.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 1, "nodes": 4, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
 {"id": "asdiv0689", "answer": 2.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 4, "relations": 2}
-{"id": "asdiv0701", "answer": 18.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0701", "answer": 18.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 1}
 {"id": "asdiv0704", "answer": 56.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 2}
 {"id": "asdiv0706", "answer": 43.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 2}
-{"id": "asdiv0716", "answer": 22.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
-{"id": "asdiv0717", "answer": 32.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 3, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0719", "answer": 41.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
-{"id": "asdiv0721", "answer": 39.0, "value": null, "status": "pending", "abstain": null}
+{"id": "asdiv0716", "answer": 22.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 3}
+{"id": "asdiv0717", "answer": 32.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 0}
+{"id": "asdiv0719", "answer": 41.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 2}
+{"id": "asdiv0721", "answer": 39.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 2}
 {"id": "asdiv0722", "answer": 58.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 2}
-{"id": "asdiv0724", "answer": 13.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0725", "answer": 14.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0730", "answer": 10.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
+{"id": "asdiv0724", "answer": 13.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 2}
+{"id": "asdiv0725", "answer": 14.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 5, "nodes": 3, "relations": 0}
+{"id": "asdiv0730", "answer": 10.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
 {"id": "asdiv0735", "answer": 10.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
 {"id": "asdiv0738", "answer": 22.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 3}
-{"id": "asdiv0750", "answer": 99.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
-{"id": "asdiv0754", "answer": 4.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
+{"id": "asdiv0750", "answer": 99.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 3}
+{"id": "asdiv0754", "answer": 4.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
 {"id": "asdiv0755", "answer": 12.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0760", "answer": 8.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
+{"id": "asdiv0760", "answer": 8.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
 {"id": "asdiv0764", "answer": 4.0, "value": null, "status": "abstained", "abstain": "integrity:missing_state_transition", "dropped_spans": 0, "nodes": 2, "relations": 1, "relations_resolved": 1, "findings": ["missing_state_transition", "wrong_target"]}
-{"id": "asdiv0768", "answer": 2.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0771", "answer": 23.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
+{"id": "asdiv0768", "answer": 2.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
+{"id": "asdiv0771", "answer": 23.0, "value": null, "status": "abstained", "abstain": "integrity:missing_state_transition", "dropped_spans": 0, "nodes": 2, "relations": 1, "relations_resolved": 1, "findings": ["missing_state_transition", "wrong_target"]}
 {"id": "asdiv0776", "answer": 1.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 2}
-{"id": "asdiv0777", "answer": 9.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
+{"id": "asdiv0777", "answer": 9.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 1, "nodes": 2, "relations": 0}
 {"id": "asdiv0796", "answer": 3.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 3, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0797", "answer": 8.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0799", "answer": 9.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
+{"id": "asdiv0797", "answer": 8.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
+{"id": "asdiv0799", "answer": 9.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 0}
 {"id": "asdiv0800", "answer": 10.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
 {"id": "asdiv0811", "answer": 16.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
-{"id": "asdiv0817", "answer": 11.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0819", "answer": 8.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
+{"id": "asdiv0817", "answer": 11.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
+{"id": "asdiv0819", "answer": 8.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
 {"id": "asdiv0837", "answer": 100.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 4, "relations": 2}
-{"id": "asdiv0840", "answer": 20.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
-{"id": "asdiv0851", "answer": 4.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0853", "answer": 3.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
-{"id": "asdiv0855", "answer": 3.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0857", "answer": 17.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0840", "answer": 20.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 4, "relations": 4}
+{"id": "asdiv0851", "answer": 4.0, "value": null, "status": "model_refused", "abstain": null}
+{"id": "asdiv0853", "answer": 3.0, "value": null, "status": "abstained", "abstain": "unknown_relation", "dropped_spans": 0, "nodes": 2, "relations": 1, "relations_resolved": 0, "detail": [{"id": "r1", "span": "are 48 deer and 64 monkeys"}]}
+{"id": "asdiv0855", "answer": 3.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
+{"id": "asdiv0857", "answer": 17.0, "value": null, "status": "abstained", "abstain": "not_evaluable", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "detail": {"why": "multiple terminals", "terminals": ["n1", "n2"]}}
 {"id": "asdiv0859", "answer": 6.0, "value": null, "status": "model_refused", "abstain": null}
 {"id": "asdiv0863", "answer": 20.0, "value": null, "status": "abstained", "abstain": "not_evaluable", "dropped_spans": 0, "nodes": 3, "relations": 0, "relations_resolved": 0, "detail": {"why": "multiple terminals", "terminals": ["n1", "n2", "n3"]}}
 {"id": "asdiv0864", "answer": 24.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
-{"id": "asdiv0867", "answer": 60.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0873", "answer": 210.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0875", "answer": 77.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0867", "answer": 60.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 3, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0873", "answer": 210.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 2}
+{"id": "asdiv0875", "answer": 77.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 3, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
 {"id": "asdiv0877", "answer": 35.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 4, "relations": 1}
-{"id": "asdiv0896", "answer": 34.0, "value": null, "status": "pending", "abstain": null}
+{"id": "asdiv0896", "answer": 34.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 1}
 {"id": "asdiv0902", "answer": 8.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
 {"id": "asdiv0903", "answer": 50.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 5, "relations": 1}
-{"id": "asdiv0904", "answer": 19.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 0, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
-{"id": "asdiv0906", "answer": 46.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0907", "answer": 76.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 5, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0904", "answer": 19.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 4, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0906", "answer": 46.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 0, "nodes": 2, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0907", "answer": 76.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 5, "relations": 0}
 {"id": "asdiv0914", "answer": 82.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 2}
-{"id": "asdiv0916", "answer": 45.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 0, "relations": 0}
+{"id": "asdiv0916", "answer": 45.0, "value": null, "status": "abstained", "abstain": "unknown_relation", "dropped_spans": 0, "nodes": 3, "relations": 1, "relations_resolved": 0, "detail": [{"id": "r1", "span": "47 people came to the game today"}]}
 {"id": "asdiv0923", "answer": 8.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 0}
 {"id": "asdiv0924", "answer": 39.0, "value": null, "status": "abstained", "abstain": "unknown_relation", "dropped_spans": 0, "nodes": 2, "relations": 1, "relations_resolved": 0, "detail": [{"id": "r1", "span": "will not be able to go"}]}
-{"id": "asdiv0925", "answer": 73.0, "value": null, "status": "pending", "abstain": null}
-{"id": "asdiv0927", "answer": 23.0, "value": null, "status": "abstained", "abstain": "integrity:wrong_target", "dropped_spans": 4, "nodes": 4, "relations": 0, "relations_resolved": 0, "findings": ["wrong_target"]}
+{"id": "asdiv0925", "answer": 73.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 3, "relations": 0}
+{"id": "asdiv0927", "answer": 23.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 4, "nodes": 4, "relations": 0}
 {"id": "asdiv0928", "answer": 7.0, "value": null, "status": "abstained", "abstain": "agreement", "dropped_spans": 0, "nodes": 2, "relations": 1}
