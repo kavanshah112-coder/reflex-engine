@@ -1,8 +1,8 @@
 # V1.5 PLAN — Cheap Semantic Worker + Selective LLM Escalation
 
-**STATUS: DRAFT for review. Freezes as tag `v1.5-plan`.**
-§9–§13 never change after the first sealed run. §14 lists what needs
-your decision before freezing.
+**STATUS: FROZEN 2026-09-01, tag `v1.5-plan`.** §9–§13 and the
+AMENDMENT never change after the first sealed run. The five §14
+decisions are RESOLVED in the AMENDMENT at the end of this file.
 
 Built on V0.1–V1.4. No prior version, tag, snapshot, dataset, report or
 log is modified. V1.3 and V1.4 remain reproducible and are re-verified
@@ -368,3 +368,98 @@ pollution findings.
 By §2.1 that reduces to one number: **deterministic coverage**. Today it
 is 8.2%. V1.5 is the experiment that finds out whether it can be moved,
 and what it costs in safety to move it.
+
+
+---
+
+# AMENDMENT — decisions resolved 2026-09-01, BEFORE any sealed run
+
+## D-1 · Coverage threshold stays at 15%
+
+Held at 15% against a measured 8.2%, deliberately. The bar is set by
+what would be commercially interesting, not by what is currently
+reachable, and lowering it after measuring today's value would be
+choosing a threshold I already know I can clear.
+
+The ladder already carries the likely outcome: rung **D** is
+*"semantic acquisition remains too expensive — coverage below 15%"*.
+If V1.5 lands at, say, 12%, that is rung D with a real improvement
+inside it, and the improvement is reported as the finding. A version
+that renames its shortfall as a success is worth less than one that
+measures the shortfall precisely.
+
+## D-2 · Lexicon extension APPROVED, under the B18 protocol
+
+The worker's misses are dominated by everyday nouns absent from the
+77-kind physics pack (68% unknown target, 81% partly-unnamed
+quantities). Extending the kind lexicon is the obvious lever and it is
+approved, under exactly the protocol V1.4's B18 established:
+
+- harvested from the **NON-SEALED traffic pool only**; no sealed item
+  contributes a single noun;
+- written to a **separate V1.5 pack**, never merged into
+  `packs/physics` — that pack feeds Tier A, whose 0.000 wrong-fire over
+  10,160 traps is the baseline everything is measured against;
+- Tier A re-verified after every lexicon change (battery, 65-seed
+  sweep, vocab audit, invariants);
+- the lexicon's own coverage and its wrong-fire cost reported
+  separately, so a coverage gain bought with new errors cannot hide
+  inside an aggregate.
+
+**Pre-registered honesty condition:** the coverage number reported for
+H1 is the one obtained with the lexicon frozen BEFORE the sealed run.
+No noun may be added after a sealed measurement, for any reason.
+
+## D-3 · Bridge scale as proposed
+
+```
+metered llama-8B arm   FULL matrix: A0-A11, all tiers, energy
+haiku / sonnet / opus  A0 (pure), A5 (selective), A6 (full V1.5)
+manager transfer       opus-built substrate x {sonnet, haiku, llama}
+```
+
+Energy is claimed ONLY from the llama arm. Bridge arms report calls,
+tokens, coverage and wrong-fire and **never joules** (V1.3 B7). Bridge
+serviced from a directory holding no engine module (V1.3 B9), verified
+by absence of the modules rather than by absence of Python (V1.4
+precision note).
+
+## D-4 · Dataset sizes, bounded by the corpus
+
+Only **674 fresh real items** remain (pool 3,625; V1.3+V1.4 consumed
+the rest). Frozen sizes:
+
+```
+S6  tiered T1-T10      1,000   = 674 real + 326 generated
+                               T1-T8 real where available;
+                               T9 theoretical and T10 out-of-
+                               distribution are GENERATED because the
+                               corpus contains no such items
+S7  repeated workload  2,000   fully generated structural variants
+                               (amortization needs repetition, which
+                               a fixed corpus cannot supply)
+S8  adversarial safety   400   generated, incl. injection and false
+                               provenance
+```
+
+The real/generated split is reported beside every S6 number. A tier
+answered only on generated text is labelled as such and never pooled
+into a real-language claim.
+
+## D-5 · §2.2 CONFIRMED and frozen into H3
+
+Selective escalation saves energy by **avoiding calls**, not by making
+calls cheaper. The pure-LLM comparator already asks for a bare number
+at `max_tokens = 24`; there is no cheaper call to make.
+
+H3 is therefore restated as frozen:
+
+> **H3 (frozen):** selective escalation reduces total energy in
+> proportion to the fraction of queries it avoids calling on, and NOT
+> through a lower per-call cost. M4 measures per-call escalation cost
+> against full-query cost; A9-vs-A0 is the direct test. A finding that
+> partial escalation IS materially cheaper would falsify this and is
+> reported as such.
+
+The safety value of delegating the smallest unit is unaffected and is
+retained: it is what stops the model authoring the final answer.

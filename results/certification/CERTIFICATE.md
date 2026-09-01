@@ -28,7 +28,7 @@ inherits Tier B's wrong-rate — not Tier A's guarantee.
 ---
 
 
-**Engine:** reflex-engine, V1.2 line · **Generated:** 2026-09-01 00:17:55 · **Verdict: CERTIFIED**
+**Engine:** reflex-engine, V1.2 line · **Generated:** 2026-09-01 20:53:21 · **Verdict: CERTIFIED**
 
 ## What this engine guarantees
 1. **It answers only what it can certify.** Every answer carries a
