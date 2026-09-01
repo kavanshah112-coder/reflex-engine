@@ -242,3 +242,77 @@ Preserve-supersede-rerun applied. Pre-fix arms kept verbatim in
               C3  8 served / 8 wrong / wrong-fire 1.000
               C5  0 served
     POST-FIX  every arm 0 served, 0 wrong
+
+
+---
+
+## Precision note - the bridge isolation claim, restated exactly
+
+I reported the D-i hardening as '0 .py files reachable' from the
+bridge directory. That was true when measured and is no longer true:
+servicing agents wrote eight helper scripts there (process_batch.py,
+verify.py and similar) while working.
+
+The SUBSTANTIVE guarantee holds, and was re-checked rather than
+assumed:
+
+    engine modules present under the bridge dir     NONE
+    reflex/ reachable from the bridge dir           no
+    agent scripts referencing engine internals      0 of 8
+      (grep: planir, semint, rssexec, kindderive,
+       relations, applicability, AMBIGUITY_SET)
+
+So the claim to make is 'no engine module is reachable from the
+bridge', not 'no Python is present'. The looser phrasing would have
+read as false to anyone who looked, and the difference matters
+precisely because this is the control that disqualified V1.3's opus
+arm.
+
+
+---
+
+## B24 — the energy harness measured nothing and reported zeros
+
+The H9 run completed after 90 minutes and produced a well-formed
+report in which every energy figure was `0.0`:
+
+    gpu_j        reflex_j_per_query 0.0    pure_j_per_query 0.0
+    cpu_j_model  reflex_j_per_query 0.0    pure_j_per_query 0.0
+
+`PowerMeter.window()` returns a `_Window` context manager whose
+`__enter__` yields SELF, not a dict; the energy is computed in
+`__exit__` and lands in `w.result`. My harness did
+`dict(w) if isinstance(w, dict) else {}` INSIDE the block, so the
+isinstance test failed every time, every window contributed `{}`, and
+the totals summed to zero.
+
+The meter worked perfectly throughout. I threw away every reading and
+then divided by the count.
+
+**Sixth instance of the recurrence, and the first in a MEASUREMENT
+rather than a detector:**
+
+    V1.3 B16  consumption went silent on all-word problems
+    V1.3 B8   supersession starved the conflict check of its input
+    V1.4 B19  a colliding surface resolved by sort order
+    V1.4 B20  a mangled escape produced an inert regex
+    V1.4 B22  a guard not carried across a rewrite
+    V1.4 B24  an instrument that read nothing and reported 0.0
+
+What makes this one worse than the others: a detector that cannot fire
+loses coverage, and everyone eventually notices the coverage. **An
+instrument that reads zero produces a HEADLINE.** "0 J per query" is
+not obviously broken -- it is the number a reflex engine would love to
+be able to claim, and V1.3's B7 was this same hazard from the other
+direction (fabricated token counts that looked consistent). Reporting
+it would have been the single worst claim in the arc.
+
+It was caught only because zero is implausible on its face. A
+plausible-looking wrong number would have shipped.
+
+Standing requirement extended from detectors to instruments: **an
+instrument needs a positive control too** -- a window whose energy MUST
+be non-zero, asserted before any figure derived from it is reported.
+
+Void run preserved at `results/v14/w9_energy_VOID_zeros.json`. Fixed
+and re-run.

@@ -72,8 +72,9 @@ threshold.
 ## 3. The result that does not
 
 240 sealed real-language items (S3, disjointness from all V1.3 usage
-proved by id intersection), produced by haiku through the isolated
-bridge.
+proved by id intersection), produced by haiku through a bridge directory outside the repository
+(verified: no engine module reachable, no agent script referencing
+engine internals).
 
 | arm | served | correct | wrong | coverage |
 |---|---|---|---|---|
@@ -174,7 +175,7 @@ fix failing caught it.
 | H6 | safe plan reuse becomes possible | **CONFIRMED on the confusion matrix**, 6/6 |
 | H7 | improves Path Manager orchestration | **NOT RUN** (W6 deferred) |
 | H8 | improves real-language coverage | **FALSIFIED** — 69.7% (V1.3) → 0.0% |
-| H9 | preserves the end-to-end energy advantage | **NOT MEASURED** — local metered arm still running at report time |
+| H9 | preserves the end-to-end energy advantage | **FALSIFIED, and inverted** — 19.9x the GPU energy and 38.2x the CPU energy of a pure LLM, for zero correct answers (§8) |
 | H10 | stays tractable as complexity grows | **NOT RUN** (W9 deferred) |
 
 ---
@@ -205,7 +206,48 @@ running alongside the case it must not.
 
 ---
 
-## 8. What this version establishes
+## 8. Energy: the commercial thesis, measured and inverted
+
+60 sealed items, local `llama3.1-custom`, one meter, one machine, both
+arms on identical inputs. Every model call inside the boundary,
+producer included.
+
+| | reflex (C5) | pure LLM | ratio |
+|---|---|---|---|
+| GPU J / query | **1,294.5** | 64.9 | **19.9x** |
+| CPU J / query (modelled) | **6,850.6** | 179.3 | **38.2x** |
+| correct answers / 60 | **0** | **51** | — |
+| J / correct (GPU) | **undefined** | 76.4 | — |
+
+Wall clock: 4,880 s for the reflex arm, 81 minutes for 60 questions.
+
+The arc's commercial premise is that deterministic reflex execution
+replaces expensive LLM reasoning and saves energy. Measured end to end,
+**this version does the opposite by more than an order of magnitude**,
+and returns nothing for it. J-per-correct is not a large number; it is
+undefined, because the denominator is zero.
+
+The mechanism is not mysterious. C5 makes two producer calls per query
+at 900 max tokens each; the pure arm makes one call at 24. Roughly
+seventy-five times the generated tokens, spent to build a state that
+the gates then refuse.
+
+**Why V1.2's 21 mJ figure does not contradict this.** That measured the
+deterministic ENGINE with the model's work outside the window. It is
+true and it answers a different question. Once the reading is inside
+the boundary — and a deployment cannot put it outside — the model
+dominates the bill completely, and a design that calls the model MORE
+than the baseline cannot save energy no matter how efficient its
+arithmetic is.
+
+The instrument was verified before these figures were believed: the
+first run reported 0.0 J on every channel (B24) and would have been the
+worst claim in the arc. A positive control now fails the run loudly
+rather than reporting a zero.
+
+---
+
+## 9. What this version establishes
 
 1. **The representation was never the hard part.** Moving from a flat
    plan IR to a relational substrate takes semantic-error detection
@@ -222,14 +264,21 @@ running alongside the case it must not.
    answered real language at scale** — 209 certified, 1.44% wrong. V1.4
    is safer and useless; V1.3 is useful and imperfect. Nothing yet is
    both.
+5. **The energy case does not survive putting the model inside the
+   boundary.** Every prior energy claim in this arc measured the engine
+   with the reading excluded. Measured whole, the architecture costs
+   20-38x a pure LLM and answers nothing. That is the finding a buyer
+   would care about most, and it took until version sixteen to measure
+   it honestly.
 
 ---
 
-## 9. What V1.4 does not claim
+## 10. What V1.4 does not claim
 
-- **No energy figure.** The metered local arm was still running at
-  report time (n=60 reflex + n=60 pure-LLM on identical items,
-  ~200 s/item). H9 is unmeasured for the second version running, and it
+- **The energy figure is now measured and it is bad.** See §8. It is a
+  single 60-item run on one machine with one local model, so the
+  MAGNITUDE is provisional; the SIGN is not, and the sign is what the
+  commercial thesis rested on. H9 is unmeasured for the second version running, and it
   remains the commercial crux.
 - **No cross-model comparison.** Only the haiku arm ran; sonnet, opus
   and llama-8B are unrun, so D-vi's architecture-and-reflex comparison
@@ -240,7 +289,7 @@ running alongside the case it must not.
 
 ---
 
-## 10. The one-paragraph version
+## 11. The one-paragraph version
 
 V1.4 replaced the representation and the bottleneck moved with it. The
 substrate holds every distinction the flat IR could not — 100% versus
@@ -250,6 +299,9 @@ V1.3's plan-reuse failure correctly refused — but on real language a
 model cannot produce states the substrate will accept, and the
 complete system certified nothing at all on 240 sealed items. The
 outcome is D, fired by seventeen wrong answers that turned out to be a
-guard I failed to carry across the rewrite; and the most useful thing
-learned is that a new representation inherits none of the old one's
-scar tissue.
+guard I failed to carry across the rewrite. Worse for the project than
+any of that: measured end to end with the model inside the accounting
+boundary, the architecture spends 19.9x the GPU energy and 38.2x the
+CPU energy of simply asking the model, and gets nothing right while the
+model alone gets 51 of 60 — so the commercial premise of the whole arc
+is, on this evidence, inverted rather than merely unproven.

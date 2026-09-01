@@ -1,0 +1,50 @@
+{
+ "n": 60,
+ "model": "llama3.1-custom:latest",
+ "meter": "v5.energy PowerMeter",
+ "boundary": "ALL model calls inside, producer included",
+ "levels": {
+  "gpu_j": "LEVEL 2 measured telemetry",
+  "cpu_j_model": "LEVEL 3 documented power model"
+ },
+ "reflex": {
+  "status": {
+   "abstained": 59,
+   "certified": 1,
+   "WRONG": 1
+  },
+  "certified": 1,
+  "correct": 0,
+  "wrong": 1
+ },
+ "pure_llm": {
+  "correct": 51
+ },
+ "energy": {
+  "gpu_j": {
+   "reflex_total_j": 0.0,
+   "reflex_j_per_query": 0.0,
+   "reflex_j_per_correct": null,
+   "pure_total_j": 0.0,
+   "pure_j_per_query": 0.0,
+   "pure_j_per_correct": 0.0
+  },
+  "cpu_j_model": {
+   "reflex_total_j": 0.0,
+   "reflex_j_per_query": 0.0,
+   "reflex_j_per_correct": null,
+   "pure_total_j": 0.0,
+   "pure_j_per_query": 0.0,
+   "pure_j_per_correct": 0.0
+  },
+  "cpu_j_util": {
+   "reflex_total_j": 0.0,
+   "reflex_j_per_query": 0.0,
+   "reflex_j_per_correct": null,
+   "pure_total_j": 0.0,
+   "pure_j_per_query": 0.0,
+   "pure_j_per_correct": 0.0
+  }
+ },
+ "reflex_wall_s": 5375.7
+}

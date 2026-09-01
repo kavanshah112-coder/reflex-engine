@@ -92,10 +92,13 @@ def main():
             t0 = time.time()
             with meter.window("reflex_%s" % it["id"]) as w:
                 r = solve(adapter, it, cfg)
+            # B24: window() yields a _Window, not a dict. The energy
+            # dict is computed in __exit__ and lands in w.result, so it
+            # must be read AFTER the block.
             st[r["status"]] += 1
             if r["status"] == "certified":
                 st["correct" if r.get("correct") else "WRONG"] += 1
-            e = dict(w) if isinstance(w, dict) else {}
+            e = dict(w.result or {})
             e_reflex.append(e)
             rows.append({"id": it["id"], "status": r["status"],
                          "correct": bool(r.get("correct")),
@@ -103,6 +106,7 @@ def main():
                          "energy": e})
 
         # ---------------- arm 2: pure LLM, same items ---------------
+        # (w.result read after each block, same as arm 1 -- B24)
         pure_ok = 0
         e_pure = []
         for it in items:
@@ -116,7 +120,7 @@ def main():
                     v = None
             if grade(v, it.get("answer")):
                 pure_ok += 1
-            e_pure.append(dict(w) if isinstance(w, dict) else {})
+            e_pure.append(dict(w.result or {}))
     finally:
         meter.stop()
 
@@ -145,6 +149,21 @@ def main():
                                    if pure_ok else None),
         }
     rep["reflex_wall_s"] = round(sum(r["wall_s"] for r in rows), 1)
+
+    # POSITIVE CONTROL (B24). An instrument that reads zero must fail
+    # loudly, not report. The void run produced a well-formed document
+    # in which every figure was 0.0, and "0 J per query" is exactly the
+    # number a reflex engine would most like to claim -- it does not
+    # look broken, it looks like a result.
+    measured = {k: v["reflex_total_j"] + v["pure_total_j"]
+                for k, v in rep["energy"].items()}
+    rep["positive_control"] = {"totals_by_channel": measured,
+                               "passed": any(v > 0 for v in
+                                             measured.values())}
+    if not rep["positive_control"]["passed"]:
+        rep["VOID"] = ("every energy channel read zero across %d "
+                       "windows; the instrument measured nothing and "
+                       "no figure here may be reported" % (2 * n))
 
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "w9_energy.json").write_text(json.dumps(rep, indent=1),

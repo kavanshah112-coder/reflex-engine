@@ -1,0 +1,56 @@
+{
+ "n": 60,
+ "model": "llama3.1-custom:latest",
+ "meter": "v5.energy PowerMeter",
+ "boundary": "ALL model calls inside, producer included",
+ "levels": {
+  "gpu_j": "LEVEL 2 measured telemetry",
+  "cpu_j_model": "LEVEL 3 documented power model"
+ },
+ "reflex": {
+  "status": {
+   "abstained": 60
+  },
+  "certified": 0,
+  "correct": 0,
+  "wrong": 0
+ },
+ "pure_llm": {
+  "correct": 51
+ },
+ "energy": {
+  "gpu_j": {
+   "reflex_total_j": 77668.696,
+   "reflex_j_per_query": 1294.4783,
+   "reflex_j_per_correct": null,
+   "pure_total_j": 3896.753,
+   "pure_j_per_query": 64.9459,
+   "pure_j_per_correct": 76.4069
+  },
+  "cpu_j_model": {
+   "reflex_total_j": 411036.622,
+   "reflex_j_per_query": 6850.6104,
+   "reflex_j_per_correct": null,
+   "pure_total_j": 10759.492,
+   "pure_j_per_query": 179.3249,
+   "pure_j_per_correct": 210.9704
+  },
+  "cpu_j_util": {
+   "reflex_total_j": 290303.353,
+   "reflex_j_per_query": 4838.3892,
+   "reflex_j_per_correct": null,
+   "pure_total_j": 17338.607,
+   "pure_j_per_query": 288.9768,
+   "pure_j_per_correct": 339.9727
+  }
+ },
+ "reflex_wall_s": 4880.2,
+ "positive_control": {
+  "totals_by_channel": {
+   "gpu_j": 81565.449,
+   "cpu_j_model": 421796.114,
+   "cpu_j_util": 307641.96
+  },
+  "passed": true
+ }
+}
