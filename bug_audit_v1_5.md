@@ -107,3 +107,34 @@ material. The threshold in the plan is on COVERAGE -- queries answered
 correctly with no model call -- and that number is not yet measured.
 
 No claim against the coverage threshold is made from this figure.
+
+
+---
+
+## Discipline note — I was developing against a sealed set
+
+Caught mid-build, before any result was reported as final.
+
+The plan requires a dev/sealed split for debugging (section 13). I
+built the packet, the index and the executor while measuring against
+the first 400 items of S3, which is a SEALED evaluation set, and I
+inspected correctness on them. Those 400 items are now contaminated:
+every threshold and defect I chased was chased with their answers in
+view.
+
+**Resolution, taken now rather than at write-up:** S3 is split at 400.
+Items 0-399 become `s3_dev.json` and are declared contaminated -- they
+remain usable for debugging and are never again reported as an
+evaluation result. Items 400-1199 become `s3_sealed.json` (800 items,
+sha256 recorded) and have not been touched. Every final V1.5 number
+comes from the sealed half.
+
+The measurements already taken on 0-399 -- packet completeness 15.2%,
+deterministic coverage 4.0%, wrong-fire 43.75% -- are retained as DEV
+figures and labelled as such. They are not the version's results.
+
+Recorded because the honest cost is real: 400 of 1,200 fresh
+real-language items are spent, and the corpus has no more (V1.3 and
+V1.4 consumed the rest). The sealed half is smaller than planned
+because I was careless, and that is a fact about this version's
+statistical power, not a rounding detail.

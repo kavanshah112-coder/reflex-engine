@@ -1,0 +1,33 @@
+{
+ "arm": "A6",
+ "split": "s3_sealed",
+ "n": 800,
+ "status": {
+  "escalated": 746,
+  "abstained": 49,
+  "certified": 5,
+  "correct": 3,
+  "WRONG": 2
+ },
+ "abstain_reasons": {
+  "ask names no supported operation": 28,
+  "no operator established for event": 11,
+  "superlative ask: an extremum, not a walk": 6,
+  "rate/grouping language: linear walk is not the story's shape": 3,
+  "negative running quantity": 1
+ },
+ "escalation_units": {
+  "name_these_quantities": 507,
+  "name_the_target": 14,
+  "concept_disambiguation": 222,
+  "conflict_resolution": 2,
+  "whole_query": 1
+ },
+ "deterministic_coverage": 0.0063,
+ "correct": 3,
+ "wrong": 2,
+ "wrong_fire": 0.4,
+ "escalation_fraction": 0.9325,
+ "ms_per_query": 6.271,
+ "model_calls": 0
+}
