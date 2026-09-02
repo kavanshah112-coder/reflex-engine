@@ -1,0 +1,419 @@
+{
+ "ledger": {
+  "proposed": 139,
+  "g1_killed": 0,
+  "g2_killed": 22,
+  "g3_inert": 39,
+  "g3_memorize": 0,
+  "g3_wrong": 16,
+  "admitted": 62,
+  "model": "haiku",
+  "offered": 1500
+ },
+ "kills": [
+  {
+   "name": "particle_speed_linear",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q16_072763",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "integral_vs_sum_x2",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q16_090672",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "gcd_primality",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q16_057623",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "find_x_linear_add",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "combinations_ways",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q16_046160",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "differentiate_twice_eval",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "first_derivative_eval",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "second_derivative_eval",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "union_set_count",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "evaluate_boolean_expr",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "truth_value_expr",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "determine_roots_quadratic",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "particle_speed_const_b",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "gcd_then_check_prime",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "sum_finite_k2",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "box_volume_sample",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "gcd_primality_check",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q16_057623",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "integral_x_squared",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "sum_k_squared",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "combinations_ncr",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q16_000771",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "quadratic_minus_minus",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "derivative_second_at_point",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "derivative_first_at_point",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "differentiate_twice_at",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "differentiate_once",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "arithmetic_nth_term",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "derivative_third_at_point",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "lcm_check",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "quadratic_plus_minus",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "determine_second_derivative",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q16_082135",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "derivative_g_at_point",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q16_067981",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "machine_volume",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "machine_area",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "calculate_rectangle_area",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "position_speed_kinematics",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "solve_linear_find_x",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "differentiate_polynomial_at",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q16_029695",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "gcd_then_is_prime",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q16_057623",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "choose_r_from_n",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "third_derivative",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "first_derivative",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "fourth_derivative",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "solve_linear_ax_minus_b",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "kinetic_energy_half_mv_squared",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "force_from_mass_acceleration",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "mass_from_density_volume",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "power_voltage_times_current",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "potential_energy_mgh",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q16_038179",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "charge_from_current_time",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "integral_x_squared_0_to_n",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q16_090672",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "sum_k_squared_1_to_n",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q16_090672",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "kinetic_vs_potential_energy",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q16_087838",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "rectangular_area_calculate",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "circuit_voltage_current_power",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "profit_totals_variant",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "mass_density_volume",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "simple_interest_on_principal",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "profit_if_revenue_cost",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "profit_margin_percent_from_revenue",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "clv_machine_arpu_lifetime",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "simple_interest_dollars",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "compute_profit_revenue_cost",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "profit_given_revenue_costs",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "clv_product_line_arpu_months",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "breakeven_business_fixed_price_var",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "profit_line_fixed_price_var_breakeven",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "profit_revenue_minus_cost_b",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "profit_revenue_minus_cost_c",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "profit_revenue_minus_cost_d",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "profit_revenue_is_variant",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "profit_if_revenue_variant",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "profit_business_variant",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "simple_interest_compute_variant",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "simple_interest_what_variant",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "hour_to_minute_equals",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "convert_mile_to_km",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q16_006332",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "convert_km_to_m",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q16_020046",
+     "ok": false
+    }
+   ]
+  }
+ ]
+}

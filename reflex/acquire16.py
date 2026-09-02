@@ -191,11 +191,15 @@ def gauntlet(candidates, probation, grade_fn, min_serves=3,
 
 def apply_library(text, library):
     """Arm evaluation: first admitted reflex that serves, wins.
-    Returns gateway-style dict or None."""
+    Returns gateway-style dict or None. Compiled patterns are cached
+    on the candidate dict (admitted reflexes are long-lived)."""
     for cand in library:
-        rx, why = _compile(cand)
+        rx = cand.get("_rx")
         if rx is None:
-            continue
+            rx, why = _compile(cand)
+            if rx is None:
+                continue
+            cand["_rx"] = rx
         out = try_reflex(cand, rx, text)
         if out is not None:
             val, leaf, _ops, cert = out

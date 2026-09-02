@@ -73,6 +73,11 @@ def main():
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--arm", default="baseline")
     ap.add_argument("--tag", default="")
+    ap.add_argument("--lib", default=None,
+                    help="comma-separated reflex library files "
+                         "(results/v16/reflexlib_*.json); the arm "
+                         "tries them only on items the base gateway "
+                         "ESCALATED, so no base serve can be shadowed")
     a = ap.parse_args()
 
     src = (Path(a.data) / a.file) if a.file else \
@@ -84,6 +89,13 @@ def main():
         items = items[:a.limit]
 
     from reflex.gateway16 import ask16
+
+    library = []
+    if a.lib:
+        from reflex import acquire16
+        for fp in a.lib.split(","):
+            library.extend(json.loads(
+                Path(fp.strip()).read_text(encoding="utf-8")))
 
     st = Counter()
     by_depth = defaultdict(Counter)
@@ -105,6 +117,14 @@ def main():
                  "path": "engine-error",
                  "reason": "%s: %s" % (type(exc).__name__,
                                        str(exc)[:120])}
+        if library and r["status"] == "ESCALATED":
+            try:
+                hit = acquire16.apply_library(it["text"], library)
+            except Exception:               # noqa: BLE001
+                hit = None
+            if hit is not None:
+                st["reflex_served"] += 1
+                r = hit
         served = r["status"] == "SERVED"
         rec = {"id": it["id"], "status": r["status"],
                "path": r.get("path"), "leaf": r.get("leaf"),
@@ -172,6 +192,7 @@ def main():
         "SAFETY2_distractor_served": st["SAFETY2_SERVED"],
         "escalated": st["escalated"], "abstained": st["abstained"],
         "engine_errors": st["engine_error"],
+        "reflex_served": st["reflex_served"],
         "ms_per_query": round(1000 * wall / n, 3) if n else None,
         "model_calls": 0,
         "by_depth": {k: dict(v) for k, v in sorted(by_depth.items())},

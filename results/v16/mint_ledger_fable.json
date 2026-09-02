@@ -1,0 +1,149 @@
+{
+ "ledger": {
+  "proposed": 102,
+  "g1_killed": 0,
+  "g2_killed": 9,
+  "g3_inert": 22,
+  "g3_memorize": 0,
+  "g3_wrong": 1,
+  "admitted": 70,
+  "model": "fable",
+  "offered": 1500
+ },
+ "kills": [
+  {
+   "name": "gcd_is_prime",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "rect_area_of_rectangle",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "roots_of_quadratic_equation",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "second_derivative_of_fx_at",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "first_derivative_of_fx_at",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "eval_first_derivative_at",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "gcd_is_prime",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "rect_area_given_eq",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "ncr_ways_selected",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "eval_first_derivative_at",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "eval_second_derivative_at",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "eval_third_derivative_at",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "for_fx_first_derivative_at",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "for_fx_second_derivative_at",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "for_fx_third_derivative_at",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "differentiate_function_plain",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "arithmetic_seq_nth_term",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "rect_area_calc_phrase",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "gcd_pair_is_prime",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "ncr_ways_chosen_from",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "first_derivative_of",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "second_derivative_of",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "third_derivative_of",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "fourth_derivative_of",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "charge_current_time",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "force_mass_acceleration",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "potential_energy_mass_height",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q16_038179",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "profit_revenue_totals_costs_sum",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "profit_entity_has_revenue_cost",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "simple_interest_on_principal_over",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "simple_interest_accrues_for",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "how_many_minute_is_hour",
+   "why": "g3: inert (1 serves)"
+  }
+ ]
+}
