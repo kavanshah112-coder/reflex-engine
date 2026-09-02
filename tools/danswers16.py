@@ -94,8 +94,9 @@ def prep():
 
 
 def _grade(item, answer_text):
-    import v16_run as RUN
     import re
+
+    import gold_independent as W
     gt = item.get("gold_type")
     s = str(answer_text).strip()
     if gt == "bool":
@@ -103,6 +104,22 @@ def _grade(item, answer_text):
         val = True if re.match(r"^(yes|true)\b", low) else \
             False if re.match(r"^(no|false)\b", low) else None
         return val is not None and val == bool(item["gold"])
+    if gt == "choice":
+        # gold is a label ("sum", "8^5", "kinetic"); accept an answer
+        # that names it (case-insensitive, ^ tolerated)
+        g = str(item["gold"]).lower().replace("**", "^")
+        low = s.lower().replace("**", "^")
+        return g in low
+    if gt == "expr":
+        # grade the expression claim through the item's own witness
+        try:
+            from reflex.sciparse16 import normalise_expr
+            claim = normalise_expr(s.replace("+ C", "").replace("+C",
+                                                                ""))
+            ok, _ = W.run_check(dict(item["witness"]), claim)
+            return bool(ok)
+        except Exception:       # noqa: BLE001 -- unparseable = wrong
+            return False
     m = re.search(r"-?\d[\d,]*(?:\.\d+)?(?:e-?\d+)?", s.replace(",", ""))
     if not m:
         return False
