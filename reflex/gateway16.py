@@ -124,6 +124,43 @@ def _requested_unit(text):
     return _UNIT_WORDS[m.group(1).lower()] if m else None
 
 
+_VALUE_NUM = re.compile(
+    r"(?<![\^/\w])(-?\d+(?:\.\d+)?)(?!\s*(?:st|nd|rd|th)\b)")
+
+
+def _stated_values(text):
+    """Numbers stated as quantities in the text, with unit-exponent
+    digits (m/s^2, m^3) excluded by the lookbehind."""
+    return [float(x) for x in _VALUE_NUM.findall(text)]
+
+
+def _unbound_stated_quantity(text, rec):
+    """A number the text states that no CERTIFIED/DERIVED fact carries
+    means the parse is INCOMPLETE -- the serve about to happen ignored
+    a stated quantity (dev finding 2026-09-03: unparsed acceleration
+    left mass alone in state and weight m*g was served as 'force').
+    An incomplete read never serves. Returns the orphan value or
+    None."""
+    st = rec.get("_state")
+    if st is None:
+        return None
+    bound = set()
+    for f in st.facts:
+        # only a CERTIFIED/DERIVED fact counts as read: a QUARANTINED
+        # fact holding a stated value means the engine SAW the
+        # quantity and decided not to trust it -- serving a different
+        # derivation while that fact sits quarantined answers a
+        # different question than the one asked (dev finding: accel
+        # QUARANTINED, weight m*g served as 'force').
+        if f.get("value") is not None and \
+                f.get("status") in ("CERTIFIED", "DERIVED"):
+            bound.add(round(float(f["value"]), 6))
+    for v in _stated_values(text):
+        if round(v, 6) not in bound:
+            return v
+    return None
+
+
 def _leaf_for_tierA(rec):
     """Taxonomy address for a Tier A serve, from evidence:
     output concept -> candidate caps -> input-presence filter.
@@ -193,6 +230,13 @@ def ask16(text, qid=None):
             return {"status": ESCALATED, "value": None,
                     "path": "tierA-guarded",
                     "reason": "choice ask, numeric serve refused",
+                    "ms": (time.perf_counter() - t0) * 1e3}
+        orphan = _unbound_stated_quantity(text, rec)
+        if orphan is not None:
+            return {"status": ESCALATED, "value": None,
+                    "path": "tierA-guarded",
+                    "reason": "stated quantity %g not bound by the "
+                              "parse: incomplete read" % orphan,
                     "ms": (time.perf_counter() - t0) * 1e3}
         info = (rec.get("_info") or {})
         concept = info.get("target_concept")

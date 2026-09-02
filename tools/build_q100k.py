@@ -205,14 +205,14 @@ def gen_tierA(rng, cap):
         v = float(_fmt(rng.uniform(lo, hi), nd))
         env[name] = v
         noun, unit = NOUN[kind]
+        # B28: the first build emitted "a acceleration" (dead article
+        # logic); the broken article broke the engine's fact parse on
+        # a slice of items and surfaced the unbound-quantity hazard.
+        art = "an" if noun[0] in "aeiou" else "a"
         parts.append("%s %s %s" % (
-            {"a": "an"}.get(noun[0], "a") if False else "a",
-            noun, "of %s %s" % (_fmt(v, nd), unit) if unit
+            art, noun, "of %s %s" % (_fmt(v, nd), unit) if unit
             else "of %s" % _fmt(v, nd)))
-    # cleaner fact join: "a mass of 12 kg, an acceleration of 3 m/s^2"
-    facts = ", ".join(p.replace("a %s of" % NOUN[k[1]][0],
-                                "a %s of" % NOUN[k[1]][0])
-                      for p, k in zip(parts, inputs))
+    facts = ", ".join(parts)
     gold = float(W.evaluate(formula, env))
     tmpl = rng.choice(TIER_A_OPENERS)
     text = tmpl.format(sys=rng.choice(SYSTEMS), facts=facts,
