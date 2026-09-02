@@ -5,16 +5,16 @@
  "in_domain": 400,
  "distractors": 0,
  "served": 134,
- "correct": 128,
- "WRONG": 6,
+ "correct": 134,
+ "WRONG": 0,
  "coverage_in_domain": 0.335,
- "wrong_fire": 0.04478,
+ "wrong_fire": 0.0,
  "SAFETY1_no_address": 0,
  "SAFETY2_distractor_served": 0,
  "escalated": 217,
  "abstained": 49,
  "engine_errors": 0,
- "ms_per_query": 7.906,
+ "ms_per_query": 7.836,
  "model_calls": 0,
  "by_depth": {
   "d1": {
@@ -31,9 +31,8 @@
   },
   "d3": {
    "served": 21,
-   "correct": 15,
+   "correct": 21,
    "escalated": 12,
-   "wrong": 6,
    "abstained": 2
   }
  },
@@ -41,9 +40,8 @@
   "foreign": {
    "escalated": 217,
    "served": 134,
-   "correct": 128,
-   "abstained": 49,
-   "wrong": 6
+   "correct": 134,
+   "abstained": 49
   }
  }
 }

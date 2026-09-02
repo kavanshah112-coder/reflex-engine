@@ -58,8 +58,10 @@ def _compile(cand):
     op = task.get("op")
     if op not in taxonomy16.OP_LEAF:
         return None, "g1: unknown op %r" % op
-    refs = [v[1:] for v in task.values()
-            if isinstance(v, str) and v.startswith("$")]
+    refs = []
+    for v in task.values():
+        if isinstance(v, str):
+            refs.extend(re.findall(r"\$([A-Za-z_]\w*)", v))
     if not refs:
         return None, "g1: constant task (memorization class, banned)"
     missing = [r for r in refs if r not in rx.groupindex]
@@ -69,21 +71,37 @@ def _compile(cand):
 
 
 def _build_task(cand, rx, text):
+    from . import sciparse16
     m = rx.search(text)
     if not m or m.start() > 12:
         return None
     task = {}
     for k, v in cand["task"].items():
-        if isinstance(v, str) and v.startswith("$"):
-            g = m.group(v[1:])
-            if g is None:
+        if isinstance(v, str) and "$" in v:
+            # template interpolation: every $group is replaced by its
+            # captured text ("($p/100)*($n)" builds an expression from
+            # two captures). A missing capture kills the match.
+            bad = []
+
+            def sub(mm):
+                g = m.group(mm.group(1))
+                if g is None:
+                    bad.append(mm.group(1))
+                    return ""
+                return g.strip()
+
+            s = re.sub(r"\$([A-Za-z_]\w*)", sub, v)
+            if bad:
                 return None
-            g = g.strip()
-            try:
-                task[k] = float(g) if re.fullmatch(
-                    r"-?\d+(?:\.\d+)?", g) else g
-            except ValueError:
-                task[k] = g
+            s = s.strip()
+            if re.fullmatch(r"-?\d+(?:\.\d+)?", s):
+                task[k] = float(s)
+            elif k in ("expr", "lhs", "rhs", "claimed_expr"):
+                # captured math arrives in human notation (^, implicit
+                # multiplication); the engine grammar wants ** and *.
+                task[k] = sciparse16.normalise_expr(s)
+            else:
+                task[k] = s
         else:
             task[k] = v
     return task
