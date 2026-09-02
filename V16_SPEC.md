@@ -2,9 +2,10 @@
 
 ## Re-scoped and scaled: a certified calculator with a grown, indexed reflex library, in front of an LLM, with a verifier on the rest
 
-**STATUS: DRAFT v3 for review. Freezes as tag `v1.6-plan`.**
-§7–§10 never change after the first sealed run. §11 lists the decisions
-needed before freezing.
+**STATUS: FROZEN 2026-09-02, tag `v1.6-plan` @ d098588 (user: "freeze
+the spec and check previous version are freezed and then start").**
+§7–§10 never change after the first sealed run. The seven §11 decisions
+are RESOLVED in the AMENDMENT at the end of this file.
 
 Built on V0.1–V1.5. No prior version, tag, snapshot, dataset, report or
 log is modified. The full arc protocol applies unchanged: read
@@ -530,6 +531,44 @@ library can be grown from traffic and indexed to an address, and this
 version measures — at 100k scale, four model scales, and four depth
 rungs — how much of the honestly-phrased domain that covers, how safely
 the library grows, and where complexity ends it.**
+
+---
+
+## AMENDMENT — §11 decisions RESOLVED at freeze (2026-09-02)
+
+Resolved at the user's freeze instruction; recorded before any V1.6
+code ran on data.
+
+1. **Coverage bar: 40%** on S-SCI-sealed, as proposed.
+2. **Wrong-fire gate: 0.5%** on served answers, as proposed; the 2%
+   historical gate is a secondary report.
+3. **Taxonomy granularity: the tree is frozen at 47 leaves** (2–4
+   levels; committed `taxonomy.json`, generator
+   `tools/gen_taxonomy16.py --check` verifies byte-stability), leaner
+   than the ~120–180 sketch because every leaf must be separately
+   reportable at Q-100K scale. 20 leaves are Tier A-executed, 27 are
+   symcore16-executed. All 58 existing capabilities map to Tier A
+   leaves only (asserted by the generator). Deeper splits after freeze
+   are reporting views, never admission targets.
+4. **Q-100K: 60k ACQ / 10k DEV / 30k SEAL**, depth mix 40/30/20/10,
+   ~5% narrative distractors per split, ~3k foreign-phrased overlay,
+   as proposed.
+5. **Minting cap: 1,500 offers per model** (haiku, sonnet, opus,
+   fable), as proposed.
+6. **Verifier battery: the 2 proven checks + the 6 draft-v1
+   candidates**, each against the zero-false-flag admission rule.
+7. **Model matrix: haiku, sonnet, opus, fable via isolated bridge —
+   and no local model anywhere.** User direction (2026-09-02): "in
+   this exp we are not using ollama, only sonnet haiku opus and
+   fable." Consequences, frozen: no new energy measurement exists in
+   V1.6 (B7 — bridge tokens never ground energy claims); the energy
+   number is the identity's projection from measured `s` using the
+   V1.2/V1.4 metered constants, labelled as a projection; the two
+   ollama-adapter tests are recorded N/A in W0_V16.md, not modified.
+
+Process rule added by W0 (recorded in W0_V16.md): sealed V1.6 datasets
+are committed with `.gitattributes -text` and hashed over raw bytes,
+closing the CRLF ambiguity found while re-verifying V1.5's seal.
 
 The numbers keep their registers separate: Q-100K's own-register
 coverage is the *map* of what the library can do; S-SCI-sealed's

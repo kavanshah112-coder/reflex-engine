@@ -1,0 +1,305 @@
+{
+ "version": "v1.6-plan",
+ "tree": {
+  "mathematics": {
+   "arithmetic": {
+    "integer_rational_ops": {
+     "executor": "tierA"
+    },
+    "percentages_ratios": {
+     "executor": "tierA"
+    },
+    "expression_evaluation": {
+     "executor": "symcore16"
+    }
+   },
+   "algebra": {
+    "linear_solve": {
+     "executor": "symcore16"
+    },
+    "quadratic_polynomial_solve": {
+     "executor": "symcore16"
+    },
+    "rearrangement_substitution": {
+     "executor": "symcore16"
+    }
+   },
+   "calculus": {
+    "differentiation": {
+     "first_derivative": {
+      "executor": "symcore16"
+     },
+     "second_derivative": {
+      "executor": "symcore16"
+     },
+     "higher_order": {
+      "executor": "symcore16"
+     },
+     "evaluate_at_point": {
+      "executor": "symcore16"
+     }
+    },
+    "integration": {
+     "indefinite": {
+      "executor": "symcore16"
+     },
+     "definite": {
+      "executor": "symcore16"
+     }
+    },
+    "limits": {
+     "finite_point": {
+      "executor": "symcore16"
+     },
+     "at_infinity": {
+      "executor": "symcore16"
+     }
+    }
+   },
+   "geometry_mensuration": {
+    "area_perimeter": {
+     "executor": "tierA"
+    },
+    "volume_surface": {
+     "executor": "tierA"
+    }
+   },
+   "trigonometry": {
+    "evaluation": {
+     "executor": "symcore16"
+    },
+    "identities_simplify": {
+     "executor": "symcore16"
+    }
+   },
+   "sequences_series": {
+    "arithmetic_geometric": {
+     "executor": "symcore16"
+    },
+    "finite_sum": {
+     "executor": "symcore16"
+    }
+   },
+   "number_theory": {
+    "gcd_lcm": {
+     "executor": "symcore16"
+    },
+    "divisibility_primes": {
+     "executor": "symcore16"
+    }
+   },
+   "combinatorics_probability": {
+    "permutations_combinations": {
+     "executor": "symcore16"
+    },
+    "basic_probability": {
+     "executor": "symcore16"
+    }
+   },
+   "statistics": {
+    "descriptive": {
+     "executor": "tierA"
+    },
+    "standardized_scores": {
+     "executor": "tierA"
+    }
+   }
+  },
+  "physics": {
+   "mechanics": {
+    "dynamics_forces": {
+     "executor": "tierA"
+    },
+    "energy_work": {
+     "executor": "tierA"
+    },
+    "mass_density_weight": {
+     "executor": "tierA"
+    },
+    "kinematics": {
+     "executor": "symcore16"
+    }
+   },
+   "electricity": {
+    "dc_circuits": {
+     "executor": "tierA"
+    },
+    "electrical_energy_power": {
+     "executor": "tierA"
+    }
+   },
+   "thermodynamics": {
+    "heat_temperature": {
+     "executor": "tierA"
+    },
+    "engines_efficiency": {
+     "executor": "tierA"
+    }
+   },
+   "waves_optics": {
+    "wave_relations": {
+     "executor": "symcore16"
+    }
+   }
+  },
+  "chemistry_quantitative": {
+   "solution_stoichiometry": {
+    "executor": "tierA"
+   },
+   "gas_laws": {
+    "executor": "symcore16"
+   }
+  },
+  "quantitative_finance": {
+   "cost_revenue": {
+    "executor": "tierA"
+   },
+   "profitability": {
+    "executor": "tierA"
+   },
+   "unit_economics": {
+    "executor": "tierA"
+   },
+   "interest_growth": {
+    "executor": "tierA"
+   }
+  },
+  "units_conversion": {
+   "simple_units": {
+    "executor": "tierA"
+   },
+   "compound_rates": {
+    "executor": "tierA"
+   }
+  },
+  "logic": {
+   "propositional_evaluation": {
+    "executor": "symcore16"
+   },
+   "set_operations": {
+    "executor": "symcore16"
+   },
+   "boolean_algebra": {
+    "executor": "symcore16"
+   },
+   "comparison_ordering": {
+    "executor": "symcore16"
+   }
+  }
+ },
+ "leaves": {
+  "chemistry_quantitative/gas_laws": "symcore16",
+  "chemistry_quantitative/solution_stoichiometry": "tierA",
+  "logic/boolean_algebra": "symcore16",
+  "logic/comparison_ordering": "symcore16",
+  "logic/propositional_evaluation": "symcore16",
+  "logic/set_operations": "symcore16",
+  "mathematics/algebra/linear_solve": "symcore16",
+  "mathematics/algebra/quadratic_polynomial_solve": "symcore16",
+  "mathematics/algebra/rearrangement_substitution": "symcore16",
+  "mathematics/arithmetic/expression_evaluation": "symcore16",
+  "mathematics/arithmetic/integer_rational_ops": "tierA",
+  "mathematics/arithmetic/percentages_ratios": "tierA",
+  "mathematics/calculus/differentiation/evaluate_at_point": "symcore16",
+  "mathematics/calculus/differentiation/first_derivative": "symcore16",
+  "mathematics/calculus/differentiation/higher_order": "symcore16",
+  "mathematics/calculus/differentiation/second_derivative": "symcore16",
+  "mathematics/calculus/integration/definite": "symcore16",
+  "mathematics/calculus/integration/indefinite": "symcore16",
+  "mathematics/calculus/limits/at_infinity": "symcore16",
+  "mathematics/calculus/limits/finite_point": "symcore16",
+  "mathematics/combinatorics_probability/basic_probability": "symcore16",
+  "mathematics/combinatorics_probability/permutations_combinations": "symcore16",
+  "mathematics/geometry_mensuration/area_perimeter": "tierA",
+  "mathematics/geometry_mensuration/volume_surface": "tierA",
+  "mathematics/number_theory/divisibility_primes": "symcore16",
+  "mathematics/number_theory/gcd_lcm": "symcore16",
+  "mathematics/sequences_series/arithmetic_geometric": "symcore16",
+  "mathematics/sequences_series/finite_sum": "symcore16",
+  "mathematics/statistics/descriptive": "tierA",
+  "mathematics/statistics/standardized_scores": "tierA",
+  "mathematics/trigonometry/evaluation": "symcore16",
+  "mathematics/trigonometry/identities_simplify": "symcore16",
+  "physics/electricity/dc_circuits": "tierA",
+  "physics/electricity/electrical_energy_power": "tierA",
+  "physics/mechanics/dynamics_forces": "tierA",
+  "physics/mechanics/energy_work": "tierA",
+  "physics/mechanics/kinematics": "symcore16",
+  "physics/mechanics/mass_density_weight": "tierA",
+  "physics/thermodynamics/engines_efficiency": "tierA",
+  "physics/thermodynamics/heat_temperature": "tierA",
+  "physics/waves_optics/wave_relations": "symcore16",
+  "quantitative_finance/cost_revenue": "tierA",
+  "quantitative_finance/interest_growth": "tierA",
+  "quantitative_finance/profitability": "tierA",
+  "quantitative_finance/unit_economics": "tierA",
+  "units_conversion/compound_rates": "tierA",
+  "units_conversion/simple_units": "tierA"
+ },
+ "capability_map": {
+  "annual_profit_calc": "quantitative_finance/profitability",
+  "area_rect": "mathematics/geometry_mensuration/area_perimeter",
+  "break_even": "quantitative_finance/cost_revenue",
+  "bred_final_amount": "quantitative_finance/interest_growth",
+  "bred_money": "quantitative_finance/interest_growth",
+  "cac_calc": "quantitative_finance/unit_economics",
+  "carnot_efficiency": "physics/thermodynamics/engines_efficiency",
+  "charge_from_it": "physics/electricity/dc_circuits",
+  "concentration_calc": "chemistry_quantitative/solution_stoichiometry",
+  "current_from_vr": "physics/electricity/dc_circuits",
+  "cycle_profit_from_margin": "quantitative_finance/profitability",
+  "dilute": "chemistry_quantitative/solution_stoichiometry",
+  "electrical_energy": "physics/electricity/electrical_energy_power",
+  "energy_conservation": "physics/mechanics/energy_work",
+  "energy_cost": "quantitative_finance/cost_revenue",
+  "force_from_mass_accel": "physics/mechanics/dynamics_forces",
+  "heat_to_temp_rise": "physics/thermodynamics/heat_temperature",
+  "height_from_energy": "physics/mechanics/energy_work",
+  "interest_from_final": "quantitative_finance/interest_growth",
+  "kinetic_energy": "physics/mechanics/energy_work",
+  "lifetime_from_churn": "quantitative_finance/unit_economics",
+  "ltv_cac_ratio": "quantitative_finance/unit_economics",
+  "ltv_calc": "quantitative_finance/unit_economics",
+  "margin_calc": "quantitative_finance/profitability",
+  "margin_net": "quantitative_finance/profitability",
+  "margin_of_unit": "quantitative_finance/profitability",
+  "mass_from_density": "physics/mechanics/mass_density_weight",
+  "material_cost": "quantitative_finance/cost_revenue",
+  "mean_calc": "mathematics/statistics/descriptive",
+  "moles_from_mass": "chemistry_quantitative/solution_stoichiometry",
+  "monthly_profit_calc": "quantitative_finance/profitability",
+  "net_profit9": "quantitative_finance/profitability",
+  "operating_cost": "quantitative_finance/cost_revenue",
+  "paint_cost": "quantitative_finance/cost_revenue",
+  "payback_calc": "quantitative_finance/profitability",
+  "per_unit_profit": "quantitative_finance/profitability",
+  "potential_energy": "physics/mechanics/energy_work",
+  "power_from_i2r": "physics/electricity/electrical_energy_power",
+  "power_from_vi": "physics/electricity/electrical_energy_power",
+  "profit_calc": "quantitative_finance/profitability",
+  "revenue_calc": "quantitative_finance/cost_revenue",
+  "revenue_sale": "quantitative_finance/cost_revenue",
+  "roi_calc": "quantitative_finance/profitability",
+  "simple_interest": "quantitative_finance/interest_growth",
+  "speed_from_energy": "physics/mechanics/energy_work",
+  "std_calc": "mathematics/statistics/descriptive",
+  "temp_rise_to_heat": "physics/thermodynamics/heat_temperature",
+  "total_cost": "quantitative_finance/cost_revenue",
+  "total_cost9": "quantitative_finance/cost_revenue",
+  "variable_cost": "quantitative_finance/cost_revenue",
+  "variance_calc": "mathematics/statistics/descriptive",
+  "voltage_from_ir": "physics/electricity/dc_circuits",
+  "volume_box": "mathematics/geometry_mensuration/volume_surface",
+  "weight_from_mass": "physics/mechanics/mass_density_weight",
+  "work_from_force": "physics/mechanics/energy_work",
+  "work_from_heat_eff": "physics/thermodynamics/engines_efficiency",
+  "yield_product": "chemistry_quantitative/solution_stoichiometry",
+  "z_calc": "mathematics/statistics/standardized_scores"
+ },
+ "counts": {
+  "leaves": 47,
+  "tierA_leaves": 20,
+  "symcore16_leaves": 27,
+  "capabilities_mapped": 58
+ }
+}

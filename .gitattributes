@@ -1,0 +1,4 @@
+# V1.6 W0 rule: sealed datasets are byte-frozen -- no EOL conversion,
+# seal hashes are computed over raw file bytes (see W0_V16.md).
+results/v16/data/** -text
+taxonomy.json -text
