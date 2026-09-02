@@ -158,6 +158,37 @@ def _d_slope(m):
             "var": m.group("v"), "order": 1, "at": float(m.group("pt"))}
 
 
+# --- chains (SPEC 6.3 depth-2: one certified step feeding another) ----
+@rule(r"\bdifferentiate\s+(?P<e>.+?)\s+twice\s+and\s+evaluate"
+      r"(?:\s+the\s+result)?\s+at\s+(?P<v>[a-z])\s*=\s*(?P<pt>%s)\s*$"
+      % _NUM)
+def _chain_d2_eval(m):
+    return {"op": "differentiate", "expr": _expr_group(m),
+            "var": m.group("v"), "order": 2, "at": float(m.group("pt"))}
+
+
+@rule(r"\bintegrate\s+(?P<e>.+?)\s+from\s+(?P<a>%s)\s+to\s+(?P<b>%s)\s*"
+      r",?\s*(?:and\s+)?then\s+multiply(?:\s+the\s+result)?\s+by\s+"
+      r"(?P<m>%s)\s*$" % (_NUM, _NUM, _NUM))
+def _chain_int_scale(m):
+    return {"op": "integrate_def", "expr": _expr_group(m), "var": "x",
+            "a": float(m.group("a")), "b": float(m.group("b")),
+            "scale": float(m.group("m"))}
+
+
+@rule(r"\bfind the (?P<which>larger|smaller) root of\s+"
+      r"(?P<l>[^=]+?)\s*=\s*(?P<r>[^=]+?)\s*,?\s*(?:and\s+)?then\s+"
+      r"compute\s+(?P<m>%s)\s+times\s+that\s+root\s+plus\s+(?P<a>%s)"
+      r"\s*$" % (_NUM, _NUM))
+def _chain_root_affine(m):
+    lhs = normalise_expr(m.group("l"))
+    rhs = normalise_expr(m.group("r"))
+    return {"op": "solve_poly", "lhs": lhs, "rhs": rhs, "var": "x",
+            "pick": m.group("which"),
+            "post_mul": float(m.group("m")),
+            "post_add": float(m.group("a"))}
+
+
 # --- integration -------------------------------------------------------
 @rule(r"\b(?:integrate|find the integral of|compute the integral of|"
       r"what is the integral of|evaluate the integral of)\s+(?P<e>.+?)\s+"
@@ -363,6 +394,12 @@ def _eval(m):
     return {"op": "evaluate", "expr": expr, "env": env}
 
 
+_BENIGN_PREFIX = re.compile(
+    r"(?:(?:please|now|then|hence|q\s*\d*[:.)]?|question[:.)]?|"
+    r"what is|what's|find|compute|calculate|evaluate|determine|"
+    r"work out|tell me|give me|can you|the)[\s,:]*)+", re.I)
+
+
 def parse(text):
     """-> structured task or None. Deterministic; never computes."""
     s = re.sub(r"\s+", " ", (text or "")).strip()
@@ -371,6 +408,14 @@ def parse(text):
         return None
     for pat, fn in _RULES:
         m = pat.search(s)
+        # the match must own the whole question: anything before it may
+        # only be a benign lead-in ("what is", "please", ...). A match
+        # inside a bigger ask ("Which is larger: the integral of ...")
+        # is a sub-question, and serving it answers the wrong ask
+        # (probe finding, 2026-09-02).
+        if m and m.start() > 0 and not _BENIGN_PREFIX.fullmatch(
+                s[:m.start()]):
+            m = None
         if m:
             try:
                 t = fn(m)

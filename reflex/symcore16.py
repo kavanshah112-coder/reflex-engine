@@ -157,6 +157,12 @@ def solve(task, sabotage=False):
                 val = _sabotage_num(val)
             wit = _gate("definite_integral", expr=task["expr"],
                         var=str(v), a=a, b=b, claimed=val)
+            scale = task.get("scale")
+            if scale is not None:
+                # chain step: exact scalar on a witness-passed value
+                val = float(scale) * val
+                wit = dict(wit)
+                wit["chain"] = "scaled by %g after witness" % scale
             return val, {"leaf": leaf, "op": op, "witness": wit}
 
         if op == "integrate_indef":
@@ -204,6 +210,20 @@ def solve(task, sabotage=False):
             wit = _gate("solution", lhs="(%s) - (%s)" % (task["lhs"],
                                                          task["rhs"]),
                         rhs="0", var=str(v), roots=sorted(real))
+            pick = task.get("pick")
+            if pick:
+                # chain step: choosing "the larger root" presumes the
+                # root set is COMPLETE; membership was witnessed above
+                # but completeness only holds when the count matches
+                # the degree, so anything but exactly 2 roots refuses.
+                if len(real) != 2:
+                    return _refuse("pick needs a complete 2-root set")
+                r0 = max(real) if pick == "larger" else min(real)
+                val = float(task.get("post_mul", 1)) * r0 + \
+                    float(task.get("post_add", 0))
+                wit = dict(wit)
+                wit["chain"] = "%s root -> affine after witness" % pick
+                return val, {"leaf": leaf, "op": op, "witness": wit}
             return sorted(real), {"leaf": leaf, "op": op, "witness": wit}
 
         if op == "evaluate":

@@ -19,6 +19,7 @@ No LLM adapter lives here. The escalated share is measured and, in
 model arms, answered through the isolated bridge -- never in-process.
 """
 import json
+import re
 import time
 from pathlib import Path
 
@@ -31,19 +32,96 @@ ABSTAINED = "ABSTAINED"
 HAZARD_REASONS = {"invariant_violation", "redundancy_mismatch",
                   "target_entity_ambiguous"}
 
+# A question that asks for a CHOICE is never answered with a quantity.
+# Probe finding (2026-09-02): "Which energy is larger ..." parsed into
+# facts and Tier A served a joule figure -- a number is the wrong TYPE
+# of answer for a comparison ask. (V1.2 ambiguity-guard lineage.)
+CHOICE_ASK = re.compile(
+    r"\bwhich (?:one |of .{0,40})?(?:is|has|was)\b|"
+    r"\bwhich (?:energy|value|quantity|number|option)\b", re.I)
+
+# "... in <unit>" at the end of an ask: the engine must honor the
+# requested unit or hand the query on. Probe finding: KE asked in kJ,
+# served in J -- right physics, wrong answer.
+_UNIT_WORDS = {
+    "kilojoules": "kJ", "kilojoule": "kJ", "kj": "kJ",
+    "joules": "J", "joule": "J",
+    "km/h": "km/h", "kph": "km/h", "kilometers per hour": "km/h",
+    "kilometres per hour": "km/h",
+    "m/s": "m/s", "meters per second": "m/s",
+    "metres per second": "m/s",
+    "minutes": "minute", "seconds": "second", "hours": "hour",
+    "grams": "g", "kilograms": "kg",
+    "centimeters": "cm", "centimetres": "cm",
+    "millilitres": "mL", "milliliters": "mL", "ml": "mL",
+    "newtons": "N", "watts": "W", "volts": "V", "amperes": "A",
+    "percent": "percent", "per cent": "percent", "percentage": "percent",
+}
+_REQ_UNIT = re.compile(
+    r"\bin\s+(%s)\s*[?.]?\s*$" % "|".join(
+        re.escape(w) for w in sorted(_UNIT_WORDS, key=len,
+                                     reverse=True)), re.I)
+
 _ENGINE = None
 _CAPS = None
+_KINDS = None
+_UREG = None
 
 
 def _boot():
-    global _ENGINE, _CAPS
+    global _ENGINE, _CAPS, _KINDS, _UREG
     if _ENGINE is None:
         from .engine import Engine
         _ENGINE = Engine()
-        _CAPS = json.loads(
-            (Path(__file__).resolve().parents[1] / "packs" / "physics" /
-             "caps.json").read_text(encoding="utf-8"))
+        root = Path(__file__).resolve().parents[1]
+        _CAPS = json.loads((root / "packs" / "physics" / "caps.json")
+                           .read_text(encoding="utf-8"))
+        _KINDS = json.loads((root / "packs" / "physics" / "kinds.json")
+                            .read_text(encoding="utf-8"))
+        try:
+            import pint
+            _UREG = pint.UnitRegistry()
+        except Exception:
+            _UREG = None
     return _ENGINE
+
+
+def _more_specific_asked(text, concept):
+    """True when the text contains a LONGER known concept noun that
+    embeds the served concept's noun ('profit margin' asked, 'profit'
+    served). Probe finding: the target namer matches the head noun and
+    the dimensional gate cannot see the difference -- the gsm1120
+    class. Evidence is noun tables, not the namer's opinion (B25)."""
+    kn = _KINDS.get(concept) or {}
+    own = [n.lower() for n in (kn.get("nouns") or [concept])]
+    low = text.lower()
+    for k, spec in _KINDS.items():
+        if k == concept:
+            continue
+        for noun in (spec.get("nouns") or []):
+            noun = noun.lower()
+            if noun not in low:
+                continue
+            for o in own:
+                # a longer known noun embedding the served noun
+                # ("profit margin" vs "profit"), or an adjacent
+                # compound of the two ("profit margin" built from
+                # nouns 'profit' + 'margin') both mean the ask is
+                # more specific than what was served.
+                if o in noun and o != noun:
+                    return noun
+                if re.search(r"\b%s\s+%s\b" % (re.escape(o),
+                                               re.escape(noun)), low) \
+                        or re.search(r"\b%s\s+%s\b" % (re.escape(noun),
+                                                       re.escape(o)),
+                                     low):
+                    return "%s+%s" % (o, noun)
+    return None
+
+
+def _requested_unit(text):
+    m = _REQ_UNIT.search(text)
+    return _UNIT_WORDS[m.group(1).lower()] if m else None
 
 
 def _leaf_for_tierA(rec):
@@ -85,48 +163,94 @@ def _leaf_for_tierA(rec):
         leaves if not lv else lv)
 
 
+def _try_symbolic(text, t0):
+    task = sciparse16.parse(text)
+    if task is None:
+        return None
+    leaf = taxonomy16.place_symbolic(task)
+    if leaf is None or taxonomy16.executor(leaf) != "symcore16":
+        return None
+    task = dict(task)
+    task["leaf"] = leaf
+    val, cert = symcore16.solve(task)
+    if val is not None:
+        return {"status": SERVED, "value": val, "path": "symcore16",
+                "leaf": leaf, "op": task["op"],
+                "witness": cert["witness"]["check"],
+                "ms": (time.perf_counter() - t0) * 1e3}
+    return {"status": ESCALATED, "value": None,
+            "path": "symcore16-refused", "reason": cert.get("why"),
+            "ms": (time.perf_counter() - t0) * 1e3}
+
+
 def ask16(text, qid=None):
     t0 = time.perf_counter()
     eng = _boot()
     rec = eng.run_query(text, qid or "q16")
     if rec.get("status") == "pm_answer":
+        # choice-ask guard: a comparison is never answered by a number
+        if CHOICE_ASK.search(text):
+            return {"status": ESCALATED, "value": None,
+                    "path": "tierA-guarded",
+                    "reason": "choice ask, numeric serve refused",
+                    "ms": (time.perf_counter() - t0) * 1e3}
+        info = (rec.get("_info") or {})
+        concept = info.get("target_concept")
+        spec = _more_specific_asked(text, concept) if concept else None
+        if spec:
+            return {"status": ESCALATED, "value": None,
+                    "path": "tierA-guarded",
+                    "reason": "more specific concept asked: %r" % spec,
+                    "ms": (time.perf_counter() - t0) * 1e3}
+        value = rec.get("numeric_value")
+        served_unit = (_KINDS.get(concept) or {}).get("unit") or ""
+        req = _requested_unit(text)
+        if req and _UREG is not None and req != served_unit:
+            # honor the requested unit deterministically or hand on
+            try:
+                value = float((value * _UREG(served_unit)).to(req)
+                              .magnitude)
+                served_unit = req
+            except Exception:
+                return {"status": ESCALATED, "value": None,
+                        "path": "tierA-guarded",
+                        "reason": "asked in %r, derived %r, no "
+                                  "deterministic conversion"
+                                  % (req, served_unit),
+                        "ms": (time.perf_counter() - t0) * 1e3}
+        elif req and _UREG is None and req != served_unit:
+            return {"status": ESCALATED, "value": None,
+                    "path": "tierA-guarded",
+                    "reason": "requested unit, converter unavailable",
+                    "ms": (time.perf_counter() - t0) * 1e3}
         leaf, basis = _leaf_for_tierA(rec)
-        out = {"status": SERVED, "value": rec.get("numeric_value"),
-               "path": "tierA", "leaf": leaf, "leaf_basis": basis,
-               "mode": rec.get("mode")}
-        out["ms"] = (time.perf_counter() - t0) * 1e3
-        return out
+        return {"status": SERVED, "value": value, "path": "tierA",
+                "leaf": leaf, "leaf_basis": basis, "unit": served_unit,
+                "mode": rec.get("mode"),
+                "ms": (time.perf_counter() - t0) * 1e3}
+
     reason = rec.get("abstain_reason") or "no_answer"
     hazards = []
     st = rec.get("_state")
     if st is not None:
         hazards = [f["fid"] for f in st.facts
                    if f["status"] in ("CONFLICTED", "AMBIGUOUS")]
+
+    # ---- symbolic path (before the hazard verdict sticks) ---------
+    # Tier A's fact reader sees "x = 3" in calculator register as
+    # conflicting facts (probe finding). The symbolic path has its own
+    # parser and witness gate; if it can take the query, its verdict
+    # outranks a hazard raised by misreading algebra as narrative.
+    sym = _try_symbolic(text, t0)
+    if sym is not None and sym["status"] == SERVED:
+        return sym
+
     if reason in HAZARD_REASONS or hazards:
         return {"status": ABSTAINED, "value": None, "path": "tierA",
                 "reason": reason, "hazards": len(hazards),
                 "ms": (time.perf_counter() - t0) * 1e3}
-
-    # ---- symbolic path -------------------------------------------
-    task = sciparse16.parse(text)
-    if task is not None:
-        leaf = taxonomy16.place_symbolic(task)
-        if leaf is not None and \
-                taxonomy16.executor(leaf) == "symcore16":
-            task = dict(task)
-            task["leaf"] = leaf
-            val, cert = symcore16.solve(task)
-            if val is not None:
-                return {"status": SERVED, "value": val,
-                        "path": "symcore16", "leaf": leaf,
-                        "op": task["op"],
-                        "witness": cert["witness"]["check"],
-                        "ms": (time.perf_counter() - t0) * 1e3}
-            return {"status": ESCALATED, "value": None,
-                    "path": "symcore16-refused",
-                    "reason": cert.get("why"),
-                    "ms": (time.perf_counter() - t0) * 1e3}
-
+    if sym is not None:
+        return sym
     return {"status": ESCALATED, "value": None, "path": "none",
             "reason": reason,
             "ms": (time.perf_counter() - t0) * 1e3}
