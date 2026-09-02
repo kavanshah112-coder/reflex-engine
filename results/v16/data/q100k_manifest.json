@@ -1,0 +1,19 @@
+{
+ "seed": 1600,
+ "n": 100000,
+ "programmatic": 93400,
+ "foreign_slots": 3000,
+ "distractors": 3600,
+ "generator_rejects": 9,
+ "depth_quota": {
+  "1": 38560,
+  "2": 28920,
+  "3": 19280,
+  "4": 9640
+ },
+ "splits": {
+  "acq": 60000,
+  "dev": 10000,
+  "seal": 30000
+ }
+}
