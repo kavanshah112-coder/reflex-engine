@@ -1,170 +1,197 @@
-# V1.6 SPEC — The Verifier
+# V1.6 SPEC — The Scientific Reflex Engine
 
-## A zero-false-positive deterministic check over LLM answers
+## Re-scoped: a certified calculator in front of an LLM, with a verifier on the rest
 
-**STATUS: DRAFT for review. Freezes as tag `v1.6-plan`.**
-§7–§10 never change after the first sealed run. §12 lists the decisions
+**STATUS: DRAFT v2 for review. Freezes as tag `v1.6-plan`.**
+§7–§10 never change after the first sealed run. §11 lists the decisions
 needed before freezing.
 
 Built on V0.1–V1.5. No prior version, tag, snapshot, dataset, report or
 log is modified.
 
----
-
-## 1. My V1.5 recommendation was wrong, and this spec starts by saying so
-
-V1.5 closed by recommending an "abstention pivot": the engine stops
-answering and instead reports what it cannot determine, on the argument
-that a system knowing its own limits is worth deploying in front of one
-that always answers.
-
-The strongest form of that claim is **triage** — if the deterministic
-verdict predicts when the LLM will be wrong, you route the risky
-queries to a bigger model and save money without the engine answering
-anything.
-
-**It is false.** Tested on 601 direct-LLM answers already on disk from
-V1.3, across sonnet, haiku and opus, on 300 sealed items:
-
-```
-packet verdict     LLM error rate      n
-COMPLETE                 11.1%         81
-everything else          12.5%        520
-                    LIFT 1.12x
-```
-
-Eleven-point-one against twelve-point-five is noise. **The verdict
-carries no usable signal about whether a model will fail.** The pivot
-as I framed it is dead, and it died before this spec was written rather
-than after a version was spent on it.
+**Draft v1 of this spec proposed a verifier-only version. The user
+redirected it** (2026-09-02): accept low coverage on human/narrative
+queries — at commercial scale even a modest in-domain share is a
+significant saving — stop fighting the parser bottleneck, and scope the
+engine solely to **scientific, arithmetic and logical reflex**, the
+regime where V1.0–V1.2 already proved the design. Draft v1's verifier
+evidence is preserved in §4 and becomes a component rather than the
+thesis.
 
 ---
 
-## 2. What survived the test, and is the actual thesis
+## 1. What the past three experiments taught, read together
 
-The same data answers a different question. Not *"will the model fail?"*
-asked **before**, but *"is this specific answer wrong?"* asked
-**after**.
+Three versions attacked narrative language from three directions and
+every one failed the same way:
 
-Three deterministic checks applied post-hoc to those 601 answers:
+| version | approach | sealed result |
+|---|---|---|
+| V1.3 | model parses → engine verifies | 209 certified, **1.44% wrong**; haiku 2.63% > 2% gate |
+| V1.4 | open relational substrate | served **0 of 240** — safe and inert |
+| V1.5 | cheap deterministic reader | 5 of 800 certified, **2 wrong = 40%** |
 
-| check | fired | on wrong answers | on correct answers | precision |
-|---|---|---|---|---|
-| `non_integer_count` | 5 | **5** | **0** | **100%** |
-| `negative` | 3 | **3** | **0** | **100%** |
-| `magnitude_implausible` | 16 | 4 | 12 | 25% |
+The bottleneck was named precisely in V1.5 §10: **composition**.
+Knowing a story contains 47, 41 and 20 is not knowing the answer is
+47−41+20, and guards that encode wrong compositions do not generalise
+(dev 0% → sealed 40%).
 
-The first two caught **8 of 74 LLM errors (10.8%) with zero false flags
-across 527 correct answers.** The third is noise and is excluded by the
-admission rule in §4.
+Meanwhile the in-regime record never broke once:
 
-**The thesis:** a deterministic verifier can catch a measurable
-fraction of LLM errors at zero cost to correct answers. It does not
-answer, does not predict, and does not need to understand the query —
-it needs only to notice that a specific answer cannot be right.
+| asset | evidence |
+|---|---|
+| zero wrong-fire | Tier A: **0.000 over 10,160 trap items, 65 seeds** (V1.2, formally certified) |
+| in-universe coverage | V1.1 100k commercial sim: **95.5% certified, 0 wrong** |
+| energy per serve | **21 mJ/certified serve** (V1.2, batch-metered; 0.85 ms/q) |
+| energy per LLM call | **64.9 GPU-J** (V1.4, metered locally, positive-controlled) |
+| in-regime ratio | ≈ **3,000× cheaper** per served query |
 
-This is also the one thing this arc has always been good at. Tier A has
-0.000 wrong-fire over 10,160 trap items across 65 seeds. Every version
-since V1.3 has failed trying to make that machinery *produce* answers.
-None has failed at *checking* them.
-
----
-
-## 3. Why this is commercially different from every prior version
-
-The economics invert. Previous versions had to answer a query to save
-anything, so their ceiling was coverage — and coverage was 0.63%
-(V1.5), 0% (V1.4), 69.7% at 1.44% wrong (V1.3).
-
-A verifier's economics are:
-
-```
-cost    = flag_rate x retry_cost      (only flagged answers are re-run)
-benefit = errors_caught
-```
-
-At the measured rates — 8 flags on 601 answers, all of them on wrong
-ones — the cost is **1.3% extra model calls** to catch **10.8% of
-errors**. There is no coverage requirement at all. The verifier is
-useful at *any* recall above zero, provided the false-flag rate stays
-at zero, because a flag that never costs a correct answer is free.
-
-**The asymmetry is the whole product.** A false flag wastes one retry.
-A missed error reaches the user. The design target is therefore not
-recall-optimal; it is recall-maximal *subject to zero false flags*.
+**The conclusion this version acts on:** the failures were never in the
+engine's regime; they were in trying to drag narrative language *into*
+that regime. V1.6 stops doing that. Narrative word problems are
+declared **out of scope by design** — the engine's job on them is to
+escalate, which every version since V1.2 has proven it does safely.
 
 ---
 
-## 4. The admission rule (the core discipline)
+## 2. Thesis
 
-> **A check is admitted only if it fires zero times on correct answers
-> in the dev set, and it is re-measured on sealed data. Any check with a
-> non-zero false-flag rate is reported and excluded.**
+> Deployed as a front-end for **scientific, arithmetic and logical**
+> queries, the engine serves the in-domain share with certified
+> zero-wrong-fire arithmetic at ~1/3,000 the energy of a model call,
+> escalates everything else untouched, and a deterministic verifier
+> catches a measurable fraction of LLM errors on the escalated share at
+> zero cost to correct answers.
 
-`magnitude_implausible` is the worked example: 25% precision, 12 false
-flags, excluded. It would have added 4 caught errors and cost 12 correct
-answers, and under §3's asymmetry that is a bad trade at any recall.
+The commercial identity, continuous with V1.5's:
 
-Every check additionally needs a **positive control** — a case it MUST
-fire on — running beside the case it must not. Six instances across
-V1.3–V1.4 of a check that could not go red (B8, B16, B19, B20, B22,
-B24), and one instrument that read zero and reported it as a result.
+```
+E_system ≈ (1 − s) × E_llm  +  s × E_engine        s = served share
+saving   ≈ s × (1 − 0.021/64.9)  ≈  s
+```
+
+**System energy saving ≈ the served in-domain share.** Low coverage on
+*human* queries is accepted: at commercial scale a workload that is 20%
+in-domain saves ~20% of the whole bill, and the served answers carry a
+certificate the LLM's answers never do. There is no coverage bar on
+out-of-domain traffic at all — its bar is safe escalation.
 
 ---
 
-## 5. Check inventory
+## 3. What is honestly unknown, and is the version's core question
 
-Existing, already built and measured:
+V1.1 closed the generator universe: parse coverage 1.0000 over a 180k
+sweep, **of queries the project's own generator authored**. V1.2's
+first contact with foreign text (GSM8K stories) collapsed to 519/520
+abstained. Between those two points nothing has ever been measured:
 
-- `non_integer_count` — a non-integer answer under an integral target
-  kind. V1.3 check 8. **100% precision on 601 answers.**
-- `negative` — a negative count. **100% precision.**
+> **H1. What fraction of scientific/arithmetic/logical queries phrased
+> by someone else — in calculator register, not story register — does
+> the engine serve?**
 
-Proposed for V1.6, each to be measured against the §4 rule:
+That number is currently unknown between roughly 0% and 95%. Every
+threshold in §9 hangs on it, and it is the honest risk: "the parser
+covers its own grammar" and "the parser covers the domain" are
+different claims, and only the second is worth money.
 
-- `not_in_text` — an answer that is neither a stated quantity nor
-  derivable from stated quantities by one operation (the round-trip
-  idea applied to an answer rather than a plan).
-- `unit_mismatch` — the answer's implied unit conflicts with the target
-  span's unit (V1.5 has both).
-- `conflict_present` — the packet found a genuine same-key contradiction
-  (V1.5 B26 rule). Suggestive at 25% LLM error on n=8; underpowered and
-  must be re-measured.
-- `superlative_arithmetic` — an optimisation/GCD question answered with
-  a value that is not a divisor/multiple of the inputs.
-- `exceeds_total` — a "remainder" answer larger than the largest stated
-  quantity.
-- `impossible_precision` — a whole-number domain answered to decimals.
-
-Each is deterministic, needs no model, and costs microseconds.
+The second unknown is the routing hazard, with a named precedent:
+V1.2's **gsm1120** was dimensionally certified and semantically wrong —
+a story problem that *looked* like physics to the gates. The re-scope
+makes this the version's safety question: out-of-domain traffic must
+be escalated, not certified-wrong.
 
 ---
 
-## 6. Architecture
+## 4. The verifier (carried from draft v1 — evidence already collected)
+
+The strongest form of my V1.5 "abstention pivot" was **triage**:
+predict LLM failure from the packet verdict and route ahead of time.
+Tested on 601 direct-LLM answers already on disk (V1.3, three models,
+300 sealed items): COMPLETE 11.1% error vs 12.5% for everything else —
+**lift 1.12×, no usable signal. Triage is falsified** and recorded as
+such.
+
+What survived is the post-hoc form — *"is this specific answer
+wrong?"* asked after:
+
+| check | fired | on wrong | on correct |
+|---|---|---|---|
+| `non_integer_count` | 5 | **5** | **0** |
+| `negative` | 3 | **3** | **0** |
+| `magnitude_implausible` | 16 | 4 | 12 → **excluded** |
+
+**8 of 74 LLM errors (10.8%) caught at zero false flags across 527
+correct answers** — a 1.3% retry bill. In the re-scoped architecture
+this is the natural check on the **escalated share**: the engine
+serves what it certifies, the LLM answers the rest, and the verifier
+flags LLM answers that cannot be right.
+
+**The admission rule (unchanged from draft v1):** a check is admitted
+only if it fires zero times on correct answers in dev, is re-measured
+sealed, and any check with a non-zero false-flag rate is reported and
+excluded. Every check and every instrument carries a positive control
+(six "green check that cannot go red" instances across V1.3–V1.4).
+
+---
+
+## 5. Architecture
 
 ```
-QUERY ──> LLM ──> ANSWER
-  │                 │
-  └──> PACKET ──────┤     nlpw10 + V1.5 packet, 6 ms, no model
-       (V1.5)       │
-                    v
-              VERIFIER (V1.6)
-                    │
-         ┌──────────┴──────────┐
-         │                     │
-      CLEAN                  FLAGGED
-         │                     │
-      deliver            retry / escalate
-                         / surface to user
+QUERY
+  |
+  v  gateway ask()                    (V1.0, unchanged semantics)
+  |
+  +-- parses + certifies  ------>  SERVED, certificate attached
+  |                                 (21 mJ, 0.85 ms)
+  |
+  +-- anything else  ---------->  ESCALATED to LLM, untouched
+                                        |
+                                        v
+                                  VERIFIER (V1.6, reflex/verify16.py)
+                                        |
+                                 CLEAN --+-- FLAGGED -> retry
 ```
 
-The verifier never rewrites an answer and never supplies one. It emits
-a flag with the check that fired and the span that justifies it, so a
-flag is auditable rather than a score.
+Reused without modification: the Tier A engine, gateway, packs,
+`nlpw10`/packet (for verifier features only), `kindderive`,
+`v5/energy.py`. New code: `reflex/verify16.py` plus its check battery,
+and the S-SCI dataset builder. **No new answering machinery is built —
+that is the point.**
 
-Reuses without modification: `nlpw10`, `reflex/packet.py`,
-`reflex/kindderive.py`, `reflex/relations.py`, `v5/energy.py`. New code
-is one module, `reflex/verify16.py`, plus its check battery.
+Invariants carried forward: UNKNOWN > WRONG; no producer-supplied
+value/type/operator enters certified state; Tier A untouched and
+re-verified as W0.
+
+---
+
+## 6. Datasets
+
+```
+S-SCI-dev     400 in-domain queries, foreign-phrased (see below).
+S-SCI-sealed  1,200 in-domain queries, same provenance, hashed,
+              run once.
+S-ROUTE       600 out-of-domain distractors: narrative word problems
+              (consumed corpora are legitimate here — the only claim
+              on them is ESCALATION, and their golds are irrelevant
+              to it) plus gsm1120-class lookalikes.
+D-answers     LLM answers on the escalated share, per model, via
+              isolated bridge — the verifier's sealed material.
+```
+
+**S-SCI provenance (the contamination-critical step):** bridge models
+author the *phrasings* around numerically pre-committed facts — each
+item's variable values and asked-for quantity are fixed first, the
+gold is computed by an **independent script (sympy/pint), never by
+engine code**, and the authoring models never see the parser, grammar,
+or any engine module (V1.4 B9 discipline: isolated directory, stub
+filters, tokens never estimated). This breaks both circularities:
+golds are not the engine grading itself, and phrasings are not the
+generator's own grammar echoed back.
+
+Domain definition, fixed before authoring: dimensional physics
+computation (the 77-kind/58-capability pack), unit conversion,
+arithmetic/expression evaluation, and deterministic logical evaluation.
+Narrative story problems are out-of-domain by definition.
 
 ---
 
@@ -172,41 +199,47 @@ is one module, `reflex/verify16.py`, plus its check battery.
 
 | | claim | prediction |
 |---|---|---|
-| V1 | a deterministic check suite catches ≥10% of LLM errors at a zero false-flag rate | **pass** — 10.8% already measured on dev |
-| V2 | the suite generalises: sealed false-flag rate stays at zero | **uncertain** — V1.5's guards held on dev and broke on sealed |
-| V3 | recall rises with suite size without breaking V2 | uncertain |
-| V4 | flagged answers are materially more likely to be wrong than base rate | pass |
-| V5 | a retry on flagged answers converts caught errors into correct answers | uncertain |
-| V6 | the verifier's cost is negligible against one model call | **pass** — 6 ms vs 64.9 J |
-| V7 | recall holds across model scale (llama, haiku, sonnet, opus) | uncertain — stronger models may fail differently |
-| V8 | the packet VERDICT does not predict LLM failure | **already FALSIFIED as a predictor — recorded, not re-tested** |
+| V1 | the engine serves a usable fraction of foreign-phrased in-domain queries | **unknown — the core question** |
+| V2 | wrong-fire on served S-SCI stays within the calculator gate (§9) | pass — the regime is Tier A's |
+| V3 | S-ROUTE narrative traffic is escalated, never certified-wrong | uncertain — gsm1120 precedent |
+| V4 | system energy saving ≈ served share (identity holds end-to-end, metered) | pass |
+| V5 | verifier catches ≥10% of LLM errors on escalated share at zero false flags, sealed | **uncertain — V1.5's guards broke dev→sealed** |
+| V6 | verifier recall holds across model scale (llama/haiku/sonnet/opus) | uncertain |
+| V7 | packet verdict does not predict LLM failure | **already falsified as predictor — recorded, not re-tested** |
 
 ---
 
 ## 8. Metrics (FROZEN)
 
-**Primary: recall of LLM errors at a zero false-flag rate.**
+**Primary: (a) served coverage and wrong-fire on S-SCI-sealed;
+(b) escalation rate on S-ROUTE; (c) verifier recall at zero false
+flags on D-answers.**
 
-Secondary: precision · per-check firing rate and precision · flag rate
-(the retry bill) · verifier latency and energy · recall by model · recall
-by error class · net accuracy after retry.
-
-Reported per check, never only in aggregate. A suite number hides which
-check is carrying it and which is dead weight.
+Secondary: metered J/query on a mixed workload vs the identity's
+prediction · per-check firing rate and precision, reported per check ·
+verifier flag rate (retry bill) · served latency · coverage by domain
+slice (physics / conversion / arithmetic / logic).
 
 ---
 
 ## 9. Thresholds (FROZEN)
 
 ```
-SAFETY     false-flag rate on sealed correct answers = 0.
-           A single false flag on a correct answer voids the check that
-           produced it. The suite is reported without it and re-run.
-RECALL     >= 10% of LLM errors caught on sealed data.
-COST       flag rate <= 5% of answers (the retry bill).
-POWER      no zero-false-flag claim without the Wilson upper bound
-           reported alongside; at n correct answers the upper bound on
-           a zero count is ~3/n, and that bound is the claim.
+SAFETY-1   wrong-fire on served S-SCI-sealed <= 0.5%.
+           (A calculator wrong 2% of the time is a bad calculator;
+            the historical 2% gate is demoted to a secondary report.)
+SAFETY-2   zero certified answers on S-ROUTE narrative items.
+           One certified-wrong routing = the gsm1120 class is open.
+COVERAGE   served share of S-SCI-sealed >= 40%.
+           (V1.1's 95.5% was the generator's own universe; 40% of
+            foreign phrasing is the pre-registered bar for "the domain,
+            not the grammar".)
+ENERGY     metered mixed-workload saving within 5pp of the identity's
+           prediction (all computation inside the boundary; positive
+           control on the meter before any run counts).
+VERIFIER   false-flag rate on sealed correct answers = 0 (a single
+           false flag voids that check); recall >= 10%; flag rate
+           <= 5%; every zero claim reported with its ~3/n Wilson bound.
 ```
 
 ---
@@ -215,67 +248,52 @@ POWER      no zero-false-flag claim without the Wilson upper bound
 
 ```
 F  Tier A regressed, or V1.3/V1.4/V1.5 stop reproducing.
-E  the suite false-flags on sealed correct answers and no
-   zero-false-flag subset reaches 10% recall.
-D  zero false flags but recall below 10%: real and too small to matter.
-C  works on weak models only; recall collapses on sonnet/opus.
-B  recall >= 10% at zero false flags on one model, not across scale.
-A  recall >= 10% at zero false flags across all four model scales,
-   flag rate <= 5%.
+E  SAFETY-1 or SAFETY-2 fails: the calculator is wrong in its own
+   regime, or narrative traffic gets certified.
+D  safe but empty: coverage < 10% — foreign phrasing misses the
+   grammar almost entirely, and the re-scope saves nothing.
+C  coverage 10–40%: real but below the bar; report the measured
+   commercial value honestly and stop there.
+B  coverage >= 40% and safety holds, but the verifier fails its
+   zero-false-flag bar sealed (system ships without it).
+A  coverage >= 40%, SAFETY-1+2 hold, energy within 5pp of identity,
+   verifier >= 10% recall at zero false flags on >= 2 model scales.
 ```
 
 ---
 
-## 11. Datasets
+## 11. Open decisions — needed before freezing
 
-```
-D-dev     the 601 V1.3 direct-LLM answers (300 sealed V1.3 items,
-          3 models). ALREADY ANALYSED for this purpose and therefore
-          CONTAMINATED -- dev only, never an evaluation result.
-D-sealed  fresh LLM answers on S3-sealed (800 items, V1.5 hash
-          3c1eed86...), collected per model through the bridge.
-          NOT YET COLLECTED and not inspected.
-S8        adversarial answers: correct answers engineered to look
-          suspect, to measure false flags where they are most likely.
-```
-
-**Corpus honesty:** the real-language pool is exhausted. 3,625 items
-total; V1.3–V1.5 consumed all but a handful. D-sealed reuses S3-sealed
-ITEMS but with **fresh model answers**, which is legitimate because the
-unit of evaluation is an answer, not an item — but the items' golds
-have been seen by this project, and that is recorded rather than
-glossed.
+1. **Coverage bar** — is 40% right for "foreign phrasing, own domain"?
+   Propose 40%: below it the commercial story needs a workload
+   argument the version cannot supply.
+2. **Wrong-fire gate on served answers** — propose 0.5% (calculator
+   standard) over the historical 2%.
+3. **S-SCI authoring models** — propose haiku + sonnet via bridge,
+   600 phrasings each; neither sees any engine artifact.
+4. **D-answers model matrix** — propose haiku + sonnet at full
+   escalated share, opus at 400, llama metered locally (the only arm
+   whose energy is claimed, per B7).
+5. **Verifier check budget** — the two proven checks plus the six
+   draft-v1 candidates measured against the admission rule, or the two
+   proven only? Propose: measure all, admit per rule.
 
 ---
 
-## 12. Open decisions — needed before freezing
+## 12. What this version honestly claims, and does not
 
-1. **Is zero false flags the right bar**, or should it be "≤0.5% with
-   the cost stated"? Zero is clean and may be unreachable at useful
-   recall.
-2. **Which models for D-sealed.** Full four-model matrix is ~3,200
-   bridge answers. Propose: haiku + sonnet at 800 each, opus at 400,
-   llama metered locally at 800.
-3. **Retry policy for V5** — same model, or escalate to a larger one?
-   The second is the commercially interesting version and costs more to
-   test.
-4. **Check budget** — admit all six proposed checks, or the three most
-   principled and measure the rest as candidates?
+It does not claim the engine reads language — three versions proved it
+does not, and this spec stops asking. It claims something narrower and
+older: **within its declared scientific/arithmetic/logical domain the
+engine is a certified, near-free calculator, and the version measures
+how much of the honestly-phrased domain that covers** — a number the
+arc has never produced, because V1.1 measured the grammar and V1.2
+measured stories, and the domain lies between.
 
----
-
-## 13. What this version is honestly worth
-
-It is a smaller claim than any version since V1.0. It does not answer
-questions, does not save energy by avoiding model calls, and does not
-make the model better. It catches some errors for free.
-
-That is worth doing precisely because it is the first claim in six
-versions that the measured evidence *supports before the work starts*
-rather than after it fails. V1.3 through V1.5 each began with a thesis
-that measurement dismantled. This one begins with a measurement that
-survived a falsification attempt aimed directly at it.
-
-The version's job is to find out whether it survives sealed data too —
-and V1.5's guards, which held at 0% on dev and broke to 40% on sealed,
-are the reason that is a real question rather than a formality.
+If coverage lands at 15%, the result is a 15% system energy saving
+with certificates, reported as exactly that — the user's framing:
+at commercial scale, a low share is still a significant number.
+If it lands near zero, rung D says so and the re-scope was wrong.
+Either way the question is finally the right shape: not "can the
+engine do what LLMs do?" but "how much of what the engine provably
+does shows up in real traffic?"
