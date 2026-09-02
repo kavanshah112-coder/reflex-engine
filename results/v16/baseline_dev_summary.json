@@ -1,0 +1,64 @@
+{
+ "arm": "baseline",
+ "split": "dev",
+ "n": 10000,
+ "in_domain": 9654,
+ "distractors": 346,
+ "served": 4540,
+ "correct": 4540,
+ "WRONG": 0,
+ "coverage_in_domain": 0.4703,
+ "wrong_fire": 0.0,
+ "SAFETY1_no_address": 0,
+ "SAFETY2_distractor_served": 0,
+ "escalated": 3785,
+ "abstained": 1675,
+ "engine_errors": 0,
+ "ms_per_query": 7.551,
+ "model_calls": 0,
+ "by_depth": {
+  "d1": {
+   "served": 2486,
+   "correct": 2486,
+   "escalated": 1068,
+   "abstained": 362
+  },
+  "d2": {
+   "served": 1446,
+   "correct": 1446,
+   "abstained": 801,
+   "escalated": 557
+  },
+  "d3": {
+   "escalated": 1372,
+   "served": 608,
+   "correct": 608
+  },
+  "d4": {
+   "escalated": 506,
+   "abstained": 448
+  },
+  "dist": {
+   "escalated": 282,
+   "abstained": 64
+  }
+ },
+ "by_register": {
+  "corpus": {
+   "escalated": 282,
+   "abstained": 64
+  },
+  "foreign_slot": {
+   "served": 142,
+   "correct": 142,
+   "abstained": 47,
+   "escalated": 105
+  },
+  "own": {
+   "served": 4398,
+   "correct": 4398,
+   "escalated": 3398,
+   "abstained": 1564
+  }
+ }
+}
