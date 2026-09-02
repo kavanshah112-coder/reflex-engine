@@ -96,13 +96,27 @@ def gauntlet(model):
     import v16_run as RUN
     from reflex import acquire16
     cands = []
-    for ci in range(5):
-        p = SCRATCH / ("candidates_%s_%d.json" % (model, ci))
-        if p.exists():
-            try:
-                cands.extend(json.loads(p.read_text(encoding="utf-8")))
-            except json.JSONDecodeError as e:
-                print("chunk %d unparseable: %s" % (ci, e))
+    if model == "all":
+        # M-all: the union of the four ADMITTED libraries, re-run
+        # through the same gauntlet so cross-model conflicts and
+        # order effects are caught rather than assumed away (SPEC 5.2)
+        for m in MODELS:
+            for c in json.loads(
+                    (HERE / "results" / "v16" /
+                     ("reflexlib_%s.json" % m))
+                    .read_text(encoding="utf-8")):
+                cands.append({"name": "%s:%s" % (m, c["name"]),
+                              "pattern": c["pattern"],
+                              "task": c["task"]})
+    else:
+        for ci in range(5):
+            p = SCRATCH / ("candidates_%s_%d.json" % (model, ci))
+            if p.exists():
+                try:
+                    cands.extend(json.loads(
+                        p.read_text(encoding="utf-8")))
+                except json.JSONDecodeError as e:
+                    print("chunk %d unparseable: %s" % (ci, e))
     items = {i["id"]: i for i in json.loads(
         (HERE / "results" / "v16" / "data" / "q100k_acq.json")
         .read_text(encoding="utf-8"))}
@@ -131,7 +145,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("cmd", choices=["prep", "gauntlet"])
     ap.add_argument("--cap", type=int, default=1500)
-    ap.add_argument("--model", default=None, choices=MODELS + [None])
+    ap.add_argument("--model", default=None,
+                    choices=MODELS + ["all", None])
     a = ap.parse_args()
     if a.cmd == "prep":
         prep(a.cap)

@@ -1,0 +1,209 @@
+{
+ "ledger": {
+  "proposed": 107,
+  "g1_killed": 0,
+  "g2_killed": 10,
+  "g3_inert": 31,
+  "g3_memorize": 0,
+  "g3_wrong": 3,
+  "admitted": 63,
+  "model": "sonnet",
+  "offered": 1500
+ },
+ "kills": [
+  {
+   "name": "logic_pqr_and_or_not",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "logic_p_and_not_q_when",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "logic_not_p_or_q_if",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "logic_not_p_or_q_determine",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "logic_p_or_not_q_query",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "second_derivative_given_fx",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "first_derivative_eval_fx",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "quadratic_roots_determine",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "rectangle_area_of_length_width",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "combinations_selected_from_set",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "combinations_chosen_from",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "gcd_is_prime",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "ncr_items_selected_from",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "volume_machine_lwh",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "area_machine_lw",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "area_calculate_rectangle_with",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "area_find_rectangle_whose",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "area_what_is_rectangle_of",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "area_given_length_width_equals",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "arithmetic_sequence_term",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "evaluate_second_derivative_function",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "determine_second_derivative_named",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "third_derivative_evaluated_named",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "first_derivative_value_named",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "differentiate_function_plain",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "combinations_chosen_from",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "derivative_third_fx",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "derivative_first_fx",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "derivative_second_fx",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "derivative_fourth_raw",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "kinetic_energy_phrase",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "potential_energy_mass_height",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "force_mass_acceleration",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "force_mass_accelerating_at",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "charge_current_time",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "density_volume_mass",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "profit_given_revenue_of",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "profit_if_revenue_is",
+   "why": "g3: inert (2 serves)"
+  },
+  {
+   "name": "simple_interest_what_is_on_principal",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "simple_interest_compute_on",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "simple_interest_accrues",
+   "why": "g3: inert (1 serves)"
+  },
+  {
+   "name": "conv_mile_to_km",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q16_006332",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "conv_kg_to_g",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q16_008628",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "conv_m_to_cm",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q16_026481",
+     "ok": false
+    }
+   ]
+  }
+ ]
+}

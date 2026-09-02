@@ -1,0 +1,852 @@
+[
+ {
+  "name": "chem_concentration",
+  "pattern": "(?:given )?(?:an? \\w+ has )?an? amount of solute of (?P<n>[\\d.]+)\\s*mol,?\\s*a volume of (?P<v>[\\d.]+)\\s*m\\^?3",
+  "task": {
+   "op": "evaluate",
+   "expr": "($n)/($v)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 22,
+   "distinct": 22
+  }
+ },
+ {
+  "name": "particle_speed_kmh",
+  "pattern": "a particle's position is s\\(t\\) = ?(?P<a>\\d+)t\\^2 ?\\+(?P<b>\\d+)t metres\\. find its speed at t = (?P<t>\\d+) seconds",
+  "task": {
+   "op": "evaluate",
+   "expr": "(2*($a)*($t)+($b))*3.6"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 270,
+   "distinct": 207
+  }
+ },
+ {
+  "name": "differentiate_twice_eval",
+  "pattern": "differentiate (?P<expr>.+?) twice and evaluate the result at x\\s*=\\s*(?P<at>-?[\\d.]+)",
+  "task": {
+   "op": "differentiate",
+   "expr": "$expr",
+   "var": "x",
+   "order": 2,
+   "at": "$at"
+  },
+  "leaf": "mathematics/calculus/differentiation/evaluate_at_point",
+  "probation": {
+   "serves": 6,
+   "distinct": 6
+  }
+ },
+ {
+  "name": "solve_for_x_colon",
+  "pattern": "solve for (?P<var>[a-zA-Z]): ?(?P<lhs>[^=]+)=\\s*(?P<rhs>-?[\\d.]+)",
+  "task": {
+   "op": "solve_linear",
+   "lhs": "$lhs",
+   "rhs": "$rhs",
+   "var": "$var"
+  },
+  "leaf": "mathematics/algebra/linear_solve",
+  "probation": {
+   "serves": 11,
+   "distinct": 11
+  }
+ },
+ {
+  "name": "find_x_such_that",
+  "pattern": "find (?P<var>[a-zA-Z]) such that (?P<lhs>[^=]+)=\\s*(?P<rhs>-?[\\d.]+)",
+  "task": {
+   "op": "solve_linear",
+   "lhs": "$lhs",
+   "rhs": "$rhs",
+   "var": "$var"
+  },
+  "leaf": "mathematics/algebra/linear_solve",
+  "probation": {
+   "serves": 7,
+   "distinct": 7
+  }
+ },
+ {
+  "name": "quadratic_solve_equation",
+  "pattern": "solve the equation (?P<lhs>[^=]+)=\\s*(?P<rhs>-?[\\d.]+)",
+  "task": {
+   "op": "solve_poly",
+   "lhs": "$lhs",
+   "rhs": "$rhs",
+   "var": "x"
+  },
+  "leaf": "mathematics/algebra/quadratic_polynomial_solve",
+  "probation": {
+   "serves": 3,
+   "distinct": 3
+  }
+ },
+ {
+  "name": "rectangle_area_stmt",
+  "pattern": "(?:given )?(?:an? \\w+ has )?a length of (?P<l>[\\d.]+)\\s*m,\\s*a width of (?P<w>[\\d.]+)\\s*m[,.]?\\s*(?:what is the area|compute the area|find the area)",
+  "task": {
+   "op": "evaluate",
+   "expr": "($l)*($w)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 29,
+   "distinct": 29
+  }
+ },
+ {
+  "name": "box_volume_stmt",
+  "pattern": "(?:given )?(?:an? \\w+ has )?a length of (?P<l>[\\d.]+)\\s*m,\\s*a width of (?P<w>[\\d.]+)\\s*m,\\s*a height of (?P<h>[\\d.]+)\\s*m[,.]?\\s*(?:what is the volume|compute the volume|find the volume)",
+  "task": {
+   "op": "evaluate",
+   "expr": "($l)*($w)*($h)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 34,
+   "distinct": 34
+  }
+ },
+ {
+  "name": "combinations_taken_at_a_time",
+  "pattern": "how many combinations of (?P<n>\\d+) items taken (?P<r>\\d+) at a time",
+  "task": {
+   "op": "ncr",
+   "n": "$n",
+   "r": "$r"
+  },
+  "leaf": "mathematics/combinatorics_probability/permutations_combinations",
+  "probation": {
+   "serves": 13,
+   "distinct": 13
+  }
+ },
+ {
+  "name": "geometric_sequence_term",
+  "pattern": "a geometric sequence starts at (?P<a>-?[\\d.]+) with ratio (?P<r>-?[\\d.]+)\\.? what is term (?P<n>\\d+)",
+  "task": {
+   "op": "evaluate",
+   "expr": "($a)*(($r))**(($n)-1)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 3,
+   "distinct": 3
+  }
+ },
+ {
+  "name": "particle_speed_kmh",
+  "pattern": "^a particle's position is (?:given by )?s\\(t\\)\\s*=\\s*(?P<a>-?\\d+(?:\\.\\d+)?)t\\^2\\s*\\+(?P<b>-?\\d+(?:\\.\\d+)?)t metres\\.\\s*(?:find|determine) its speed at t\\s*=\\s*(?P<t>-?\\d+(?:\\.\\d+)?) seconds",
+  "task": {
+   "op": "evaluate",
+   "expr": "(2*($a)*($t)+($b))*3.6"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 271,
+   "distinct": 207
+  }
+ },
+ {
+  "name": "ncr_combinations_taken",
+  "pattern": "^how many combinations of (?P<n>\\d+) items taken (?P<r>\\d+) at a time",
+  "task": {
+   "op": "ncr",
+   "n": "$n",
+   "r": "$r"
+  },
+  "leaf": "mathematics/combinatorics_probability/permutations_combinations",
+  "probation": {
+   "serves": 13,
+   "distinct": 13
+  }
+ },
+ {
+  "name": "volume_length_width_height",
+  "pattern": "^a length of (?P<l>\\d+(?:\\.\\d+)?) m,\\s*a width of (?P<w>\\d+(?:\\.\\d+)?) m,\\s*a height of (?P<h>\\d+(?:\\.\\d+)?) m\\.?\\s*(?:what is|compute) the volume",
+  "task": {
+   "op": "evaluate",
+   "expr": "($l)*($w)*($h)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 20,
+   "distinct": 20
+  }
+ },
+ {
+  "name": "volume_given_length_width_height",
+  "pattern": "^given a length of (?P<l>\\d+(?:\\.\\d+)?) m,\\s*a width of (?P<w>\\d+(?:\\.\\d+)?) m,\\s*a height of (?P<h>\\d+(?:\\.\\d+)?) m,\\s*find the volume",
+  "task": {
+   "op": "evaluate",
+   "expr": "($l)*($w)*($h)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 8,
+   "distinct": 8
+  }
+ },
+ {
+  "name": "area_length_width",
+  "pattern": "^a length of (?P<l>\\d+(?:\\.\\d+)?) m,\\s*a width of (?P<w>\\d+(?:\\.\\d+)?) m\\.?\\s*(?:what is|compute) the area",
+  "task": {
+   "op": "evaluate",
+   "expr": "($l)*($w)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 20,
+   "distinct": 20
+  }
+ },
+ {
+  "name": "solve_for_x_linear",
+  "pattern": "^solve for x:\\s*(?P<lhs>.+?)\\s*=\\s*(?P<rhs>-?\\d+(?:\\.\\d+)?)\\s*$",
+  "task": {
+   "op": "solve_linear",
+   "lhs": "$lhs",
+   "rhs": "$rhs",
+   "var": "x"
+  },
+  "leaf": "mathematics/algebra/linear_solve",
+  "probation": {
+   "serves": 11,
+   "distinct": 11
+  }
+ },
+ {
+  "name": "find_x_such_that_linear",
+  "pattern": "^find x such that\\s*(?P<lhs>.+?)\\s*=\\s*(?P<rhs>-?\\d+(?:\\.\\d+)?)\\.?\\s*$",
+  "task": {
+   "op": "solve_linear",
+   "lhs": "$lhs",
+   "rhs": "$rhs",
+   "var": "x"
+  },
+  "leaf": "mathematics/algebra/linear_solve",
+  "probation": {
+   "serves": 7,
+   "distinct": 7
+  }
+ },
+ {
+  "name": "solve_equation_poly_eq_zero",
+  "pattern": "^solve the equation\\s*(?P<lhs>.+?)\\s*=\\s*0\\.?\\s*$",
+  "task": {
+   "op": "solve_poly",
+   "lhs": "$lhs",
+   "rhs": "0",
+   "var": "x"
+  },
+  "leaf": "mathematics/algebra/quadratic_polynomial_solve",
+  "probation": {
+   "serves": 3,
+   "distinct": 3
+  }
+ },
+ {
+  "name": "differentiate_twice_evaluate",
+  "pattern": "^differentiate (?P<expr>.+?) twice and evaluate the result at x\\s*=\\s*(?P<at>-?\\d+(?:\\.\\d+)?)",
+  "task": {
+   "op": "differentiate",
+   "expr": "$expr",
+   "var": "x",
+   "order": 2,
+   "at": "$at"
+  },
+  "leaf": "mathematics/calculus/differentiation/evaluate_at_point",
+  "probation": {
+   "serves": 6,
+   "distinct": 6
+  }
+ },
+ {
+  "name": "volume_lwh",
+  "pattern": "length of (?P<l>[\\d.]+)\\s*m,?\\s*a width of (?P<w>[\\d.]+)\\s*m,?\\s*a height of (?P<h>[\\d.]+)\\s*m",
+  "task": {
+   "op": "evaluate",
+   "expr": "($l)*($w)*($h)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 28,
+   "distinct": 28
+  }
+ },
+ {
+  "name": "area_lw",
+  "pattern": "length of (?P<l>[\\d.]+)\\s*m,?\\s*a width of (?P<w>[\\d.]+)\\s*m(?!.{0,20}height)",
+  "task": {
+   "op": "evaluate",
+   "expr": "($l)*($w)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 27,
+   "distinct": 27
+  }
+ },
+ {
+  "name": "particle_speed_kmh",
+  "pattern": "particle.?s position is s\\(t\\)\\s*=\\s*(?P<a>[\\d.]+)t\\^2\\s*\\+\\s*(?P<b>[\\d.]+)t.*?t\\s*=\\s*(?P<c>[\\d.]+)",
+  "task": {
+   "op": "differentiate",
+   "expr": "(($a)*t^2+($b)*t)*3.6",
+   "var": "t",
+   "order": 1,
+   "at": "$c"
+  },
+  "leaf": "mathematics/calculus/differentiation/evaluate_at_point",
+  "probation": {
+   "serves": 271,
+   "distinct": 207
+  }
+ },
+ {
+  "name": "combinations_ncr",
+  "pattern": "how many combinations of (?P<n>\\d+) items taken (?P<r>\\d+) at a time",
+  "task": {
+   "op": "ncr",
+   "n": "$n",
+   "r": "$r"
+  },
+  "leaf": "mathematics/combinatorics_probability/permutations_combinations",
+  "probation": {
+   "serves": 13,
+   "distinct": 13
+  }
+ },
+ {
+  "name": "geometric_sequence_term",
+  "pattern": "a geometric sequence starts at (?P<a>[\\d.]+) with ratio (?P<r>[\\d.]+).*?term (?P<n>\\d+)",
+  "task": {
+   "op": "evaluate",
+   "expr": "($a)*($r)^(($n)-1)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 3,
+   "distinct": 3
+  }
+ },
+ {
+  "name": "solve_for_x",
+  "pattern": "solve for x:\\s*(?P<lhs>[^=]+?)=\\s*(?P<rhs>-?[\\d.]+)",
+  "task": {
+   "op": "solve_linear",
+   "lhs": "$lhs",
+   "rhs": "$rhs",
+   "var": "x"
+  },
+  "leaf": "mathematics/algebra/linear_solve",
+  "probation": {
+   "serves": 11,
+   "distinct": 11
+  }
+ },
+ {
+  "name": "find_x_such_that",
+  "pattern": "find x such that\\s*(?P<lhs>[^=]+?)=\\s*(?P<rhs>-?[\\d.]+)",
+  "task": {
+   "op": "solve_linear",
+   "lhs": "$lhs",
+   "rhs": "$rhs",
+   "var": "x"
+  },
+  "leaf": "mathematics/algebra/linear_solve",
+  "probation": {
+   "serves": 7,
+   "distinct": 7
+  }
+ },
+ {
+  "name": "differentiate_twice_eval",
+  "pattern": "differentiate (?P<expr>.+?) twice and evaluate the result at x\\s*=\\s*(?P<v>-?[\\d.]+)",
+  "task": {
+   "op": "differentiate",
+   "expr": "$expr",
+   "var": "x",
+   "order": 2,
+   "at": "$v"
+  },
+  "leaf": "mathematics/calculus/differentiation/evaluate_at_point",
+  "probation": {
+   "serves": 6,
+   "distinct": 6
+  }
+ },
+ {
+  "name": "work_force_distance",
+  "pattern": "force of (?P<f>[\\d.]+)\\s*n,?\\s*a distance of (?P<d>[\\d.]+)\\s*m",
+  "task": {
+   "op": "evaluate",
+   "expr": "($f)*($d)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 21,
+   "distinct": 21
+  }
+ },
+ {
+  "name": "kinetic_energy_mass_speed",
+  "pattern": "mass of (?P<m>[\\d.]+)\\s*kg,?\\s*a speed of (?P<v>[\\d.]+)\\s*m\\/s",
+  "task": {
+   "op": "evaluate",
+   "expr": "0.5*($m)*($v)^2"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 3,
+   "distinct": 3
+  }
+ },
+ {
+  "name": "mass_density_volume",
+  "pattern": "density of (?P<rho>[\\d.]+)\\s*kg\\/m\\^3,?\\s*a volume of (?P<v>[\\d.]+)\\s*m\\^3",
+  "task": {
+   "op": "evaluate",
+   "expr": "($rho)*($v)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 3,
+   "distinct": 3
+  }
+ },
+ {
+  "name": "power_voltage_current",
+  "pattern": "voltage of (?P<v>[\\d.]+)\\s*v,?\\s*a current of (?P<i>[\\d.]+)\\s*a\\b",
+  "task": {
+   "op": "evaluate",
+   "expr": "($v)*($i)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 4,
+   "distinct": 4
+  }
+ },
+ {
+  "name": "temperature_rise_heat",
+  "pattern": "heat energy of (?P<q>[\\d.]+)\\s*j,?\\s*a mass of (?P<m>[\\d.]+)\\s*kg,?\\s*a specific heat capacity of (?P<c>[\\d.]+)\\s*j",
+  "task": {
+   "op": "evaluate",
+   "expr": "($q)/(($m)*($c))"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 19,
+   "distinct": 19
+  }
+ },
+ {
+  "name": "work_done_force_distance",
+  "pattern": "^(?:A|Given a) force of (?P<f>[\\d.]+)\\s*N,?\\s*a distance of (?P<d>[\\d.]+)\\s*m",
+  "task": {
+   "op": "evaluate",
+   "expr": "($f)*($d)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 21,
+   "distinct": 21
+  }
+ },
+ {
+  "name": "temperature_rise_heat_energy",
+  "pattern": "^(?:A|An|Given a) (?:system has a |object has a |a )?heat energy of (?P<q>[\\d.]+)\\s*J,?\\s*a mass of (?P<m>[\\d.]+)\\s*kg,?\\s*a specific heat capacity of (?P<c>[\\d.]+)",
+  "task": {
+   "op": "evaluate",
+   "expr": "($q)/(($m)*($c))"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 23,
+   "distinct": 23
+  }
+ },
+ {
+  "name": "profit_margin_percent_sells_units",
+  "pattern": "^A product sells (?P<n>[\\d.]+) units at \\$(?P<p>[\\d.]+) each with total costs of \\$(?P<c>[\\d.]+)",
+  "task": {
+   "op": "evaluate",
+   "expr": "((($n)*($p))-($c))/(($n)*($p))*100"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 303,
+   "distinct": 303
+  }
+ },
+ {
+  "name": "profit_given_a_revenue",
+  "pattern": "^Given a revenue of (?P<r>[\\d.]+)\\s*\\$,?\\s*a total cost of (?P<c>[\\d.]+)\\s*\\$",
+  "task": {
+   "op": "evaluate",
+   "expr": "($r)-($c)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 10,
+   "distinct": 10
+  }
+ },
+ {
+  "name": "profit_a_revenue_plain",
+  "pattern": "^A revenue of (?P<r>[\\d.]+)\\s*\\$,?\\s*a total cost of (?P<c>[\\d.]+)\\s*\\$",
+  "task": {
+   "op": "evaluate",
+   "expr": "($r)-($c)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 7,
+   "distinct": 7
+  }
+ },
+ {
+  "name": "profit_subject_has_revenue",
+  "pattern": "^A \\w+ has (?:a )?revenue of (?P<r>[\\d.]+)\\s*\\$,?\\s*(?:and\\s+)?(?:a )?total cost of (?P<c>[\\d.]+)\\s*\\$",
+  "task": {
+   "op": "evaluate",
+   "expr": "($r)-($c)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 9,
+   "distinct": 9
+  }
+ },
+ {
+  "name": "profit_revenue_totals",
+  "pattern": "^Revenue (?:totals|is) (?P<r>[\\d.]+)\\s*\\$ and (?:costs sum to|total cost is) (?P<c>[\\d.]+)\\s*\\$",
+  "task": {
+   "op": "evaluate",
+   "expr": "($r)-($c)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 3,
+   "distinct": 3
+  }
+ },
+ {
+  "name": "revenue_price_per_unit_plain",
+  "pattern": "^An?\\s*(?:\\w+ has a )?price per unit of (?P<p>[\\d.]+)\\s*\\$,?\\s*an units sold of (?P<n>[\\d.]+)",
+  "task": {
+   "op": "evaluate",
+   "expr": "($p)*($n)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 21,
+   "distinct": 21
+  }
+ },
+ {
+  "name": "revenue_given_price_per_unit",
+  "pattern": "^Given a price per unit of (?P<p>[\\d.]+)\\s*\\$,?\\s*an units sold of (?P<n>[\\d.]+)",
+  "task": {
+   "op": "evaluate",
+   "expr": "($p)*($n)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 4,
+   "distinct": 4
+  }
+ },
+ {
+  "name": "simple_interest_given_principal",
+  "pattern": "^Given a principal of (?P<p>[\\d.]+)\\s*\\$,?\\s*an annual rate of (?P<r>[\\d.]+)\\s*%,?\\s*a time of (?P<t>[\\d.]+)\\s*years?",
+  "task": {
+   "op": "evaluate",
+   "expr": "(($p)*($r)/100)*($t)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 10,
+   "distinct": 10
+  }
+ },
+ {
+  "name": "simple_interest_subject_has_principal",
+  "pattern": "^A[\\w\\s]{1,20}has a principal of (?P<p>[\\d.]+)\\s*\\$,?\\s*an annual rate of (?P<r>[\\d.]+)\\s*%,?\\s*a time of (?P<t>[\\d.]+)\\s*years?",
+  "task": {
+   "op": "evaluate",
+   "expr": "(($p)*($r)/100)*($t)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 7,
+   "distinct": 7
+  }
+ },
+ {
+  "name": "simple_interest_plain_principal",
+  "pattern": "^A principal of (?P<p>[\\d.]+)\\s*\\$,?\\s*an annual rate of (?P<r>[\\d.]+)\\s*%,?\\s*a time of (?P<t>[\\d.]+)\\s*years?",
+  "task": {
+   "op": "evaluate",
+   "expr": "(($p)*($r)/100)*($t)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 12,
+   "distinct": 12
+  }
+ },
+ {
+  "name": "simple_interest_find_on_principal",
+  "pattern": "^Find the simple interest,?\\s*(?:in \\$,?\\s*|in dollars,?\\s*)?on\\s*(?:a principal of\\s*)?\\$?(?P<p>[\\d.]+)\\s*\\$?\\s*at\\s*(?:an annual rate of\\s*)?(?P<r>[\\d.]+)\\s*%\\s*(?:annually|annual rate)?\\s*for\\s*(?P<t>[\\d.]+)\\s*years?",
+  "task": {
+   "op": "evaluate",
+   "expr": "(($p)*($r)/100)*($t)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 3,
+   "distinct": 3
+  }
+ },
+ {
+  "name": "clv_given_arpu",
+  "pattern": "^Given an average revenue per user per month of (?P<arpu>[\\d.]+)\\s*\\$,?\\s*an expected customer lifetime of (?P<lt>[\\d.]+)\\s*months?",
+  "task": {
+   "op": "evaluate",
+   "expr": "($arpu)*($lt)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 8,
+   "distinct": 8
+  }
+ },
+ {
+  "name": "clv_subject_has_arpu",
+  "pattern": "^A[\\w\\s]{1,20}has an average revenue per user per month of (?P<arpu>[\\d.]+)\\s*\\$,?\\s*an expected customer lifetime of (?P<lt>[\\d.]+)\\s*months?",
+  "task": {
+   "op": "evaluate",
+   "expr": "($arpu)*($lt)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 5,
+   "distinct": 5
+  }
+ },
+ {
+  "name": "clv_plain_arpu",
+  "pattern": "^An average revenue per user per month of (?P<arpu>[\\d.]+)\\s*\\$,?\\s*an expected customer lifetime of (?P<lt>[\\d.]+)\\s*months?",
+  "task": {
+   "op": "evaluate",
+   "expr": "($arpu)*($lt)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 23,
+   "distinct": 23
+  }
+ },
+ {
+  "name": "breakeven_given_fixed_costs",
+  "pattern": "^Given a fixed costs of (?P<f>[\\d.]+)\\s*\\$,?\\s*a price per unit of (?P<p>[\\d.]+)\\s*\\$,?\\s*a variable cost per unit of (?P<v>[\\d.]+)\\s*\\$",
+  "task": {
+   "op": "evaluate",
+   "expr": "($f)/(($p)-($v))"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 10,
+   "distinct": 10
+  }
+ },
+ {
+  "name": "breakeven_plain_fixed_costs",
+  "pattern": "^A fixed costs of (?P<f>[\\d.]+)\\s*\\$,?\\s*a price per unit of (?P<p>[\\d.]+)\\s*\\$,?\\s*a variable cost per unit of (?P<v>[\\d.]+)\\s*\\$",
+  "task": {
+   "op": "evaluate",
+   "expr": "($f)/(($p)-($v))"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 9,
+   "distinct": 9
+  }
+ },
+ {
+  "name": "breakeven_subject_has_fixed_costs",
+  "pattern": "^A[\\w\\s]{1,20}has a fixed costs of (?P<f>[\\d.]+)\\s*\\$,?\\s*a price per unit of (?P<p>[\\d.]+)\\s*\\$,?\\s*a variable cost per unit of (?P<v>[\\d.]+)\\s*\\$",
+  "task": {
+   "op": "evaluate",
+   "expr": "($f)/(($p)-($v))"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 6,
+   "distinct": 6
+  }
+ },
+ {
+  "name": "profit_margin_product",
+  "pattern": "a\\s+product\\s+sells\\s+(?P<n>\\d+(?:\\.\\d+)?)\\s*units?\\s+at\\s*\\$(?P<p>\\d+(?:\\.\\d+)?)\\s*each\\s+with\\s+total\\s+costs?\\s+of\\s*\\$(?P<c>\\d+(?:\\.\\d+)?)",
+  "task": {
+   "op": "evaluate",
+   "expr": "((($n)*($p))-($c))/(($n)*($p))*100"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 303,
+   "distinct": 303
+  }
+ },
+ {
+  "name": "revenue_price_units",
+  "pattern": "(?:[a-z]+\\s+){0,4}?price\\s+per\\s+unit\\s+of\\s*(?P<p>\\d+(?:\\.\\d+)?)\\s*\\$?,?\\s*an?\\s*units?\\s+sold\\s+of\\s*(?P<n>\\d+(?:\\.\\d+)?)",
+  "task": {
+   "op": "evaluate",
+   "expr": "($p)*($n)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 25,
+   "distinct": 25
+  }
+ },
+ {
+  "name": "profit_revenue_cost",
+  "pattern": "(?:[a-z]+\\s+){0,4}?revenue\\s*(?:is\\s+|of\\s+)?\\$?\\s*(?P<r>\\d+(?:\\.\\d+)?)\\s*\\$?,?\\s*(?:and\\s+|,\\s*)?(?:a\\s+)?total\\s+cost\\s*(?:is\\s+|of\\s+)?\\$?\\s*(?P<c>\\d+(?:\\.\\d+)?)",
+  "task": {
+   "op": "evaluate",
+   "expr": "($r)-($c)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 34,
+   "distinct": 34
+  }
+ },
+ {
+  "name": "breakeven_qty",
+  "pattern": "(?:[a-z]+\\s+){0,4}?fixed\\s+costs?\\s+of\\s*(?P<f>\\d+(?:\\.\\d+)?)\\s*\\$?,?\\s*a\\s*price\\s+per\\s+unit\\s+of\\s*(?P<p>\\d+(?:\\.\\d+)?)\\s*\\$?,?\\s*a\\s*variable\\s+cost\\s+per\\s+unit\\s+of\\s*(?P<v>\\d+(?:\\.\\d+)?)",
+  "task": {
+   "op": "evaluate",
+   "expr": "($f)/(($p)-($v))"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 25,
+   "distinct": 25
+  }
+ },
+ {
+  "name": "simple_interest_principal",
+  "pattern": "(?:[a-z]+\\s+){0,4}?principal\\s+of\\s*\\$?\\s*(?P<p>\\d+(?:\\.\\d+)?)\\s*\\$?,?\\s*an?\\s*annual\\s+rate\\s+of\\s*(?P<r>\\d+(?:\\.\\d+)?)\\s*%,?\\s*a\\s*time\\s+of\\s*(?P<t>\\d+(?:\\.\\d+)?)\\s*years?",
+  "task": {
+   "op": "evaluate",
+   "expr": "(($p)*($r)*($t))/100"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 29,
+   "distinct": 29
+  }
+ },
+ {
+  "name": "customer_lifetime_value",
+  "pattern": "(?:[a-z]+\\s+){0,4}?average\\s+revenue\\s+per\\s+user\\s+per\\s+month\\s+of\\s*(?P<a>\\d+(?:\\.\\d+)?)\\s*\\$?,?\\s*an?\\s*expected\\s+customer\\s+lifetime\\s+of\\s*(?P<l>\\d+(?:\\.\\d+)?)\\s*months?",
+  "task": {
+   "op": "evaluate",
+   "expr": "($a)*($l)"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 36,
+   "distinct": 36
+  }
+ },
+ {
+  "name": "conv_hour_to_minute",
+  "pattern": "(?:convert\\s+|express\\s+|how\\s+many\\s+minutes?\\s+is\\s+)?(?P<n>\\d+(?:\\.\\d+)?)\\s*hours?\\b",
+  "task": {
+   "op": "evaluate",
+   "expr": "($n)*60"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 10,
+   "distinct": 10
+  }
+ },
+ {
+  "name": "conv_mps_to_kmh",
+  "pattern": "(?:convert\\s+|express\\s+(?:a\\s+speed\\s+of\\s+)?|how\\s+many\\s+km/h\\s+is\\s+)?(?P<n>\\d+(?:\\.\\d+)?)\\s*m/s\\b",
+  "task": {
+   "op": "evaluate",
+   "expr": "($n)*3.6"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 17,
+   "distinct": 17
+  }
+ },
+ {
+  "name": "conv_kmh_to_mps",
+  "pattern": "(?:convert\\s+|express\\s+|how\\s+many\\s+m/s\\s+is\\s+)?(?P<n>\\d+(?:\\.\\d+)?)\\s*km/h\\b",
+  "task": {
+   "op": "evaluate",
+   "expr": "($n)/3.6"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 14,
+   "distinct": 14
+  }
+ },
+ {
+  "name": "conv_l_to_ml",
+  "pattern": "(?:convert\\s+|express\\s+|how\\s+many\\s+ml\\s+is\\s+)?(?P<n>\\d+(?:\\.\\d+)?)\\s*l\\b",
+  "task": {
+   "op": "evaluate",
+   "expr": "($n)*1000"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 10,
+   "distinct": 10
+  }
+ },
+ {
+  "name": "conv_j_to_kj",
+  "pattern": "(?:convert\\s+|express\\s+|how\\s+many\\s+kj\\s+is\\s+)?(?P<n>\\d+(?:\\.\\d+)?)\\s*j\\b",
+  "task": {
+   "op": "evaluate",
+   "expr": "($n)/1000"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 16,
+   "distinct": 16
+  }
+ },
+ {
+  "name": "conv_km_to_m",
+  "pattern": "(?:convert\\s+|express\\s+|how\\s+many\\s+m\\s+is\\s+)?(?P<n>\\d+(?:\\.\\d+)?)\\s*km\\b(?!/h)",
+  "task": {
+   "op": "evaluate",
+   "expr": "($n)*1000"
+  },
+  "leaf": "mathematics/arithmetic/expression_evaluation",
+  "probation": {
+   "serves": 13,
+   "distinct": 13
+  }
+ }
+]
