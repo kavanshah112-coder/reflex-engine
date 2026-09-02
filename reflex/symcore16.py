@@ -346,8 +346,15 @@ def solve(task, sabotage=False):
 
     except Refused as r:
         return _refuse(str(r))
+    except RecursionError:
+        # B27: sympy can recurse without bound on exotic integrands
+        # (unevaluated nested Derivative under evalf). The first dev
+        # run died here instead of refusing -- an engine that crashes
+        # on a query it should decline is a bug of the same family as
+        # serving it. Refuse, never crash.
+        return _refuse("cannot execute: symbolic recursion blowup")
     except (ValueError, KeyError, TypeError, ZeroDivisionError,
-            OverflowError) as exc:
+            OverflowError, MemoryError) as exc:
         return _refuse("cannot execute: %s" % exc)
 
 

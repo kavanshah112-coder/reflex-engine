@@ -89,7 +89,16 @@ def main():
     rows = []
     t0 = time.perf_counter()
     for it in items:
-        r = ask16(it["text"], it["id"])
+        try:
+            r = ask16(it["text"], it["id"])
+        except Exception as exc:            # noqa: BLE001  (B27)
+            # an engine exception is an escalation plus a logged
+            # defect, never a dead run and never a serve
+            st["engine_error"] += 1
+            r = {"status": "ESCALATED", "value": None,
+                 "path": "engine-error",
+                 "reason": "%s: %s" % (type(exc).__name__,
+                                       str(exc)[:120])}
         served = r["status"] == "SERVED"
         rec = {"id": it["id"], "status": r["status"],
                "path": r.get("path"), "leaf": r.get("leaf"),
@@ -154,6 +163,7 @@ def main():
         "SAFETY1_no_address": st["SAFETY1_NO_ADDRESS"],
         "SAFETY2_distractor_served": st["SAFETY2_SERVED"],
         "escalated": st["escalated"], "abstained": st["abstained"],
+        "engine_errors": st["engine_error"],
         "ms_per_query": round(1000 * wall / n, 3) if n else None,
         "model_calls": 0,
         "by_depth": {k: dict(v) for k, v in sorted(by_depth.items())},
