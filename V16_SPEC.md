@@ -2,8 +2,10 @@
 
 ## Re-scoped and scaled: a certified calculator with a grown, indexed reflex library, in front of an LLM, with a verifier on the rest
 
-**STATUS: FROZEN 2026-09-02, tag `v1.6-plan` @ d098588 (user: "freeze
-the spec and check previous version are freezed and then start").**
+**STATUS: FROZEN 2026-09-02, tag `v1.6-plan` (user: "freeze the spec
+and check previous version are freezed and then start"). The tag
+points at the commit carrying draft v3 (d098588) plus the AMENDMENT
+below, matching the v1.5-plan precedent.**
 §7–§10 never change after the first sealed run. The seven §11 decisions
 are RESOLVED in the AMENDMENT at the end of this file.
 
