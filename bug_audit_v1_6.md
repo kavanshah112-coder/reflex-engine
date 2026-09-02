@@ -65,6 +65,28 @@ hit it on sealed data.
 read); healthy force/weight items still serve; dev rerun reported in
 `results/v16/baseline_dev_summary.json`.
 
+## B29 — requested-unit guard was end-anchored; foreign phrasing walks past it
+
+**Found:** 2026-09-03, first post-merge runs. S-SCI-dev: 6 wrong of
+134 served (4.48%); ACQ: 19 wrong of 26,600 (0.071%) — every single
+one the same class: *"Calculate, in kilojoules, the kinetic energy of
+a 206 kg mass moving at 32 m/s"* served in JOULES (1000× off).
+
+**Why:** the probe-era guard matched "in <unit>" only at the END of
+the question. My own generator always puts it there; human-register
+authors put it mid-sentence. The guard existed for exactly this
+hazard and the phrasing walked around it — a miniature of the whole
+H1 lesson: the guard covered its own grammar, not the domain.
+
+**Fix:** requested unit matched anywhere in the ask; two DIFFERENT
+requested units = ambiguous = escalate. Verified on all six S-SCI
+phrasings (now served, converted, unit-stamped kJ) with plain-J asks
+unaffected. Superseded runs preserved under
+`results/v16/superseded_premerge_guard/` before rerun.
+
+Also noted: 5 engine-error containments (B27 machinery working as
+designed) on foreign texts, all escalated; reasons now logged per row.
+
 ## Probe findings (pre-counting, 2026-09-02) — fixed before any run
 
 The 200-item probe (temp data, discarded) caught four defect classes

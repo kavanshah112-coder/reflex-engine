@@ -111,6 +111,8 @@ def main():
                "depth": it.get("depth"),
                "register": it.get("register"),
                "distractor": it.get("distractor", False)}
+        if r.get("reason"):
+            rec["reason"] = str(r["reason"])[:120]
         dkey = ("dist" if it.get("distractor")
                 else "d%s" % it.get("depth"))
         if served:

@@ -1,0 +1,64 @@
+{
+ "arm": "baseline",
+ "split": "dev",
+ "n": 10000,
+ "in_domain": 9654,
+ "distractors": 346,
+ "served": 4496,
+ "correct": 4496,
+ "WRONG": 0,
+ "coverage_in_domain": 0.4657,
+ "wrong_fire": 0.0,
+ "SAFETY1_no_address": 0,
+ "SAFETY2_distractor_served": 0,
+ "escalated": 3836,
+ "abstained": 1668,
+ "engine_errors": 1,
+ "ms_per_query": 7.26,
+ "model_calls": 0,
+ "by_depth": {
+  "d1": {
+   "served": 2508,
+   "correct": 2508,
+   "escalated": 1164,
+   "abstained": 393
+  },
+  "d2": {
+   "served": 1400,
+   "correct": 1400,
+   "abstained": 775,
+   "escalated": 561
+  },
+  "d3": {
+   "escalated": 1339,
+   "served": 588,
+   "correct": 588
+  },
+  "d4": {
+   "escalated": 490,
+   "abstained": 436
+  },
+  "dist": {
+   "escalated": 282,
+   "abstained": 64
+  }
+ },
+ "by_register": {
+  "corpus": {
+   "escalated": 282,
+   "abstained": 64
+  },
+  "foreign": {
+   "served": 98,
+   "correct": 98,
+   "escalated": 156,
+   "abstained": 40
+  },
+  "own": {
+   "served": 4398,
+   "correct": 4398,
+   "escalated": 3398,
+   "abstained": 1564
+  }
+ }
+}

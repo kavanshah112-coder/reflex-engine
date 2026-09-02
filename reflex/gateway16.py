@@ -58,7 +58,7 @@ _UNIT_WORDS = {
     "percent": "percent", "per cent": "percent", "percentage": "percent",
 }
 _REQ_UNIT = re.compile(
-    r"\bin\s+(%s)\s*[?.]?\s*$" % "|".join(
+    r"\b(?:in|expressed in)\s+(%s)\b" % "|".join(
         re.escape(w) for w in sorted(_UNIT_WORDS, key=len,
                                      reverse=True)), re.I)
 
@@ -120,8 +120,20 @@ def _more_specific_asked(text, concept):
 
 
 def _requested_unit(text):
-    m = _REQ_UNIT.search(text)
-    return _UNIT_WORDS[m.group(1).lower()] if m else None
+    """The unit the ask wants the ANSWER in. B29: the first version
+    matched only '... in <unit>?' at the end; foreign authors write
+    'Calculate, in kilojoules, the kinetic energy of ...' and the
+    engine served joules -- a 1000x wrong answer past a guard that
+    existed for exactly this. Now matched anywhere; two DIFFERENT
+    requested units is ambiguous and returns the sentinel '?' so the
+    caller escalates."""
+    found = {_UNIT_WORDS[m.group(1).lower()]
+             for m in _REQ_UNIT.finditer(text)}
+    if not found:
+        return None
+    if len(found) > 1:
+        return "?"
+    return found.pop()
 
 
 _VALUE_NUM = re.compile(
@@ -249,6 +261,11 @@ def ask16(text, qid=None):
         value = rec.get("numeric_value")
         served_unit = (_KINDS.get(concept) or {}).get("unit") or ""
         req = _requested_unit(text)
+        if req == "?":
+            return {"status": ESCALATED, "value": None,
+                    "path": "tierA-guarded",
+                    "reason": "two different answer units requested",
+                    "ms": (time.perf_counter() - t0) * 1e3}
         if req and _UREG is not None and req != served_unit:
             # honor the requested unit deterministically or hand on
             try:
