@@ -233,6 +233,12 @@ def solve(task, sabotage=False):
             for k in env:
                 local[k] = sp.Symbol(k)
             e = sp.sympify(task["expr"], locals=local, rational=True)
+            if not isinstance(e, sp.Basic) or not hasattr(
+                    e, "free_symbols"):
+                # sympify can return bool for relational text ("3=3");
+                # that is not an evaluable expression -- refuse (B27
+                # family: a crash here killed the sonnet gauntlet run)
+                return _refuse("not an arithmetic expression")
             extra = [str(s) for s in e.free_symbols if str(s) not in env]
             if extra:
                 return _refuse("unbound variables", vars=extra)
@@ -354,7 +360,7 @@ def solve(task, sabotage=False):
         # serving it. Refuse, never crash.
         return _refuse("cannot execute: symbolic recursion blowup")
     except (ValueError, KeyError, TypeError, ZeroDivisionError,
-            OverflowError, MemoryError) as exc:
+            OverflowError, MemoryError, AttributeError) as exc:
         return _refuse("cannot execute: %s" % exc)
 
 
