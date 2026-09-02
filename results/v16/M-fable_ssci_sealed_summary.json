@@ -1,0 +1,48 @@
+{
+ "arm": "M-fable",
+ "split": "ssci_sealed",
+ "n": 2000,
+ "in_domain": 2000,
+ "distractors": 0,
+ "served": 980,
+ "correct": 980,
+ "WRONG": 0,
+ "coverage_in_domain": 0.49,
+ "wrong_fire": 0.0,
+ "SAFETY1_no_address": 0,
+ "SAFETY2_distractor_served": 0,
+ "escalated": 756,
+ "abstained": 264,
+ "engine_errors": 0,
+ "reflex_served": 273,
+ "ms_per_query": 6.013,
+ "model_calls": 0,
+ "by_depth": {
+  "d1": {
+   "abstained": 248,
+   "served": 841,
+   "correct": 841,
+   "escalated": 592
+  },
+  "d2": {
+   "escalated": 115,
+   "abstained": 9,
+   "served": 41,
+   "correct": 41
+  },
+  "d3": {
+   "served": 98,
+   "correct": 98,
+   "escalated": 49,
+   "abstained": 7
+  }
+ },
+ "by_register": {
+  "foreign": {
+   "abstained": 264,
+   "served": 980,
+   "correct": 980,
+   "escalated": 756
+  }
+ }
+}
