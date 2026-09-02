@@ -1,0 +1,48 @@
+{
+ "arm": "M-haiku",
+ "split": "ssci_dev",
+ "n": 400,
+ "in_domain": 400,
+ "distractors": 0,
+ "served": 158,
+ "correct": 158,
+ "WRONG": 0,
+ "coverage_in_domain": 0.395,
+ "wrong_fire": 0.0,
+ "SAFETY1_no_address": 0,
+ "SAFETY2_distractor_served": 0,
+ "escalated": 193,
+ "abstained": 49,
+ "engine_errors": 0,
+ "reflex_served": 24,
+ "ms_per_query": 7.97,
+ "model_calls": 0,
+ "by_depth": {
+  "d1": {
+   "escalated": 154,
+   "served": 120,
+   "correct": 120,
+   "abstained": 45
+  },
+  "d2": {
+   "escalated": 34,
+   "served": 10,
+   "correct": 10,
+   "abstained": 2
+  },
+  "d3": {
+   "served": 28,
+   "correct": 28,
+   "escalated": 5,
+   "abstained": 2
+  }
+ },
+ "by_register": {
+  "foreign": {
+   "escalated": 193,
+   "served": 158,
+   "correct": 158,
+   "abstained": 49
+  }
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "arm": "M-haiku",
+ "split": "dev",
+ "n": 10000,
+ "in_domain": 9654,
+ "distractors": 346,
+ "served": 6485,
+ "correct": 6485,
+ "WRONG": 0,
+ "coverage_in_domain": 0.6717,
+ "wrong_fire": 0.0,
+ "SAFETY1_no_address": 0,
+ "SAFETY2_distractor_served": 0,
+ "escalated": 1847,
+ "abstained": 1668,
+ "engine_errors": 0,
+ "reflex_served": 1989,
+ "ms_per_query": 7.301,
+ "model_calls": 0,
+ "by_depth": {
+  "d1": {
+   "served": 3159,
+   "correct": 3159,
+   "escalated": 513,
+   "abstained": 393
+  },
+  "d2": {
+   "served": 1402,
+   "correct": 1402,
+   "abstained": 775,
+   "escalated": 559
+  },
+  "d3": {
+   "served": 1924,
+   "correct": 1924,
+   "escalated": 3
+  },
+  "d4": {
+   "escalated": 490,
+   "abstained": 436
+  },
+  "dist": {
+   "escalated": 282,
+   "abstained": 64
+  }
+ },
+ "by_register": {
+  "corpus": {
+   "escalated": 282,
+   "abstained": 64
+  },
+  "foreign": {
+   "served": 125,
+   "correct": 125,
+   "escalated": 129,
+   "abstained": 40
+  },
+  "own": {
+   "served": 6360,
+   "correct": 6360,
+   "escalated": 1436,
+   "abstained": 1564
+  }
+ }
+}

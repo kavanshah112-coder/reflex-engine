@@ -1,0 +1,48 @@
+{
+ "arm": "M-sonnet",
+ "split": "ssci_dev",
+ "n": 400,
+ "in_domain": 400,
+ "distractors": 0,
+ "served": 183,
+ "correct": 183,
+ "WRONG": 0,
+ "coverage_in_domain": 0.4575,
+ "wrong_fire": 0.0,
+ "SAFETY1_no_address": 0,
+ "SAFETY2_distractor_served": 0,
+ "escalated": 168,
+ "abstained": 49,
+ "engine_errors": 0,
+ "reflex_served": 49,
+ "ms_per_query": 8.303,
+ "model_calls": 0,
+ "by_depth": {
+  "d1": {
+   "escalated": 125,
+   "served": 149,
+   "correct": 149,
+   "abstained": 45
+  },
+  "d2": {
+   "escalated": 34,
+   "served": 10,
+   "correct": 10,
+   "abstained": 2
+  },
+  "d3": {
+   "served": 24,
+   "correct": 24,
+   "escalated": 9,
+   "abstained": 2
+  }
+ },
+ "by_register": {
+  "foreign": {
+   "escalated": 168,
+   "served": 183,
+   "correct": 183,
+   "abstained": 49
+  }
+ }
+}
