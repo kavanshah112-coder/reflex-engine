@@ -64,6 +64,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--split", default="dev",
                     choices=["acq", "dev", "seal"])
+    ap.add_argument("--file", default=None,
+                    help="evaluate an explicit item file (e.g. "
+                         "ssci_dev.json) instead of a q100k split; "
+                         "--split then only labels the output")
     ap.add_argument("--data", default=str(HERE / "results" / "v16" /
                                           "data"))
     ap.add_argument("--limit", type=int, default=0)
@@ -71,9 +75,11 @@ def main():
     ap.add_argument("--tag", default="")
     a = ap.parse_args()
 
-    items = json.loads(
+    src = (Path(a.data) / a.file) if a.file else \
         (Path(a.data) / ("q100k_%s.json" % a.split))
-        .read_text(encoding="utf-8"))
+    if a.file:
+        a.split = Path(a.file).stem
+    items = json.loads(src.read_text(encoding="utf-8"))
     if a.limit:
         items = items[:a.limit]
 
