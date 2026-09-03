@@ -1,0 +1,51 @@
+{
+ "arm": "det",
+ "split": "dev",
+ "n": 300,
+ "in_domain": 297,
+ "distractors": 3,
+ "served": 118,
+ "chain_served": 118,
+ "plan_served": 0,
+ "mint_served": 0,
+ "correct": 118,
+ "WRONG": 0,
+ "coverage_in_domain": 0.3973,
+ "wrong_fire": 0.0,
+ "SAFETY2_distractor_served": 0,
+ "gate_killed": 0,
+ "escalated": 182,
+ "engine_errors": 0,
+ "ms_per_query": 24.895,
+ "model_calls": 0,
+ "by_k": {
+  "k2": {
+   "escalated": 11,
+   "served": 46,
+   "correct": 46
+  },
+  "k3": {
+   "served": 41,
+   "correct": 41,
+   "escalated": 57
+  },
+  "k4": {
+   "escalated": 53,
+   "served": 21,
+   "correct": 21
+  },
+  "k5": {
+   "escalated": 37,
+   "served": 8,
+   "correct": 8
+  },
+  "k6": {
+   "escalated": 21,
+   "served": 2,
+   "correct": 2
+  },
+  "kNone": {
+   "escalated": 3
+  }
+ }
+}

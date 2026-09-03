@@ -80,6 +80,22 @@ def main():
     from reflex import acquire16, chainexec17, composer17, plangate17
     from reflex.gateway16 import ask16
 
+    # B30: on merged foreign chains, V1.6's single-step parser served
+    # the FIRST sub-question's value as the whole answer (5 wrongs at
+    # 8e-05/2.7e-05 on dev/acq — "Compute 4*(6+7). With this as
+    # principal ..." served 52 = step one). Chain-marked text is out
+    # of the single-step engine's domain BY DEFINITION: a partial
+    # answer to a chain is a wrong answer, so such text never reaches
+    # the V1.6 path — it belongs to the composer, minted chains, and
+    # plans. Markers: a result-reference or sequential connective
+    # after the first clause.
+    import re as _re30
+    CHAIN_MARKED = _re30.compile(
+        r"\b(?:with (?:this|it|that)\b|from this\b|"
+        r"using (?:this|that|it)\b|the (?:result|interest|difference|"
+        r"count|sum|total|value)\b.*\b(?:then|multiply|subtract|add|"
+        r"divide)|then\b|; )", _re30.I)
+
     library = json.loads(Path(a.reflexlib).read_text(
         encoding="utf-8")) if a.reflexlib and \
         Path(a.reflexlib).exists() else []
@@ -106,13 +122,16 @@ def main():
         served = None
         path = None
         try:
-            r = ask16(text, it["id"])
-            if r["status"] == "SERVED":
-                served, path = r["value"], "v16:" + r["path"]
-            elif r["status"] == "ESCALATED" and library:
-                hit = acquire16.apply_library(text, library)
-                if hit is not None:
-                    served, path = hit["value"], "v16:reflex"
+            chainish = bool(CHAIN_MARKED.search(text)) or \
+                text.count(". ") >= 2
+            if not chainish:
+                r = ask16(text, it["id"])
+                if r["status"] == "SERVED":
+                    served, path = r["value"], "v16:" + r["path"]
+                elif r["status"] == "ESCALATED" and library:
+                    hit = acquire16.apply_library(text, library)
+                    if hit is not None:
+                        served, path = hit["value"], "v16:reflex"
             comp_kill = None
             comp_plan = None
             if served is None:

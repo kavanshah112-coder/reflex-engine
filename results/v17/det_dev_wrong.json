@@ -1,4 +1,26 @@
 {
- "wrong": [],
+ "wrong": [
+  {
+   "id": "q17_0364903",
+   "text": "Compute 4*(6 + 7). With this as principal p, find p * r * t / 100 for r = 2.0 and t = 5.0, and multiply the interest by 6. Give the result.",
+   "value": "52.0",
+   "gold": "31.200000000000003",
+   "path": "v16:symcore16"
+  },
+  {
+   "id": "q17_0650850",
+   "text": "Compute 6*(6 + 6). With it as p, evaluate p * r * t / 100 for r = 8.0 and t = 3.0; subtract 12 from the interest, add 10, and multiply by 3.",
+   "value": "72.0",
+   "gold": "45.839999999999996",
+   "path": "v16:symcore16"
+  },
+  {
+   "id": "q17_0121999",
+   "text": "How many ways are there to choose 2 items from 12? From this count subtract 15, then multiply the difference by 12. Give the final number.",
+   "value": "66",
+   "gold": "612.0",
+   "path": "v16:symcore16"
+  }
+ ],
  "safety2": []
 }
