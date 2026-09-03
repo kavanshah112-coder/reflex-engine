@@ -92,9 +92,12 @@ def _exec_node(node, env):
         e = expr_sub("expr")
         environ = {}
         for k, v in node.items():
-            if k in ("id", "op", "expr"):
+            if k in ("id", "op", "expr", "unit"):
                 continue
-            environ[k] = float(val(k))
+            resolved = val(k)
+            if isinstance(resolved, (int, float)) and \
+                    not isinstance(resolved, bool):
+                environ[k] = float(resolved)
         return float(W.evaluate(e, environ))
     if op == "scale":
         return float(val("value")) * float(val("by"))
