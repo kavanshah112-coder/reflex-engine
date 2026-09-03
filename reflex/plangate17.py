@@ -37,11 +37,18 @@ from .gateway16 import CHOICE_ASK, _REQ_UNIT, _UNIT_WORDS, \
 
 def _req_unit_chain(question):
     """Chain questions name INTERMEDIATE units on the way ('speed in
-    m/s ... energy in kJ'); the answer unit is the LAST unit request,
-    which rides on the final ask. (V1.6's two-units-ambiguous rule
-    stays correct for single-step serving and does not apply here.)"""
+    m/s ... energy in kJ'); the answer unit is the LAST unit request
+    that is (a) in the final sentence and (b) not ATTRIBUTIVE -- 'the
+    speed in m/s of a 2 kg mass' binds a role, it does not ask for
+    the answer in m/s (probe finding, 2026-09-04)."""
+    parts = [p for p in re.split(r"[.;]\s*", question) if p.strip()]
+    if not parts:
+        return None
     last = None
-    for m in _REQ_UNIT.finditer(question):
+    for m in _REQ_UNIT.finditer(parts[-1]):
+        tail = parts[-1][m.end():m.end() + 12].lstrip().lower()
+        if tail.startswith("of "):
+            continue                      # attributive, not an ask
         last = _UNIT_WORDS[m.group(1).lower()]
     return last
 
@@ -172,11 +179,16 @@ def check(plan, question):
     # ask is answered by solve_pick's default rhs of 0)
     order_lits += [0.0 for n in nodes
                    if n["op"] == "solve_pick" and "rhs" not in n]
+    # signs live in expression STRUCTURE (x^2 - 10x states "-10" but
+    # the plan's expr literal is the unsigned 10); magnitude is what
+    # the honesty check owns -- the witness owns the algebra.
     for s in stated:
-        if not any(abs(s - l) < 1e-9 for l in lits + order_lits):
+        if not any(abs(abs(s) - abs(l)) < 1e-9
+                   for l in lits + order_lits):
             return _fail(t, "G-P4", "stated quantity %g unused" % s), t
     for l in lits:
-        if l in STRUCTURAL or any(abs(l - s) < 1e-9 for s in stated):
+        if l in STRUCTURAL or any(abs(abs(l) - abs(s)) < 1e-9
+                                  for s in stated):
             continue
         if float(l).is_integer() and 0 <= l <= 6:
             continue      # small structural ints (orders, indices)
