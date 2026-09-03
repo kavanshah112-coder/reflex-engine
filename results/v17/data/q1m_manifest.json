@@ -1,0 +1,24 @@
+{
+ "seed": 1700,
+ "n": 1000000,
+ "programmatic": 996376,
+ "foreign_slots": 6000,
+ "distractors": 3624,
+ "distractor_note": "2% capped by unique corpus supply",
+ "rejects": 1160,
+ "k_quota": {
+  "2": 199275,
+  "3": 298913,
+  "4": 249094,
+  "5": 149456,
+  "6": 99638
+ },
+ "nonmono_share": 0.6055,
+ "multidomain_share": 0.7165,
+ "splits": {
+  "acq": 200000,
+  "dev": 100000,
+  "seal": 300000,
+  "replay": 400000
+ }
+}
