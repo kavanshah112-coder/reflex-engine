@@ -61,6 +61,9 @@ TERMINAL_ONLY = {"compare", "is_prime"}    # bool/choice feed nothing
 STRUCTURAL = {0.0, 1.0, 2.0, 0.5, 100.0, 1000.0, 9.8, 3.6, 60.0}
 
 BOOL_ASK = re.compile(r"^\s*is\b|\btrue or false\b|\bprime\?", re.I)
+GREATER_ASK = re.compile(
+    r"\b(?:greater|larger|bigger|smaller|less) than\b|\bexceeds?\b",
+    re.I)
 
 
 def _fail(transcript, gate, why):
@@ -133,10 +136,10 @@ def check(plan, question):
                 unit_of[n["id"]] = unit_of.get(n["value"][1:])
     # ---------------- G-P3 ask-target
     final_op = by_id[fin]["op"]
-    if CHOICE_ASK.search(question):
+    if CHOICE_ASK.search(question) or GREATER_ASK.search(question):
         if final_op != "compare":
-            return _fail(t, "G-P3", "choice ask; final is %r"
-                         % final_op), t
+            return _fail(t, "G-P3", "choice/threshold ask; final is "
+                         "%r" % final_op), t
     elif final_op == "compare":
         return _fail(t, "G-P3", "compare final on a value ask"), t
     if BOOL_ASK.search(question) and "prime" in question.lower():
