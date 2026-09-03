@@ -2,9 +2,10 @@
 
 ## A million-query workload of multi-reflex questions: do certified reflexes compose, and how long does a model take to find the structure?
 
-**STATUS: DRAFT v1 for review. Freezes as tag `v1.7-plan`.**
-§7–§10 never change after the first sealed run. §11 lists the
-decisions needed before freezing.
+**STATUS: DRAFT v2 — all seven §11 decisions RESOLVED by the user
+(2026-09-03: free-hand minting incl. connector reflexes; in-repo
+storage; rest as proposed). Ready to freeze as tag `v1.7-plan` on
+the user's word.** §7–§10 never change after the first sealed run.
 
 Built on V0.1–V1.6. No prior version, tag, snapshot, dataset, report
 or log is modified. Full arc protocol applies: pre-registration,
@@ -154,10 +155,49 @@ QUERY
 New code: `reflex/composer17.py` (deterministic chain parser),
 `reflex/plangate17.py` (G-P1..4 + chain certificate),
 `reflex/chainexec17.py` (DAG execution + end-to-end witness),
+`reflex/connector17.py` (the new reflex class below),
 `tools/build_q1m.py`, `tools/planner17.py` (bridge plan collection +
-timing). Reused untouched: all of V1.6, the 271-reflex library
-(frozen as shipped — V1.7 mints nothing new unless §11 decides
-otherwise), taxonomy, witness, gauntlet machinery.
+timing). Reused untouched: all of V1.6, its 271-reflex library as
+the STARTING library, taxonomy, witness, gauntlet machinery.
+
+### 4.1 Phase L' — free-hand minting, including CONNECTOR reflexes
+(user decision, 2026-09-03)
+
+Each model gets a free hand on the ACQ residual stream to mint, per
+the V1.6 discipline (isolated bridge, same residuals for every
+model, everything laddered), THREE classes:
+
+1. **parse reflexes** — the V1.6 class, unchanged (pattern → task);
+2. **chain reflexes** — a pattern mapping text to a multi-step PLAN
+   in the frozen plan schema (structure only, no values), gated by
+   the full plan gate G-P1..4 before probation;
+3. **connector reflexes** — the new class: a bridge that CONNECTS
+   two pre-existing reflexes so queries needing their combination
+   certify. Schema:
+
+   ```
+   {"name": ..., "from": <taxonomy leaf or op whose output it
+    consumes>, "to": <op/reflex slot it feeds>, "adapter":
+    <template expr over the upstream value, e.g. "($v)/1000" or a
+    certified-conversion reference>, "when": <optional trigger
+    words>}
+   ```
+
+   A connector carries NO answer and NO parse of its own — it is
+   pure plumbing, and its adapter expression executes through the
+   witness like any other computation. Placement is by evidence:
+   its from/to endpoints must exist and type/unit-check through
+   G-P2, or it is index-killed.
+
+Gauntlet for all three classes: G1 schema (constant tasks and
+memorization banned as before), G2 evidence-based placement, G3
+shadow probation — for chain and connector reflexes probation runs
+on CHAINED items and requires ≥3 end-to-end-witnessed correct
+serves on ≥2 distinct operand tuples with ZERO wrong. The per-model
+creation ledger (proposed / killed-by-gate / admitted, per class)
+remains a primary deliverable, now with a connector column — the
+cohesiveness question made constructive: where the library fails to
+compose, can a model mint the missing joint, safely?
 
 **Positive controls before any counting run (B24):** the plan gate
 gets a battery of deliberately wrong plans that MUST all die — right
@@ -179,11 +219,16 @@ Q-1M        1,000,000 items, composition-first generator (seed
             foreign-phrased overlay (bridge-authored around fact
             sheets, ~6k). Golds computed step-by-step by the
             INDEPENDENT witness constructor with end-to-end
-            verification at build. Stored as JSONL; the COMMITTED
-            artifacts are the generator + seed + raw-byte hashes
-            (a 250MB dataset is regenerable, its hash is not).
-            Splits: ACQ-none (no minting this version by default) /
-            DEV 100k / SEAL 300k, distractors disjoint.
+            verification at build. Stored as JSONL under
+            `results/v17/data/` and committed there with raw-byte
+            hashes and `-text` attr (user decision: the repo has no
+            remote, clone bloat is not a concern; the folder is the
+            record).
+            Splits (adjusted because free-hand minting needs its own
+            stream that is neither dev-tuned nor sealed):
+            ACQ 200k (minting residuals) / DEV 100k / SEAL 300k /
+            REPLAY 400k (evaluated, never tuned on), distractors
+            disjoint across all four.
 S-PLAN      the planner sample: 600 DEV + 1,200 SEALED items drawn
             from Q-1M's 3+-step stratum (same items for every model;
             no model receives foreign items it authored), used for
@@ -233,6 +278,7 @@ harness-independent proxy.
 | V6 | time-to-structure rises with chain depth k and falls with scale | plausible; measured, both halves |
 | V7 | plans REUSE: structure signatures recur enough that S-PLAN plans cover a large share of the 1M workload (η >> 1) | predicted from V1.3 W0 (83.3% recurrence) |
 | V8 | million-scale stability: zero engine crashes, zero SAFETY breaches over 4M+ evaluations | pass — B27 family is contained; first honest test at this scale |
+| V9 | CONNECTOR minting works: models identify missing joints between existing reflexes and mint adapters that lift chain coverage at zero minted wrong-fire | **the constructive half of Q1 — new class, no precedent; V1.6's monotone-quality result suggests yes at higher scales** |
 
 ---
 
@@ -263,6 +309,11 @@ SAFETY-2    zero certified narrative items (in-stream distractors).
 SAFETY-3    zero certified-WRONG answers from MODEL-PROPOSED plans
             (one = the V1.3 class is open at plan level; that arm
             fails regardless of its coverage).
+SAFETY-4    zero wrong-fire attributable to any V1.7-minted reflex
+            of ANY class (parse / chain / connector) on sealed data
+            — V1.6's SAFETY-3 standard extended; one traced wrong
+            revokes the reflex AND is reported; >=3 from one
+            model's library fails that arm.
 GATE-CTRL   plan-gate + end-witness control batteries pass 100%
             before any counting run; a control failure voids all
             chain serves until fixed and rerun.
@@ -297,30 +348,34 @@ B  COHESION + PLAN-LIFT met, but TIMING or SCALE incomplete, or
    plan reuse η < 2 (plans do not amortize; the economics term
    dies while the safety result stands).
 A  COHESION >= 25%, PLAN-LIFT >= +10pp on >= 2 scales at SAFETY-3
-   zero, full timing distributions on all 4 scales, η >= 2 on >= 2
-   scales, SCALE clean.
+   zero, SAFETY-4 zero across all minted classes, full timing
+   distributions on all 4 scales, η >= 2 on >= 2 scales, SCALE
+   clean.
 ```
 
 ---
 
-## 11. Open decisions — needed before freezing
+## 11. Decisions — RESOLVED by the user (2026-09-03)
 
-1. **Q-1M split sizes** — propose DEV 100k / SEAL 300k with the
-   remaining 600k as the replay mass (evaluated, not tuned on).
-   Confirm, or set 1M sealed outright (doubles runtime, ~3h/arm).
-2. **Minting in V1.7** — propose NONE (the library is V1.6's frozen
-   union; the version isolates composition). Alternative: one
-   chain-reflex minting round after dev measurement.
-3. **S-PLAN sizes** — 600 dev / 1,200 sealed per model. Confirm.
-4. **Plan schema breadth** — plans over symcore ops + the 271
-   reflexes + Tier A caps (propose), or symcore ops only.
-5. **Depth mix** — propose k=2:20%, k=3:30%, k=4:25%, k=5:15%,
-   k=6:10% (≥60% at 3+), ≥40% multi-domain, ≥50% non-monotone.
-6. **Retry budget for invalid plans** — propose 1 re-ask, both
-   attempts timed and reported.
-7. **Storage** — Q-1M as JSONL, hashes + generator committed, raw
-   file gitignored (repo currently ~40MB of data; 250MB would bloat
-   every future clone). Confirm.
+1. **Q-1M splits** — as proposed, ADJUSTED for decision 2: minting
+   needs its own untainted stream, so ACQ 200k is carved from the
+   replay mass. Final: **ACQ 200k / DEV 100k / SEAL 300k /
+   REPLAY 400k.**
+2. **Minting: FREE HAND, all four models** (user-directed). Each
+   model may mint parse reflexes, chain reflexes, and the new
+   **connector reflexes** — adapters that join two pre-existing
+   reflexes so combined queries certify (§4.1). Same isolation,
+   same gauntlet discipline, chained probation for chain/connector
+   classes, SAFETY-4 gate, per-class creation ledger.
+3. **S-PLAN** — 600 dev / 1,200 sealed per model, as proposed.
+4. **Plan schema breadth** — full: symcore ops + the reflex library
+   (V1.6's 271 + V1.7 admissions) + Tier A caps, as proposed.
+5. **Depth mix** — k=2:20 / k=3:30 / k=4:25 / k=5:15 / k=6:10;
+   ≥40% multi-domain; ≥50% non-monotone, as proposed.
+6. **Plan retries** — 1 re-ask, both attempts timed, as proposed.
+7. **Storage** — Q-1M lives IN the repo under `results/v17/data/`
+   (user-directed: no remote, size is not a concern). Raw-byte
+   hashes still recorded before any sealed run; `-text` attr set.
 
 ---
 
