@@ -97,7 +97,9 @@ def _exec_engine(node, env):
                      "larger" else min(roots))
     if op in ("formula", "evaluate"):
         env2 = {k: float(v) for k, v in n.items()
-                if k not in ("expr",)}
+                if k not in ("expr", "unit") and
+                isinstance(v, (int, float)) and
+                not isinstance(v, bool)}
         task = {"op": "evaluate", "expr": n["expr"], "env": env2,
                 "leaf": "mathematics/arithmetic/expression_evaluation"}
         val, cert = symcore16.solve(task)
