@@ -58,6 +58,11 @@ def main():
     ap.add_argument("--tag", default="")
     ap.add_argument("--plans", default=None,
                     help="admitted plan library (from planner17)")
+    ap.add_argument("--mintlib", default=None,
+                    help="V1.7 minted library (reflexlib17_*.json): "
+                         "parse/chain reflexes tried after the "
+                         "composer escalates; connectors repair "
+                         "final-unit gate kills")
     ap.add_argument("--reflexlib", default=str(
         HERE / "results" / "v16" / "reflexlib_all.json"))
     a = ap.parse_args()
@@ -82,6 +87,14 @@ def main():
     if a.plans:
         plan_lib = json.loads(Path(a.plans).read_text(
             encoding="utf-8"))
+    mint_parse, mint_chain, mint_conn = [], [], []
+    if a.mintlib:
+        for c in json.loads(Path(a.mintlib).read_text(
+                encoding="utf-8")):
+            {"parse": mint_parse, "chain": mint_chain,
+             "connector": mint_conn}.get(c.get("cls"), []).append(c)
+    import re as _re
+    from mint17 import _sub_plan as _mint_sub
 
     st = Counter()
     by_k = defaultdict(Counter)
@@ -100,17 +113,72 @@ def main():
                 hit = acquire16.apply_library(text, library)
                 if hit is not None:
                     served, path = hit["value"], "v16:reflex"
+            comp_kill = None
+            comp_plan = None
             if served is None:
-                plan = composer17.parse_chain(text)
-                if plan is not None:
-                    ok, transcript = plangate17.check(plan, text)
+                comp_plan = composer17.parse_chain(text)
+                if comp_plan is not None:
+                    ok, transcript = plangate17.check(comp_plan, text)
                     if ok:
-                        v, cert = chainexec17.run(plan)
+                        v, cert = chainexec17.run(comp_plan)
                         if v is not None:
                             served, path = v, "chain:composer"
                             st["chain_served"] += 1
                     else:
                         st["gate_killed"] += 1
+                        comp_kill = (transcript[-1].get("kill") or "")
+            if served is None and mint_parse:
+                hit = acquire16.apply_library(text, mint_parse)
+                if hit is not None:
+                    served, path = hit["value"], "mint:parse"
+                    st["mint_served"] += 1
+            if served is None and mint_chain:
+                for cand in mint_chain:
+                    rx = cand.get("_rx")
+                    if rx is None:
+                        try:
+                            rx = _re.compile(cand["pattern"], _re.I)
+                        except _re.error:
+                            continue
+                        cand["_rx"] = rx
+                    m = rx.search(text)
+                    if not m or m.start() > 12:
+                        continue
+                    try:
+                        plan = _mint_sub(cand["plan"], m)
+                    except (ValueError, KeyError):
+                        continue
+                    ok, _t = plangate17.check(plan, text)
+                    if not ok:
+                        continue
+                    v, cert = chainexec17.run(plan)
+                    if v is not None:
+                        served, path = v, "mint:chain:%s" % \
+                            cand.get("name")
+                        st["mint_served"] += 1
+                        break
+            if served is None and mint_conn and comp_kill and \
+                    comp_plan is not None and "asked in" in comp_kill:
+                for cand in mint_conn:
+                    if repr(cand["from_unit"]) not in comp_kill and \
+                            "'%s'" % cand["from_unit"] not in comp_kill:
+                        continue
+                    last = comp_plan["nodes"][-1]["id"]
+                    nid = "n%d" % (len(comp_plan["nodes"]) + 1)
+                    plan2 = {"nodes": comp_plan["nodes"] + [
+                        {"id": nid, "op": "evaluate",
+                         "expr": cand["adapter"].replace(
+                             "$v", "@" + last),
+                         "unit": cand["to_unit"]}], "final": nid}
+                    ok, _t = plangate17.check(plan2, text)
+                    if not ok:
+                        continue
+                    v, cert = chainexec17.run(plan2)
+                    if v is not None:
+                        served, path = v, "mint:connector:%s" % \
+                            cand.get("name")
+                        st["mint_served"] += 1
+                        break
             if served is None and plan_lib:
                 for cand in plan_lib:
                     import re as _re
@@ -172,6 +240,7 @@ def main():
             "in_domain": n_in, "distractors": n_dist,
             "served": served, "chain_served": st["chain_served"],
             "plan_served": st["plan_served"],
+            "mint_served": st["mint_served"],
             "correct": st["correct"], "WRONG": st["WRONG"],
             "coverage_in_domain": round(served / n_in, 4) if n_in
             else None,
