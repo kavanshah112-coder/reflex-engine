@@ -1,0 +1,54 @@
+{
+ "arm": "R-opus",
+ "split": "acq",
+ "n": 200000,
+ "in_domain": 199264,
+ "distractors": 736,
+ "served": 97216,
+ "chain_served": 75212,
+ "plan_served": 0,
+ "mint_served": 22004,
+ "correct": 96960,
+ "WRONG": 256,
+ "coverage_in_domain": 0.4879,
+ "wrong_fire": 0.002633,
+ "SAFETY2_distractor_served": 0,
+ "gate_killed": 0,
+ "escalated": 102784,
+ "engine_errors": 0,
+ "ms_per_query": 7.088,
+ "model_calls": 0,
+ "by_k": {
+  "k2": {
+   "served": 34581,
+   "correct": 34581,
+   "escalated": 5354
+  },
+  "k3": {
+   "served": 39149,
+   "correct": 38963,
+   "escalated": 20639,
+   "wrong": 186
+  },
+  "k4": {
+   "served": 13552,
+   "correct": 13484,
+   "escalated": 36129,
+   "wrong": 68
+  },
+  "k5": {
+   "escalated": 23566,
+   "served": 6322,
+   "correct": 6320,
+   "wrong": 2
+  },
+  "k6": {
+   "escalated": 16360,
+   "served": 3612,
+   "correct": 3612
+  },
+  "kNone": {
+   "escalated": 736
+  }
+ }
+}
