@@ -30,6 +30,18 @@ appears verbatim in the question text or is introduced by a formula's
 own physics constants — i.e., the whitelist exemption applies to gate
 G-P4's honesty check, never to replay binding.
 
+**Strict-binding probe (dev, 5k, `--strictreplay`):** the fix blocks
+the donor-constant subset (4 candidates; wrong-fire 0.73% -> 0.46%)
+but 9 wrongs SURVIVE: templates whose regex groups bind numbers that
+all appear in the question — in the wrong ROLES (rate/years/multiplier
+swaps; one integral bound to 0). No literal-presence filter can close
+role confusion; positional regex replay is structurally unsafe. The
+same class explains haiku's 13 sealed S-PLAN wrongs (a stated number
+serving two roles satisfies magnitude honesty while a usage is
+dropped). Safe reuse must bind by ROLE, which is what the composer
+does — and the composer served 112,170 sealed chains at zero wrong.
+Role-aware plan reuse is V1.8's problem statement.
+
 
 ## B31 — minted chain reflex served a prefix of a longer chain
 

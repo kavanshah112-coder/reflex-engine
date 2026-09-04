@@ -65,6 +65,12 @@ def main():
                          "final-unit gate kills")
     ap.add_argument("--reflexlib", default=str(
         HERE / "results" / "v16" / "reflexlib_all.json"))
+    ap.add_argument("--strictreplay", action="store_true",
+                    help="B32 fix: a substituted chain plan may serve "
+                         "only if every numeric slot value it binds "
+                         "appears in the question text — the "
+                         "STRUCTURAL whitelist exempts gate honesty, "
+                         "never replay binding")
     a = ap.parse_args()
 
     items = []
@@ -111,6 +117,25 @@ def main():
              "connector": mint_conn}.get(c.get("cls"), []).append(c)
     import re as _re
     from mint17 import _sub_plan as _mint_sub
+
+    def _b32_ok(plan, text):
+        # B32 fix (strict replay binding): every numeric SLOT VALUE in
+        # the substituted plan must be stated in the question. Slot
+        # values are the bound operands; structural constants live in
+        # expr strings and are untouched. Compared by |magnitude| like
+        # G-P4 so signs and percent forms match.
+        stated = {abs(float(m)) for m in _re.findall(
+            r"-?\d+(?:\.\d+)?", text)}
+        for node in plan.get("nodes", []):
+            for k2, v2 in node.items():
+                if k2 in ("id", "op", "expr", "unit", "from", "to",
+                          "var", "pick"):
+                    continue
+                if isinstance(v2, (int, float)) and not \
+                        isinstance(v2, bool):
+                    if abs(float(v2)) not in stated:
+                        return False
+        return True
 
     st = Counter()
     by_k = defaultdict(Counter)
@@ -168,6 +193,9 @@ def main():
                     try:
                         plan = _mint_sub(cand["plan"], m)
                     except (ValueError, KeyError):
+                        continue
+                    if a.strictreplay and not _b32_ok(plan, text):
+                        st["b32_blocked"] += 1
                         continue
                     ok, _t = plangate17.check(plan, text)
                     if not ok:
@@ -268,6 +296,7 @@ def main():
             "wrong_fire": round(st["WRONG"] / served, 6) if served
             else None,
             "SAFETY2_distractor_served": st["SAFETY2_SERVED"],
+            "b32_blocked": st["b32_blocked"],
             "gate_killed": st["gate_killed"],
             "escalated": st["escalated"],
             "engine_errors": st["engine_error"],

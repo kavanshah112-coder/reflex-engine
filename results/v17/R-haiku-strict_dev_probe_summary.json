@@ -1,0 +1,53 @@
+{
+ "arm": "R-haiku-strict",
+ "split": "dev",
+ "n": 5000,
+ "in_domain": 4986,
+ "distractors": 14,
+ "served": 1953,
+ "chain_served": 1861,
+ "plan_served": 0,
+ "mint_served": 92,
+ "correct": 1944,
+ "WRONG": 9,
+ "coverage_in_domain": 0.3917,
+ "wrong_fire": 0.004608,
+ "SAFETY2_distractor_served": 0,
+ "b32_blocked": 4,
+ "gate_killed": 0,
+ "escalated": 3047,
+ "engine_errors": 0,
+ "ms_per_query": 5.522,
+ "model_calls": 0,
+ "by_k": {
+  "k2": {
+   "escalated": 363,
+   "served": 661,
+   "correct": 661
+  },
+  "k3": {
+   "served": 690,
+   "correct": 681,
+   "escalated": 771,
+   "wrong": 9
+  },
+  "k4": {
+   "escalated": 929,
+   "served": 350,
+   "correct": 350
+  },
+  "k5": {
+   "escalated": 566,
+   "served": 165,
+   "correct": 165
+  },
+  "k6": {
+   "escalated": 404,
+   "served": 87,
+   "correct": 87
+  },
+  "kNone": {
+   "escalated": 14
+  }
+ }
+}
