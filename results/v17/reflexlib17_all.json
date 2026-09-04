@@ -1,6 +1,31 @@
 [
  {
   "cls": "chain",
+  "name": "sonnet:chain_eval_distribute_interest",
+  "pattern": "(?i)^(?:compute|start with)\\s+(?P<a>\\d+)\\*?\\((?P<b>\\d+) \\+ (?P<c>\\d+)\\)\\.\\s*using that as a principal in dollars, find the simple interest at (?P<r>\\d+(?:\\.\\d+)?)% per year over (?P<t>\\d+) years?",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "evaluate",
+     "expr": "$a*($b + $c)"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "p * r * t / 100",
+     "p": "@n1",
+     "r": "$r",
+     "t": "$t",
+     "unit": "$"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 14
+ },
+ {
+  "cls": "chain",
   "name": "sonnet:chain_lcm_interest",
   "pattern": "(?i)^compute the (?:lcm|least common multiple) of (?P<a>\\d+) and (?P<b>\\d+)\\.\\s*using that as a principal in dollars, find the simple interest at (?P<r>\\d+(?:\\.\\d+)?)% per year over (?P<t>\\d+) years?",
   "plan": {
@@ -23,7 +48,117 @@
    ],
    "final": "n2"
   },
-  "probation": 13
+  "probation": 7
+ },
+ {
+  "cls": "chain",
+  "name": "sonnet:chain_ncr_interest",
+  "pattern": "(?i)^(?:compute|take)\\s+(?P<n>\\d+) choose (?P<rr>\\d+)\\.\\s*using that as a principal in dollars, find the simple interest at (?P<r>\\d+(?:\\.\\d+)?)% per year over (?P<t>\\d+) years?",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "ncr",
+     "n": "$n",
+     "r": "$rr"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "p * r * t / 100",
+     "p": "@n1",
+     "r": "$r",
+     "t": "$t",
+     "unit": "$"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 16
+ },
+ {
+  "cls": "chain",
+  "name": "sonnet:chain_sum_k_interest",
+  "pattern": "(?i)^compute the sum of k for k = 1 to (?P<n>\\d+)\\.\\s*using that as a principal in dollars, find the simple interest at (?P<r>\\d+(?:\\.\\d+)?)% per year over (?P<t>\\d+) years?",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "sum_finite",
+     "expr": "k",
+     "var": "k",
+     "a": "1",
+     "b": "$n"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "p * r * t / 100",
+     "p": "@n1",
+     "r": "$r",
+     "t": "$t",
+     "unit": "$"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 3
+ },
+ {
+  "cls": "chain",
+  "name": "sonnet:chain_sum_k_squared_interest",
+  "pattern": "(?i)^compute the sum of k\\^2 for k = 1 to (?P<n>\\d+)\\.\\s*using that as a principal in dollars, find the simple interest at (?P<r>\\d+(?:\\.\\d+)?)% per year over (?P<t>\\d+) years?",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "sum_finite",
+     "expr": "k**2",
+     "var": "k",
+     "a": "1",
+     "b": "$n"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "p * r * t / 100",
+     "p": "@n1",
+     "r": "$r",
+     "t": "$t",
+     "unit": "$"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 5
+ },
+ {
+  "cls": "chain",
+  "name": "sonnet:chain_integral_interest",
+  "pattern": "(?i)^(?:take|find)\\s+the integral of (?P<c2>-?\\d+)x\\^2\\s*(?P<c1>[+-]\\s?\\d+)x from (?P<a>-?\\d+) to (?P<b>-?\\d+)\\.\\s*using that as a principal in dollars, find the simple interest at (?P<r>\\d+(?:\\.\\d+)?)% per year over (?P<t>\\d+) years?",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "integrate_def",
+     "expr": "$c2*x**2+($c1)*x",
+     "var": "x",
+     "a": "$a",
+     "b": "$b"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "p * r * t / 100",
+     "p": "@n1",
+     "r": "$r",
+     "t": "$t",
+     "unit": "$"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 12
  },
  {
   "cls": "chain",

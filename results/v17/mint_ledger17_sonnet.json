@@ -4,12 +4,12 @@
   "proposed_parse": 20,
   "g1_killed": 0,
   "g2_killed": 10,
-  "g3_inert": 79,
+  "g3_inert": 83,
   "g3_memorize": 0,
-  "g3_wrong": 19,
+  "g3_wrong": 10,
   "proposed_chain": 112,
-  "admitted": 32,
-  "admitted_chain": 32,
+  "admitted": 37,
+  "admitted_chain": 37,
   "proposed_connector": 8,
   "model": "sonnet"
  },
@@ -115,32 +115,12 @@
    ]
   },
   {
-   "name": "chain_eval_distribute_interest",
-   "why": "g3: WRONG chain serve on q17_0369598"
-  },
-  {
    "name": "chain_gcd_interest",
    "why": "g3: inert (1)"
   },
   {
-   "name": "chain_ncr_interest",
-   "why": "g3: WRONG chain serve on q17_0392280"
-  },
-  {
-   "name": "chain_sum_k_interest",
-   "why": "g3: WRONG chain serve on q17_0497615"
-  },
-  {
-   "name": "chain_sum_k_squared_interest",
-   "why": "g3: WRONG chain serve on q17_0332029"
-  },
-  {
    "name": "chain_sum_2k_minus_1_interest",
-   "why": "g3: WRONG chain serve on q17_0881101"
-  },
-  {
-   "name": "chain_integral_interest",
-   "why": "g3: WRONG chain serve on q17_0375318"
+   "why": "g3: inert (2)"
   },
   {
    "name": "chain_root_pick_interest",
@@ -156,7 +136,7 @@
   },
   {
    "name": "chain_integral_force",
-   "why": "g3: WRONG chain serve on q17_0434387"
+   "why": "g3: inert (0)"
   },
   {
    "name": "chain_root_pick_force",
@@ -164,7 +144,7 @@
   },
   {
    "name": "chain_ncr_kinetic_energy",
-   "why": "g3: WRONG chain serve on q17_0346408"
+   "why": "g3: inert (0)"
   },
   {
    "name": "chain_root_pick_kinetic_energy",
@@ -176,7 +156,7 @@
   },
   {
    "name": "chain_gcd_kinetic_energy",
-   "why": "g3: WRONG chain serve on q17_0301050"
+   "why": "g3: inert (0)"
   },
   {
    "name": "connector_N_to_kN",
