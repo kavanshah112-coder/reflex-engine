@@ -46,6 +46,9 @@ def _compile(cand):
     """G1. Returns (compiled, why_dead)."""
     pat = cand.get("pattern") or ""
     task = cand.get("task") or {}
+    if not isinstance(task, dict):
+        # a malformed candidate is G1-killed, never a crash (B27 rule)
+        return None, "g1: task is not an object"
     if not isinstance(pat, str) or not (0 < len(pat) <=
                                         MAX_PATTERN_LEN):
         return None, "g1: pattern missing or oversized"
