@@ -1,0 +1,55 @@
+{
+ "arm": "R-sonnet",
+ "split": "seal",
+ "n": 300000,
+ "in_domain": 298905,
+ "distractors": 1095,
+ "served": 133177,
+ "chain_served": 112170,
+ "plan_served": 0,
+ "mint_served": 21007,
+ "correct": 132337,
+ "WRONG": 840,
+ "coverage_in_domain": 0.4455,
+ "wrong_fire": 0.006307,
+ "SAFETY2_distractor_served": 0,
+ "gate_killed": 0,
+ "escalated": 166823,
+ "engine_errors": 0,
+ "ms_per_query": 7.214,
+ "model_calls": 0,
+ "by_k": {
+  "k2": {
+   "served": 51485,
+   "correct": 51485,
+   "escalated": 8121
+  },
+  "k3": {
+   "served": 46418,
+   "correct": 45679,
+   "escalated": 43364,
+   "wrong": 739
+  },
+  "k4": {
+   "served": 20794,
+   "correct": 20698,
+   "escalated": 54048,
+   "wrong": 96
+  },
+  "k5": {
+   "served": 9271,
+   "correct": 9267,
+   "escalated": 35503,
+   "wrong": 4
+  },
+  "k6": {
+   "escalated": 24692,
+   "served": 5209,
+   "correct": 5208,
+   "wrong": 1
+  },
+  "kNone": {
+   "escalated": 1095
+  }
+ }
+}
