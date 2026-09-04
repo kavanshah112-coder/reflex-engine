@@ -1,5 +1,29 @@
 # V1.7 bug audit
 
+## B31 — minted chain reflex served a prefix of a longer chain
+
+**Found:** 2026-09-04, minted dev arms: M-sonnet 67 wrong of 42,907
+served (all one reflex, `chain_lcm_interest`); M-all inherited them.
+Superseded summaries preserved in git history at the commit before
+the rerun.
+
+**What happened:** the reflex's pattern was not end-anchored, so on
+k=4 questions beginning "Compute the lcm... simple interest..." it
+matched the PREFIX and served the 2-step answer — B30's
+partial-answer class reappearing inside the minted layer. Probation
+(2,000 ACQ offers) never sampled a colliding longer chain; dev's
+100k did. Opus end-anchored all its patterns explicitly and had zero
+such wrongs — the defect was pattern-hygiene variance between
+minters.
+
+**Fix (structural, gauntlet + serving path):** a minted chain match
+must CONSUME the whole question (match end within 2 chars of the
+stripped text end). Enforced in the gauntlet's probation loop AND in
+the runner's replay path, so the class is closed for every minted
+chain and every replayed plan, not just the traced reflex — which
+this rule renders inert (SAFETY-4 revocation by generalization).
+Sonnet re-gauntleted; union rebuilt; arms rerun.
+
 Numbering continues the arc (B1–B29 in prior audits). Superseded runs
 preserved; fixes verified offline before reruns.
 

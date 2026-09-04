@@ -193,7 +193,11 @@ def gauntlet(model):
             serves, tuples, dead = [], set(), None
             for it in probation:
                 m = rx.search(it["text"])
-                if not m or m.start() > 12:
+                # B31: a chain match must CONSUME the whole question -
+                # a prefix match on a longer chain serves a partial
+                # answer (the B30 class inside the minted layer)
+                if not m or m.start() > 12 or \
+                        m.end() < len(it["text"].rstrip(" .?!")) - 2:
                     continue
                 try:
                     plan = _sub_plan(cand["plan"], m)

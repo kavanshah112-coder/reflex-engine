@@ -161,7 +161,9 @@ def main():
                             continue
                         cand["_rx"] = rx
                     m = rx.search(text)
-                    if not m or m.start() > 12:
+                    # B31: whole-question consumption required
+                    if not m or m.start() > 12 or \
+                            m.end() < len(text.rstrip(" .?!")) - 2:
                         continue
                     try:
                         plan = _mint_sub(cand["plan"], m)
