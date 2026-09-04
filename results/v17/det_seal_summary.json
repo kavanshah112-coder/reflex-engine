@@ -1,0 +1,51 @@
+{
+ "arm": "det",
+ "split": "seal",
+ "n": 300000,
+ "in_domain": 298905,
+ "distractors": 1095,
+ "served": 112170,
+ "chain_served": 112170,
+ "plan_served": 0,
+ "mint_served": 0,
+ "correct": 112170,
+ "WRONG": 0,
+ "coverage_in_domain": 0.3753,
+ "wrong_fire": 0.0,
+ "SAFETY2_distractor_served": 0,
+ "gate_killed": 0,
+ "escalated": 187830,
+ "engine_errors": 0,
+ "ms_per_query": 2.945,
+ "model_calls": 0,
+ "by_k": {
+  "k2": {
+   "escalated": 20229,
+   "served": 39377,
+   "correct": 39377
+  },
+  "k3": {
+   "served": 38136,
+   "correct": 38136,
+   "escalated": 51646
+  },
+  "k4": {
+   "served": 20195,
+   "correct": 20195,
+   "escalated": 54647
+  },
+  "k5": {
+   "served": 9255,
+   "correct": 9255,
+   "escalated": 35519
+  },
+  "k6": {
+   "escalated": 24694,
+   "served": 5207,
+   "correct": 5207
+  },
+  "kNone": {
+   "escalated": 1095
+  }
+ }
+}
