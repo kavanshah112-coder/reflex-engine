@@ -1,5 +1,36 @@
 # V1.7 bug audit
 
+## B32 — replay templates bind wrong small constants (whitelist blind spot)
+
+**Found:** 2026-09-04, R-haiku million run (first R-arm to finish): WRONG
+605/289/937/1238 across acq/dev/seal/replay (~0.8% wrong-fire per
+split, ~18.7% of replay-template serves), every wrong row
+`mint:chain:haiku_plan_*`. The composer/det path inside the same runs
+stayed at zero wrong. Summaries preserved as written
+(`R-haiku_*_summary.json`, `R-haiku_*_wrong.json`).
+
+**What happened:** planlib17's templatizer blanks question numbers
+into regex groups but leaves plan literals that belong to the
+STRUCTURAL whitelist ({0,1,2,0.5,100,1000,9.8,3.6,60} + small ints
+0-6) as literals — exactly the anti-value-smuggling carve-out. A
+template minted from "interest at 2% over 6 years, multiply by 3"
+matches a sibling question with rate 5%, 8 years, no multiplier: the
+differing constants are all whitelist-small, so G-P4's stated-number
+honesty check cannot flag them, the plan executes cleanly, and the
+end-to-end witness verifies the plan's OWN arithmetic — which answers
+the DONOR question, not this one. The whitelist that closes
+value-smuggling opens constant-swapping: two gates, each individually
+sound, compose into a blind spot.
+
+**Status:** the R-<model> arms are pre-registered and run-once; the
+sealed numbers stand as found (R-haiku FAILS SAFETY-1: 0.8% > 0.5%).
+Structural fix for any superseding run: a replayed plan may serve only
+if EVERY numeric literal in the substituted plan (whitelist included)
+appears verbatim in the question text or is introduced by a formula's
+own physics constants — i.e., the whitelist exemption applies to gate
+G-P4's honesty check, never to replay binding.
+
+
 ## B31 — minted chain reflex served a prefix of a longer chain
 
 **Found:** 2026-09-04, minted dev arms: M-sonnet 67 wrong of 42,907
