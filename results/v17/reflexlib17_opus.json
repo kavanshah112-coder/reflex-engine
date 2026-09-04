@@ -1,0 +1,1862 @@
+[
+ {
+  "cls": "chain",
+  "name": "quadratic_root_then_scale_then_simple_interest",
+  "pattern": "(?i)^\\s*(?:Take|Find|Start with|Compute)\\s+the\\s+(?P<pick>larger|smaller)\\s+root of\\s+x\\^2\\s*(?P<rb>[+-]\\s*\\d+)\\s*\\*?\\s*x\\s*(?P<rc>[+-]\\s*\\d+)\\s*=\\s*0\\.\\s*Multiply (?:that|the result) by\\s*(?P<mul>\\d+)\\.\\s*Using that as a principal in dollars,\\s*find the simple interest at\\s*(?P<p>\\d+)\\s*%\\s*per year over\\s*(?P<t>\\d+)\\s*years(?:,\\s*in \\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "solve_pick",
+     "lhs": "x^2 $rb*x $rc",
+     "pick": "$pick"
+    },
+    {
+     "id": "n2",
+     "op": "scale",
+     "value": "@n1",
+     "by": "$mul"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "p * r * t / 100",
+     "p": "@n2",
+     "r": "$p",
+     "t": "$t"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 9
+ },
+ {
+  "cls": "chain",
+  "name": "definite_integral_then_scale_then_simple_interest",
+  "pattern": "(?i)^\\s*(?:Compute|Take|Find|Start with)\\s+the integral of\\s+(?P<ca>\\d+)\\s*x\\^2\\s*(?P<cb>[+-]\\s*\\d+)\\s*x\\s+from\\s+(?P<lo>-?\\d+)\\s+to\\s+(?P<hi>-?\\d+)\\.\\s*Multiply (?:that|the result) by\\s*(?P<mul>\\d+)\\.\\s*Using that as a principal in dollars,\\s*find the simple interest at\\s*(?P<p>\\d+)\\s*%\\s*per year over\\s*(?P<t>\\d+)\\s*years(?:,\\s*in \\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "integrate_def",
+     "expr": "$ca*x^2 $cb*x",
+     "var": "x",
+     "a": "$lo",
+     "b": "$hi"
+    },
+    {
+     "id": "n2",
+     "op": "scale",
+     "value": "@n1",
+     "by": "$mul"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "p * r * t / 100",
+     "p": "@n2",
+     "r": "$p",
+     "t": "$t"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 9
+ },
+ {
+  "cls": "chain",
+  "name": "ncr_then_simple_interest",
+  "pattern": "(?i)^\\s*(?:Compute|Take|Find|Start with)\\s+(?P<n>\\d+)\\s+choose\\s+(?P<r>\\d+)\\.\\s*Using that as a principal in dollars,\\s*find the simple interest at\\s*(?P<p>\\d+)\\s*%\\s*per year over\\s*(?P<t>\\d+)\\s*years(?:,\\s*in \\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "ncr",
+     "n": "$n",
+     "r": "$r"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "p * r * t / 100",
+     "p": "@n1",
+     "r": "$p",
+     "t": "$t"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 27
+ },
+ {
+  "cls": "chain",
+  "name": "definite_integral_then_simple_interest",
+  "pattern": "(?i)^\\s*(?:Compute|Take|Find|Start with)\\s+the integral of\\s+(?P<ca>\\d+)\\s*x\\^2\\s*(?P<cb>[+-]\\s*\\d+)\\s*x\\s+from\\s+(?P<lo>-?\\d+)\\s+to\\s+(?P<hi>-?\\d+)\\.\\s*Using that as a principal in dollars,\\s*find the simple interest at\\s*(?P<p>\\d+)\\s*%\\s*per year over\\s*(?P<t>\\d+)\\s*years(?:,\\s*in \\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "integrate_def",
+     "expr": "$ca*x^2 $cb*x",
+     "var": "x",
+     "a": "$lo",
+     "b": "$hi"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "p * r * t / 100",
+     "p": "@n1",
+     "r": "$p",
+     "t": "$t"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 19
+ },
+ {
+  "cls": "chain",
+  "name": "lcm_then_simple_interest",
+  "pattern": "(?i)^\\s*(?:Compute|Take|Find)\\s+the\\s+(?:lcm|least common multiple)\\s+of\\s+(?P<ga>\\d+)\\s+and\\s+(?P<gb>\\d+)\\.\\s*Using that as a principal in dollars,\\s*find the simple interest at\\s*(?P<p>\\d+)\\s*%\\s*per year over\\s*(?P<t>\\d+)\\s*years(?:,\\s*in \\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "lcm",
+     "a": "$ga",
+     "b": "$gb"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "p * r * t / 100",
+     "p": "@n1",
+     "r": "$p",
+     "t": "$t"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 13
+ },
+ {
+  "cls": "chain",
+  "name": "bracketed_product_then_simple_interest",
+  "pattern": "(?i)^\\s*(?:Compute|Start with|Take|Evaluate)\\s+(?P<pa>\\d+)\\s*\\*?\\s*\\(\\s*(?P<pb>\\d+)\\s*\\+\\s*(?P<pc>\\d+)\\s*\\)\\.\\s*Using that as a principal in dollars,\\s*find the simple interest at\\s*(?P<p>\\d+)\\s*%\\s*per year over\\s*(?P<t>\\d+)\\s*years(?:,\\s*in \\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "evaluate",
+     "expr": "$pa*($pb + $pc)"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "p * r * t / 100",
+     "p": "@n1",
+     "r": "$p",
+     "t": "$t"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 26
+ },
+ {
+  "cls": "chain",
+  "name": "sum_k_then_simple_interest",
+  "pattern": "(?i)^\\s*(?:Compute|Take|Find)\\s+the sum of\\s+k\\s+for\\s+k\\s*=\\s*1\\s+to\\s+(?P<n>\\d+)\\.\\s*Using that as a principal in dollars,\\s*find the simple interest at\\s*(?P<p>\\d+)\\s*%\\s*per year over\\s*(?P<t>\\d+)\\s*years(?:,\\s*in \\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "sum_finite",
+     "expr": "k",
+     "var": "k",
+     "a": "1",
+     "b": "$n"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "p * r * t / 100",
+     "p": "@n1",
+     "r": "$p",
+     "t": "$t"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 8
+ },
+ {
+  "cls": "chain",
+  "name": "sum_ksq_then_simple_interest",
+  "pattern": "(?i)^\\s*(?:Compute|Take|Find)\\s+the sum of\\s+k\\^2\\s+for\\s+k\\s*=\\s*1\\s+to\\s+(?P<n>\\d+)\\.\\s*Using that as a principal in dollars,\\s*find the simple interest at\\s*(?P<p>\\d+)\\s*%\\s*per year over\\s*(?P<t>\\d+)\\s*years(?:,\\s*in \\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "sum_finite",
+     "expr": "k^2",
+     "var": "k",
+     "a": "1",
+     "b": "$n"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "p * r * t / 100",
+     "p": "@n1",
+     "r": "$p",
+     "t": "$t"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 11
+ },
+ {
+  "cls": "chain",
+  "name": "sum_odd_then_simple_interest",
+  "pattern": "(?i)^\\s*(?:Compute|Take|Find)\\s+the sum of\\s+2\\s*k\\s*-\\s*1\\s+for\\s+k\\s*=\\s*1\\s+to\\s+(?P<n>\\d+)\\.\\s*Using that as a principal in dollars,\\s*find the simple interest at\\s*(?P<p>\\d+)\\s*%\\s*per year over\\s*(?P<t>\\d+)\\s*years(?:,\\s*in \\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "sum_finite",
+     "expr": "2*k - 1",
+     "var": "k",
+     "a": "1",
+     "b": "$n"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "p * r * t / 100",
+     "p": "@n1",
+     "r": "$p",
+     "t": "$t"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 4
+ },
+ {
+  "cls": "chain",
+  "name": "first_derivative_at_then_simple_interest",
+  "pattern": "(?i)^\\s*(?:Compute|Take|Find)\\s+the first derivative of\\s+(?P<da>\\d+)\\s*x\\^3\\s*(?P<db>[+-]\\s*\\d+)\\s*x\\^2\\s+at\\s+x\\s*=\\s*(?P<dx>-?\\d+)\\.\\s*Using that as a principal in dollars,\\s*find the simple interest at\\s*(?P<p>\\d+)\\s*%\\s*per year over\\s*(?P<t>\\d+)\\s*years(?:,\\s*in \\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "derivative_at",
+     "expr": "$da*x^3 $db*x^2",
+     "point": "$dx",
+     "order": "1"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "p * r * t / 100",
+     "p": "@n1",
+     "r": "$p",
+     "t": "$t"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 10
+ },
+ {
+  "cls": "chain",
+  "name": "second_derivative_at_then_simple_interest",
+  "pattern": "(?i)^\\s*(?:Compute|Take|Find)\\s+the second derivative of\\s+(?P<da>\\d+)\\s*x\\^3\\s*(?P<db>[+-]\\s*\\d+)\\s*x\\^2\\s+at\\s+x\\s*=\\s*(?P<dx>-?\\d+)\\.\\s*Using that as a principal in dollars,\\s*find the simple interest at\\s*(?P<p>\\d+)\\s*%\\s*per year over\\s*(?P<t>\\d+)\\s*years(?:,\\s*in \\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "derivative_at",
+     "expr": "$da*x^3 $db*x^2",
+     "point": "$dx",
+     "order": "2"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "p * r * t / 100",
+     "p": "@n1",
+     "r": "$p",
+     "t": "$t"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 11
+ },
+ {
+  "cls": "chain",
+  "name": "quadratic_root_then_force_then_subtract",
+  "pattern": "(?i)^\\s*(?:Take|Find|Start with|Compute)\\s+the\\s+(?P<pick>larger|smaller)\\s+root of\\s+x\\^2\\s*(?P<rb>[+-]\\s*\\d+)\\s*\\*?\\s*x\\s*(?P<rc>[+-]\\s*\\d+)\\s*=\\s*0\\.\\s*Using that as the acceleration in m/s\\^2 of a\\s*(?P<m>\\d+)\\s*kg mass,\\s*find the force\\.\\s*Subtract\\s*(?P<off>\\d+)\\s+from that(?:,\\s*in N)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "solve_pick",
+     "lhs": "x^2 $rb*x $rc",
+     "pick": "$pick"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "m * a",
+     "m": "$m",
+     "a": "@n1",
+     "unit": "N"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "x - d",
+     "x": "@n2",
+     "d": "$off",
+     "unit": "N"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 6
+ },
+ {
+  "cls": "chain",
+  "name": "ncr_then_simple_interest_then_scale",
+  "pattern": "(?i)^\\s*(?:Compute|Take|Find|Start with)\\s+(?P<n>\\d+)\\s+choose\\s+(?P<r>\\d+)\\.\\s*Using that as a principal in dollars,\\s*find the simple interest at\\s*(?P<p>\\d+)\\s*%\\s*per year over\\s*(?P<t>\\d+)\\s*years\\.\\s*Multiply (?:that|the result) by\\s*(?P<mul>\\d+)(?:,\\s*in \\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "ncr",
+     "n": "$n",
+     "r": "$r"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "p * r * t / 100",
+     "p": "@n1",
+     "r": "$p",
+     "t": "$t"
+    },
+    {
+     "id": "n3",
+     "op": "scale",
+     "value": "@n2",
+     "by": "$mul"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 10
+ },
+ {
+  "cls": "chain",
+  "name": "bracketed_product_then_simple_interest_then_scale",
+  "pattern": "(?i)^\\s*(?:Compute|Start with|Take|Evaluate)\\s+(?P<pa>\\d+)\\s*\\*?\\s*\\(\\s*(?P<pb>\\d+)\\s*\\+\\s*(?P<pc>\\d+)\\s*\\)\\.\\s*Using that as a principal in dollars,\\s*find the simple interest at\\s*(?P<p>\\d+)\\s*%\\s*per year over\\s*(?P<t>\\d+)\\s*years\\.\\s*Multiply (?:that|the result) by\\s*(?P<mul>\\d+)(?:,\\s*in \\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "evaluate",
+     "expr": "$pa*($pb + $pc)"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "p * r * t / 100",
+     "p": "@n1",
+     "r": "$p",
+     "t": "$t"
+    },
+    {
+     "id": "n3",
+     "op": "scale",
+     "value": "@n2",
+     "by": "$mul"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 13
+ },
+ {
+  "cls": "chain",
+  "name": "definite_integral_then_simple_interest_then_scale",
+  "pattern": "(?i)^\\s*(?:Compute|Take|Find|Start with)\\s+the integral of\\s+(?P<ca>\\d+)\\s*x\\^2\\s*(?P<cb>[+-]\\s*\\d+)\\s*x\\s+from\\s+(?P<lo>-?\\d+)\\s+to\\s+(?P<hi>-?\\d+)\\.\\s*Using that as a principal in dollars,\\s*find the simple interest at\\s*(?P<p>\\d+)\\s*%\\s*per year over\\s*(?P<t>\\d+)\\s*years\\.\\s*Multiply (?:that|the result) by\\s*(?P<mul>\\d+)(?:,\\s*in \\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "integrate_def",
+     "expr": "$ca*x^2 $cb*x",
+     "var": "x",
+     "a": "$lo",
+     "b": "$hi"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "p * r * t / 100",
+     "p": "@n1",
+     "r": "$p",
+     "t": "$t"
+    },
+    {
+     "id": "n3",
+     "op": "scale",
+     "value": "@n2",
+     "by": "$mul"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 18
+ },
+ {
+  "cls": "chain",
+  "name": "ncr_then_two_simple_interests",
+  "pattern": "(?i)^\\s*(?:Compute|Take|Find|Start with)\\s+(?P<n>\\d+)\\s+choose\\s+(?P<r>\\d+)\\.\\s*Using that as a principal in dollars,\\s*find the simple interest at\\s*(?P<p>\\d+)\\s*%\\s*per year over\\s*(?P<t>\\d+)\\s*years\\.\\s*Using that as a principal in dollars,\\s*find the simple interest at\\s*(?P<p2>\\d+)\\s*%\\s*per year over\\s*(?P<t2>\\d+)\\s*years(?:,\\s*in \\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "ncr",
+     "n": "$n",
+     "r": "$r"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "p * r * t / 100",
+     "p": "@n1",
+     "r": "$p",
+     "t": "$t"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "p * r * t / 100",
+     "p": "@n2",
+     "r": "$p2",
+     "t": "$t2"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 11
+ },
+ {
+  "cls": "chain",
+  "name": "quadratic_root_then_force_then_kN",
+  "pattern": "(?i)^\\s*(?:Take|Find|Start with|Compute)\\s+the\\s+(?P<pick>larger|smaller)\\s+root of\\s+x\\^2\\s*(?P<rb>[+-]\\s*\\d+)\\s*\\*?\\s*x\\s*(?P<rc>[+-]\\s*\\d+)\\s*=\\s*0\\.\\s*Using that as the acceleration in m/s\\^2 of a\\s*(?P<m>\\d+)\\s*kg mass,\\s*find the force\\.\\s*(?:Express the result in kN from N|Convert that to kN from N)(?:,\\s*in kN)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "solve_pick",
+     "lhs": "x^2 $rb*x $rc",
+     "pick": "$pick"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "m * a",
+     "m": "$m",
+     "a": "@n1",
+     "unit": "N"
+    },
+    {
+     "id": "n3",
+     "op": "convert",
+     "value": "@n2",
+     "from": "N",
+     "to": "kN"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 7
+ },
+ {
+  "cls": "chain",
+  "name": "bracketed_product_then_force_then_kN",
+  "pattern": "(?i)^\\s*(?:Compute|Start with|Take|Evaluate)\\s+(?P<pa>\\d+)\\s*\\*?\\s*\\(\\s*(?P<pb>\\d+)\\s*\\+\\s*(?P<pc>\\d+)\\s*\\)\\.\\s*Using that as the acceleration in m/s\\^2 of a\\s*(?P<m>\\d+)\\s*kg mass,\\s*find the force\\.\\s*(?:Express the result in kN from N|Convert that to kN from N)(?:,\\s*in kN)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "evaluate",
+     "expr": "$pa*($pb + $pc)"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "m * a",
+     "m": "$m",
+     "a": "@n1",
+     "unit": "N"
+    },
+    {
+     "id": "n3",
+     "op": "convert",
+     "value": "@n2",
+     "from": "N",
+     "to": "kN"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 3
+ },
+ {
+  "cls": "chain",
+  "name": "quadratic_root_then_kinetic_energy_then_kJ",
+  "pattern": "(?i)^\\s*(?:Take|Find|Start with|Compute)\\s+the\\s+(?P<pick>larger|smaller)\\s+root of\\s+x\\^2\\s*(?P<rb>[+-]\\s*\\d+)\\s*\\*?\\s*x\\s*(?P<rc>[+-]\\s*\\d+)\\s*=\\s*0\\.\\s*Using that as the speed in m/s of a\\s*(?P<m>\\d+)\\s*kg mass,\\s*find the kinetic energy\\.\\s*(?:Express the result in kJ from J|Convert that to kJ from J)(?:,\\s*in kJ)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "solve_pick",
+     "lhs": "x^2 $rb*x $rc",
+     "pick": "$pick"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "0.5 * m * v^2",
+     "m": "$m",
+     "v": "@n1",
+     "unit": "J"
+    },
+    {
+     "id": "n3",
+     "op": "convert",
+     "value": "@n2",
+     "from": "J",
+     "to": "kJ"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 12
+ },
+ {
+  "cls": "chain",
+  "name": "definite_integral_then_kinetic_energy_then_kJ",
+  "pattern": "(?i)^\\s*(?:Compute|Take|Find|Start with)\\s+the integral of\\s+(?P<ca>\\d+)\\s*x\\^2\\s*(?P<cb>[+-]\\s*\\d+)\\s*x\\s+from\\s+(?P<lo>-?\\d+)\\s+to\\s+(?P<hi>-?\\d+)\\.\\s*Using that as the speed in m/s of a\\s*(?P<m>\\d+)\\s*kg mass,\\s*find the kinetic energy\\.\\s*(?:Express the result in kJ from J|Convert that to kJ from J)(?:,\\s*in kJ)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "integrate_def",
+     "expr": "$ca*x^2 $cb*x",
+     "var": "x",
+     "a": "$lo",
+     "b": "$hi"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "0.5 * m * v^2",
+     "m": "$m",
+     "v": "@n1",
+     "unit": "J"
+    },
+    {
+     "id": "n3",
+     "op": "convert",
+     "value": "@n2",
+     "from": "J",
+     "to": "kJ"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 4
+ },
+ {
+  "cls": "chain",
+  "name": "sum_interest",
+  "pattern": "^(?:compute|take|find)\\s+the\\s+sum\\s+of\\s+(?P<sexpr>.+?)\\s+for\\s+k\\s*=\\s*1\\s+to\\s+(?P<sb>\\d+)\\s*\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s*find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<rate2>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<yrs2>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s*(?:\\$|kN|kJ|N|J))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "sum_finite",
+     "expr": "$sexpr",
+     "var": "k",
+     "a": "1",
+     "b": "$sb"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n1",
+     "r": "$rate2",
+     "t": "$yrs2",
+     "unit": "$"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 19
+ },
+ {
+  "cls": "chain",
+  "name": "ncr_interest",
+  "pattern": "^(?:compute|take|find)\\s+(?P<nn>\\d+)\\s+choose\\s+(?P<nr>\\d+)\\s*\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s*find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<rate2>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<yrs2>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s*(?:\\$|kN|kJ|N|J))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "ncr",
+     "n": "$nn",
+     "r": "$nr"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n1",
+     "r": "$rate2",
+     "t": "$yrs2",
+     "unit": "$"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 27
+ },
+ {
+  "cls": "chain",
+  "name": "paren_product_interest",
+  "pattern": "^(?:compute|evaluate|take|start\\s+with)\\s+(?P<c1>\\d+)\\s*\\*?\\s*\\(\\s*(?P<c2>\\d+)\\s*\\+\\s*(?P<c3>\\d+)\\s*\\)\\s*\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s*find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<rate2>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<yrs2>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s*(?:\\$|kN|kJ|N|J))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "evaluate",
+     "expr": "($c1)*(($c2)+($c3))"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n1",
+     "r": "$rate2",
+     "t": "$yrs2",
+     "unit": "$"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 26
+ },
+ {
+  "cls": "chain",
+  "name": "ncr_interest_interest",
+  "pattern": "^(?:compute|take|find)\\s+(?P<nn>\\d+)\\s+choose\\s+(?P<nr>\\d+)\\s*\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s*find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<rate2>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<yrs2>\\d+(?:\\.\\d+)?)\\s+years\\s*\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s*find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<rate3>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<yrs3>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s*(?:\\$|kN|kJ|N|J))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "ncr",
+     "n": "$nn",
+     "r": "$nr"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n1",
+     "r": "$rate2",
+     "t": "$yrs2",
+     "unit": "$"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n2",
+     "r": "$rate3",
+     "t": "$yrs3",
+     "unit": "$"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 11
+ },
+ {
+  "cls": "chain",
+  "name": "ncr_interest_scale",
+  "pattern": "^(?:compute|take|find)\\s+(?P<nn>\\d+)\\s+choose\\s+(?P<nr>\\d+)\\s*\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s*find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<rate2>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<yrs2>\\d+(?:\\.\\d+)?)\\s+years\\s*\\.\\s+multiply\\s+(?:that|this|the\\s+result|the\\s+product)\\s+by\\s+(?P<k3>\\d+(?:\\.\\d+)?)(?:,\\s*in\\s*(?:\\$|kN|kJ|N|J))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "ncr",
+     "n": "$nn",
+     "r": "$nr"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n1",
+     "r": "$rate2",
+     "t": "$yrs2",
+     "unit": "$"
+    },
+    {
+     "id": "n3",
+     "op": "scale",
+     "value": "@n2",
+     "by": "$k3"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 10
+ },
+ {
+  "cls": "chain",
+  "name": "sum_interest_scale",
+  "pattern": "^(?:compute|take|find)\\s+the\\s+sum\\s+of\\s+(?P<sexpr>.+?)\\s+for\\s+k\\s*=\\s*1\\s+to\\s+(?P<sb>\\d+)\\s*\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s*find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<rate2>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<yrs2>\\d+(?:\\.\\d+)?)\\s+years\\s*\\.\\s+multiply\\s+(?:that|this|the\\s+result|the\\s+product)\\s+by\\s+(?P<k3>\\d+(?:\\.\\d+)?)(?:,\\s*in\\s*(?:\\$|kN|kJ|N|J))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "sum_finite",
+     "expr": "$sexpr",
+     "var": "k",
+     "a": "1",
+     "b": "$sb"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n1",
+     "r": "$rate2",
+     "t": "$yrs2",
+     "unit": "$"
+    },
+    {
+     "id": "n3",
+     "op": "scale",
+     "value": "@n2",
+     "by": "$k3"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 8
+ },
+ {
+  "cls": "chain",
+  "name": "sum_interest_sub",
+  "pattern": "^(?:compute|take|find)\\s+the\\s+sum\\s+of\\s+(?P<sexpr>.+?)\\s+for\\s+k\\s*=\\s*1\\s+to\\s+(?P<sb>\\d+)\\s*\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s*find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<rate2>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<yrs2>\\d+(?:\\.\\d+)?)\\s+years\\s*\\.\\s+subtract\\s+(?P<sub3>\\d+(?:\\.\\d+)?)\\s+from\\s+(?:that|the\\s+result)(?:,\\s*in\\s*(?:\\$|kN|kJ|N|J))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "sum_finite",
+     "expr": "$sexpr",
+     "var": "k",
+     "a": "1",
+     "b": "$sb"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n1",
+     "r": "$rate2",
+     "t": "$yrs2",
+     "unit": "$"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "a-b",
+     "a": "@n2",
+     "b": "$sub3"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 9
+ },
+ {
+  "cls": "chain",
+  "name": "paren_product_interest_scale",
+  "pattern": "^(?:compute|evaluate|take|start\\s+with)\\s+(?P<c1>\\d+)\\s*\\*?\\s*\\(\\s*(?P<c2>\\d+)\\s*\\+\\s*(?P<c3>\\d+)\\s*\\)\\s*\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s*find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<rate2>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<yrs2>\\d+(?:\\.\\d+)?)\\s+years\\s*\\.\\s+multiply\\s+(?:that|this|the\\s+result|the\\s+product)\\s+by\\s+(?P<k3>\\d+(?:\\.\\d+)?)(?:,\\s*in\\s*(?:\\$|kN|kJ|N|J))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "evaluate",
+     "expr": "($c1)*(($c2)+($c3))"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n1",
+     "r": "$rate2",
+     "t": "$yrs2",
+     "unit": "$"
+    },
+    {
+     "id": "n3",
+     "op": "scale",
+     "value": "@n2",
+     "by": "$k3"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 13
+ },
+ {
+  "cls": "chain",
+  "name": "paren_product_interest_sub",
+  "pattern": "^(?:compute|evaluate|take|start\\s+with)\\s+(?P<c1>\\d+)\\s*\\*?\\s*\\(\\s*(?P<c2>\\d+)\\s*\\+\\s*(?P<c3>\\d+)\\s*\\)\\s*\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s*find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<rate2>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<yrs2>\\d+(?:\\.\\d+)?)\\s+years\\s*\\.\\s+subtract\\s+(?P<sub3>\\d+(?:\\.\\d+)?)\\s+from\\s+(?:that|the\\s+result)(?:,\\s*in\\s*(?:\\$|kN|kJ|N|J))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "evaluate",
+     "expr": "($c1)*(($c2)+($c3))"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n1",
+     "r": "$rate2",
+     "t": "$yrs2",
+     "unit": "$"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "a-b",
+     "a": "@n2",
+     "b": "$sub3"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 8
+ },
+ {
+  "cls": "chain",
+  "name": "sum_scale_interest",
+  "pattern": "^(?:compute|take|find)\\s+the\\s+sum\\s+of\\s+(?P<sexpr>.+?)\\s+for\\s+k\\s*=\\s*1\\s+to\\s+(?P<sb>\\d+)\\s*\\.\\s+multiply\\s+(?:that|this|the\\s+result|the\\s+product)\\s+by\\s+(?P<k2>\\d+(?:\\.\\d+)?)\\s*\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s*find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<rate3>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<yrs3>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s*(?:\\$|kN|kJ|N|J))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "sum_finite",
+     "expr": "$sexpr",
+     "var": "k",
+     "a": "1",
+     "b": "$sb"
+    },
+    {
+     "id": "n2",
+     "op": "scale",
+     "value": "@n1",
+     "by": "$k2"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n2",
+     "r": "$rate3",
+     "t": "$yrs3",
+     "unit": "$"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 8
+ },
+ {
+  "cls": "chain",
+  "name": "lcm_interest",
+  "pattern": "^(?:compute|find|take)\\s+the\\s+(?:lcm|least\\s+common\\s+multiple)\\s+of\\s+(?P<la>\\d+)\\s+and\\s+(?P<lb>\\d+)\\s*\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s*find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<rate2>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<yrs2>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s*(?:\\$|kN|kJ|N|J))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "lcm",
+     "a": "$la",
+     "b": "$lb"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n1",
+     "r": "$rate2",
+     "t": "$yrs2",
+     "unit": "$"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 13
+ },
+ {
+  "cls": "chain",
+  "name": "sum_force_sub",
+  "pattern": "^(?:compute|take|find)\\s+the\\s+sum\\s+of\\s+(?P<sexpr>.+?)\\s+for\\s+k\\s*=\\s*1\\s+to\\s+(?P<sb>\\d+)\\s*\\.\\s+using\\s+that\\s+as\\s+the\\s+acceleration\\s+in\\s+m/s\\^2\\s+of\\s+a\\s+(?P<mass2>\\d+(?:\\.\\d+)?)\\s*kg\\s+mass,\\s*find\\s+the\\s+force\\s*\\.\\s+subtract\\s+(?P<sub3>\\d+(?:\\.\\d+)?)\\s+from\\s+(?:that|the\\s+result)(?:,\\s*in\\s*(?:\\$|kN|kJ|N|J))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "sum_finite",
+     "expr": "$sexpr",
+     "var": "k",
+     "a": "1",
+     "b": "$sb"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "m*a",
+     "m": "$mass2",
+     "a": "@n1",
+     "unit": "N"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "a-b",
+     "a": "@n2",
+     "b": "$sub3"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 3
+ },
+ {
+  "cls": "chain",
+  "name": "paren_product_force_add",
+  "pattern": "^(?:compute|evaluate|take|start\\s+with)\\s+(?P<c1>\\d+)\\s*\\*?\\s*\\(\\s*(?P<c2>\\d+)\\s*\\+\\s*(?P<c3>\\d+)\\s*\\)\\s*\\.\\s+using\\s+that\\s+as\\s+the\\s+acceleration\\s+in\\s+m/s\\^2\\s+of\\s+a\\s+(?P<mass2>\\d+(?:\\.\\d+)?)\\s*kg\\s+mass,\\s*find\\s+the\\s+force\\s*\\.\\s+add\\s+(?P<add3>\\d+(?:\\.\\d+)?)\\s+to\\s+(?:that|the\\s+result)(?:,\\s*in\\s*(?:\\$|kN|kJ|N|J))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "evaluate",
+     "expr": "($c1)*(($c2)+($c3))"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "m*a",
+     "m": "$mass2",
+     "a": "@n1",
+     "unit": "N"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "a+b",
+     "a": "@n2",
+     "b": "$add3"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 3
+ },
+ {
+  "cls": "chain",
+  "name": "sum_interest_add",
+  "pattern": "^(?:compute|take|find)\\s+the\\s+sum\\s+of\\s+(?P<sexpr>.+?)\\s+for\\s+k\\s*=\\s*1\\s+to\\s+(?P<sb>\\d+)\\s*\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s*find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<rate2>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<yrs2>\\d+(?:\\.\\d+)?)\\s+years\\s*\\.\\s+add\\s+(?P<add3>\\d+(?:\\.\\d+)?)\\s+to\\s+(?:that|the\\s+result)(?:,\\s*in\\s*(?:\\$|kN|kJ|N|J))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "sum_finite",
+     "expr": "$sexpr",
+     "var": "k",
+     "a": "1",
+     "b": "$sb"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n1",
+     "r": "$rate2",
+     "t": "$yrs2",
+     "unit": "$"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "a+b",
+     "a": "@n2",
+     "b": "$add3"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 6
+ },
+ {
+  "cls": "chain",
+  "name": "paren_product_then_simple_interest",
+  "pattern": "^(?:start\\s+with|compute|calculate)\\s+(?P<c>\\d+)\\s*(?:\\*|\u00d7)?\\s*\\(\\s*(?P<p>\\d+)\\s*\\+\\s*(?P<q>\\d+)\\s*\\)\\.\\s+Using that as a principal in dollars,\\s+find the simple interest at\\s+(?P<rate>\\d+(?:\\.\\d+)?)%\\s+per year over\\s+(?P<yrs>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s*\\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "evaluate",
+     "expr": "($c)*(($p)+($q))"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(prin*rate*yrs)/100",
+     "prin": "@n1",
+     "rate": "$rate",
+     "yrs": "$yrs",
+     "unit": "$"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 26
+ },
+ {
+  "cls": "chain",
+  "name": "ncr_then_simple_interest",
+  "pattern": "^(?:compute|take|calculate|find)\\s+(?P<n>\\d+)\\s+choose\\s+(?P<r>\\d+)\\.\\s+Using that as a principal in dollars,\\s+find the simple interest at\\s+(?P<rate>\\d+(?:\\.\\d+)?)%\\s+per year over\\s+(?P<yrs>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s*\\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "ncr",
+     "n": "$n",
+     "r": "$r"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(prin*rate*yrs)/100",
+     "prin": "@n1",
+     "rate": "$rate",
+     "yrs": "$yrs",
+     "unit": "$"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 27
+ },
+ {
+  "cls": "chain",
+  "name": "finite_sum_then_simple_interest",
+  "pattern": "^(?:compute|find|take)\\s+the\\s+sum\\s+of\\s+(?P<expr>[0-9k\\^\\+\\-\\*\\s]+?)\\s+for\\s+k\\s*=\\s*1\\s+to\\s+(?P<b>\\d+)\\.\\s+Using that as a principal in dollars,\\s+find the simple interest at\\s+(?P<rate>\\d+(?:\\.\\d+)?)%\\s+per year over\\s+(?P<yrs>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s*\\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "sum_finite",
+     "expr": "$expr",
+     "var": "k",
+     "a": "1",
+     "b": "$b"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(prin*rate*yrs)/100",
+     "prin": "@n1",
+     "rate": "$rate",
+     "yrs": "$yrs",
+     "unit": "$"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 19
+ },
+ {
+  "cls": "chain",
+  "name": "paren_product_then_interest_then_scale",
+  "pattern": "^(?:start\\s+with|compute|calculate)\\s+(?P<c>\\d+)\\s*(?:\\*|\u00d7)?\\s*\\(\\s*(?P<p>\\d+)\\s*\\+\\s*(?P<q>\\d+)\\s*\\)\\.\\s+Using that as a principal in dollars,\\s+find the simple interest at\\s+(?P<rate>\\d+(?:\\.\\d+)?)%\\s+per year over\\s+(?P<yrs>\\d+(?:\\.\\d+)?)\\s+years\\.\\s+Multiply\\s+(?:that|the result)\\s+by\\s+(?P<f>\\d+(?:\\.\\d+)?)(?:,\\s*in\\s*\\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "evaluate",
+     "expr": "($c)*(($p)+($q))"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(prin*rate*yrs)/100",
+     "prin": "@n1",
+     "rate": "$rate",
+     "yrs": "$yrs",
+     "unit": "$"
+    },
+    {
+     "id": "n3",
+     "op": "scale",
+     "value": "@n2",
+     "by": "$f"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 13
+ },
+ {
+  "cls": "chain",
+  "name": "ncr_then_scale_then_simple_interest",
+  "pattern": "^(?:compute|take|calculate|find)\\s+(?P<n>\\d+)\\s+choose\\s+(?P<r>\\d+)\\.\\s+Multiply\\s+(?:that|the result)\\s+by\\s+(?P<f>\\d+(?:\\.\\d+)?)\\.\\s+Using that as a principal in dollars,\\s+find the simple interest at\\s+(?P<rate>\\d+(?:\\.\\d+)?)%\\s+per year over\\s+(?P<yrs>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s*\\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "ncr",
+     "n": "$n",
+     "r": "$r"
+    },
+    {
+     "id": "n2",
+     "op": "scale",
+     "value": "@n1",
+     "by": "$f"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "(prin*rate*yrs)/100",
+     "prin": "@n2",
+     "rate": "$rate",
+     "yrs": "$yrs",
+     "unit": "$"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 9
+ },
+ {
+  "cls": "chain",
+  "name": "lcm_then_scale_then_simple_interest",
+  "pattern": "^(?:compute|find|take)\\s+the\\s+(?:lcm|least\\s+common\\s+multiple)\\s+of\\s+(?P<a>\\d+)\\s+and\\s+(?P<b>\\d+)\\.\\s+Multiply\\s+(?:that|the result)\\s+by\\s+(?P<f>\\d+(?:\\.\\d+)?)\\.\\s+Using that as a principal in dollars,\\s+find the simple interest at\\s+(?P<rate>\\d+(?:\\.\\d+)?)%\\s+per year over\\s+(?P<yrs>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s*\\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "lcm",
+     "a": "$a",
+     "b": "$b"
+    },
+    {
+     "id": "n2",
+     "op": "scale",
+     "value": "@n1",
+     "by": "$f"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "(prin*rate*yrs)/100",
+     "prin": "@n2",
+     "rate": "$rate",
+     "yrs": "$yrs",
+     "unit": "$"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 9
+ },
+ {
+  "cls": "chain",
+  "name": "ncr_then_interest_then_subtract",
+  "pattern": "^(?:compute|take|calculate|find)\\s+(?P<n>\\d+)\\s+choose\\s+(?P<r>\\d+)\\.\\s+Using that as a principal in dollars,\\s+find the simple interest at\\s+(?P<rate>\\d+(?:\\.\\d+)?)%\\s+per year over\\s+(?P<yrs>\\d+(?:\\.\\d+)?)\\s+years\\.\\s+Subtract\\s+(?P<d>\\d+(?:\\.\\d+)?)\\s+from that(?:,\\s*in\\s*\\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "ncr",
+     "n": "$n",
+     "r": "$r"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(prin*rate*yrs)/100",
+     "prin": "@n1",
+     "rate": "$rate",
+     "yrs": "$yrs",
+     "unit": "$"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "base-delta",
+     "base": "@n2",
+     "delta": "$d",
+     "unit": "$"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 6
+ },
+ {
+  "cls": "chain",
+  "name": "paren_product_then_interest_then_subtract",
+  "pattern": "^(?:start\\s+with|compute|calculate)\\s+(?P<c>\\d+)\\s*(?:\\*|\u00d7)?\\s*\\(\\s*(?P<p>\\d+)\\s*\\+\\s*(?P<q>\\d+)\\s*\\)\\.\\s+Using that as a principal in dollars,\\s+find the simple interest at\\s+(?P<rate>\\d+(?:\\.\\d+)?)%\\s+per year over\\s+(?P<yrs>\\d+(?:\\.\\d+)?)\\s+years\\.\\s+Subtract\\s+(?P<d>\\d+(?:\\.\\d+)?)\\s+from that(?:,\\s*in\\s*\\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "evaluate",
+     "expr": "($c)*(($p)+($q))"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(prin*rate*yrs)/100",
+     "prin": "@n1",
+     "rate": "$rate",
+     "yrs": "$yrs",
+     "unit": "$"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "base-delta",
+     "base": "@n2",
+     "delta": "$d",
+     "unit": "$"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 8
+ },
+ {
+  "cls": "chain",
+  "name": "gcd_then_force_then_scale",
+  "pattern": "^(?:compute|find|take)\\s+the\\s+(?:gcd|greatest\\s+common\\s+divisor)\\s+of\\s+(?P<a>\\d+)\\s+and\\s+(?P<b>\\d+)\\.\\s+Using that as the acceleration in m/s\\^2 of a\\s+(?P<mass>\\d+(?:\\.\\d+)?)\\s+kg mass,\\s+find the force\\.\\s+Multiply\\s+(?:that|the result)\\s+by\\s+(?P<f>\\d+(?:\\.\\d+)?)(?:,\\s*in\\s*N)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "gcd",
+     "a": "$a",
+     "b": "$b"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "mass*accel",
+     "mass": "$mass",
+     "accel": "@n1",
+     "unit": "N"
+    },
+    {
+     "id": "n3",
+     "op": "scale",
+     "value": "@n2",
+     "by": "$f"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 9
+ },
+ {
+  "cls": "chain",
+  "name": "paren_product_then_kinetic_energy_then_kJ",
+  "pattern": "^(?:start\\s+with|compute|calculate)\\s+(?P<c>\\d+)\\s*(?:\\*|\u00d7)?\\s*\\(\\s*(?P<p>\\d+)\\s*\\+\\s*(?P<q>\\d+)\\s*\\)\\.\\s+Using that as the speed in m/s of a\\s+(?P<mass>\\d+(?:\\.\\d+)?)\\s+kg mass,\\s+find the kinetic energy\\.\\s+(?:Convert that to|Express the result in)\\s+kJ from J(?:,\\s*in\\s*kJ)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "evaluate",
+     "expr": "($c)*(($p)+($q))"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "0.5*mass*speed^2",
+     "mass": "$mass",
+     "speed": "@n1",
+     "unit": "J"
+    },
+    {
+     "id": "n3",
+     "op": "convert",
+     "value": "@n2",
+     "from": "J",
+     "to": "kJ"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 4
+ },
+ {
+  "cls": "chain",
+  "name": "ncr_then_two_simple_interest",
+  "pattern": "^(?:compute|take|calculate|find)\\s+(?P<n>\\d+)\\s+choose\\s+(?P<r>\\d+)\\.\\s+Using that as a principal in dollars,\\s+find the simple interest at\\s+(?P<rate>\\d+(?:\\.\\d+)?)%\\s+per year over\\s+(?P<yrs>\\d+(?:\\.\\d+)?)\\s+years\\.\\s+Using that as a principal in dollars,\\s+find the simple interest at\\s+(?P<rate2>\\d+(?:\\.\\d+)?)%\\s+per year over\\s+(?P<yrs2>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s*\\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "ncr",
+     "n": "$n",
+     "r": "$r"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(prin*rate*yrs)/100",
+     "prin": "@n1",
+     "rate": "$rate",
+     "yrs": "$yrs",
+     "unit": "$"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "(prin*rate*yrs)/100",
+     "prin": "@n2",
+     "rate": "$rate2",
+     "yrs": "$yrs2",
+     "unit": "$"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 11
+ },
+ {
+  "cls": "chain",
+  "name": "paren_product_then_two_simple_interest",
+  "pattern": "^(?:start\\s+with|compute|calculate)\\s+(?P<c>\\d+)\\s*(?:\\*|\u00d7)?\\s*\\(\\s*(?P<p>\\d+)\\s*\\+\\s*(?P<q>\\d+)\\s*\\)\\.\\s+Using that as a principal in dollars,\\s+find the simple interest at\\s+(?P<rate>\\d+(?:\\.\\d+)?)%\\s+per year over\\s+(?P<yrs>\\d+(?:\\.\\d+)?)\\s+years\\.\\s+Using that as a principal in dollars,\\s+find the simple interest at\\s+(?P<rate2>\\d+(?:\\.\\d+)?)%\\s+per year over\\s+(?P<yrs2>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s*\\$)?\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "evaluate",
+     "expr": "($c)*(($p)+($q))"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(prin*rate*yrs)/100",
+     "prin": "@n1",
+     "rate": "$rate",
+     "yrs": "$yrs",
+     "unit": "$"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "(prin*rate*yrs)/100",
+     "prin": "@n2",
+     "rate": "$rate2",
+     "yrs": "$yrs2",
+     "unit": "$"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 9
+ },
+ {
+  "cls": "chain",
+  "name": "finite_sum_then_interest_then_scale_then_compare",
+  "pattern": "^(?:compute|find|take)\\s+the\\s+sum\\s+of\\s+(?P<expr>[0-9k\\^\\+\\-\\*\\s]+?)\\s+for\\s+k\\s*=\\s*1\\s+to\\s+(?P<b>\\d+)\\.\\s+Using that as a principal in dollars,\\s+find the simple interest at\\s+(?P<rate>\\d+(?:\\.\\d+)?)%\\s+per year over\\s+(?P<yrs>\\d+(?:\\.\\d+)?)\\s+years\\.\\s+Multiply\\s+(?:that|the result)\\s+by\\s+(?P<f>\\d+(?:\\.\\d+)?)\\.\\s+Is the final value greater than\\s+(?P<thr>-?\\d+(?:\\.\\d+)?(?:e[+-]?\\d+)?)\\?\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "sum_finite",
+     "expr": "$expr",
+     "var": "k",
+     "a": "1",
+     "b": "$b"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(prin*rate*yrs)/100",
+     "prin": "@n1",
+     "rate": "$rate",
+     "yrs": "$yrs",
+     "unit": "$"
+    },
+    {
+     "id": "n3",
+     "op": "scale",
+     "value": "@n2",
+     "by": "$f"
+    },
+    {
+     "id": "n4",
+     "op": "compare",
+     "a": "@n3",
+     "b": "$thr"
+    }
+   ],
+   "final": "n4"
+  },
+  "probation": 4
+ },
+ {
+  "cls": "chain",
+  "name": "ncr_then_simple_interest",
+  "pattern": "^(?:compute|take|find)\\s+(?P<n>\\d+)\\s+choose\\s+(?P<r>\\d+)\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s+find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<r1>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<t1>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s+(?:\\$|N|J|kJ|kN))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "ncr",
+     "n": "$n",
+     "r": "$r"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n1",
+     "r": "$r1",
+     "t": "$t1",
+     "unit": "$"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 27
+ },
+ {
+  "cls": "chain",
+  "name": "arith_product_then_simple_interest",
+  "pattern": "^(?:compute|start with|calculate)\\s+(?P<m>\\d+)\\s*\\*?\\s*\\(\\s*(?P<x>\\d+)\\s*\\+\\s*(?P<y>\\d+)\\s*\\)\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s+find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<r1>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<t1>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s+(?:\\$|N|J|kJ|kN))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "evaluate",
+     "expr": "($m)*(($x)+($y))"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n1",
+     "r": "$r1",
+     "t": "$t1",
+     "unit": "$"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 26
+ },
+ {
+  "cls": "chain",
+  "name": "lcm_then_simple_interest",
+  "pattern": "^(?:compute|find|take)\\s+the\\s+(?:lcm|least\\s+common\\s+multiple)\\s+of\\s+(?P<a>\\d+)\\s+and\\s+(?P<b>\\d+)\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s+find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<r1>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<t1>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s+(?:\\$|N|J|kJ|kN))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "lcm",
+     "a": "$a",
+     "b": "$b"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n1",
+     "r": "$r1",
+     "t": "$t1",
+     "unit": "$"
+    }
+   ],
+   "final": "n2"
+  },
+  "probation": 13
+ },
+ {
+  "cls": "chain",
+  "name": "ncr_then_simple_interest_then_add",
+  "pattern": "^(?:compute|take|find)\\s+(?P<n>\\d+)\\s+choose\\s+(?P<r>\\d+)\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s+find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<r1>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<t1>\\d+(?:\\.\\d+)?)\\s+years\\.\\s+add\\s+(?P<d1>\\d+(?:\\.\\d+)?)\\s+to\\s+that(?:,\\s*in\\s+(?:\\$|N|J|kJ|kN))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "ncr",
+     "n": "$n",
+     "r": "$r"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n1",
+     "r": "$r1",
+     "t": "$t1",
+     "unit": "$"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "a + b",
+     "a": "@n2",
+     "b": "$d1",
+     "unit": "$"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 6
+ },
+ {
+  "cls": "chain",
+  "name": "sum_odd_then_add_then_simple_interest",
+  "pattern": "^(?:compute|find|take)\\s+the\\s+sum\\s+of\\s+2k\\s*-\\s*1\\s+for\\s+k\\s*=\\s*(?P<a>\\d+)\\s+to\\s+(?P<b>\\d+)\\.\\s+add\\s+(?P<d1>\\d+(?:\\.\\d+)?)\\s+to\\s+that\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s+find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<r1>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<t1>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s+(?:\\$|N|J|kJ|kN))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "sum_finite",
+     "expr": "2*k - 1",
+     "var": "k",
+     "a": "$a",
+     "b": "$b"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "a + b",
+     "a": "@n1",
+     "b": "$d1"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n2",
+     "r": "$r1",
+     "t": "$t1",
+     "unit": "$"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 3
+ },
+ {
+  "cls": "chain",
+  "name": "lcm_then_simple_interest_twice",
+  "pattern": "^(?:compute|find|take)\\s+the\\s+(?:lcm|least\\s+common\\s+multiple)\\s+of\\s+(?P<a>\\d+)\\s+and\\s+(?P<b>\\d+)\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s+find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<r1>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<t1>\\d+(?:\\.\\d+)?)\\s+years\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s+find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<r2>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<t2>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s+(?:\\$|N|J|kJ|kN))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "lcm",
+     "a": "$a",
+     "b": "$b"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n1",
+     "r": "$r1",
+     "t": "$t1",
+     "unit": "$"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n2",
+     "r": "$r2",
+     "t": "$t2",
+     "unit": "$"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 9
+ },
+ {
+  "cls": "chain",
+  "name": "arith_product_then_add_then_simple_interest_twice",
+  "pattern": "^(?:compute|start with|calculate)\\s+(?P<m>\\d+)\\s*\\*?\\s*\\(\\s*(?P<x>\\d+)\\s*\\+\\s*(?P<y>\\d+)\\s*\\)\\.\\s+add\\s+(?P<d1>\\d+(?:\\.\\d+)?)\\s+to\\s+that\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s+find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<r1>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<t1>\\d+(?:\\.\\d+)?)\\s+years\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s+find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<r2>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<t2>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s+(?:\\$|N|J|kJ|kN))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "evaluate",
+     "expr": "($m)*(($x)+($y))"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "a + b",
+     "a": "@n1",
+     "b": "$d1"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n2",
+     "r": "$r1",
+     "t": "$t1",
+     "unit": "$"
+    },
+    {
+     "id": "n4",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n3",
+     "r": "$r2",
+     "t": "$t2",
+     "unit": "$"
+    }
+   ],
+   "final": "n4"
+  },
+  "probation": 4
+ },
+ {
+  "cls": "chain",
+  "name": "arith_product_then_simple_interest_twice",
+  "pattern": "^(?:compute|start with|calculate)\\s+(?P<m>\\d+)\\s*\\*?\\s*\\(\\s*(?P<x>\\d+)\\s*\\+\\s*(?P<y>\\d+)\\s*\\)\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s+find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<r1>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<t1>\\d+(?:\\.\\d+)?)\\s+years\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s+find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<r2>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<t2>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s+(?:\\$|N|J|kJ|kN))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "evaluate",
+     "expr": "($m)*(($x)+($y))"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n1",
+     "r": "$r1",
+     "t": "$t1",
+     "unit": "$"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n2",
+     "r": "$r2",
+     "t": "$t2",
+     "unit": "$"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 9
+ },
+ {
+  "cls": "chain",
+  "name": "lcm_then_scale_then_simple_interest",
+  "pattern": "^(?:compute|find|take)\\s+the\\s+(?:lcm|least\\s+common\\s+multiple)\\s+of\\s+(?P<a>\\d+)\\s+and\\s+(?P<b>\\d+)\\.\\s+multiply\\s+(?:that|the\\s+result)\\s+by\\s+(?P<f1>\\d+(?:\\.\\d+)?)\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s+find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<r1>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<t1>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s+(?:\\$|N|J|kJ|kN))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "lcm",
+     "a": "$a",
+     "b": "$b"
+    },
+    {
+     "id": "n2",
+     "op": "scale",
+     "value": "@n1",
+     "by": "$f1"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n2",
+     "r": "$r1",
+     "t": "$t1",
+     "unit": "$"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 9
+ },
+ {
+  "cls": "chain",
+  "name": "gcd_then_force_then_scale",
+  "pattern": "^(?:compute|find|take)\\s+the\\s+(?:gcd|greatest\\s+common\\s+divisor)\\s+of\\s+(?P<a>\\d+)\\s+and\\s+(?P<b>\\d+)\\.\\s+using\\s+that\\s+as\\s+the\\s+acceleration\\s+in\\s+m/s\\^2\\s+of\\s+a\\s+(?P<mass>\\d+(?:\\.\\d+)?)\\s*kg\\s+mass,\\s+find\\s+the\\s+force\\.\\s+multiply\\s+(?:that|the\\s+result)\\s+by\\s+(?P<f1>\\d+(?:\\.\\d+)?)(?:,\\s*in\\s+(?:\\$|N|J|kJ|kN))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "gcd",
+     "a": "$a",
+     "b": "$b"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "m*a",
+     "m": "$mass",
+     "a": "@n1",
+     "unit": "N"
+    },
+    {
+     "id": "n3",
+     "op": "scale",
+     "value": "@n2",
+     "by": "$f1"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 9
+ },
+ {
+  "cls": "chain",
+  "name": "arith_product_then_force_then_scale",
+  "pattern": "^(?:compute|start with|calculate)\\s+(?P<m>\\d+)\\s*\\*?\\s*\\(\\s*(?P<x>\\d+)\\s*\\+\\s*(?P<y>\\d+)\\s*\\)\\.\\s+using\\s+that\\s+as\\s+the\\s+acceleration\\s+in\\s+m/s\\^2\\s+of\\s+a\\s+(?P<mass>\\d+(?:\\.\\d+)?)\\s*kg\\s+mass,\\s+find\\s+the\\s+force\\.\\s+multiply\\s+(?:that|the\\s+result)\\s+by\\s+(?P<f1>\\d+(?:\\.\\d+)?)(?:,\\s*in\\s+(?:\\$|N|J|kJ|kN))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "evaluate",
+     "expr": "($m)*(($x)+($y))"
+    },
+    {
+     "id": "n2",
+     "op": "formula",
+     "expr": "m*a",
+     "m": "$mass",
+     "a": "@n1",
+     "unit": "N"
+    },
+    {
+     "id": "n3",
+     "op": "scale",
+     "value": "@n2",
+     "by": "$f1"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 7
+ },
+ {
+  "cls": "chain",
+  "name": "sum_k_then_scale_then_simple_interest",
+  "pattern": "^(?:compute|find|take)\\s+the\\s+sum\\s+of\\s+k\\s+for\\s+k\\s*=\\s*(?P<a>\\d+)\\s+to\\s+(?P<b>\\d+)\\.\\s+multiply\\s+(?:that|the\\s+result)\\s+by\\s+(?P<f1>\\d+(?:\\.\\d+)?)\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s+find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<r1>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<t1>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s+(?:\\$|N|J|kJ|kN))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "sum_finite",
+     "expr": "k",
+     "var": "k",
+     "a": "$a",
+     "b": "$b"
+    },
+    {
+     "id": "n2",
+     "op": "scale",
+     "value": "@n1",
+     "by": "$f1"
+    },
+    {
+     "id": "n3",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n2",
+     "r": "$r1",
+     "t": "$t1",
+     "unit": "$"
+    }
+   ],
+   "final": "n3"
+  },
+  "probation": 4
+ },
+ {
+  "cls": "chain",
+  "name": "sum_ksq_then_scale_twice_then_simple_interest",
+  "pattern": "^(?:compute|find|take)\\s+the\\s+sum\\s+of\\s+k\\^2\\s+for\\s+k\\s*=\\s*(?P<a>\\d+)\\s+to\\s+(?P<b>\\d+)\\.\\s+multiply\\s+(?:that|the\\s+result)\\s+by\\s+(?P<f1>\\d+(?:\\.\\d+)?)\\.\\s+multiply\\s+(?:that|the\\s+result)\\s+by\\s+(?P<f2>\\d+(?:\\.\\d+)?)\\.\\s+using\\s+that\\s+as\\s+a\\s+principal\\s+in\\s+dollars,\\s+find\\s+the\\s+simple\\s+interest\\s+at\\s+(?P<r1>\\d+(?:\\.\\d+)?)\\s*%\\s+per\\s+year\\s+over\\s+(?P<t1>\\d+(?:\\.\\d+)?)\\s+years(?:,\\s*in\\s+(?:\\$|N|J|kJ|kN))?\\s*\\.\\s*$",
+  "plan": {
+   "nodes": [
+    {
+     "id": "n1",
+     "op": "sum_finite",
+     "expr": "k^2",
+     "var": "k",
+     "a": "$a",
+     "b": "$b"
+    },
+    {
+     "id": "n2",
+     "op": "scale",
+     "value": "@n1",
+     "by": "$f1"
+    },
+    {
+     "id": "n3",
+     "op": "scale",
+     "value": "@n2",
+     "by": "$f2"
+    },
+    {
+     "id": "n4",
+     "op": "formula",
+     "expr": "(p*r*t)/100",
+     "p": "@n3",
+     "r": "$r1",
+     "t": "$t1",
+     "unit": "$"
+    }
+   ],
+   "final": "n4"
+  },
+  "probation": 4
+ }
+]

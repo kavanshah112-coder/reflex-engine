@@ -1,0 +1,510 @@
+{
+ "ledger": {
+  "proposed": 140,
+  "proposed_parse": 20,
+  "g1_killed": 0,
+  "g2_killed": 10,
+  "g3_inert": 79,
+  "g3_memorize": 0,
+  "g3_wrong": 19,
+  "proposed_chain": 112,
+  "admitted": 32,
+  "admitted_chain": 32,
+  "proposed_connector": 8,
+  "model": "sonnet"
+ },
+ "kills": [
+  {
+   "name": "parse_second_derivative",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q17_0000890",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "parse_first_derivative",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q17_0102261",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "parse_integral_def",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q17_0083432",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "parse_gcd",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q17_0071080",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "parse_lcm",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q17_0129032",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "parse_ncr_choose",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q17_0082924",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "parse_eval_distribute",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q17_0408569",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "parse_sum_k",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q17_0195830",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "parse_sum_k_squared",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q17_0104700",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "parse_sum_2k_minus_1",
+   "why": "g3: WRONG serve",
+   "serves": [
+    {
+     "id": "q17_0188834",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "name": "chain_eval_distribute_interest",
+   "why": "g3: WRONG chain serve on q17_0369598"
+  },
+  {
+   "name": "chain_gcd_interest",
+   "why": "g3: inert (1)"
+  },
+  {
+   "name": "chain_ncr_interest",
+   "why": "g3: WRONG chain serve on q17_0392280"
+  },
+  {
+   "name": "chain_sum_k_interest",
+   "why": "g3: WRONG chain serve on q17_0497615"
+  },
+  {
+   "name": "chain_sum_k_squared_interest",
+   "why": "g3: WRONG chain serve on q17_0332029"
+  },
+  {
+   "name": "chain_sum_2k_minus_1_interest",
+   "why": "g3: WRONG chain serve on q17_0881101"
+  },
+  {
+   "name": "chain_integral_interest",
+   "why": "g3: WRONG chain serve on q17_0375318"
+  },
+  {
+   "name": "chain_root_pick_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_first_derivative_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_second_derivative_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_integral_force",
+   "why": "g3: WRONG chain serve on q17_0434387"
+  },
+  {
+   "name": "chain_root_pick_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_ncr_kinetic_energy",
+   "why": "g3: WRONG chain serve on q17_0346408"
+  },
+  {
+   "name": "chain_root_pick_kinetic_energy",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_integral_kinetic_energy",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_gcd_kinetic_energy",
+   "why": "g3: WRONG chain serve on q17_0301050"
+  },
+  {
+   "name": "connector_N_to_kN",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "connector_J_to_kJ",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_then_simple_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "gcd_then_simple_interest",
+   "why": "g3: inert (1)"
+  },
+  {
+   "name": "deriv1_then_simple_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "deriv2_then_simple_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "quadratic_root_then_simple_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "sum_k_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "ncr_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "gcd_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "deriv1_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "quadratic_root_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "arith_paren_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "sum_2k_minus_1_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "sum_k_then_kinetic_energy",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "quadratic_root_then_kinetic_energy",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "deriv1_then_kinetic_energy",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "N_to_kN",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "J_to_kJ",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "gcd_force_scale_compare",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "ncr_scaleAdd_simple_interest_compare",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "parse_evaluate_paren_product",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "parse_sum_k",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "parse_sum_k2",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "parse_sum_2k_minus_1",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "parse_ncr_choose",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "parse_gcd",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "parse_lcm",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "parse_integrate_def_quad",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "parse_first_derivative_cubic",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "parse_second_derivative_cubic",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "chain_evaluate_to_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_choose_to_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_gcd_to_interest",
+   "why": "g3: inert (1)"
+  },
+  {
+   "name": "chain_gcd_to_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_sum_k_to_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_integral_to_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_integral_to_kinetic_energy",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_first_derivative_to_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_first_derivative_to_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_root_to_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_root_to_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_root_to_kinetic_energy",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "quadratic_pick_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "quadratic_pick_si",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "gcd_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "ncr_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "evaluate_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "derivative1_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "sum_k_si_si_compare",
+   "why": "g3: inert (1)"
+  },
+  {
+   "name": "sum_2k1_si_si_compare",
+   "why": "g3: inert (1)"
+  },
+  {
+   "name": "N_to_kN",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "J_to_kJ",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "gcd_add_ke_compare",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "quadratic_add_ke_compare",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "N_to_kN",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "J_to_kJ",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "root_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "deriv1_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "deriv2_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_then_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "deriv1_then_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "deriv2_then_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "sumk_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "sumsq_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "sum2k1_then_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "gcd_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "root_force_multiply",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_force_multiply",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "ncr_interest_add",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "sum2k1_add_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "root_force_add",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_interest_add",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_multiply_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "lcm_multiply_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "root_force_convertNkN",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "root_add_force_convertNkN",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "root_force_add_compare",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_ke_multiply_compare",
+   "why": "g3: inert (0)"
+  }
+ ]
+}

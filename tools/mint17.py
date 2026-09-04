@@ -125,13 +125,29 @@ def gauntlet(model):
     from reflex import (acquire16, chainexec17, composer17,
                         plangate17, sciparse16)
     cands = []
-    for ci in range(5):
-        p = SCRATCH / ("candidates_%s_%d.json" % (model, ci))
-        if p.exists():
-            try:
-                cands.extend(json.loads(p.read_text(encoding="utf-8")))
-            except json.JSONDecodeError as e:
-                print("chunk %d unparseable: %s" % (ci, e))
+    if model == "all":
+        # union of the four ADMITTED libraries, re-gauntleted so
+        # cross-model conflicts are caught rather than assumed away
+        for m in MODELS:
+            p = RES / ("reflexlib17_%s.json" % m)
+            if not p.exists():
+                continue
+            for c in json.loads(p.read_text(encoding="utf-8")):
+                c = dict(c)
+                c["name"] = "%s:%s" % (m, c.get("name"))
+                c.pop("_rx", None)
+                c.pop("cls", None)
+                c.pop("probation", None)
+                cands.append(c)
+    else:
+        for ci in range(5):
+            p = SCRATCH / ("candidates_%s_%d.json" % (model, ci))
+            if p.exists():
+                try:
+                    cands.extend(json.loads(
+                        p.read_text(encoding="utf-8")))
+                except json.JSONDecodeError as e:
+                    print("chunk %d unparseable: %s" % (ci, e))
     items = _load_split("acq")
     sample_ids = json.loads((SCRATCH / "sample_ids.json")
                             .read_text(encoding="utf-8"))

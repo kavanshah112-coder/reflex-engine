@@ -1,0 +1,382 @@
+{
+ "ledger": {
+  "proposed": 151,
+  "proposed_chain": 136,
+  "admitted": 60,
+  "admitted_chain": 60,
+  "g3_inert": 88,
+  "proposed_connector": 12,
+  "proposed_parse": 3,
+  "g1_killed": 0,
+  "g2_killed": 3,
+  "g3_memorize": 0,
+  "g3_wrong": 0,
+  "model": "opus"
+ },
+ "kills": [
+  {
+   "name": "gcd_then_simple_interest",
+   "why": "g3: inert (1)"
+  },
+  {
+   "name": "quadratic_root_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "second_derivative_at_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "definite_integral_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "gcd_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "ncr_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "bracketed_product_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "lcm_then_simple_interest_then_scale",
+   "why": "g3: inert (2)"
+  },
+  {
+   "name": "derivative_then_force_then_kN",
+   "why": "g3: inert (2)"
+  },
+  {
+   "name": "N_to_kN",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "J_to_kJ",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_interest_scale",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_force_scale",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "root_force_scale",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "sum_scale_interest_scale",
+   "why": "g3: inert (2)"
+  },
+  {
+   "name": "root_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "sum_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "root_force_convert_scale",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "ncr_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "deriv2_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "deriv1_force_scale",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_kinetic_scale",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_add_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "J_to_kJ",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "N_to_kN",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "definite_integral_then_simple_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "first_derivative_at_then_simple_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "smaller_root_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "ncr_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "gcd_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "definite_integral_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "definite_integral_then_interest_then_scale",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "definite_integral_then_scale_then_simple_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "larger_root_then_scale_then_simple_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "definite_integral_then_force_then_scale",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "definite_integral_then_force_then_kN",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "root_then_kinetic_energy_then_kJ",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "smaller_root_then_kinetic_energy_then_scale",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "definite_integral_then_two_simple_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "ncr_then_interest_then_scale_then_compare",
+   "why": "g3: inert (2)"
+  },
+  {
+   "name": "N_to_kN",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "J_to_kJ",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_root_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_arith_simple_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_ncr_simple_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_deriv2_simple_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_deriv1_simple_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_sum_simple_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_root_ke_convert",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_root_force_scale",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_lcm_interest_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_arith_interest_scale",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_sum_interest_scale",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_root_ke_scale",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_ncr_interest_sub",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_integral_interest_scale",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_ncr_interest_scale_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_arith_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_integral_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_gcd_ke_scale_scale",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_integral_force_convert_scale_scale",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_lcm_simple_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_integral_simple_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_ncr_interest_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_sum_interest_interest_gt",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "J_to_kJ",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "N_to_kN",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "kJ_to_J",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "kN_to_N",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "parse_sum_finite_k",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "parse_integral_def_poly",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "parse_ncr_choose",
+   "why": "g2: no placement on any match"
+  },
+  {
+   "name": "root_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "root_then_force_then_scale",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_then_simple_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_then_force_then_scale",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "root_then_force_then_add",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "first_derivative_at_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_then_simple_interest_then_add",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_then_scale_then_simple_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "root_then_force_then_to_kN",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "second_derivative_at_then_simple_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_then_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "first_derivative_at_then_simple_interest_then_scale",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_then_simple_interest_then_scale",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "root_then_kinetic_energy_then_to_kJ",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "root_then_force_then_add_then_compare",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "J_to_kJ",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "N_to_kN",
+   "why": "g3: inert (0)"
+  }
+ ]
+}

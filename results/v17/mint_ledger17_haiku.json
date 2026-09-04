@@ -1,0 +1,480 @@
+{
+ "ledger": {
+  "proposed": 116,
+  "proposed_parse": 65,
+  "g1_killed": 65,
+  "g2_killed": 0,
+  "g3_inert": 45,
+  "g3_memorize": 0,
+  "g3_wrong": 6,
+  "proposed_connector": 9,
+  "proposed_chain": 42,
+  "model": "haiku"
+ },
+ "kills": [
+  {
+   "name": "arithmetic_to_principal",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "simple_interest_single",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "derivative_second_at_point",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "derivative_first_at_point",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "force_from_accel_mass",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "kinetic_energy_from_speed_mass",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "integral_definite",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "gcd_or_lcm_pair",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "ncr_choose",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "sum_of_squares",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "sum_arithmetic_sequence",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "quadratic_root_larger",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "quadratic_root_smaller",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "scale_by_multiply",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "add_constant",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "subtract_constant",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "convert_N_to_kN",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "convert_J_to_kJ",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_arithmetic_interest_scale",
+   "why": "g3: WRONG chain serve on q17_0872521"
+  },
+  {
+   "name": "chain_derivative_force_convert_scale",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_integral_principal_interest_x2",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_root_modify_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_combo_principal_interest_scale",
+   "why": "g3: WRONG chain serve on q17_0584998"
+  },
+  {
+   "name": "chain_integral_speed_ke_convert_scale",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "comparison_greater_than",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "sum_formula_to_principal",
+   "why": "g3: WRONG chain serve on q17_0332029"
+  },
+  {
+   "name": "arithmetic_to_speed_ke",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "ncr_binomial",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "simple_interest_extract",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "sum_k_formula",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "sum_k_squared",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "sum_odd_sequence",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "first_derivative_at",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "second_derivative_at",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "definite_integral",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "gcd_op",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "lcm_op",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "larger_quadratic_root",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "smaller_quadratic_root",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "force_from_acceleration",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "kinetic_energy_calc",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "comparison_check",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "ncr_to_simple_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "sum_to_simple_interest",
+   "why": "g3: WRONG chain serve on q17_0440362"
+  },
+  {
+   "name": "sum_squared_to_interest",
+   "why": "g3: WRONG chain serve on q17_0332029"
+  },
+  {
+   "name": "derivative_to_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_to_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "integral_to_kinetic_energy",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "gcd_to_force",
+   "why": "g3: WRONG chain serve on q17_0373078"
+  },
+  {
+   "name": "quadratic_root_to_kinetic",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "N_to_kN",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "J_to_kJ",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "arithmetic_add",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "arithmetic_subtract",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "arithmetic_multiply",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "simple_expression_eval",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "parse_derivative_first",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "parse_derivative_second",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "parse_integral",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "parse_sum_k",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "parse_choose",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "parse_gcd",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "parse_lcm",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "parse_root_larger",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "parse_root_smaller",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "parse_arithmetic_expr",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "chain_arithmetic_to_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_integral_to_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_root_to_kinetic_energy",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_sum_to_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_derivative_to_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_choose_to_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_gcd_to_force",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_integral_to_kinetic",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "connector_N_to_kN",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "connector_J_to_kJ",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "connector_dollar_passthrough",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "parse_lcm_alt",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "chain_lcm_to_interest",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_arithmetic_multiply",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_interest_chain",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "parse_derivative_at_point",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "chain_simple_arithmetic_ops",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_convert_unit",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_compare_final",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "solve_quad_extract_root",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "kinetic_energy_from_speed",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "force_from_acceleration",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "simple_interest_calc",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "convert_j_to_kj",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "convert_n_to_kn",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "derivative_polynomial",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "integral_polynomial",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "binomial_coefficient",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "gcd_operation",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "lcm_operation",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "sum_k_formula",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "sum_k_squared_formula",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "sum_2k_minus_1_formula",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "arithmetic_expr",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "chain_si_principal_speed",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_quad_root_kinetic",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_deriv_force_arithmetic",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_integral_si",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_ncr_si",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_gcd_si",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_lcm_si",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_sum_si",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_kinetic_to_kj",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_force_to_kn",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "comparison_greater_than",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "multiply_scale_arithmetic",
+   "why": "g1: task is not an object"
+  },
+  {
+   "name": "chain_si_cascade_two",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "chain_triple_si",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "connector_j_to_kj",
+   "why": "g3: inert (0)"
+  },
+  {
+   "name": "connector_n_to_kn",
+   "why": "g3: inert (0)"
+  }
+ ]
+}
