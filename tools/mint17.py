@@ -24,6 +24,7 @@ import argparse
 import json
 import random
 import re
+from re import error
 import sys
 from collections import Counter
 from pathlib import Path
@@ -97,7 +98,11 @@ def _sub_plan(plan_t, m):
             bad = []
 
             def rep(mm):
-                g = m.group(mm.group(1))
+                try:
+                    g = m.group(mm.group(1))
+                except (IndexError, error):
+                    bad.append(1)
+                    return ""
                 if g is None:
                     bad.append(1)
                     return ""
