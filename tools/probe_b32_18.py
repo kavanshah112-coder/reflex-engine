@@ -75,6 +75,14 @@ def main():
                  if r.get("gate") and r.get("correct") is False}
     plans = {a["id"]: a for a in json.loads(
         (V17 / "planlib_haiku_sealed.json").read_text(encoding="utf-8"))}
+    # certified-WRONG plans are not in the admitted library; they live
+    # in the raw archive (plans_<model>_<phase>/plan_<id>.json)
+    import zipfile
+    z = zipfile.ZipFile(V17 / "v17_plan_archive.zip")
+    for wid in wrong_ids:
+        if wid not in plans:
+            plans[wid] = {"id": wid, "plan": json.loads(z.read(
+                "plans_haiku_sealed/plan_%s.json" % wid).decode("utf-8"))}
     h13 = []
     with open(DATA / "q1m_seal.jsonl", encoding="utf-8") as f:
         for line in f:

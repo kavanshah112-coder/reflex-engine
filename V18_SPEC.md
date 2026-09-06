@@ -606,3 +606,36 @@ is larger than three and the ledger gets its next entry.
 
 The 8,842 wrong answers are the version's positive control. A binder
 that lets one of them through is not a binder.
+
+---
+
+## AMENDMENT A1 (2026-09-06, before any counting run) — gate G-P5, certified formulas
+
+**Reason (B33, `bug_audit_v1_8.md`):** building the haiku-13 positive
+control showed that 12 of the 13 certified-wrong haiku plans carry the
+formula `p * r * t / 100 + p` (the amount) for a "simple interest"
+ask, with every stated number consumed in its correct role; the 13th
+pre-differentiated its expression. The B32 ledger's diagnosis of
+haiku-13 as a dual-role class was written without reading the plans
+and is superseded. H2 as frozen ("G-P4' kills 13/13") is therefore
+unachievable for 12 of 13 by usage accounting, and a GATE-CTRL battery
+that cannot pass is rung F.
+
+**Amendment:** the plan gate gains **G-P5 — certified formulas**: a
+`formula` node's expr must be algebraically equivalent, symbol for
+symbol, to an entry of the frozen certified-formula table (the
+composer's `FORM` table: kinetic energy, potential energy, force,
+work, power, current, simple interest), and the question must name
+that kind at least as many times as the plan uses it. A free-form
+formula is producer-supplied physics — a value in disguise one level
+above V1.3's ban — and abstains.
+
+**Frozen consequences:** H2 now reads "G-P4' + G-P5 kill haiku-13
+13/13; haiku's fresh-plan certified-wrong on sealed S-PLAN = 0". The
+G-P5 kill count per arm is a reported metric (a fresh plan with an
+uncertified formula abstains — the coverage cost is measured, not
+hidden). §4.5's haiku-13 battery is split: 12 rows are G-P5's positive
+control, 1 row is G-P4''s. Nothing in §9/§10 changes. Risk register
+row **R17**: the certified table is small (7 kinds); any question
+whose physics is outside it escalates — detect: G-P5 kill share;
+mitigate: none in V1.8, the table is frozen with this amendment.
