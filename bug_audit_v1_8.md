@@ -114,3 +114,40 @@ summaries only at the end of an arm, so none of the ten produced any
 file; no result was observed. They were relaunched as first runs.
 The run-once rule for SEAL is intact: no sealed number existed before
 the relaunch.
+
+## B36 — B30 residue: a foreign result-reference the chain marker does not see (inherited; the ONE wrong in V1.8's sealed-class runs)
+
+**Found:** 2026-09-06, B-haiku-dev on REPLAY (run once): WRONG 1 of
+193,623 served, path `v16:symcore16`, `WRONG_bind` 0. Item
+q17_0568250 (foreign slot): "Calculate 9 × (5 + 2). With m = 57.0 and
+this result as v, apply the formula 0.5 × m × v²." Served 63 (= 9×7,
+sentence one); gold 113,116.5.
+
+**What happened:** v18_run keeps V1.7's B30 routing verbatim: text is
+chain-routed only if it matches the marker ("with this/that", "then",
+"the result … multiply", ";") or has ≥3 sentences. "With m = 57.0 and
+this result as v" matches none of it, so the text reached the V1.6
+single-step engine, which parsed sentence one and served it — B30's
+class on a phrasing the marker does not cover. The same item is wrong
+by the same path in all four V1.7 million arms (the four
+`v16:symcore16` rows of PROBE-B32) and will be in every V1.8
+SEAL/REPLAY arm (identical code path). Sizing: 90,290 of Q-1M's chain
+items never match the marker (two-sentence "Compute X. Multiply that
+by N." chains); V1.6 abstains on all but this one.
+
+**Status of the numbers:** sealed-class runs are run once; they
+stand as found. The wrong is on the V1.6 path, not the binder —
+SAFETY-BIND is intact; SAFETY-1 on REPLAY is 1/193,623 = 0.0005%
+(bar ≤ 0.1%; expectation 0 not met, reported).
+
+**Fix (offline-verified, in v18_run behind the default; `--routing17`
+reproduces the sealed runs):** a second marker routes any text that
+names "this/that/the result", binds a result "as <role>", or whose
+second clause consumes "that/it/the result". Verified: the item now
+routes to the chain path, the composer returns None (no grammar for
+"×"), and it ESCALATES. 345 foreign chain items remain unrouted by
+either marker (phrasings with no result-reference word at all, e.g.
+"Multiply by m = 128.0 using the formula m * a"); V1.6 abstained on
+all of them in 4M V1.7 evaluations. A DEV-L det18 rerun under the new
+routing is the demonstration that the fix costs nothing (reported in
+the final report if run).

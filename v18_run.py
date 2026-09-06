@@ -43,6 +43,8 @@ def main():
     ap.add_argument("--tag", default="")
     ap.add_argument("--lib", nargs="*", default=[])
     ap.add_argument("--gate17", action="store_true")
+    ap.add_argument("--routing17", action="store_true",
+                    help="V1.7's chain marker only (B36 reproduction)")
     ap.add_argument("--reflexlib", default=str(
         HERE / "results" / "v16" / "reflexlib_all.json"))
     a = ap.parse_args()
@@ -71,6 +73,19 @@ def main():
         r"using (?:this|that|it)\b|the (?:result|interest|difference|"
         r"count|sum|total|value)\b.*\b(?:then|multiply|subtract|add|"
         r"divide)|then\b|; )", _re.I)
+    # B36 (V1.8): B30's marker missed result-references that name the
+    # result as a variable ("With m = 57 and this result as v, apply
+    # ...") and any second sentence that consumes "that/the result" --
+    # 90,290 of Q-1M's two-sentence chains never matched. V1.6 abstains
+    # on almost all of them; on ONE foreign item (q17_0568250) it
+    # served sentence one, in every V1.7 arm and in V1.8's SEAL/REPLAY
+    # runs (executed with the V1.7 marker; --routing17 reproduces).
+    CHAIN_MARKED18 = _re.compile(
+        r"\b(?:this|that|the) result\b|\bas (?:a |the )?"
+        r"(?:principal|speed|mass|acceleration|force|distance|height|"
+        r"voltage|current|resistance|v|p|m|a)\b|"
+        r"\b(?:multiply|divide|add|subtract|increase|decrease|express|"
+        r"convert)\b[^.]*\b(?:that|it|the result)\b", _re.I)
     library = json.loads(Path(a.reflexlib).read_text(
         encoding="utf-8")) if Path(a.reflexlib).exists() else []
     lib = binder18.Library.load(a.lib) if a.lib else None
@@ -87,7 +102,8 @@ def main():
         served, path, reason, tpl = None, None, None, None
         try:
             chainish = bool(CHAIN_MARKED.search(text)) or \
-                text.count(". ") >= 2
+                text.count(". ") >= 2 or (
+                    not a.routing17 and bool(CHAIN_MARKED18.search(text)))
             if not chainish:
                 r = ask16(text, it["id"])
                 if r["status"] == "SERVED":
