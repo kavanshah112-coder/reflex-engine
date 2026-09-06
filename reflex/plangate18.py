@@ -187,8 +187,46 @@ def formula_check(plan, question):
     return True, None
 
 
+# ---------------------------------------------------------------------
+# B35 -- G-P3's requested-unit reader has no 'm/s^2' entry, so
+# "acceleration in m/s^2 of a 52 kg mass" matches the PREFIX 'm/s' and
+# the attributive test ('of ' right after the match) fails on '^2'.
+# Every force chain died at G-P3 ("asked in 'm/s'; final carries 'N'")
+# -- the largest fresh-plan kill class of V1.7's planner runs, and
+# 100% of the binder's gate abstentions in probation. plangate17 stays
+# byte-identical; plangate18 swaps in a reader that ignores a unit
+# match the text continues ('^', '²', '/') and restores it after.
+import re as _re
+
+_CONT = _re.compile(r"^\s*(?:\^|²|/)")
+
+
+def _req_unit18(question):
+    parts = [p for p in _re.split(r"[.;]\s*", question) if p.strip()]
+    if not parts:
+        return None
+    last = None
+    for m in plangate17._REQ_UNIT.finditer(parts[-1]):
+        after = parts[-1][m.end():]
+        if _CONT.match(after):
+            continue                      # 'in m/s^2 ...': not m/s
+        if after[:12].lstrip().lower().startswith("of "):
+            continue                      # attributive, not an ask
+        last = plangate17._UNIT_WORDS[m.group(1).lower()]
+    return last
+
+
+def _check17(plan, question):
+    orig = plangate17._req_unit_chain
+    plangate17._req_unit_chain = _req_unit18
+    try:
+        return plangate17.check(plan, question)
+    finally:
+        plangate17._req_unit_chain = orig
+
+
 def check(plan, question, roles=None):
-    ok, t = plangate17.check(plan, question)
+    ok, t = _check17(plan, question)
     if not ok:
         return ok, t
     t = [x for x in t if x.get("gate") != "ALL"]
@@ -276,7 +314,23 @@ def control_battery():
          "v": "@n1", "unit": "J"},
         {"id": "n3", "op": "convert", "value": "@n2", "from": "J",
          "to": "kJ"}], "final": "n3"}
+    # B35: attributive 'in m/s^2 of a ... mass' is not an ask for m/s;
+    # a real ask ('in kJ') with a J final must still die
+    q_force = ("Compute 12 choose 2. Using that as the acceleration in "
+               "m/s^2 of a 52 kg mass, find the force.")
+    force_ok = {"nodes": [
+        {"id": "n1", "op": "ncr", "n": 12, "r": 2},
+        {"id": "n2", "op": "formula", "expr": "m * a", "m": 52,
+         "a": "@n1", "unit": "N"}], "final": "n2"}
+    q_kj = ("Compute 12 choose 2. Using that as the speed in m/s of a "
+            "52 kg mass, find the kinetic energy, in kJ.")
+    kj_wrong = {"nodes": [
+        {"id": "n1", "op": "ncr", "n": 12, "r": 2},
+        {"id": "n2", "op": "formula", "expr": "0.5 * m * v**2", "m": 52,
+         "v": "@n1", "unit": "J"}], "final": "n2"}
     cases = [
+        ("force chain, attributive m/s^2 (B35)", force_ok, q_force, True),
+        ("kJ ask served in J still dies", kj_wrong, q_kj, False),
         ("sound dual-role plan", sound, q_dual, True),
         ("amount for interest (B33, 12 of haiku-13)", amount, q_dual,
          False),
