@@ -1,0 +1,67 @@
+{
+ "arm": "B-fable-all",
+ "split": "replay",
+ "n": 400000,
+ "in_domain": 398587,
+ "distractors": 1413,
+ "served": 222363,
+ "chain_served": 149145,
+ "bind_served": 73217,
+ "correct": 222362,
+ "WRONG": 1,
+ "WRONG_bind": 0,
+ "coverage_in_domain": 0.5579,
+ "wrong_fire": 4e-06,
+ "SAFETY2_distractor_served": 0,
+ "gate_killed": 0,
+ "composer_gate_kills": {},
+ "composer_exec_refused": 48,
+ "bind_abstain": {
+  "no_skeleton": 177597,
+  "exec_refused": 40
+ },
+ "escalated": 177637,
+ "engine_errors": 0,
+ "ms_per_query": 13.761,
+ "model_calls": 0,
+ "gate": "plangate18",
+ "lib": [
+  "results/v18/planlib18_fable_all.json"
+ ],
+ "lib_templates": 576,
+ "by_k": {
+  "k2": {
+   "served": 65822,
+   "correct": 65821,
+   "bind": 13324,
+   "escalated": 13911,
+   "wrong": 1
+  },
+  "k3": {
+   "served": 99106,
+   "correct": 99106,
+   "bind": 48409,
+   "escalated": 20413
+  },
+  "k4": {
+   "served": 37677,
+   "correct": 37677,
+   "bind": 11269,
+   "escalated": 61924
+  },
+  "k5": {
+   "escalated": 47329,
+   "served": 12672,
+   "correct": 12672,
+   "bind": 215
+  },
+  "k6": {
+   "escalated": 32647,
+   "served": 7086,
+   "correct": 7086
+  },
+  "kNone": {
+   "escalated": 1413
+  }
+ }
+}
