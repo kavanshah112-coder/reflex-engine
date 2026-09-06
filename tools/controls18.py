@@ -101,6 +101,7 @@ def harvest_neg(lib_paths):
     items = H._load_items(["dev", "seal"])
     st = Counter()
     leaked = []
+    gate_killed_in_lib = []
     for m in H.MODELS:
         for ph in ("dev", "sealed"):
             scored = json.loads((V17 / ("plans_%s_%s.json" % (m, ph)))
@@ -109,6 +110,12 @@ def harvest_neg(lib_paths):
                 if r.get("correct") is True:
                     continue
                 st["bad_plans"] += 1
+                # the battery's claim: no witness-certified WRONG plan
+                # enters. A gate-killed plan whose canonical form (A2:
+                # derived units) equals a certified template is not a
+                # leak -- it was killed for a missing annotation, not
+                # for being wrong; reported separately.
+                wrong = bool(r.get("gate")) and r.get("correct") is False
                 name = "plans_%s_%s/plan_%s.json" % (m, ph, r["id"])
                 try:
                     plan = json.loads(z.read(name).decode("utf-8"))
@@ -126,13 +133,19 @@ def harvest_neg(lib_paths):
                     # plan from another model; the leak test is on the
                     # plan, so compare plans
                     for t in lib.templates:
-                        if r["id"] in t["donors"] and tpl and \
-                                json.dumps(H._norm_plan(tpl["plan"]),
-                                           sort_keys=True) == \
+                        pn = H._norm_plan(tpl["plan"]) if tpl else None
+                        if r["id"] in t["donors"] and pn is not None and \
+                                json.dumps(pn, sort_keys=True) == \
                                 json.dumps(t["plan"], sort_keys=True):
-                            leaked.append({"id": r["id"], "model": m,
-                                           "template": t["name"]})
-    return {"counts": dict(st), "leaked": leaked, "pass": not leaked}
+                            entry = {"id": r["id"], "model": m,
+                                     "template": t["name"],
+                                     "kill": r.get("kill")}
+                            (leaked if wrong else
+                             gate_killed_in_lib).append(entry)
+    st["gate_killed_canonical_in_library"] = len(gate_killed_in_lib)
+    return {"counts": dict(st), "leaked": leaked,
+            "gate_killed_in_library": gate_killed_in_lib,
+            "pass": not leaked}
 
 
 def sign():

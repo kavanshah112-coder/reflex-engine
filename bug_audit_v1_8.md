@@ -91,3 +91,16 @@ files are preserved under `results/v18/superseded_b34/`.
 "the plan is right, the number is wrong"; the witness certifies the
 plan the engine RAN. B34 is the reason §4.2's probation exists, and
 the reason probation must never be skipped for harvest speed.
+
+## Note N1 — harvest-negative battery refined (not a bug; recorded because a control changed)
+
+The first `harvest_neg` run on the canonical union flagged 6 "leaks".
+All 6 were plans V1.7's gate had KILLED (`asked in 'kJ'; final
+carries None` — a missing unit annotation on a scale/evaluate node),
+not witness-certified wrong plans; under A2 their derived-unit
+canonical form equals a template certified through another donor of
+the same question. The battery's claim is "no witness-certified WRONG
+plan enters the library"; it now tests exactly that (gate True and
+correct False), and reports gate-killed plans whose canonical form is
+in the library as a separate count (evidence that those kills were
+decorative, cf. B35). Nothing in the library changed.
