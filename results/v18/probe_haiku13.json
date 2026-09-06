@@ -1,0 +1,507 @@
+{
+ "n": 13,
+ "rows": [
+  {
+   "id": "q17_0243564",
+   "text": "Compute the lcm of 354 and 52. Using that as a principal in dollars, find the simple interest at 5% per year over 4 years. Add 1 to that, in $.",
+   "gold": 1841.8,
+   "k": 3,
+   "gold_type": "num",
+   "plan": {
+    "nodes": [
+     {
+      "id": "n1",
+      "op": "lcm",
+      "a": 354,
+      "b": 52
+     },
+     {
+      "id": "n2",
+      "op": "formula",
+      "expr": "p * r * t / 100 + p",
+      "p": "@n1",
+      "r": 5,
+      "t": 4,
+      "unit": "$"
+     },
+     {
+      "id": "n3",
+      "op": "evaluate",
+      "expr": "@n2 + 1"
+     }
+    ],
+    "final": "n3"
+   }
+  },
+  {
+   "id": "q17_0284700",
+   "text": "Compute the first derivative of 4x^3 +3x^2 at x = 3. Using that as a principal in dollars, find the simple interest at 9% per year over 3 years. Multiply the result by 8, in $.",
+   "gold": 272.160000000864,
+   "k": 3,
+   "gold_type": "num",
+   "plan": {
+    "nodes": [
+     {
+      "id": "n1",
+      "op": "derivative_at",
+      "expr": "4*x**3 + 3*x**2",
+      "point": 3,
+      "order": 1
+     },
+     {
+      "id": "n2",
+      "op": "formula",
+      "expr": "p * r * t / 100 + p",
+      "p": "@n1",
+      "r": 9,
+      "t": 3,
+      "unit": "$"
+     },
+     {
+      "id": "n3",
+      "op": "scale",
+      "value": "@n2",
+      "by": 8
+     }
+    ],
+    "final": "n3"
+   }
+  },
+  {
+   "id": "q17_0296818",
+   "text": "Compute the sum of k^2 for k = 1 to 16. Subtract 25 from that. Using that as a principal in dollars, find the simple interest at 9% per year over 5 years, in $.",
+   "gold": 661.95,
+   "k": 3,
+   "gold_type": "num",
+   "plan": {
+    "nodes": [
+     {
+      "id": "n1",
+      "op": "sum_finite",
+      "expr": "k**2",
+      "var": "k",
+      "a": 1,
+      "b": 16
+     },
+     {
+      "id": "n2",
+      "op": "evaluate",
+      "expr": "@n1 - 25"
+     },
+     {
+      "id": "n3",
+      "op": "formula",
+      "expr": "p * r * t / 100 + p",
+      "p": "@n2",
+      "r": 9,
+      "t": 5,
+      "unit": "$"
+     }
+    ],
+    "final": "n3"
+   }
+  },
+  {
+   "id": "q17_0377177",
+   "text": "Compute the sum of 2k - 1 for k = 1 to 13. Multiply that by 11. Using that as a principal in dollars, find the simple interest at 4% per year over 8 years.",
+   "gold": 594.88,
+   "k": 3,
+   "gold_type": "num",
+   "plan": {
+    "nodes": [
+     {
+      "id": "n1",
+      "op": "sum_finite",
+      "expr": "2*k - 1",
+      "var": "k",
+      "a": 1,
+      "b": 13
+     },
+     {
+      "id": "n2",
+      "op": "scale",
+      "value": "@n1",
+      "by": 11
+     },
+     {
+      "id": "n3",
+      "op": "formula",
+      "expr": "p * r * t / 100 + p",
+      "p": "@n2",
+      "r": 4,
+      "t": 8,
+      "unit": "$"
+     }
+    ],
+    "final": "n3"
+   }
+  },
+  {
+   "id": "q17_0410663",
+   "text": "Compute the first derivative of 1x^3 -1x^2 at x = 1. Using that as the speed in m/s of a 31 kg mass, find the kinetic energy. Express the result in kJ from J, in kJ.",
+   "gold": 0.015500000003100001,
+   "k": 3,
+   "gold_type": "num",
+   "plan": {
+    "nodes": [
+     {
+      "id": "n1",
+      "op": "derivative_at",
+      "expr": "3*x**2 - 2*x",
+      "point": 1,
+      "order": 1
+     },
+     {
+      "id": "n2",
+      "op": "formula",
+      "expr": "0.5 * m * v**2",
+      "m": 31,
+      "v": "@n1",
+      "unit": "J"
+     },
+     {
+      "id": "n3",
+      "op": "convert",
+      "value": "@n2",
+      "from": "J",
+      "to": "kJ"
+     }
+    ],
+    "final": "n3"
+   }
+  },
+  {
+   "id": "q17_0443291",
+   "text": "Compute 20 choose 4. Add 3 to that. Using that as a principal in dollars, find the simple interest at 4% per year over 7 years, in $.",
+   "gold": 1357.44,
+   "k": 3,
+   "gold_type": "num",
+   "plan": {
+    "nodes": [
+     {
+      "id": "n1",
+      "op": "ncr",
+      "n": 20,
+      "r": 4
+     },
+     {
+      "id": "n2",
+      "op": "evaluate",
+      "expr": "@n1 + 3"
+     },
+     {
+      "id": "n3",
+      "op": "formula",
+      "expr": "p * r * t / 100 + p",
+      "p": "@n2",
+      "r": 4,
+      "t": 7,
+      "unit": "$"
+     }
+    ],
+    "final": "n3"
+   }
+  },
+  {
+   "id": "q17_0496536",
+   "text": "Compute the sum of 2k - 1 for k = 1 to 8. Using that as a principal in dollars, find the simple interest at 8% per year over 4 years. Subtract 22 from that.",
+   "gold": -1.52,
+   "k": 3,
+   "gold_type": "num",
+   "plan": {
+    "nodes": [
+     {
+      "id": "n1",
+      "op": "sum_finite",
+      "expr": "2*k - 1",
+      "var": "k",
+      "a": 1,
+      "b": 8
+     },
+     {
+      "id": "n2",
+      "op": "formula",
+      "expr": "p * r * t / 100 + p",
+      "p": "@n1",
+      "r": 8,
+      "t": 4,
+      "unit": "$"
+     },
+     {
+      "id": "n3",
+      "op": "evaluate",
+      "expr": "@n2 - 22"
+     }
+    ],
+    "final": "n3"
+   }
+  },
+  {
+   "id": "q17_0503107",
+   "text": "Compute 7(4 + 9). Multiply the result by 7. Add 23 to that. Using that as a principal in dollars, find the simple interest at 6% per year over 3 years, in $.",
+   "gold": 118.8,
+   "k": 4,
+   "gold_type": "num",
+   "plan": {
+    "nodes": [
+     {
+      "id": "n1",
+      "op": "evaluate",
+      "expr": "7 * (4 + 9)"
+     },
+     {
+      "id": "n2",
+      "op": "scale",
+      "value": "@n1",
+      "by": 7
+     },
+     {
+      "id": "n3",
+      "op": "evaluate",
+      "expr": "@n2 + 23"
+     },
+     {
+      "id": "n4",
+      "op": "formula",
+      "expr": "p * r * t / 100 + p",
+      "p": "@n3",
+      "r": 6,
+      "t": 3,
+      "unit": "$"
+     }
+    ],
+    "final": "n4"
+   }
+  },
+  {
+   "id": "q17_0580957",
+   "text": "Take the first derivative of 1x^3 +3x^2 at x = 2. Multiply that by 7. Using that as a principal in dollars, find the simple interest at 7% per year over 8 years. Is the final value greater than 188.16?",
+   "gold": false,
+   "k": 4,
+   "gold_type": "bool",
+   "plan": {
+    "nodes": [
+     {
+      "id": "n1",
+      "op": "derivative_at",
+      "expr": "1*x**3 + 3*x**2",
+      "point": 2,
+      "order": 1
+     },
+     {
+      "id": "n2",
+      "op": "scale",
+      "value": "@n1",
+      "by": 7
+     },
+     {
+      "id": "n3",
+      "op": "formula",
+      "expr": "p * r * t / 100 + p",
+      "p": "@n2",
+      "r": 7,
+      "t": 8,
+      "unit": "$"
+     },
+     {
+      "id": "n4",
+      "op": "compare",
+      "a": "@n3",
+      "b": 188.16
+     }
+    ],
+    "final": "n4"
+   }
+  },
+  {
+   "id": "q17_0606249",
+   "text": "Compute the first derivative of 3x^3 +6x^2 at x = 4. Multiply that by 6. Subtract 15 from that. Using that as a principal in dollars, find the simple interest at 8% per year over 3 years.",
+   "gold": 272.88000000043195,
+   "k": 4,
+   "gold_type": "num",
+   "plan": {
+    "nodes": [
+     {
+      "id": "n1",
+      "op": "derivative_at",
+      "expr": "3*x**3 + 6*x**2",
+      "point": 4,
+      "order": 1
+     },
+     {
+      "id": "n2",
+      "op": "scale",
+      "value": "@n1",
+      "by": 6
+     },
+     {
+      "id": "n3",
+      "op": "evaluate",
+      "expr": "@n2 - 15"
+     },
+     {
+      "id": "n4",
+      "op": "formula",
+      "expr": "p * r * t / 100 + p",
+      "p": "@n3",
+      "r": 8,
+      "t": 3,
+      "unit": "$"
+     }
+    ],
+    "final": "n4"
+   }
+  },
+  {
+   "id": "q17_0832882",
+   "text": "Compute the least common multiple of 78 and 288. Multiply the result by 5. Multiply the result by 3. Using that as a principal in dollars, find the simple interest at 7% per year over 3 years. Add 16 to that.",
+   "gold": 11809.6,
+   "k": 5,
+   "gold_type": "num",
+   "plan": {
+    "nodes": [
+     {
+      "id": "n1",
+      "op": "lcm",
+      "a": 78,
+      "b": 288
+     },
+     {
+      "id": "n2",
+      "op": "scale",
+      "value": "@n1",
+      "by": 5
+     },
+     {
+      "id": "n3",
+      "op": "scale",
+      "value": "@n2",
+      "by": 3
+     },
+     {
+      "id": "n4",
+      "op": "formula",
+      "expr": "p * r * t / 100 + p",
+      "p": "@n3",
+      "r": 7,
+      "t": 3,
+      "unit": "$"
+     },
+     {
+      "id": "n5",
+      "op": "evaluate",
+      "expr": "@n4 + 16"
+     }
+    ],
+    "final": "n5"
+   }
+  },
+  {
+   "id": "q17_0968553",
+   "text": "Compute the sum of k^2 for k = 1 to 24. Using that as a principal in dollars, find the simple interest at 6% per year over 6 years. Add 8 to that. Using that as a principal in dollars, find the simple interest at 3% per year over 8 years. Multiply that by 11. Multiply the result by 8.",
+   "gold": 37424.64,
+   "k": 6,
+   "gold_type": "num",
+   "plan": {
+    "nodes": [
+     {
+      "id": "n1",
+      "op": "sum_finite",
+      "expr": "k**2",
+      "var": "k",
+      "a": 1,
+      "b": 24
+     },
+     {
+      "id": "n2",
+      "op": "formula",
+      "expr": "p * r * t / 100 + p",
+      "p": "@n1",
+      "r": 6,
+      "t": 6,
+      "unit": "$"
+     },
+     {
+      "id": "n3",
+      "op": "evaluate",
+      "expr": "@n2 + 8"
+     },
+     {
+      "id": "n4",
+      "op": "formula",
+      "expr": "p * r * t / 100 + p",
+      "p": "@n3",
+      "r": 3,
+      "t": 8,
+      "unit": "$"
+     },
+     {
+      "id": "n5",
+      "op": "scale",
+      "value": "@n4",
+      "by": 11
+     },
+     {
+      "id": "n6",
+      "op": "scale",
+      "value": "@n5",
+      "by": 8
+     }
+    ],
+    "final": "n6"
+   }
+  },
+  {
+   "id": "q17_0972547",
+   "text": "Take 16 choose 4. Multiply the result by 9. Subtract 23 from that. Using that as a principal in dollars, find the simple interest at 2% per year over 6 years. Subtract 12 from that. Using that as a principal in dollars, find the simple interest at 3% per year over 4 years, in $.",
+   "gold": 234.1008,
+   "k": 6,
+   "gold_type": "num",
+   "plan": {
+    "nodes": [
+     {
+      "id": "n1",
+      "op": "ncr",
+      "n": 16,
+      "r": 4
+     },
+     {
+      "id": "n2",
+      "op": "scale",
+      "value": "@n1",
+      "by": 9
+     },
+     {
+      "id": "n3",
+      "op": "evaluate",
+      "expr": "@n2 - 23"
+     },
+     {
+      "id": "n4",
+      "op": "formula",
+      "expr": "p * r * t / 100 + p",
+      "p": "@n3",
+      "r": 2,
+      "t": 6,
+      "unit": "$"
+     },
+     {
+      "id": "n5",
+      "op": "evaluate",
+      "expr": "@n4 - 12"
+     },
+     {
+      "id": "n6",
+      "op": "formula",
+      "expr": "p * r * t / 100 + p",
+      "p": "@n5",
+      "r": 3,
+      "t": 4,
+      "unit": "$"
+     }
+    ],
+    "final": "n6"
+   }
+  }
+ ]
+}
