@@ -17,11 +17,13 @@ COMPOUND certified library serves / plans purchased, raw over the
         of each gold `sig`), plus the cumulative curve.
 """
 import argparse
+import sys
 import json
 from collections import Counter
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(HERE))
 V17 = HERE / "results" / "v17"
 OUT = HERE / "results" / "v18"
 
