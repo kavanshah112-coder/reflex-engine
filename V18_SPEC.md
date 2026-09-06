@@ -2,9 +2,11 @@
 
 ## Can a certified plan be served AGAIN, on a question it was not written for, without ever binding a number to the wrong role — and does a library that reuses safely compound?
 
-**STATUS: DRAFT v1 (2026-09-06) — §12 decisions OPEN for the user.
-Freezes as tag `v1.8-plan` on the user's word.** §7–§10 and the §11
-risk register never change after the first sealed run.
+**STATUS: FROZEN (2026-09-06) — all seven §12 decisions RESOLVED by
+the user as proposed ("freeze n continue with proposed decisions").
+Tag `v1.8-plan`.** §7–§10 and the §11 risk register never change
+after this point; any later amendment is recorded as an AMENDMENT
+block with its date and reason, never edited in place.
 
 Built on V0.1–V1.7. No prior version, tag, snapshot, dataset, report
 or log is modified. Full arc protocol applies: pre-registration,
@@ -545,32 +547,45 @@ R16  Systemic: the binder's correctness is semantic, which the arc
 
 ---
 
-## 12. Decisions — OPEN for the user
+## 12. Decisions — RESOLVED by the user (2026-09-06, all as proposed)
 
-1. **DEV-L 400k** — build a new 400k dev set (seed 1800, hashed,
-   disjoint) as the sealed-shaped dev; no API cost, ~build time
-   only. Alternative: promote REPLAY to dev — rejected as proposed,
-   REPLAY is a V1.7 sealed-class set and stays untouched.
-2. **RETAIN band** — 60% pass / 40–60% partial / <40% collapse, as
-   proposed. The user may set a different band; it freezes with the
-   spec.
-3. **Adapter arm gating** — the 10%-of-escalations rule, as
-   proposed; or run the adapter arm regardless for the measurement
-   (costs bridge time, no API spend).
-4. **haiku binding arm** — run as a measured, never-merged arm, as
-   proposed; or drop it and report haiku as out of scope for V1.8.
+1. **DEV-L 400k** — built by `tools/build_devl18.py` from V1.7's
+   frozen generator (`build_q1m.gen_item`, untouched) with seed
+   1800; programmatic items only plus the Q-1M ACQ/DEV distractor
+   items (already disjoint from SEAL/REPLAY; the corpus has no
+   unused supply); every generated text hash-checked against the
+   SEAL+REPLAY text set and rejected on collision (count in the
+   manifest); no foreign-slot overlay (bridge-authored in V1.7,
+   not re-authored here — recorded as a DEV-L limitation). Raw-byte
+   SHA-256 recorded before any V1.8 serving code exists.
+2. **RETAIN band** — 60% pass / 40–60% partial / <40% collapse.
+3. **Adapter arm gating** — the 10%-of-escalations rule.
+4. **haiku binding arm** — run as a measured, never-merged arm.
 5. **REAL-DIAG** — run the frozen V1.3 corpora as a no-threshold
-   diagnostic for Q5, as proposed; or omit (the synthetic caveat
-   then stands unquantified).
-6. **Energy window** — measure in fleet-idle windows with baseline
-   subtraction, as proposed; or defer ENERGY to a later version and
-   let the ladder cap at B.
-7. **Untracked V1.7 logs** — `results/v17/R-fable_{acq,dev,seal,
-   replay}.jsonl` and `R-haiku-strict_dev_probe.jsonl` are on disk
-   but not committed (the summaries and wrong files are). Commit
-   them before freeze so PROBE-B32 and the retention denominator
-   are reconstructible from the repo alone, or record their hashes
-   in the freeze commit.
+   diagnostic.
+6. **Energy window** — fleet-idle windows with baseline subtraction
+   and instrument controls; "not measured" allowed.
+7. **V1.7 logs** — the per-item logs of all four million arms
+   (`results/v17/R-<model>_{acq,dev,seal,replay}.jsonl`, none of
+   which had been committed — not only fable's) and the strict
+   probe log are committed in the freeze commit, so PROBE-B32 and
+   the per-item retention denominator are reconstructible from the
+   repo alone. Finding recorded here: `R-*_wrong.json` rows carry
+   text truncated to 140 characters, so PROBE-B32 is rebuilt by
+   joining wrong-row ids to the committed Q-1M items and template
+   names to `stack_<model>.json`.
+
+**Implementation note (frozen with the spec):** G-P4' is delivered
+as `reflex/plangate18.check`, which calls `plangate17.check`
+unchanged and then applies usage accounting — V1.7's gate stays
+byte-identical and the "flag off" reproduction is simply the V1.7
+call path. Role resolution for both the binder and G-P4' lives in
+`reflex/roles18.py`; slot roles are a fixed table over the
+planschema17 slot conventions the four models actually used in all
+6,757 admitted V1.7 plans (`formula.m/r/t`, `scale.by`,
+`derivative_at.point`, `integrate_def.a/b`, `sum_finite.a/b`,
+`ncr.n/r`, `gcd|lcm.a/b`, `compare.b`); a plan slot outside the
+table is UNROLLED and the plan abstains.
 
 ---
 
