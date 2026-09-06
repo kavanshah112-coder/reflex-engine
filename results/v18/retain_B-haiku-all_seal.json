@@ -1,0 +1,65 @@
+{
+ "model": "haiku",
+ "split": "seal",
+ "arm": "B-haiku-all",
+ "v17_template_serves": 5012,
+ "v17_template_wrong": 937,
+ "v18_bind_on_same": 4812,
+ "v18_bind_on_same_correct": 4812,
+ "RETAIN": 0.9601,
+ "abstain_anatomy_on_denominator": {
+  "donor_self": 36,
+  "no_skeleton": 164
+ },
+ "bind_new_coverage": 47164,
+ "bind_new_coverage_v17_path": {
+  "escalated": 47164
+ },
+ "COMPOUND_breadth": {
+  "distinct_signatures_bind_served": 340,
+  "distinct_skeletons_bind_served": 1106,
+  "serves_per_signature": 152.87,
+  "serves_per_skeleton": 46.99,
+  "dedup_ratio_upper_bound": 0.208
+ },
+ "COMPOUND": {
+  "plans_purchased": 1631,
+  "certified_bind_serves": 51976,
+  "ratio_raw": 31.868,
+  "unique_signatures": 16380,
+  "certified_bind_serves_dedup": 136,
+  "ratio_dedup": 0.083,
+  "curve": [
+   {
+    "n": 50000,
+    "binds": 8719,
+    "ratio": 5.346
+   },
+   {
+    "n": 100000,
+    "binds": 17366,
+    "ratio": 10.647
+   },
+   {
+    "n": 150000,
+    "binds": 26154,
+    "ratio": 16.036
+   },
+   {
+    "n": 200000,
+    "binds": 34742,
+    "ratio": 21.301
+   },
+   {
+    "n": 250000,
+    "binds": 43408,
+    "ratio": 26.614
+   },
+   {
+    "n": 300000,
+    "binds": 51976,
+    "ratio": 31.868
+   }
+  ]
+ }
+}
