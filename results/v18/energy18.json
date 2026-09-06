@@ -1,0 +1,188 @@
+{
+ "split": "seal",
+ "n": 20000,
+ "lib": [
+  "results/v18/planlib18_all_all.json"
+ ],
+ "runs": [
+  {
+   "run": 0,
+   "ambient": {
+    "gpu_w": 10.414744027303755,
+    "cpu_pct": 8.417725752508362,
+    "seconds": 60,
+    "n_samples": 299
+   },
+   "ambient_cpu_pct": 8.417725752508362,
+   "fleet_busy": false,
+   "control_before": {
+    "tag": "ctrl_before_0",
+    "joules": 64.47,
+    "expected": 54.0,
+    "cpu_j_model": 53.71875,
+    "gpu_j": 42.07864674851115,
+    "pass": true
+   },
+   "control_after": {
+    "tag": "ctrl_after_0",
+    "joules": 55.34,
+    "expected": 54.0,
+    "cpu_j_model": 54.0,
+    "gpu_j": 32.59330695049947,
+    "pass": true
+   },
+   "questions": 20000,
+   "served": 11128,
+   "correct": 11128,
+   "wall_s": 67.75,
+   "joules": 1203.75,
+   "raw": {
+    "wall_s": 67.7508584999996,
+    "gpu_j": 700.7672162955223,
+    "gpu_j_dyn": 0.0,
+    "cpu_j_model": 1203.75,
+    "cpu_j_util": 470.5254636918721,
+    "cpu_s_ollama": 0.0,
+    "cpu_s_self": 66.875,
+    "cpu_pct_mean": 10.346875,
+    "n_samples": 320,
+    "ambient": {
+     "gpu_w": 10.414744027303755,
+     "cpu_pct": 8.417725752508362,
+     "seconds": 60,
+     "n_samples": 299
+    },
+    "label": "lean_batch_0"
+   },
+   "J_per_question_engine": 0.060187,
+   "J_per_certified_serve": 0.108173,
+   "valid": true
+  },
+  {
+   "run": 1,
+   "ambient": {
+    "gpu_w": 10.356321070234113,
+    "cpu_pct": 5.762876254180601,
+    "seconds": 60,
+    "n_samples": 299
+   },
+   "ambient_cpu_pct": 5.762876254180601,
+   "fleet_busy": false,
+   "control_before": {
+    "tag": "ctrl_before_1",
+    "joules": 54.53,
+    "expected": 54.0,
+    "cpu_j_model": 53.71875,
+    "gpu_j": 31.920493754008806,
+    "pass": true
+   },
+   "control_after": {
+    "tag": "ctrl_after_1",
+    "joules": 54.69,
+    "expected": 54.0,
+    "cpu_j_model": 53.15625,
+    "gpu_j": 32.615031194498165,
+    "pass": true
+   },
+   "questions": 20000,
+   "served": 11128,
+   "correct": 11128,
+   "wall_s": 68.1,
+   "joules": 1211.344,
+   "raw": {
+    "wall_s": 68.09713720000036,
+    "gpu_j": 704.523854080504,
+    "gpu_j_dyn": 0.0,
+    "cpu_j_model": 1211.34375,
+    "cpu_j_util": 1092.9527304115986,
+    "cpu_s_ollama": 0.0,
+    "cpu_s_self": 67.296875,
+    "cpu_pct_mean": 10.221183800623052,
+    "n_samples": 321,
+    "ambient": {
+     "gpu_w": 10.356321070234113,
+     "cpu_pct": 5.762876254180601,
+     "seconds": 60,
+     "n_samples": 299
+    },
+    "label": "lean_batch_1"
+   },
+   "J_per_question_engine": 0.060567,
+   "J_per_certified_serve": 0.108855,
+   "valid": true
+  },
+  {
+   "run": 2,
+   "ambient": {
+    "gpu_w": 10.451672240802676,
+    "cpu_pct": 12.362876254180602,
+    "seconds": 60,
+    "n_samples": 299
+   },
+   "ambient_cpu_pct": 12.362876254180602,
+   "fleet_busy": false,
+   "control_before": {
+    "tag": "ctrl_before_2",
+    "joules": 53.72,
+    "expected": 54.0,
+    "cpu_j_model": 53.15625,
+    "gpu_j": 31.94119304499069,
+    "pass": true
+   },
+   "control_after": {
+    "tag": "ctrl_after_2",
+    "joules": 53.51,
+    "expected": 54.0,
+    "cpu_j_model": 53.4375,
+    "gpu_j": 31.44551909449644,
+    "pass": true
+   },
+   "questions": 20000,
+   "served": 11128,
+   "correct": 11128,
+   "wall_s": 70.79,
+   "joules": 1259.438,
+   "raw": {
+    "wall_s": 70.7914426999996,
+    "gpu_j": 734.0895617689927,
+    "gpu_j_dyn": 0.0,
+    "cpu_j_model": 1259.4375,
+    "cpu_j_util": 464.6900836214234,
+    "cpu_s_ollama": 0.0,
+    "cpu_s_self": 69.96875,
+    "cpu_pct_mean": 14.186268656716416,
+    "n_samples": 335,
+    "ambient": {
+     "gpu_w": 10.451672240802676,
+     "cpu_pct": 12.362876254180602,
+     "seconds": 60,
+     "n_samples": 299
+    },
+    "label": "lean_batch_2"
+   },
+   "J_per_question_engine": 0.062972,
+   "J_per_certified_serve": 0.113177,
+   "valid": true
+  }
+ ],
+ "valid_runs": 3,
+ "J_per_question_engine": {
+  "mean": 0.061242,
+  "sd": 0.001233
+ },
+ "J_per_certified_serve": {
+  "mean": 0.110068,
+  "sd": 0.002216
+ },
+ "J_per_question_amortised_proxy_producer_64.9J": {
+  "eta": 59.5,
+  "value": 847.944,
+  "note": "f_esc*E_llm_proxy + f_cov*E_plan_proxy/eta + engine; bridge draw unmeasured, proxies are V1.4 local measurements"
+ },
+ "J_per_question_amortised_proxy_llm_1910J": {
+  "eta": 59.5,
+  "value": 865.198,
+  "note": "f_esc*E_llm_proxy + f_cov*E_plan_proxy/eta + engine; bridge draw unmeasured, proxies are V1.4 local measurements"
+ },
+ "status": "measured"
+}
