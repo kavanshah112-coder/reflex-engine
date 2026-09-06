@@ -1,0 +1,68 @@
+{
+ "arm": "B-all-all",
+ "split": "seal",
+ "n": 300000,
+ "in_domain": 298905,
+ "distractors": 1095,
+ "served": 166225,
+ "chain_served": 112170,
+ "bind_served": 54055,
+ "correct": 166225,
+ "WRONG": 0,
+ "WRONG_bind": 0,
+ "coverage_in_domain": 0.5561,
+ "wrong_fire": 0.0,
+ "SAFETY2_distractor_served": 0,
+ "gate_killed": 0,
+ "composer_gate_kills": {},
+ "composer_exec_refused": 31,
+ "bind_abstain": {
+  "no_skeleton": 132399,
+  "collision": 745,
+  "donor_self": 600,
+  "exec_refused": 31
+ },
+ "escalated": 133775,
+ "engine_errors": 0,
+ "ms_per_query": 8.799,
+ "model_calls": 0,
+ "gate": "plangate18",
+ "lib": [
+  "results/v18/planlib18_all_all.json"
+ ],
+ "lib_templates": 586,
+ "by_k": {
+  "k2": {
+   "escalated": 10952,
+   "served": 48654,
+   "correct": 48654,
+   "bind": 9277
+  },
+  "k3": {
+   "served": 74342,
+   "correct": 74342,
+   "escalated": 15440,
+   "bind": 36206
+  },
+  "k4": {
+   "served": 28621,
+   "correct": 28621,
+   "escalated": 46221,
+   "bind": 8426
+  },
+  "k5": {
+   "served": 9401,
+   "correct": 9401,
+   "escalated": 35373,
+   "bind": 146
+  },
+  "k6": {
+   "escalated": 24694,
+   "served": 5207,
+   "correct": 5207
+  },
+  "kNone": {
+   "escalated": 1095
+  }
+ }
+}
