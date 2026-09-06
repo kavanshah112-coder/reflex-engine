@@ -1,0 +1,19 @@
+{
+ "rows": "results/v18/B-all-all_devl.jsonl",
+ "escalated_in_domain": 178344,
+ "classes": {
+  "structure_gap": 176905,
+  "binding_gap:collision": 1380,
+  "binding_gap:exec_refused": 40,
+  "other:composer_exec_refused": 19
+ },
+ "shares": {
+  "structure_gap": 0.9919,
+  "adapter_gap": 0.0,
+  "semantic_kill": 0.0,
+  "binding_gap": 0.008,
+  "other": 0.0001
+ },
+ "adapter_gap_share": 0.0,
+ "adapter_arm_runs": false
+}
