@@ -1,0 +1,57 @@
+{
+ "arm": "det17chk",
+ "split": "dev",
+ "n": 20000,
+ "in_domain": 19936,
+ "distractors": 64,
+ "served": 7450,
+ "chain_served": 7450,
+ "bind_served": 0,
+ "correct": 7450,
+ "WRONG": 0,
+ "WRONG_bind": 0,
+ "coverage_in_domain": 0.3737,
+ "wrong_fire": 0.0,
+ "SAFETY2_distractor_served": 0,
+ "gate_killed": 0,
+ "composer_gate_kills": {},
+ "composer_exec_refused": 1,
+ "bind_abstain": {},
+ "escalated": 12550,
+ "engine_errors": 0,
+ "ms_per_query": 7.293,
+ "model_calls": 0,
+ "gate": "plangate17",
+ "lib": [],
+ "lib_templates": 0,
+ "by_k": {
+  "k2": {
+   "escalated": 1394,
+   "served": 2693,
+   "correct": 2693
+  },
+  "k3": {
+   "served": 2486,
+   "correct": 2486,
+   "escalated": 3388
+  },
+  "k4": {
+   "escalated": 3728,
+   "served": 1348,
+   "correct": 1348
+  },
+  "k5": {
+   "escalated": 2359,
+   "served": 608,
+   "correct": 608
+  },
+  "k6": {
+   "escalated": 1617,
+   "served": 315,
+   "correct": 315
+  },
+  "kNone": {
+   "escalated": 64
+  }
+ }
+}

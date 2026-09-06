@@ -1,0 +1,57 @@
+{
+ "arm": "det18",
+ "split": "devl",
+ "n": 400000,
+ "in_domain": 398884,
+ "distractors": 1116,
+ "served": 145745,
+ "chain_served": 145745,
+ "bind_served": 0,
+ "correct": 145745,
+ "WRONG": 0,
+ "WRONG_bind": 0,
+ "coverage_in_domain": 0.3654,
+ "wrong_fire": 0.0,
+ "SAFETY2_distractor_served": 0,
+ "gate_killed": 0,
+ "composer_gate_kills": {},
+ "composer_exec_refused": 35,
+ "bind_abstain": {},
+ "escalated": 254255,
+ "engine_errors": 0,
+ "ms_per_query": 7.776,
+ "model_calls": 0,
+ "gate": "plangate18",
+ "lib": [],
+ "lib_templates": 0,
+ "by_k": {
+  "k2": {
+   "escalated": 30983,
+   "served": 48794,
+   "correct": 48794
+  },
+  "k3": {
+   "escalated": 68782,
+   "served": 50883,
+   "correct": 50883
+  },
+  "k4": {
+   "escalated": 73195,
+   "served": 26526,
+   "correct": 26526
+  },
+  "k5": {
+   "escalated": 47376,
+   "served": 12457,
+   "correct": 12457
+  },
+  "k6": {
+   "escalated": 32803,
+   "served": 7085,
+   "correct": 7085
+  },
+  "kNone": {
+   "escalated": 1116
+  }
+ }
+}
