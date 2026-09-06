@@ -1,0 +1,67 @@
+{
+ "arm": "B-haiku-dev",
+ "split": "replay",
+ "n": 400000,
+ "in_domain": 398587,
+ "distractors": 1413,
+ "served": 193623,
+ "chain_served": 149145,
+ "bind_served": 44477,
+ "correct": 193622,
+ "WRONG": 1,
+ "WRONG_bind": 0,
+ "coverage_in_domain": 0.4858,
+ "wrong_fire": 5e-06,
+ "SAFETY2_distractor_served": 0,
+ "gate_killed": 0,
+ "composer_gate_kills": {},
+ "composer_exec_refused": 48,
+ "bind_abstain": {
+  "no_skeleton": 206349,
+  "exec_refused": 28
+ },
+ "escalated": 206377,
+ "engine_errors": 0,
+ "ms_per_query": 10.507,
+ "model_calls": 0,
+ "gate": "plangate18",
+ "lib": [
+  "results/v18/planlib18_haiku_dev.json"
+ ],
+ "lib_templates": 242,
+ "by_k": {
+  "k2": {
+   "served": 65513,
+   "correct": 65512,
+   "bind": 13015,
+   "escalated": 14220,
+   "wrong": 1
+  },
+  "k3": {
+   "served": 79122,
+   "correct": 79122,
+   "bind": 28425,
+   "escalated": 40397
+  },
+  "k4": {
+   "escalated": 70162,
+   "served": 29439,
+   "correct": 29439,
+   "bind": 3031
+  },
+  "k5": {
+   "escalated": 47538,
+   "served": 12463,
+   "correct": 12463,
+   "bind": 6
+  },
+  "k6": {
+   "escalated": 32647,
+   "served": 7086,
+   "correct": 7086
+  },
+  "kNone": {
+   "escalated": 1413
+  }
+ }
+}

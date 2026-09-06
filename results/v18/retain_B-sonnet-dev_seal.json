@@ -1,0 +1,65 @@
+{
+ "model": "sonnet",
+ "split": "seal",
+ "arm": "B-sonnet-dev",
+ "v17_template_serves": 5092,
+ "v17_template_wrong": 840,
+ "v18_bind_on_same": 4554,
+ "v18_bind_on_same_correct": 4554,
+ "RETAIN": 0.8943,
+ "abstain_anatomy_on_denominator": {
+  "no_skeleton": 538
+ },
+ "bind_new_coverage": 29230,
+ "bind_new_coverage_v17_path": {
+  "mint": 8373,
+  "escalated": 20857
+ },
+ "COMPOUND_breadth": {
+  "distinct_signatures_bind_served": 148,
+  "distinct_skeletons_bind_served": 416,
+  "serves_per_signature": 228.27,
+  "serves_per_skeleton": 81.21,
+  "dedup_ratio_upper_bound": 0.26
+ },
+ "COMPOUND": {
+  "plans_purchased": 569,
+  "certified_bind_serves": 33784,
+  "ratio_raw": 59.374,
+  "unique_signatures": 16380,
+  "certified_bind_serves_dedup": 61,
+  "ratio_dedup": 0.107,
+  "curve": [
+   {
+    "n": 50000,
+    "binds": 5695,
+    "ratio": 10.009
+   },
+   {
+    "n": 100000,
+    "binds": 11336,
+    "ratio": 19.923
+   },
+   {
+    "n": 150000,
+    "binds": 17055,
+    "ratio": 29.974
+   },
+   {
+    "n": 200000,
+    "binds": 22683,
+    "ratio": 39.865
+   },
+   {
+    "n": 250000,
+    "binds": 28226,
+    "ratio": 49.606
+   },
+   {
+    "n": 300000,
+    "binds": 33784,
+    "ratio": 59.374
+   }
+  ]
+ }
+}
