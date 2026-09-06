@@ -125,7 +125,12 @@ STRUCTURAL_SLOTS = {("derivative_at", "order")}
 EXPR_OPS = {"evaluate", "solve_pick", "derivative_at", "integrate_def",
             "sum_finite", "limit"}
 EXPR_KEYS = ("expr", "lhs", "rhs")
-EXPR_TOKEN_CUES = {"expr", "addend", "rhs"}
+# an expression operand may consume an expression coefficient or a
+# keyword-cued arithmetic operand ('add 7', 'multiply by 3', '= 0') --
+# NEVER a unit-cued quantity: those flow through certified formula
+# nodes (G-P5) or role-typed slots, so 'p * 5 * 6 / 100' cannot be
+# written as an evaluate to dodge the formula table
+EXPR_TOKEN_CUES = {"expr", "addend", "factor", "rhs"}
 NON_SLOT_KEYS = {"id", "op", "from", "to", "var", "pick", "unit",
                  "order", "expr", "lhs", "rhs"}
 

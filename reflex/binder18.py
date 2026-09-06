@@ -34,7 +34,8 @@ class Library(object):
         self.templates = templates
         self.by_skel = {}
         for t in templates:
-            self.by_skel.setdefault(t["skeleton"], []).append(t)
+            for sk in t.get("skeletons") or [t.get("skeleton")]:
+                self.by_skel.setdefault(sk, []).append(t)
         self.donors = set()
         for t in templates:
             self.donors.update(t.get("donors", []))
