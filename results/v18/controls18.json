@@ -23,5 +23,76 @@
   "positive_sibling": "no_skeleton",
   "pass": true
  },
+ "harvest_neg": {
+  "counts": {
+   "bad_plans": 443,
+   "archive_missing": 126,
+   "templatized": 293,
+   "rejected": 24,
+   "gate_killed_canonical_in_library": 6
+  },
+  "leaked": [],
+  "gate_killed_in_library": [
+   {
+    "id": "q17_0684533",
+    "model": "haiku",
+    "template": "all_full_0578",
+    "kill": "asked in 'kJ'; final carries None"
+   },
+   {
+    "id": "q17_0727377",
+    "model": "haiku",
+    "template": "all_full_0582",
+    "kill": "asked in 'kJ'; final carries None"
+   },
+   {
+    "id": "q17_0554541",
+    "model": "haiku",
+    "template": "all_full_0580",
+    "kill": "asked in 'kJ'; final carries None"
+   },
+   {
+    "id": "q17_0684533",
+    "model": "sonnet",
+    "template": "all_full_0578",
+    "kill": "asked in 'kJ'; final carries None"
+   },
+   {
+    "id": "q17_0727377",
+    "model": "fable",
+    "template": "all_full_0582",
+    "kill": "asked in 'kJ'; final carries None"
+   },
+   {
+    "id": "q17_0554541",
+    "model": "fable",
+    "template": "all_full_0580",
+    "kill": "asked in 'kJ'; final carries None"
+   }
+  ],
+  "pass": true
+ },
+ "probe_b32": {
+  "n": 8842,
+  "lib": [
+   "results/v18/planlib18_all_all.json"
+  ],
+  "templates": 586,
+  "counts": {
+   "served_gold": 8421,
+   "abstained": 421
+  },
+  "abstain_reasons": {
+   "no_skeleton": 395,
+   "donor_self": 26
+  },
+  "served_wrong": [],
+  "pass": true
+ },
+ "repro": {
+  "compared": 20000,
+  "diffs": 0,
+  "pass": true
+ },
  "ALL_PASS": true
 }
