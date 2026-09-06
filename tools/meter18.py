@@ -53,8 +53,13 @@ def _busy(seconds):
 
 
 def _window_j(w):
+    """DYNAMIC joules (above ambient), the meter's documented figure
+    for per-query energy: process-attributed CPU model + GPU net of the
+    calibrated idle draw. Attempt 1 summed the GROSS gpu_j and carried
+    ~35 J of GPU idle draw into a CPU-only 3 s control (note N3);
+    gross is kept in the raw record."""
     r = w.result or {}
-    return (r.get("gpu_j") or 0.0) + (r.get("cpu_j_model") or 0.0), r
+    return (r.get("gpu_j_dyn") or 0.0) + (r.get("cpu_j_model") or 0.0), r
 
 
 def control(meter, tag):

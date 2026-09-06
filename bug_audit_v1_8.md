@@ -151,3 +151,17 @@ either marker (phrasings with no result-reference word at all, e.g.
 all of them in 4M V1.7 evaluations. A DEV-L det18 rerun under the new
 routing is the demonstration that the fix costs nothing (reported in
 the final report if run).
+
+## Note N3 — energy attempt 1 "not measured": gross GPU term in a CPU-only control (instrument use, not fleet)
+
+First meter18 run (preserved as `results/v18/energy18_attempt1_gross.json`):
+all three batches invalid. Two causes. (1) The busy-loop control read
+86–89 J against 54 J expected: the tool summed the meter's GROSS
+`gpu_j` (idle draw ~11 W × 3 s ≈ 35 J) with the CPU model; the CPU
+term alone read 52–53 J (within 4%). The meter documents `gpu_j_dyn`
+(net of the calibrated ambient) as the per-query figure; meter18 now
+uses it and keeps gross in the raw record. (2) Ambient CPU 26–27%
+against the 20% fleet gate — two RETAIN computations were still
+running beside the production workers; the rule held as written.
+B24's lesson applied in the other direction: the control fired on a
+real accounting error before any joule was reported.
