@@ -104,3 +104,13 @@ plan enters the library"; it now tests exactly that (gate True and
 correct False), and reports gate-killed plans whose canonical form is
 in the library as a separate count (evidence that those kills were
 decorative, cf. B35). Nothing in the library changed.
+
+## Note N2 — session restart interrupted ten in-flight runs (no output produced)
+
+2026-09-06: the harness process exited while B-{haiku,sonnet,opus,
+fable}-all on DEV-L, B-{haiku,sonnet,opus,fable}-dev on SEAL and
+B-all-{dev,all} on SEAL were running. v18_run writes rows and
+summaries only at the end of an arm, so none of the ten produced any
+file; no result was observed. They were relaunched as first runs.
+The run-once rule for SEAL is intact: no sealed number existed before
+the relaunch.
