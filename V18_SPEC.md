@@ -639,3 +639,29 @@ control, 1 row is G-P4''s. Nothing in §9/§10 changes. Risk register
 row **R17**: the certified table is small (7 kinds); any question
 whose physics is outside it escalates — detect: G-P5 kill share;
 mitigate: none in V1.8, the table is frozen with this amendment.
+
+---
+
+## AMENDMENT A2 (2026-09-06, before any counting run) — canonical plan form at harvest
+
+**Reason:** the union library's first build had 655 skeletons mapping
+to more than one plan, and PROBE-B32 through the haiku library
+abstained on 1,850 of 8,842 rows for `collision`. Inspection: 631 of
+the 655 are the same computation written two ways — `scale(@x, by f)`
+versus `evaluate("@x*f")` — and 24 differ only in a unit annotation a
+model did or did not add to a scale / add / subtract node. The
+multiplicity rule (§4 step 4) is frozen and stays; what changes is
+that syntactic variants are made identical BEFORE they can collide.
+
+**Amendment:** harvest18 normalises every template to a canonical
+form: (1) an expression that multiplies one upstream value by a
+factor-cued marker is rewritten to the composer's `scale`; (2) the
+unit of a `formula` node is its certified unit (A1), of a `convert`
+its `to`, of a `scale` or a single-upstream `+ - *` evaluate the
+upstream's unit — derived, never model-supplied; a model-supplied
+unit that disagrees with the derived one rejects the plan. Semantics
+are unchanged (scaling or offsetting a quantity keeps its unit; the
+gate's unit-flow check then sees derived units instead of the model's
+decoration). Nothing in §7–§10 changes. Probation is re-run on the
+canonical library; the pre-A2 probation ledgers are preserved under
+`results/v18/superseded_a2/`.

@@ -1,0 +1,60 @@
+{
+ "gates": {
+  "plangate17": true,
+  "chainexec17": true,
+  "plangate18": true,
+  "fails": [],
+  "pass": true
+ },
+ "haiku13": {
+  "n": 13,
+  "killed_by": {
+   "G-P5": 12,
+   "G-P4'": 1
+  },
+  "passed": [],
+  "pass": true
+ },
+ "sign": {
+  "templatized": true,
+  "why": null,
+  "bound_b": -300.0,
+  "served": 1.0,
+  "positive_sibling": "no_skeleton",
+  "pass": true
+ },
+ "harvest_neg": {
+  "counts": {
+   "bad_plans": 443,
+   "archive_missing": 126,
+   "templatized": 293,
+   "rejected": 24
+  },
+  "leaked": [],
+  "pass": true
+ },
+ "probe_b32": {
+  "n": 8842,
+  "lib": [
+   "results/v18/planlib18_all_all.json"
+  ],
+  "templates": 807,
+  "counts": {
+   "abstained": 5039,
+   "served_gold": 3803
+  },
+  "abstain_reasons": {
+   "collision": 4611,
+   "no_skeleton": 402,
+   "donor_self": 26
+  },
+  "served_wrong": [],
+  "pass": true
+ },
+ "repro": {
+  "compared": 20000,
+  "diffs": 0,
+  "pass": true
+ },
+ "ALL_PASS": true
+}

@@ -84,21 +84,57 @@ def _norm_plan(plan):
                 c in s for c in "*+-/^(")) else s.strip()
         return v
     nodes = []
+    unit_of = {}
     for n in plan["nodes"]:
         nd = {}
         for k in sorted(n):
             nd[k] = idmap[n[k]] if k == "id" else fix(n[k])
-        if nd.get("op") == "formula":
-            cu = None
+        op = nd.get("op")
+        # AMENDMENT A2 (canonical plan form): a multiply-by-marker
+        # written as an expression is the composer's `scale`
+        if op == "evaluate" and isinstance(nd.get("expr"), str):
+            m = re.fullmatch(r"(@n\d+)\*\{(\$s[^}]+)\}", nd["expr"]) or \
+                re.fullmatch(r"\{(\$s[^}]+)\}\*(@n\d+)", nd["expr"])
+            if m:
+                ref, mark = (m.group(1), m.group(2)) if \
+                    m.group(1).startswith("@") else (m.group(2),
+                                                     m.group(1))
+                if "|factor|" in mark:
+                    nd = {"id": nd["id"], "op": "scale", "value": ref,
+                          "by": mark}
+                    if "unit" in n:
+                        nd["unit"] = n["unit"]
+                    op = "scale"
+        model_unit = nd.get("unit")
+        derived = None
+        if op == "formula":
             for _kind, (canon, unit) in CERTIFIED_FORMULAS.items():
                 if _equiv(n.get("expr") or "", canon):
-                    cu = unit
+                    derived = unit
                     break
-            if cu is None:
+            if derived is None:
                 return None
-            if nd.get("unit") not in (None, cu):
-                return None
-            nd["unit"] = cu
+        elif op == "convert":
+            derived = nd.get("to")
+        elif op == "scale" and isinstance(nd.get("value"), str):
+            derived = unit_of.get(nd["value"][1:])
+        elif op == "evaluate" and isinstance(nd.get("expr"), str):
+            # A2: +/- of a bare operand, or * by a literal, on ONE
+            # unit-carrying upstream keeps that unit (units are
+            # derived, never model-supplied)
+            refs = re.findall(r"@(n\d+)\b", nd["expr"])
+            if len(refs) == 1 and re.fullmatch(
+                    r"@n\d+[-+*]\S+|\S+[-+*]@n\d+", nd["expr"]):
+                derived = unit_of.get(refs[0])
+        if op in ("formula", "convert", "scale", "evaluate"):
+            if model_unit is not None and derived is not None and \
+                    model_unit != derived:
+                return None                  # model unit disagrees
+            if derived is not None:
+                nd["unit"] = derived
+            elif op in ("scale", "evaluate"):
+                nd.pop("unit", None)
+        unit_of[nd["id"]] = nd.get("unit")
         nodes.append(nd)
     return {"nodes": nodes, "final": idmap[plan["final"]]}
 
