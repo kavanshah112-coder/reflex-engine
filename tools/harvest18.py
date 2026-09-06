@@ -304,7 +304,7 @@ def build(model, scope):
                       "ledger": dict(led)}, indent=1))
 
 
-def probate(model, scope):
+def probate(model, scope, cap=100):
     import v17_run as RUN
     from reflex import binder18
     h = json.loads((OUT / ("harvest_%s_%s.json" % (model, scope)))
@@ -324,6 +324,10 @@ def probate(model, scope):
         pool = []
         for sk in c["skeletons"]:
             pool.extend(by_skel.get(sk, []))
+        # probation cap: a popular sub-chain skeleton matches thousands
+        # of ACQ items; probation needs >=3 clean serves on >=3 tuples,
+        # the full DEV-L/SEAL runs exercise every template at volume
+        pool = pool[:cap]
         for it in pool:
             v, cert, info = binder18.serve(it["text"], lib, qid=it["id"])
             if v is None:
@@ -400,12 +404,13 @@ def main():
     ap.add_argument("cmd", choices=["build", "probate", "union"])
     ap.add_argument("--model", default=None, choices=MODELS)
     ap.add_argument("--scope", default="dev", choices=["dev", "all"])
+    ap.add_argument("--cap", type=int, default=100)
     a = ap.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)
     if a.cmd == "build":
         build(a.model, a.scope)
     elif a.cmd == "probate":
-        probate(a.model, a.scope)
+        probate(a.model, a.scope, a.cap)
     else:
         union(a.scope)
 
