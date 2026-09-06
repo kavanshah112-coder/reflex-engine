@@ -15,9 +15,12 @@
   "passed": [],
   "pass": true
  },
- "repro": {
-  "compared": 20000,
-  "diffs": 0,
+ "sign": {
+  "templatized": true,
+  "why": null,
+  "bound_b": -300.0,
+  "served": 1.0,
+  "positive_sibling": "no_skeleton",
   "pass": true
  },
  "ALL_PASS": true

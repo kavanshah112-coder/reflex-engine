@@ -55,3 +55,39 @@ in the table) now abstains. Reported as a G-P5 kill count per arm.
 haiku-13. The B32 mechanism list (donor-constant swap, role
 misbinding) is unaffected — those were read from the replay wrongs
 directly.
+
+## B34 — sign-blind keyed-slot binding (caught by probation, before any counting run)
+
+**Found:** 2026-09-06, harvest18 probation of the haiku dev+sealed
+library on ACQ: 2 candidates revoked for a WRONG bound serve
+(`haiku_full_0120` on q17_0670958, `haiku_full_0278` on q17_0855366).
+Both questions end "Is the final value greater than **-216**?" /
+"**-232**?".
+
+**What happened:** roles18 tokens are MAGNITUDES with the sign kept
+in the skeleton (`-#`) as structure. templateize matched the donor's
+`compare.b = -216` to the token by magnitude and wrote an unsigned
+marker; bind substituted the magnitude, so the served plan compared
+against +216. The end witness verified the plan's own comparison; only
+the ACQ gold disagreed. Had the two candidates survived, this would
+have been a SAFETY-BIND wrong at sealed volume — the class Q3 called
+"correct roles, wrong value" and could not name in advance.
+
+**Fix:** a negative donor literal writes a signed marker
+(`-$s3|threshold|0`); bind applies the sign. The skeleton guarantees
+the question states the number with the same sign (a positive sibling
+has skeleton `#`, not `-#`, and never matches). Expression operands
+were never affected: their signs are characters in the expression
+string. Control `sign` added to controls18 (donor with -216 -> sibling
+with -300 binds b = -300 and serves the gold; the positive sibling
+gets `no_skeleton`).
+
+**Superseded runs:** the first probation ledgers
+(`planlib18_haiku_all.json` with g3_wrong 2 and the dev/all ledgers
+of every model) are superseded by the post-fix probation; the pre-fix
+files are preserved under `results/v18/superseded_b34/`.
+
+**Lesson (arc):** probation with golds is the only stage that can see
+"the plan is right, the number is wrong"; the witness certifies the
+plan the engine RAN. B34 is the reason §4.2's probation exists, and
+the reason probation must never be skipped for harvest speed.

@@ -1,0 +1,21 @@
+{
+ "seed": 1800,
+ "n": 400000,
+ "programmatic": 398884,
+ "distractors": 1116,
+ "distractor_source": "Q-1M ACQ+DEV distractor items (disjoint from SEAL/REPLAY)",
+ "foreign_slots": 0,
+ "sealed_text_collisions_rejected": 31027,
+ "internal_duplicate_texts": 5369,
+ "rejects": 499,
+ "k_quota": {
+  "2": 79777,
+  "3": 119665,
+  "4": 99721,
+  "5": 59833,
+  "6": 39888
+ },
+ "nonmono_share": 0.6059,
+ "multidomain_share": 0.7337,
+ "sha256_devl_jsonl": "294b3fe1998707f10946e0987509a09b37ad50ac4f17c9604e89275bf3dca1d3"
+}

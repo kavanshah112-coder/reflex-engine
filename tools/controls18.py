@@ -135,6 +135,44 @@ def harvest_neg(lib_paths):
     return {"counts": dict(st), "leaked": leaked, "pass": not leaked}
 
 
+def sign():
+    """B34: a negative stated number binds with its sign; the skeleton
+    keeps the sign structural so a positive sibling never matches."""
+    import harvest18 as H
+    from reflex import binder18, roles18
+    donor = ("Compute the gcd of 329 and 313. Subtract 16 from that. "
+             "Multiply the result by 12. Is the final value greater "
+             "than -216?")
+    plan = {"nodes": [
+        {"id": "n1", "op": "gcd", "a": 329, "b": 313},
+        {"id": "n2", "op": "evaluate", "expr": "@n1 - 16"},
+        {"id": "n3", "op": "evaluate", "expr": "@n2 * 12"},
+        {"id": "n4", "op": "compare", "a": "@n3", "b": -216}],
+        "final": "n4"}
+    tpl, why = H.templateize(donor, plan)
+    out = {"templatized": tpl is not None, "why": why}
+    if tpl is None:
+        out["pass"] = False
+        return out
+    t = {"name": "sign_ctrl", "skeletons": [tpl["skeleton"]],
+         "plan": tpl["plan"], "donors": ["ctrl"]}
+    lib = binder18.Library([t])
+    sib = ("Compute the gcd of 45 and 27. Subtract 20 from that. "
+           "Multiply the result by 3. Is the final value greater "
+           "than -300?")
+    bound, _w = binder18.bind(t, roles18.analyze(sib))
+    out["bound_b"] = bound["nodes"][-1]["b"] if bound else None
+    v, _c, info = binder18.serve(sib, lib)
+    out["served"] = v
+    pos = sib.replace("-300", "300")
+    v2, _c2, info2 = binder18.serve(pos, lib)
+    out["positive_sibling"] = info2["reason"]
+    # gcd(45,27)=9; 9-20=-11; *3=-33 > -300 -> True
+    out["pass"] = (out["bound_b"] == -300.0 and v == 1.0 and
+                   info2["reason"] == "no_skeleton")
+    return out
+
+
 def repro():
     a = {}
     with open(OUT / "det17chk_dev.jsonl", encoding="utf-8") as f:
@@ -165,6 +203,7 @@ def main():
     res = {}
     for name, fn, args in [("gates", gates, ()),
                            ("haiku13", haiku13, ()),
+                           ("sign", sign, ()),
                            ("harvest_neg", harvest_neg, (a.lib,)),
                            ("probe_b32", probe_b32, (a.lib,)),
                            ("repro", repro, ())]:

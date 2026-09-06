@@ -140,7 +140,11 @@ def templateize(text, plan):
             t = take(lambda t: t.cue == role and abs(t.value - mag) < 1e-9)
             if t is None:
                 return None, "literal_no_token:%s.%s" % (op, k)
-            nd[k] = "$s%d|%s|%d" % (t.step, t.cue, t.ord)
+            # B34: a token is a magnitude; its sign is structural (the
+            # skeleton keeps '-#'), so a negative donor literal makes a
+            # signed marker and the bound value carries the sign
+            nd[k] = ("-" if float(v) < 0 else "") + \
+                "$s%d|%s|%d" % (t.step, t.cue, t.ord)
             steps_used.add(t.step)
         if op in R.EXPR_OPS:
             for k in R.EXPR_KEYS:
@@ -331,8 +335,11 @@ def probate(model, scope, cap=100):
         for it in pool:
             v, cert, info = binder18.serve(it["text"], lib, qid=it["id"])
             if v is None:
-                led["probe_abstain_" + (info["reason"] or "?").split(
-                    ":")[0]] += 1
+                why = info["reason"] or "?"
+                led["probe_abstain_" + why.split(":")[0]] += 1
+                if why.startswith("gate"):
+                    led["probe_" + why + ":" + (info.get("kill") or "")
+                        [:32]] += 1
                 continue
             g = (v > 0) if it.get("gold_type") == "bool" else v
             good = RUN.grade(it, g)

@@ -25,7 +25,7 @@ import re
 from . import chainexec17, plangate18
 from . import roles18 as R
 
-_MARK = re.compile(r"^\$s(\d+)\|([^|]+)\|(\d+)$")
+_MARK = re.compile(r"^(-?)\$s(\d+)\|([^|]+)\|(\d+)$")
 _EMARK = re.compile(r"\{\$s(\d+)\|([^|]+)\|(\d+)\}")
 
 
@@ -68,11 +68,15 @@ def bind(template, roles):
             if isinstance(v, str):
                 m = _MARK.match(v)
                 if m:
-                    tok = roles.find(int(m.group(1)), m.group(2),
-                                     int(m.group(3)))
+                    tok = roles.find(int(m.group(2)), m.group(3),
+                                     int(m.group(4)))
                     if tok is None:
                         return None, "unbound_slot"
-                    nd[k] = float(tok.raw)
+                    # B34: the marker's sign is the donor literal's sign;
+                    # the skeleton guarantees the question states the
+                    # number with the same sign
+                    nd[k] = -float(tok.raw) if m.group(1) else \
+                        float(tok.raw)
                     continue
                 if "{$s" in v:
                     missing = []
