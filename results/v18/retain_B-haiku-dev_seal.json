@@ -1,0 +1,57 @@
+{
+ "model": "haiku",
+ "split": "seal",
+ "arm": "B-haiku-dev",
+ "v17_template_serves": 5012,
+ "v17_template_wrong": 937,
+ "v18_bind_on_same": 4406,
+ "v18_bind_on_same_correct": 4406,
+ "RETAIN": 0.8791,
+ "abstain_anatomy_on_denominator": {
+  "no_skeleton": 606
+ },
+ "bind_new_coverage": 29134,
+ "bind_new_coverage_v17_path": {
+  "escalated": 29134
+ },
+ "COMPOUND": {
+  "plans_purchased": 554,
+  "certified_bind_serves": 33540,
+  "ratio_raw": 60.542,
+  "unique_signatures": 16380,
+  "certified_bind_serves_dedup": 60,
+  "ratio_dedup": 0.108,
+  "curve": [
+   {
+    "n": 50000,
+    "binds": 5640,
+    "ratio": 10.181
+   },
+   {
+    "n": 100000,
+    "binds": 11252,
+    "ratio": 20.31
+   },
+   {
+    "n": 150000,
+    "binds": 16927,
+    "ratio": 30.554
+   },
+   {
+    "n": 200000,
+    "binds": 22509,
+    "ratio": 40.63
+   },
+   {
+    "n": 250000,
+    "binds": 28015,
+    "ratio": 50.569
+   },
+   {
+    "n": 300000,
+    "binds": 33540,
+    "ratio": 60.542
+   }
+  ]
+ }
+}

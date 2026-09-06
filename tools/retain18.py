@@ -97,6 +97,31 @@ def main():
                 curve.append({"n": n, "binds": binds,
                               "ratio": round(binds / a.plans_purchased,
                                              3)})
+        # structural breadth (unregistered diagnostic): the dedup ratio
+        # above is bounded by (distinct signatures served)/plans < 1 by
+        # construction -- deduplicating by signature removes the axis on
+        # which reuse happens. Reported beside it, never in its place.
+        served_ids = [i for i, r in v18.items() if (r.get("path") or "")
+                      .startswith("bind:") and r.get("correct")]
+        sig_served = {sigs.get(i) for i in served_ids} - {None}
+        from reflex import roles18 as _R
+        texts = {}
+        with open(V17 / "data" / ("q1m_%s.jsonl" % a.split),
+                  encoding="utf-8") as f:
+            for line in f:
+                it = json.loads(line)
+                if it["id"] in set(served_ids):
+                    texts[it["id"]] = it["text"]
+        skel_served = {_R.skeleton_of(t) for t in texts.values()}
+        res["COMPOUND_breadth"] = {
+            "distinct_signatures_bind_served": len(sig_served),
+            "distinct_skeletons_bind_served": len(skel_served),
+            "serves_per_signature": round(binds / max(1, len(sig_served)),
+                                          2),
+            "serves_per_skeleton": round(binds / max(1, len(skel_served)),
+                                         2),
+            "dedup_ratio_upper_bound": round(len(sig_served) /
+                                             a.plans_purchased, 3)}
         res["COMPOUND"] = {"plans_purchased": a.plans_purchased,
                            "certified_bind_serves": binds,
                            "ratio_raw": round(binds / a.plans_purchased,
