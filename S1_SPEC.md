@@ -1,4 +1,4 @@
-# V1.9 SPEC — Reading Reflexes with Escalation Feedback (offline, gold-graded)
+# S1 SPEC (pre-study for V1.9) — Reading Reflexes with Escalation Feedback (offline, gold-graded)
 
 ## Can a model's reading of a natural-language question be admitted as a reflex on the strength of agreement with an independent answer — and how often would that admit a WRONG reading?
 

@@ -1,4 +1,4 @@
-# V1.9 bug audit (branch v1.9-reading)
+# S1 (V1.9 pre-study) bug audit (branch v1.9-reading)
 
 Numbering continues the arc (B1–B36 in prior audits).
 
@@ -77,3 +77,11 @@ and convention cases 3 (0.43%); gold errata 3 (0.43%). The frozen
 FALSE-ADMIT is 8/703 = 1.14% and the letter follows it. The
 production-loop implication is in the report: agreement admits the
 corpus's own mistakes and its conventions as readily as the model's.
+
+## Note N9 — relabelled as the V1.9 pre-study (S1)
+
+2026-09-08, on the user's instruction: this experiment is the side
+study whose result designs V1.9, not V1.9 itself. Files renamed
+(`S1_SPEC.md`, `bug_audit_s1.md`), tag `v1.9-plan` renamed `s1-plan`
+(same commit). Results stay under `results/v19/` and arm names
+`R-*` unchanged so nothing already committed is rewritten.
