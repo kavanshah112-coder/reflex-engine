@@ -31,6 +31,25 @@ from . import plangate17
 from . import roles18 as R
 
 
+# V1.9 (reader19): a reading may use STRUCTURAL constants inside an
+# evaluate expression ("half" -> 0.5, "dozen" -> 12); with this flag
+# such operands need no stated-number token (G-P4's whitelist already
+# admits them). Default False keeps V1.8's gate byte-identical.
+STRUCTURAL_EXPR_OPTIONAL = False
+# V1.9 reading mode (reader19 only): a slot may be used in two steps
+# ("48 in April, half as many in May, total") -- a second literal equal
+# to a stated number is warranted, not smuggled; and a unit-cued
+# quantity ("12 dollars an hour") may be an arithmetic operand, since
+# word-problem readings are arithmetic, not certified physics.
+LITERAL_REUSE_OK = False
+UNIT_IN_EXPR_OK = False
+
+
+def _structural(v):
+    return v in plangate17.STRUCTURAL or (float(v).is_integer() and
+                                          0 <= v <= 6)
+
+
 def _literals(plan):
     """[(node_id, where, value, role, required)]"""
     out = []
@@ -57,8 +76,10 @@ def _literals(plan):
                     continue
                 if isinstance(v, str):
                     for _s, _e, mag in R.expr_numbers(v):
-                        out.append((n.get("id"), k, float(mag), "EXPR",
-                                    True))
+                        fm = float(mag)
+                        out.append((n.get("id"), k, fm, "EXPR",
+                                    not (STRUCTURAL_EXPR_OPTIONAL and
+                                         _structural(fm))))
             if op == "solve_pick" and "rhs" not in n:
                 out.append((n.get("id"), "rhs", 0.0, "rhs", False))
         elif op == "compare" and isinstance(n.get("b"), str) and \
@@ -78,8 +99,10 @@ def _match(tokens, lits):
         for j, (_n, _k, val, role, _req) in enumerate(lits):
             if role == "UNROLLED":
                 continue
-            if abs(abs(val) - t.value) < 1e-9 and \
-                    R.compatible(t.cue, role):
+            if abs(abs(val) - t.value) < 1e-9 and (
+                    R.compatible(t.cue, role) or
+                    (UNIT_IN_EXPR_OK and role == "EXPR" and
+                     t.cue.startswith("unit:"))):
                 row.append(j)
         adj.append(row)
     match_l = {}
@@ -117,6 +140,9 @@ def usage_check(plan, question, roles=None):
     used = set(asg.values())
     for j, (nid, k, v, role, req) in enumerate(lits):
         if req and j not in used:
+            if LITERAL_REUSE_OK and any(abs(abs(v) - t.value) < 1e-9
+                                        for t in toks):
+                continue                  # reading mode: reused slot
             return False, ("G-P4': literal %g in %s.%s consumes no "
                            "stated number of role %s" % (v, nid, k, role)
                            ), info

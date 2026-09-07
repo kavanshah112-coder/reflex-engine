@@ -315,3 +315,16 @@ transfer), reusing planschema17, plangate18, chainexec17, roles18
 untouched. Calendar constants extend the whitelist ONLY inside
 reader19's binding step (a reading may use 12 for "dozen"); the V1.7
 gate's own whitelist is not edited.
+
+**Implementation note (2026-09-07, before any counting run):** three
+reading-mode flags in `plangate18` (`STRUCTURAL_EXPR_OPTIONAL`,
+`LITERAL_REUSE_OK`, `UNIT_IN_EXPR_OK`), all default False so V1.8's
+gate is byte-identical, set True only inside `reader19.gate_check`:
+a structural constant inside an expression needs no stated-number
+token ("half" -> 0.5); a slot may be used in two steps; a unit-cued
+quantity may be an arithmetic operand. Each is a relaxation that
+V1.8's generator chains never needed and word-problem readings
+cannot do without; their safety cost is measured by FALSE-ADMIT and
+transfer wrong-fire, not assumed. The bind battery's wrong reading
+(`{n0}*60/{n1}`) is caught by gold, not by any gate — the class the
+agreement signal must catch in production.
