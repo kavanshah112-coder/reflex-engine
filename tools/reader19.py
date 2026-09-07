@@ -194,11 +194,29 @@ def bind(reading, numbers):
     """reading plan over {n<i>} -> concrete plan, or (None, why)."""
     if not isinstance(reading, dict) or "nodes" not in reading:
         return None, "format"
+    if not isinstance(reading["nodes"], list) or not all(
+            isinstance(n, dict) and "id" in n for n in reading["nodes"]):
+        return None, "format"
+    # canonical ids: the frozen schema recognises references only as
+    # @n<digits>; proposers wrote s1/a1/t. Rename ids in order and
+    # rewrite every @<old> reference (A2's renaming, no semantics).
+    idmap = {str(n["id"]): "n%d" % (i + 1)
+             for i, n in enumerate(reading["nodes"])}
+    if len(idmap) != len(reading["nodes"]):
+        return None, "format"
+
+    def rn(v):
+        if isinstance(v, str):
+            for old in sorted(idmap, key=len, reverse=True):
+                v = re.sub(r"@%s\b" % re.escape(old), "@" + idmap[old], v)
+        return v
+    reading = {"nodes": [{("id" if k == "id" else k):
+                          (idmap[str(v)] if k == "id" else rn(v))
+                          for k, v in n.items()} for n in reading["nodes"]],
+               "final": idmap.get(str(reading.get("final")))}
     nodes = []
     used = set()
     for n in reading["nodes"]:
-        if not isinstance(n, dict):
-            return None, "format"
         nd = {}
         for k, v in n.items():
             if isinstance(v, str):

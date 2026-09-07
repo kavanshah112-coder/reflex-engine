@@ -1,0 +1,79 @@
+{
+ "arm": "R-sonnet-haiku",
+ "phase": "dev",
+ "n": 600,
+ "status": {
+  "executed": 414,
+  "null_reading": 122,
+  "gate_kill": 64
+ },
+ "REACH": 0.69,
+ "READING_CORRECT": 0.9662,
+ "admitted": 398,
+ "FALSE_ADMIT": 0.0126,
+ "FALSE_ADMIT_n": 5,
+ "READING_CORRECT_admitted": 0.9874,
+ "ANSWERER_CORRECT": 0.9533,
+ "answered": 600,
+ "disagree_but_correct": 7,
+ "near_miss": 3,
+ "gate_kills": {
+  "G-P3: choice/threshold ask; final is 'evaluate": 10,
+  "G-P4: stated quantity 1 unused": 6,
+  "G-P4: stated quantity 3 unused": 5,
+  "G-P4: stated quantity 4 unused": 5,
+  "G-P4: stated quantity 5 unused": 4,
+  "G-P4: stated quantity 8 unused": 3,
+  "G-P3: asked in 'minute'; final carries None": 3,
+  "G-P4: stated quantity 12 unused": 2,
+  "G-P4: stated quantity 2 unused": 2,
+  "G-P4': G-P4': stated 50 (unit:$, clause 1) has ": 1,
+  "G-P4: stated quantity 26 unused": 1,
+  "G-P4: stated quantity 108 unused": 1,
+  "G-P4: stated quantity 14 unused": 1,
+  "G-P4: stated quantity 23 unused": 1,
+  "G-P4: stated quantity 584 unused": 1
+ },
+ "per_corpus": {
+  "gsm8k": {
+   "n": 294,
+   "executed": 227,
+   "reading_correct": 217,
+   "admitted": 214,
+   "false_admit": 4
+  },
+  "asdiv": {
+   "n": 306,
+   "executed": 187,
+   "reading_correct": 183,
+   "admitted": 184,
+   "false_admit": 1
+  }
+ },
+ "transfer": {
+  "L0": {
+   "donors_with_match": 0,
+   "refire_pairs": 0,
+   "served": 0,
+   "correct": 0,
+   "WRONG": 0,
+   "skeletons": 600
+  },
+  "L1": {
+   "donors_with_match": 0,
+   "refire_pairs": 0,
+   "served": 0,
+   "correct": 0,
+   "WRONG": 0,
+   "skeletons": 600
+  },
+  "L2": {
+   "donors_with_match": 0,
+   "refire_pairs": 0,
+   "served": 0,
+   "correct": 0,
+   "WRONG": 0,
+   "skeletons": 600
+  }
+ }
+}

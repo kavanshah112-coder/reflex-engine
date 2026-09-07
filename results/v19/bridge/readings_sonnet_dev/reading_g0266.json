@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id": "s1", "op": "evaluate", "expr": "{n0}*1000+{n1}"}, {"id": "s2", "op": "evaluate", "expr": "{n4}*1000+{n5}"}, {"id": "s3", "op": "evaluate", "expr": "@s1*{n2}/100"}, {"id": "s4", "op": "evaluate", "expr": "@s1*{n3}/100"}, {"id": "s5", "op": "evaluate", "expr": "@s1-@s3-@s4-@s2"}], "final": "s5"}}
