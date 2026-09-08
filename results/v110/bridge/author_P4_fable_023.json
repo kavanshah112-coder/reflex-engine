@@ -1,0 +1,1411 @@
+[
+{
+"id": "w10_P4_002335",
+"plan": {
+"nodes": [
+{
+"op": "solve_pick",
+"lhs": "x**2 -9*x +18",
+"pick": "larger",
+"id": "n1"
+},
+{
+"op": "formula",
+"expr": "m * a",
+"m": 172.0,
+"a": "@n1",
+"unit": "N",
+"id": "n2"
+},
+{
+"op": "convert",
+"value": "@n2",
+"from": "N",
+"to": "kN",
+"id": "n3"
+},
+{
+"op": "scale",
+"value": "@n3",
+"by": 7.0,
+"id": "n4"
+},
+{
+"op": "scale",
+"value": "@n4",
+"by": 11.0,
+"id": "n5"
+},
+{
+"op": "evaluate",
+"expr": "@n5 + 3",
+"id": "n6"
+}
+],
+"final": "n6"
+},
+"features": [
+"at least one value given in a different unit than the formula needs (km/h, minutes, grams)",
+"a real-world scenario (vehicle, machine, circuit, lab bench)"
+],
+"kind_hint": [
+"mathematics/algebra/quadratic_polynomial_solve",
+"physics/mechanics/dynamics_forces",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002336",
+"plan": {
+"nodes": [
+{
+"op": "integrate_def",
+"expr": "1*x**2 +0*x",
+"a": 0,
+"b": 1,
+"id": "n1"
+},
+{
+"op": "formula",
+"expr": "0.5 * m * v**2",
+"m": 44.0,
+"v": "@n1",
+"unit": "J",
+"id": "n2"
+},
+{
+"op": "evaluate",
+"expr": "@n2 - 23",
+"id": "n3"
+},
+{
+"op": "scale",
+"value": "@n3",
+"by": 3.0,
+"id": "n4"
+},
+{
+"op": "evaluate",
+"expr": "@n4 + 17",
+"id": "n5"
+},
+{
+"op": "scale",
+"value": "@n5",
+"by": 5.0,
+"id": "n6"
+}
+],
+"final": "n6"
+},
+"features": [
+"one distractor quantity with a unit that is NOT used",
+"at least one value given in a different unit than the formula needs (km/h, minutes, grams)"
+],
+"kind_hint": [
+"mathematics/calculus/integration/definite",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002342",
+"plan": {
+"nodes": [
+{
+"op": "gcd",
+"a": 339,
+"b": 65,
+"id": "n1"
+},
+{
+"op": "formula",
+"expr": "0.5 * m * v**2",
+"m": 9.0,
+"v": "@n1",
+"unit": "J",
+"id": "n2"
+},
+{
+"op": "scale",
+"value": "@n2",
+"by": 5.0,
+"id": "n3"
+},
+{
+"op": "convert",
+"value": "@n3",
+"from": "J",
+"to": "kJ",
+"id": "n4"
+},
+{
+"op": "scale",
+"value": "@n4",
+"by": 12.0,
+"id": "n5"
+}
+],
+"final": "n5"
+},
+"features": [
+"one distractor quantity with a unit that is NOT used",
+"the steps told out of order (the last quantity mentioned first)"
+],
+"kind_hint": [
+"mathematics/number_theory/gcd_lcm",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002345",
+"plan": {
+"nodes": [
+{
+"op": "derivative_at",
+"expr": "2*x**3 -1*x**2",
+"order": 1,
+"point": 1.0,
+"id": "n1"
+},
+{
+"op": "formula",
+"expr": "m * a",
+"m": 15.0,
+"a": "@n1",
+"unit": "N",
+"id": "n2"
+},
+{
+"op": "evaluate",
+"expr": "@n2 - 18",
+"id": "n3"
+},
+{
+"op": "convert",
+"value": "@n3",
+"from": "N",
+"to": "kN",
+"id": "n4"
+},
+{
+"op": "evaluate",
+"expr": "@n4 - 14",
+"id": "n5"
+},
+{
+"op": "scale",
+"value": "@n5",
+"by": 6.0,
+"id": "n6"
+}
+],
+"final": "n6"
+},
+"features": [
+"no formula named in the text; the reader must infer which physical law applies at each step",
+"one distractor quantity with a unit that is NOT used",
+"a real-world scenario (vehicle, machine, circuit, lab bench)"
+],
+"kind_hint": [
+"mathematics/calculus/differentiation/evaluate_at_point",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002351",
+"plan": {
+"nodes": [
+{
+"op": "evaluate",
+"expr": "6*(7 + 4)",
+"id": "n1"
+},
+{
+"op": "formula",
+"expr": "0.5 * m * v**2",
+"m": 21.0,
+"v": "@n1",
+"unit": "J",
+"id": "n2"
+},
+{
+"op": "evaluate",
+"expr": "@n2 + 30",
+"id": "n3"
+},
+{
+"op": "scale",
+"value": "@n3",
+"by": 9.0,
+"id": "n4"
+},
+{
+"op": "scale",
+"value": "@n4",
+"by": 3.0,
+"id": "n5"
+},
+{
+"op": "scale",
+"value": "@n5",
+"by": 11.0,
+"id": "n6"
+}
+],
+"final": "n6"
+},
+"features": [
+"a real-world scenario (vehicle, machine, circuit, lab bench)",
+"no formula named in the text; the reader must infer which physical law applies at each step"
+],
+"kind_hint": [
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002353",
+"plan": {
+"nodes": [
+{
+"op": "gcd",
+"a": 369,
+"b": 51,
+"id": "n1"
+},
+{
+"op": "formula",
+"expr": "0.5 * m * v**2",
+"m": 40.0,
+"v": "@n1",
+"unit": "J",
+"id": "n2"
+},
+{
+"op": "scale",
+"value": "@n2",
+"by": 8.0,
+"id": "n3"
+},
+{
+"op": "convert",
+"value": "@n3",
+"from": "J",
+"to": "kJ",
+"id": "n4"
+},
+{
+"op": "evaluate",
+"expr": "@n4 + 26",
+"id": "n5"
+},
+{
+"op": "scale",
+"value": "@n5",
+"by": 10.0,
+"id": "n6"
+}
+],
+"final": "n6"
+},
+"features": [
+"no formula named in the text; the reader must infer which physical law applies at each step",
+"at least one value given in a different unit than the formula needs (km/h, minutes, grams)"
+],
+"kind_hint": [
+"mathematics/number_theory/gcd_lcm",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002363",
+"plan": {
+"nodes": [
+{
+"op": "gcd",
+"a": 289,
+"b": 54,
+"id": "n1"
+},
+{
+"op": "scale",
+"value": "@n1",
+"by": 6.0,
+"id": "n2"
+},
+{
+"op": "scale",
+"value": "@n2",
+"by": 9.0,
+"id": "n3"
+},
+{
+"op": "formula",
+"expr": "m * a",
+"m": 146.0,
+"a": "@n3",
+"unit": "N",
+"id": "n4"
+},
+{
+"op": "convert",
+"value": "@n4",
+"from": "N",
+"to": "kN",
+"id": "n5"
+}
+],
+"final": "n5"
+},
+"features": [
+"a real-world scenario (vehicle, machine, circuit, lab bench)",
+"at least one value given in a different unit than the formula needs (km/h, minutes, grams)"
+],
+"kind_hint": [
+"mathematics/number_theory/gcd_lcm",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces",
+"units_conversion/simple_units"
+]
+},
+{
+"id": "w10_P4_002383",
+"plan": {
+"nodes": [
+{
+"op": "gcd",
+"a": 299,
+"b": 267,
+"id": "n1"
+},
+{
+"op": "formula",
+"expr": "m * a",
+"m": 6.0,
+"a": "@n1",
+"unit": "N",
+"id": "n2"
+},
+{
+"op": "scale",
+"value": "@n2",
+"by": 12.0,
+"id": "n3"
+},
+{
+"op": "scale",
+"value": "@n3",
+"by": 12.0,
+"id": "n4"
+},
+{
+"op": "convert",
+"value": "@n4",
+"from": "N",
+"to": "kN",
+"id": "n5"
+},
+{
+"op": "evaluate",
+"expr": "@n5 - 20",
+"id": "n6"
+}
+],
+"final": "n6"
+},
+"features": [
+"a real-world scenario (vehicle, machine, circuit, lab bench)",
+"the steps told out of order (the last quantity mentioned first)",
+"at least one value given in a different unit than the formula needs (km/h, minutes, grams)"
+],
+"kind_hint": [
+"mathematics/number_theory/gcd_lcm",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002388",
+"plan": {
+"nodes": [
+{
+"op": "sum_finite",
+"expr": "k",
+"var": "k",
+"a": 1,
+"b": 11,
+"id": "n1"
+},
+{
+"op": "formula",
+"expr": "m * a",
+"m": 93.0,
+"a": "@n1",
+"unit": "N",
+"id": "n2"
+},
+{
+"op": "evaluate",
+"expr": "@n2 - 14",
+"id": "n3"
+},
+{
+"op": "convert",
+"value": "@n3",
+"from": "N",
+"to": "kN",
+"id": "n4"
+},
+{
+"op": "scale",
+"value": "@n4",
+"by": 6.0,
+"id": "n5"
+},
+{
+"op": "evaluate",
+"expr": "@n5 + 16",
+"id": "n6"
+}
+],
+"final": "n6"
+},
+"features": [
+"a real-world scenario (vehicle, machine, circuit, lab bench)",
+"one distractor quantity with a unit that is NOT used"
+],
+"kind_hint": [
+"mathematics/sequences_series/finite_sum",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002391",
+"plan": {
+"nodes": [
+{
+"op": "evaluate",
+"expr": "3*(3 + 13)",
+"id": "n1"
+},
+{
+"op": "formula",
+"expr": "0.5 * m * v**2",
+"m": 50.0,
+"v": "@n1",
+"unit": "J",
+"id": "n2"
+},
+{
+"op": "scale",
+"value": "@n2",
+"by": 12.0,
+"id": "n3"
+},
+{
+"op": "convert",
+"value": "@n3",
+"from": "J",
+"to": "kJ",
+"id": "n4"
+},
+{
+"op": "evaluate",
+"expr": "@n4 - 12",
+"id": "n5"
+},
+{
+"op": "evaluate",
+"expr": "@n5 - 1",
+"id": "n6"
+}
+],
+"final": "n6"
+},
+"features": [
+"a real-world scenario (vehicle, machine, circuit, lab bench)",
+"at least one value given in a different unit than the formula needs (km/h, minutes, grams)",
+"the steps told out of order (the last quantity mentioned first)"
+],
+"kind_hint": [
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002392",
+"plan": {
+"nodes": [
+{
+"op": "integrate_def",
+"expr": "2*x**2 +1*x",
+"a": 2,
+"b": 3,
+"id": "n1"
+},
+{
+"op": "formula",
+"expr": "m * a",
+"m": 140.0,
+"a": "@n1",
+"unit": "N",
+"id": "n2"
+},
+{
+"op": "scale",
+"value": "@n2",
+"by": 6.0,
+"id": "n3"
+},
+{
+"op": "evaluate",
+"expr": "@n3 + 28",
+"id": "n4"
+},
+{
+"op": "scale",
+"value": "@n4",
+"by": 9.0,
+"id": "n5"
+},
+{
+"op": "evaluate",
+"expr": "@n5 - 13",
+"id": "n6"
+}
+],
+"final": "n6"
+},
+"features": [
+"the steps told out of order (the last quantity mentioned first)",
+"one distractor quantity with a unit that is NOT used",
+"a real-world scenario (vehicle, machine, circuit, lab bench)"
+],
+"kind_hint": [
+"mathematics/calculus/integration/definite",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002412",
+"plan": {
+"nodes": [
+{
+"op": "gcd",
+"a": 141,
+"b": 42,
+"id": "n1"
+},
+{
+"op": "scale",
+"value": "@n1",
+"by": 6.0,
+"id": "n2"
+},
+{
+"op": "formula",
+"expr": "0.5 * m * v**2",
+"m": 55.0,
+"v": "@n2",
+"unit": "J",
+"id": "n3"
+},
+{
+"op": "scale",
+"value": "@n3",
+"by": 6.0,
+"id": "n4"
+},
+{
+"op": "convert",
+"value": "@n4",
+"from": "J",
+"to": "kJ",
+"id": "n5"
+}
+],
+"final": "n5"
+},
+"features": [
+"the steps told out of order (the last quantity mentioned first)",
+"one distractor quantity with a unit that is NOT used"
+],
+"kind_hint": [
+"mathematics/number_theory/gcd_lcm",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units"
+]
+},
+{
+"id": "w10_P4_002414",
+"plan": {
+"nodes": [
+{
+"op": "gcd",
+"a": 217,
+"b": 326,
+"id": "n1"
+},
+{
+"op": "formula",
+"expr": "m * a",
+"m": 44.0,
+"a": "@n1",
+"unit": "N",
+"id": "n2"
+},
+{
+"op": "scale",
+"value": "@n2",
+"by": 11.0,
+"id": "n3"
+},
+{
+"op": "convert",
+"value": "@n3",
+"from": "N",
+"to": "kN",
+"id": "n4"
+},
+{
+"op": "scale",
+"value": "@n4",
+"by": 6.0,
+"id": "n5"
+},
+{
+"op": "evaluate",
+"expr": "@n5 + 19",
+"id": "n6"
+}
+],
+"final": "n6"
+},
+"features": [
+"a real-world scenario (vehicle, machine, circuit, lab bench)",
+"at least one value given in a different unit than the formula needs (km/h, minutes, grams)",
+"no formula named in the text; the reader must infer which physical law applies at each step"
+],
+"kind_hint": [
+"mathematics/number_theory/gcd_lcm",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002417",
+"plan": {
+"nodes": [
+{
+"op": "solve_pick",
+"lhs": "x**2 -6*x +5",
+"pick": "larger",
+"id": "n1"
+},
+{
+"op": "scale",
+"value": "@n1",
+"by": 11.0,
+"id": "n2"
+},
+{
+"op": "formula",
+"expr": "m * a",
+"m": 139.0,
+"a": "@n2",
+"unit": "N",
+"id": "n3"
+},
+{
+"op": "convert",
+"value": "@n3",
+"from": "N",
+"to": "kN",
+"id": "n4"
+},
+{
+"op": "evaluate",
+"expr": "@n4 + 23",
+"id": "n5"
+},
+{
+"op": "evaluate",
+"expr": "@n5 - 29",
+"id": "n6"
+}
+],
+"final": "n6"
+},
+"features": [
+"a real-world scenario (vehicle, machine, circuit, lab bench)",
+"the steps told out of order (the last quantity mentioned first)"
+],
+"kind_hint": [
+"mathematics/algebra/quadratic_polynomial_solve",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002419",
+"plan": {
+"nodes": [
+{
+"op": "derivative_at",
+"expr": "1*x**3 -4*x**2",
+"order": 2,
+"point": 3.0,
+"id": "n1"
+},
+{
+"op": "formula",
+"expr": "m * a",
+"m": 109.0,
+"a": "@n1",
+"unit": "N",
+"id": "n2"
+},
+{
+"op": "convert",
+"value": "@n2",
+"from": "N",
+"to": "kN",
+"id": "n3"
+},
+{
+"op": "evaluate",
+"expr": "@n3 + 20",
+"id": "n4"
+},
+{
+"op": "scale",
+"value": "@n4",
+"by": 10.0,
+"id": "n5"
+},
+{
+"op": "evaluate",
+"expr": "@n5 - 23",
+"id": "n6"
+}
+],
+"final": "n6"
+},
+"features": [
+"one distractor quantity with a unit that is NOT used",
+"no formula named in the text; the reader must infer which physical law applies at each step",
+"at least one value given in a different unit than the formula needs (km/h, minutes, grams)"
+],
+"kind_hint": [
+"mathematics/calculus/differentiation/evaluate_at_point",
+"physics/mechanics/dynamics_forces",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002428",
+"plan": {
+"nodes": [
+{
+"op": "ncr",
+"n": 11,
+"r": 2,
+"id": "n1"
+},
+{
+"op": "formula",
+"expr": "0.5 * m * v**2",
+"m": 51.0,
+"v": "@n1",
+"unit": "J",
+"id": "n2"
+},
+{
+"op": "convert",
+"value": "@n2",
+"from": "J",
+"to": "kJ",
+"id": "n3"
+},
+{
+"op": "evaluate",
+"expr": "@n3 + 22",
+"id": "n4"
+},
+{
+"op": "evaluate",
+"expr": "@n4 + 22",
+"id": "n5"
+},
+{
+"op": "scale",
+"value": "@n5",
+"by": 9.0,
+"id": "n6"
+}
+],
+"final": "n6"
+},
+"features": [
+"the steps told out of order (the last quantity mentioned first)",
+"no formula named in the text; the reader must infer which physical law applies at each step",
+"at least one value given in a different unit than the formula needs (km/h, minutes, grams)"
+],
+"kind_hint": [
+"mathematics/combinatorics_probability/permutations_combinations",
+"physics/mechanics/energy_work",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002429",
+"plan": {
+"nodes": [
+{
+"op": "integrate_def",
+"expr": "3*x**2 +0*x",
+"a": 1,
+"b": 4,
+"id": "n1"
+},
+{
+"op": "formula",
+"expr": "m * a",
+"m": 81.0,
+"a": "@n1",
+"unit": "N",
+"id": "n2"
+},
+{
+"op": "evaluate",
+"expr": "@n2 + 16",
+"id": "n3"
+},
+{
+"op": "scale",
+"value": "@n3",
+"by": 9.0,
+"id": "n4"
+},
+{
+"op": "scale",
+"value": "@n4",
+"by": 4.0,
+"id": "n5"
+},
+{
+"op": "evaluate",
+"expr": "@n5 - 3",
+"id": "n6"
+}
+],
+"final": "n6"
+},
+"features": [
+"one distractor quantity with a unit that is NOT used",
+"no formula named in the text; the reader must infer which physical law applies at each step",
+"at least one value given in a different unit than the formula needs (km/h, minutes, grams)"
+],
+"kind_hint": [
+"mathematics/calculus/integration/definite",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002431",
+"plan": {
+"nodes": [
+{
+"op": "solve_pick",
+"lhs": "x**2 -12*x +32",
+"pick": "larger",
+"id": "n1"
+},
+{
+"op": "formula",
+"expr": "0.5 * m * v**2",
+"m": 23.0,
+"v": "@n1",
+"unit": "J",
+"id": "n2"
+},
+{
+"op": "convert",
+"value": "@n2",
+"from": "J",
+"to": "kJ",
+"id": "n3"
+},
+{
+"op": "evaluate",
+"expr": "@n3 - 15",
+"id": "n4"
+},
+{
+"op": "scale",
+"value": "@n4",
+"by": 4.0,
+"id": "n5"
+}
+],
+"final": "n5"
+},
+"features": [
+"one distractor quantity with a unit that is NOT used",
+"the steps told out of order (the last quantity mentioned first)"
+],
+"kind_hint": [
+"mathematics/algebra/quadratic_polynomial_solve",
+"physics/mechanics/energy_work",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002435",
+"plan": {
+"nodes": [
+{
+"op": "derivative_at",
+"expr": "1*x**3 +0*x**2",
+"order": 1,
+"point": 1.0,
+"id": "n1"
+},
+{
+"op": "formula",
+"expr": "0.5 * m * v**2",
+"m": 3.0,
+"v": "@n1",
+"unit": "J",
+"id": "n2"
+},
+{
+"op": "convert",
+"value": "@n2",
+"from": "J",
+"to": "kJ",
+"id": "n3"
+},
+{
+"op": "scale",
+"value": "@n3",
+"by": 12.0,
+"id": "n4"
+},
+{
+"op": "scale",
+"value": "@n4",
+"by": 3.0,
+"id": "n5"
+},
+{
+"op": "evaluate",
+"expr": "@n5 - 17",
+"id": "n6"
+}
+],
+"final": "n6"
+},
+"features": [
+"a real-world scenario (vehicle, machine, circuit, lab bench)",
+"one distractor quantity with a unit that is NOT used"
+],
+"kind_hint": [
+"mathematics/calculus/differentiation/evaluate_at_point",
+"physics/mechanics/energy_work",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002436",
+"plan": {
+"nodes": [
+{
+"op": "sum_finite",
+"expr": "2*k - 1",
+"var": "k",
+"a": 1,
+"b": 4,
+"id": "n1"
+},
+{
+"op": "formula",
+"expr": "m * a",
+"m": 155.0,
+"a": "@n1",
+"unit": "N",
+"id": "n2"
+},
+{
+"op": "convert",
+"value": "@n2",
+"from": "N",
+"to": "kN",
+"id": "n3"
+},
+{
+"op": "evaluate",
+"expr": "@n3 - 28",
+"id": "n4"
+},
+{
+"op": "evaluate",
+"expr": "@n4 + 15",
+"id": "n5"
+}
+],
+"final": "n5"
+},
+"features": [
+"the steps told out of order (the last quantity mentioned first)",
+"a real-world scenario (vehicle, machine, circuit, lab bench)",
+"at least one value given in a different unit than the formula needs (km/h, minutes, grams)"
+],
+"kind_hint": [
+"mathematics/sequences_series/finite_sum",
+"physics/mechanics/dynamics_forces",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002438",
+"plan": {
+"nodes": [
+{
+"op": "ncr",
+"n": 13,
+"r": 2,
+"id": "n1"
+},
+{
+"op": "formula",
+"expr": "m * a",
+"m": 89.0,
+"a": "@n1",
+"unit": "N",
+"id": "n2"
+},
+{
+"op": "scale",
+"value": "@n2",
+"by": 8.0,
+"id": "n3"
+},
+{
+"op": "convert",
+"value": "@n3",
+"from": "N",
+"to": "kN",
+"id": "n4"
+},
+{
+"op": "evaluate",
+"expr": "@n4 - 8",
+"id": "n5"
+},
+{
+"op": "evaluate",
+"expr": "@n5 + 25",
+"id": "n6"
+}
+],
+"final": "n6"
+},
+"features": [
+"no formula named in the text; the reader must infer which physical law applies at each step",
+"one distractor quantity with a unit that is NOT used",
+"at least one value given in a different unit than the formula needs (km/h, minutes, grams)"
+],
+"kind_hint": [
+"mathematics/combinatorics_probability/permutations_combinations",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002439",
+"plan": {
+"nodes": [
+{
+"op": "ncr",
+"n": 6,
+"r": 3,
+"id": "n1"
+},
+{
+"op": "evaluate",
+"expr": "@n1 + 28",
+"id": "n2"
+},
+{
+"op": "evaluate",
+"expr": "@n2 - 19",
+"id": "n3"
+},
+{
+"op": "evaluate",
+"expr": "@n3 - 25",
+"id": "n4"
+},
+{
+"op": "formula",
+"expr": "m * a",
+"m": 110.0,
+"a": "@n4",
+"unit": "N",
+"id": "n5"
+}
+],
+"final": "n5"
+},
+"features": [
+"at least one value given in a different unit than the formula needs (km/h, minutes, grams)",
+"no formula named in the text; the reader must infer which physical law applies at each step",
+"one distractor quantity with a unit that is NOT used"
+],
+"kind_hint": [
+"mathematics/combinatorics_probability/permutations_combinations",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces"
+]
+},
+{
+"id": "w10_P4_002447",
+"plan": {
+"nodes": [
+{
+"op": "evaluate",
+"expr": "7*(7 + 2)",
+"id": "n1"
+},
+{
+"op": "evaluate",
+"expr": "@n1 - 20",
+"id": "n2"
+},
+{
+"op": "evaluate",
+"expr": "@n2 - 2",
+"id": "n3"
+},
+{
+"op": "formula",
+"expr": "m * a",
+"m": 75.0,
+"a": "@n3",
+"unit": "N",
+"id": "n4"
+},
+{
+"op": "scale",
+"value": "@n4",
+"by": 5.0,
+"id": "n5"
+},
+{
+"op": "convert",
+"value": "@n5",
+"from": "N",
+"to": "kN",
+"id": "n6"
+}
+],
+"final": "n6"
+},
+"features": [
+"no formula named in the text; the reader must infer which physical law applies at each step",
+"one distractor quantity with a unit that is NOT used",
+"a real-world scenario (vehicle, machine, circuit, lab bench)"
+],
+"kind_hint": [
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units"
+]
+},
+{
+"id": "w10_P4_002455",
+"plan": {
+"nodes": [
+{
+"op": "solve_pick",
+"lhs": "x**2 -6*x +8",
+"pick": "smaller",
+"id": "n1"
+},
+{
+"op": "formula",
+"expr": "m * a",
+"m": 127.0,
+"a": "@n1",
+"unit": "N",
+"id": "n2"
+},
+{
+"op": "scale",
+"value": "@n2",
+"by": 12.0,
+"id": "n3"
+},
+{
+"op": "convert",
+"value": "@n3",
+"from": "N",
+"to": "kN",
+"id": "n4"
+},
+{
+"op": "evaluate",
+"expr": "@n4 + 7",
+"id": "n5"
+},
+{
+"op": "evaluate",
+"expr": "@n5 - 23",
+"id": "n6"
+}
+],
+"final": "n6"
+},
+"features": [
+"at least one value given in a different unit than the formula needs (km/h, minutes, grams)",
+"no formula named in the text; the reader must infer which physical law applies at each step"
+],
+"kind_hint": [
+"mathematics/algebra/quadratic_polynomial_solve",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002457",
+"plan": {
+"nodes": [
+{
+"op": "solve_pick",
+"lhs": "x**2 -5*x +4",
+"pick": "smaller",
+"id": "n1"
+},
+{
+"op": "formula",
+"expr": "m * a",
+"m": 99.0,
+"a": "@n1",
+"unit": "N",
+"id": "n2"
+},
+{
+"op": "evaluate",
+"expr": "@n2 - 6",
+"id": "n3"
+},
+{
+"op": "scale",
+"value": "@n3",
+"by": 11.0,
+"id": "n4"
+},
+{
+"op": "evaluate",
+"expr": "@n4 + 5",
+"id": "n5"
+},
+{
+"op": "scale",
+"value": "@n5",
+"by": 3.0,
+"id": "n6"
+}
+],
+"final": "n6"
+},
+"features": [
+"a real-world scenario (vehicle, machine, circuit, lab bench)",
+"one distractor quantity with a unit that is NOT used",
+"no formula named in the text; the reader must infer which physical law applies at each step"
+],
+"kind_hint": [
+"mathematics/algebra/quadratic_polynomial_solve",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+}
+]

@@ -38,3 +38,14 @@ distractor overlay (7,589) = 387,062, i.e. "≈400k" in the spec is
 seal 96,847 / replay 97,087. Hashes in `results/v110/data/HASHES.json`.
 Authoring requests: 1,200 batches of 25 (800 T4, 400 P4), author model
 by id hash. Build wall time ~25 min.
+
+## B37 — builder rounded float golds to two decimals (caught by the D-arm smoke test, pre-run)
+`build_w400k.fmt` formatted every gold with "%.2f"; for P1–P4 the
+true value is a float (current 0.148148… stored as "0.15"). The V1.6
+path served the exact value and was graded WRONG 90 times in 531
+serves on a 600-item DEV smoke test — the engine was right, the gold
+was wrong. Fix: P1 golds restored from the stored witness value, P2–P4
+recomputed by chain_witness17.replay(plan); the rounded value is kept
+as `gold_rounded`; HASHES.json updated with a note; builder patched.
+No sealed run had happened. T-tier golds are integers and unaffected.
+Lesson (again): a grader disagreement is a claim about BOTH sides.

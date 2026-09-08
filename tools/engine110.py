@@ -352,8 +352,10 @@ def fresh_P(item, reading, own, arm):
 # ---------------------------------------------------------------- run
 
 
-def run(arm, split, checkpoint=0, lib_in=None, lib_out=None, limit=0):
+def run(arm, split, checkpoint=0, lib_in=None, lib_out=None, limit=0, tiers=None, tag=""):
     items = load_split(split)
+    if tiers:
+        items = [it for it in items if it["tier"] in tiers]
     if limit:
         items = items[:limit]
     sample = {it["id"] for it in sample_ids(split)}
@@ -466,7 +468,7 @@ def run(arm, split, checkpoint=0, lib_in=None, lib_out=None, limit=0):
                        ["n", "exact_served", "exact_WRONG", "A2S_served", "A2S_WRONG", "A0S_served", "A0S_WRONG", "KC_served", "KC_WRONG",
                         "A2_admitted", "A2_WRONG", "escalated", "own_answered", "own_correct", "SAFETY_PC", "SAFETY2", "excluded_author"]}}
     OUT.mkdir(parents=True, exist_ok=True)
-    base = OUT / ("%s_%s" % (arm, split))
+    base = OUT / ("%s_%s%s" % (arm, split, ("_" + tag) if tag else ""))
     (Path(str(base) + "_summary.json")).write_text(json.dumps(summ, indent=1), encoding="utf-8")
     (Path(str(base) + "_wrong.json")).write_text(json.dumps(wrongs, indent=1, default=str), encoding="utf-8")
     with open(str(base) + "_rows.jsonl", "w", encoding="utf-8") as f:
@@ -576,11 +578,13 @@ def main():
     ap.add_argument("--lib-in", default=None)
     ap.add_argument("--lib-out", default=None)
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--tiers", default=None, help="comma list")
+    ap.add_argument("--tag", default="")
     a = ap.parse_args()
     if a.cmd == "sample":
         write_batches(a.split)
     elif a.cmd == "run":
-        run(a.arm, a.split, a.checkpoint, a.lib_in, a.lib_out, a.limit)
+        run(a.arm, a.split, a.checkpoint, a.lib_in, a.lib_out, a.limit, a.tiers.split(",") if a.tiers else None, a.tag)
     elif a.cmd == "tokens":
         tokens()
     else:

@@ -1,0 +1,736 @@
+[
+{
+"id": "w10_T4_003538",
+"start": 129,
+"steps": [
+{
+"op": "+",
+"value": 52
+},
+{
+"op": "+",
+"value": 3
+},
+{
+"op": "-",
+"value": 164
+},
+{
+"op": "*",
+"value": 7
+},
+{
+"op": "+",
+"value": 48
+}
+],
+"features": [
+"one distractor sentence with a number that is NOT used",
+"at least one quantity written as a word (e.g. 'a dozen', 'twice', 'half')"
+]
+},
+{
+"id": "w10_T4_003543",
+"start": 230,
+"steps": [
+{
+"op": "/",
+"value": 5
+},
+{
+"op": "+",
+"value": 67
+},
+{
+"op": "*",
+"value": 9
+},
+{
+"op": "+",
+"value": 60
+},
+{
+"op": "+",
+"value": 48
+}
+],
+"features": [
+"a unit change stated in words (minutes to hours, cents to dollars)"
+]
+},
+{
+"id": "w10_T4_003547",
+"start": 226,
+"steps": [
+{
+"op": "+",
+"value": 5
+},
+{
+"op": "*",
+"value": 8
+},
+{
+"op": "+",
+"value": 51
+},
+{
+"op": "-",
+"value": 919
+},
+{
+"op": "-",
+"value": 549
+}
+],
+"features": [
+"a time-ordered story (morning, then afternoon, then evening)",
+"a unit change stated in words (minutes to hours, cents to dollars)"
+]
+},
+{
+"id": "w10_T4_003551",
+"start": 82,
+"steps": [
+{
+"op": "*",
+"value": 8
+},
+{
+"op": "+",
+"value": 21
+},
+{
+"op": "+",
+"value": 67
+},
+{
+"op": "+",
+"value": 36
+},
+{
+"op": "-",
+"value": 239
+}
+],
+"features": [
+"the question asked about an intermediate quantity's final state",
+"a time-ordered story (morning, then afternoon, then evening)"
+]
+},
+{
+"id": "w10_T4_003552",
+"start": 141,
+"steps": [
+{
+"op": "+",
+"value": 53
+},
+{
+"op": "+",
+"value": 55
+},
+{
+"op": "/",
+"value": 3
+},
+{
+"op": "+",
+"value": 76
+},
+{
+"op": "*",
+"value": 2
+}
+],
+"features": [
+"a time-ordered story (morning, then afternoon, then evening)",
+"the question asked about an intermediate quantity's final state"
+]
+},
+{
+"id": "w10_T4_003557",
+"start": 130,
+"steps": [
+{
+"op": "*",
+"value": 9
+},
+{
+"op": "/",
+"value": 5
+},
+{
+"op": "+",
+"value": 27
+},
+{
+"op": "*",
+"value": 6
+}
+],
+"features": [
+"two named people whose amounts are compared",
+"a unit change stated in words (minutes to hours, cents to dollars)",
+"at least one quantity written as a word (e.g. 'a dozen', 'twice', 'half')"
+]
+},
+{
+"id": "w10_T4_003560",
+"start": 140,
+"steps": [
+{
+"op": "-",
+"value": 61
+},
+{
+"op": "-",
+"value": 65
+},
+{
+"op": "-",
+"value": 6
+},
+{
+"op": "*",
+"value": 4
+}
+],
+"features": [
+"two named people whose amounts are compared",
+"one distractor sentence with a number that is NOT used",
+"a time-ordered story (morning, then afternoon, then evening)"
+]
+},
+{
+"id": "w10_T4_003565",
+"start": 189,
+"steps": [
+{
+"op": "*",
+"value": 4
+},
+{
+"op": "+",
+"value": 50
+},
+{
+"op": "*",
+"value": 5
+},
+{
+"op": "+",
+"value": 32
+}
+],
+"features": [
+"two named people whose amounts are compared",
+"one distractor sentence with a number that is NOT used"
+]
+},
+{
+"id": "w10_T4_003574",
+"start": 102,
+"steps": [
+{
+"op": "*",
+"value": 9
+},
+{
+"op": "*",
+"value": 8
+},
+{
+"op": "-",
+"value": 6772
+},
+{
+"op": "+",
+"value": 49
+}
+],
+"features": [
+"two named people whose amounts are compared",
+"one distractor sentence with a number that is NOT used"
+]
+},
+{
+"id": "w10_T4_003576",
+"start": 194,
+"steps": [
+{
+"op": "/",
+"value": 2
+},
+{
+"op": "*",
+"value": 6
+},
+{
+"op": "/",
+"value": 2
+},
+{
+"op": "-",
+"value": 72
+},
+{
+"op": "+",
+"value": 38
+},
+{
+"op": "+",
+"value": 78
+}
+],
+"features": [
+"a time-ordered story (morning, then afternoon, then evening)",
+"the question asked about an intermediate quantity's final state",
+"one distractor sentence with a number that is NOT used"
+]
+},
+{
+"id": "w10_T4_003580",
+"start": 46,
+"steps": [
+{
+"op": "*",
+"value": 4
+},
+{
+"op": "*",
+"value": 4
+},
+{
+"op": "+",
+"value": 23
+},
+{
+"op": "+",
+"value": 13
+},
+{
+"op": "/",
+"value": 4
+}
+],
+"features": [
+"at least one quantity written as a word (e.g. 'a dozen', 'twice', 'half')"
+]
+},
+{
+"id": "w10_T4_003581",
+"start": 19,
+"steps": [
+{
+"op": "*",
+"value": 6
+},
+{
+"op": "+",
+"value": 22
+},
+{
+"op": "/",
+"value": 2
+},
+{
+"op": "+",
+"value": 27
+},
+{
+"op": "*",
+"value": 3
+}
+],
+"features": [
+"one distractor sentence with a number that is NOT used",
+"a time-ordered story (morning, then afternoon, then evening)",
+"a unit change stated in words (minutes to hours, cents to dollars)"
+]
+},
+{
+"id": "w10_T4_003582",
+"start": 114,
+"steps": [
+{
+"op": "*",
+"value": 7
+},
+{
+"op": "/",
+"value": 2
+},
+{
+"op": "+",
+"value": 61
+},
+{
+"op": "*",
+"value": 2
+},
+{
+"op": "-",
+"value": 234
+}
+],
+"features": [
+"a time-ordered story (morning, then afternoon, then evening)",
+"one distractor sentence with a number that is NOT used",
+"a unit change stated in words (minutes to hours, cents to dollars)"
+]
+},
+{
+"id": "w10_T4_003592",
+"start": 145,
+"steps": [
+{
+"op": "*",
+"value": 8
+},
+{
+"op": "-",
+"value": 856
+},
+{
+"op": "*",
+"value": 6
+},
+{
+"op": "-",
+"value": 437
+},
+{
+"op": "+",
+"value": 79
+},
+{
+"op": "*",
+"value": 3
+}
+],
+"features": [
+"the question asked about an intermediate quantity's final state",
+"a time-ordered story (morning, then afternoon, then evening)"
+]
+},
+{
+"id": "w10_T4_003594",
+"start": 211,
+"steps": [
+{
+"op": "*",
+"value": 4
+},
+{
+"op": "+",
+"value": 55
+},
+{
+"op": "-",
+"value": 123
+},
+{
+"op": "+",
+"value": 13
+}
+],
+"features": [
+"a unit change stated in words (minutes to hours, cents to dollars)",
+"a time-ordered story (morning, then afternoon, then evening)"
+]
+},
+{
+"id": "w10_T4_003595",
+"start": 77,
+"steps": [
+{
+"op": "+",
+"value": 29
+},
+{
+"op": "+",
+"value": 35
+},
+{
+"op": "+",
+"value": 54
+},
+{
+"op": "+",
+"value": 73
+},
+{
+"op": "+",
+"value": 13
+}
+],
+"features": [
+"two named people whose amounts are compared",
+"a time-ordered story (morning, then afternoon, then evening)"
+]
+},
+{
+"id": "w10_T4_003604",
+"start": 207,
+"steps": [
+{
+"op": "*",
+"value": 2
+},
+{
+"op": "-",
+"value": 113
+},
+{
+"op": "+",
+"value": 17
+},
+{
+"op": "*",
+"value": 6
+},
+{
+"op": "/",
+"value": 6
+}
+],
+"features": [
+"a time-ordered story (morning, then afternoon, then evening)",
+"two named people whose amounts are compared"
+]
+},
+{
+"id": "w10_T4_003605",
+"start": 171,
+"steps": [
+{
+"op": "-",
+"value": 101
+},
+{
+"op": "-",
+"value": 4
+},
+{
+"op": "*",
+"value": 8
+},
+{
+"op": "+",
+"value": 9
+},
+{
+"op": "+",
+"value": 16
+}
+],
+"features": [
+"two named people whose amounts are compared",
+"a time-ordered story (morning, then afternoon, then evening)"
+]
+},
+{
+"id": "w10_T4_003606",
+"start": 87,
+"steps": [
+{
+"op": "-",
+"value": 85
+},
+{
+"op": "*",
+"value": 8
+},
+{
+"op": "*",
+"value": 8
+},
+{
+"op": "/",
+"value": 2
+}
+],
+"features": [
+"one distractor sentence with a number that is NOT used",
+"two named people whose amounts are compared",
+"the question asked about an intermediate quantity's final state"
+]
+},
+{
+"id": "w10_T4_003615",
+"start": 121,
+"steps": [
+{
+"op": "*",
+"value": 2
+},
+{
+"op": "-",
+"value": 192
+},
+{
+"op": "+",
+"value": 9
+},
+{
+"op": "-",
+"value": 11
+},
+{
+"op": "+",
+"value": 3
+},
+{
+"op": "*",
+"value": 4
+}
+],
+"features": [
+"at least one quantity written as a word (e.g. 'a dozen', 'twice', 'half')",
+"a unit change stated in words (minutes to hours, cents to dollars)"
+]
+},
+{
+"id": "w10_T4_003617",
+"start": 40,
+"steps": [
+{
+"op": "/",
+"value": 4
+},
+{
+"op": "/",
+"value": 2
+},
+{
+"op": "/",
+"value": 5
+},
+{
+"op": "+",
+"value": 44
+},
+{
+"op": "*",
+"value": 2
+}
+],
+"features": [
+"a time-ordered story (morning, then afternoon, then evening)",
+"one distractor sentence with a number that is NOT used",
+"the question asked about an intermediate quantity's final state"
+]
+},
+{
+"id": "w10_T4_003624",
+"start": 63,
+"steps": [
+{
+"op": "-",
+"value": 12
+},
+{
+"op": "-",
+"value": 36
+},
+{
+"op": "*",
+"value": 9
+},
+{
+"op": "*",
+"value": 5
+},
+{
+"op": "-",
+"value": 100
+}
+],
+"features": [
+"two named people whose amounts are compared"
+]
+},
+{
+"id": "w10_T4_003627",
+"start": 67,
+"steps": [
+{
+"op": "+",
+"value": 70
+},
+{
+"op": "-",
+"value": 36
+},
+{
+"op": "*",
+"value": 4
+},
+{
+"op": "*",
+"value": 6
+}
+],
+"features": [
+"a time-ordered story (morning, then afternoon, then evening)",
+"at least one quantity written as a word (e.g. 'a dozen', 'twice', 'half')",
+"one distractor sentence with a number that is NOT used"
+]
+},
+{
+"id": "w10_T4_003628",
+"start": 73,
+"steps": [
+{
+"op": "-",
+"value": 32
+},
+{
+"op": "+",
+"value": 37
+},
+{
+"op": "+",
+"value": 65
+},
+{
+"op": "-",
+"value": 73
+}
+],
+"features": [
+"at least one quantity written as a word (e.g. 'a dozen', 'twice', 'half')",
+"a unit change stated in words (minutes to hours, cents to dollars)"
+]
+},
+{
+"id": "w10_T4_003630",
+"start": 30,
+"steps": [
+{
+"op": "*",
+"value": 3
+},
+{
+"op": "+",
+"value": 57
+},
+{
+"op": "-",
+"value": 58
+},
+{
+"op": "+",
+"value": 10
+},
+{
+"op": "-",
+"value": 40
+}
+],
+"features": [
+"a unit change stated in words (minutes to hours, cents to dollars)"
+]
+}
+]

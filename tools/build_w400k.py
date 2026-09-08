@@ -413,7 +413,7 @@ def main():
     # P1
     while led["n_P1"] < QUOTA["P1"]:
         it = gen_p1(rng)
-        add("P1", {"text": it["text"], "gold": fmt(it["gold"]) if isinstance(it["gold"], float) else it["gold"],
+        add("P1", {"text": it["text"], "gold": repr(float(it["gold"])),  # B37: never round a float gold
                    "gold_type": "num", "witness": it["witness"], "leaves": it["leaves"], "cap": it["cap"]})
     # P2 / P3
     for tier, gen in (("P2", gen_p2), ("P3", gen_p3)):
@@ -424,7 +424,7 @@ def main():
             if it is None:
                 led["rej_" + tier] += 1
                 continue
-            add(tier, {"text": it["text"], "gold": fmt(it["gold"]), "gold_type": "num",
+            add(tier, {"text": it["text"], "gold": repr(float(it["gold"])), "gold_type": "num",
                        "plan": it["plan"], "leaves": it["leaves"], "k": it["k"],
                        "nonmono": it["nonmono"], "multidomain": it["multidomain"], "sig": it["sig"]})
     # P4 requests
@@ -435,7 +435,7 @@ def main():
         if r is None:
             led["rej_P4"] += 1
             continue
-        add("P4", {"text": None, "gold": fmt(r["gold"]), "gold_type": "num", "plan": r["plan"],
+        add("P4", {"text": None, "gold": repr(float(r["gold"])), "gold_type": "num", "plan": r["plan"],
                    "leaves": r["leaves"], "k": r["k"], "generator_text": r["generator_text"],
                    "brief": r["brief"], "authored": True})
     # corpora
