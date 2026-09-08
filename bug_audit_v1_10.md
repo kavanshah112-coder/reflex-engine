@@ -156,3 +156,11 @@ split; the effective workload is reported with the realised sizes.
 
 **Baseline after B39/B40b (`base3`):** ACQ 142,653 non-authored items,
 48,170 exact serves, 0 wrong, 0 PC served, 0 distractor served.
+
+## N11 — haiku over-nulled one reading block
+Haiku's T3 28–31 + T3′ 0–3 reading block returned 164 nulls of 200
+(other models: 0 nulls on the same T3′ batches) and wrote the files
+with 28 tool calls, i.e. in bulk. The readings are the proposer's
+output and stand as collected — a second pass would be a second sample
+of the proposer, which the one-reading-per-item protocol forbids. The
+effect is a lower haiku fresh-reach on those items; reported per tier.
