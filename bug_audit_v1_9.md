@@ -18,3 +18,16 @@ A2 admitted 948 of 1,260 executed readings; 5 disagree with gold:
 By class: 1 genuine, 3 conventions, 1 gold error. A2 by-gold rate
 0.53%; genuine 0.11%. DEV is exposed data; the rules are frozen and
 were not changed after reading this.
+
+## Note V2 — proposer variance across bridge blocks (R12), sealed readings
+
+Sonnet's sealed reading blocks returned null rates from 9/189
+(batches 63–70, GSM8K-heavy) to 123/225 (batches 45–53, ASDiv
+word-number and GCD/LCM heavy). Part is corpus mix; part is agent
+variance in reading the constant rule — one agent treated "three/six/
+ten" as unauthorised word-numbers although 3 and 6 are listed
+constants. The prompt for the three later arms states the word→
+constant mapping explicitly ("two"→2 … "six"→6, "a week"→7 …); the
+sonnet blocks were not re-asked (readings are collected once). The
+cost lands in REACH per corpus and is reported; no reading was
+changed after the fact.
