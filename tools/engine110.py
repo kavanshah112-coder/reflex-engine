@@ -326,8 +326,11 @@ def fresh_P(item, reading, own, arm):
     if not isinstance(plan, dict) or "nodes" not in plan:
         return {"status": "format"}
     try:
-        roles = E["roles18"].analyze(item["text"])
-        ok, tr = E["plangate18"].check(plan, item["text"], roles)
+        # B38: a model-proposed chain plan carries LITERAL values; the V1.8 role gate
+        # expects role-slot templates ("unrolled numeric slot"). Literal plans are gated
+        # by plangate17 (G-P1..G-P5), exactly as the V1.7 plan arms were.
+        from reflex import plangate17
+        ok, tr = plangate17.check(plan, item["text"])
         if not ok:
             return {"status": "gate_kill", "gate": tr[-1].get("gate")}
         v, cert = E["chainexec17"].run(plan)

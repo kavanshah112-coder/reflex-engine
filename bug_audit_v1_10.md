@@ -84,3 +84,11 @@ generator and the chain language use 9.8. The 0.1% gap exceeds the
 agreement tolerance, so on those items the own answer will REJECT a
 correct reading (false rejection, counted in A2_rejected, never a
 wrong). Reported per arm; no tolerance change (frozen).
+
+## B38 — P-tier fresh readings gated by the wrong gate (caught on the ACQ P1 test, pre-sealed)
+`fresh_P` passed model-proposed chain plans (literal values) through
+plangate18, whose G-P4′ expects role-slot templates and killed 20 of
+22 with "unrolled numeric slot". Literal plans are the V1.7 plan
+language and are gated by plangate17 (G-P1..G-P5): all 20 pass it.
+Fixed before any DEV/SEAL run; the suggest path for P tiers still uses
+binder18 + plangate18 on templates, unchanged.
