@@ -111,11 +111,24 @@ def load_readings(model, split):
     return out
 
 
+def _num(s):
+    """B39: golds are stored with repr() and may carry an exponent (1.8e-19); S1.parse_answer
+    drops exponents. Full float parse first, then S1.parse_answer as the fallback."""
+    if s is None:
+        return None
+    try:
+        return float(str(s).replace(",", "").replace("$", "").strip())
+    except ValueError:
+        return S1.parse_answer(s)
+
+
 def parse_own(item, s):
     if item["gold_type"] == "mc":
         m = re.search(r"\b([ABCD])\b", str(s or "").upper())
         return m.group(1) if m else None
-    return S1.parse_answer(s)
+    if str(s or "").strip().upper() == "NONE":
+        return None
+    return _num(s)
 
 
 def grade(item, value):
@@ -123,7 +136,7 @@ def grade(item, value):
         return False
     if item["gold_type"] == "mc":
         return value == item["gold"]
-    return S1.close(value, S1.parse_answer(item["gold"]))
+    return S1.close(value, _num(item["gold"]))
 
 
 # ---------------------------------------------------------------- library (per arm)
@@ -220,7 +233,11 @@ def exact(item, lib):
             r = E["ask16"](text, item["id"])
             if r["status"] == "SERVED":
                 return r["value"], "exact:v16:" + r["path"]
-            if r["status"] == "ESCALATED":
+            if r["status"] == "ESCALATED" and "unit:" in (item.get("key") or ""):
+                # B40: the V1.6 minted library is scientific-domain (dimensioned). It fired once
+                # on a GSM8K-train item ("Tim sleeps 6 hours per day...") via reflex16:sonnet:
+                # conv_hour_to_minute and served 360 for gold 50. It is consulted only when the
+                # reader found a unit-cued quantity.
                 hit = E["acquire16"].apply_library(text, E["reflexlib"])
                 if hit is not None:
                     return hit["value"], "exact:v16:reflex"

@@ -104,3 +104,24 @@ sub-agents is not visible to the token log (their tokens are not in
 the parent's figure) — flagged for the TOKENS metric: authoring
 tokens are a dataset-construction cost and are not part of
 TOKENS/QUERY, so the metric is unaffected.
+
+## B39 — grader dropped exponents (found on the D-arm ACQ baseline, pre-sealed)
+Full-precision golds are stored with repr(); a true-zero chain result
+replays as 1.8e-19 and `S1.parse_answer` reads "1.8" (its regex has no
+exponent). 32 of the baseline's 33 "wrongs" were exact-zero serves
+graded against 1.8. Fix: engine110 parses golds and own answers with
+float() first, S1.parse_answer as fallback. S1 itself is frozen and
+untouched. Baseline re-run after the fix.
+
+## B40 — the V1.6 minted library fired on a word problem (D-arm ACQ baseline, pre-sealed)
+GSM8K-train "Tim sleeps 6 hours per day for 5 days a week and 10 hours
+a day for the other 2. How much total sleep?" — ask16 escalated, then
+`acquire16.apply_library` served 360 via reflex16:sonnet:
+conv_hour_to_minute (gold 50). A B32-class lexical replay from a
+library minted for the scientific domain. Fix: the library is consulted
+only when the reader found a unit-cued quantity in the question. One
+item in 3,024 T3; DEV/ACQ are tuning splits, so the fix is in scope;
+the sealed run inherits it. The D-arm baseline before the fix:
+ACQ 142,653 non-authored items, 48,171 exact serves, 1 genuine wrong
+(this item), P1 27,913/0, P2 16,240/0 true, P3 4,017/0 true, T1/T2/T3′
+0 served, PC 0 served, D 0 served.

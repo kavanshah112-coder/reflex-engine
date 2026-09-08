@@ -49,3 +49,12 @@
 {"agent": "readq_acq_haiku_j02", "model": "haiku", "role": "reading", "split": "acq", "tier": "P3", "items": 200, "subagent_tokens": 183050, "tool_uses": 208, "duration_ms": 464830}
 {"agent": "ansq_acq_fable_jB", "model": "fable", "role": "answer", "split": "acq", "tier": "P3+T3p", "items": 200, "subagent_tokens": 95648, "tool_uses": 16, "duration_ms": 146769}
 {"agent": "ansq_acq_sonnet_jA", "model": "sonnet", "role": "answer", "split": "acq", "tier": "P1+P2", "items": 200, "subagent_tokens": 111506, "tool_uses": 17, "duration_ms": 235137}
+{"agent": "ansq_acq_opus_jB", "model": "opus", "role": "answer", "split": "acq", "tier": "P3+T3p", "items": 200, "subagent_tokens": 98884, "tool_uses": 16, "duration_ms": 185836}
+{"agent": "ansq_acq_fable_jC", "model": "fable", "role": "answer", "split": "acq", "tier": "T3p+PC", "items": 200, "subagent_tokens": 86447, "tool_uses": 16, "duration_ms": 102300}
+{"agent": "ansq_acq_opus_jC", "model": "opus", "role": "answer", "split": "acq", "tier": "T3p+PC", "items": 200, "subagent_tokens": 87998, "tool_uses": 16, "duration_ms": 113346}
+{"agent": "author_P4_haiku_w03", "model": "haiku", "role": "author", "split": "all", "tier": "P4", "items": 200, "subagent_tokens": 145739, "tool_uses": 16, "duration_ms": 290266}
+{"agent": "readq_acq_haiku_jC", "model": "haiku", "role": "reading", "split": "acq", "tier": "P3", "items": 100, "subagent_tokens": 116158, "tool_uses": 104, "duration_ms": 244661}
+{"agent": "readq_acq_haiku_T1a", "model": "haiku", "role": "reading", "split": "acq", "tier": "T1", "items": 200, "subagent_tokens": 113979, "tool_uses": 208, "duration_ms": 229392}
+{"agent": "author_T4_haiku_w03", "model": "haiku", "role": "author", "split": "all", "tier": "T4", "items": 200, "subagent_tokens": 125752, "tool_uses": 20, "duration_ms": 361062}
+{"agent": "ansq_acq_haiku_jC", "model": "haiku", "role": "answer", "split": "acq", "tier": "T3p+PC", "items": 200, "subagent_tokens": 83528, "tool_uses": 16, "duration_ms": 211898}
+{"agent": "ansq_acq_sonnet_jB", "model": "sonnet", "role": "answer", "split": "acq", "tier": "P3+T3p", "items": 200, "subagent_tokens": 115570, "tool_uses": 16, "duration_ms": 230567}
