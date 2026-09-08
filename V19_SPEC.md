@@ -47,8 +47,26 @@ plural-agents misread survives the prototype only because its factor
 2 coincides with "twice"; the cardinality form (one word, one literal
 occurrence — G-P4′'s matching) closes it.
 
+Measured on S1 SEALED with NO agreement signal — the proven pipeline
+(gate, witness, abstain) alone — and then each engine-only addition:
+
+| stage | served | wrong |
+|---|---|---|
+| gates + witness (V1.8 stack, reading mode) | 796 | 20 (2.5%) |
+| + G-P6 lexical honesty | 671 | 13 (1.9%) |
+| + structural abstentions | 638 | 6 (0.94%) |
+| + reading reproduces the escalation's own answer | 570 | **0** |
+
+The six survivors of every engine-only rule are interpretive
+misreads — the class V1.3 proved dimensional and honesty gates cannot
+see, and the class generator text never contained. The escalation's
+own answer is not a second model: it is the value the user already
+received, playing the role golds played in V1.0's probation and
+V1.8's harvest. The proven pipeline always probated against a value;
+on a live escalation this is the only value there is.
+
 So the one-model design is: **the escalation's own answer is the
-agreement signal; the engine's honesty gates and structural
+probation value; the engine's honesty gates and structural
 abstentions are the safety.** No second model.
 
 ---
