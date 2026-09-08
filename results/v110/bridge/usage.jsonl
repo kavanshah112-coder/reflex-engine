@@ -61,3 +61,12 @@
 {"agent": "readq_acq_opus_j02", "model": "opus", "role": "reading", "split": "acq", "tier": "P3", "items": 200, "subagent_tokens": 234833, "tool_uses": 208, "duration_ms": 678673}
 {"agent": "readq_acq_fable_j02", "model": "fable", "role": "reading", "split": "acq", "tier": "P3", "items": 200, "subagent_tokens": 186659, "tool_uses": 14, "duration_ms": 665583, "note": "wrote via Bash printf; disclosed"}
 {"agent": "readq_acq_sonnet_jB", "model": "sonnet", "role": "reading", "split": "acq", "tier": "P1+P2", "items": 200, "subagent_tokens": 190286, "tool_uses": 209, "duration_ms": 425659}
+{"agent": "readq_acq_fable_jB", "model": "fable", "role": "reading", "split": "acq", "tier": "P1+P2", "items": 200, "subagent_tokens": 175694, "tool_uses": 208, "duration_ms": 453571}
+{"agent": "readq_acq_opus_jB", "model": "opus", "role": "reading", "split": "acq", "tier": "P1+P2", "items": 200, "subagent_tokens": 178773, "tool_uses": 208, "duration_ms": 483093}
+{"agent": "author_P4_fable_w01", "model": "fable", "role": "author", "split": "all", "tier": "P4", "items": 200, "subagent_tokens": 269701, "tool_uses": 16, "duration_ms": 877632}
+{"agent": "author_T4_haiku_w04", "model": "haiku", "role": "author", "split": "all", "tier": "T4", "items": 200, "subagent_tokens": 112100, "tool_uses": 16, "duration_ms": 230793}
+{"agent": "ansq_acq_haiku_jD", "model": "haiku", "role": "answer", "split": "acq", "tier": "PC", "items": 200, "subagent_tokens": 74342, "tool_uses": 16, "duration_ms": 133840}
+{"agent": "readq_acq_sonnet_T1a", "model": "sonnet", "role": "reading", "split": "acq", "tier": "T1", "items": 200, "subagent_tokens": 146607, "tool_uses": 210, "duration_ms": 267730}
+{"agent": "author_P4_haiku_w04", "model": "haiku", "role": "author", "split": "all", "tier": "P4", "items": 200, "subagent_tokens": 170537, "tool_uses": 17, "duration_ms": 355553}
+{"agent": "author_P4_sonnet_w01", "model": "sonnet", "role": "author", "split": "all", "tier": "P4", "items": 200, "subagent_tokens": 307731, "tool_uses": 17, "duration_ms": 966928}
+{"agent": "author_P4_opus_w01", "model": "opus", "role": "author", "split": "all", "tier": "P4", "items": 200, "subagent_tokens": 296706, "tool_uses": 16, "duration_ms": 1145844}
