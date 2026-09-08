@@ -63,3 +63,17 @@ answered); the wart is reported, not repaired.
 The sonnet D-tier answer agent wrote its 8 files with a Bash/Python
 snippet instead of the Write tool and disclosed it. Contents verified
 (200 × NONE). Logged; no re-run.
+
+## N7 — authoring brief: "intermediate quantity's final state" misread (wave 0, haiku)
+Haiku's first 200 T4 stories were spot-checked: the feature "the
+question asked about an intermediate quantity's final state" was read
+as "ask for an intermediate result", which changes the answer away
+from the plan's final value (e.g. "after the video call and gaming,
+how many minutes remained?" with three more steps in the plan). Other
+stories map "×8" onto nonsense ("each loaf was sold to 8 customers").
+QC (a different model answers the story; must equal the plan's value)
+is the designed catch: failing items become DEV-only. From wave 1 the
+author prompt states explicitly that the question must ask for the
+FINAL result after ALL steps and that the feature means the story
+follows one quantity through its changes. The build's feature list is
+unchanged; the prompt wording is a bridge-protocol fix, logged here.
