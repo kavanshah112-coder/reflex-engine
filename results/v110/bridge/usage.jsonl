@@ -148,3 +148,6 @@
 {"agent": "ansq_acq_sonnet_jJ", "model": "sonnet", "role": "answer", "split": "acq", "tier": "T3", "items": 200, "subagent_tokens": 125879, "tool_uses": 16, "duration_ms": 343554}
 {"agent": "ansq_acq_opus_jL", "model": "opus", "role": "answer", "split": "acq", "tier": "T3", "items": 100, "subagent_tokens": 78767, "tool_uses": 8, "duration_ms": 88838}
 {"agent": "author_T4_opus_w03", "model": "opus", "role": "author", "split": "all", "tier": "T4", "items": 200, "subagent_tokens": 206852, "tool_uses": 16, "duration_ms": 1207711}
+{"agent": "readq_acq_sonnet_T3b", "model": "sonnet", "role": "reading", "split": "acq", "tier": "T3", "items": 200, "subagent_tokens": 237610, "tool_uses": 212, "duration_ms": 971651}
+{"agent": "ansq_acq_fable_jH", "model": "fable", "role": "answer", "split": "acq", "tier": "T2", "items": 200, "subagent_tokens": 85614, "tool_uses": 24, "duration_ms": 93015}
+{"agent": "ansq_acq_sonnet_jL", "model": "sonnet", "role": "answer", "split": "acq", "tier": "PC+T3", "items": 125, "subagent_tokens": 92279, "tool_uses": 10, "duration_ms": 117905}
