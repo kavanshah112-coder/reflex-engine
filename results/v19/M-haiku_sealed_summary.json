@@ -1,0 +1,173 @@
+{
+ "arm": "M-haiku",
+ "phase": "sealed",
+ "n": 1764,
+ "status": {
+  "null_reading": 576,
+  "executed": 1028,
+  "gate_kill": 156,
+  "exec_refused": 4
+ },
+ "REACH": 0.5828,
+ "READING_CORRECT": 0.894,
+ "ANSWER_CORRECT": 0.9495,
+ "answered": 1764,
+ "G6": {
+  "kills": 102,
+  "kills_of_correct": 80,
+  "false_abstain_rate": 0.0871
+ },
+ "rules": {
+  "S-INT": {
+   "kills": 15,
+   "kills_of_correct": 0,
+   "false_abstain_rate": 0.0
+  },
+  "S-RATIO": {
+   "kills": 57,
+   "kills_of_correct": 32,
+   "false_abstain_rate": 0.0348
+  },
+  "S-PCT": {
+   "kills": 9,
+   "kills_of_correct": 5,
+   "false_abstain_rate": 0.0054
+  },
+  "S-GEOM": {
+   "kills": 0,
+   "kills_of_correct": 0,
+   "false_abstain_rate": 0.0
+  }
+ },
+ "admission": {
+  "A0": {
+   "admitted": 937,
+   "wrong_by_gold": 19,
+   "FALSE_ADMIT": 0.0203,
+   "share_of_executed": 0.9115,
+   "wrong_ids": [
+    "a0175",
+    "a0185",
+    "a0375",
+    "a1147",
+    "a1349",
+    "a1461",
+    "a1649",
+    "a1651",
+    "a1653",
+    "a1658",
+    "a1665",
+    "a1669",
+    "a1679",
+    "a1687",
+    "a1688",
+    "a1689",
+    "a2261",
+    "g0454",
+    "g0790"
+   ]
+  },
+  "A1": {
+   "admitted": 852,
+   "wrong_by_gold": 47,
+   "FALSE_ADMIT": 0.0552,
+   "share_of_executed": 0.8288,
+   "wrong_ids": [
+    "a0175",
+    "a0185",
+    "a0375",
+    "a0502",
+    "a0620",
+    "a0832",
+    "a0911",
+    "a0996",
+    "a1114",
+    "a1349",
+    "a1456",
+    "a1474",
+    "a1501",
+    "a1503",
+    "a1607",
+    "a1979",
+    "a1983",
+    "a1984",
+    "a1989",
+    "a2105",
+    "a2261",
+    "g0018",
+    "g0021",
+    "g0044",
+    "g0077",
+    "g0079",
+    "g0090",
+    "g0138",
+    "g0186",
+    "g0236",
+    "g0358",
+    "g0369",
+    "g0373",
+    "g0454",
+    "g0506",
+    "g0507",
+    "g0707",
+    "g0752",
+    "g0790",
+    "g0793",
+    "g0923",
+    "g0954",
+    "g1011",
+    "g1129",
+    "g1196",
+    "g1239",
+    "g1274"
+   ]
+  },
+  "A2": {
+   "admitted": 811,
+   "wrong_by_gold": 7,
+   "FALSE_ADMIT": 0.0086,
+   "share_of_executed": 0.7889,
+   "wrong_ids": [
+    "a0175",
+    "a0185",
+    "a0375",
+    "a1349",
+    "a2261",
+    "g0454",
+    "g0790"
+   ]
+  }
+ },
+ "A2_rejected_correct": 115,
+ "GATE_COST": 0.1712,
+ "gate_kills": {
+  "G-P3: choice/threshold ask; final is 'evaluate": 19,
+  "G-P4: stated quantity 3 unused": 15,
+  "G-P4: stated quantity 1 unused": 10,
+  "G-P4: stated quantity 4 unused": 7,
+  "G-P4: stated quantity 5 unused": 6,
+  "G-P4: stated quantity 2 unused": 4,
+  "G-P4: stated quantity 17 unused": 4,
+  "G-P1: nodes never reaching final: ['n1']": 4,
+  "G-P4: literal 10 has no textual warrant (value": 3,
+  "G-P4: stated quantity 25 unused": 3,
+  "G-P4: stated quantity 14 unused": 3,
+  "G-P4: stated quantity 50 unused": 3
+ },
+ "per_corpus": {
+  "gsm8k": {
+   "n": 419,
+   "executed": 244,
+   "reading_correct": 200,
+   "A2_admitted": 164,
+   "A2_wrong": 2
+  },
+  "asdiv": {
+   "n": 1345,
+   "executed": 784,
+   "reading_correct": 719,
+   "A2_admitted": 647,
+   "A2_wrong": 5
+  }
+ }
+}
