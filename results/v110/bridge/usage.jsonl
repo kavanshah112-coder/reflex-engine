@@ -24,3 +24,5 @@
 {"agent": "readq_acq_fable_j00", "model": "fable", "role": "reading", "split": "acq", "tier": "P1", "items": 200, "subagent_tokens": 150093, "tool_uses": 208, "duration_ms": 338714}
 {"agent": "ansq_acq_haiku_j03", "model": "haiku", "role": "answer", "split": "acq", "tier": "P3", "items": 200, "subagent_tokens": 90049, "tool_uses": 19, "duration_ms": 203044}
 {"agent": "author_T4_haiku_w01", "model": "haiku", "role": "author", "split": "all", "tier": "T4", "items": 200, "subagent_tokens": 143957, "tool_uses": 24, "duration_ms": 339947}
+{"agent": "author_T4_sonnet_w00", "model": "sonnet", "role": "author", "split": "all", "tier": "T4", "items": 200, "subagent_tokens": 174757, "tool_uses": 11, "duration_ms": 846563, "note": "agent delegated 4 batches to its own sub-agents"}
+{"agent": "author_P4_opus_w00", "model": "opus", "role": "author", "split": "all", "tier": "P4", "items": 200, "subagent_tokens": 253497, "tool_uses": 16, "duration_ms": 785659}

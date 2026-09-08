@@ -92,3 +92,15 @@ plangate18, whose G-P4′ expects role-slot templates and killed 20 of
 language and are gated by plangate17 (G-P1..G-P5): all 20 pass it.
 Fixed before any DEV/SEAL run; the suggest path for P tiers still uses
 binder18 + plangate18 on templates, unchanged.
+
+## N9 — an author agent delegated to sub-agents
+The sonnet T4 wave-0 author wrote batches 000–002 and 007 itself and
+spawned its own sub-agents for 003–006, then stopped before they
+reported. Files present at check: 000, 001, 002, 007. The model that
+wrote 003–006 (if they arrive) is the sub-agent's model, which the
+harness defaults to the parent's; recorded as sonnet with this
+caveat. Missing batches are relaunched in a later wave. Usage for the
+sub-agents is not visible to the token log (their tokens are not in
+the parent's figure) — flagged for the TOKENS metric: authoring
+tokens are a dataset-construction cost and are not part of
+TOKENS/QUERY, so the metric is unaffected.
