@@ -130,3 +130,5 @@
 {"agent": "ansq_acq_haiku_jJ", "model": "haiku", "role": "answer", "split": "acq", "tier": "T3", "items": 200, "subagent_tokens": 92867, "tool_uses": 16, "duration_ms": 262212}
 {"agent": "author_T4_haiku_w11", "model": "haiku", "role": "author", "split": "all", "tier": "T4", "items": 200, "subagent_tokens": 112269, "tool_uses": 16, "duration_ms": 239138}
 {"agent": "ansq_acq_sonnet_jI", "model": "sonnet", "role": "answer", "split": "acq", "tier": "T3", "items": 200, "subagent_tokens": 133425, "tool_uses": 17, "duration_ms": 417514}
+{"agent": "readq_acq_fable_T2c_T3a", "model": "fable", "role": "reading", "split": "acq", "tier": "T2+T3", "items": 200, "subagent_tokens": 170123, "tool_uses": 208, "duration_ms": 514751}
+{"agent": "ansq_acq_opus_jJ", "model": "opus", "role": "answer", "split": "acq", "tier": "T3", "items": 200, "subagent_tokens": 96339, "tool_uses": 16, "duration_ms": 151594}
