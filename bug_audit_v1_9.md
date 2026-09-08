@@ -143,3 +143,50 @@ and left it truncated (harvest_neg block dropped) in the working
 tree. The file is a V1.8 artifact (tag v1.8-final); it was restored
 from git before the V1.9 tag. No V1.9 number depends on it; the V1.9
 control record is `results/v19/controls19v.json`.
+
+## Note V10 — POST-HOC (after v1.9-final): "suggest, don't serve" reuse probe
+
+`tools/reuse19_probe.py`. Not a sealed run; nothing served; no
+threshold pre-registered. Every A2-admitted reading with the item's
+cue key (impure keys included, ~187 candidates/item) is bound, gated
+and executed; a candidate is ADMITTED only if its value agrees with
+the model's OWN answer (P0), or agrees AND passes G-P6 + rules (P1).
+
+| arm | P1 served / 1,764 | wrong by gold | of which already fresh-A2 wrongs | NEW ids | served where fresh reading was null/killed |
+|---|---|---|---|---|---|
+| sonnet | 688 | 8 (1.16%) | 4 (a0375, a1983, a1984, g0454) | a1460, a1477, a1481, a2268 | 91 |
+| opus | 633 | 4 (0.63%) | 3 | a1481 | 58 |
+| haiku | 612 | 3 (0.49%) | 3 | — | 69 |
+| fable | 635 | 3 (0.47%) | 2 | a1481 | 60 |
+
+P0 (no gates) serves ~150 more per arm with +1 wrong each, but 80–104
+of those are ZERO-SLOT items (word-number questions) served by a
+constant plan whose value happened to equal the own answer; P1 cuts
+zero-slot serves to 8–13. Zero-slot candidates must be excluded by
+construction in any spec (a constant is not a computation).
+
+Every NEW wrong is a MULTI-ANSWER ask the proposer had declined
+("how much did each cost", "how long are the pieces", "find the
+present ages", "cases plus extra boxes"): the own answer gives one of
+the two asked quantities, gold the other; a reused plan reproduces
+it. Genuine misreads among the new wrongs: 0. A structural rule
+S-MULTI (ask names two quantities) would remove all of them; it is
+NOT applied here — it belongs on DEV in a later version.
+
+Sonnet with a DEV-only library (948 readings, none from the sealed
+set): P1 623 served / 6 wrong (0.96%) — the result does not depend on
+cross-serving inside the sealed set.
+
+Is the reused plan the RIGHT reading or a coincidence? On items where
+the model's own fresh reading was A2-admitted, the reused plan has the
+same bound signature 82.3% (sonnet), 93.4% (opus), 81.2% (haiku),
+94.0% (fable) of the time; the different-plan serves were wrong 0/104,
+0/38, 1/101, 0/34. So the served VALUE is as safe as fresh A2, but
+~6–19% of reuse "hits" are a different computation that reproduces
+the answer on these numbers — a reflex minted from such a hit would
+be the wrong reading. Minting from reuse needs plan agreement with
+a fresh reading (two-donor rule), not value agreement alone.
+
+Reading: the binder CAN suggest; the own answer is the filter;
+transfer exists at 35–39% of the sealed set with no proposer call,
+at the fresh-A2 wrong rate. This is the V1.10 candidate.
