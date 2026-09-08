@@ -1,11 +1,11 @@
-# V1.9 FINAL REPORT — Reading Reflexes with Escalation Feedback (branch v1.9-reading)
+# S1 (V1.9 PRE-STUDY) FINAL REPORT — Reading Reflexes with Escalation Feedback
 
-**Pre-registered outcome: E** on the frozen ladder (`V19_SPEC.md` §10, tag `v1.9-plan`).
+**Pre-registered outcome: E** on the frozen ladder (`S1_SPEC.md` §10, tag `s1-plan`).
 
 ## Headline
 
 - **Primary arm (sonnet readings, haiku answers), SEALED 1,200, run once:** REACH 66.3% (796 executable readings), READING-CORRECT 97.5%, admitted by agreement 703, **FALSE-ADMIT 1.1% (8 of 703)**, READING-CORRECT among admitted 98.9%, haiku correct 87.6%, near-misses 1, disagree-but-correct 81.
-- **llama arm:** not run to completion (see §5).
+- **Independent-family answerer (llama-3.1-8B, local), SEALED:** admitted 14, FALSE-ADMIT 0.0% (0), llama correct 100.0%, disagree-but-correct 762.
 - **DEV 600 (for the record):** REACH 69.0%, READING-CORRECT 96.6%, FALSE-ADMIT 1.3% (5 of 398), haiku 95.3%.
 - **Transfer:** L0 0 refire pairs / 0 served / 0 wrong; L1 0 / 0 / 0; L2 0 / 0 / 0 (skeletons: 1200 / 1200 / 1200 among 1,200).
 - **GATE-CTRL:** PASS.
@@ -20,6 +20,8 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 | R-sonnet-haiku | dev | 600 | 414 (69.0%) | 96.6% | 398 | **5 (1.3%)** | 98.7% | 95.3% | 7 | 3 |
 | R-sonnet-haiku | sealed | 1200 | 796 (66.3%) | 97.5% | 703 | **8 (1.1%)** | 98.9% | 87.6% | 81 | 1 |
+| R-sonnet-llama | dev | 600 | 414 (69.0%) | 96.6% | 149 | **1 (0.7%)** | 99.3% | 35.3% | 252 | 3 |
+| R-sonnet-llama | sealed | 1200 | 796 (66.3%) | 97.5% | 14 | **0 (0.0%)** | 100.0% | 100.0% | 762 | 1 |
 
 Per corpus (primary, sealed): gsm8k n=606 executed 453 correct 443 admitted 368 false-admit 4; asdiv n=594 executed 343 correct 333 admitted 335 false-admit 4.
 
@@ -53,7 +55,7 @@ A reading serves only its donor's exact skeleton in V1.9; transfer was measured,
 
 ## 5. The llama arm
 
-ollama wedged during the DEV run (a single request exceeded 300 s at 0% GPU utilisation); after one server restart it answered in ~5 s. The arm is reported only to the extent it completed; see the summaries present in `results/v19/`.
+llama-3.1-8B (Q4, local ollama) answered as the independent-family control. Its numbers are in §2; the comparison to haiku is the test of R1 (shared prior): if agreement with llama admits fewer wrong readings per admission than agreement with haiku, the family prior is part of the false-admit rate.
 
 ## 6. Outcome on the frozen ladder
 
