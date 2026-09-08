@@ -112,3 +112,5 @@
 {"agent": "ansq_acq_opus_jG", "model": "opus", "role": "answer", "split": "acq", "tier": "T2", "items": 200, "subagent_tokens": 83591, "tool_uses": 16, "duration_ms": 84221}
 {"agent": "ansq_acq_fable_jF", "model": "fable", "role": "answer", "split": "acq", "tier": "T1+T2", "items": 200, "subagent_tokens": 83320, "tool_uses": 16, "duration_ms": 87181}
 {"agent": "readq_acq_fable_T2b", "model": "fable", "role": "reading", "split": "acq", "tier": "T2", "items": 200, "subagent_tokens": 149429, "tool_uses": 208, "duration_ms": 360108}
+{"agent": "author_P4_haiku_w08", "model": "haiku", "role": "author", "split": "all", "tier": "P4", "items": 200, "subagent_tokens": 189086, "tool_uses": 23, "duration_ms": 374151}
+{"agent": "readq_acq_opus_T2c_T3a", "model": "opus", "role": "reading", "split": "acq", "tier": "T2+T3", "items": 200, "subagent_tokens": 177293, "tool_uses": 208, "duration_ms": 588913}
