@@ -26,3 +26,10 @@
 {"agent": "author_T4_haiku_w01", "model": "haiku", "role": "author", "split": "all", "tier": "T4", "items": 200, "subagent_tokens": 143957, "tool_uses": 24, "duration_ms": 339947}
 {"agent": "author_T4_sonnet_w00", "model": "sonnet", "role": "author", "split": "all", "tier": "T4", "items": 200, "subagent_tokens": 174757, "tool_uses": 11, "duration_ms": 846563, "note": "agent delegated 4 batches to its own sub-agents"}
 {"agent": "author_P4_opus_w00", "model": "opus", "role": "author", "split": "all", "tier": "P4", "items": 200, "subagent_tokens": 253497, "tool_uses": 16, "duration_ms": 785659}
+{"agent": "ansq_acq_fable_j03", "model": "fable", "role": "answer", "split": "acq", "tier": "P3", "items": 200, "subagent_tokens": 103857, "tool_uses": 16, "duration_ms": 198217}
+{"agent": "ansq_acq_opus_j03", "model": "opus", "role": "answer", "split": "acq", "tier": "P3", "items": 200, "subagent_tokens": 106974, "tool_uses": 16, "duration_ms": 223781}
+{"agent": "author_T4_fable_w00", "model": "fable", "role": "author", "split": "all", "tier": "T4", "items": 200, "subagent_tokens": 185876, "tool_uses": 16, "duration_ms": 922940}
+{"agent": "ansq_acq_sonnet_j03", "model": "sonnet", "role": "answer", "split": "acq", "tier": "P3", "items": 200, "subagent_tokens": 123470, "tool_uses": 18, "duration_ms": 274006}
+{"agent": "readq_acq_haiku_j01", "model": "haiku", "role": "reading", "split": "acq", "tier": "P2", "items": 200, "subagent_tokens": 154204, "tool_uses": 208, "duration_ms": 360182}
+{"agent": "author_P4_fable_w00", "model": "fable", "role": "author", "split": "all", "tier": "P4", "items": 200, "subagent_tokens": 277434, "tool_uses": 16, "duration_ms": 931987}
+{"agent": "ansq_acq_haiku_jA", "model": "haiku", "role": "answer", "split": "acq", "tier": "P1+P2", "items": 200, "subagent_tokens": 79656, "tool_uses": 16, "duration_ms": 167238}
