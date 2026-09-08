@@ -140,3 +140,8 @@
 {"agent": "author_P4_opus_w03", "model": "opus", "role": "author", "split": "all", "tier": "P4", "items": 200, "subagent_tokens": 279275, "tool_uses": 16, "duration_ms": 976578}
 {"agent": "author_T4_haiku_w12", "model": "haiku", "role": "author", "split": "all", "tier": "T4", "items": 200, "subagent_tokens": 118765, "tool_uses": 21, "duration_ms": 330679}
 {"agent": "ansq_acq_opus_jK", "model": "opus", "role": "answer", "split": "acq", "tier": "T3", "items": 200, "subagent_tokens": 98748, "tool_uses": 16, "duration_ms": 164261}
+{"agent": "author_P4_sonnet_w03", "model": "sonnet", "role": "author", "split": "all", "tier": "P4", "items": 200, "subagent_tokens": 327794, "tool_uses": 16, "duration_ms": 1083178}
+{"agent": "ansq_acq_haiku_jL", "model": "haiku", "role": "answer", "split": "acq", "tier": "T3", "items": 100, "subagent_tokens": 69219, "tool_uses": 8, "duration_ms": 129580}
+{"agent": "author_T4_haiku_w13", "model": "haiku", "role": "author", "split": "all", "tier": "T4", "items": 194, "subagent_tokens": 124689, "tool_uses": 16, "duration_ms": 357987, "note": "batches 108-111 misaligned; 194 stories"}
+{"agent": "author_T4_sonnet_w03", "model": "sonnet", "role": "author", "split": "all", "tier": "T4", "items": 200, "subagent_tokens": 238935, "tool_uses": 16, "duration_ms": 1159988}
+{"agent": "author_T4_fable_w02", "model": "fable", "role": "author", "split": "all", "tier": "T4", "items": 200, "subagent_tokens": 201287, "tool_uses": 18, "duration_ms": 1200127}
