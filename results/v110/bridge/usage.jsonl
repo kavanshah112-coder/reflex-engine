@@ -41,3 +41,11 @@
 {"agent": "author_T4_haiku_w02", "model": "haiku", "role": "author", "split": "all", "tier": "T4", "items": 200, "subagent_tokens": 121703, "tool_uses": 16, "duration_ms": 331694}
 {"agent": "readq_acq_opus_j01", "model": "opus", "role": "reading", "split": "acq", "tier": "P2", "items": 200, "subagent_tokens": 197514, "tool_uses": 210, "duration_ms": 494688}
 {"agent": "readq_acq_fable_j01", "model": "fable", "role": "reading", "split": "acq", "tier": "P2", "items": 200, "subagent_tokens": 188371, "tool_uses": 208, "duration_ms": 481312}
+{"agent": "ansq_acq_haiku_jB", "model": "haiku", "role": "answer", "split": "acq", "tier": "P3+T3p", "items": 200, "subagent_tokens": 82237, "tool_uses": 16, "duration_ms": 147368}
+{"agent": "author_P4_haiku_w02", "model": "haiku", "role": "author", "split": "all", "tier": "P4", "items": 200, "subagent_tokens": 190967, "tool_uses": 20, "duration_ms": 249604}
+{"agent": "author_T4_sonnet_w00_sub003-004", "model": "sonnet", "role": "author", "split": "all", "tier": "T4", "items": 50, "subagent_tokens": 142744, "tool_uses": 4, "duration_ms": 599584, "note": "sub-agent of the w00 author"}
+{"agent": "author_T4_sonnet_w00_sub005-006", "model": "sonnet", "role": "author", "split": "all", "tier": "T4", "items": 50, "subagent_tokens": 121806, "tool_uses": 4, "duration_ms": 421250, "note": "sub-agent of the w00 author"}
+{"agent": "readq_acq_haiku_jB", "model": "haiku", "role": "reading", "split": "acq", "tier": "P1+P2", "items": 200, "subagent_tokens": 138303, "tool_uses": 208, "duration_ms": 289271}
+{"agent": "readq_acq_haiku_j02", "model": "haiku", "role": "reading", "split": "acq", "tier": "P3", "items": 200, "subagent_tokens": 183050, "tool_uses": 208, "duration_ms": 464830}
+{"agent": "ansq_acq_fable_jB", "model": "fable", "role": "answer", "split": "acq", "tier": "P3+T3p", "items": 200, "subagent_tokens": 95648, "tool_uses": 16, "duration_ms": 146769}
+{"agent": "ansq_acq_sonnet_jA", "model": "sonnet", "role": "answer", "split": "acq", "tier": "P1+P2", "items": 200, "subagent_tokens": 111506, "tool_uses": 17, "duration_ms": 235137}
