@@ -28,3 +28,13 @@ tokens: (batch tokens − the model's empty-batch baseline) ÷ items,
 with the raw figure reported beside it. Empty-batch baselines are
 collected per model (sonnet 64,522; opus/haiku/fable below). This is
 an instrument definition fixed before the sealed run, not a tuning.
+
+## N4 — W-400K built: 387,062 items
+Tier quotas met exactly (T1/T2 80k, T4 20k, P1 80k, P2 60k, P3 40k,
+P4 10k) plus corpora (T3 7,473; T3′ 1,000; PC 1,000) and a 2%
+distractor overlay (7,589) = 387,062, i.e. "≈400k" in the spec is
+387k. Rejects: T2 5,207 (unsolvable draws), P2 124,001, P3 92,890
+(generator constraints), P4 23,682. Splits acq 154,653 / dev 38,475 /
+seal 96,847 / replay 97,087. Hashes in `results/v110/data/HASHES.json`.
+Authoring requests: 1,200 batches of 25 (800 T4, 400 P4), author model
+by id hash. Build wall time ~25 min.
