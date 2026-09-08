@@ -2,8 +2,9 @@
 
 ## Can an escalation-feedback loop built on ONE model admit readings of natural-language questions with zero genuine wrong admissions — the engine carrying the safety, the escalation's own answer serving as the probation value — and can an admitted reading serve a question phrased differently from its donor?
 
-**STATUS: DRAFT v3 (2026-09-08) for the user's review — §12 decisions
-OPEN. Freezes as tag `v1.9-plan` on the user's word.** Designed from
+**STATUS: FROZEN (2026-09-08) — all §12 decisions RESOLVED by the
+user as proposed, with one addition: four one-model arms (sonnet,
+opus, haiku, fable), no local model anywhere. Tag `v1.9-plan`.** Designed from
 the S1 pre-study (branch `v1.9-reading`, tag `s1-plan`, `S1_SPEC.md`,
 `bug_audit_s1.md`). **Architecture constraint, fixed by the user: one
 model.** The model that answered the escalation is the model that
@@ -217,8 +218,12 @@ Golds live in `results/v19/data/` only; batch files carry
 | arm | model (answers AND proposes) | n |
 |---|---|---|
 | **M-sonnet (primary)** | sonnet | DEV 1,800 answers; SEALED readings + answers |
-| M-opus | opus | SEALED only, if bridge time allows |
-| M-haiku | haiku | SEALED only, if bridge time allows — the scale question (does the small model read safely under this engine?) |
+| M-opus | opus | SEALED readings + answers |
+| M-haiku | haiku | SEALED readings + answers — the scale question (does the small model read safely under this engine?) |
+| M-fable | fable | SEALED readings + answers |
+
+All four arms run (user decision, 2026-09-08); no local model is
+used for anything.
 
 No cross-model pairing anywhere. S1's sonnet/haiku rows remain as the
 pre-study record and are not re-scored as a V1.9 arm.
@@ -328,7 +333,7 @@ R12 Bridge-agent variance (format failures, partial writes). Detect:
 
 ---
 
-## 12. Decisions — OPEN for the user's review
+## 12. Decisions — RESOLVED by the user (2026-09-08, all as proposed; arms = sonnet, opus, haiku, fable; no ollama)
 
 1. **SEALED size**: all 1,824 never-sampled items (proposed), or a
    hashed 1,200 subsample.
