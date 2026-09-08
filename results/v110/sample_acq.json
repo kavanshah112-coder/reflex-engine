@@ -1,0 +1,59 @@
+{
+ "split": "acq",
+ "tiers": {
+  "T1": {
+   "items": 300,
+   "answer_batches": 12,
+   "reading_batches": 12,
+   "sha256_ids": "f45eae95acb33689eefed5745435d5c8c3532e43427793aa3eb8b24f4fcf9987"
+  },
+  "T2": {
+   "items": 400,
+   "answer_batches": 16,
+   "reading_batches": 16,
+   "sha256_ids": "1bcbf6b531c496d4a7b8e0518370e5d82e422208392befda49232ebe9df98412"
+  },
+  "T3": {
+   "items": 800,
+   "answer_batches": 32,
+   "reading_batches": 32,
+   "sha256_ids": "b8eabe037fddbab0fdfb607494e36ed696b1d13c5c987481937d3802e448bd7f"
+  },
+  "T3p": {
+   "items": 250,
+   "answer_batches": 10,
+   "reading_batches": 10,
+   "sha256_ids": "795285e818a3642d842990d466596812f3ce4ebda65147ca23a2ef4f4c5eef7f"
+  },
+  "P1": {
+   "items": 300,
+   "answer_batches": 12,
+   "reading_batches": 12,
+   "sha256_ids": "11ac810968a44c9351dbee2b28d2a016277c5faf74bca1790ca78f52435812d0"
+  },
+  "P2": {
+   "items": 300,
+   "answer_batches": 12,
+   "reading_batches": 12,
+   "sha256_ids": "7dfebe01caa1515a904b0be0adced0e339a8588eef0bef19fe84a11b5f21ba64"
+  },
+  "P3": {
+   "items": 300,
+   "answer_batches": 12,
+   "reading_batches": 12,
+   "sha256_ids": "84c379c6f41c4b1ba6287fd47c0cdb496a8023580040acaba3c6b0805d2a5125"
+  },
+  "PC": {
+   "items": 250,
+   "answer_batches": 10,
+   "reading_batches": 0,
+   "sha256_ids": "30dc83115fbcf7578b5da69e6b67aee684e6f58a931d480051d057ac78ac0075"
+  },
+  "D": {
+   "items": 200,
+   "answer_batches": 8,
+   "reading_batches": 0,
+   "sha256_ids": "84d00d0b1afffd647525581b63ce49ca130f8b19063175ee9c68a04e1b7197f7"
+  }
+ }
+}

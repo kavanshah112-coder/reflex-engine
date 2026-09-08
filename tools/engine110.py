@@ -488,12 +488,15 @@ P_OPS_DOC = ("Plan node ops (V1.7 chain language; every number you use must appe
              "{'op':'convert','value':'@n<k>','from':'<unit>','to':'<unit>'}. Physical constants: g = 9.8 only.")
 
 
-def write_batches(split):
+def write_batches(split, tiers=None):
+    """batch files per tier: ansq_<split>_<tier>_NNN.json / readq_<split>_<tier>_NNN.json (no golds)."""
     chosen = sample_ids(split)
+    if tiers:
+        chosen = [it for it in chosen if it["tier"] in tiers]
     BRIDGE.mkdir(parents=True, exist_ok=True)
-    ans, rd = [], []
+    by_tier = defaultdict(lambda: ([], []))
     for it in chosen:
-        ans.append({"id": it["id"], "question": it["text"]})
+        by_tier[it["tier"]][0].append({"id": it["id"], "question": it["text"]})
         if it["gold_type"] == "num" and not it.get("distractor"):
             e = {"id": it["id"], "question": it["text"], "numbers": it["numbers"]}
             if it["tier"] in P_TIERS:
@@ -501,14 +504,19 @@ def write_batches(split):
                 e["kind_hint"] = it.get("leaves")
             else:
                 e["reading_language"] = "slots"
-            rd.append(e)
-    for name, lst in (("ansq", ans), ("readq", rd)):
-        for bi in range(0, len(lst), 25):
-            (BRIDGE / ("%s_%s_%03d.json" % (name, split, bi // 25))).write_text(json.dumps(lst[bi:bi + 25], indent=0), encoding="utf-8")
-    man = {"split": split, "sample": len(chosen), "answer_batches": (len(ans) + 24) // 25, "reading_batches": (len(rd) + 24) // 25,
-           "by_tier": dict(Counter(it["tier"] for it in chosen)),
-           "sha256_ids": hashlib.sha256("\n".join(sorted(it["id"] for it in chosen)).encode()).hexdigest()}
-    (OUT / ("sample_%s.json" % split)).write_text(json.dumps(man, indent=1), encoding="utf-8")
+            by_tier[it["tier"]][1].append(e)
+    nb = Counter()
+    for tier, (ans, rd) in by_tier.items():
+        for name, lst in (("ansq", ans), ("readq", rd)):
+            for bi in range(0, len(lst), 25):
+                (BRIDGE / ("%s_%s_%s_%03d.json" % (name, split, tier, bi // 25))).write_text(json.dumps(lst[bi:bi + 25], indent=0), encoding="utf-8")
+                nb[name + "_" + tier] += 1
+    man_p = OUT / ("sample_%s.json" % split)
+    man = json.loads(man_p.read_text(encoding="utf-8")) if man_p.exists() else {"split": split, "tiers": {}}
+    for tier in by_tier:
+        man["tiers"][tier] = {"items": len(by_tier[tier][0]), "answer_batches": nb["ansq_" + tier], "reading_batches": nb["readq_" + tier],
+                              "sha256_ids": hashlib.sha256(chr(10).join(sorted(x["id"] for x in by_tier[tier][0])).encode()).hexdigest()}
+    man_p.write_text(json.dumps(man, indent=1), encoding="utf-8")
     print(json.dumps(man, indent=1))
 
 
@@ -582,7 +590,7 @@ def main():
     ap.add_argument("--tag", default="")
     a = ap.parse_args()
     if a.cmd == "sample":
-        write_batches(a.split)
+        write_batches(a.split, a.tiers.split(",") if a.tiers else None)
     elif a.cmd == "run":
         run(a.arm, a.split, a.checkpoint, a.lib_in, a.lib_out, a.limit, a.tiers.split(",") if a.tiers else None, a.tag)
     elif a.cmd == "tokens":
