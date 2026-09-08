@@ -62,3 +62,16 @@ sonnet's 95.9%; the engine-only rule A1 admits 47 wrong of 852 for
 haiku vs 29 of 882 for sonnet — the same-model answer is what carries
 the small model to 7 (H9: scale monotone in reading quality; the
 gates alone are not enough at any scale).
+
+## Note V5 — SEALED A2 wrongs, M-opus (13 of 962)
+
+Gold errata (3): a0375, a1349, g0454 (as V3). Gold format (3): a1332
+(answer "5/2"), a1327 ("3/7" parsed as 3; reading 3/7 = 0.4286),
+a1495 ("1/6" parsed as 1; reading 40/240 = 0.1667). Rounding (4):
+a1979, a1983, a1984, a1989. Unit (1): a0175. Conventions (2): a1412
+(father ages), g1161 (Abraham: "another 1/4 of his land" read against
+the original 80 m² — 140 — where gold reads it against the remaining
+40 — 170; the model's own answer shares the reading). Genuine (0).
+Opus: READING-CORRECT 98.4%, G-P6 false-abstain 9.8%, GATE-COST
+13.4%, A1 968/17 — the highest reading quality of the four arms; A2
+13 wrong of which 10 are gold format/errata/rounding, 3 conventions.
