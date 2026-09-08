@@ -85,3 +85,12 @@ study whose result designs V1.9, not V1.9 itself. Files renamed
 (`S1_SPEC.md`, `bug_audit_s1.md`), tag `v1.9-plan` renamed `s1-plan`
 (same commit). Results stay under `results/v19/` and arm names
 `R-*` unchanged so nothing already committed is rewritten.
+
+## Note N10 — llama sealed diagnostic effectively did not run
+
+The local llama-3.1-8B answerer hung repeatedly on this box (single
+requests exceeding 300 s at 0% GPU utilisation; partial VRAM
+offload). Of 28 sealed batch files written, 16 items carry a parsed
+answer (14 admitted, 0 wrong, all 16 correct — a prefix too small to
+mean anything). The diagnostic is reported as "not run" in substance;
+V1.9 uses no local model (user decision 2026-09-08).
