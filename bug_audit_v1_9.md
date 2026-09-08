@@ -31,3 +31,34 @@ constant mapping explicitly ("two"→2 … "six"→6, "a week"→7 …); the
 sonnet blocks were not re-asked (readings are collected once). The
 cost lands in REACH per corpus and is reported; no reading was
 changed after the fact.
+
+## Note V3 — SEALED A2 wrongs, M-sonnet (12 of 863; read after the run; nothing relabelled)
+
+- **Gold errata / format (4):** a0375 (7 sets × 7 colours × 6 = 294;
+  gold 42 = 7×6), a1332 (reading 2/5 = 0.4; corpus answer "5/2"),
+  a1349 (perimeter 2·76 + 42 + 2·42 = 278; corpus formula treats 76
+  as a perimeter, gold 90), g0454 (Marin and Nancy each 4/day × 30
+  = 240; gold 150).
+- **Rounding (4):** a1979, a1983, a1984, a1989 — means; reading exact
+  (16.2857…), gold rounded to one decimal (16.3). R10 near-miss.
+- **Unit convention (1):** a0175 (46 cents vs $0.46).
+- **Interpretation conventions (2):** a1412 (does the father age
+  during the 15 years: 45 vs 75), g0012 (break-even year 12 vs first
+  earning year 13).
+- **Genuine misreading (1):** g1035 — bottles every 3 ft on a 24 ft
+  driveway, 5 s per gap: reading counts 8 gaps (40), gold 7 (35). A
+  fencepost error the reading and the model's own answer shared.
+By-gold FALSE-ADMIT 12/863 = 1.39%; GENUINE-WRONG 1 (0.12%).
+SAFETY-GEN fails by one item; the letter follows.
+
+## Note V4 — SEALED A2 wrongs, M-haiku (7 of 811)
+
+Gold errata (3): a0375, a1349, g0454 (as above). Conventions (2):
+a0185 (cents vs dollars), a2261 (whether the host counts: gold says
+no here, though DEV g0590's gold said yes). Genuine (1): g0790 —
+3/5 of 10 groups × 9 members × 2 shells = 108; reading dropped the
+members per group (12). Haiku's readings are 89.4% correct vs
+sonnet's 95.9%; the engine-only rule A1 admits 47 wrong of 852 for
+haiku vs 29 of 882 for sonnet — the same-model answer is what carries
+the small model to 7 (H9: scale monotone in reading quality; the
+gates alone are not enough at any scale).
