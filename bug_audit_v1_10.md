@@ -125,3 +125,11 @@ the sealed run inherits it. The D-arm baseline before the fix:
 ACQ 142,653 non-authored items, 48,171 exact serves, 1 genuine wrong
 (this item), P1 27,913/0, P2 16,240/0 true, P3 4,017/0 true, T1/T2/T3′
 0 served, PC 0 served, D 0 served.
+
+**B40b.** The unit-cue gate did not stop the Tim item (its key carries
+`unit:hours`); the rerun baseline (`base2`) served it again — the ONLY
+wrong in 47,866 exact serves over 142,653 ACQ items. The V1.6 library
+contributes 6,932 P1 serves and 1 T3 serve in ACQ. Gate changed to the
+ask type: the library is consulted only for `other`/`ratio` asks
+(every P1–P3 item; 364 of 3,024 T3 items remain eligible) and never
+for `count`/`amount` story asks. Baseline re-run as `base3`.

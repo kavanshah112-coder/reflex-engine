@@ -233,7 +233,7 @@ def exact(item, lib):
             r = E["ask16"](text, item["id"])
             if r["status"] == "SERVED":
                 return r["value"], "exact:v16:" + r["path"]
-            if r["status"] == "ESCALATED" and "unit:" in (item.get("key") or ""):
+            if r["status"] == "ESCALATED" and (item.get("key") or "other").split("|")[0] in ("other", "ratio"):
                 # B40: the V1.6 minted library is scientific-domain (dimensioned). It fired once
                 # on a GSM8K-train item ("Tim sleeps 6 hours per day...") via reflex16:sonnet:
                 # conv_hour_to_minute and served 360 for gold 50. It is consulted only when the
