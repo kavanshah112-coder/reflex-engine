@@ -84,3 +84,9 @@
 {"agent": "author_T4_haiku_w06", "model": "haiku", "role": "author", "split": "all", "tier": "T4", "items": 200, "subagent_tokens": 137355, "tool_uses": 17, "duration_ms": 476823}
 {"agent": "author_T4_haiku_w07", "model": "haiku", "role": "author", "split": "all", "tier": "T4", "items": 200, "subagent_tokens": 116312, "tool_uses": 24, "duration_ms": 260882}
 {"agent": "author_P4_haiku_w06", "model": "haiku", "role": "author", "split": "all", "tier": "P4", "items": 200, "subagent_tokens": 157635, "tool_uses": 31, "duration_ms": 280018}
+{"agent": "ansq_acq_sonnet_jD", "model": "sonnet", "role": "answer", "split": "acq", "tier": "PC", "items": 200, "subagent_tokens": 91122, "tool_uses": 17, "duration_ms": 68452}
+{"agent": "ansq_acq_haiku_jF", "model": "haiku", "role": "answer", "split": "acq", "tier": "T1+T2", "items": 200, "subagent_tokens": 71647, "tool_uses": 16, "duration_ms": 112962}
+{"agent": "readq_acq_sonnet_T1b_T2a", "model": "sonnet", "role": "reading", "split": "acq", "tier": "T1+T2", "items": 200, "subagent_tokens": 171521, "tool_uses": 211, "duration_ms": 432723}
+{"agent": "ansq_acq_fable_jD", "model": "fable", "role": "answer", "split": "acq", "tier": "PC", "items": 200, "subagent_tokens": 82537, "tool_uses": 16, "duration_ms": 80412}
+{"agent": "ansq_acq_opus_jD", "model": "opus", "role": "answer", "split": "acq", "tier": "PC", "items": 200, "subagent_tokens": 86726, "tool_uses": 16, "duration_ms": 112778}
+{"agent": "readq_acq_opus_T1b_T2a", "model": "opus", "role": "reading", "split": "acq", "tier": "T1+T2", "items": 200, "subagent_tokens": 150515, "tool_uses": 208, "duration_ms": 385717}
