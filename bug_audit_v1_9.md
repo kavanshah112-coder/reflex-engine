@@ -97,3 +97,49 @@ and the donor's structure says nothing about the recipient's
 (`other|1|expr`, `count|2|unit:$,unit:$` fire the wrong plan).
 The cue key does not determine the reading; ladder A is out; the
 readings are one-phrasing reflexes. No item was ever served.
+
+## Note V7 — SEALED A2 wrongs, M-fable (11 of 954); and the fable answer block relaunch
+
+Gold errata (2): a1349, g0454. Rounding (4): a1979, a1983, a1984,
+a1989. Unit (1): a0175. Conventions (3): a1412, g1161 (as V5), a2105
+(florist: "2 lb for 9 days and then on the final day the normal
+amount plus 4" — reading treats the final day as a tenth day, 24;
+gold counts it among the nine, 22; the own answer agrees). Genuine
+(1): g0796 — HR hires 20/month on 200, $4,000/employee/month, "total
+paid after three months": reading pays the final workforce once
+(260 × 4,000 = 1,040,000); gold sums three monthly payrolls
+(220+240+260) × 4,000 = 2,880,000. The model's own answer shares the
+misread (shared prior, R1). Fable: READING-CORRECT 97.6%, G-P6
+false-abstain 9.4%, GATE-COST 13.6%, A1 962/18.
+
+Process: fable answer batches 00–11 were reported written by the
+first answer agent but were not on disk when the arm was reconciled
+(the other 59 files were). The block was launched once more with the
+same prompt before scoring; every file was then present, every
+batch's id set matched its batch file, 0 "?" answers. No file was
+overwritten; M-fable SEALED was scored once, after the recount.
+Reuse (fable): library 954, pure keys 134, would-serve 38, WRONG 19
+— the V6 finding on a fourth arm.
+
+## Note V8 — The honesty gates bought nothing by gold on the large arms
+
+A2 ⊆ A0 by construction. Wrongs removed by G-P6 + rules (A0 − A2):
+sonnet 0 of 12, opus 0 of 13, fable 1 of 12 (g0814), haiku 12 of 19
+(a1147, a1461, a1649…a1689 — a run of ASDiv items where haiku's
+readings misuse word quantities). Cost: 13–17% of A0's admissions.
+G-P6 kills / of which correct: 145/142, 108/108, 102/80, 105/102.
+The filter that removes wrongs on every arm is agreement with the
+model's own answer (A1 − A2: 17, 4, 40, 7). The gates were designed
+from S1's sonnet/haiku pairing (where G-P6 removed 7 of 20); with
+the same model in both roles, the wrongs that survive are shared
+misreads and conventions that no lexical gate can see. Reported
+prominently in the final report; nothing tuned after the sealed run.
+
+## Note V9 — controls19v's S1-battery call rewrote results/v18/controls18.json
+
+`reader19v.py controls` re-runs the V1.8 batteries as its
+`s1_batteries` check; that call writes `results/v18/controls18.json`
+and left it truncated (harvest_neg block dropped) in the working
+tree. The file is a V1.8 artifact (tag v1.8-final); it was restored
+from git before the V1.9 tag. No V1.9 number depends on it; the V1.9
+control record is `results/v19/controls19v.json`.
