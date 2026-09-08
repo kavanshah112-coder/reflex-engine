@@ -133,3 +133,26 @@ contributes 6,932 P1 serves and 1 T3 serve in ACQ. Gate changed to the
 ask type: the library is consulted only for `other`/`ratio` asks
 (every P1–P3 item; 364 of 3,024 T3 items remain eligible) and never
 for `count`/`amount` story asks. Baseline re-run as `base3`.
+
+## N10 — session rate limit (2026-09-08 ~19:30 IST, reset 20:30): 20 bridge agents terminated mid-job
+Every running agent died with HTTP 429. Files already written were
+kept; partial JSON files (haiku P4 032, 055, 056, 057 unparseable;
+haiku P4 007, 029–031 and haiku T4 024, 048, 065–070 with missing ids)
+are treated as absent and re-authored — the only case in the arc where
+a bridge file is overwritten, and only because it is not valid data.
+Tokens of the killed agents are not in `usage.jsonl` (the harness
+reports usage only on completion); TOKENS/QUERY is computed from
+completed jobs only. Reconciliation (`author_*` vs `authored_*`,
+`ansq_*` vs `ans_*`, `readq_*` vs `read_*/reading_*.json`) drives
+every relaunch; nothing is launched twice for an id that already has a
+file.
+
+**Cut decision (spec §11.2 cut order, applied now):** authoring
+throughput is ~8 batches per 17 min per large-model agent; 600 batches
+remained. P4 authoring stops at what exists (≈5,100 of 10,000 items,
+above the 4k cut); T4 continues to 8,000 items (320 batches) and stops.
+Unauthored T4/P4 items have no text and are simply absent from every
+split; the effective workload is reported with the realised sizes.
+
+**Baseline after B39/B40b (`base3`):** ACQ 142,653 non-authored items,
+48,170 exact serves, 0 wrong, 0 PC served, 0 distractor served.
