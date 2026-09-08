@@ -49,3 +49,17 @@ recomputed by chain_witness17.replay(plan); the rounded value is kept
 as `gold_rounded`; HASHES.json updated with a note; builder patched.
 No sealed run had happened. T-tier golds are integers and unaffected.
 Lesson (again): a grader disagreement is a claim about BOTH sides.
+
+## N5 — distractor texts: sentence split on abbreviations
+`gen_distractor` cut the source story at its last ". " to drop the
+numeric ask; names like "Ms. Okafor" / "Mr. Lopez" made some D items
+keep a truncated numeric fragment before the non-numeric ask ("How
+many cookies does Ms. Write one sentence about what happens next.").
+They remain no-answer items (gold_type none): a served value is still
+a SAFETY2 hit by construction. Left as built (already sampled and
+answered); the wart is reported, not repaired.
+
+## N6 — bridge protocol deviation (harmless)
+The sonnet D-tier answer agent wrote its 8 files with a Bash/Python
+snippet instead of the Write tool and disclosed it. Contents verified
+(200 × NONE). Logged; no re-run.

@@ -3,3 +3,4 @@
 {"agent": "ctl_empty", "model": "opus", "role": "answer", "split": "ctl_empty", "items": 0, "subagent_tokens": 58488, "tool_uses": 2, "duration_ms": 7445}
 {"agent": "ctl_empty", "model": "haiku", "role": "answer", "split": "ctl_empty", "items": 0, "subagent_tokens": 47005, "tool_uses": 2, "duration_ms": 7691}
 {"agent": "ctl_empty", "model": "fable", "role": "answer", "split": "ctl_empty", "items": 0, "subagent_tokens": 58748, "tool_uses": 2, "duration_ms": 11937}
+{"agent": "ansq_acq_sonnet_j00", "model": "sonnet", "role": "answer", "split": "acq", "tier": "D", "items": 200, "subagent_tokens": 85074, "tool_uses": 11, "duration_ms": 64342, "note": "agent used Bash to bulk-write; contents verified NONE x200"}
