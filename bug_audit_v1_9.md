@@ -75,3 +75,25 @@ the original 80 m² — 140 — where gold reads it against the remaining
 Opus: READING-CORRECT 98.4%, G-P6 false-abstain 9.8%, GATE-COST
 13.4%, A1 968/17 — the highest reading quality of the four arms; A2
 13 wrong of which 10 are gold format/errata/rounding, 3 conventions.
+
+## Note V6 — REUSE measured (nothing served): cue-keyed reuse is UNSAFE
+
+`reader19v.py reuse` binds each SEALED item to the A2-admitted reading
+of another item sharing its cue key (ask type, count, roles18 cues),
+pure keys only, full gate stack, then grades by gold.
+
+| arm | library | keys | pure | candidates | impure skipped | served | correct | WRONG |
+|---|---|---|---|---|---|---|---|---|
+| M-sonnet | 1,811 | 336 | 249 | 1,496 | 1,407 | 35 | 22 | **13** |
+| M-haiku | 811 | 137 | 110 | 1,400 | 1,086 | 76 | 18 | **58** |
+| M-opus | 962 | 182 | 134 | 1,449 | 1,383 | 40 | 22 | **18** |
+
+REUSE-WRONG > 0 on every arm (37–76% of served). Two facts explain it:
+(1) 94–95% of items with a candidate are on impure keys, as H6
+predicted (CUE-PURITY on DEV 8.3%); (2) "pure" is vacuous for
+singleton keys — a key with one reading has one signature by
+definition, so the "pure" library is mostly keys with a single donor,
+and the donor's structure says nothing about the recipient's
+(`other|1|expr`, `count|2|unit:$,unit:$` fire the wrong plan).
+The cue key does not determine the reading; ladder A is out; the
+readings are one-phrasing reflexes. No item was ever served.

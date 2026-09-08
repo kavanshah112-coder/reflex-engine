@@ -1,0 +1,146 @@
+{
+ "model": "opus",
+ "library": 962,
+ "pure_keys": 134,
+ "keys": 182,
+ "counts": {
+  "items_with_candidate": 1449,
+  "impure_key_skipped": 1383,
+  "served": 40,
+  "correct": 22,
+  "count_mismatch": 4,
+  "WRONG": 18,
+  "abstain_rules": 18,
+  "abstain_gate_kill": 4
+ },
+ "wrong": [
+  {
+   "id": "a0525",
+   "donor": "a0530",
+   "key": "count|2|unit:$,unit:$",
+   "value": -13.0,
+   "gold": "13"
+  },
+  {
+   "id": "a0530",
+   "donor": "a0525",
+   "key": "count|2|unit:$,unit:$",
+   "value": -18.0,
+   "gold": "18"
+  },
+  {
+   "id": "a0775",
+   "donor": "a0525",
+   "key": "count|2|unit:$,unit:$",
+   "value": -17.0,
+   "gold": "9"
+  },
+  {
+   "id": "a1134",
+   "donor": "a2243",
+   "key": "amount|3|bare,unit:hours,bare",
+   "value": -60.0,
+   "gold": "12.5"
+  },
+  {
+   "id": "a1304",
+   "donor": "a1398",
+   "key": "other|1|unit:years",
+   "value": 1.6666666666666667,
+   "gold": "7"
+  },
+  {
+   "id": "a1336",
+   "donor": "a1341",
+   "key": "other|1|unit:cm",
+   "value": 9.0,
+   "gold": "18"
+  },
+  {
+   "id": "a1341",
+   "donor": "a1336",
+   "key": "other|1|unit:cm",
+   "value": 14.0,
+   "gold": "7"
+  },
+  {
+   "id": "a1358",
+   "donor": "a0525",
+   "key": "count|2|unit:$,unit:$",
+   "value": 320.0,
+   "gold": "5"
+  },
+  {
+   "id": "a1369",
+   "donor": "a0525",
+   "key": "count|2|unit:$,unit:$",
+   "value": 165.0,
+   "gold": "12"
+  },
+  {
+   "id": "a1374",
+   "donor": "a0525",
+   "key": "count|2|unit:$,unit:$",
+   "value": 99.0,
+   "gold": "10"
+  },
+  {
+   "id": "a1459",
+   "donor": "a1272",
+   "key": "other|2|unit:$,bare",
+   "value": -4996.0,
+   "gold": "1000"
+  },
+  {
+   "id": "a1479",
+   "donor": "a1272",
+   "key": "other|2|unit:$,bare",
+   "value": -982.0,
+   "gold": "110"
+  },
+  {
+   "id": "a1588",
+   "donor": "a0525",
+   "key": "count|2|unit:$,unit:$",
+   "value": -616.0,
+   "gold": "155"
+  },
+  {
+   "id": "a1825",
+   "donor": "a0525",
+   "key": "count|2|unit:$,unit:$",
+   "value": -12.0,
+   "gold": "7"
+  },
+  {
+   "id": "a1984",
+   "donor": "a1986",
+   "key": "other|7|bare,bare,bare,bare,bare,bare,bare",
+   "value": 100.14285714285714,
+   "gold": "100.1"
+  },
+  {
+   "id": "a2243",
+   "donor": "a1134",
+   "key": "amount|3|bare,unit:hours,bare",
+   "value": 6.4,
+   "gold": "16"
+  },
+  {
+   "id": "g1274",
+   "donor": "g1075",
+   "key": "count|4|unit:$,unit:$,bare,unit:$",
+   "value": 508.0,
+   "gold": "38"
+  },
+  {
+   "id": "g1279",
+   "donor": "g0671",
+   "key": "amount|5|bare,bare,unit:$,unit:$,unit:$",
+   "value": -74.0,
+   "gold": "180"
+  }
+ ],
+ "REUSE_SERVED": 40,
+ "REUSE_WRONG": 18
+}

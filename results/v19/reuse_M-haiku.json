@@ -1,0 +1,426 @@
+{
+ "model": "haiku",
+ "library": 811,
+ "pure_keys": 110,
+ "keys": 137,
+ "counts": {
+  "items_with_candidate": 1400,
+  "abstain_rules": 228,
+  "impure_key_skipped": 1086,
+  "served": 76,
+  "WRONG": 58,
+  "correct": 18,
+  "count_mismatch": 7,
+  "abstain_gate_kill": 3
+ },
+ "wrong": [
+  {
+   "id": "a0083",
+   "donor": "a0193",
+   "key": "amount|1|bare",
+   "value": 82.0,
+   "gold": "36"
+  },
+  {
+   "id": "a0193",
+   "donor": "a0083",
+   "key": "amount|1|bare",
+   "value": 70.0,
+   "gold": "65"
+  },
+  {
+   "id": "a0314",
+   "donor": "a1333",
+   "key": "other|2|unit:m,unit:m",
+   "value": -368.5,
+   "gold": "184"
+  },
+  {
+   "id": "a0401",
+   "donor": "a2100",
+   "key": "amount|3|bare,unit:$,unit:$",
+   "value": 55.0,
+   "gold": "50"
+  },
+  {
+   "id": "a0404",
+   "donor": "a1390",
+   "key": "amount|3|unit:$,bare,unit:$",
+   "value": 0.0,
+   "gold": "800"
+  },
+  {
+   "id": "a0525",
+   "donor": "a0530",
+   "key": "count|2|unit:$,unit:$",
+   "value": -13.0,
+   "gold": "13"
+  },
+  {
+   "id": "a0530",
+   "donor": "a0525",
+   "key": "count|2|unit:$,unit:$",
+   "value": -18.0,
+   "gold": "18"
+  },
+  {
+   "id": "a0546",
+   "donor": "a0003",
+   "key": "count|0|",
+   "value": 6.0,
+   "gold": "8"
+  },
+  {
+   "id": "a0610",
+   "donor": "a0394",
+   "key": "amount|2|bare,unit:$",
+   "value": 19.2,
+   "gold": "1.2"
+  },
+  {
+   "id": "a0655",
+   "donor": "a0665",
+   "key": "amount|4|bare,bare,unit:$,unit:$",
+   "value": 114.0,
+   "gold": "102"
+  },
+  {
+   "id": "a0665",
+   "donor": "a0655",
+   "key": "amount|4|bare,bare,unit:$,unit:$",
+   "value": -6.0,
+   "gold": "30"
+  },
+  {
+   "id": "a0680",
+   "donor": "g0024",
+   "key": "other|2|unit:$,unit:%",
+   "value": 750.0,
+   "gold": "480"
+  },
+  {
+   "id": "a0775",
+   "donor": "a0525",
+   "key": "count|2|unit:$,unit:$",
+   "value": -17.0,
+   "gold": "9"
+  },
+  {
+   "id": "a0831",
+   "donor": "a0837",
+   "key": "amount|6|expr,unit:g,expr,expr,unit:kg,unit:g",
+   "value": 50.0,
+   "gold": "350"
+  },
+  {
+   "id": "a0834",
+   "donor": "a0837",
+   "key": "amount|6|expr,unit:g,expr,expr,unit:kg,unit:g",
+   "value": 50.0,
+   "gold": "150"
+  },
+  {
+   "id": "a1038",
+   "donor": "a1466",
+   "key": "other|2|addend,bare",
+   "value": 1.8775510204081634,
+   "gold": "47"
+  },
+  {
+   "id": "a1134",
+   "donor": "a2243",
+   "key": "amount|3|bare,unit:hours,bare",
+   "value": -60.0,
+   "gold": "12.5"
+  },
+  {
+   "id": "a1272",
+   "donor": "a1459",
+   "key": "other|2|unit:$,bare",
+   "value": 0.14285714285714285,
+   "gold": "11"
+  },
+  {
+   "id": "a1302",
+   "donor": "a1389",
+   "key": "other|1|expr",
+   "value": 2.6666666666666665,
+   "gold": "5"
+  },
+  {
+   "id": "a1322",
+   "donor": "a1389",
+   "key": "other|1|expr",
+   "value": 13.0,
+   "gold": "4"
+  },
+  {
+   "id": "a1333",
+   "donor": "a0314",
+   "key": "other|2|unit:m,unit:m",
+   "value": -14.0,
+   "gold": "4"
+  },
+  {
+   "id": "a1336",
+   "donor": "a1341",
+   "key": "other|1|unit:cm",
+   "value": 9.0,
+   "gold": "18"
+  },
+  {
+   "id": "a1341",
+   "donor": "a1336",
+   "key": "other|1|unit:cm",
+   "value": 14.0,
+   "gold": "7"
+  },
+  {
+   "id": "a1358",
+   "donor": "a0525",
+   "key": "count|2|unit:$,unit:$",
+   "value": 320.0,
+   "gold": "5"
+  },
+  {
+   "id": "a1369",
+   "donor": "a0525",
+   "key": "count|2|unit:$,unit:$",
+   "value": 165.0,
+   "gold": "12"
+  },
+  {
+   "id": "a1374",
+   "donor": "a0525",
+   "key": "count|2|unit:$,unit:$",
+   "value": 99.0,
+   "gold": "10"
+  },
+  {
+   "id": "a1390",
+   "donor": "a2094",
+   "key": "amount|3|unit:$,bare,unit:$",
+   "value": 52.0,
+   "gold": "4"
+  },
+  {
+   "id": "a1412",
+   "donor": "g0278",
+   "key": "other|2|expr,unit:years",
+   "value": 35.0,
+   "gold": "75"
+  },
+  {
+   "id": "a1425",
+   "donor": "a1308",
+   "key": "other|2|expr,expr",
+   "value": -3.0,
+   "gold": "53"
+  },
+  {
+   "id": "a1456",
+   "donor": "a1389",
+   "key": "other|1|expr",
+   "value": 81.0,
+   "gold": "80"
+  },
+  {
+   "id": "a1459",
+   "donor": "a1272",
+   "key": "other|2|unit:$,bare",
+   "value": -4996.0,
+   "gold": "1000"
+  },
+  {
+   "id": "a1474",
+   "donor": "a0314",
+   "key": "other|2|unit:m,unit:m",
+   "value": 82.0,
+   "gold": "17"
+  },
+  {
+   "id": "a1479",
+   "donor": "a1272",
+   "key": "other|2|unit:$,bare",
+   "value": -982.0,
+   "gold": "110"
+  },
+  {
+   "id": "a1494",
+   "donor": "a0083",
+   "key": "amount|1|bare",
+   "value": 120.0,
+   "gold": "12"
+  },
+  {
+   "id": "a1499",
+   "donor": "a0314",
+   "key": "other|2|unit:m,unit:m",
+   "value": 55.0,
+   "gold": "15"
+  },
+  {
+   "id": "a1508",
+   "donor": "a0083",
+   "key": "amount|1|bare",
+   "value": 800.0,
+   "gold": "314"
+  },
+  {
+   "id": "a1530",
+   "donor": "a0083",
+   "key": "amount|1|bare",
+   "value": 32.0,
+   "gold": "4"
+  },
+  {
+   "id": "a1588",
+   "donor": "a0525",
+   "key": "count|2|unit:$,unit:$",
+   "value": -616.0,
+   "gold": "155"
+  },
+  {
+   "id": "a1825",
+   "donor": "a0525",
+   "key": "count|2|unit:$,unit:$",
+   "value": -12.0,
+   "gold": "7"
+  },
+  {
+   "id": "a1984",
+   "donor": "a1986",
+   "key": "other|7|bare,bare,bare,bare,bare,bare,bare",
+   "value": 100.14285714285714,
+   "gold": "100.1"
+  },
+  {
+   "id": "a2074",
+   "donor": "a0003",
+   "key": "count|0|",
+   "value": 6.0,
+   "gold": "24"
+  },
+  {
+   "id": "a2081",
+   "donor": "a0314",
+   "key": "other|2|unit:m,unit:m",
+   "value": -3.0,
+   "gold": "10"
+  },
+  {
+   "id": "a2094",
+   "donor": "a1390",
+   "key": "amount|3|unit:$,bare,unit:$",
+   "value": -0.2,
+   "gold": "47"
+  },
+  {
+   "id": "a2100",
+   "donor": "g0164",
+   "key": "amount|3|bare,unit:$,unit:$",
+   "value": 25.0,
+   "gold": "39"
+  },
+  {
+   "id": "a2243",
+   "donor": "a1134",
+   "key": "amount|3|bare,unit:hours,bare",
+   "value": 6.4,
+   "gold": "16"
+  },
+  {
+   "id": "a2250",
+   "donor": "a2251",
+   "key": "amount|3|bare,bare,unit:$",
+   "value": -10.0,
+   "gold": "10"
+  },
+  {
+   "id": "a2251",
+   "donor": "a2250",
+   "key": "amount|3|bare,bare,unit:$",
+   "value": -15.0,
+   "gold": "15"
+  },
+  {
+   "id": "a2258",
+   "donor": "a2250",
+   "key": "amount|3|bare,bare,unit:$",
+   "value": -27.0,
+   "gold": "27"
+  },
+  {
+   "id": "g0134",
+   "donor": "a0394",
+   "key": "amount|2|bare,unit:$",
+   "value": 60.0,
+   "gold": "720"
+  },
+  {
+   "id": "g0164",
+   "donor": "a2100",
+   "key": "amount|3|bare,unit:$,unit:$",
+   "value": 195.0,
+   "gold": "15"
+  },
+  {
+   "id": "g0226",
+   "donor": "a1985",
+   "key": "other|5|bare,bare,bare,bare,bare",
+   "value": 22.4,
+   "gold": "33"
+  },
+  {
+   "id": "g0258",
+   "donor": "a1390",
+   "key": "amount|3|unit:$,bare,unit:$",
+   "value": 0.1875,
+   "gold": "6"
+  },
+  {
+   "id": "g0274",
+   "donor": "a0655",
+   "key": "amount|4|bare,bare,unit:$,unit:$",
+   "value": -1600.0,
+   "gold": "3200"
+  },
+  {
+   "id": "g0373",
+   "donor": "g0024",
+   "key": "other|2|unit:$,unit:%",
+   "value": 666666.6666666666,
+   "gold": "240000"
+  },
+  {
+   "id": "g0752",
+   "donor": "a0394",
+   "key": "amount|2|bare,unit:$",
+   "value": 400.0,
+   "gold": "240"
+  },
+  {
+   "id": "g1094",
+   "donor": "a1985",
+   "key": "other|5|bare,bare,bare,bare,bare",
+   "value": 3.8,
+   "gold": "25"
+  },
+  {
+   "id": "g1279",
+   "donor": "g0671",
+   "key": "amount|5|bare,bare,unit:$,unit:$,unit:$",
+   "value": -74.0,
+   "gold": "180"
+  },
+  {
+   "id": "g1293",
+   "donor": "a0394",
+   "key": "amount|2|bare,unit:$",
+   "value": 10000.0,
+   "gold": "140000"
+  }
+ ],
+ "REUSE_SERVED": 76,
+ "REUSE_WRONG": 58
+}

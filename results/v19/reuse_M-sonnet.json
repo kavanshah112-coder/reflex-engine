@@ -1,0 +1,111 @@
+{
+ "model": "sonnet",
+ "library": 1811,
+ "pure_keys": 249,
+ "keys": 336,
+ "counts": {
+  "items_with_candidate": 1496,
+  "impure_key_skipped": 1407,
+  "served": 35,
+  "correct": 22,
+  "abstain_rules": 40,
+  "count_mismatch": 10,
+  "WRONG": 13,
+  "abstain_gate_kill": 4
+ },
+ "wrong": [
+  {
+   "id": "a1302",
+   "donor": "a1389",
+   "key": "other|1|expr",
+   "value": 2.6666666666666665,
+   "gold": "5"
+  },
+  {
+   "id": "a1322",
+   "donor": "a1389",
+   "key": "other|1|expr",
+   "value": 13.0,
+   "gold": "4"
+  },
+  {
+   "id": "a1336",
+   "donor": "a1341",
+   "key": "other|1|unit:cm",
+   "value": 9.0,
+   "gold": "18"
+  },
+  {
+   "id": "a1341",
+   "donor": "a1336",
+   "key": "other|1|unit:cm",
+   "value": 14.0,
+   "gold": "7"
+  },
+  {
+   "id": "a1403",
+   "donor": "a1293",
+   "key": "other|2|unit:years,unit:years",
+   "value": -21.666666666666668,
+   "gold": "45"
+  },
+  {
+   "id": "a1416",
+   "donor": "a1293",
+   "key": "other|2|unit:years,unit:years",
+   "value": -12.666666666666666,
+   "gold": "37"
+  },
+  {
+   "id": "a1456",
+   "donor": "a1389",
+   "key": "other|1|expr",
+   "value": 81.0,
+   "gold": "80"
+  },
+  {
+   "id": "a1983",
+   "donor": "a1988",
+   "key": "other|6|bare,bare,bare,bare,bare,bare",
+   "value": 14.166666666666666,
+   "gold": "14.2"
+  },
+  {
+   "id": "a1984",
+   "donor": "a1986",
+   "key": "other|7|bare,bare,bare,bare,bare,bare,bare",
+   "value": 100.14285714285714,
+   "gold": "100.1"
+  },
+  {
+   "id": "a2034",
+   "donor": "a1265",
+   "key": "other|2|unit:$,unit:$",
+   "value": -2.0,
+   "gold": "9"
+  },
+  {
+   "id": "a2082",
+   "donor": "a1034",
+   "key": "count|2|unit:s,unit:s",
+   "value": 4.0,
+   "gold": "168"
+  },
+  {
+   "id": "g0931",
+   "donor": "a1293",
+   "key": "other|2|unit:years,unit:years",
+   "value": 30.0,
+   "gold": "50"
+  },
+  {
+   "id": "g1279",
+   "donor": "g0671",
+   "key": "amount|5|bare,bare,unit:$,unit:$,unit:$",
+   "value": -74.0,
+   "gold": "180"
+  }
+ ],
+ "REUSE_SERVED": 35,
+ "REUSE_WRONG": 13
+}
