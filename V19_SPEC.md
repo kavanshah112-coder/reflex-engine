@@ -1,15 +1,15 @@
 # V1.9 SPEC — Reading Reflexes: One Model, an Honest Engine
 
-## Can an escalation-feedback loop with ONE model admit readings of natural-language questions with zero genuine wrong admissions — when the engine, not a second model, carries the honesty — and can an admitted reading serve a question phrased differently from its donor?
+## Can an escalation-feedback loop built on ONE model admit readings of natural-language questions with zero genuine wrong admissions — the engine carrying the safety, the escalation's own answer serving as the probation value — and can an admitted reading serve a question phrased differently from its donor?
 
-**STATUS: DRAFT v2 (2026-09-08) — §12 decisions OPEN for the user.
-Freezes as tag `v1.9-plan` on the user's word. Designed from the S1
-pre-study (branch `v1.9-reading`, tag `s1-plan`, `S1_SPEC.md`,
-`bug_audit_s1.md`). Draft v1's second-model-family veto is withdrawn:
-the architecture is one model that finds structure and an engine that
-does everything else, and the safety must live in the engine.**
-§7–§10 and the §11 risk register never change after the first sealed
-run; amendments are dated blocks.
+**STATUS: DRAFT v3 (2026-09-08) for the user's review — §12 decisions
+OPEN. Freezes as tag `v1.9-plan` on the user's word.** Designed from
+the S1 pre-study (branch `v1.9-reading`, tag `s1-plan`, `S1_SPEC.md`,
+`bug_audit_s1.md`). **Architecture constraint, fixed by the user: one
+model.** The model that answered the escalation is the model that
+proposes the reading; no second model, no second family, no
+diagnostic arm with another model. §7–§10 and the §11 risk register
+never change after the first sealed run; amendments are dated blocks.
 
 Built on V0.1–V1.8 and S1. No prior version, tag, snapshot, dataset,
 report or log is modified. Full arc protocol: pre-registration,
@@ -20,208 +20,208 @@ only; no API spend; the live key in `.env` is never read.
 
 ---
 
-## 1. What S1 measured, and what it means under one model
+## 1. What S1 established
 
-S1 (SEALED 1,200, run once): readings reach 66.3% of real GSM8K/ASDiv
-items and are 97.5% correct; admission by agreement with a direct
-answer admitted 703 and was wrong by gold 8 times (1.14%): 3 corpus
-gold errors, 2 phrasing conventions, 1 integer-division semantics,
-2 genuine shared misreadings (0.28%). Zero readings refired on any
-other question at any skeleton abstraction level.
+S1 ran the loop offline against corpus golds on 1,800 GSM8K/ASDiv
+items (sonnet proposed readings; haiku answered; SEALED 1,200 scored
+once). What carries into V1.9:
 
-Draft v1 proposed a second model family as a veto. Withdrawn: the
-reflex engine is ONE model structure. Re-reading the S1 wrongs under
-that constraint, every genuine misread *dropped a stated quantity
-that happened to be a word*: "thrice", "five times", "Chase and Rider
-… they". The arc already has the rule for digits — B28 / G-P4:
-**an unconsumed stated quantity is an incomplete read, and an
-incomplete read never serves.** V1.9 extends it to words.
+| S1 finding (SEALED unless noted) | number |
+|---|---|
+| readings that pass the gates and execute (REACH) | 66.3% |
+| executed readings correct vs gold | 97.5% |
+| admitted by agreement with a direct answer | 703 |
+| wrong by gold among admitted | 8 = 1.14% (3 gold errata, 2 conventions, 1 integer semantics, **2 genuine misreads = 0.28%**) |
+| correct readings rejected by disagreement | 81 |
+| skeleton refires among 1,200 items, at three abstraction levels | 0 / 0 / 0 |
 
-Measured on S1's own rows (crude prototype, no tuning; §4.3 is the
-frozen form): a lexical-honesty gate kills 5 of the 8 sealed by-gold
-wrongs — the genuine "thrice / five times" misread and all three
-gold-errata cases — and 104 of 786 correct readings (13.2%). The
-three sealed survivors are exactly the three structural classes S1
-named (geometry "around", ratio ask, integer division). The DEV
-plural-agents misread survives the prototype only because its factor
-2 coincides with "twice"; the cardinality form (one word, one literal
-occurrence — G-P4′'s matching) closes it.
-
-Measured on S1 SEALED with NO agreement signal — the proven pipeline
-(gate, witness, abstain) alone — and then each engine-only addition:
+And the re-analysis that designs this version — the proven pipeline
+(gate, witness, abstain) applied to S1's sealed readings with NO
+agreement signal, then each engine-only addition, then the
+escalation's own answer:
 
 | stage | served | wrong |
 |---|---|---|
 | gates + witness (V1.8 stack, reading mode) | 796 | 20 (2.5%) |
-| + G-P6 lexical honesty | 671 | 13 (1.9%) |
-| + structural abstentions | 638 | 6 (0.94%) |
-| + reading reproduces the escalation's own answer | 570 | **0** |
+| + G-P6 lexical honesty (word quantities, plural agents) | 671 | 13 (1.9%) |
+| + four structural abstentions | 638 | 6 (0.94%) |
+| + reading must reproduce the escalation's answer | 570 | **0** |
 
-The six survivors of every engine-only rule are interpretive
-misreads — the class V1.3 proved dimensional and honesty gates cannot
-see, and the class generator text never contained. The escalation's
-own answer is not a second model: it is the value the user already
-received, playing the role golds played in V1.0's probation and
-V1.8's harvest. The proven pipeline always probated against a value;
-on a live escalation this is the only value there is.
-
-So the one-model design is: **the escalation's own answer is the
-probation value; the engine's honesty gates and structural
-abstentions are the safety.** No second model.
+Every genuine misread S1 found dropped a stated quantity that was a
+*word* ("thrice", "five times", "Chase and Rider … they") or fell in
+one of four structural classes (integer count, ratio ask,
+percent-base convention, "around" geometry). The six readings that
+survive every engine-only rule are interpretive — the class V1.3
+proved dimensional gates cannot see, and the class generator text
+never contained. The escalation's answer closes them on this data.
+It is not a second model: it is the value the user already received,
+playing the role golds played in V1.0's probation and V1.8's harvest.
 
 ---
 
 ## 2. Thesis
 
-> With one model proposing readings and the same escalation's answer
-> as the only agreement signal, an engine that refuses any reading
-> which leaves a stated quantity — digit OR word — unconsumed, and
-> abstains on the four structural classes S1 found, admits zero
-> genuine wrong readings at a measured reach cost. Reuse is keyed on
-> structure, not surface, and is measured before it is ever served.
+> One model answers the escalation and, asked again, proposes a
+> READING: a plan over the question's stated numbers, no values. The
+> engine binds, gates and witnesses it, refuses any reading that
+> leaves a stated quantity — digit or word — unconsumed, abstains on
+> the four structural classes, and admits the reading only if its
+> certified value reproduces the answer the same model already gave.
+> V1.9 measures, against real golds at sealed volume, whether that
+> loop admits zero genuine wrong readings, what reach the honesty
+> costs, and whether structure — not surface — recurs enough for an
+> admitted reading to serve a question it never saw.
 
 ---
 
 ## 3. What is honestly unknown
 
-**Q1 — zero genuine wrongs at what reach?** The prototype's 13%
-reach cost is on unconsumed *irrelevant* words ("four years later").
-The frozen gate may cost more or less; sealed volume decides whether
-"zero genuine" is a rate.
+**Q1 — zero genuine wrongs, one model.** S1's zero was with haiku
+answering sonnet's readings. With the same model in both roles the
+prior is shared once more; the S1 re-analysis says the engine's rules
+carry the load (0.94% before agreement), sealed volume says whether
+"zero" is a rate.
 
-**Q2 — same-model agreement's residual value.** With the gates
-carrying safety, does agreement with the escalation's answer still
-filter anything (S1: admitted-correct 98.9% vs executed 97.5%)? A
-measured secondary, not a requirement.
+**Q2 — the reach cost of honesty.** The prototype abstained on 20% of
+executable readings, mostly on irrelevant word-quantities ("four
+years later"). The frozen gate may cost more.
 
-**Q3 — does cue signature predict structure?** The phrasing-
-independent reuse key is the CUE SIGNATURE (roles18 cue per stated
-number, in order, plus ask type). Its purity is measurable on S1's
-readings at no bridge cost.
+**Q3 — does structure recur?** Surface never did. The candidate key
+is the CUE SIGNATURE (roles18 cue per stated number, in order, plus
+ask type). Whether two questions with the same key get the same plan
+— CUE-PURITY — is measurable on S1's readings before any bridge call.
 
-**Q4 — transfer wrong-fire under structural reuse.** Positional
-binding of a same-key question into a donor's plan is the B32 family;
-measured, never served.
+**Q4 — transfer wrong-fire.** Positional binding of a same-key
+question into a donor's plan is the B32 family; measured, never
+served.
 
-**Q5 — gold errata.** Three of eight S1 wrongs were the corpus's. The
-frozen by-gold metric counts them; the genuine count is the crux;
-nothing is relabelled.
+**Q5 — gold errata.** Three of eight S1 wrongs were the corpus's; the
+by-gold metric counts them, the genuine count is the crux, nothing is
+relabelled.
 
 ---
 
-## 4. Architecture
+## 4. Architecture (one model)
 
 ```
-ITEM (natural-language question; gold hidden from the model)
+ESCALATION: question Q; model M answers directly -> a (the user's answer)
   |
-  +-- PROPOSER (bridge, sonnet; opus arm optional): READING = plan
-  |     over slots {n0..nk} + structural constants. ISOLATION: the
-  |     agent receives only the batch file (numbers pre-indexed),
-  |     may not run code; reader19 validates every file.
+  +-- asynchronously, the SAME model M proposes READING(Q):
+  |     a planschema17 plan over slots {n0..nk} (Q's stated numbers
+  |     in order) + structural constants; no values, no arithmetic.
+  |     ISOLATION: M receives only {id, question, numbers}; may not
+  |     run code; reader19 validates the file; a reading that is not
+  |     exactly {"plan": ...} is a format failure.
   |
-  +-- reader19.bind -> plangate18 (reading mode) -> G-P6 (new)
-  |     -> structural abstentions (new) -> chainexec17 -> value v,
-  |     or ABSTAIN with the gate's reason.
+  +-- ENGINE: reader19.bind -> plangate18 (reading mode: G-P1..G-P5,
+  |     G-P4' usage matching) -> G-P6 lexical honesty (new) ->
+  |     structural abstentions (new) -> chainexec17 (per-step +
+  |     end witness) -> certified value v, or ABSTAIN with reason.
   |
-  +-- ANSWER: the escalation's own direct answer (same model family
-  |     as the proposer; in S1, haiku). Free in production: it is
-  |     the answer the user got.
+  +-- PROBATION VALUE: a. ADMIT iff |v - a| <= max(1e-4|a|, 1e-6).
+  |     (In production a is free: it is what the user got.)
   |
-  +-- ADMISSION (graded; A2 is the version's rule):
-  |     A0  agreement only                          (S1 baseline)
-  |     A1  G-P6 + structural abstentions, no agreement
-  |     A2  A1 + agreement
+  +-- LIBRARY: admitted READING keyed by (cue signature, ask type,
+  |     number count). Serving on a later question with the same key
+  |     = bind positionally + full gate + G-P6 + rules + witness;
+  |     MEASURED in V1.9, never served.
   |
-  +-- GRADING (offline): FALSE-ADMIT by gold with classification;
-  |     GENUINE-WRONG count; reach cost per gate and rule.
-  |
-  +-- STRUCTURAL REUSE (measured, not served): key = (cue signature,
-        ask type, number count); CUE-PURITY on DEV; REUSE-SERVED /
-        REUSE-WRONG on SEALED.
+  +-- GRADING (offline only): every stage vs corpus gold.
 ```
 
-### 4.1 The reading reflex class (S1, unchanged)
+Admission rules, all graded on the same items; **A2 is the version's
+rule**:
 
-`{"plan": planschema17 plan over slots, "key": cue signature, "donor":
-id, "proposer": model, "admission": "A2", "kind": "reading"}`.
+- **A0** agreement only (S1's rule, for continuity)
+- **A1** G-P6 + structural abstentions, no agreement (engine alone)
+- **A2** A1 + agreement with the escalation's answer
 
-### 4.2 Cue signature (Q3)
+### 4.1 The reading reflex class
 
-`roles18.analyze(text)` cue per stated number, in order, plus the ask
-type (count / amount / ratio / bool / other, frozen regex table). A
-fixed function of the text.
+`{"plan": …, "key": cue signature, "donor": id, "model": M,
+"admission": "A2", "kind": "reading"}`. No pattern, no value, no
+role requirement from roles18 (bare tokens expected).
 
-### 4.3 G-P6 — lexical honesty (the version's gate)
+### 4.2 G-P6 — lexical honesty
 
-Stated quantities are digits AND words. A frozen table maps quantity
-words to values: number words one…twenty, thirty…ninety, hundred,
-thousand; "dozen" 12; "half" 0.5, "quarter" 0.25, "third" 1/3;
-"twice"/"double(d)" 2, "thrice"/"triple(d)" 3; "<word> times" as
-its number. PLURAL-AGENT: two capitalised names joined by "and" with
-a later "they / both / together / altogether" counts as a stated 2.
-Rule: every word-quantity token must be matched to a DISTINCT literal
-occurrence in the plan (magnitude equality; a slot whose digits
-equal the word's value also counts), by the same bipartite matching
-G-P4′ uses for digits; an unmatched token kills the reading. Digit
-tokens keep G-P4 / G-P4′ as they are. Ordinals ("first", "second"),
-"one" and "a" are not quantities. False-abstain cost on DEV is a
-reported metric, never tuned away on SEALED.
+Stated quantities are digits AND words. Frozen word table: number
+words one…twenty, thirty…ninety, hundred, thousand; "dozen" 12;
+"half" 0.5, "quarter" 0.25, "third" 1/3; "twice"/"double(d)" 2,
+"thrice"/"triple(d)" 3; "<number-word> times" as its number.
+PLURAL-AGENT: two capitalised names joined by "and" with a later
+"they / both / together / altogether" is a stated 2. Rule: every
+word-quantity token must match a DISTINCT literal occurrence in the
+plan (magnitude; a slot whose digits equal the word's value counts),
+by the bipartite matching G-P4′ already uses — one token, one
+literal; an unmatched token kills the reading. "one", "a", ordinals
+and "first/second/last" are not quantities. Digit tokens keep G-P4 /
+G-P4′ unchanged.
 
-### 4.4 Structural abstentions (from the S1 anatomy)
+### 4.3 Structural abstentions
 
-- **S-INT**: count-type ask ("how many …") and v not an integer →
-  ABSTAIN.
-- **S-RATIO**: ask contains "ratio" → ABSTAIN.
-- **S-PCT**: "N% (higher|lower|more|less) than" or "N times more
-  than" in the text → ABSTAIN (base / multiplier convention
-  ambiguous).
-- **S-GEOM**: "around" with a stated diameter/radius or "circular" →
-  ABSTAIN.
+- **S-INT** — count ask ("how many …") and v not an integer → ABSTAIN
+- **S-RATIO** — "ratio" in the ask → ABSTAIN
+- **S-PCT** — "N% (higher|lower|more|less) than" or "N times more
+  than" → ABSTAIN (base convention ambiguous)
+- **S-GEOM** — "around" with a circle/diameter/radius stated → ABSTAIN
+
 Each rule: one abstaining control, one passing near-twin, and its
-false-abstain rate on DEV.
+false-abstain rate on DEV, reported.
+
+### 4.4 Cue signature and CUE-PURITY
+
+Key(Q) = (roles18 cue per stated number in order, ask type from a
+frozen regex table, number count) — a fixed function of the text.
+CUE-PURITY on DEV = share of keys whose executed readings all share
+one `planschema17.signature`. Reuse is measured on PURE keys only; a
+reading whose signature differs from every other reading of its key
+is flagged singular (possibly value-dependent) and never reused.
 
 ### 4.5 Positive controls before any counting run (B24)
 
-S1's controls; G-P6 battery (the S1 "thrice/five times" reading must
-die; the S1 plural-agents reading must die under cardinality; a
-reading consuming every word must pass; "four years later" with an
-irrelevant "four" must die — the cost is deliberate and visible);
-one control pair per structural rule; cue-signature battery
-(paraphrase pair → same key; one cue changed → different key);
-proposer-isolation battery (reader19 rejects any file not exactly
-`{"plan": …}`; agent prompt byte-identical; no code).
+S1's batteries; G-P6 battery (S1's "thrice / five times" reading must
+die; S1's "Chase and Rider" reading must die under cardinality; a
+reading consuming every word must pass; an irrelevant "four years
+later" must die — the cost is deliberate and visible); one control
+pair per structural rule; cue-signature battery (paraphrase pair →
+same key, one cue changed → different key); isolation battery
+(batch schema carries no gold or answer; agent prompt byte-identical;
+any file not exactly `{"plan": …}` rejected).
 
 ---
 
 ## 5. Datasets (frozen, hashed before any bridge call)
 
 ```
-DEV      S1's 1,800 items (exposed; readings and haiku answers exist)
-         — gates, rules, controls, purity at zero bridge cost.
-SEALED   the corpus items S1 never sampled: GSM8K test 419 + ASDiv
-         1,405 = 1,824 (or a 1,200 hashed subsample, §12); readings
-         and haiku answers collected once, scored once. Tokenizer
-         fixes (glued units, leading-dot decimals; S1 note N6)
-         applied before the batches are written.
+DEV      S1's 1,800 items (readings by sonnet exist; golds exist).
+         New for V1.9: DEV answers by the SAME model as the proposer
+         (sonnet), one bridge pass. Gates, rules, controls and
+         purity are developed here.
+SEALED   the corpus items S1 never sampled — GSM8K test 419 + ASDiv
+         1,405 = 1,824 (or a hashed 1,200 subsample, §12) — hashed;
+         tokenizer fixes (glued units "15kg", leading-dot decimals
+         "$.20"; S1 note N6) applied before the batches are written.
+         Per arm: readings and answers by ONE model, collected once,
+         scored once.
 REUSE    SEALED keyed against DEV+SEALED readings admitted under A2;
          a reading never serves its own donor.
 ```
 
+Golds live in `results/v19/data/` only; batch files carry
+`{id, question, numbers}`.
+
 ---
 
-## 6. Arms
+## 6. Arms (one model per arm, both roles)
 
-| arm | proposer | answer | admission | n |
-|---|---|---|---|---|
-| A0 | sonnet | haiku | agreement only | SEALED |
-| A1 | sonnet | — | G-P6 + rules | SEALED |
-| **A2 (primary)** | sonnet | haiku | G-P6 + rules + agreement | SEALED |
-| A2-opus | opus | haiku | as A2 | SEALED, if bridge time allows |
-| D-llama | sonnet | llama-3.1-8B (local) | diagnostic only, on whatever prefix completes | not an architecture arm |
+| arm | model (answers AND proposes) | n |
+|---|---|---|
+| **M-sonnet (primary)** | sonnet | DEV 1,800 answers; SEALED readings + answers |
+| M-opus | opus | SEALED only, if bridge time allows |
+| M-haiku | haiku | SEALED only, if bridge time allows — the scale question (does the small model read safely under this engine?) |
 
-The llama row is a diagnostic of R1 (how much a foreign veto would
-have added), explicitly outside the one-model architecture; it is
-reported, never used for admission.
+No cross-model pairing anywhere. S1's sonnet/haiku rows remain as the
+pre-study record and are not re-scored as a V1.9 arm.
 
 ---
 
@@ -229,44 +229,47 @@ reported, never used for admission.
 
 | | claim | prediction |
 |---|---|---|
-| H1 | A2 admits ZERO genuine wrong readings on SEALED | the crux; predicted from the S1 re-analysis (every genuine misread dropped a word-quantity or hit a structural class) |
-| H2 | A2's FALSE-ADMIT by gold ≤ 0.5% | uncertain — S1's errata alone were 0.43%, and G-P6 killed all three errata cases only by luck of their wording |
-| H3 | G-P6's false-abstain cost on DEV is 10–20% of executed readings | predicted from the prototype (13.2%) |
-| H4 | each structural rule < 3% false abstention on DEV | plausible |
-| H5 | agreement adds little once the gates hold: A1 and A2 GENUINE-WRONG both 0; A2 admits ≥ 85% of A1 | predicted |
-| H6 | CUE-PURITY on DEV < 70% | predicted (65–82% bare tokens) |
-| H7 | structural reuse on pure keys serves > 0 sealed items and its wrong-fire is NOT zero | predicted — B32 on natural text |
-| H8 | REACH ≥ 50% after tokenizer fixes and before G-P6 | predicted |
+| H1 | M-sonnet under A2 admits ZERO genuine wrong readings on SEALED | the crux; S1 re-analysis says yes; the shared prior says maybe |
+| H2 | A2's by-gold FALSE-ADMIT ≤ 0.5% | uncertain — S1's errata alone were 0.43% |
+| H3 | engine-only A1 is not enough: A1 GENUINE-WRONG > 0 on SEALED | predicted (S1: 6 of 638 by gold) |
+| H4 | honesty costs reach: A2 admits 60–80% of executed readings | predicted from the prototype (570/796 = 72%) |
+| H5 | each structural rule < 3% false abstention on DEV | plausible |
+| H6 | CUE-PURITY on DEV < 70% — structure is not determined by cues on word problems | predicted (65–82% bare tokens) |
+| H7 | reuse on pure keys serves > 0 sealed items and its wrong-fire is NOT zero | predicted — B32 on natural text |
+| H8 | REACH ≥ 50% before honesty, after tokenizer fixes | predicted (S1 66%) |
+| H9 | scale is monotone: if M-haiku runs, its genuine-wrong count ≥ sonnet's and its reach ≤ | predicted from V1.6–V1.8 |
 
 ---
 
 ## 8. Metrics (FROZEN)
 
-Primary: per admission rule — admitted, FALSE-ADMIT by gold with
-classification, GENUINE-WRONG, READING-CORRECT among admitted, reach
-cost; G-P6 kills and false-abstain rate; per-rule false-abstain
-rates; CUE-PURITY; REUSE-SERVED / REUSE-WRONG. Secondary: REACH,
-READING-CORRECT, answer accuracy, disagree-but-correct, gate-kill
-anatomy, isolation violations, D-llama prefix numbers.
+Primary, per arm and admission rule: admitted; FALSE-ADMIT by gold
+with post-hoc classification (gold errata / convention / integer /
+genuine) and every wrong's row published; GENUINE-WRONG; READING-
+CORRECT among admitted; admitted ÷ executed. G-P6 and per-rule
+kill counts and false-abstain rates on DEV. CUE-PURITY; pure-key
+count; REUSE-SERVED / REUSE-WRONG on SEALED. Secondary: REACH,
+READING-CORRECT, answer accuracy of M, disagree-but-correct, near-
+miss ledger, gate-kill anatomy, format and isolation violations.
 
 ---
 
 ## 9. Thresholds (FROZEN)
 
 ```
-GATE-CTRL     all §4.5 batteries pass before counting.
-SAFETY-GEN    GENUINE-WRONG admissions under A2 on SEALED = 0 (every
-              by-gold wrong published with its classification and
-              row; one genuine = E).
+GATE-CTRL     every §4.5 battery passes before counting.
+SAFETY-GEN    GENUINE-WRONG admissions under A2 (M-sonnet, SEALED)
+              = 0. Every by-gold wrong published with its class; one
+              genuine = E.
 SAFETY-FA     FALSE-ADMIT by gold under A2 <= 0.5%.
 REACH         >= 50% of SEALED executable before G-P6.
-GATE-COST     G-P6 + rules abstain <= 25% of executed readings on
-              SEALED (else safe-and-inert, rung D).
+GATE-COST     G-P6 + rules abstain <= 30% of executed readings.
 RULES         each structural rule < 3% false abstention on DEV.
 PURITY        reported; reuse measured on pure keys only.
 REUSE-SAFE    REUSE-WRONG = 0 on SEALED for reuse to be declared
-              servable later; any wrong reported as the rate.
-SEALED-ONCE   readings, answers, scores on SEALED once.
+              servable in a later version; otherwise the rate is the
+              B32-family number on natural text.
+SEALED-ONCE   readings, answers and scores on SEALED once per arm.
 ```
 
 ---
@@ -274,16 +277,17 @@ SEALED-ONCE   readings, answers, scores on SEALED once.
 ## 10. Outcome ladder (FROZEN; F > E > D > C > B > A)
 
 ```
-F  a control battery cannot pass, or S1/V1.8 stop reproducing.
-E  SAFETY-GEN fails: the honest engine still admitted a genuine
-   misread with one model — report the case and its class.
-D  SAFETY-GEN holds but REACH < 30% or GATE-COST > 25%: safe and
-   inert.
+F  a control battery cannot pass, or S1 / V1.8 stop reproducing.
+E  SAFETY-GEN fails: one model, an honest engine and its own answer
+   still admitted a genuine misread — report the case and its class.
+D  SAFETY-GEN holds but REACH < 30% or GATE-COST > 30%: safe and
+   inert; honesty ate the reach.
 C  SAFETY-GEN, REACH, GATE-COST hold but SAFETY-FA fails on gold
    errata alone: safe in truth, wrong by the corpus; both numbers.
 B  all safety and reach bars hold; reuse measured; REUSE-WRONG > 0
-   or REUSE-SERVED = 0: safe one-phrasing reflexes.
-A  B plus REUSE-SERVED > 0 at REUSE-WRONG = 0 on pure keys.
+   or REUSE-SERVED = 0: readings are safe one-phrasing reflexes.
+A  B plus REUSE-SERVED > 0 at REUSE-WRONG = 0 on pure keys —
+   structure-keyed reuse on natural text without a wrong answer.
 ```
 
 ---
@@ -291,48 +295,53 @@ A  B plus REUSE-SERVED > 0 at REUSE-WRONG = 0 on pure keys.
 ## 11. Risk register (FROZEN with §7–§10)
 
 ```
-R1  One model, one prior: a misread that consumes every word and
-    hits no structural class is invisible to this engine. Detect:
-    SAFETY-GEN. Mitigate: none in V1.9 — it is the thing measured;
-    D-llama reports what a foreign veto would have added, as a
-    diagnostic only.
-R2  G-P6 over-abstains on irrelevant word-quantities ("four years
-    later"). Detect: false-abstain on DEV. Mitigate: none; the cost
-    is the honesty rule's, reported (GATE-COST rung D exists).
-R3  Word table gaps ("a couple", "a score", "half a dozen"). Detect:
-    residual by-gold wrongs' anatomy. Mitigate: table frozen with
-    the spec; gaps become the next version's list.
+R1  Shared prior, twice: the same model reads and answers. A misread
+    that consumes every quantity and hits no structural class agrees
+    with itself. Detect: SAFETY-GEN; A1 vs A2. Mitigate: none in V1.9
+    — it is the thing measured; rung E exists for it.
+R2  G-P6 over-abstains on irrelevant word-quantities. Detect: false-
+    abstain on DEV. Mitigate: none; the cost is the honesty rule's
+    (GATE-COST, rung D).
+R3  Word-table gaps ("a couple", "half a dozen", "a score"). Detect:
+    residual by-gold wrongs' anatomy. Mitigate: table frozen; gaps
+    become the next list.
 R4  Gold errata dominate by-gold wrongs. Detect: classification
     published. Mitigate: SAFETY-GEN is the crux; nothing relabelled.
-R5  Proposer computes / value-dependent readings. Detect: isolation
-    battery; singular-key flags. Mitigate: no code; validation;
+R5  Proposer computes / value-dependent readings (S1 N7). Detect:
+    isolation battery; singular-key flags; agent transcripts sampled.
+    Mitigate: no-code prompt, numbers pre-indexed, reader19 validation;
     singular readings never reused.
-R6  Cue signatures mostly "bare" -> low purity, small pure subset.
-    Detect: PURITY. Mitigate: none (H6).
+R6  Cue signatures mostly "bare" on word problems -> low purity,
+    small pure subset. Detect: PURITY. Mitigate: none (H6).
 R7  Positional binding on same-key questions is the B32 family.
     Detect: REUSE-WRONG. Mitigate: nothing served.
 R8  Tokenizer gaps. Mitigate: fixed before batches; frozen by hash.
-R9  DEV fully exposed. Mitigate: SEALED = never-sampled items only.
+R9  DEV fully exposed (S1 sealed items included). Mitigate: SEALED =
+    never-sampled corpus items only; no model sees them before the
+    run.
 R10 Agreement tolerance masks rounding. Detect: near-miss ledger.
-R11 The escalation answer as agreement signal is the same model's
-    prior twice (reading + answer). Detect: A1 vs A2. Mitigate: the
-    design does not rely on it (H5).
+R11 Answer parsing ("$18" vs "18"; "18 dollars"). Detect: parse
+    failures counted; unparsable = no agreement.
+R12 Bridge-agent variance (format failures, partial writes). Detect:
+    format-failure count; one re-ask allowed, both attempts recorded.
 ```
 
 ---
 
-## 12. Decisions — OPEN for the user
+## 12. Decisions — OPEN for the user's review
 
-1. SEALED = all 1,824 never-sampled items, or a 1,200 hashed
-   subsample (the llama diagnostic is the only throughput concern;
-   the primary arm needs sonnet + haiku only).
-2. G-P6 word table as §4.3; add or strike entries before freeze.
-3. Structural rules S-INT / S-RATIO / S-PCT / S-GEOM as §4.4.
-4. Reuse measured, never served, in V1.9.
-5. opus proposer arm if bridge time allows.
-6. D-llama diagnostic on whatever prefix completes, outside the
-   architecture; or drop it entirely.
-7. Ladder as §10.
+1. **SEALED size**: all 1,824 never-sampled items (proposed), or a
+   hashed 1,200 subsample.
+2. **G-P6 word table** as §4.2 — add or strike entries.
+3. **Structural rules** S-INT / S-RATIO / S-PCT / S-GEOM as §4.3.
+4. **Reuse measured, never served** in V1.9 (proposed).
+5. **Additional arms** M-opus and M-haiku if bridge time allows
+   (proposed), or M-sonnet only.
+6. **DEV answers by sonnet** (one new bridge pass over 1,800 items)
+   so DEV is one-model too (proposed); or reuse S1's haiku answers on
+   DEV and accept a cross-model DEV.
+7. **Ladder** as §10, in particular rung C for "safe in truth, wrong
+   by errata".
 
 ---
 
@@ -340,8 +349,8 @@ R11 The escalation answer as agreement signal is the same model's
 
 It claims a one-model escalation-feedback loop whose safety is the
 engine's honesty about every stated quantity, digit or word, plus
-four structural abstentions — measured against real golds for
-genuine wrong admissions at sealed volume — and the first measurement
-of structure-keyed reuse on natural text. It does not add a second
-model, does not serve any reused reading, and does not relabel a gold
-it disagrees with.
+four structural abstentions, with the escalation's own answer as the
+probation value — measured against real golds for genuine wrong
+admissions at sealed volume — and the first measurement of
+structure-keyed reuse on natural text. It adds no second model,
+serves no reused reading, and relabels no gold it disagrees with.
