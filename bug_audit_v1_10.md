@@ -18,3 +18,13 @@ Two sonnet answer agents on `ansq_ctl_full.json` (25 trivial items)
 and `ansq_ctl_empty.json` (0 items); harness-reported usage of both is
 logged in `bridge/usage.jsonl`. The instrument passes if empty < full
 and both are non-zero. (B7/B24: never the agent's self-report.)
+
+**N3 result (calibration, before any run):** sonnet full batch of 25
+trivial items = 65,932 harness tokens; empty batch = 64,522. The
+instrument passes (empty < full, both non-zero) and shows that the
+harness-reported figure is ~98% fixed agent overhead (system prompt,
+tool definitions). TOKENS/QUERY is therefore defined as MARGINAL
+tokens: (batch tokens − the model's empty-batch baseline) ÷ items,
+with the raw figure reported beside it. Empty-batch baselines are
+collected per model (sonnet 64,522; opus/haiku/fable below). This is
+an instrument definition fixed before the sealed run, not a tuning.
