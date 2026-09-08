@@ -375,3 +375,17 @@ and predicted to fail), that authored items are as clean as corpus
 items (QC rate published), or that the extrapolated token number is a
 measurement (the sample number is; the extrapolation is arithmetic on
 the measured escalation rate).
+
+---
+
+## AMENDMENT — §11 decisions RESOLVED at freeze (2026-09-08, user: "freeze n continue with proposed decisions, ok for downloads")
+
+1. Downloads approved: GSM8K train and SVAMP fetched at freeze, hashed in `results/v110/data/HASHES.json`.
+2. Bridge budget as proposed (8k/3k/1k per arm; ~30k authored + QC); cut order as written if throughput forces it, each cut logged in the ledger.
+3. Authored tiers T4/P4 accepted in SEAL/REPLAY, never authored by the sealed arm, QC by a different model, QC-rejected → DEV only.
+4. SAFETY-FA ≤ 1.0% by gold per arm; GENUINE published separately.
+5. G-P6: rule on M-haiku, reported on M-sonnet/M-opus/M-fable.
+6. Pack kind names (77) may appear in physics batch files; formulas never.
+7. Sample stratification ≥250 per tier per phase, PC and T3′ in full.
+
+§7–§10 are FROZEN with this amendment. Tag `v1.10-plan`.
