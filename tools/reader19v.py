@@ -188,23 +188,21 @@ def prep():
 
 def _load_items(phase):
     p = DATA / ("sample.jsonl" if phase == "dev" else "sealed19.jsonl")
+    # V1.9 DEV = all of S1's 1,800 items (S1's dev AND sealed phases)
     out = []
     with open(p, encoding="utf-8") as f:
         for line in f:
-            it = json.loads(line)
-            if phase == "dev" and it["phase"] != "dev":
-                continue
-            out.append(it)
+            out.append(json.loads(line))
     return out
 
 
 def _load_readings(model, phase):
-    d = BRIDGE / ("readings_%s_dev" % model if phase == "dev" and
-                  model == "sonnet" else "readings19_%s_%s" % (model, phase))
+    if phase == "dev" and model == "sonnet":
+        dirs = [BRIDGE / "readings_sonnet_dev", BRIDGE / "readings_sonnet_sealed"]
+    else:
+        dirs = [BRIDGE / ("readings19_%s_%s" % (model, phase))]
     out = {}
-    if not d.exists():
-        return out
-    for p in d.glob("reading_*.json"):
+    for p in [q for d in dirs if d.exists() for q in d.glob("reading_*.json")]:
         iid = p.stem[len("reading_"):]
         try:
             d2 = json.loads(p.read_text(encoding="utf-8"))

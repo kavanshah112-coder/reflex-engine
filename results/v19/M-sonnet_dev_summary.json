@@ -1,0 +1,136 @@
+{
+ "arm": "M-sonnet",
+ "phase": "dev",
+ "n": 1800,
+ "status": {
+  "executed": 1210,
+  "null_reading": 388,
+  "gate_kill": 202
+ },
+ "REACH": 0.6722,
+ "READING_CORRECT": 0.9719,
+ "ANSWER_CORRECT": 0.9533,
+ "answered": 1800,
+ "G6": {
+  "kills": 194,
+  "kills_of_correct": 182,
+  "false_abstain_rate": 0.1548
+ },
+ "rules": {
+  "S-INT": {
+   "kills": 11,
+   "kills_of_correct": 5,
+   "false_abstain_rate": 0.0043
+  },
+  "S-RATIO": {
+   "kills": 35,
+   "kills_of_correct": 32,
+   "false_abstain_rate": 0.0272
+  },
+  "S-PCT": {
+   "kills": 22,
+   "kills_of_correct": 20,
+   "false_abstain_rate": 0.017
+  },
+  "S-GEOM": {
+   "kills": 1,
+   "kills_of_correct": 0,
+   "false_abstain_rate": 0.0
+  }
+ },
+ "admission": {
+  "A0": {
+   "admitted": 1191,
+   "wrong_by_gold": 21,
+   "FALSE_ADMIT": 0.0176,
+   "share_of_executed": 0.9843,
+   "wrong_ids": [
+    "a0890",
+    "a1144",
+    "a1410",
+    "a1505",
+    "a1647",
+    "a1678",
+    "a2266",
+    "g0119",
+    "g0182",
+    "g0234",
+    "g0368",
+    "g0409",
+    "g0552",
+    "g0590",
+    "g0749",
+    "g0768",
+    "g0782",
+    "g0823",
+    "g1042",
+    "g1048",
+    "g1309"
+   ]
+  },
+  "A1": {
+   "admitted": 960,
+   "wrong_by_gold": 11,
+   "FALSE_ADMIT": 0.0115,
+   "share_of_executed": 0.7934,
+   "wrong_ids": [
+    "a1264",
+    "a1443",
+    "g0552",
+    "g0590",
+    "g0614",
+    "g0768",
+    "g1016",
+    "g1048",
+    "g1187",
+    "g1288",
+    "g1309"
+   ]
+  },
+  "A2": {
+   "admitted": 948,
+   "wrong_by_gold": 5,
+   "FALSE_ADMIT": 0.0053,
+   "share_of_executed": 0.7835,
+   "wrong_ids": [
+    "g0552",
+    "g0590",
+    "g0768",
+    "g1048",
+    "g1309"
+   ]
+  }
+ },
+ "A2_rejected_correct": 233,
+ "GATE_COST": 0.2066,
+ "gate_kills": {
+  "G-P3: choice/threshold ask; final is 'evaluate": 35,
+  "G-P4: stated quantity 1 unused": 18,
+  "G-P4: stated quantity 3 unused": 15,
+  "G-P4: stated quantity 2 unused": 8,
+  "G-P4: stated quantity 5 unused": 8,
+  "G-P4: stated quantity 6 unused": 6,
+  "G-P4: stated quantity 8 unused": 6,
+  "G-P3: asked in 'minute'; final carries None": 6,
+  "G-P4: stated quantity 12 unused": 5,
+  "G-P4: stated quantity 4 unused": 5,
+  "G-P4: stated quantity 10 unused": 4,
+  "G-P4: stated quantity 18 unused": 3
+ },
+ "per_corpus": {
+  "gsm8k": {
+   "n": 900,
+   "executed": 680,
+   "reading_correct": 660,
+   "A2_admitted": 499,
+   "A2_wrong": 5
+  },
+  "asdiv": {
+   "n": 900,
+   "executed": 530,
+   "reading_correct": 516,
+   "A2_admitted": 449,
+   "A2_wrong": 0
+  }
+ }
+}

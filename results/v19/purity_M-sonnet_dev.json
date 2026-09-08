@@ -1,52 +1,52 @@
 {
  "model": "sonnet",
  "phase": "dev",
- "keys": 126,
- "keys_with_2plus_readings": 36,
- "pure_keys": 2,
- "CUE_PURITY": 0.0556,
- "readings_in_pure_keys": 6,
- "singular_keys": 90,
+ "keys": 290,
+ "keys_with_2plus_readings": 84,
+ "pure_keys": 7,
+ "CUE_PURITY": 0.0833,
+ "readings_in_pure_keys": 15,
+ "singular_keys": 206,
  "examples_impure": [
   {
    "key": "count|2|bare,bare",
-   "signatures": 12,
-   "readings": 94
+   "signatures": 41,
+   "readings": 281
   },
   {
    "key": "count|3|bare,bare,bare",
-   "signatures": 21,
-   "readings": 54
-  },
-  {
-   "key": "count|1|bare",
-   "signatures": 13,
-   "readings": 19
+   "signatures": 47,
+   "readings": 152
   },
   {
    "key": "count|4|bare,bare,bare,bare",
-   "signatures": 14,
-   "readings": 18
+   "signatures": 41,
+   "readings": 61
+  },
+  {
+   "key": "count|1|bare",
+   "signatures": 28,
+   "readings": 55
   },
   {
    "key": "amount|2|bare,bare",
-   "signatures": 5,
-   "readings": 16
-  },
-  {
-   "key": "count|0|",
-   "signatures": 8,
-   "readings": 15
-  },
-  {
-   "key": "amount|2|unit:$,unit:$",
-   "signatures": 8,
-   "readings": 14
+   "signatures": 11,
+   "readings": 42
   },
   {
    "key": "other|2|bare,bare",
-   "signatures": 4,
-   "readings": 10
+   "signatures": 11,
+   "readings": 32
+  },
+  {
+   "key": "count|0|",
+   "signatures": 9,
+   "readings": 26
+  },
+  {
+   "key": "amount|2|unit:$,unit:$",
+   "signatures": 10,
+   "readings": 25
   }
  ]
 }
