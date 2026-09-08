@@ -1,2 +1,5 @@
 {"agent": "ctl_full", "model": "sonnet", "role": "answer", "split": "ctl_full", "items": 25, "subagent_tokens": 65932, "tool_uses": 2, "duration_ms": 12529}
 {"agent": "ctl_empty", "model": "sonnet", "role": "answer", "split": "ctl_empty", "items": 0, "subagent_tokens": 64522, "tool_uses": 2, "duration_ms": 9462}
+{"agent": "ctl_empty", "model": "opus", "role": "answer", "split": "ctl_empty", "items": 0, "subagent_tokens": 58488, "tool_uses": 2, "duration_ms": 7445}
+{"agent": "ctl_empty", "model": "haiku", "role": "answer", "split": "ctl_empty", "items": 0, "subagent_tokens": 47005, "tool_uses": 2, "duration_ms": 7691}
+{"agent": "ctl_empty", "model": "fable", "role": "answer", "split": "ctl_empty", "items": 0, "subagent_tokens": 58748, "tool_uses": 2, "duration_ms": 11937}
