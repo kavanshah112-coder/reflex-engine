@@ -77,3 +77,10 @@ author prompt states explicitly that the question must ask for the
 FINAL result after ALL steps and that the feature means the story
 follows one quantity through its changes. The build's feature list is
 unchanged; the prompt wording is a bridge-protocol fix, logged here.
+
+## N8 — g = 9.81 vs the generator's 9.8
+Opus and fable answer potential-energy items with g = 9.81; the P1
+generator and the chain language use 9.8. The 0.1% gap exceeds the
+agreement tolerance, so on those items the own answer will REJECT a
+correct reading (false rejection, counted in A2_rejected, never a
+wrong). Reported per arm; no tolerance change (frozen).
