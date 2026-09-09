@@ -334,3 +334,10 @@ with the gold; on SEAL such items fall in the post-hoc class
 "convention / authoring artefact". plangate17 kills 232 T4 and 268
 P4 fresh readings (the authored stories carry restated intermediates
 that the gate reads as unrolled literals). Library T 808 / P 254.
+
+## N25 — M-fable DEV pass on the authored tiers (dev2)
+1,793 DEV T4/P4 items (558 QC-rejected skipped): fresh A2 admitted 66
+/ 0 wrong (T4 46, P4 20); A2S 2 / 0; own answers 192/193. No rule
+change from DEV on any arm so far (haiku, fable on T4/P4; haiku,
+opus, fable on the non-authored tiers): Z-SLOT and S-MULTI stand as
+frozen and plangate17 remains the P-reading gate.
