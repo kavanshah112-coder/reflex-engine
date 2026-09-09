@@ -376,3 +376,17 @@ batches delivered to a partner" — remaining-vs-no-op), A2S 3 / 0, own
 handful of haiku-authored ambiguities; no engine rule is added — the
 wrongs are the model's own readings of an ambiguous story, exactly
 the class the version was designed to expose.
+
+## N29 — M-sonnet DEV (dev2) and SEAL answer coverage
+Sonnet DEV T4/P4 (1,793): fresh A2 64 / 0 wrong, A2S 3 / 0, own
+186/193. With that, every arm has completed ACQ and DEV on the
+authored tiers with no engine rule added (RULES: no DEV-set rule
+beyond the frozen Z-SLOT/S-MULTI; their DEV cost is computed in the
+report from the rows).
+SEAL answer coverage after the first wave: opus and fable complete
+(122/122 batches, ids exact); sonnet P4 009–011 and haiku P4 007–011
+still running; haiku's P3+D agent wrote only P3 000–003 + D 000–003
+of its 14 batches (reported "14 files") — P3 004–009 re-issued as a
+fill job; haiku `T3_020` holds 24 of its 25 ids plus one invented id
+(kept as written; the one unanswered item simply has no own answer
+on the haiku arm).

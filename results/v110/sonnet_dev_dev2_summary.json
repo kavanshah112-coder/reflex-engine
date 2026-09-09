@@ -1,0 +1,63 @@
+{
+ "arm": "sonnet",
+ "split": "dev",
+ "n": 1793,
+ "sampled": 1339,
+ "ms_per_query": 84.402,
+ "library_T": 1362,
+ "library_P": 255,
+ "probated_T": 50,
+ "by_tier": {
+  "P4": {
+   "n": 811,
+   "own_answered": 88,
+   "own_correct": 85,
+   "fresh_gate_kill": 69,
+   "escalated": 491,
+   "qc_rejected": 303,
+   "fresh_exec_refused": 2,
+   "fresh_executed": 17,
+   "fresh_reading_correct": 17,
+   "A2_admitted": 17,
+   "A2_correct": 17
+  },
+  "T4": {
+   "n": 982,
+   "qc_rejected": 255,
+   "escalated": 679,
+   "own_answered": 105,
+   "own_correct": 101,
+   "fresh_gate_kill": 55,
+   "fresh_executed": 49,
+   "fresh_reading_correct": 48,
+   "A2_admitted": 47,
+   "A2_correct": 47,
+   "A0S_served": 3,
+   "A0S_correct": 3,
+   "A2S_served": 3,
+   "A2S_correct": 3,
+   "fresh_bind_fail": 1,
+   "plan_agree": 2
+  }
+ },
+ "curve": [],
+ "totals": {
+  "n": 1793,
+  "exact_served": 0,
+  "exact_WRONG": 0,
+  "A2S_served": 3,
+  "A2S_WRONG": 0,
+  "A0S_served": 3,
+  "A0S_WRONG": 0,
+  "KC_served": 0,
+  "KC_WRONG": 0,
+  "A2_admitted": 64,
+  "A2_WRONG": 0,
+  "escalated": 1170,
+  "own_answered": 193,
+  "own_correct": 186,
+  "SAFETY_PC": 0,
+  "SAFETY2": 0,
+  "excluded_author": 0
+ }
+}
