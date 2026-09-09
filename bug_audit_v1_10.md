@@ -401,3 +401,14 @@ plan on a remembered answer; T3′ (SVAMP), T4 and P4 do not have this
 property. Reported as a caveat on the T3 reading-quality numbers of
 every arm (it is a contamination fact about the corpus, not a
 protocol breach); the authored tiers are the clean test of reading.
+
+## N31 — haiku over-nulls on SEAL (same class as N11/N18)
+Haiku's SEAL reading blocks came back with far more nulls than the
+other three proposers on the same batches: P1+P2 0–1 (all 50 P2
+items null, "need full symbolic parsing"), T3 12–21 64/250 null,
+T3′ block 68/250, T3p+T4 0–7 63/242, T4 8–15 18/200, T2/T3 block
+54/250 written in bulk with 21 tool calls; its T3 2–11 block was
+delegated to a sub-agent (N9 class). Sonnet/opus/fable on the same
+batches: 0–25 nulls per 250. Readings stand as collected (one reading
+per item, never re-sampled); the effect is a lower haiku fresh reach
+on SEAL, reported per tier, and is itself a scale finding (H10).
