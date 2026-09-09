@@ -1,0 +1,9 @@
+{"plan": {"nodes": [
+{"id": "n1", "op": "derivative_at", "expr": "4*x**3 - 4*x**2", "order": 2, "point": 1},
+{"id": "n2", "op": "evaluate", "expr": "@n1 - 23"},
+{"id": "n3", "op": "evaluate", "expr": "@n2 + 9"},
+{"id": "n4", "op": "scale", "value": "@n3", "by": 6},
+{"id": "n5", "op": "evaluate", "expr": "32000"},
+{"id": "n6", "op": "convert", "value": "@n5", "from": "g", "to": "kg"},
+{"id": "n7", "op": "formula", "expr": "0.5 * m * v**2", "m": "@n6", "v": "@n4", "unit": "J"}
+], "final": "n7"}}

@@ -298,3 +298,15 @@ distractor served 0. Post-hoc check for "echo" donors (plans without
 an arithmetic operator, which would agree with any own answer that
 restates a stated number): none exist among the suggested serves on
 any arm — no rule added from DEV; Z-SLOT/S-MULTI stand as frozen.
+
+## N22 — M-haiku ACQ pass on the authored tiers (acq2)
+5,356 ACQ T4/P4 items (4,000 sampled; 88 QC-rejected skipped): exact
+path 0 serves (no deterministic path exists for authored prose, as
+designed); fresh A2 admitted 65 / 0 wrong (T4 45, P4 20); A2S served 1
+/ 0 wrong (T4); A0S 2 / 1 wrong (the agreement-only rule, reported).
+Haiku's own answers on T4 are 287/465 correct and on P4 255/347, so
+the own-answer filter admits little. P4 readings: 103 in a
+non-chain format, 206 killed by plangate17, 7 refused at execution,
+31 executed (30 right) — the reach on authored physics stories is
+low, as H6 predicted, and every P4 wrong-by-gold count is 0. Library
+T 458 / P 104 after the pass (lib_haiku_acq2).

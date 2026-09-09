@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id":"n1","op":"evaluate","expr":"4 * (7 + 14)"},{"id":"n2","op":"evaluate","expr":"@n1 - 19"},{"id":"n3","op":"formula","expr":"0.5*m*v**2","m":25,"v":"@n2","unit":"J"},{"id":"n4","op":"evaluate","expr":"@n3 + 19"},{"id":"n5","op":"evaluate","expr":"@n4 + 20"},{"id":"n6","op":"evaluate","expr":"@n5 + 22"}], "final": "n6"}}

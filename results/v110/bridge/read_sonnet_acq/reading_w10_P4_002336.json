@@ -1,0 +1,8 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"integrate_def","expr":"1*x**2 + 0*x","a":0,"b":1},
+{"id":"n2","op":"formula","expr":"0.5*(m/1000)*v**2","m":44000,"v":"@n1","unit":"J"},
+{"id":"n3","op":"evaluate","expr":"@n2 - 23"},
+{"id":"n4","op":"evaluate","expr":"@n3 * 3"},
+{"id":"n5","op":"evaluate","expr":"@n4 + 17"},
+{"id":"n6","op":"evaluate","expr":"@n5 * 5"}
+], "final":"n6"}}

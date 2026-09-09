@@ -1,0 +1,7 @@
+{"plan": {"nodes": [
+{"id": "n1", "op": "solve_pick", "lhs": "x**2 - 10*x + 24", "pick": "smaller"},
+{"id": "n2", "op": "formula", "expr": "0.5 * m * v**2", "m": 54, "v": "@n1", "unit": "J"},
+{"id": "n3", "op": "evaluate", "expr": "@n2 + 16"},
+{"id": "n4", "op": "scale", "value": "@n3", "by": 9},
+{"id": "n5", "op": "scale", "value": "@n4", "by": 9}
+], "final": "n5"}}
