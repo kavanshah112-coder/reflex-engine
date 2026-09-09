@@ -280,3 +280,7 @@
 {"agent": "readq_T4_fable_uC2", "model": "fable", "role": "reading", "split": "acq+dev", "tier": "T4", "items": 175, "subagent_tokens": 201449, "tool_uses": 188, "duration_ms": 626604}
 {"agent": "readq_T4_opus_uB2", "model": "opus", "role": "reading", "split": "acq", "tier": "T4", "items": 121, "subagent_tokens": 218082, "tool_uses": 145, "duration_ms": 702879}
 {"agent": "readq_P4_fable_vB2", "model": "fable", "role": "reading", "split": "acq", "tier": "P4", "items": 150, "subagent_tokens": 257064, "tool_uses": 165, "duration_ms": 698628}
+{"agent": "readq_P4_sonnet_vC2", "model": "sonnet", "role": "reading", "split": "dev", "tier": "P4", "items": 100, "subagent_tokens": 198486, "tool_uses": 111, "duration_ms": 836678}
+{"agent": "readq_T4_sonnet_uB2", "model": "sonnet", "role": "reading", "split": "acq", "tier": "T4", "items": 150, "subagent_tokens": 241107, "tool_uses": 161, "duration_ms": 914169}
+{"agent": "readq_T4_opus_uC2", "model": "opus", "role": "reading", "split": "acq+dev", "tier": "T4", "items": 190, "subagent_tokens": 233077, "tool_uses": 203, "duration_ms": 959723}
+{"agent": "ansq_seal_sonnet_sA", "model": "sonnet", "role": "answer", "split": "seal", "tier": "T1,T2", "items": 350, "subagent_tokens": 105551, "tool_uses": 30, "duration_ms": 107168}

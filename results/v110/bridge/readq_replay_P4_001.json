@@ -1,0 +1,589 @@
+[
+{
+"id": "w10_P4_001629",
+"question": "A workshop tests an electric winch that accelerates a sled of mass 82000 g along a level floor. The controller sets the sled's acceleration in metres per second squared to a value whose square, minus 6 times the value, plus 5, is exactly 0, and the workshop uses the larger of the two values that satisfy this. The winch has 5 identical drums pulling in parallel, so the total pull is 5 times the pull on the single sled, expressed in kilonewtons. The safety report then subtracts 2 kN for the anchor allowance and a further 5 kN for the floor-bolt allowance. What figure does the safety report end with, in kN?",
+"numbers": {
+"n0": "82000",
+"n1": "6",
+"n2": "5",
+"n3": "0",
+"n4": "5",
+"n5": "5",
+"n6": "2",
+"n7": "5"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/algebra/quadratic_polynomial_solve",
+"physics/mechanics/dynamics_forces",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002159",
+"question": "A power profile p(x) = 3x^2 + 5x (integrated from x=1 to x=3) yields total. A 2 kg system (or 2000 grams) produces kinetic energy. After scaling by 8, converting to kJ, and adding 1, what is the final energy in kilojoules?",
+"numbers": {
+"n0": "3",
+"n1": "2",
+"n2": "5",
+"n3": "1",
+"n4": "3",
+"n5": "2",
+"n6": "2000",
+"n7": "8",
+"n8": "1"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/integration/definite",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002943",
+"question": "A press shop certificate carries one figure in kilonewtons. A die block of mass 153 kg is accelerated on the bolster at a rate, in metres per second squared, worked out as 3 multiplied by the sum of 4 and 11. The drive must supply the force that gives the block that acceleration. Nine blocks work a press, and the shop has 10 presses. The shop total is finally written in kilonewtons. A 30 L quench bath stands beside the press and is not involved. What figure is on the certificate, in kN?",
+"numbers": {
+"n0": "153",
+"n1": "3",
+"n2": "4",
+"n3": "11",
+"n4": "10",
+"n5": "30"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units"
+]
+},
+{
+"id": "w10_P4_009505",
+"question": "Calculate 2 times the sum of 9 and 15, which equals 48. Add 26 to get 74. A 7-kilogram object at 74 m/s has kinetic energy calculated from half mass times velocity squared. Subtract 9, multiply by 6, and add 15. What is the final energy in joules? A wind speed of 25 m/s was noted.",
+"numbers": {
+"n0": "2",
+"n1": "9",
+"n2": "15",
+"n3": "48",
+"n4": "26",
+"n5": "74",
+"n6": "7",
+"n7": "74",
+"n8": "9",
+"n9": "6",
+"n10": "15",
+"n11": "25"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_004478",
+"question": "Integrate 1x\u00b2 from 1 to 2. Subtract 8. Add 12. A structure with mass 107 kilograms accelerates at this rate. Calculate force. Subtract 15. Convert to kiloNewtons. What is the final force in kiloNewtons?",
+"numbers": {
+"n0": "1",
+"n1": "1",
+"n2": "2",
+"n3": "8",
+"n4": "12",
+"n5": "107",
+"n6": "15"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/integration/definite",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units"
+]
+},
+{
+"id": "w10_P4_008800",
+"question": "Calculate 4 times the sum of 8 and 1, which equals 36. A 159-kilogram object with acceleration 36 m/s^2 experiences force. Add 5, convert from newtons to kilonewtons, multiply by 2, and add 1. What is the final force in kilojoules?",
+"numbers": {
+"n0": "4",
+"n1": "8",
+"n2": "1",
+"n3": "36",
+"n4": "159",
+"n5": "36",
+"n6": "2",
+"n7": "5",
+"n8": "2",
+"n9": "1"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_009164",
+"question": "Calculate 4 times the sum of 4 and 6, which equals 40. Add 9 to get 49. A 28-kilogram object with acceleration 49 m/s^2 experiences force. Subtract 27, subtract 21, and convert from newtons to kilonewtons. What is the final force in kilonewtons?",
+"numbers": {
+"n0": "4",
+"n1": "4",
+"n2": "6",
+"n3": "40",
+"n4": "9",
+"n5": "49",
+"n6": "28",
+"n7": "49",
+"n8": "2",
+"n9": "27",
+"n10": "21"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units"
+]
+},
+{
+"id": "w10_P4_003052",
+"question": "A ropeway report ends with one number in kilonewtons. A carrier of mass 108 kg is accelerated on the line. The exact area under the curve y = 2x^2 + 1x between x = 1 and x = 2 is taken first, and multiplying that area by 7 gives the carrier's acceleration in metres per second squared. The drive must supply the force that gives the carrier that acceleration, and the report writes it in kilonewtons. Seven carriers run on the line, so the line figure is 7 times that record. What number ends the report, in kN?",
+"numbers": {
+"n0": "108",
+"n1": "2",
+"n2": "2",
+"n3": "1",
+"n4": "1",
+"n5": "2",
+"n6": "7",
+"n7": "7"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/integration/definite",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_008102",
+"question": "Solving x\u00b2 - 13\u00b7x + 42 = 0, larger root is 7 m/s\u00b2. With 105 kg, force = 735 N, scaled by 2, converted to kiloNewtons, scaled by 3, increased by 12. The machine's serial number is SN001, not relevant. What is the final force in kiloNewtons?",
+"numbers": {
+"n0": "13",
+"n1": "42",
+"n2": "0",
+"n3": "7",
+"n4": "105",
+"n5": "735",
+"n6": "2",
+"n7": "3",
+"n8": "12"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/algebra/quadratic_polynomial_solve",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_003850",
+"question": "A hoist carriage of mass 163000 g starts with zero acceleration at t = 2 s, and its acceleration grows at a rate of 5t\u00b2 + 8t, in m/s\u00b3, with t in seconds, until t = 3 s. The shaft is 50 m deep. The force on one carriage beyond its weight is what is needed for the acceleration reached at t = 3 s. A hoist drives 7 such carriages, and 12 N of the combined force is lost to guide friction; express the remainder in kN. The site has 6 such hoists. What is the total, in kN?",
+"numbers": {
+"n0": "163000",
+"n1": "2",
+"n2": "5",
+"n3": "8",
+"n4": "3",
+"n5": "50",
+"n6": "3",
+"n7": "7",
+"n8": "12",
+"n9": "6"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/integration/definite",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_008350",
+"question": "Solving x\u00b2 - 12\u00b7x + 35 = 0, smaller root is 5 m/s. Scaled by 9 gives 45 m/s. With 46 kg, energy = 0.5 \u00d7 46 \u00d7 2025 = 46575 J, scaled by 4, then 5. The room temperature is 20\u00b0C, not applicable. What is the final energy in joules?",
+"numbers": {
+"n0": "12",
+"n1": "35",
+"n2": "0",
+"n3": "5",
+"n4": "9",
+"n5": "45",
+"n6": "46",
+"n7": "0.5",
+"n8": "46",
+"n9": "2025",
+"n10": "46575",
+"n11": "4",
+"n12": "5",
+"n13": "20"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/algebra/quadratic_polynomial_solve",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_005705",
+"question": "The first derivative of x^3 + 6x^2 at x=1, plus 9, gives acceleration on 131 kg mass. The force is scaled by 7, converted to kN, and increased by 11 kN. What is the final force in kN?",
+"numbers": {
+"n0": "3",
+"n1": "6",
+"n2": "2",
+"n3": "1",
+"n4": "9",
+"n5": "131",
+"n6": "7",
+"n7": "11"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/differentiation/evaluate_at_point",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_000464",
+"question": "A luggage tug pulls carts of mass 65 kg across an apron 45 m wide. Each cart's acceleration in m/s^2 is 11 more than the smaller of the two values x that satisfy x^2 - 8x + 7 = 0. The tug pulls 8 identical carts, each with the force producing that acceleration. Express the tug's total pull in kN.",
+"numbers": {
+"n0": "65",
+"n1": "45",
+"n2": "2",
+"n3": "11",
+"n4": "2",
+"n5": "8",
+"n6": "7",
+"n7": "0",
+"n8": "8"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/algebra/quadratic_polynomial_solve",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units"
+]
+},
+{
+"id": "w10_P4_002264",
+"question": "The sum 1+2+3+...+12 = 78. A 42 kg object (or 42000 grams) produces kinetic energy. After subtracting 27, converting to kJ, and adding 21, what is the final energy in kilojoules?",
+"numbers": {
+"n0": "1",
+"n1": "2",
+"n2": "3",
+"n3": "12",
+"n4": "78",
+"n5": "42",
+"n6": "42000",
+"n7": "27",
+"n8": "21"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/sequences_series/finite_sum",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002743",
+"question": "An archery club's tally ends with one number in joules. The control number is the larger root of x^2 - 9x + 14 = 0; multiplying that root by 7 and then subtracting 12 gives the bolt's speed in metres per second. The training bolt has a mass of 7 kg, and the energy it carries at that speed is the base value. Two bolts are loosed in each end, so an end's energy is 2 times the base value. To that total 22 J is added for the energy still stored in the bow limbs. What number ends the tally, in J?",
+"numbers": {
+"n0": "2",
+"n1": "9",
+"n2": "14",
+"n3": "0",
+"n4": "7",
+"n5": "12",
+"n6": "7",
+"n7": "2",
+"n8": "22"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/algebra/quadratic_polynomial_solve",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_001876",
+"question": "The final number a robotics-lab technician logs, in joules, is 9 less than an earlier figure, which is itself 13 less than an energy reading that had been multiplied by 10. The unmultiplied energy, in joules, is what a 43 kilogram test arm carries while moving at a speed equal to the number of different groups of 3 servo motors a technician could choose from 8 identical units on the shelf. What is the final number, in joules?",
+"numbers": {
+"n0": "9",
+"n1": "13",
+"n2": "10",
+"n3": "43",
+"n4": "3",
+"n5": "8"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/combinatorics_probability/permutations_combinations",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_004071",
+"question": "The greatest common divisor of 136 and 330 yields a key acceleration parameter. A mechanical linkage with mass 103 kilograms operates at this acceleration. Calculate the force. Convert to kiloNewtons. Scale by 4. Add 1 kiloNewton. What is the final force in kiloNewtons?",
+"numbers": {
+"n0": "136",
+"n1": "330",
+"n2": "103",
+"n3": "4",
+"n4": "1"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/number_theory/gcd_lcm",
+"physics/mechanics/dynamics_forces",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_000650",
+"question": "An equation x^2 - 8*x + 15 = 0 yields the smaller root, scaled by 10 with 12 added to yield an acceleration in m/s^2. A 151 kg mass experiences this acceleration. The force has 10 newtons added. A humidity of 70 percent was recorded but is not used. What is the final force in newtons?",
+"numbers": {
+"n0": "2",
+"n1": "8",
+"n2": "15",
+"n3": "0",
+"n4": "10",
+"n5": "12",
+"n6": "2",
+"n7": "151",
+"n8": "10",
+"n9": "70"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/algebra/quadratic_polynomial_solve",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_003050",
+"question": "A test carriage on a rail rig has a mass of 48 kilograms. The carriage's speed, in meters per second, t seconds after launch, follows the pattern 2 times t squared plus 8 times t; engineers need the total distance the carriage covers between t = 1 second and t = 2 seconds, and use that total distance as the carriage's acceleration, in meters per second squared. Using that acceleration and the carriage's mass, a certain force is found. Because nine identical carriages run on that line, the force is multiplied by 9. The result, in newtons, is converted into kilonewtons, a recorded loss of 19 is then subtracted, and a further loss of 29 is subtracted. The rail yard has 5 loading docks. What is the resulting force, in kilonewtons?",
+"numbers": {
+"n0": "48",
+"n1": "2",
+"n2": "8",
+"n3": "1",
+"n4": "2",
+"n5": "9",
+"n6": "19",
+"n7": "29",
+"n8": "5"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/integration/definite",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_001591",
+"question": "The derivative of 5x^3 - 2x^2 at x = 1 is 11. Scaling by 3 gives 33 m/s. A 29 kg mass has kinetic energy scaled by 3, converted to kJ, increased by 21. A rating is 100 m/s. What is the final energy in kJ?",
+"numbers": {
+"n0": "5",
+"n1": "3",
+"n2": "2",
+"n3": "2",
+"n4": "1",
+"n5": "11",
+"n6": "3",
+"n7": "33",
+"n8": "29",
+"n9": "3",
+"n10": "21",
+"n11": "100"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/differentiation/evaluate_at_point",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_007219",
+"question": "An acceleration profile has second derivative 4x^3 - 4x^2 at x = 3. A 52-kilogram mass responds with kinetic energy at this acceleration. Add 2 kJ, subtract 21 kJ, subtract 21 more kJ for baseline. The mass is mounted on a 0.5-meter bracket, not used. What is the final energy in kJ?",
+"numbers": {
+"n0": "4",
+"n1": "3",
+"n2": "4",
+"n3": "2",
+"n4": "3",
+"n5": "52",
+"n6": "2",
+"n7": "21",
+"n8": "21",
+"n9": "0.5"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/differentiation/evaluate_at_point",
+"physics/mechanics/energy_work",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_004801",
+"question": "Sum integers from 1 to 5. Subtract 6. A device with mass 14 kilograms uses this velocity. Calculate kinetic energy. Convert to kiloJoules. Scale by 9. Scale by 10. What is the final energy in kiloJoules?",
+"numbers": {
+"n0": "1",
+"n1": "5",
+"n2": "6",
+"n3": "14",
+"n4": "9",
+"n5": "10"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/sequences_series/finite_sum",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/energy_work",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_001769",
+"question": "At a satellite-thruster test bay, an engineer must select 3 nozzles out of 7 identical units on a rack for a burn test. The number of different groups of 3 she could form becomes the acceleration, in meters per second squared, of a thruster housing with a mass of 115,000 grams. Find the push this housing requires, in newtons, then subtract 24 from that number, then multiply what remains by 7. Convert what results into kilonewtons, and then subtract 22 more. What is the final number, in kilonewtons?",
+"numbers": {
+"n0": "3",
+"n1": "7",
+"n2": "3",
+"n3": "115000",
+"n4": "24",
+"n5": "7",
+"n6": "22"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/combinatorics_probability/permutations_combinations",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_005678",
+"question": "The integral from 1 to 2 of (3x^2 + 4x) dx gives acceleration on 63 kg mass. The force is converted to kN, increased by 28 kN, reduced by 5 kN, and increased by 26 kN. What is the final force in kN?",
+"numbers": {
+"n0": "1",
+"n1": "2",
+"n2": "3",
+"n3": "2",
+"n4": "4",
+"n5": "63",
+"n6": "28",
+"n7": "5",
+"n8": "26"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/integration/definite",
+"physics/mechanics/dynamics_forces",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_000566",
+"question": "A test plant keeps 10 identical reference masses, and the acceleration its rig applies, in metres per second squared, is the number of distinct pairs that can be chosen from them. That acceleration is given to a carrier of 121000 grams. The controller records the force needed to drive the carrier, multiplies it by 4 because 4 carriers run together, and expresses the result in kilonewtons. The converted figure is then multiplied by 12 for the 12 rigs in the plant, and a fixed frame allowance of 3 kN is added at the end. The plant floor is 30 m long, a dimension the controller never uses. What number, in kilonewtons, does the controller report?",
+"numbers": {
+"n0": "10",
+"n1": "121000",
+"n2": "4",
+"n3": "4",
+"n4": "12",
+"n5": "12",
+"n6": "3",
+"n7": "30"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/combinatorics_probability/permutations_combinations",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+}
+]

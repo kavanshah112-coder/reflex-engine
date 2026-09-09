@@ -24,5 +24,37 @@
    "w400k_seal.jsonl": "c92d731de465d0fd07e0381fb22dca5d4b4fc960eed6e766f77b32f62ea5682a",
    "w400k_replay.jsonl": "969d5f6bc2c38909055b7f3c479880cbca308aca7c1f3b260d6cbb7e7da9ab47"
   }
+ },
+ "seal_sample": {
+  "note": "E-SAMPLE for SEAL drawn 2026-09-10 from the post-QC files; per-tier sha256 of sorted sampled ids",
+  "tiers": {
+   "T1": "8f8e89b8a781c3700407fdcc4578de8b7c755f02eb92b1e5606f55120485e619",
+   "T2": "bf27082b885268512458b8374dc338cc93b570a5049c726fe711f9b89dd1b7e8",
+   "T3": "aad0ed1c6607141541673e0cfa3f08f2491d93654c7c3bcba643765a8763da7b",
+   "T3p": "a393dfb5e2efe61eb7b32f6f2ffd4da389cf3a0b0e3eeaa1f8cd30e595402286",
+   "T4": "95c5dab42578a5f59bd1dbb53a1fef94e9de08e7396fd6117e8a19ed04369aad",
+   "P1": "e823b5c4418ec80707acaa7f20ea58bdb4d3db839cb4a26e8d46de075f75c394",
+   "P2": "a2fcba980beaa72124e5100d2a545d43776ba8b0286561a89aa80e5b5bea35f8",
+   "P3": "5f4c19e194d5fc91dd5c7735440deb8d09624d5cb39f0a2f73b3d50eec070b76",
+   "P4": "07de2d47ec4311719c8f4347f0ac8c681d7d29c7f035fa621e2831f0b45effc5",
+   "PC": "4890db6d3eb87b935706a9eed91f3335d6cf908a0a0e20fdcf6dc07e5738d915",
+   "D": "5b53af84c821c6ccf5a1120a57fbe74f02b9ea503e5ca9d0a19ef4b626039f1b"
+  }
+ },
+ "replay_sample": {
+  "note": "E-SAMPLE for REPLAY drawn 2026-09-10 from the post-QC files; per-tier sha256 of sorted sampled ids",
+  "tiers": {
+   "T1": "a0c2f08d78e241c556ac8f3dbb7f1b004e1064848796ebbc5e44e18b06fd8307",
+   "T2": "cd74890e9b09368be5e62c5000bb65cf1034d136dc812d91d89734a5eebf3649",
+   "T3": "6d5c3ec6f6ef60d7770e08a1b99081a084ef2d12b0f9a9839cbf6b1cfd96c576",
+   "T3p": "5d1eb3b4981f1ae58d1b0666ff210dcc4d5d5fc5b9a9026f25e02df494871146",
+   "T4": "7b483eaddccfa11cd123985fbc9c26b3c3fc3925e52806b4bbda6fb41e042573",
+   "P1": "22fa9c149b9e7c54ddc4e0d6baf80fcb2a8a262da8d528665a97c24fddacaf8d",
+   "P2": "37a7265e93218aa07a5e86a8ecb84765eedb1332ef50d3cf269910524e466971",
+   "P3": "4161d0e2309e66ccf278706af769f9ce4eb065041065eb1a14422b13a0689af3",
+   "P4": "cc0ab573b290225db16ca5f2c60f15527180b3fd37f81403d64a472a16e97ba5",
+   "PC": "51de0d477501ecc68b907deb2de199f3cdd3b964ceed5c08116c86426b5d69fd",
+   "D": "74a8669525b820f7a64d2983d9854701cdb3f5098b37aa276f00549f4a6cf2c5"
+  }
  }
 }

@@ -1,0 +1,581 @@
+[
+{
+"id": "w10_P3_006267",
+"question": "Compute 5(9 + 2). Using that as the acceleration in m/s^2 of a 38 kg mass, find the force. Multiply the result by 7. Multiply that by 12. Multiply that by 7.",
+"numbers": {
+"n0": "5",
+"n1": "9",
+"n2": "2",
+"n3": "2",
+"n4": "38",
+"n5": "7",
+"n6": "12",
+"n7": "7"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P3_003952",
+"question": "Compute the greatest common divisor of 118 and 201. Using that as the acceleration in m/s^2 of a 65 kg mass, find the force. Subtract 16 from that. Multiply the result by 12. Convert that to kN from N. Multiply that by 10, in kN.",
+"numbers": {
+"n0": "118",
+"n1": "201",
+"n2": "2",
+"n3": "65",
+"n4": "16",
+"n5": "12",
+"n6": "10"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/number_theory/gcd_lcm",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P3_019346",
+"question": "Take the first derivative of 2x^3 -2x^2 at x = 2. Using that as the speed in m/s of a 24 kg mass, find the kinetic energy. Multiply that by 7. Express the result in kJ from J. Add 10 to that. Multiply that by 7, in kJ.",
+"numbers": {
+"n0": "2",
+"n1": "3",
+"n2": "2",
+"n3": "2",
+"n4": "2",
+"n5": "24",
+"n6": "7",
+"n7": "10",
+"n8": "7"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/differentiation/evaluate_at_point",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P3_009349",
+"question": "Compute the second derivative of 3x^3 +5x^2 at x = 1. Using that as the speed in m/s of a 51 kg mass, find the kinetic energy. Multiply the result by 10. Multiply the result by 4. Multiply the result by 5, in J.",
+"numbers": {
+"n0": "3",
+"n1": "3",
+"n2": "5",
+"n3": "2",
+"n4": "1",
+"n5": "51",
+"n6": "10",
+"n7": "4",
+"n8": "5"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/differentiation/evaluate_at_point",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P3_025454",
+"question": "Compute the first derivative of 2x^3 +0x^2 at x = 2. Using that as the speed in m/s of a 12 kg mass, find the kinetic energy. Express the result in kJ from J. Add 16 to that. Add 11 to that. Multiply that by 5, in kJ.",
+"numbers": {
+"n0": "2",
+"n1": "3",
+"n2": "0",
+"n3": "2",
+"n4": "2",
+"n5": "12",
+"n6": "16",
+"n7": "11",
+"n8": "5"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/differentiation/evaluate_at_point",
+"physics/mechanics/energy_work",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P3_028537",
+"question": "Compute the greatest common divisor of 358 and 20. Using that as the acceleration in m/s^2 of a 113 kg mass, find the force. Convert that to kN from N. Multiply that by 10. Subtract 18 from that. Add 26 to that, in kN.",
+"numbers": {
+"n0": "358",
+"n1": "20",
+"n2": "2",
+"n3": "113",
+"n4": "10",
+"n5": "18",
+"n6": "26"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/number_theory/gcd_lcm",
+"physics/mechanics/dynamics_forces",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P3_037189",
+"question": "Start with the smaller root of x^2 -5x +4 = 0. Using that as the speed in m/s of a 9 kg mass, find the kinetic energy. Multiply that by 4. Add 15 to that. Add 26 to that. Multiply that by 5.",
+"numbers": {
+"n0": "2",
+"n1": "5",
+"n2": "4",
+"n3": "0",
+"n4": "9",
+"n5": "4",
+"n6": "15",
+"n7": "26",
+"n8": "5"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/algebra/quadratic_polynomial_solve",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P3_015468",
+"question": "Find the integral of 4x^2 +2x from 0 to 2. Using that as the acceleration in m/s^2 of a 104 kg mass, find the force. Convert that to kN from N. Multiply the result by 12. Add 4 to that. Subtract 16 from that.",
+"numbers": {
+"n0": "4",
+"n1": "2",
+"n2": "2",
+"n3": "0",
+"n4": "2",
+"n5": "2",
+"n6": "104",
+"n7": "12",
+"n8": "4",
+"n9": "16"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/integration/definite",
+"physics/mechanics/dynamics_forces",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P3_031319",
+"question": "Start with 7*(7 + 6). Subtract 30 from that. Using that as the acceleration in m/s^2 of a 121 kg mass, find the force. Multiply that by 10. Multiply the result by 5. Express the result in kN from N, in kN.",
+"numbers": {
+"n0": "7",
+"n1": "7",
+"n2": "6",
+"n3": "30",
+"n4": "2",
+"n5": "121",
+"n6": "10",
+"n7": "5"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units"
+]
+},
+{
+"id": "w10_P3_034369",
+"question": "Take the second derivative of 3x^3 -2x^2 at x = 2. Add 28 to that. Using that as the speed in m/s of a 28 kg mass, find the kinetic energy. Add 19 to that. Multiply the result by 11. Convert that to kJ from J, in kJ.",
+"numbers": {
+"n0": "3",
+"n1": "3",
+"n2": "2",
+"n3": "2",
+"n4": "2",
+"n5": "28",
+"n6": "28",
+"n7": "19",
+"n8": "11"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/differentiation/evaluate_at_point",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units"
+]
+},
+{
+"id": "w10_P3_031207",
+"question": "Compute the gcd of 369 and 226. Using that as the acceleration in m/s^2 of a 125 kg mass, find the force. Express the result in kN from N. Multiply the result by 11. Multiply the result by 7. Multiply that by 7.",
+"numbers": {
+"n0": "369",
+"n1": "226",
+"n2": "2",
+"n3": "125",
+"n4": "11",
+"n5": "7",
+"n6": "7"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/number_theory/gcd_lcm",
+"physics/mechanics/dynamics_forces",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P3_014398",
+"question": "Compute the gcd of 167 and 376. Multiply that by 3. Using that as the speed in m/s of a 49 kg mass, find the kinetic energy. Subtract 14 from that. Subtract 10 from that. Add 2 to that, in J.",
+"numbers": {
+"n0": "167",
+"n1": "376",
+"n2": "3",
+"n3": "49",
+"n4": "14",
+"n5": "10",
+"n6": "2"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/number_theory/gcd_lcm",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P3_010253",
+"question": "Start with the smaller root of x^2 -11x +30 = 0. Add 26 to that. Using that as the acceleration in m/s^2 of a 76 kg mass, find the force. Add 6 to that. Multiply the result by 12. Convert that to kN from N.",
+"numbers": {
+"n0": "2",
+"n1": "11",
+"n2": "30",
+"n3": "0",
+"n4": "26",
+"n5": "2",
+"n6": "76",
+"n7": "6",
+"n8": "12"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/algebra/quadratic_polynomial_solve",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units"
+]
+},
+{
+"id": "w10_P3_031321",
+"question": "Take the second derivative of 1x^3 -2x^2 at x = 1. Using that as the speed in m/s of a 34 kg mass, find the kinetic energy. Convert that to kJ from J. Add 30 to that. Subtract 5 from that.",
+"numbers": {
+"n0": "1",
+"n1": "3",
+"n2": "2",
+"n3": "2",
+"n4": "1",
+"n5": "34",
+"n6": "30",
+"n7": "5"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/differentiation/evaluate_at_point",
+"physics/mechanics/energy_work",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P3_025264",
+"question": "Start with the larger root of x^2 -5x +6 = 0. Using that as the speed in m/s of a 47 kg mass, find the kinetic energy. Add 20 to that. Convert that to kJ from J. Add 30 to that. Subtract 30 from that.",
+"numbers": {
+"n0": "2",
+"n1": "5",
+"n2": "6",
+"n3": "0",
+"n4": "47",
+"n5": "20",
+"n6": "30",
+"n7": "30"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/algebra/quadratic_polynomial_solve",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P3_037789",
+"question": "Compute the sum of k^2 for k = 1 to 4. Using that as the acceleration in m/s^2 of a 84 kg mass, find the force. Subtract 13 from that. Express the result in kN from N. Multiply the result by 6, in kN.",
+"numbers": {
+"n0": "2",
+"n1": "1",
+"n2": "4",
+"n3": "2",
+"n4": "84",
+"n5": "13",
+"n6": "6"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/sequences_series/finite_sum",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P3_036634",
+"question": "Compute 7 choose 4. Using that as the speed in m/s of a 7 kg mass, find the kinetic energy. Convert that to kJ from J. Add 22 to that. Subtract 17 from that. Add 26 to that.",
+"numbers": {
+"n0": "7",
+"n1": "4",
+"n2": "7",
+"n3": "22",
+"n4": "17",
+"n5": "26"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/combinatorics_probability/permutations_combinations",
+"physics/mechanics/energy_work",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P3_026300",
+"question": "Take the first derivative of 1x^3 -2x^2 at x = 1. Add 18 to that. Using that as the speed in m/s of a 22 kg mass, find the kinetic energy. Multiply that by 5. Add 15 to that. Multiply that by 6.",
+"numbers": {
+"n0": "1",
+"n1": "3",
+"n2": "2",
+"n3": "2",
+"n4": "1",
+"n5": "18",
+"n6": "22",
+"n7": "5",
+"n8": "15",
+"n9": "6"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/differentiation/evaluate_at_point",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P3_005927",
+"question": "Take the smaller root of x^2 -12x +32 = 0. Using that as the acceleration in m/s^2 of a 192 kg mass, find the force. Subtract 15 from that. Multiply the result by 7. Multiply that by 12, in N.",
+"numbers": {
+"n0": "2",
+"n1": "12",
+"n2": "32",
+"n3": "0",
+"n4": "2",
+"n5": "192",
+"n6": "15",
+"n7": "7",
+"n8": "12"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/algebra/quadratic_polynomial_solve",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P3_019350",
+"question": "Compute 3(3 + 14). Using that as the acceleration in m/s^2 of a 105 kg mass, find the force. Subtract 25 from that. Express the result in kN from N. Subtract 21 from that. Multiply that by 5, in kN.",
+"numbers": {
+"n0": "3",
+"n1": "3",
+"n2": "14",
+"n3": "2",
+"n4": "105",
+"n5": "25",
+"n6": "21",
+"n7": "5"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P3_017204",
+"question": "Find the integral of 1x^2 +5x from 0 to 4. Using that as the speed in m/s of a 54 kg mass, find the kinetic energy. Multiply the result by 10. Add 20 to that. Subtract 3 from that. Convert that to kJ from J, in kJ.",
+"numbers": {
+"n0": "1",
+"n1": "2",
+"n2": "5",
+"n3": "0",
+"n4": "4",
+"n5": "54",
+"n6": "10",
+"n7": "20",
+"n8": "3"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/integration/definite",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units"
+]
+},
+{
+"id": "w10_P3_017842",
+"question": "Take the integral of 3x^2 +4x from 1 to 3. Add 7 to that. Using that as the acceleration in m/s^2 of a 188 kg mass, find the force. Convert that to kN from N. Multiply that by 9. Add 6 to that, in kN.",
+"numbers": {
+"n0": "3",
+"n1": "2",
+"n2": "4",
+"n3": "1",
+"n4": "3",
+"n5": "7",
+"n6": "2",
+"n7": "188",
+"n8": "9",
+"n9": "6"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/integration/definite",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P3_003545",
+"question": "Find the integral of 1x^2 +1x from 1 to 2. Add 18 to that. Using that as the acceleration in m/s^2 of a 177 kg mass, find the force. Add 30 to that. Add 26 to that, in N.",
+"numbers": {
+"n0": "1",
+"n1": "2",
+"n2": "1",
+"n3": "1",
+"n4": "2",
+"n5": "18",
+"n6": "2",
+"n7": "177",
+"n8": "30",
+"n9": "26"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/integration/definite",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P3_006100",
+"question": "Take the larger root of x^2 -8x +7 = 0. Using that as the acceleration in m/s^2 of a 50 kg mass, find the force. Express the result in kN from N. Multiply that by 8. Subtract 8 from that. Add 9 to that.",
+"numbers": {
+"n0": "2",
+"n1": "8",
+"n2": "7",
+"n3": "0",
+"n4": "2",
+"n5": "50",
+"n6": "8",
+"n7": "8",
+"n8": "9"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/algebra/quadratic_polynomial_solve",
+"physics/mechanics/dynamics_forces",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P3_015252",
+"question": "Start with the smaller root of x^2 -6x +8 = 0. Multiply that by 11. Using that as the speed in m/s of a 26 kg mass, find the kinetic energy. Convert that to kJ from J. Subtract 26 from that. Subtract 13 from that.",
+"numbers": {
+"n0": "2",
+"n1": "6",
+"n2": "8",
+"n3": "0",
+"n4": "11",
+"n5": "26",
+"n6": "26",
+"n7": "13"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/algebra/quadratic_polynomial_solve",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/energy_work",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+}
+]

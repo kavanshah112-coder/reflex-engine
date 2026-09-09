@@ -321,3 +321,16 @@ which is why almost nothing is admitted — a bridge-quality fact about
 the haiku answerer on this block, reported, not repaired. All answer
 files were re-verified id-exact against their batches (no rotation of
 the N19 kind on any model).
+
+## N24 — M-fable ACQ pass on the authored tiers (acq2)
+5,356 ACQ T4/P4 items (4,000 sampled): fresh A2 admitted 274 / 2
+wrong by gold (T4 197/2, P4 77/0); A2S served 7 / 0 wrong; own
+answers 802/812 correct. Both A2 wrongs (T4 007181, 014572) are
+haiku-authored stories whose "unit change stated in words" feature
+was rendered as an ask in the converted unit ("in minutes", "in
+hours") while the gold is the raw operation chain — the model's own
+answer and the executed reading agree with each other and disagree
+with the gold; on SEAL such items fall in the post-hoc class
+"convention / authoring artefact". plangate17 kills 232 T4 and 268
+P4 fresh readings (the authored stories carry restated intermediates
+that the gate reads as unrolled literals). Library T 808 / P 254.
