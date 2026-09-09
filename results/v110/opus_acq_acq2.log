@@ -1,0 +1,29 @@
+{
+ "arm": "opus",
+ "split": "acq",
+ "n": 5356,
+ "sampled": 4000,
+ "ms_per_query": 45.874,
+ "library_T": 918,
+ "library_P": 253,
+ "probated_T": 47,
+ "totals": {
+  "n": 5356,
+  "exact_served": 0,
+  "exact_WRONG": 0,
+  "A2S_served": 7,
+  "A2S_WRONG": 0,
+  "A0S_served": 7,
+  "A0S_WRONG": 0,
+  "KC_served": 0,
+  "KC_WRONG": 0,
+  "A2_admitted": 284,
+  "A2_WRONG": 2,
+  "escalated": 4984,
+  "own_answered": 812,
+  "own_correct": 799,
+  "SAFETY_PC": 0,
+  "SAFETY2": 0,
+  "excluded_author": 0
+ }
+}

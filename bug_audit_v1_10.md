@@ -341,3 +341,14 @@ that the gate reads as unrolled literals). Library T 808 / P 254.
 change from DEV on any arm so far (haiku, fable on T4/P4; haiku,
 opus, fable on the non-authored tiers): Z-SLOT and S-MULTI stand as
 frozen and plangate17 remains the P-reading gate.
+
+## N26 — one reading file rewritten by its own proposer (content identical)
+The relaunched sonnet P4 8–15 reading agent reported overwriting
+`read_sonnet_acq/reading_w10_P4_000584.json` before noticing it
+existed. The committed first version (commit 5ef98163) and the
+rewritten file are byte-for-byte the same plan, so the one-reading-
+per-item rule is intact; recorded because it is the only overwrite
+of a bridge output in V1.10. Opus's relaunched T4 9–17 agent
+composed the word-multipliers "eight"/"nine" from listed constants
+(`*2*4`, `*3*3`) on four items instead of nulling as instructed;
+those readings stand (the engine's gates judge them), reported here.
