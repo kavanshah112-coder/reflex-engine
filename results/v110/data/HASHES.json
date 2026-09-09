@@ -15,5 +15,14 @@
    "w400k_seal.jsonl": "89846e7f5d13fb326146038399d70631b20d6c06fbdae29445cb969684696b9e",
    "w400k_replay.jsonl": "5c5b99d73be961c758187a5add512dfef54e3ea688b15992131eea38c71a0e3c"
   }
+ },
+ "post_qc": {
+  "note": "hashes after author_merge110 qc (2026-09-09): QC verdicts written, 536 QC-rejected SEAL/REPLAY items moved to dev; these are the files the SEAL/REPLAY samples and runs read",
+  "files": {
+   "w400k_acq.jsonl": "9ba8c03efc909b03b3847ca5a2efb63011d6f9c733a99f9efe21a2f0ac0c8cee",
+   "w400k_dev.jsonl": "222e0a88063472558da3398da7e5b05e12bee259a518d0a7f61729383c6d92d6",
+   "w400k_seal.jsonl": "c92d731de465d0fd07e0381fb22dca5d4b4fc960eed6e766f77b32f62ea5682a",
+   "w400k_replay.jsonl": "969d5f6bc2c38909055b7f3c479880cbca308aca7c1f3b260d6cbb7e7da9ab47"
+  }
  }
 }

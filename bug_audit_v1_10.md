@@ -221,3 +221,33 @@ sonnet→opus, opus→sonnet, haiku→fable, fable→haiku. The fable w04b
 authoring agent rewrote its own 039/040 files once before finishing
 (word-form step values corrected to digits) — its own in-progress
 output, not established data.
+
+## N16 — a sonnet DEV reading agent reports having "run a slot-substitution check"
+The sonnet T3 0–7 DEV reading agent reported that its 193 non-null
+plans "parse and evaluate cleanly under a slot-substitution check I
+ran against the stated numbers" — i.e. it executed its own plans
+(against the Read/Write-only instruction, cf. N6). It had no golds,
+so the check cannot have tuned readings toward the answer; it can
+only have removed syntactically broken plans, which the engine would
+have nulled anyway. The readings stand as collected; reported here.
+
+## N17 — QC applied; QC-rejected items are not scored on any split (engine change before any sealed run)
+`author_merge110 qc` over 314 batches (7,745 items): T4 4,265 pass /
+290 reject; P4 2,834 pass / 356 reject; 536 rejected SEAL/REPLAY items
+moved to dev (`split_original` kept). Rejects by author: haiku T4
+259 of 2,058 QC'd (12.6%), haiku P4 255 of 1,509 (16.9%); sonnet 2 /
+5, opus 16 / 5, fable 13 / 91 (fable P4 91 of 548 — the fable-authored
+P4 stories carry narrated intermediates that the QC model (haiku)
+answered from). QC models reported the dominant reject mechanisms:
+haiku-authored stories that (a) narrate a wrong intermediate value
+("the derivative … yields 11" when it is 10) or (b) ask for an
+intermediate state (the wave-0 misreading of the feature, N7), and a
+handful of truncated or self-contradictory texts. Post-QC SEAL holds
+T4 1,772 / P4 1,175 authored items, REPLAY T4 1,887 / P4 1,175, all
+QC-passed. `engine110.run` now skips items with `qc == "reject"` on
+every split (counted as `qc_rejected` per tier) — ACQ/DEV rejects
+were previously scorable against a disputed gold; SEAL/REPLAY had
+none left. This is an engine change made before any sealed run and
+after the D-arm baselines, which contain no authored items. Files
+re-hashed as `HASHES.json["post_qc"]`; the ACQ/DEV T4/P4 E-SAMPLE
+(500/400 and 150/150) was drawn after QC.

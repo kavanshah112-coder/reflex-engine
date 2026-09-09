@@ -1,0 +1,582 @@
+[
+{
+"id": "w10_P4_000067",
+"question": "A speed sensor on a test cart reports a value equal to 5 multiplied by the sum of 6 and 8; this is the cart's speed, in meters per second. The cart itself has a mass of 25,000 grams. Find its kinetic energy, subtract 19 joules for a calibration offset, double the result for a two-cart test, then subtract 10 joules and a further 28 joules for two separate corrections. What is the final kinetic energy, in joules, after all corrections?",
+"numbers": {
+"n0": "5",
+"n1": "6",
+"n2": "8",
+"n3": "25000",
+"n4": "19",
+"n5": "10",
+"n6": "28"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_007350",
+"question": "GCD: gcd(119, 334) = 7. Subtract 5, add 25. A 6-kilogram mass at 27 m/s has energy. Convert to kilojoules. Temperature: 25\u00b0C, not applicable. What is the energy in kJ?",
+"numbers": {
+"n0": "119",
+"n1": "334",
+"n2": "7",
+"n3": "5",
+"n4": "25",
+"n5": "6",
+"n6": "27",
+"n7": "25"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/number_theory/gcd_lcm",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/energy_work",
+"units_conversion/simple_units"
+]
+},
+{
+"id": "w10_P4_006634",
+"question": "A machinery drive system combines acceleration from 6 \u00d7 (2 + 4) = 36 m/s\u00b2 applied to a 95 kg motor assembly. Force is calculated, scaled 5 times through mechanical stages, then 2 times through final transmission, and converted to kN. A spindle rotation rate of 3500 rpm is unused. What is the total drive force in kN?",
+"numbers": {
+"n0": "6",
+"n1": "2",
+"n2": "4",
+"n3": "36",
+"n4": "95",
+"n5": "5",
+"n6": "2",
+"n7": "3500"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units"
+]
+},
+{
+"id": "w10_P4_000609",
+"question": "A luggage cart of mass 107 kg is accelerated along an apron 55 m wide. Its acceleration in m/s^2 is found by taking the area under the curve y = 2x^2 + 0x between x = 0 and x = 3, subtracting 15, and multiplying by 8. The force producing that acceleration is supplied partly by a tailwind, which contributes 9 N, and the tug supplies the rest. What force, in N, does the tug supply?",
+"numbers": {
+"n0": "107",
+"n1": "55",
+"n2": "2",
+"n3": "2",
+"n4": "2",
+"n5": "0",
+"n6": "0",
+"n7": "3",
+"n8": "15",
+"n9": "8",
+"n10": "9"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/integration/definite",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_001515",
+"question": "A launch-rail manufacturer needs the total thrust, in kilonewtons, from a complete installation. The raw index is the area under the curve 3*x^2 + 0*x between x = 0 and x = 3, where x is the throttle index, and a control offset then adds 14 to that index, giving the carriage's rate of change of speed in m/s^2. The carriage has a mass of 81000 g, and each drive supplies exactly the force needed to produce that motion. A rail carries 8 identical drives, and their combined force is expressed in kilonewtons. The installation has 7 identical rails. What total thrust, in kN, does the installation deliver?",
+"numbers": {
+"n0": "3",
+"n1": "2",
+"n2": "0",
+"n3": "0",
+"n4": "3",
+"n5": "14",
+"n6": "2",
+"n7": "81000",
+"n8": "8",
+"n9": "7"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/integration/definite",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_001016",
+"question": "A laboratory needs the final figure, in kilojoules, for a sled trial. The sled's position along its rail is, in metres, 1*t^3 - 2*t^2 with t in seconds, and the hall is kept at 18 degrees C. The trial is scored at the instant t = 4 s, when the sled has a mass of 4 kg and moves at whatever speed its position curve then gives. The energy the sled carries by virtue of that motion is expressed in kilojoules, and the laboratory runs 8 identical sleds. A fixed rig overhead of 16 kJ is subtracted from the combined figure, and the whole trial is repeated on 7 identical days. What is the final figure, in kJ?",
+"numbers": {
+"n0": "1",
+"n1": "3",
+"n2": "2",
+"n3": "2",
+"n4": "18",
+"n5": "4",
+"n6": "4",
+"n7": "8",
+"n8": "16",
+"n9": "7"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/differentiation/evaluate_at_point",
+"physics/mechanics/energy_work",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_003740",
+"question": "A hoist controller adds its two calibration constants 4 and 14, multiplies the sum by 5, and then subtracts 25, reading the result as an acceleration in metres per second squared. A cage of mass 30000 g is lifted with that acceleration and the force the cable must apply to the cage is calculated and expressed in kilonewtons. A static preload of 7 kN is added to it. Because 9 identical cages hang from one headframe, the headframe load is 9 times that total. What is the headframe load, in kN?",
+"numbers": {
+"n0": "4",
+"n1": "14",
+"n2": "5",
+"n3": "25",
+"n4": "30000",
+"n5": "7",
+"n6": "9",
+"n7": "9"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_001519",
+"question": "A laboratory needs the total energy, in joules, from a paired launcher test. The trolley's release speed, in metres per second, is the area under the curve 1*x^2 + 1*x between x = 1 and x = 4, where x is the cam setting. The trolley has a mass of 6 kg. To the energy it carries by virtue of that motion, 14 J is added for the latch and a further 15 J for the trigger coil. The laboratory runs 2 identical launchers. What is the total, in J?",
+"numbers": {
+"n0": "1",
+"n1": "2",
+"n2": "1",
+"n3": "1",
+"n4": "4",
+"n5": "6",
+"n6": "14",
+"n7": "15",
+"n8": "2"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/integration/definite",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_000374",
+"question": "A function f(x) = 4*x^3 - 1*x^2 is evaluated at its second derivative at x = 3, giving a velocity in m/s. A 25 kg object at this velocity stores energy, scaled by 7, scaled by 6, converted to kilojoules, and scaled by 5. A wind speed of 15 km/h was noted but is not relevant. What is the final energy in kilojoules?",
+"numbers": {
+"n0": "4",
+"n1": "3",
+"n2": "1",
+"n3": "2",
+"n4": "3",
+"n5": "25",
+"n6": "7",
+"n7": "6",
+"n8": "5",
+"n9": "15"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/differentiation/evaluate_at_point",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_008794",
+"question": "The greatest common divisor of 393 and 189 is 3. A 13-kilogram object at 3 m/s has kinetic energy of half mass times velocity squared. Multiply by 3, subtract 10, convert from joules to kilojoules, and subtract 3. What is the final energy in kilojoules? A pressure of 1.5 bar was also noted.",
+"numbers": {
+"n0": "393",
+"n1": "189",
+"n2": "3",
+"n3": "13",
+"n4": "3",
+"n5": "3",
+"n6": "10",
+"n7": "3",
+"n8": "1.5"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/number_theory/gcd_lcm",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_000363",
+"question": "A test sled of mass 13000 grams slides along a bench 4 m long at a speed in m/s equal to the larger of the two values x that satisfy x^2 - 8x + 12 = 0. Its energy of motion is expressed in kJ. A logger adds 29 kJ for the bench's stored capacitor energy and then subtracts 17 kJ drawn off by the cooling system. What figure, in kJ, does the logger show?",
+"numbers": {
+"n0": "13000",
+"n1": "4",
+"n2": "2",
+"n3": "8",
+"n4": "12",
+"n5": "0",
+"n6": "29",
+"n7": "17"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/algebra/quadratic_polynomial_solve",
+"physics/mechanics/energy_work",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_000321",
+"question": "The number a factory wants, in N, is the total motor load for 7 identical lines, each line driving 12 identical carts, each cart's motor carrying the same load. The load per motor is the force producing the cart's acceleration, less 11 N supplied by a helper spring, plus 5 N of belt friction. Each cart has a mass of 89000 grams. Its acceleration in m/s^2 equals the area under the curve y = 5x^2 + 0x between x = 0 and x = 1. What total motor load, in N, does the factory report?",
+"numbers": {
+"n0": "7",
+"n1": "12",
+"n2": "11",
+"n3": "5",
+"n4": "89000",
+"n5": "2",
+"n6": "5",
+"n7": "2",
+"n8": "0",
+"n9": "0",
+"n10": "1"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/integration/definite",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_000987",
+"question": "A 43 kg ice-rink resurfacing cart is driven by a single electric hub motor. It is towed at a speed, in m/s, equal to 11 times the greatest common divisor of 18 and 175. As it rolls, a small spring release adds 2 J to its energy of motion. Express the cart's resulting energy of motion in kJ.",
+"numbers": {
+"n0": "43",
+"n1": "11",
+"n2": "18",
+"n3": "175",
+"n4": "2"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/number_theory/gcd_lcm",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units"
+]
+},
+{
+"id": "w10_P4_007995",
+"question": "Sum from k=1 to 8 of (2\u00b7k - 1) = 64 m/s\u00b2 acceleration. With 180 kilograms, force = 11520 N, scaled by 7, reduced by 16, increased by 12, converted to kiloNewtons. The circuit's resistance is 50 ohms, not used. What is the final force in kiloNewtons?",
+"numbers": {
+"n0": "1",
+"n1": "8",
+"n2": "2",
+"n3": "1",
+"n4": "64",
+"n5": "180",
+"n6": "11520",
+"n7": "7",
+"n8": "16",
+"n9": "12",
+"n10": "50"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/sequences_series/finite_sum",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units"
+]
+},
+{
+"id": "w10_P4_003795",
+"question": "A test car of mass 57000 g has position 1t\u00b3 + 3t\u00b2 metres along the track, with t in seconds. Take the car's energy of motion at its speed at t = 4 s. A heat runs 3 such cars; add their energies and add 1 J for the timing beacon. 4 identical heats are run, and the total is expressed in kJ. What is the total, in kJ?",
+"numbers": {
+"n0": "57000",
+"n1": "1",
+"n2": "3",
+"n3": "4",
+"n4": "3",
+"n5": "1",
+"n6": "4"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/differentiation/evaluate_at_point",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units"
+]
+},
+{
+"id": "w10_P4_002343",
+"question": "A spring-loaded launcher fires a small test ball whose mass is 4,000 grams, that is, 4 kilograms. A lab assistant takes 6 units, adds 19 units to it, then multiplies that sum by 3; the result is used as the ball's launch speed, in meters per second. Using this speed and the ball's mass, the ball's energy at launch is determined. A recorded loss of 18 is then subtracted from that energy, followed by another loss of 11. The remaining energy, in joules, is converted to kilojoules, and finally the whole reading is doubled because two identical launchers fire together in the trial. What is the final energy, in kilojoules?",
+"numbers": {
+"n0": "4000",
+"n1": "4",
+"n2": "6",
+"n3": "19",
+"n4": "3",
+"n5": "18",
+"n6": "11"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_007389",
+"question": "GCD: gcd(200, 375) = 25. A 41-kilogram system at 25 m/s\u00b2 generates force. Scale by 10 three times, then 12. Humidity: 60%, not used. What is the force in N?",
+"numbers": {
+"n0": "200",
+"n1": "375",
+"n2": "25",
+"n3": "41",
+"n4": "25",
+"n5": "10",
+"n6": "12",
+"n7": "60"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/number_theory/gcd_lcm",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_001434",
+"question": "A depot wants the rated force, in kilonewtons, for a wagon hoist: a 1 kN reserve plus the force to accelerate a 157 000 g wagon, expressed in kilonewtons. The acceleration, in m/s\u00b2, is found by taking the slope of the curve y = 3x\u00b3 + 4x\u00b2 at x = 1, multiplying it by 5, and subtracting 19. Gravity is balanced by a counterweight. What is the rated force, in kN?",
+"numbers": {
+"n0": "1",
+"n1": "157",
+"n2": "000",
+"n3": "3",
+"n4": "4",
+"n5": "1",
+"n6": "5",
+"n7": "19"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/differentiation/evaluate_at_point",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/dynamics_forces",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_008341",
+"question": "Integral of 5\u00b7x\u00b2 + 6\u00b7x from 0 to 2 is 29.33 m/s. After adding 19, get 48.33 m/s. With 9 kg, energy = 0.5 \u00d7 9 \u00d7 2335.79 = 10510.86 J, increased by 15, reduced by 15. The location is North, not used. What is the final energy in joules?",
+"numbers": {
+"n0": "5",
+"n1": "6",
+"n2": "0",
+"n3": "2",
+"n4": "29.33",
+"n5": "19",
+"n6": "48.33",
+"n7": "9",
+"n8": "0.5",
+"n9": "9",
+"n10": "2335.79",
+"n11": "10510.86",
+"n12": "15",
+"n13": "15"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/integration/definite",
+"mathematics/arithmetic/expression_evaluation",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_003286",
+"question": "A pressure distribution is analyzed by integrating 3x\u00b2 + 4x from x = 1 to x = 3 meters. This integral represents a load parameter that becomes the acceleration in m/s\u00b2 for a 176 kg structural element. The resulting force must be converted from newtons to kilonewtons for the design spec. This baseline is then multiplied by 9 through the primary lever system. A second stage multiplies it by 8 more. A final amplification multiplies it by 8 again. What is the final load capacity in kN? (The element's cross-sectional area is 0.5 m\u00b2, which is not used.)",
+"numbers": {
+"n0": "3",
+"n1": "4",
+"n2": "1",
+"n3": "3",
+"n4": "176",
+"n5": "9",
+"n6": "8",
+"n7": "8",
+"n8": "0.5"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/integration/definite",
+"physics/mechanics/dynamics_forces",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_000462",
+"question": "A sensor on a test rig tracks velocity v(t) = 5t\u00b3 \u2212 t\u00b2 (meters per second, t in seconds since actuation). The instantaneous acceleration at t = 2 seconds \u2014 the rate of change of v at that moment \u2014 acts on a 31 kg test block; find the resulting force, then multiply it by 10, by 2, and by 11 in turn, representing three successive test-batch multipliers. What is the final force, in newtons?",
+"numbers": {
+"n0": "5",
+"n1": "2",
+"n2": "31",
+"n3": "10",
+"n4": "2",
+"n5": "11"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/differentiation/evaluate_at_point",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002993",
+"question": "A shipping report ends with one number in kilonewtons. A hatch cover of mass 98 kg is accelerated on its rails at a rate, in metres per second squared, equal to the larger root of x^2 - 15x + 56 = 0. The drive must supply the force that gives that cover that acceleration, and the report writes it in kilonewtons. Eleven covers are moved together, so the deck figure is 11 times the record. From that figure 26 is subtracted, in those same kilonewton units, as the coaming tare. What number ends the report, in kN?",
+"numbers": {
+"n0": "98",
+"n1": "2",
+"n2": "15",
+"n3": "56",
+"n4": "0",
+"n5": "11",
+"n6": "26"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/algebra/quadratic_polynomial_solve",
+"physics/mechanics/dynamics_forces",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_002555",
+"question": "The engineer is after the adjusted holding figure, in kilonewtons, for a clamp on a test block, and the clamp's rating is obtained only after two corrections. The block has a mass of 12000 g and accelerates at a rate in metres per second squared equal to the larger of the two values of x that satisfy x^2 - 9x + 8 = 0. Find the force in newtons that gives the block that acceleration and convert it to kilonewtons. To that figure a 16 kN preload is added, and then a 17 kN hydraulic relief is subtracted. What is the adjusted figure in kN (negative if the relief exceeds the load)?",
+"numbers": {
+"n0": "12000",
+"n1": "2",
+"n2": "9",
+"n3": "8",
+"n4": "0",
+"n5": "16",
+"n6": "17"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/algebra/quadratic_polynomial_solve",
+"physics/mechanics/dynamics_forces",
+"units_conversion/simple_units",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_007027",
+"question": "A machinery test integrates acceleration between x = 2 and x = 4. The integral of 2x\u00b2 + 3x (giving 28 m/s effective), applied to a 17 kg component, produces force, scaled 6 times and 11 times more through multipliers, then 8 times finally. A system calibration of 100 units is unused. What is the total applied force in Newtons?",
+"numbers": {
+"n0": "2",
+"n1": "4",
+"n2": "2",
+"n3": "3",
+"n4": "28",
+"n5": "17",
+"n6": "6",
+"n7": "11",
+"n8": "8",
+"n9": "100"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/calculus/integration/definite",
+"physics/mechanics/dynamics_forces",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+},
+{
+"id": "w10_P4_001126",
+"question": "Solving x^2 - 5x + 4 = 0 for the smaller root is 1 m/s. A 32 kg mass has kinetic energy increased by 2, scaled by 2 and 11. A reference power is 1 kW. What is the final energy in joules?",
+"numbers": {
+"n0": "2",
+"n1": "5",
+"n2": "4",
+"n3": "0",
+"n4": "1",
+"n5": "32",
+"n6": "2",
+"n7": "2",
+"n8": "11",
+"n9": "1"
+},
+"reading_language": "chain",
+"kind_hint": [
+"mathematics/algebra/quadratic_polynomial_solve",
+"physics/mechanics/energy_work",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation",
+"mathematics/arithmetic/expression_evaluation"
+]
+}
+]

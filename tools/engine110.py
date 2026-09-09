@@ -390,6 +390,12 @@ def run(arm, split, checkpoint=0, lib_in=None, lib_out=None, limit=0, tiers=None
         tier = it["tier"]
         rec = {"id": it["id"], "tier": tier, "sampled": it["id"] in sample}
         by_tier[tier]["n"] += 1
+        # QC-rejected authored items (gold disputed by the QC model) are not scored on any split (N17)
+        if it.get("qc") == "reject":
+            rec["qc_reject"] = True
+            by_tier[tier]["qc_rejected"] += 1
+            rows.append(rec)
+            continue
         # exclude items this arm's model authored from SEAL/REPLAY scoring
         if it.get("author_model") == arm and split in ("seal", "replay"):
             rec["excluded_author"] = True
