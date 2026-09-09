@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id": "n1", "op": "derivative_at", "expr": "3*x**3 - 4*x**2", "order": 2, "point": 3.0}, {"id": "n2", "op": "evaluate", "expr": "@n1 - 12"}, {"id": "n3", "op": "formula", "expr": "mass * acceleration", "mass": 18.0, "acceleration": "@n2", "unit": "N"}], "final": "n3"}}

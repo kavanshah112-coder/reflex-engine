@@ -102,5 +102,29 @@ def qc():
     print(json.dumps(dict(led), indent=1))
 
 
+
+
+def qcbatches():
+    """Rewrite qcq batches restricted to what the runs score with a model in the loop:
+    every authored item in SEAL/REPLAY, plus the E-SAMPLE authored items of ACQ/DEV (spec amendment: QC restricted if budget forces)."""
+    import engine110 as E
+    items = _load_all()
+    keep = {it["id"] for it in items.values() if it.get("authored") and it.get("text") and it["split"] in ("seal", "replay")}
+    for sp in ("acq", "dev"):
+        keep |= {it["id"] for it in E.sample_ids(sp) if it.get("authored")}
+    for p in BRIDGE.glob("qcq_*.json"):
+        p.unlink()
+    pend = [it for it in items.values() if it["id"] in keep and it.get("qc") == "pending"]
+    by = {}
+    for it in sorted(pend, key=lambda x: x["id"]):
+        by.setdefault((it["tier"], QC_OF[it["author_model"]]), []).append({"id": it["id"], "question": it["text"]})
+    nb = Counter()
+    for (tier, qcm), lst in by.items():
+        for bi in range(0, len(lst), 25):
+            (BRIDGE / ("qcq_%s_%s_%03d.json" % (tier, qcm, bi // 25))).write_text(json.dumps(lst[bi:bi + 25], indent=0), encoding="utf-8")
+            nb["%s_%s" % (tier, qcm)] += 1
+    print(json.dumps({"qc_items": len(pend), "batches": dict(nb), "total_batches": sum(nb.values())}, indent=1))
+
+
 if __name__ == "__main__":
-    {"stories": stories, "qc": qc}[sys.argv[1]]()
+    {"stories": stories, "qc": qc, "qcbatches": qcbatches}[sys.argv[1]]()

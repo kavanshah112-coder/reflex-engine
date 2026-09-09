@@ -1,0 +1,102 @@
+[
+{
+"id": "w10_P4_007002",
+"question": "A load test uses stress polynomial x\u00b2 - 11x + 24, selecting the smaller solution (3 m/s\u00b2), scaled 6 times to 18 m/s\u00b2, increased by 11 m/s\u00b2, then reduced by 27 m/s\u00b2 to yield 2 m/s\u00b2 final. A 194 kg structure produces force. What is the total applied load in Newtons?"
+},
+{
+"id": "w10_P4_007015",
+"question": "A load test at x = 1 applies acceleration from x\u00b3 + x\u00b2 (yielding 5 m/s\u00b2) to a 155 kg component. Force is calculated, converted to kN, increased by 24 kN for boost, then reduced by 6 kN for adjustment. What is the net applied force in kN?"
+},
+{
+"id": "w10_P4_007017",
+"question": "A machinery test integrates acceleration between x = 3 and x = 4. The integral of 3x\u00b2 + 6x (giving 63 m/s effective), applied to a 136 kg component, produces force, reduced by 20 N for damping, converted to kN, and reduced by 19 kN more. What is the net applied force in kN?"
+},
+{
+"id": "w10_P4_007021",
+"question": "A force system uses the GCD of values 40 and 231 (which is 1 m/s\u00b2). A 16 kg component produces force, scaled 8 times through multipliers, converted to kN, increased by 2 kN for boost, then increased by 18 kN. What is the total force in kN?"
+},
+{
+"id": "w10_P4_007027",
+"question": "A machinery test integrates acceleration between x = 2 and x = 4. The integral of 2x\u00b2 + 3x (giving 28 m/s effective), applied to a 17 kg component, produces force, scaled 6 times and 11 times more through multipliers, then 8 times finally. A system calibration of 100 units is unused. What is the total applied force in Newtons?"
+},
+{
+"id": "w10_P4_007028",
+"question": "An energy system selects velocity from polynomial x\u00b2 - 5x + 4, choosing the larger root (4 m/s), scaled 9 times to 36 m/s, then scaled 2 more times to 72 m/s for a 16 kg mass. Kinetic energy is calculated, reduced by 21 J for losses, then converted to kJ. What is the final stored energy in kJ?"
+},
+{
+"id": "w10_P4_007035",
+"question": "A force system uses the GCD of values 362 and 184 (which is 2 m/s\u00b2) applied to a 166 kg component. Force is calculated, increased by 13 N for preload, converted to kN, reduced by 26 kN for damping, then amplified 10 times. What is the final force in kN?"
+},
+{
+"id": "w10_P4_007037",
+"question": "A load test uses stress polynomial x\u00b2 - 9x + 14, selecting the larger root (7 m/s\u00b2), scaled 6 times to 42 m/s\u00b2 for a 141 kg component. Force is calculated, increased by 19 N for boost, then amplified 7 times. What is the total applied load in Newtons?"
+},
+{
+"id": "w10_P4_007061",
+"question": "A machinery test integrates power between x = 1 and x = 2. The integral of 5x\u00b2 + 2x (giving 8 m/s effective), applied to a 20 kg rotor, produces kinetic energy, amplified 6 times through power stages, converted to kJ, increased by 19 kJ, then amplified 12 times. What is the final available energy in kJ?"
+},
+{
+"id": "w10_P4_007065",
+"question": "A load test uses stress polynomial x\u00b2 - 14x + 48, selecting the larger root (8 m/s\u00b2). A 183 kg structure produces force, increased by 22 N for preload, converted to kN, increased by 24 kN for boost, then amplified 6 times. What is the total applied load in kN?"
+},
+{
+"id": "w10_P4_007068",
+"question": "A machinery test integrates power between x = 0 and x = 3. The integral of 2x\u00b2 + 7x (giving 31.5 m/s effective), applied to a 52 kg rotor, produces kinetic energy, amplified 2 times and 8 times through power stages, converted to kJ, then amplified 8 times by distribution. What is the final available energy in kJ?"
+},
+{
+"id": "w10_P4_007069",
+"question": "An energy system determines velocity from the GCD of values 31 and 107 (which is 1 m/s). A 50 kg rotor mass stores kinetic energy, increased by 12 J for boosting, converted to kJ, and amplified 11 times by distribution multipliers. What is the total available energy in kJ?"
+},
+{
+"id": "w10_P4_007077",
+"question": "A machinery test integrates acceleration between x = 3 and x = 4. The integral of x\u00b2 + 3x (giving 13.333 m/s effective), applied to a 24 kg component, produces force, converted to kN, reduced by 20 kN for damping, then amplified 7 times. What is the net applied force in kN?"
+},
+{
+"id": "w10_P4_007083",
+"question": "A machinery test integrates power between x = 0 and x = 2. The integral of 2x\u00b2 + 3x (giving 9.333 m/s effective), applied to a 24 kg rotor, produces kinetic energy, reduced by 14 J for friction, converted to kJ, amplified 5 times and 7 times through power distribution. What is the final available energy in kJ?"
+},
+{
+"id": "w10_P4_007090",
+"question": "An energy system selects velocity from polynomial x\u00b2 - 3x + 2, choosing the smaller solution (1 m/s). A 34 kg rotor stores kinetic energy, converted to kJ, amplified 4 times through power stages, reduced by 3 kJ for losses, then amplified 2 times. What is the final stored energy in kJ?"
+},
+{
+"id": "w10_P4_007102",
+"question": "A machinery test integrates acceleration between x = 0 and x = 1. The integral of 5x\u00b2 + 3x (giving 3.333 m/s effective), increased by 27 m/s for boost to yield 30.333 m/s, applies to a 159 kg component for force, scaled 4 times and 4 more times. A backup pressure of 150 psi is unused. What is the total applied force in Newtons?"
+},
+{
+"id": "w10_P4_007103",
+"question": "A vibration damping system in a factory must be tuned. The damping parameter satisfies x^2 - 13x + 42 = 0. Engineers choose the lower value as the operating parameter. With a 53-kilogram mounted assembly responding at this parameter (interpreted as acceleration in m/s\u00b2), the dampers generate a baseline force. A 9 kN safety margin is added to this force. The system is then amplified 10 times for multi-stage damping, and 10 times again for the complete facility array. The damper material has a Shore hardness of 65 A, which does not affect this calculation. What is the total absorption force in kN?"
+},
+{
+"id": "w10_P4_007114",
+"question": "A rotating flywheel energy storage system stores energy for peak power demands. The system's optimal operating window requires solving x^2 - 15x + 56 = 0 where x is in meters per second; the engineers select the lower root. A 46-kilogram rotor must accelerate at this rate (in m/s\u00b2). Calculate the rotational kinetic energy stored. Add 19 kJ for electrical losses, then add 3 more kJ for thermal effects. The flywheel diameter is 80 centimeters, but this is not needed for the calculation. What is the total energy accounting in kJ?"
+},
+{
+"id": "w10_P4_007120",
+"question": "A hydraulic press system uses control parameters that satisfy x^2 - 11x + 28 = 0; the larger root determines the pressure setting. At 7 times this setting (representing the effective load in m/s\u00b2), a 200-kilogram platen must accelerate. Calculate the force the hydraulic system generates. Scale this force by 7 to account for mechanical advantage, then by 2 more for the secondary amplification. The press bed's surface area is 4.2 square meters, which is not part of this calculation. What is the total pressing force in kN?"
+},
+{
+"id": "w10_P4_007142",
+"question": "A vibration sensor measures acceleration patterns. The acceleration function 2x^3 - 6x^2 has its second derivative at x = 1. Adding 25 to this value, then subtracting 21, then scaling by 4 gives an effective acceleration. A 58-kilogram sensor mass at this value (in m/s\u00b2) stores energy. Convert to kilojoules. The sensor's operating frequency is 60 Hz, which is not relevant. What is the stored energy in kJ?"
+},
+{
+"id": "w10_P4_007145",
+"question": "A system factor: gcd(233, 370) = 1. A 10-kilogram mass at 1 m/s has kinetic energy. Scale by 8, then by 10, convert to kilojoules. The system operates at 50 Hz, not needed. What is the energy in kJ?"
+},
+{
+"id": "w10_P4_007150",
+"question": "A series sum: 1^2 + 2^2 + 3^2 + 4^2 = 30. Add 10 to get 40. A 37-kilogram mass at 40 m/s has kinetic energy. Scale by 9, convert to kilojoules, scale by 6. The mass color is red, not applicable. What is the total energy in kJ?"
+},
+{
+"id": "w10_P4_007156",
+"question": "A sequence sum: 1 + 2 + ... + 10 = 55. A 170-kilogram system at this value (in m/s\u00b2) generates force. Scale by 6, then 10, then 8, then 11. The system weight is 2.3 tons, irrelevant. What is the force in N?"
+},
+{
+"id": "w10_P4_007162",
+"question": "An impact velocity: 2 times (7 + 7) = 28 m/s. A 7-kilogram mass at this velocity has kinetic energy. Subtract 26 kJ, convert to kilojoules, scale by 9 twice. The impact angle is 45 degrees, not needed. What is the energy in kJ?"
+},
+{
+"id": "w10_P4_007166",
+"question": "Acceleration profile: second derivative of 2x^3 + x^2 at x = 2. A 85-kilogram mass at this acceleration generates force. Convert to kilojoules, scale by 8, then 4, add 19. The mass density is 2700 kg/m\u00b3, not used. What is the force in kN?"
+}
+]

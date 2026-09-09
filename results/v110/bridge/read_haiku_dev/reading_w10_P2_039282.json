@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id": "n1", "op": "gcd", "a": 61.0, "b": 374.0}, {"id": "n2", "op": "formula", "expr": "mass * acceleration", "mass": 24.0, "acceleration": "@n1", "unit": "N"}, {"id": "n3", "op": "convert", "value": "@n2", "from": "N", "to": "kN"}], "final": "n3"}}

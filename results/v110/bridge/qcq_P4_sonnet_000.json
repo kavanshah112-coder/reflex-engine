@@ -1,0 +1,102 @@
+[
+{
+"id": "w10_P4_000004",
+"question": "A drop-test rig in a car-seat laboratory fires a sled of 45000 grams along a straight horizontal rail. The rig's control sheet states that the sled's release speed, in metres per second, is the smaller of the two values of x for which x^2 - 10x + 16 = 0. Each launch, the data logger records the energy the sled carries because of its motion at release. The rig makes 4 launches in a burst, runs 5 bursts in a test block, and completes 9 test blocks in one shift, and the logger simply adds up every launch. At the end of the shift the software subtracts a fixed instrument offset of 19 J from the accumulated total. The rail is 12 m long, a figure the logger never uses. What total, in joules, does the logger report at the end of the shift?"
+},
+{
+"id": "w10_P4_000017",
+"question": "A magnetic launcher accelerates a carriage of 55000 grams from rest along a level track. Measured from the instant of release at t = 0 seconds, the carriage's acceleration in metres per second squared follows 1t^2 + 6t, and the launcher drives it this way for the first 3 seconds. At the end of that run the logger records the energy the carriage carries because of its motion. Each test consists of 5 identical carriage runs whose recorded energies are summed, after which the logger adds a standing offset of 19 J to the test total. The facility completes 9 such tests and adds their figures together, and the same 9-test programme is then repeated at 5 separate sites, with all site totals combined. The track is 40 m long, which plays no part in the accounting. What is the combined figure, in joules?"
+},
+{
+"id": "w10_P4_000027",
+"question": "A conveyor audit reports a headline number that is 7 times the figure obtained for a full week. That weekly figure is 11 times the daily figure, the daily figure is 10 times the figure for one hour, and the hourly figure is 9 times the force needed for a single push. In each push a trolley of 132000 grams is driven forward, and the trolley's acceleration during the push, in metres per second squared, is the larger of the two values of x for which x^2 - 12x + 32 = 0. The pusher itself is driven by a motor mounted at the far end of the line. What is the headline number, in newtons?"
+},
+{
+"id": "w10_P4_000028",
+"question": "A rehabilitation gym uses a sled that pushes an athlete of 83 kg horizontally on a frictionless air track. During the push the athlete's acceleration, in metres per second squared, is the larger of the two values of x for which x^2 - 11x + 28 = 0. The machine's load cell records the force required for one push, and the daily report multiplies that reading by 9 because the programme calls for 9 pushes. From that daily figure the software subtracts a tare of 6 N, then converts the result to kilonewtons. Finally, a fixed contractual credit of 27 kN is subtracted from the converted value to give the number entered in the ledger. What number, in kilonewtons, is entered in the ledger?"
+},
+{
+"id": "w10_P4_000038",
+"question": "A vibration bench carries 7 identical sensors, and the calibration routine works through every distinct pair of sensors that can be chosen from them. The number of such pairs is, in metres per second squared, the acceleration the bench imposes on a test mass of 149000 grams during the sweep. The controller records the force needed to drive that mass and adds a fixed preload of 30 N to the reading. It then multiplies the result by 3 for the three axes, by 10 for the ten sweeps in a session, and by 3 again for the three sessions in the certification. The bench frame is 1.5 m wide, a dimension that never enters the calculation. What is the certification figure, in newtons?"
+},
+{
+"id": "w10_P4_000041",
+"question": "A press-shop report ends with a value expressed in kilonewtons, obtained by multiplying an earlier figure by 4 for the four presses on the line. That earlier figure was itself 3 times a shift figure, and the shift figure was 7 times the force acting on a single ram. The ram has a mass of 169 kg, and its acceleration builds during the stroke: the rate at which the acceleration grows, in metres per second cubed, follows 1t^2 + 5t, and between t = 3 seconds and t = 4 seconds the acceleration accumulates from zero at the start of that interval. The ram's guide column is 2 m tall, which does not enter the force calculation. What value, in kilonewtons, ends the report?"
+},
+{
+"id": "w10_P4_000042",
+"question": "A machine-shop ledger closes by adding a fixed handling allowance of 10 kN to a figure that is 6 times an earlier converted reading. That converted reading is the kilonewton form of a value obtained by adding a preload of 23 N to the force on a single tool head. The tool head has a mass of 163 kg, and its position along the slide in metres is fitted by the curve 5x^3 - 5x^2, with x the time in seconds. Its acceleration at the moment x = 2 seconds is the rate at which the slope of that fitted position curve is itself changing there. What number, in kilonewtons, closes the ledger?"
+},
+{
+"id": "w10_P4_000045",
+"question": "A warehouse tug accelerates a loaded pallet of 120 kg along a smooth floor. The pallet's acceleration during the pull, in metres per second squared, is the smaller of the two values of x for which x^2 - 7x + 12 = 0. The tug's controller records the force needed for one pull and multiplies it by 7, because the shift calls for 7 identical pulls. It then subtracts a rope-tension tare of 26 N from that total and converts what remains to kilonewtons. The pallet is stacked 1.8 m high, a figure the controller records but never uses. What is the converted result, in kilonewtons?"
+},
+{
+"id": "w10_P4_000048",
+"question": "A packing plant has 325 red cartons and 176 blue cartons, and the supervisor forms the largest possible number of identical bundles that divides both counts exactly with nothing left over. The number of cartons that then goes into each bundle is, in metres per second squared, exactly 7 times that number of bundles, and this is the acceleration the plant's shuttle applies to a tray of 47000 grams. The control system records the force needed to drive the tray and multiplies it by 5 for the five shuttles on the floor. The result is expressed in kilonewtons and then multiplied by 5 again, once for each working day of the week. What figure, in kilonewtons, does the control system report for the week?"
+},
+{
+"id": "w10_P4_000050",
+"question": "A linear actuator drives a carriage of 147000 grams along a rail, and its speed in metres per second is modelled by the fitted curve 4x^3 + 5x^2, with x the elapsed time in seconds. The carriage's acceleration at the instant x = 1 second is the rate at which that fitted speed is changing there. The controller computes the force needed to produce that acceleration and expresses it in kilonewtons. It then multiplies the converted value by 10, because 10 carriages run on the rail, and by 9, because 9 rails share the same drive cabinet. The cabinet is 2 m from the nearest rail, a distance with no bearing on the force. What is the reported figure, in kilonewtons?"
+},
+{
+"id": "w10_P4_000058",
+"question": "A haulage ledger records a number obtained by subtracting a contractual credit of 24 kN from a converted figure. That converted figure is the kilonewton form of a value found by taking a daily total and subtracting a coupling tare of 28 N. The daily total is 3 times the force needed for one launch of a shunting cradle whose mass is 140 kg. During a launch the cradle's acceleration, in metres per second squared, is the larger of the two values of x for which x^2 - 5x + 4 = 0. What number, in kilonewtons, goes into the ledger?"
+},
+{
+"id": "w10_P4_000059",
+"question": "An air-track glider of 34000 grams is released and slides freely along a level rail. Its speed on release, in metres per second, is the smaller of the two values of x for which x^2 - 6x + 8 = 0. A demonstration consists of 10 identical releases, and the class adds up the energy each glider carries because of its motion. That summed figure is then expressed in kilojoules, and the lecture is repeated for 10 separate classes, with all the figures added together. What total, in kilojoules, does the department record?"
+},
+{
+"id": "w10_P4_000072",
+"question": "A drone workshop fits the curve 2x^3 + 5x^2 to the trace from a test flight, with x the elapsed seconds. At the moment x = 3 seconds the rate at which the slope of that fitted curve is itself changing gives, in metres per second, the speed of a payload of 9000 grams released at that instant. The workshop records the energy the payload carries because of its motion, and multiplies it by 9 because 9 payloads are released on every flight. From that flight total it subtracts a telemetry allowance of 23 J, expresses the remainder in kilojoules, and adds a fixed ground-station allowance of 18 kJ. The drone's rotors span 1.2 m, which has no part in any of this. What is the final recorded value, in kilojoules?"
+},
+{
+"id": "w10_P4_000078",
+"question": "A test report ends by adding a fixed handling allowance of 30 kJ to a figure that is 12 times the energy of a single impact expressed in kilojoules. That impact is made by a hammer of 26 kg swinging freely into a target. The hammer's speed at contact, in metres per second, is the larger of the two values of x for which x^2 - 12x + 32 = 0, and the energy of the impact is the energy the hammer carries because of its motion at that instant. The hammer hangs from a pivot 2 m above the target, a length the report notes but does not use. What number, in kilojoules, ends the report?"
+},
+{
+"id": "w10_P4_000081",
+"question": "A launcher accelerates a sled of 51000 grams from rest along a level track, and its acceleration in metres per second squared follows 3t^2 + 5t between t = 0 seconds and t = 2 seconds, with t measured from release. At the end of that interval the logger records the energy the sled carries because of its motion and expresses it in kilojoules. A fixed instrument offset of 24 kJ is added to the converted value, and the sum is multiplied by 7 because the programme calls for 7 identical launches. From that programme total a calibration credit of 23 kJ is subtracted to give the certified number. The track's guard rail is 30 m long and plays no part. What is the certified number, in kilojoules?"
+},
+{
+"id": "w10_P4_000093",
+"question": "A crane-yard report closes with a number found by subtracting a contractual credit of 27 kN from a converted total. That converted total is the kilonewton form of a figure that is 10 times the force on a single hook, since 10 hooks work together. Each hook accelerates a block of 185 kg, and the acceleration in metres per second squared is 5 times the sum of 3 and 13. What number, in kilonewtons, closes the report?"
+},
+{
+"id": "w10_P4_000096",
+"question": "A test-track laboratory publishes a figure that is 8 times a converted total, because 8 identical benches run the same programme. That converted total is the kilojoule form of a number that is 5 times the reading from a single run. The reading from a single run is what you get by adding a fixed instrument offset of 26 J to the energy a shuttle of 9000 grams carries because of its motion. The shuttle's position along the bench in metres is modelled by the fitted curve 4x^3 + 1x^2, where x is the time in seconds, and its speed is the rate at which that fitted position is changing at the instant x = 1 second. What figure, in kilojoules, does the laboratory publish?"
+},
+{
+"id": "w10_P4_000097",
+"question": "A packaging plant's monthly return is 6 times its weekly return, and the weekly return is 9 times a daily figure. The daily figure is found by adding a fixed gripper preload of 23 N to a shift total, and the shift total is 6 times the force needed for one push of the plant's transfer arm. Each push accelerates a carton of 14 kg along the rollers, and the carton's acceleration in metres per second squared is the smaller of the two values of x for which x^2 - 7x + 6 = 0. The roller bed is 3 m long, which never enters the force calculation. What is the monthly return, in newtons?"
+},
+{
+"id": "w10_P4_000113",
+"question": "A hoist report ends with a number found by subtracting a contractual credit of 14 kN from a converted reading. That converted reading is the kilonewton form of the force needed to accelerate a test weight of 9 kg on the hoist's arm. The acceleration in metres per second squared is worked out in stages: start from the smaller of the two values of x for which x^2 - 10x + 16 = 0, add a drive contribution of 15, then add a further gearbox contribution of 3. The hoist's cable is 12 m long, a length that plays no part in the calculation. What number, in kilonewtons, ends the report?"
+},
+{
+"id": "w10_P4_000117",
+"question": "A crate yard holds 359 crates in one shed and 73 in another, and the manager works out the largest whole number that divides both counts exactly with nothing left over. The acceleration his conveyor applies, in metres per second squared, is exactly 7 times that number, and it is applied to a pallet of 195000 grams. The controller records the force needed to drive the pallet and expresses it in kilonewtons. That converted figure is multiplied by 2 for the two conveyors in the yard, and then by 9 for the nine yards in the region. Each shed door is 3 m wide, a dimension the controller ignores. What is the regional figure, in kilonewtons?"
+},
+{
+"id": "w10_P4_000129",
+"question": "A stores clerk has 199 bolts of one type and 34 of another, and he finds the largest whole number that divides both counts exactly with nothing left over. A test carriage of 34 kg is then launched at a speed, in metres per second, that is 10 times that number. The bench records the energy the carriage carries because of its motion and subtracts a rolling allowance of 7 J from the record. The remainder is expressed in kilojoules, and a fixed instrument allowance of 14 kJ is added to it. The bench top is 2 m long, which is never used in the calculation. What figure, in kilojoules, does the bench report?"
+},
+{
+"id": "w10_P4_000145",
+"question": "A test bench accelerates a slide of 106000 grams, and the acceleration builds during the stroke: the rate at which the acceleration grows, in metres per second cubed, follows 1t^2 + 0t, with t the time in seconds, and it accumulates from zero between t = 0 seconds and t = 2 seconds. The controller computes the force needed to drive the slide at the acceleration reached at the end of that interval and expresses it in kilonewtons. That converted figure is multiplied by 10 because the bench runs 10 identical slides. A fixed frame tare of 1 kN is then subtracted, and a further contractual credit of 13 kN is subtracted after that. What number, in kilonewtons, does the controller report?"
+},
+{
+"id": "w10_P4_000162",
+"question": "A dockside crane accelerates a container module of 197 kg along its rails. The module's acceleration during the pull, in metres per second squared, is the smaller of the two values of x for which x^2 - 7x + 10 = 0. The load cell records the force needed for the pull, and the software adds a fixed rigging preload of 18 N to that reading. It multiplies the sum by 3, because the crane makes 3 identical pulls in a cycle, and expresses the cycle total in kilonewtons. That converted total is then multiplied by 5 for the 5 cranes on the quay. What is the quay figure, in kilonewtons?"
+},
+{
+"id": "w10_P4_000167",
+"question": "A logger fits the curve 1x^3 - 3x^2 to a trace, where x is the elapsed time in seconds. At the instant x = 4 seconds, the rate at which the slope of that fitted curve is itself changing gives, in metres per second, the speed of a probe of 11 kg. The system records the energy the probe carries because of its motion and adds a fixed offset of 20 J to it. The sum is multiplied by 2, because 2 probes fly on each pass, and the result is expressed in kilojoules. A standing ground allowance of 17 kJ is then added. The launch mast is 6 m tall, which plays no part here. What is the final value, in kilojoules?"
+},
+{
+"id": "w10_P4_000192",
+"question": "A workshop has 106 washers of one size and 271 of another, and the technician finds the largest whole number that divides both counts exactly with nothing left over. He multiplies that number by 4 for the four channels of his rig, then adds a drive contribution of 22, and the result is the launch speed in metres per second of a slug of 24000 grams. The bench records the energy the slug carries because of its motion at that speed. Because the test calls for 10 identical launches, the record is multiplied by 10, and the total is then expressed in kilojoules. What total, in kilojoules, does the bench report?"
+}
+]

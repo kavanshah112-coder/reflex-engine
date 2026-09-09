@@ -195,3 +195,29 @@ A haiku authoring agent wrote `authored_T4_haiku_141.json` to
 17 duplicate the correctly-placed file and 3 are ids that do not exist
 in the request); moved to `results/v110/bridge/stray_authored_T4_haiku_141.json`,
 not merged.
+
+## N14 — haiku wrote six reading files for ids that exist in no batch
+`read_haiku_dev/` holds 900 files against 894 DEV batch ids: six
+files (`w10_T3p_000001…000004`, `w10_T3p_001559`, …) name ids that
+appear in no `readq_dev_*` batch (the T3′ DEV sample has 94 items, so
+haiku's last block "completed 25" by inventing ids). The engine loads
+readings by the item id it is scoring, so invented ids are never
+read; the files are kept, not deleted, and counted here. Sonnet, opus
+and fable: 0 extra ids.
+
+## N15 — authored stories merged; QC restricted to the scored set; hashes re-recorded
+`author_merge110 stories` merged 7,881 T4 and 5,277 P4 stories (28
+ids skipped as already present from the redo files); the four workload
+files were verified against HASHES.json immediately before the merge
+(all MATCH) and re-hashed after it (`HASHES.json["post_authoring"]`).
+The unrestricted QC set would have been 529 batches (13,158 items);
+under the spec amendment's budget clause QC is restricted to every
+authored item in SEAL and REPLAY plus the E-SAMPLE authored items of
+ACQ and DEV: 7,745 items, 314 batches (`author_merge110 qcbatches`;
+the 529 unrestricted `qcq_*` files it replaced were engine-generated
+inputs, not bridge outputs). Un-QC'd ACQ/DEV authored items keep
+`qc="pending"` and are scored by the engine paths only. QC model map:
+sonnet→opus, opus→sonnet, haiku→fable, fable→haiku. The fable w04b
+authoring agent rewrote its own 039/040 files once before finishing
+(word-form step values corrected to digits) — its own in-progress
+output, not established data.

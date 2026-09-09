@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id": "n1", "op": "integrate_def", "expr": "2*x**2 + 3*x", "a": 3, "b": 4}, {"id": "n2", "op": "formula", "expr": "0.5 * m * v**2", "m": 53, "v": "@n1", "unit": "J"}, {"id": "n3", "op": "convert", "value": "@n2", "from": "J", "to": "kJ"}], "final": "n3"}}

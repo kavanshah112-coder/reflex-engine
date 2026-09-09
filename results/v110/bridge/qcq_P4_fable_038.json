@@ -1,0 +1,102 @@
+[
+{
+"id": "w10_P4_006343",
+"question": "A test rig accelerates a 130 kg vehicle component to evaluate structural limits. The acceleration profile at test state x follows the equation x\u00b2 - 9x + 18, with two possible solutions for the critical acceleration value. At state x, engineers select the larger solution (corresponding to 6 m/s\u00b2) and apply it. Six identical load cells measure this force, then multiply the result by 5 twice (for dual mechanical advantage stages), and finally subtract 8 N to account for sensor offset. What is the final measured force in Newtons?"
+},
+{
+"id": "w10_P4_006350",
+"question": "A laboratory device stores energy in a flywheel system with mass 35 kg. Between time parameters t = 2 and t = 3 seconds, the effective velocity changes according to the integral of 5t\u00b2 + t dt, evaluating to 20 m/s. Using this velocity with the stored mass, energy is calculated, then amplified 4 times through a power transmission, with 3 J added from auxiliary charging. Finally the result is converted to kJ. What is the total stored energy, and the experiment also measures a 250 watt charging rate that is not used in the final calculation. What is the energy in kJ?"
+},
+{
+"id": "w10_P4_006388",
+"question": "A high-precision manufacturing system must control a 155 kg die-casting mold. At operating point x = 3, the acceleration profile follows 3x\u00b3 - 5x\u00b2 in m/s\u00b2. Engineers calculate the instantaneous acceleration (through rate-of-change analysis), apply it to the mold mass, then amplify through 8 identical hydraulic systems to yield 8x the force. The application also mentions a 75 kg backup mold not needed here. What is the total force in Newtons?"
+},
+{
+"id": "w10_P4_006390",
+"question": "A spacecraft's reaction control system must produce thrust with 146 kg of propellant. At control state x = 1, the acceleration command follows 4x\u00b3 + 2x\u00b2 m/s\u00b2. The instantaneous acceleration is calculated, applied to the propellant mass via F = ma, then scaled by 11 hydraulic thrusters and converted to kN. The thrust is then amplified 8 times through feed-pressure stages and 5 times through nozzle configuration. What is the final achievable thrust in kN?"
+},
+{
+"id": "w10_P4_006396",
+"question": "An automated assembly system uses a 31 kg robotic gripper operating in 6 distinct phases (k = 1 through 6). The total work done across all phases is calculated as the finite sum of k (giving 21 joules). Using this work and the gripper mass, kinetic energy is computed and converted to kJ, then amplified 3 times through mechanical multipliers and 8 times through accumulator stages. A pressure gauge reads 500 psi but is not used. What is the final stored energy in kJ?"
+},
+{
+"id": "w10_P4_006399",
+"question": "An engine block assembly requires precise force matching between two bolt patterns. The common divisor of specifications 354 and 289 (which is 1) represents a calibration factor in m/s\u00b2. A 55 kg component experiences this acceleration, then the force is adjusted by adding 20 N, multiplied by 6 through parallel actuators, and increased by 23 N for preload. Finally convert to kN, where peak rated voltage is 480 volts but unused. What is the calibrated clamping force in kN?"
+},
+{
+"id": "w10_P4_006429",
+"question": "A drone propulsion system combines thrust from multiple motors. The throttle setting k varies from 1 to 6, producing total effective acceleration as 4 \u00d7 (5 + 10) = 60 m/s\u00b2 per motor cluster. A 53 kg rotor mass experiences this acceleration, calculating kinetic energy which is converted to kJ, then amplified 5 times through fan stages and 4 times through nozzle pressure and 10 times through vectoring vanes. How much total propulsive energy is available in kJ?"
+},
+{
+"id": "w10_P4_006430",
+"question": "A precision manipulator arm accelerates a 77 kg component at control state x = 1 where acceleration follows 4x\u00b3 - 5x\u00b2 in m/s\u00b2. The instantaneous value is 2 m/s\u00b2, producing force through F = ma, scaled by 10 drive motors, converted to kN, then amplified 8 times through mechanical advantage systems and 10 times through load multiplication stages. What is the maximum component acceleration force in kN?"
+},
+{
+"id": "w10_P4_006437",
+"question": "An airline must select 4 pilots from 8 available candidates, and this combination (8 choose 4 = 70) becomes an effective mass parameter in kg for energy calculations. A 55 kg actual flywheel stores kinetic energy at this pseudo-velocity, adds 29 J of stored elastic energy, then amplifies through 7 composite-material stages and 4 nested spring-mass resonators and 7 flywheel configurations. A maintenance schedule with 500-hour intervals is not used. What is the total available mechanical energy in J?"
+},
+{
+"id": "w10_P4_006439",
+"question": "A water turbine operates between flow positions x = 0 and x = 2, with volumetric flow rate integral of 2x\u00b2 + 3x giving 10 m\u00b3/s effective. A 36 kg turbine rotor experiences corresponding kinetic energy, converted to kJ, then multiplied by 7 through successive turbine stages. The inlet pressure gauge reads 120 psi but unused. What is the turbine's generated power in kJ?"
+},
+{
+"id": "w10_P4_006447",
+"question": "A renewable energy storage system evaluates capacity between charge levels x = 1 and x = 3. The charging rate follows the integral of 5x\u00b2 + 6x (giving 168 J/s), applied with 59 kg of thermal mass. Energy is calculated, increased by 21 J from solar input, amplified 6 times through battery strings and by 2 more through inverter stages and 5 times through distribution nodes. System voltage is 480V DC but unused. What is the total distributed energy in J?"
+},
+{
+"id": "w10_P4_006455",
+"question": "A vibration test applies load between positions x = 1 and x = 2 meters. The acceleration follows the integral of 3x\u00b2 (giving 7 m/s\u00b2 effective), applied to a 56 kg test mass producing force, converted to kN, reduced by 10 kN for baseline offset, then multiplied by 12 identical shakers running in parallel. The ambient sound level of 95 dB is not used. What is the total vibration force in kN?"
+},
+{
+"id": "w10_P4_006460",
+"question": "A thermal energy storage device charges between positions x = 2 and x = 3. Heat flow rate follows the integral of x\u00b2 + 8x (giving 25 J/K), applied with a 27 kg thermal mass, calculating stored energy, amplified 5 times through heat-exchange surfaces, converted to kJ, multiplied by 11 storage modules and 6 distribution loops. Barometric pressure at 101.3 kPa is not used. What is the total stored thermal energy in kJ?"
+},
+{
+"id": "w10_P4_006461",
+"question": "A kinetic recovery system stores energy from a 59 kg rotating mass. Energy charge rate follows the integral of 3x\u00b2 from x = 0 to x = 2 (giving 8 J/s base), increased by 18 J for auxiliary input, multiplied by 7 regeneration cycles, adjusted by subtracting 14 J for system losses, then converted to kJ. System efficiency rating of 94% is not used. What is the net recovered energy in kJ?"
+},
+{
+"id": "w10_P4_006469",
+"question": "The net thrust requirement in kilonewtons for a spacecraft thruster system must be calculated from a 152 kg propellant mass. At control state x = 1, the acceleration command follows 3x\u00b3 - 4x\u00b2 in m/s\u00b2. The instantaneous acceleration (via rate-of-change analysis) is applied to calculate force, adjusted by subtracting 7 N then 3 N for losses, and finally scaled by 9 hydraulic actuators. A backup helium pressurant mass of 40 kg is noted but not used. What is the final net thrust in kN?"
+},
+{
+"id": "w10_P4_006474",
+"question": "An energy storage system combines contributions from multiple phases. A test configuration combines 7 \u00d7 (2 + 6) = 56 units plus 9 additional units, then reduces by 20 units to yield an effective velocity of 45 m/s for a 29 kg rotor mass. The kinetic energy is then converted to kJ. A monitoring accelerometer reads 0.5 g but is unused. What is the stored kinetic energy in kJ?"
+},
+{
+"id": "w10_P4_006478",
+"question": "An industrial thermal system measures energy storage between positions x = 2 and x = 4. The heat capacity follows the integral of 3x\u00b2 (giving 56 J effective), applied to a 15 kg thermal mass yielding kinetic energy, converted to kJ, increased by 16 kJ for auxiliary storage, multiplied by 10 through distributed tanks, and increased by 3 more kJ. What is the total tank-stored energy in kJ?"
+},
+{
+"id": "w10_P4_006481",
+"question": "A vibration isolation platform must support force from a 50 kg load at operating point x = 2. The acceleration profile 3x\u00b3 + 3x\u00b2 has an instantaneous rate of change of 24 m/s\u00b2 at that point. Kinetic energy is calculated, increased by 26 J from pre-stress, reduced by 2 J for damping, and finally converted to kJ. A thermal sensor reads 68\u00b0C but is unused. What is the net supported energy in kJ?"
+},
+{
+"id": "w10_P4_006483",
+"question": "A precision positioning system evaluates final stored energy from a 59 kg moving mass. At control point x = 2, the velocity follows x\u00b3 + 3x\u00b2 in m/s, so the instantaneous rate of change yields 12 m/s. Kinetic energy is computed, then enhanced by successive additions of 1 J plus 1 more J plus 3 final joules. What is the total stored energy in J?"
+},
+{
+"id": "w10_P4_006487",
+"question": "A satellite reaction wheel stores angular kinetic energy from a 28 kg rotor. At command state x = 1, the acceleration follows 5x\u00b3 + x\u00b2 in m/s\u00b2, giving 16 m/s\u00b2 instantaneous. Kinetic energy is computed, converted to kJ, scaled 4 times through mechanical stages, then increased by 21 kJ from auxiliary charging plus 29 additional kJ. What is the final available energy in kJ?"
+},
+{
+"id": "w10_P4_006492",
+"question": "The final energy storage of a 2 kg flywheel system must be calculated, accounting for a transient disturbance. At parameter x = 4, the second derivative of x\u00b3 - 5x\u00b2 is 14 m/s\u00b2. Adding 29 J for energy recovery yields effective velocity, from which kinetic energy is computed, amplified 12 times through gear stages, converted to kJ, and finally increased by 7 kJ for auxiliary storage. A coolant reservoir holds 5 liters but is unused. What is the total stored energy in kJ?"
+},
+{
+"id": "w10_P4_006507",
+"question": "A structural load test evaluates a 31 kg component with stress state x\u00b2 - 14x + 48, selecting the smaller solution (6 m/s\u00b2) as critical acceleration. Force is calculated, increased by 4 N for preload, multiplied by 11 identical test systems, and scaled 4 times through load amplifiers. The test chamber temperature is 85\u00b0F but unused. What is the total simulated load in Newtons?"
+},
+{
+"id": "w10_P4_006516",
+"question": "A tension load test on a 180 kg bridge component uses stress polynomial x\u00b2 - 6x + 8, selecting the smaller root (2 m/s\u00b2). The acceleration is amplified 9 times to 18 m/s\u00b2, applied to the mass for force calculation, converted to kN, increased by 13 kN for safety margin, then reduced by 2 kN for instrument offset. A calibration temperature of 20\u00b0C is noted but unused. What is the final applied tensile load in kN?"
+},
+{
+"id": "w10_P4_006525",
+"question": "A hydroelectric power plant integrates flow between positions x = 0 and x = 3. The discharge rate integral of 4x\u00b2 + 5x gives 63 J effective flow, applied to a 14 kg turbine equivalent, converted to kJ, then amplified 2 times through generator stages, 2 more times through efficiency multipliers, and 10 times through distribution multipliers. What is the final distributed power capacity in kJ?"
+},
+{
+"id": "w10_P4_006539",
+"question": "A combined thrust system selects 4 thruster modules from 7 available (7 choose 4 = 35), with this acceleration value in m/s\u00b2 applied to a 112 kg propellant mass. Force is calculated, converted to kN, reduced by 27 kN for internal losses, increased by 22 kN for boost chamber pressure, then scaled 7 times by redundant nozzles. Air temperature of 98\u00b0F is not used. What is the final total thrust in kN?"
+}
+]

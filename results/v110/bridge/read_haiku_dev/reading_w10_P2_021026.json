@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id": "n1", "op": "solve_pick", "lhs": "x**2 - 7*x + 6", "pick": "larger"}, {"id": "n2", "op": "evaluate", "expr": "@n1 + 1"}, {"id": "n3", "op": "formula", "expr": "0.5 * mass * speed**2", "mass": 38.0, "speed": "@n2", "unit": "J"}], "final": "n3"}}

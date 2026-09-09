@@ -1,0 +1,1 @@
+{"plan":{"nodes":[{"id":"n1","op":"derivative_at","expr":"5*x**3 - 2*x**2","order":2,"point":1},{"id":"n2","op":"formula","expr":"0.5 * m * v**2","m":21,"v":"@n1","unit":"J"},{"id":"n3","op":"convert","value":"@n2","from":"J","to":"kJ"}],"final":"n3"}}

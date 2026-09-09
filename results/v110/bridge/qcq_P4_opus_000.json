@@ -1,0 +1,102 @@
+[
+{
+"id": "w10_P4_000000",
+"question": "A calibration lab runs a vibration rig whose two internal counters cycle through 188 and 309 ticks per run. Engineers know the rig's true acceleration, in meters per second squared, is the largest whole number that divides evenly into both tick counts. That acceleration acts on a sled with a mass of 101,000 grams sitting on the rig. Once the resulting force is found, technicians add 10 newtons to account for static friction, then subtract 1 newton for a sensor offset, then subtract a further 19 newtons for cable drag. Finally, for the test report, this adjusted force is multiplied by 8 to represent 8 identical sleds tested simultaneously. The rig's track itself measures 3.2 meters long, though this has no bearing on the calculation. What is the total force, in newtons, reported for all 8 sleds combined?"
+},
+{
+"id": "w10_P4_000013",
+"question": "A safety report expresses the peak force in kilonewtons. That force is twelve times the true force experienced by a 35,000 gram test block, once its acceleration has been finalized. The acceleration is obtained by first finding the greatest whole number that divides evenly into both 183 and 247 \u2014 two duty-cycle counts from a pair of servo controllers \u2014 then multiplying that number by 12, and finally subtracting 10 from the result to correct for a known calibration bias. What is the peak force, in kilonewtons, given in the report?"
+},
+{
+"id": "w10_P4_000019",
+"question": "Before anything else is computed, engineers already know the final total will need a 26 kilonewton calibration offset subtracted from it, and that everything leading up to that point will be converted from newtons into kilonewtons. The raw force enters the picture twelve times over, since twelve identical carts are tested together. That raw force acts on a single 108,000 gram cart and equals the cart's mass times its acceleration. The acceleration itself is the net increase, in meters per second squared, produced between t = 3 s and t = 4 s by a quantity changing at a rate r(t) = 2t\u00b2 + 8t (in meters per second cubed, t in seconds since the run began), as logged by an onboard sensor. What is the final force, in kilonewtons, reported after the offset is subtracted?"
+},
+{
+"id": "w10_P4_000021",
+"question": "A vibration-test lab tracks the velocity of a test sled as v(t) = 2t\u00b3 + t\u00b2 (in meters per second, t in seconds since the sled was released). The sled's instantaneous acceleration at t = 1 second \u2014 the rate of change of its velocity at that instant \u2014 determines the net force acting on a 111,000 gram sled fixed to the rig. That force is then multiplied by 8, since eight identical sleds are tested in a row. From this total, technicians subtract 15 newtons to account for a known sensor bias, and then add 26 newtons back to correct for a separate calibration adjustment. The rig's frame stands 2.1 meters tall, though this has no bearing on the calculation. What is the final force, in newtons, after both corrections?"
+},
+{
+"id": "w10_P4_000022",
+"question": "A test bench tracks a plunger's velocity as v(t) = 3t\u00b3 \u2212 t\u00b2 (meters per second, t in seconds since actuation). Its instantaneous acceleration at t = 1 second \u2014 the rate of change of that velocity at that instant \u2014 acts on a 33,000 gram plunger head; find the resulting force and convert it into kilonewtons. Add 16 to that kilonewton figure to account for spring preload, then multiply the corrected total by 8, since eight plungers fire per cycle. A separate hydraulic line on the same bench carries fluid at 1.8 liters per minute, which plays no part in this calculation. What is the final total force, in kilonewtons, for one full cycle of 8 plungers?"
+},
+{
+"id": "w10_P4_000023",
+"question": "The final report multiplies an intermediate force by 4, and then by 9 again, to account for a 4-stage gearbox feeding a 9-cylinder bank. That intermediate force comes from subtracting 6 newtons (a friction correction) from the true force on a 166 kg test mass. The mass's acceleration, in meters per second squared, equals the sum of every whole number from 1 through 10 that a step counter recorded during the warm-up run. A nearby pressure gauge reads 4 bar, though it is not used in this calculation. What is the final reported force, in newtons?"
+},
+{
+"id": "w10_P4_000029",
+"question": "A calibration check for a flywheel's speed sensor requires two candidate readings, in meters per second, whose sum is 12 and whose product is 35; engineers always use the smaller of the two. That speed belongs to a 54 kg flywheel; find its kinetic energy and express it in kilojoules. This value is then multiplied by 7 for a seven-cycle endurance run, by 3 for a three-flywheel test bank, and finally by 11 to account for an eleven-unit production batch. What is the final total energy, in kilojoules, for the whole batch?"
+},
+{
+"id": "w10_P4_000034",
+"question": "The final figure, in kilonewtons, comes from a force reduced by 15 newtons before conversion. That force is the product of a 49 kg mass and an acceleration built up in two steps: starting from the smaller of two numbers whose sum is 8 and whose product is 7, add 11, then add a further 29. What is the final force, in kilonewtons?"
+},
+{
+"id": "w10_P4_000044",
+"question": "The final tally adds 23 newtons for a last calibration nudge; before that, 14 newtons were added for cable drag, and before that, 5 newtons for a mounting bracket. All of this builds on the true force acting on a 44,000 gram test block. The block's acceleration, in meters per second squared, is the instantaneous rate of change of a velocity profile v(t) = 4t\u00b3 \u2212 t\u00b2 (meters per second, t in seconds since release), evaluated at t = 1 second. What is the final force, in newtons, after every adjustment?"
+},
+{
+"id": "w10_P4_000053",
+"question": "A logger shows a cart's acceleration following a(t) = t\u00b2 + 3t (meters per second squared, t in seconds since start) between t = 0 s and t = 2 s; the net increase in velocity this produces, in meters per second, becomes the speed of a 39 kg cart. Find its kinetic energy, convert it to kilojoules, then multiply by 6 for a six-cart train, and by 5 for five identical trains running that day. A separate speed-limit sign on the same track reads 40 km/h, which is irrelevant here. What is the total energy, in kilojoules, for all five trains?"
+},
+{
+"id": "w10_P4_000055",
+"question": "The final joule total will have 25 subtracted from it after adding 13; that comes from an energy figure multiplied sevenfold for seven repeated trials. The original energy belongs to a 36 kg pendulum bob moving at a speed, in meters per second, equal to the sum of every whole number from 1 through 8 that a rotary encoder recorded during a test swing. The lab's ceiling stands 4.5 meters high, unrelated to this calculation. What is the final energy, in joules, after all adjustments?"
+},
+{
+"id": "w10_P4_000063",
+"question": "A robotics test rig clocks a gripper arm's speed, in meters per second, as the sum of every whole number from 1 through 7 counted by an internal encoder during a swing cycle. This is the speed of a 49 kg arm assembly; find its kinetic energy, then multiply by 6 for six test cycles, subtract 28 joules for a calibration correction, add back 27 joules for a separate offset, and finally multiply the result by 5 for five identical rigs on the floor. A nearby hydraulic pump operates at 150 bar, unrelated to this problem. What is the total energy, in joules, for all five rigs?"
+},
+{
+"id": "w10_P4_000065",
+"question": "A logger shows a shuttle's acceleration following a(t) = 4t\u00b2 + 8t (meters per second squared, t in seconds since launch) between t = 1 s and t = 3 s; the net increase in velocity this produces gets 20 added to it, then 7 subtracted, giving the final speed of a 47,000 gram shuttle module. Find its kinetic energy, then multiply the result by 7 for seven identical modules launched together. What is the total kinetic energy, in joules, for all seven modules?"
+},
+{
+"id": "w10_P4_000067",
+"question": "A speed sensor on a test cart reports a value equal to 5 multiplied by the sum of 6 and 8; this is the cart's speed, in meters per second. The cart itself has a mass of 25,000 grams. Find its kinetic energy, subtract 19 joules for a calibration offset, double the result for a two-cart test, then subtract 10 joules and a further 28 joules for two separate corrections. What is the final kinetic energy, in joules, after all corrections?"
+},
+{
+"id": "w10_P4_000068",
+"question": "A hydraulic press's acceleration, in meters per second squared, equals 4 multiplied by the sum of 6 and 6. This acts on a 193,000 gram ram; find the resulting force and convert it to kilonewtons. Multiply that figure by 8 for an eight-cycle run, then by 2 for a two-press station, and finally add 4 kilonewtons for a preload margin. What is the final force, in kilonewtons, reported for the station?"
+},
+{
+"id": "w10_P4_000074",
+"question": "A calibration check for a buoy's speed sensor requires two candidate readings, in meters per second, whose sum is 12 and whose product is 35; the smaller of the two is always used. This is the speed of an 11,000 gram sensor float; find its kinetic energy, convert to kilojoules, multiply by 11 for an eleven-buoy array, add 3 kilojoules for a shared baseline offset, and multiply the whole total by 7 for seven days of data. What is the total energy, in kilojoules, after seven days?"
+},
+{
+"id": "w10_P4_000077",
+"question": "A launch sled's acceleration, in meters per second squared, equals 4 multiplied by the sum of 5 and 15. This acts on a 112 kg sled; find the resulting force, multiply it by 12 for twelve launch cycles, convert the total to kilonewtons, multiply by 7 for a seven-day test week, and finally add 16 kilonewtons for a structural margin. A nearby wind sock indicates a crosswind of 12 km/h, which plays no role in this calculation. What is the final force, in kilonewtons, for the week?"
+},
+{
+"id": "w10_P4_000080",
+"question": "A calibration check for a conveyor drive's acceleration requires two numbers whose sum is 7 and whose product is 6; engineers use the larger of the two, in meters per second squared. This acts on a 180,000 gram drive shaft; find the resulting force, multiply it by 6 for a six-shift day, multiply again by 9 for nine parallel conveyor lines, and convert the grand total into kilonewtons. What is the total force, in kilonewtons, across all nine lines?"
+},
+{
+"id": "w10_P4_000085",
+"question": "A test rig's speed sensor reads the sum of the first 4 odd numbers (1, 3, 5, 7) counted off by an internal cycle counter; this is the speed, in meters per second, of a 41,000 gram cart. Find its kinetic energy, multiply by 9 for nine identical carts, convert the total to kilojoules, multiply by 7 for a seven-day trial, and finally subtract 9 kilojoules for a shared baseline correction. What is the final energy, in kilojoules, after the correction?"
+},
+{
+"id": "w10_P4_000103",
+"question": "The final kilojoule figure comes from a chain of adjustments: subtract 9 last, but before that add 29, and before that subtract 13, all applied to an energy value once it's converted from joules to kilojoules. That energy is the kinetic energy of an 18 kg component moving at a speed, in meters per second, equal to the smaller of two numbers whose sum is 6 and whose product is 8. A separate pressure gauge on the same bench reads 6 bar, which is not used in this calculation. What is the final energy, in kilojoules, after all three adjustments?"
+},
+{
+"id": "w10_P4_000105",
+"question": "A stamping press's acceleration, in meters per second squared, equals 3 multiplied by the sum of 5 and 5. This acts on a 139 kg press head; find the resulting force, add 26 newtons for a spring preload, add a further 16 newtons for a seal-friction correction, and multiply the total by 3 for a three-press station. What is the final force, in newtons, for the station?"
+},
+{
+"id": "w10_P4_000114",
+"question": "A crane's hoist acceleration, in meters per second squared, equals 5 multiplied by the sum of 6 and 5. This acts on an 80,000 gram load block; find the resulting force, add 29 newtons for a cable-tension correction, convert the total to kilonewtons, subtract 17 kilonewtons for a counterweight offset, and multiply the result by 11 for an eleven-crane yard. A separate anemometer on site reads 22 km/h, which plays no part in this calculation. What is the final force, in kilonewtons, for the whole yard?"
+},
+{
+"id": "w10_P4_000120",
+"question": "The final kilojoule figure has 29 subtracted from it, after doubling a converted energy value. That energy is the kinetic energy of a 20 kg component, minus 28 joules for a calibration offset, before conversion. The component's speed, in meters per second, is the instantaneous rate of change of a displacement s(t) = t\u00b3 (meters, t in seconds since release), evaluated at t = 2 seconds. What is the final energy, in kilojoules?"
+},
+{
+"id": "w10_P4_000123",
+"question": "A calibration equation for a pump's acceleration requires two numbers whose sum is 9 and whose product is 18; engineers use the smaller of the two, in meters per second squared. This acts on a 164,000 gram pump rotor; find the resulting force, convert it to kilonewtons, multiply by 5 for a five-pump station, and subtract 19 kilonewtons for a mounting-frame allowance. What is the final force, in kilonewtons, for the station?"
+},
+{
+"id": "w10_P4_000131",
+"question": "The final kilonewton figure is twelve times a converted force. That force, in kilonewtons, comes from a newton value multiplied by 3, which itself is 11 more than the true force on a 49,000 gram gearbox casing. That true force follows from the casing's acceleration, in meters per second squared \u2014 the largest whole number that divides evenly into both 42 and 220, two duty-cycle counts recorded from a pair of encoders. What is the final force, in kilonewtons?"
+}
+]

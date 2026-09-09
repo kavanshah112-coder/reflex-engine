@@ -1,0 +1,8 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"integrate_def","expr":"2*x**2 +3*x","a":0,"b":2},
+{"id":"n2","op":"evaluate","expr":"@n1 + 1"},
+{"id":"n3","op":"formula","expr":"m * a","m":17,"a":"@n2","unit":"N"},
+{"id":"n4","op":"evaluate","expr":"@n3 - 6"},
+{"id":"n5","op":"convert","value":"@n4","from":"N","to":"kN"},
+{"id":"n6","op":"scale","value":"@n5","by":10}
+], "final": "n6"}}

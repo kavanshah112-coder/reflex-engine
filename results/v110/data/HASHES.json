@@ -6,5 +6,14 @@
  "corpora/gsm8k_train.jsonl": "17f347dc51477c50d4efb83959dbb7c56297aba886e5544ee2aaed3024813465",
  "corpora/svamp.json": "5be77703a6d891ae476d7c082787ad361392aa02453b132516cdd5f4e7934e3e",
  "corpora/sciq.zip": "7f3312f6ac6b09970b32942d106a8c44ec0dad46a0369f17d635aff8e348a87c",
- "note": "P-tier golds restored to full precision after B37 (pre-run)"
+ "note": "P-tier golds restored to full precision after B37 (pre-run)",
+ "post_authoring": {
+  "note": "hashes after author_merge110 stories (T4 7,881 + P4 5,277 authored texts merged, 2026-09-09); the pre-authoring hashes above were verified MATCH immediately before the merge; QC verdicts are added by author_merge110 qc before the SEAL sample and will be re-hashed then",
+  "files": {
+   "w400k_acq.jsonl": "8099810ad6ff089d17dcf2f7e719f451a5564c93e0d9d478b9f55ffc9c6a3f1e",
+   "w400k_dev.jsonl": "8afb5e9ca403c9916ef10ada29ecf46bd999b3cfe70f3273ef533cc9111d54e9",
+   "w400k_seal.jsonl": "89846e7f5d13fb326146038399d70631b20d6c06fbdae29445cb969684696b9e",
+   "w400k_replay.jsonl": "5c5b99d73be961c758187a5add512dfef54e3ea688b15992131eea38c71a0e3c"
+  }
+ }
 }
