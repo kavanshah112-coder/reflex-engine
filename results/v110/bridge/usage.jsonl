@@ -276,3 +276,7 @@
 {"agent": "readq_P4_opus_vA2", "model": "opus", "role": "reading", "split": "acq", "tier": "P4", "items": 50, "subagent_tokens": 209015, "tool_uses": 65, "duration_ms": 399358}
 {"agent": "readq_T4_haiku_uC2", "model": "haiku", "role": "reading", "split": "dev", "tier": "T4", "items": 25, "subagent_tokens": 134353, "tool_uses": 43, "duration_ms": 385743}
 {"agent": "readq_P4_opus_vC2", "model": "opus", "role": "reading", "split": "dev", "tier": "P4", "items": 109, "subagent_tokens": 206426, "tool_uses": 120, "duration_ms": 545418}
+{"agent": "readq_P4_fable_vC2", "model": "fable", "role": "reading", "split": "dev", "tier": "P4", "items": 125, "subagent_tokens": 208720, "tool_uses": 133, "duration_ms": 573550}
+{"agent": "readq_T4_fable_uC2", "model": "fable", "role": "reading", "split": "acq+dev", "tier": "T4", "items": 175, "subagent_tokens": 201449, "tool_uses": 188, "duration_ms": 626604}
+{"agent": "readq_T4_opus_uB2", "model": "opus", "role": "reading", "split": "acq", "tier": "T4", "items": 121, "subagent_tokens": 218082, "tool_uses": 145, "duration_ms": 702879}
+{"agent": "readq_P4_fable_vB2", "model": "fable", "role": "reading", "split": "acq", "tier": "P4", "items": 150, "subagent_tokens": 257064, "tool_uses": 165, "duration_ms": 698628}

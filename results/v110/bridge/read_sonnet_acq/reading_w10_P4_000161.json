@@ -1,0 +1,7 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"derivative_at","expr":"4*x**3 - 2*x**2","order":2,"point":3},
+{"id":"n2","op":"evaluate","expr":"@n1 + 5"},
+{"id":"n3","op":"evaluate","expr":"@n2 - 25"},
+{"id":"n4","op":"formula","expr":"0.5*(m/1000)*v**2","m":54000,"v":"@n3","unit":"J"},
+{"id":"n5","op":"convert","value":"@n4","from":"J","to":"kJ"}
+], "final":"n5"}}
