@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id":"n1","op":"integrate_def","expr":"1*x**2 + 3*x","a":0,"b":3},{"id":"n2","op":"formula","expr":"m*a","m":156,"a":"@n1","unit":"N"},{"id":"n3","op":"evaluate","expr":"@n2 - 3"},{"id":"n4","op":"scale","value":"@n3","by":9},{"id":"n5","op":"evaluate","expr":"@n4 + 15"},{"id":"n6","op":"evaluate","expr":"@n5 - 6"}], "final": "n6"}}

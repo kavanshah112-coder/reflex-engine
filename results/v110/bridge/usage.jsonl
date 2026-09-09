@@ -275,3 +275,4 @@
 {"agent": "readq_P4_sonnet_vA2", "model": "sonnet", "role": "reading", "split": "acq", "tier": "P4", "items": 50, "subagent_tokens": 211889, "tool_uses": 61, "duration_ms": 418258}
 {"agent": "readq_P4_opus_vA2", "model": "opus", "role": "reading", "split": "acq", "tier": "P4", "items": 50, "subagent_tokens": 209015, "tool_uses": 65, "duration_ms": 399358}
 {"agent": "readq_T4_haiku_uC2", "model": "haiku", "role": "reading", "split": "dev", "tier": "T4", "items": 25, "subagent_tokens": 134353, "tool_uses": 43, "duration_ms": 385743}
+{"agent": "readq_P4_opus_vC2", "model": "opus", "role": "reading", "split": "dev", "tier": "P4", "items": 109, "subagent_tokens": 206426, "tool_uses": 120, "duration_ms": 545418}

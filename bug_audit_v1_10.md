@@ -310,3 +310,14 @@ non-chain format, 206 killed by plangate17, 7 refused at execution,
 31 executed (30 right) — the reach on authored physics stories is
 low, as H6 predicted, and every P4 wrong-by-gold count is 0. Library
 T 458 / P 104 after the pass (lib_haiku_acq2).
+
+## N23 — M-haiku DEV pass on the authored tiers (dev2, acq2 library)
+1,793 DEV T4/P4 items (558 QC-rejected skipped — DEV now holds the
+536 rejects moved out of SEAL/REPLAY): exact 0, A2S 0, fresh A2 6 / 0
+wrong (T4), P4 readings 83 non-chain format + 5 gate kills, 0
+executed. Haiku's own DEV answers are poor here (T4 29/105, P4 1/88
+by gold at the engine's tolerance; its ACQ P4 answers were 255/347),
+which is why almost nothing is admitted — a bridge-quality fact about
+the haiku answerer on this block, reported, not repaired. All answer
+files were re-verified id-exact against their batches (no rotation of
+the N19 kind on any model).
