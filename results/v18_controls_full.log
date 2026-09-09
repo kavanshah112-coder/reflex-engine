@@ -1,0 +1,7 @@
+gates PASS {"plangate17": true, "chainexec17": true, "plangate18": true, "pass": true}
+haiku13 PASS {"n": 13, "killed_by": {"G-P5": 12, "G-P4'": 1}, "passed": [], "pass": true}
+sign PASS {"templatized": true, "why": null, "bound_b": -300.0, "served": 1.0, "positive_sibling": "no_skeleton", "pass": true}
+harvest_neg FAIL {"counts": {"bad_plans": 443, "archive_missing": 126, "templatized": 293, "rejected": 24}, "pass": false}
+probe_b32 PASS {"n": 8842, "lib": ["results/v18/planlib18_all_all.json"], "templates": 586, "counts": {"served_gold": 8421, "abstained": 421}, "abstain_reasons": {"no_skeleton": 395, "donor_self": 26}, "pass": true}
+repro PASS {"compared": 20000, "diffs": 0, "pass": true}
+GATE-CTRL: FAIL

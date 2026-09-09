@@ -1,0 +1,30 @@
+{"run": 0, "ambient_cpu_pct": 8.417725752508362, "fleet_busy": false, "control_before": {"tag": "ctrl_before_0", "joules": 64.47, "expected": 54.0, "cpu_j_model": 53.71875, "gpu_j": 42.07864674851115, "pass": true}, "control_after": {"tag": "ctrl_after_0", "joules": 55.34, "expected": 54.0, "cpu_j_model": 54.0, "gpu_j": 32.59330695049947, "pass": true}, "questions": 20000, "served": 11128, "correct": 11128, "wall_s": 67.75, "joules": 1203.75, "J_per_question_engine": 0.060187, "J_per_certified_serve": 0.108173, "valid": true}
+{"run": 1, "ambient_cpu_pct": 5.762876254180601, "fleet_busy": false, "control_before": {"tag": "ctrl_before_1", "joules": 54.53, "expected": 54.0, "cpu_j_model": 53.71875, "gpu_j": 31.920493754008806, "pass": true}, "control_after": {"tag": "ctrl_after_1", "joules": 54.69, "expected": 54.0, "cpu_j_model": 53.15625, "gpu_j": 32.615031194498165, "pass": true}, "questions": 20000, "served": 11128, "correct": 11128, "wall_s": 68.1, "joules": 1211.344, "J_per_question_engine": 0.060567, "J_per_certified_serve": 0.108855, "valid": true}
+{"run": 2, "ambient_cpu_pct": 12.362876254180602, "fleet_busy": false, "control_before": {"tag": "ctrl_before_2", "joules": 53.72, "expected": 54.0, "cpu_j_model": 53.15625, "gpu_j": 31.94119304499069, "pass": true}, "control_after": {"tag": "ctrl_after_2", "joules": 53.51, "expected": 54.0, "cpu_j_model": 53.4375, "gpu_j": 31.44551909449644, "pass": true}, "questions": 20000, "served": 11128, "correct": 11128, "wall_s": 70.79, "joules": 1259.438, "J_per_question_engine": 0.062972, "J_per_certified_serve": 0.113177, "valid": true}
+{
+ "split": "seal",
+ "n": 20000,
+ "lib": [
+  "results/v18/planlib18_all_all.json"
+ ],
+ "valid_runs": 3,
+ "J_per_question_engine": {
+  "mean": 0.061242,
+  "sd": 0.001233
+ },
+ "J_per_certified_serve": {
+  "mean": 0.110068,
+  "sd": 0.002216
+ },
+ "J_per_question_amortised_proxy_producer_64.9J": {
+  "eta": 59.5,
+  "value": 847.944,
+  "note": "f_esc*E_llm_proxy + f_cov*E_plan_proxy/eta + engine; bridge draw unmeasured, proxies are V1.4 local measurements"
+ },
+ "J_per_question_amortised_proxy_llm_1910J": {
+  "eta": 59.5,
+  "value": 865.198,
+  "note": "f_esc*E_llm_proxy + f_cov*E_plan_proxy/eta + engine; bridge draw unmeasured, proxies are V1.4 local measurements"
+ },
+ "status": "measured"
+}

@@ -1,0 +1,65 @@
+{
+ "model": "opus",
+ "split": "seal",
+ "arm": "B-all-dev",
+ "v17_template_serves": 2380,
+ "v17_template_wrong": 357,
+ "v18_bind_on_same": 1886,
+ "v18_bind_on_same_correct": 1886,
+ "RETAIN": 0.7924,
+ "abstain_anatomy_on_denominator": {
+  "no_skeleton": 494
+ },
+ "bind_new_coverage": 32491,
+ "bind_new_coverage_v17_path": {
+  "mint": 17756,
+  "escalated": 14735
+ },
+ "COMPOUND_breadth": {
+  "distinct_signatures_bind_served": 151,
+  "distinct_skeletons_bind_served": 423,
+  "serves_per_signature": 227.66,
+  "serves_per_skeleton": 81.27,
+  "dedup_ratio_upper_bound": 0.066
+ },
+ "COMPOUND": {
+  "plans_purchased": 2274,
+  "certified_bind_serves": 34377,
+  "ratio_raw": 15.117,
+  "unique_signatures": 16380,
+  "certified_bind_serves_dedup": 63,
+  "ratio_dedup": 0.028,
+  "curve": [
+   {
+    "n": 50000,
+    "binds": 5788,
+    "ratio": 2.545
+   },
+   {
+    "n": 100000,
+    "binds": 11533,
+    "ratio": 5.072
+   },
+   {
+    "n": 150000,
+    "binds": 17350,
+    "ratio": 7.63
+   },
+   {
+    "n": 200000,
+    "binds": 23054,
+    "ratio": 10.138
+   },
+   {
+    "n": 250000,
+    "binds": 28710,
+    "ratio": 12.625
+   },
+   {
+    "n": 300000,
+    "binds": 34377,
+    "ratio": 15.117
+   }
+  ]
+ }
+}

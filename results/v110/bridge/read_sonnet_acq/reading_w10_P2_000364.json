@@ -1,0 +1,5 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"solve_pick","lhs":"x**2 - 9*x + 8","pick":"smaller"},
+{"id":"n2","op":"formula","expr":"0.5*m*v**2","m":20,"v":"@n1","unit":"J"},
+{"id":"n3","op":"convert","value":"@n2","from":"J","to":"kJ"}
+], "final": "n3"}}

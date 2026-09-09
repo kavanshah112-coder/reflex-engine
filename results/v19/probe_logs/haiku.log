@@ -1,0 +1,67 @@
+{
+ "model": "haiku",
+ "library": 811,
+ "keys": 137,
+ "counts": {
+  "items_with_candidate": 1368,
+  "items_with_executed_candidate": 1343,
+  "candidates_executed": 143516
+ },
+ "candidates_per_item_mean": 106.45,
+ "fresh_A2_wrong_ids": [
+  "a0175",
+  "a0185",
+  "a0375",
+  "a1349",
+  "a2261",
+  "g0454",
+  "g0790"
+ ],
+ "P0": {
+  "served": 748,
+  "correct": 744,
+  "WRONG": 4,
+  "served_by_fresh_status": {
+   "null_reading": 148,
+   "executed+A2": 547,
+   "executed": 50,
+   "gate_kill": 2,
+   "exec_refused": 1
+  },
+  "FALSE_ADMIT": 0.0053,
+  "wrong_ids": [
+   "a0175",
+   "a0185",
+   "a0375",
+   "a1409"
+  ],
+  "wrong_also_fresh_A2_wrong": 3,
+  "served_zero_slot": 80,
+  "wrong_zero_slot": 0,
+  "served_fresh_null_or_killed": 151,
+  "wrong_fresh_null_or_killed": 1
+ },
+ "P1": {
+  "served": 612,
+  "correct": 609,
+  "WRONG": 3,
+  "served_by_fresh_status": {
+   "executed+A2": 538,
+   "null_reading": 67,
+   "executed": 5,
+   "gate_kill": 1,
+   "exec_refused": 1
+  },
+  "FALSE_ADMIT": 0.0049,
+  "wrong_ids": [
+   "a0175",
+   "a0185",
+   "a0375"
+  ],
+  "wrong_also_fresh_A2_wrong": 3,
+  "served_zero_slot": 10,
+  "wrong_zero_slot": 0,
+  "served_fresh_null_or_killed": 69,
+  "wrong_fresh_null_or_killed": 0
+ }
+}

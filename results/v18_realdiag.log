@@ -1,0 +1,31 @@
+{
+ "lib": [
+  "results/v18/planlib18_all_all.json"
+ ],
+ "templates": 586,
+ "n": 4624,
+ "per_corpus": {
+  "gsm8k": {
+   "n": 1319,
+   "bare_tokens": 2876,
+   "tokens": 4428
+  },
+  "asdiv": {
+   "n": 2305,
+   "bare_tokens": 3881,
+   "tokens": 4729
+  },
+  "sciq": {
+   "n": 1000,
+   "bare_tokens": 15,
+   "tokens": 31
+  }
+ },
+ "abstain_reasons": {
+  "gsm8k:no_skeleton": 1319,
+  "asdiv:no_skeleton": 2305,
+  "sciq:no_skeleton": 1000
+ },
+ "bind_serves_graded": {},
+ "note": "reach diagnostic, no threshold (SPEC 12.5); a library harvested from generator phrasing is expected to have near-zero skeleton reach on natural text -- that expectation is the point"
+}

@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id":"n1","op":"solve_pick","lhs":"x**2 -3*x +2","pick":"smaller"},{"id":"n2","op":"scale","value":"@n1","by":12},{"id":"n3","op":"formula","expr":"m * a","m":117,"a":"@n2","unit":"N"},{"id":"n4","op":"scale","value":"@n3","by":9},{"id":"n5","op":"evaluate","expr":"@n4 - 29"},{"id":"n6","op":"scale","value":"@n5","by":9}], "final": "n6"}}

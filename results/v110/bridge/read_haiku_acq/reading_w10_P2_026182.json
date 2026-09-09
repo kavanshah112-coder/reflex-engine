@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id": "n1", "op": "ncr", "n": 7, "r": 4}, {"id": "n2", "op": "formula", "expr": "0.5 * m * v**2", "m": 14, "v": "@n1", "unit": "J"}, {"id": "n3", "op": "evaluate", "expr": "@n2 + 8"}], "final": "n3"}}

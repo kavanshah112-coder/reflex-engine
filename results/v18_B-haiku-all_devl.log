@@ -1,0 +1,34 @@
+{
+ "arm": "B-haiku-all",
+ "split": "devl",
+ "n": 400000,
+ "in_domain": 398884,
+ "distractors": 1116,
+ "served": 217718,
+ "chain_served": 145745,
+ "bind_served": 71973,
+ "correct": 217718,
+ "WRONG": 0,
+ "WRONG_bind": 0,
+ "coverage_in_domain": 0.5458,
+ "wrong_fire": 0.0,
+ "SAFETY2_distractor_served": 0,
+ "gate_killed": 0,
+ "composer_gate_kills": {},
+ "composer_exec_refused": 35,
+ "bind_abstain": {
+  "no_skeleton": 180862,
+  "collision": 1380,
+  "exec_refused": 40
+ },
+ "escalated": 182282,
+ "engine_errors": 0,
+ "ms_per_query": 8.756,
+ "model_calls": 0,
+ "gate": "plangate18",
+ "lib": [
+  "results/v18/planlib18_haiku_all.json"
+ ],
+ "lib_templates": 554
+}
+by_k: {"k2": {"served": 62931, "correct": 62931, "bind": 14137, "escalated": 16846}, "k3": {"served": 97726, "correct": 97726, "bind": 46843, "escalated": 21939}, "k4": {"escalated": 62417, "served": 37304, "correct": 37304, "bind": 10778}, "k5": {"escalated": 47161, "served": 12672, "correct": 12672, "bind": 215}, "k6": {"escalated": 32803, "served": 7085, "correct": 7085}, "kNone": {"escalated": 1116}}

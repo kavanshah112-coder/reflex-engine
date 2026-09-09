@@ -1,0 +1,8 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"solve_pick","lhs":"x**2 - 5*x + 4","pick":"larger"},
+{"id":"n2","op":"formula","expr":"0.5 * m * v**2","m":37.0,"v":"@n1","unit":"J"},
+{"id":"n3","op":"evaluate","expr":"@n2 - 11"},
+{"id":"n4","op":"scale","value":"@n3","by":11},
+{"id":"n5","op":"evaluate","expr":"@n4 - 12"},
+{"id":"n6","op":"convert","value":"@n5","from":"J","to":"kJ"}
+], "final": "n6"}}

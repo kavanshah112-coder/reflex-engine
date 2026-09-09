@@ -1,0 +1,45 @@
+{
+ "arm": "haiku",
+ "split": "acq",
+ "n": 32071,
+ "sampled": 3100,
+ "ms_per_query": 5.901,
+ "library_T": 214,
+ "library_P": 2,
+ "probated_T": 0,
+ "by_tier": {
+  "P1": {
+   "n": 32071,
+   "exact_served": 27997,
+   "exact_correct": 27997,
+   "escalated": 4072,
+   "own_answered": 200,
+   "own_correct": 143,
+   "fresh_gate_kill": 20,
+   "fresh_executed": 2,
+   "fresh_reading_correct": 2,
+   "A2_admitted": 2,
+   "A2_correct": 2
+  }
+ },
+ "curve": [],
+ "totals": {
+  "n": 32071,
+  "exact_served": 27997,
+  "exact_WRONG": 0,
+  "A2S_served": 0,
+  "A2S_WRONG": 0,
+  "A0S_served": 0,
+  "A0S_WRONG": 0,
+  "KC_served": 0,
+  "KC_WRONG": 0,
+  "A2_admitted": 2,
+  "A2_WRONG": 0,
+  "escalated": 4072,
+  "own_answered": 200,
+  "own_correct": 143,
+  "SAFETY_PC": 0,
+  "SAFETY2": 0,
+  "excluded_author": 0
+ }
+}

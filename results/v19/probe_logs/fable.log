@@ -1,0 +1,67 @@
+{
+ "model": "fable",
+ "library": 954,
+ "keys": 183,
+ "counts": {
+  "items_with_candidate": 1421,
+  "items_with_executed_candidate": 1394,
+  "candidates_executed": 154305
+ },
+ "candidates_per_item_mean": 109.93,
+ "fresh_A2_wrong_ids": [
+  "a0175",
+  "a1349",
+  "a1412",
+  "a1979",
+  "a1983",
+  "a1984",
+  "a1989",
+  "a2105",
+  "g0454",
+  "g0796",
+  "g1161"
+ ],
+ "P0": {
+  "served": 781,
+  "correct": 777,
+  "WRONG": 4,
+  "served_by_fresh_status": {
+   "null_reading": 145,
+   "executed+A2": 593,
+   "executed": 43
+  },
+  "FALSE_ADMIT": 0.0051,
+  "wrong_ids": [
+   "a1481",
+   "a1984",
+   "a2236",
+   "g0454"
+  ],
+  "wrong_also_fresh_A2_wrong": 2,
+  "served_zero_slot": 100,
+  "wrong_zero_slot": 1,
+  "served_fresh_null_or_killed": 145,
+  "wrong_fresh_null_or_killed": 2
+ },
+ "P1": {
+  "served": 635,
+  "correct": 632,
+  "WRONG": 3,
+  "served_by_fresh_status": {
+   "executed+A2": 570,
+   "null_reading": 60,
+   "executed": 5
+  },
+  "FALSE_ADMIT": 0.0047,
+  "wrong_ids": [
+   "a1481",
+   "a1984",
+   "g0454"
+  ],
+  "wrong_also_fresh_A2_wrong": 2,
+  "served_zero_slot": 13,
+  "wrong_zero_slot": 0,
+  "served_fresh_null_or_killed": 60,
+  "wrong_fresh_null_or_killed": 1
+ }
+}

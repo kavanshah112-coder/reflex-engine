@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id":"n1","op":"evaluate","expr":"3*(5 + 1)"},{"id":"n2","op":"evaluate","expr":"@n1 - 17"},{"id":"n3","op":"formula","expr":"0.5*m*v**2","m":28,"v":"@n2","unit":"J"},{"id":"n4","op":"convert","value":"@n3","from":"J","to":"kJ"},{"id":"n5","op":"scale","value":"@n4","by":9},{"id":"n6","op":"evaluate","expr":"@n5 - 4"}], "final": "n6"}}

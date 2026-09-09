@@ -1,0 +1,29 @@
+{
+ "arm": "fable",
+ "split": "acq",
+ "n": 142653,
+ "sampled": 3100,
+ "ms_per_query": 85.254,
+ "library_T": 665,
+ "library_P": 251,
+ "probated_T": 44,
+ "totals": {
+  "n": 142653,
+  "exact_served": 51588,
+  "exact_WRONG": 0,
+  "A2S_served": 406,
+  "A2S_WRONG": 4,
+  "A0S_served": 408,
+  "A0S_WRONG": 4,
+  "KC_served": 10,
+  "KC_WRONG": 1,
+  "A2_admitted": 1646,
+  "A2_WRONG": 5,
+  "escalated": 89400,
+  "own_answered": 2900,
+  "own_correct": 2850,
+  "SAFETY_PC": 0,
+  "SAFETY2": 0,
+  "excluded_author": 0
+ }
+}

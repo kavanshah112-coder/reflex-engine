@@ -1,0 +1,5 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"solve_pick","lhs":"x**2 - 6*x + 5","pick":"larger"},
+{"id":"n2","op":"evaluate","expr":"@n1 + 22"},
+{"id":"n3","op":"formula","expr":"0.5*m*v**2","m":7,"v":"@n2","unit":"J"}
+], "final": "n3"}}

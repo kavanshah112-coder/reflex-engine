@@ -1,0 +1,29 @@
+{
+ "arm": "haiku",
+ "split": "acq",
+ "n": 142653,
+ "sampled": 3100,
+ "ms_per_query": 43.58,
+ "library_T": 414,
+ "library_P": 102,
+ "probated_T": 22,
+ "totals": {
+  "n": 142653,
+  "exact_served": 50811,
+  "exact_WRONG": 0,
+  "A2S_served": 337,
+  "A2S_WRONG": 7,
+  "A0S_served": 393,
+  "A0S_WRONG": 8,
+  "KC_served": 0,
+  "KC_WRONG": 0,
+  "A2_admitted": 1091,
+  "A2_WRONG": 5,
+  "escalated": 90700,
+  "own_answered": 2898,
+  "own_correct": 2398,
+  "SAFETY_PC": 0,
+  "SAFETY2": 0,
+  "excluded_author": 0
+ }
+}

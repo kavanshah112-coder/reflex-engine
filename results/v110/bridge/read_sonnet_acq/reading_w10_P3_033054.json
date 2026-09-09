@@ -1,0 +1,7 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"integrate_def","expr":"4*x**2+6*x","a":0,"b":2},
+{"id":"n2","op":"evaluate","expr":"@n1 - 14"},
+{"id":"n3","op":"formula","expr":"0.5*m*v**2","m":13.0,"v":"@n2","unit":"J"},
+{"id":"n4","op":"scale","value":"@n3","by":5},
+{"id":"n5","op":"evaluate","expr":"@n4 + 16"}
+], "final": "n5"}}

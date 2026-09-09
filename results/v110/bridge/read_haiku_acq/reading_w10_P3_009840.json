@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id": "n1", "op": "gcd", "a": 112, "b": 36}, {"id": "n2", "op": "scale", "value": "@n1", "by": 3}, {"id": "n3", "op": "evaluate", "expr": "@n2 + 9"}, {"id": "n4", "op": "formula", "expr": "0.5 * m * v**2", "m": 7, "v": "@n3", "unit": "J"}, {"id": "n5", "op": "convert", "value": "@n4", "from": "J", "to": "kJ"}], "final": "n5"}}

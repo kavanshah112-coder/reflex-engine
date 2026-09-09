@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id":"n1","op":"evaluate","expr":"3*(3 + 2)"},{"id":"n2","op":"formula","expr":"m * a","m":107,"a":"@n1","unit":"N"},{"id":"n3","op":"evaluate","expr":"@n2 + 24"},{"id":"n4","op":"convert","value":"@n3","from":"N","to":"kN"},{"id":"n5","op":"scale","value":"@n4","by":12}], "final": "n5"}}

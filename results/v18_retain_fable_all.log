@@ -1,0 +1,66 @@
+{
+ "model": "fable",
+ "split": "seal",
+ "arm": "B-fable-all",
+ "v17_template_serves": 3659,
+ "v17_template_wrong": 542,
+ "v18_bind_on_same": 3480,
+ "v18_bind_on_same_correct": 3480,
+ "RETAIN": 0.9511,
+ "abstain_anatomy_on_denominator": {
+  "donor_self": 24,
+  "no_skeleton": 155
+ },
+ "bind_new_coverage": 51213,
+ "bind_new_coverage_v17_path": {
+  "escalated": 34719,
+  "mint": 16494
+ },
+ "COMPOUND_breadth": {
+  "distinct_signatures_bind_served": 354,
+  "distinct_skeletons_bind_served": 1173,
+  "serves_per_signature": 154.5,
+  "serves_per_skeleton": 46.63,
+  "dedup_ratio_upper_bound": 0.207
+ },
+ "COMPOUND": {
+  "plans_purchased": 1713,
+  "certified_bind_serves": 54693,
+  "ratio_raw": 31.928,
+  "unique_signatures": 16380,
+  "certified_bind_serves_dedup": 146,
+  "ratio_dedup": 0.085,
+  "curve": [
+   {
+    "n": 50000,
+    "binds": 9169,
+    "ratio": 5.353
+   },
+   {
+    "n": 100000,
+    "binds": 18256,
+    "ratio": 10.657
+   },
+   {
+    "n": 150000,
+    "binds": 27514,
+    "ratio": 16.062
+   },
+   {
+    "n": 200000,
+    "binds": 36564,
+    "ratio": 21.345
+   },
+   {
+    "n": 250000,
+    "binds": 45660,
+    "ratio": 26.655
+   },
+   {
+    "n": 300000,
+    "binds": 54693,
+    "ratio": 31.928
+   }
+  ]
+ }
+}

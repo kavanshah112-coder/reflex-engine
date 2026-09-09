@@ -1,0 +1,8 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"sum_finite","expr":"2*k - 1","var":"k","a":1,"b":6},
+{"id":"n2","op":"formula","expr":"0.5*m*v**2","m":43.0,"v":"@n1","unit":"J"},
+{"id":"n3","op":"scale","value":"@n2","by":5},
+{"id":"n4","op":"evaluate","expr":"@n3 + 28"},
+{"id":"n5","op":"scale","value":"@n4","by":10},
+{"id":"n6","op":"convert","value":"@n5","from":"J","to":"kJ"}
+], "final": "n6"}}

@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id": "n1", "op": "solve_pick", "lhs": "x**2 - 3*x + 2", "pick": "larger"}, {"id": "n2", "op": "scale", "value": "@n1", "by": 4}, {"id": "n3", "op": "formula", "expr": "m * a", "m": 130.0, "a": "@n2", "unit": "N"}], "final": "n3"}}

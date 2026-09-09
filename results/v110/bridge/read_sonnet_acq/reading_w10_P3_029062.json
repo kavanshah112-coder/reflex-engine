@@ -1,0 +1,8 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"solve_pick","lhs":"x**2 - 8*x + 12","pick":"smaller"},
+{"id":"n2","op":"formula","expr":"0.5 * m * v**2","m":24.0,"v":"@n1","unit":"J"},
+{"id":"n3","op":"evaluate","expr":"@n2 - 14"},
+{"id":"n4","op":"evaluate","expr":"@n3 - 12"},
+{"id":"n5","op":"evaluate","expr":"@n4 + 30"},
+{"id":"n6","op":"evaluate","expr":"@n5 + 9"}
+], "final": "n6"}}

@@ -1,0 +1,33 @@
+{
+ "arm": "B-sonnet-all",
+ "split": "devl",
+ "n": 400000,
+ "in_domain": 398884,
+ "distractors": 1116,
+ "served": 221201,
+ "chain_served": 145745,
+ "bind_served": 75456,
+ "correct": 221201,
+ "WRONG": 0,
+ "WRONG_bind": 0,
+ "coverage_in_domain": 0.5545,
+ "wrong_fire": 0.0,
+ "SAFETY2_distractor_served": 0,
+ "gate_killed": 0,
+ "composer_gate_kills": {},
+ "composer_exec_refused": 35,
+ "bind_abstain": {
+  "no_skeleton": 178759,
+  "exec_refused": 40
+ },
+ "escalated": 178799,
+ "engine_errors": 0,
+ "ms_per_query": 9.073,
+ "model_calls": 0,
+ "gate": "plangate18",
+ "lib": [
+  "results/v18/planlib18_sonnet_all.json"
+ ],
+ "lib_templates": 573
+}
+by_k: {"k2": {"served": 64311, "correct": 64311, "bind": 15517, "escalated": 15466}, "k3": {"served": 99444, "correct": 99444, "bind": 48561, "escalated": 20221}, "k4": {"escalated": 62038, "served": 37683, "correct": 37683, "bind": 11157}, "k5": {"escalated": 47155, "served": 12678, "correct": 12678, "bind": 221}, "k6": {"escalated": 32803, "served": 7085, "correct": 7085}, "kNone": {"escalated": 1116}}

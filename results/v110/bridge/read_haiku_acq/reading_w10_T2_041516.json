@@ -1,0 +1,17 @@
+{
+    "plan":  {
+                 "nodes":  [
+                               {
+                                   "op":  "evaluate",
+                                   "id":  "n1",
+                                   "expr":  "{n0}*{n1}-{n2}"
+                               },
+                               {
+                                   "op":  "evaluate",
+                                   "id":  "n2",
+                                   "expr":  "@n1/2"
+                               }
+                           ],
+                 "final":  "n2"
+             }
+}

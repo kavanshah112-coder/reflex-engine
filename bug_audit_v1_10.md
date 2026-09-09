@@ -164,3 +164,34 @@ with 28 tool calls, i.e. in bulk. The readings are the proposer's
 output and stand as collected — a second pass would be a second sample
 of the proposer, which the one-reading-per-item protocol forbids. The
 effect is a lower haiku fresh-reach on those items; reported per tier.
+
+## N12 — ACQ arm passes on the non-authored tiers (`<arm>_acq_base`, lib_<arm>_acq1.json)
+Opus / haiku / fable run over 142,653 ACQ items (3,100 sampled per arm)
+seeded with the V1.9 A2 library; sonnet running. Exact path 51,353 /
+50,811 / 51,588 serves at 0 wrong (up from the D-arm 48,170 by the
+P-templates minted from fresh chain readings: 250 / 102 / 251). A2S
+served 426 / 337 / 406 with 1 / 7 / 4 wrong by gold; every A2S wrong
+equals the model's own answer by construction (A2S = agreement), and
+on ACQ they are dominated by SVAMP items whose gold is itself
+contestable (T3′ 000717 "second chapter" gold 13, 000497 "$4, 99 bars
+at $3" gold 1, 000844 "21 roses, threw away 34") plus haiku own-answer
+errors (T3 006976 arithmetic-series, 007019). Classification is done
+after SEAL; nothing here is relabelled. KC (shadow) served 0 / 0 / 10
+with 0 / 0 / 1 wrong — consistent with H9. Haiku's own answers on the
+physics tiers are weak (P1 210/300, P2 133/300, P3 123/300), so its
+fresh A2 on P-tiers is small; the model-free chain path is unaffected
+(0 wrong). Acquisition curve (A2S cumulative at 40k…140k): opus
+0/0/5/35/136/288, haiku 0/0/4/32/114/246, fable 0/0/7/48/147/287 —
+zero for the first 60k because the id order walks D, P1–P3, PC before
+T1; the curve is reported against the T-tier position in the report.
+
+## N13 — Fable model limit (2026-09-08 ~22:30 IST) and one stray file
+Two fable T4 authoring agents (w04 033–040, w05 041–048) died with
+HTTP 429 (per-model Fable limit, not the session limit of N10). Files
+033–038 were complete and kept; 039–048 relaunched 2026-09-09 as two
+5-batch jobs (user: "when limit comes back automatically start").
+A haiku authoring agent wrote `authored_T4_haiku_141.json` to
+`<repo>/bridge/` instead of `results/v110/bridge/` (20 ids, of which
+17 duplicate the correctly-placed file and 3 are ids that do not exist
+in the request); moved to `results/v110/bridge/stray_authored_T4_haiku_141.json`,
+not merged.

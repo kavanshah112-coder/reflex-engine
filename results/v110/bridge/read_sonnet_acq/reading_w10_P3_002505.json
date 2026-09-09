@@ -1,0 +1,8 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"solve_pick","lhs":"x**2 -9*x +8","pick":"larger"},
+{"id":"n2","op":"scale","value":"@n1","by":7},
+{"id":"n3","op":"evaluate","expr":"@n2 - 4"},
+{"id":"n4","op":"formula","expr":"m * a","m":168.0,"a":"@n3","unit":"N"},
+{"id":"n5","op":"evaluate","expr":"@n4 + 26"},
+{"id":"n6","op":"evaluate","expr":"@n5 + 3"}
+], "final": "n6"}}

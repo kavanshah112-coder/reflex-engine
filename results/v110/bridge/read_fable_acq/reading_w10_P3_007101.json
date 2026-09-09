@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id":"n1","op":"sum_finite","expr":"2*k - 1","var":"k","a":1,"b":8},{"id":"n2","op":"formula","expr":"m * a","m":159,"a":"@n1","unit":"N"},{"id":"n3","op":"scale","value":"@n2","by":8},{"id":"n4","op":"convert","value":"@n3","from":"N","to":"kN"},{"id":"n5","op":"scale","value":"@n4","by":2},{"id":"n6","op":"evaluate","expr":"@n5 + 6"}], "final": "n6"}}

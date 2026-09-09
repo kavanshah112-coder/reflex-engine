@@ -173,3 +173,15 @@
 {"agent": "readq_acq_fable_T3c", "model": "fable", "role": "reading", "split": "acq", "tier": "T3", "items": 200, "subagent_tokens": 192801, "tool_uses": 218, "duration_ms": 1125102}
 {"agent": "readq_acq_sonnet_T3b2", "model": "sonnet", "role": "reading", "split": "acq", "tier": "T3", "items": 200, "subagent_tokens": 225035, "tool_uses": 213, "duration_ms": 1319946}
 {"agent": "readq_acq_opus_T3d", "model": "opus", "role": "reading", "split": "acq", "tier": "T3", "items": 200, "subagent_tokens": 217908, "tool_uses": 218, "duration_ms": 1303297}
+{"agent": "readq_acq_sonnet_j02", "model": "sonnet", "role": "reading", "split": "acq", "tier": "P3", "items": 200, "subagent_tokens": 244251, "tool_uses": 212, "duration_ms": 1430642}
+{"agent": "author_T4_sonnet_w06", "model": "sonnet", "role": "author", "split": "-", "tier": "T4", "items": 200, "subagent_tokens": 220794, "tool_uses": 17, "duration_ms": 914683}
+{"agent": "author_T4_sonnet_w05", "model": "sonnet", "role": "author", "split": "-", "tier": "T4", "items": 175, "subagent_tokens": 228659, "tool_uses": 15, "duration_ms": 1069519}
+{"agent": "author_T4_haiku_w17", "model": "haiku", "role": "author", "split": "-", "tier": "T4", "items": 128, "subagent_tokens": 126035, "tool_uses": 26, "duration_ms": 443174}
+{"agent": "author_T4_fable_w03", "model": "fable", "role": "author", "split": "-", "tier": "T4", "items": 175, "subagent_tokens": 205105, "tool_uses": 23, "duration_ms": 1109372}
+{"agent": "author_T4_opus_w05", "model": "opus", "role": "author", "split": "-", "tier": "T4", "items": 200, "subagent_tokens": 204887, "tool_uses": 16, "duration_ms": 1193469}
+{"agent": "readq_acq_sonnet_T3_22-29", "model": "sonnet", "role": "reading", "split": "acq", "tier": "T3", "items": 200, "subagent_tokens": 238177, "tool_uses": 206, "duration_ms": 2222768}
+{"agent": "author_T4_opus_w06", "model": "opus", "role": "author", "split": "-", "tier": "T4", "items": 200, "subagent_tokens": 199137, "tool_uses": 27, "duration_ms": 1286841}
+{"agent": "author_T4_opus_w07", "model": "opus", "role": "author", "split": "-", "tier": "T4", "items": 200, "subagent_tokens": 194240, "tool_uses": 16, "duration_ms": 1066010}
+{"agent": "author_T4_sonnet_w07", "model": "sonnet", "role": "author", "split": "-", "tier": "T4", "items": 200, "subagent_tokens": 208283, "tool_uses": 19, "duration_ms": 832617}
+{"agent": "ansq_dev_sonnet_dA", "model": "sonnet", "role": "answer", "split": "dev", "tier": "T1,T2", "items": 200, "subagent_tokens": 91425, "tool_uses": 16, "duration_ms": 85549}
+{"agent": "ansq_dev_opus_dA", "model": "opus", "role": "answer", "split": "dev", "tier": "T1,T2", "items": 200, "subagent_tokens": 81519, "tool_uses": 16, "duration_ms": 80976}

@@ -1,0 +1,65 @@
+{
+ "model": "fable",
+ "split": "seal",
+ "arm": "B-fable-dev",
+ "v17_template_serves": 3659,
+ "v17_template_wrong": 542,
+ "v18_bind_on_same": 3158,
+ "v18_bind_on_same_correct": 3158,
+ "RETAIN": 0.8631,
+ "abstain_anatomy_on_denominator": {
+  "no_skeleton": 501
+ },
+ "bind_new_coverage": 31028,
+ "bind_new_coverage_v17_path": {
+  "mint": 13965,
+  "escalated": 17063
+ },
+ "COMPOUND_breadth": {
+  "distinct_signatures_bind_served": 149,
+  "distinct_skeletons_bind_served": 419,
+  "serves_per_signature": 229.44,
+  "serves_per_skeleton": 81.59,
+  "dedup_ratio_upper_bound": 0.259
+ },
+ "COMPOUND": {
+  "plans_purchased": 575,
+  "certified_bind_serves": 34186,
+  "ratio_raw": 59.454,
+  "unique_signatures": 16380,
+  "certified_bind_serves_dedup": 62,
+  "ratio_dedup": 0.108,
+  "curve": [
+   {
+    "n": 50000,
+    "binds": 5756,
+    "ratio": 10.01
+   },
+   {
+    "n": 100000,
+    "binds": 11458,
+    "ratio": 19.927
+   },
+   {
+    "n": 150000,
+    "binds": 17250,
+    "ratio": 30.0
+   },
+   {
+    "n": 200000,
+    "binds": 22930,
+    "ratio": 39.878
+   },
+   {
+    "n": 250000,
+    "binds": 28552,
+    "ratio": 49.656
+   },
+   {
+    "n": 300000,
+    "binds": 34186,
+    "ratio": 59.454
+   }
+  ]
+ }
+}

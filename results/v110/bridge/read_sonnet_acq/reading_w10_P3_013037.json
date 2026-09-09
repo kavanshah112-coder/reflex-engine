@@ -1,0 +1,7 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"solve_pick","lhs":"x**2 - 11*x + 24","pick":"larger"},
+{"id":"n2","op":"formula","expr":"m * a","m":123.0,"a":"@n1","unit":"N"},
+{"id":"n3","op":"scale","value":"@n2","by":5},
+{"id":"n4","op":"scale","value":"@n3","by":9},
+{"id":"n5","op":"convert","value":"@n4","from":"N","to":"kN"}
+], "final": "n5"}}
