@@ -352,3 +352,27 @@ of a bridge output in V1.10. Opus's relaunched T4 9–17 agent
 composed the word-multipliers "eight"/"nine" from listed constants
 (`*2*4`, `*3*3`) on four items instead of nulling as instructed;
 those readings stand (the engine's gates judge them), reported here.
+
+## N27 — M-opus ACQ pass on the authored tiers (acq2)
+5,356 ACQ T4/P4 items: fresh A2 admitted 284 / 2 wrong (T4 208/2, P4
+76/0); A2S 7 / 0; own answers 799/812. The two A2 wrongs (T4 013526
+"both lost 57 marbles" — per-player vs combined; 014572 — the
+"in hours" ask over a minute chain, the same item fable missed) are
+haiku-authored ambiguities where the model's own answer and the
+executed reading agree with each other and not with the raw chain
+gold. Library T 918 / P 253 (lib_opus_acq2).
+
+## N28 — M-sonnet ACQ pass on the authored tiers (acq2) and M-opus DEV (dev2)
+Sonnet ACQ T4/P4 (5,356): fresh A2 admitted 261 / 4 wrong (T4 201/4,
+P4 60/0); A2S 6 / 0; own 790/812. The four T4 wrongs are all
+haiku-authored ambiguity or unit-tail items (003171 "needed for the
+expansion" total-vs-increment; 004488 "5 for every lantern still
+hanging" add-vs-become; 007181 and 014572 the minute/hour asks seen
+on the other arms); in each the own answer equals the executed
+reading. Library T 1,325 / P 255 (lib_sonnet_acq2).
+Opus DEV T4/P4 (1,793): fresh A2 65 / 1 wrong (T4 002567 "all 8
+batches delivered to a partner" — remaining-vs-no-op), A2S 3 / 0, own
+190/193. Across the four arms the authored-tier wrongs are the same
+handful of haiku-authored ambiguities; no engine rule is added — the
+wrongs are the model's own readings of an ambiguous story, exactly
+the class the version was designed to expose.

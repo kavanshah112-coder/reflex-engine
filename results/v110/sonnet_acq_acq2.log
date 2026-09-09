@@ -1,0 +1,29 @@
+{
+ "arm": "sonnet",
+ "split": "acq",
+ "n": 5356,
+ "sampled": 4000,
+ "ms_per_query": 58.219,
+ "library_T": 1325,
+ "library_P": 255,
+ "probated_T": 48,
+ "totals": {
+  "n": 5356,
+  "exact_served": 0,
+  "exact_WRONG": 0,
+  "A2S_served": 6,
+  "A2S_WRONG": 0,
+  "A0S_served": 6,
+  "A0S_WRONG": 0,
+  "KC_served": 0,
+  "KC_WRONG": 0,
+  "A2_admitted": 261,
+  "A2_WRONG": 4,
+  "escalated": 5007,
+  "own_answered": 812,
+  "own_correct": 790,
+  "SAFETY_PC": 0,
+  "SAFETY2": 0,
+  "excluded_author": 0
+ }
+}
