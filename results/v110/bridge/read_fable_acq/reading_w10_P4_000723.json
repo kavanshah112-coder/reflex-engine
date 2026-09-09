@@ -1,0 +1,10 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"formula","expr":"m","m":48000,"unit":"g"},
+{"id":"n2","op":"convert","value":"@n1","from":"g","to":"kg"},
+{"id":"n3","op":"solve_pick","lhs":"x**2 - 7*x + 12","pick":"smaller"},
+{"id":"n4","op":"scale","value":"@n3","by":9},
+{"id":"n5","op":"evaluate","expr":"@n4 + 1"},
+{"id":"n6","op":"formula","expr":"m * a","m":"@n2","a":"@n5","unit":"N"},
+{"id":"n7","op":"evaluate","expr":"@n6 + 19"},
+{"id":"n8","op":"convert","value":"@n7","from":"N","to":"kN"}
+], "final": "n8"}}

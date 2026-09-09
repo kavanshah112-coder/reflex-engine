@@ -251,3 +251,25 @@ none left. This is an engine change made before any sealed run and
 after the D-arm baselines, which contain no authored items. Files
 re-hashed as `HASHES.json["post_qc"]`; the ACQ/DEV T4/P4 E-SAMPLE
 (500/400 and 150/150) was drawn after QC.
+
+## N18 — haiku over-nulled the ACQ T4 9–17 reading block (as N11)
+Haiku's T4 batches 009–017 (225 items) came back 213 null / 12 plans,
+written with 23 tool calls (bulk, i.e. not one Write per file — the
+N6 class of instruction breach). The other three models' T4 blocks
+are reported when they land. As in N11 the readings stand as
+collected (one reading per item, never re-sampled); the effect is a
+lower haiku fresh reach on T4, reported per tier.
+
+## N19 — sonnet P4 answer files written under rotated names (renamed, not rewritten)
+The sonnet "acq P4 12–15 + dev P4" answer agent wrote seven files
+whose contents belonged to the NEXT batch in its list (the answers
+for `ansq_dev_P4_000` landed in `ans_sonnet_acq_P4_015.json`, …, the
+answers for `ansq_acq_P4_015` in `ans_sonnet_dev_P4_005.json`): every
+id→answer pair is internally consistent (each file holds exactly the
+25 ids of one batch), only the file name was off by one. Because the
+engine loads answers per split by file name, the mislabelled files
+would have dropped 25 ACQ ids and 25 DEV ids. Fix: the seven files
+were renamed to the batch whose ids they contain (a pure rotation; no
+content changed, nothing overwritten), verified id-exact afterwards.
+A second sonnet answer agent (T4 12–19 + dev T4) reported catching
+and correcting the same class of slip on its own before writing.

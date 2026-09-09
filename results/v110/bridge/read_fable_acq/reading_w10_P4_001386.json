@@ -1,0 +1,10 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"integrate_def","expr":"1*x**2 + 0*x","a":2,"b":3},
+{"id":"n2","op":"formula","expr":"m","m":31000,"unit":"g"},
+{"id":"n3","op":"convert","value":"@n2","from":"g","to":"kg"},
+{"id":"n4","op":"formula","expr":"0.5 * m * v**2","m":"@n3","v":"@n1","unit":"J"},
+{"id":"n5","op":"scale","value":"@n4","by":11},
+{"id":"n6","op":"evaluate","expr":"@n5 + 15"},
+{"id":"n7","op":"convert","value":"@n6","from":"J","to":"kJ"},
+{"id":"n8","op":"scale","value":"@n7","by":2}
+], "final": "n8"}}

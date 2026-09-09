@@ -1,0 +1,7 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"solve_pick","lhs":"x**2 - 5*x + 4","pick":"larger"},
+{"id":"n2","op":"formula","expr":"m * a","m":195,"a":"@n1","unit":"N"},
+{"id":"n3","op":"scale","value":"@n2","by":4},
+{"id":"n4","op":"scale","value":"@n3","by":10},
+{"id":"n5","op":"scale","value":"@n4","by":4}
+], "final": "n5"}}
