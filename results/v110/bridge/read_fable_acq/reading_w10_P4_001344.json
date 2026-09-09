@@ -1,0 +1,10 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"solve_pick","lhs":"x**2 - 9*x + 14","pick":"smaller"},
+{"id":"n2","op":"scale","value":"@n1","by":2},
+{"id":"n3","op":"evaluate","expr":"@n2 + 19"},
+{"id":"n4","op":"formula","expr":"m","m":152000,"unit":"g"},
+{"id":"n5","op":"convert","value":"@n4","from":"g","to":"kg"},
+{"id":"n6","op":"formula","expr":"m * a","m":"@n5","a":"@n3","unit":"N"},
+{"id":"n7","op":"convert","value":"@n6","from":"N","to":"kN"},
+{"id":"n8","op":"scale","value":"@n7","by":11}
+], "final": "n8"}}

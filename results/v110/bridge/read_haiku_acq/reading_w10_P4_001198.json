@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id": "n1", "op": "solve_pick", "lhs": "x**2 - 10*x + 24", "pick": "smaller"}, {"id": "n2", "op": "formula", "expr": "6 * m * a - f", "m": 25.0, "a": "@n1", "f": 23.0, "unit": "N"}, {"id": "n3", "op": "convert", "value": "@n2", "from": "N", "to": "kN"}], "final": "n3"}}

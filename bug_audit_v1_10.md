@@ -253,7 +253,7 @@ re-hashed as `HASHES.json["post_qc"]`; the ACQ/DEV T4/P4 E-SAMPLE
 (500/400 and 150/150) was drawn after QC.
 
 ## N18 — haiku over-nulled the ACQ T4 9–17 reading block (as N11)
-Haiku's T4 batches 009–017 (225 items) came back 213 null / 12 plans,
+Haiku's T4 batches 009–017 (225 items) came back 213 null / 12 plans (and its T4 018–019 + DEV T4 block 134 null / 66 plans, 53 tool calls),
 written with 23 tool calls (bulk, i.e. not one Write per file — the
 N6 class of instruction breach). The other three models' T4 blocks
 are reported when they land. As in N11 the readings stand as
@@ -273,3 +273,28 @@ were renamed to the batch whose ids they contain (a pure rotation; no
 content changed, nothing overwritten), verified id-exact afterwards.
 A second sonnet answer agent (T4 12–19 + dev T4) reported catching
 and correcting the same class of slip on its own before writing.
+
+## N20 — second session limit (2026-09-09 ~23:20 IST, reset 03:00): 14 reading agents killed
+The session usage limit terminated every running sonnet/opus/fable
+T4/P4 reading agent mid-job (haiku's completed). Files already
+written are kept; the same jobs are relaunched with the same prompts
+("skip if the file exists"), as in N10. Tokens of killed agents are
+not in usage.jsonl. Haiku's bulk-written blocks left 25 ACQ P4 and 25
+DEV T4 ids without a file (its reports claimed full coverage); those
+two blocks are re-issued with skip-if-exists.
+
+## N21 — M-sonnet ACQ pass and the three DEV passes (acq1 libraries)
+Sonnet ACQ (142,653): exact 51,169 / 0 wrong; A2S 466 / 4 wrong (all
+T3′ = SVAMP items whose own answer equals the served value: 000497,
+000595, 000717, 000849); fresh A2 1,650 / 10 wrong (T3, all own-answer
+agreements on GSM8K items with contestable golds or own errors); KC
+served 3 / 3 WRONG (H9's prediction, on the primary arm); library T
+1,144 / P 251 / probated 44. Curve 0/0/13/89/172/299.
+DEV (35,510 non-authored items, dev1 tag, acq1 library, sonnet
+running): haiku exact 13,164 / 0, A2S 116 / 4 wrong (T3′, own-answer
+errors: 000301, 000491, 000753, 000997); opus 13,213 / 0, A2S 164 / 0;
+fable 13,340 / 0, A2S 161 / 0, KC 2 / 0. PC certified 0 on all;
+distractor served 0. Post-hoc check for "echo" donors (plans without
+an arithmetic operator, which would agree with any own answer that
+restates a stated number): none exist among the suggested serves on
+any arm — no rule added from DEV; Z-SLOT/S-MULTI stand as frozen.

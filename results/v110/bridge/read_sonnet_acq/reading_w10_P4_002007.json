@@ -1,0 +1,7 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"integrate_def","expr":"2*t**2+7*t","a":0,"b":2},
+{"id":"n2","op":"evaluate","expr":"@n1-11"},
+{"id":"n3","op":"formula","expr":"0.5*m*v**2","m":26.0,"v":"@n2","unit":"J"},
+{"id":"n4","op":"evaluate","expr":"@n3*4"},
+{"id":"n5","op":"convert","value":"@n4","from":"J","to":"kJ"}
+], "final": "n5"}}

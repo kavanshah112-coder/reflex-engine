@@ -1,0 +1,7 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"solve_pick","lhs":"x**2 -12*x +35","pick":"larger"},
+{"id":"n2","op":"formula","expr":"0.5*m*v**2","m":6.0,"v":"@n1","unit":"J"},
+{"id":"n3","op":"convert","value":"@n2","from":"J","to":"kJ"},
+{"id":"n4","op":"evaluate","expr":"@n3-22"},
+{"id":"n5","op":"evaluate","expr":"@n4*4"}
+], "final": "n5"}}

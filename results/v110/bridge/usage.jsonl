@@ -264,3 +264,8 @@
 {"agent": "ansq_T4_sonnet_tB", "model": "sonnet", "role": "answer", "split": "acq+dev", "tier": "T4", "items": 350, "subagent_tokens": 245397, "tool_uses": 44, "duration_ms": 617216}
 {"agent": "readq_T4_fable_uA", "model": "fable", "role": "reading", "split": "acq", "tier": "T4", "items": 225, "subagent_tokens": 207900, "tool_uses": 236, "duration_ms": 693816}
 {"agent": "readq_P4_haiku_vA", "model": "haiku", "role": "reading", "split": "acq", "tier": "P4", "items": 200, "subagent_tokens": 191206, "tool_uses": 208, "duration_ms": 483868}
+{"agent": "ansq_P4_sonnet_tC", "model": "sonnet", "role": "answer", "split": "acq", "tier": "P4", "items": 300, "subagent_tokens": 204809, "tool_uses": 28, "duration_ms": 815941}
+{"agent": "readq_T4_opus_uA", "model": "opus", "role": "reading", "split": "acq", "tier": "T4", "items": 225, "subagent_tokens": 245839, "tool_uses": 234, "duration_ms": 1007091}
+{"agent": "readq_T4_haiku_uC", "model": "haiku", "role": "reading", "split": "acq+dev", "tier": "T4", "items": 200, "subagent_tokens": 133958, "tool_uses": 53, "duration_ms": 463000}
+{"agent": "readq_P4_haiku_vB", "model": "haiku", "role": "reading", "split": "acq", "tier": "P4", "items": 200, "subagent_tokens": 182118, "tool_uses": 183, "duration_ms": 496619}
+{"agent": "readq_P4_haiku_vC", "model": "haiku", "role": "reading", "split": "dev", "tier": "P4", "items": 150, "subagent_tokens": 122444, "tool_uses": 28, "duration_ms": 289911}

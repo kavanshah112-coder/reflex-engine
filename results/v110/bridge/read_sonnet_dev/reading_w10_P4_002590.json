@@ -1,0 +1,7 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"evaluate","expr":"5 * (4 + 8)"},
+{"id":"n2","op":"formula","expr":"0.5*(m/1000)*v**2","m":44000,"v":"@n1","unit":"J"},
+{"id":"n3","op":"evaluate","expr":"@n2 + 10"},
+{"id":"n4","op":"evaluate","expr":"@n3 + 6"},
+{"id":"n5","op":"evaluate","expr":"@n4 * 10"}
+], "final": "n5"}}
