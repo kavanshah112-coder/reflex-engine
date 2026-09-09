@@ -390,3 +390,14 @@ of its 14 batches (reported "14 files") — P3 004–009 re-issued as a
 fill job; haiku `T3_020` holds 24 of its 25 ids plus one invented id
 (kept as written; the one unanswered item simply has no own answer
 on the haiku arm).
+
+## N30 — proposer memorisation caveat on GSM8K-train items
+The sonnet SEAL T2/T3 reading agent reported that it "cross-checked
+several of the harder T3 problems against their well-known canonical
+answers" — i.e. it recognised GSM8K-train items and their published
+answers from pre-training. No gold was shown to any agent, but T3 is
+the public GSM8K training split, so a reading proposer can anchor a
+plan on a remembered answer; T3′ (SVAMP), T4 and P4 do not have this
+property. Reported as a caveat on the T3 reading-quality numbers of
+every arm (it is a contamination fact about the corpus, not a
+protocol breach); the authored tiers are the clean test of reading.
