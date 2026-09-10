@@ -371,3 +371,15 @@
 {"agent": "readq_seal_haiku_fill_slots", "model": "haiku", "role": "reading", "split": "seal", "tier": "T3p,T4", "items": 57, "subagent_tokens": 105900, "tool_uses": 67, "duration_ms": 280811}
 {"agent": "ansq_replay_opus_pB", "model": "opus", "role": "answer", "split": "replay", "tier": "T3p,T4,P1", "items": 300, "subagent_tokens": 120545, "tool_uses": 24, "duration_ms": 237337}
 {"agent": "ansq_replay_fable_pB", "model": "fable", "role": "answer", "split": "replay", "tier": "T3p,T4,P1", "items": 300, "subagent_tokens": 116287, "tool_uses": 24, "duration_ms": 182314}
+{"agent": "readq_seal_sonnet_rD2", "model": "sonnet", "role": "reading", "split": "seal", "tier": "T3", "items": 55, "subagent_tokens": 212863, "tool_uses": 317, "duration_ms": 490749}
+{"agent": "ansq_replay_sonnet_pD", "model": "sonnet", "role": "answer", "split": "replay", "tier": "PC", "items": 214, "subagent_tokens": 96847, "tool_uses": 19, "duration_ms": 105110}
+{"agent": "readq_seal_sonnet_rC2", "model": "sonnet", "role": "reading", "split": "seal", "tier": "T3", "items": 45, "subagent_tokens": 212308, "tool_uses": 307, "duration_ms": 504595}
+{"agent": "ansq_replay_sonnet_pB2", "model": "sonnet", "role": "answer", "split": "replay", "tier": "T3p,T4,P1", "items": 300, "subagent_tokens": 145642, "tool_uses": 28, "duration_ms": 373862}
+{"agent": "readq_seal_opus_rJ2", "model": "opus", "role": "reading", "split": "seal", "tier": "P3", "items": 137, "subagent_tokens": 208978, "tool_uses": 159, "duration_ms": 480324}
+{"agent": "ansq_replay_haiku_pD", "model": "haiku", "role": "answer", "split": "replay", "tier": "PC", "items": 214, "subagent_tokens": 71655, "tool_uses": 18, "duration_ms": 83643}
+{"agent": "ansq_replay_sonnet_pC", "model": "sonnet", "role": "answer", "split": "replay", "tier": "P2,P3,P4,D", "items": 300, "subagent_tokens": 150758, "tool_uses": 24, "duration_ms": 343421}
+{"agent": "ansq_replay_haiku_pC", "model": "haiku", "role": "answer", "split": "replay", "tier": "P2,P3,P4,D", "items": 298, "subagent_tokens": 105768, "tool_uses": 26, "duration_ms": 250161}
+{"agent": "ansq_replay_opus_pD", "model": "opus", "role": "answer", "split": "replay", "tier": "PC", "items": 214, "subagent_tokens": 87122, "tool_uses": 18, "duration_ms": 101272}
+{"agent": "ansq_replay_fable_pD", "model": "fable", "role": "answer", "split": "replay", "tier": "PC", "items": 214, "subagent_tokens": 87588, "tool_uses": 27, "duration_ms": 94996}
+{"agent": "ansq_replay_opus_pC", "model": "opus", "role": "answer", "split": "replay", "tier": "P2,P3,P4,D", "items": 300, "subagent_tokens": 133467, "tool_uses": 24, "duration_ms": 315933}
+{"agent": "ansq_replay_fable_pC", "model": "fable", "role": "answer", "split": "replay", "tier": "P2,P3,P4,D", "items": 300, "subagent_tokens": 130111, "tool_uses": 36, "duration_ms": 262440}

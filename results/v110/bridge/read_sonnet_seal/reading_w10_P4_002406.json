@@ -1,0 +1,8 @@
+{"plan":{"nodes":[
+{"id":"n1","op":"gcd","a":286,"b":400},
+{"id":"n2","op":"evaluate","expr":"3 * @n1"},
+{"id":"n3","op":"formula","expr":"0.5 * m * v**2","m":13,"v":"@n2","unit":"J"},
+{"id":"n4","op":"evaluate","expr":"@n3 + 16"},
+{"id":"n5","op":"evaluate","expr":"@n4 * 6"},
+{"id":"n6","op":"evaluate","expr":"@n5 * 8"}
+],"final":"n6"}}

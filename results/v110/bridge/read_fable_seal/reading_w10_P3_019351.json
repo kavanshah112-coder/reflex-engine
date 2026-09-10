@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id":"n1","op":"solve_pick","lhs":"x**2 -5*x +4","pick":"larger"},{"id":"n2","op":"evaluate","expr":"@n1 - 7"},{"id":"n3","op":"evaluate","expr":"@n2 - 3"},{"id":"n4","op":"evaluate","expr":"@n3 - 5"},{"id":"n5","op":"evaluate","expr":"@n4 + 23"},{"id":"n6","op":"formula","expr":"m * a","m":87,"a":"@n5","unit":"N"}], "final": "n6"}}

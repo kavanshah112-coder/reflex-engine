@@ -469,3 +469,11 @@ SEAL and fails on REPLAY by one item — the ladder is applied to the
 letter in the report. Fixes (require two distinct slot values for a
 two-input template; exclude rate asks from the conversion reflex) are
 V1.11 work, logged here before any model-arm sealed pass.
+
+## N33 — haiku REPLAY answer files short by one or two ids
+Seven haiku REPLAY answer files (T4 000–005, P4 001) hold 23–24 of
+their 25 ids (the agent's habitual dropped ids, cf. N29); the nine
+unanswered items simply have no own answer on the haiku arm (no A2S,
+no fresh A2), which lowers haiku's REPLAY reach by at most nine items
+and cannot create a wrong. Sonnet, opus and fable REPLAY answers are
+id-exact on all 47 batches.

@@ -1,0 +1,9 @@
+{"plan":{"nodes":[
+{"id":"n1","op":"evaluate","expr":"5*(6+5)"},
+{"id":"n2","op":"convert","value":80000,"from":"g","to":"kg"},
+{"id":"n3","op":"formula","expr":"m * a","m":"@n2","a":"@n1","unit":"N"},
+{"id":"n4","op":"evaluate","expr":"@n3 + 29"},
+{"id":"n5","op":"convert","value":"@n4","from":"N","to":"kN"},
+{"id":"n6","op":"evaluate","expr":"@n5 - 17"},
+{"id":"n7","op":"evaluate","expr":"@n6 * 11"}
+],"final":"n7"}}
