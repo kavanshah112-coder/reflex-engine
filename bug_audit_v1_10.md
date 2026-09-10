@@ -488,3 +488,16 @@ haiku's own proposal and the count is one of 1,000 REPLAY readings.
 Haiku's REPLAY T-tier nulls: T3 68/250, T3p 4/100, T4 96/105
 written (the agent nulled nearly all authored T4 stories), so haiku's
 fresh-A2 reach on REPLAY T4 will be near zero — reported, not fixed.
+
+## N35 — RULES measured post hoc; KC shadow wrong not identifiable
+The engine does not tally Z-SLOT / S-MULTI skips per item, so the
+RULES bar (false abstention < 3% on DEV) is measured after the fact by
+tools/rules110.py: it re-runs suggest() on the sampled DEV T-tier
+items with the sealed library, bypasses the rule once for measurement
+only, and counts blocked items the un-blocked suggestion would have
+served correctly. Engine unchanged. Result (rules110.json): Z-SLOT
+0.0% on every arm (no slots, nothing binds); S-MULTI 0.4 / 0.1 / 0.0 /
+0.1% of the sample on sonnet / opus / haiku / fable. RULES holds.
+The KC shadow path records only tallies (KC_served, KC_WRONG), not
+the item id or value, so the haiku SEAL KC wrong (1 of 1 served) is
+reported as a count; recording the KC value per row is V1.11 work.

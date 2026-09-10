@@ -130,6 +130,7 @@ det = {sp: summ("det", sp) for sp in ("acq", "dev", "seal", "replay")}
 det = {k: v for k, v in det.items() if v}
 tok = load(OUT / "tokens110.json") or {}
 ctrl = load(OUT / "controls110.json") or {}
+rules = load(OUT / "rules110.json") or {}
 manifest = load(OUT / "data" / "w400k_manifest.json") or {}
 hashes = load(OUT / "data" / "HASHES.json") or {}
 ledger = (REPO / "bug_audit_v1_10.md").read_text(encoding="utf-8") if (REPO / "bug_audit_v1_10.md").exists() else ""
@@ -217,7 +218,11 @@ def ladder():
     if chain:
         notes.append("SAFETY-CHAIN fails (P1-P3 model-free wrong on a sealed pass: %s)" % ", ".join(
             "%s/%s=%d" % (n, sp, chain_wrong(v)) for n, sp, v in [(m, "seal", v) for m, v in seal.items()] + [(m, "replay", v) for m, v in replay.items()] + [("det", k, det[k]) for k in ("seal", "replay") if k in det] if (chain_wrong(v) or 0) > 0))
-    if notes:
+    rules_bad = [m for m, r in rules.items() if not (r["Z-SLOT"]["pass_3pct"] and r["S-MULTI"]["pass_3pct"])]
+    if rules_bad:
+        notes.append("RULES > 3%% false abstention on %s (reported; no ladder letter assigned by the spec)" % ", ".join(rules_bad))
+        notes = [n for n in notes]  # keep
+    if [n for n in notes if not n.startswith("RULES")]:
         return "E", notes
     low = [m for m, v in seal.items() if (reach_s(v) or 0) < 0.30]
     if low:
@@ -409,6 +414,16 @@ def build_md():
     for m, s in dev.items():
         md.append("### M-%s — DEV n=%d" % (m, s["n"]))
         md += arm_tier_table(s, "dev")
+        md.append("")
+    if rules:
+        md.append("")
+        md.append("RULES on DEV (false abstention of a rule = sampled DEV T-tier items the rule blocked on which the un-blocked suggestion would have served the gold, over all sampled items; bar < 3%):")
+        md.append("")
+        md.append("| arm | sampled | Z-SLOT blocked | Z-SLOT false abst. | S-MULTI blocked | S-MULTI would serve (correct/wrong) | S-MULTI false abst. |")
+        md.append("|---|---|---|---|---|---|---|")
+        for m, r in rules.items():
+            md.append("| %s | %d | %d | %s | %d | %d (%d/%d) | %s |" % (m, r["sampled"], r["Z-SLOT"]["blocked"], pct(r["Z-SLOT"]["would_serve_correct"], r["sampled"]),
+                      r["S-MULTI"]["blocked"], r["S-MULTI"]["would_serve"], r["S-MULTI"]["would_serve_correct"], r["S-MULTI"]["would_serve_wrong"], pct(r["S-MULTI"]["would_serve_correct"], r["sampled"])))
         md.append("")
     md.append(N("dev", ""))
     md.append("")
