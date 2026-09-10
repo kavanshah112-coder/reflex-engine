@@ -42,17 +42,53 @@ def load(p):
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
 
 
+def _merge(a, b):
+    """Sum two summaries of disjoint tier sets (base = non-authored ACQ, acq2 = authored T4/P4; dev1 / dev2 likewise)."""
+    if not a:
+        return b
+    if not b:
+        return a
+    m = json.loads(json.dumps(a))
+    for t, c in b["by_tier"].items():
+        if t in m["by_tier"]:
+            for k, v in c.items():
+                if isinstance(v, (int, float)):
+                    m["by_tier"][t][k] = m["by_tier"][t].get(k, 0) + v
+        else:
+            m["by_tier"][t] = c
+    for k, v in b["totals"].items():
+        if isinstance(v, (int, float)):
+            m["totals"][k] = m["totals"].get(k, 0) + v
+    m["n"] = a.get("n", 0) + b.get("n", 0)
+    m["library_T"], m["library_P"] = b.get("library_T", a.get("library_T")), b.get("library_P", a.get("library_P"))
+    m["merged_from"] = [a.get("tag", "base"), b.get("tag", "acq2")]
+    return m
+
+
+# ACQ = base (non-authored, first pass) + acq2 (authored T4/P4, second pass); DEV = dev1 + dev2 likewise
+PARTS = {"acq": ["base", "acq2"], "dev": ["dev1", "dev2"], "seal": ["seal"], "replay": ["replay"]}
+
+
 def summ(arm, split, tag=None):
-    tag = tag or TAG[split]
-    s = load(OUT / ("%s_%s_%s_summary.json" % (arm, split, tag)))
-    if s is None:
-        s = load(OUT / ("%s_%s_summary.json" % (arm, split)))
-    return s
+    if tag:
+        return load(OUT / ("%s_%s_%s_summary.json" % (arm, split, tag)))
+    if arm == "det":
+        return load(OUT / ("det_%s_%s_summary.json" % (split, TAG[split])))
+    out = None
+    for t in PARTS[split]:
+        s = load(OUT / ("%s_%s_%s_summary.json" % (arm, split, t)))
+        if s:
+            s["tag"] = t
+            out = _merge(out, s)
+    return out
 
 
 def wrongs(arm, split, tag=None):
-    tag = tag or TAG[split]
-    return load(OUT / ("%s_%s_%s_wrong.json" % (arm, split, tag))) or []
+    tags = [tag] if tag else PARTS[split]
+    out = []
+    for t in tags:
+        out += load(OUT / ("%s_%s_%s_wrong.json" % (arm, split, t))) or []
+    return out
 
 
 def pct(a, b):

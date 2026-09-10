@@ -1,0 +1,8 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"evaluate","expr":"(6 + 6)*6"},
+{"id":"n2","op":"evaluate","expr":"@n1 + 2"},
+{"id":"n3","op":"evaluate","expr":"@n2 - 10"},
+{"id":"n4","op":"formula","expr":"0.5 * m * v**2","m":11,"v":"@n3","unit":"J"},
+{"id":"n5","op":"convert","value":"@n4","from":"J","to":"kJ"},
+{"id":"n6","op":"evaluate","expr":"@n5 + @n5"}
+], "final": "n6"}}

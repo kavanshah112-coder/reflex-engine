@@ -1,0 +1,9 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"solve_pick","lhs":"x**2 - 11*x + 30","pick":"smaller"},
+{"id":"n2","op":"evaluate","expr":"@n1 + @n1 + @n1"},
+{"id":"n3","op":"formula","expr":"m","m":41000,"unit":"g"},
+{"id":"n4","op":"convert","value":"@n3","from":"g","to":"kg"},
+{"id":"n5","op":"formula","expr":"0.5 * m * v**2","m":"@n4","v":"@n2","unit":"J"},
+{"id":"n6","op":"scale","value":"@n5","by":10},
+{"id":"n7","op":"convert","value":"@n6","from":"J","to":"kJ"}
+], "final": "n7"}}

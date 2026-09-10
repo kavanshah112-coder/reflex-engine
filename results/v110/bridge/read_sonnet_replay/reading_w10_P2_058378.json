@@ -1,0 +1,26 @@
+{
+  "plan": {
+    "nodes": [
+      {
+        "id": "n1",
+        "op": "ncr",
+        "n": 9,
+        "r": 2
+      },
+      {
+        "id": "n2",
+        "op": "formula",
+        "expr": "m*a",
+        "unit": "N",
+        "m": 34.0,
+        "a": "@n1"
+      },
+      {
+        "id": "n3",
+        "op": "evaluate",
+        "expr": "@n2 * 5"
+      }
+    ],
+    "final": "n3"
+  }
+}

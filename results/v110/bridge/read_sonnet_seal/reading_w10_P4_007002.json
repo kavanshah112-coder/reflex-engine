@@ -1,0 +1,7 @@
+{"plan":{"nodes":[
+{"id":"n1","op":"solve_pick","lhs":"x**2 -11*x +24","pick":"smaller"},
+{"id":"n2","op":"evaluate","expr":"@n1 * 6"},
+{"id":"n3","op":"evaluate","expr":"@n2 + 11"},
+{"id":"n4","op":"evaluate","expr":"@n3 - 27"},
+{"id":"n5","op":"formula","expr":"m * a","m":194,"a":"@n4","unit":"N"}
+],"final":"n5"}}

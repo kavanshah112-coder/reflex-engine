@@ -1,0 +1,27 @@
+{
+  "plan": {
+    "nodes": [
+      {
+        "id": "n1",
+        "op": "derivative_at",
+        "expr": "3*x**3+2*x**2",
+        "order": 1,
+        "point": 1
+      },
+      {
+        "id": "n2",
+        "op": "formula",
+        "expr": "m*a",
+        "unit": "N",
+        "m": 5.0,
+        "a": "@n1"
+      },
+      {
+        "id": "n3",
+        "op": "evaluate",
+        "expr": "@n2 * 7"
+      }
+    ],
+    "final": "n3"
+  }
+}

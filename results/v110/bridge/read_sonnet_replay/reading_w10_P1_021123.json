@@ -1,0 +1,15 @@
+{
+  "plan": {
+    "nodes": [
+      {
+        "id": "n1",
+        "op": "formula",
+        "expr": "V*I",
+        "unit": "W",
+        "V": 73.0,
+        "I": 12.7
+      }
+    ],
+    "final": "n1"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "plan": {
+    "nodes": [
+      {
+        "id": "n1",
+        "op": "sum_finite",
+        "expr": "2*k - 1",
+        "var": "k",
+        "a": 1,
+        "b": 6
+      },
+      {
+        "id": "n2",
+        "op": "formula",
+        "expr": "m*a",
+        "unit": "N",
+        "m": 44.0,
+        "a": "@n1"
+      },
+      {
+        "id": "n3",
+        "op": "evaluate",
+        "expr": "@n2 - 29"
+      }
+    ],
+    "final": "n3"
+  }
+}

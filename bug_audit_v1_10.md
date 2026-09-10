@@ -477,3 +477,14 @@ unanswered items simply have no own answer on the haiku arm (no A2S,
 no fresh A2), which lowers haiku's REPLAY reach by at most nine items
 and cannot create a wrong. Sonnet, opus and fable REPLAY answers are
 id-exact on all 47 batches.
+
+## N34 — one malformed haiku REPLAY reading file
+read_haiku_replay/reading_w10_T3_006049.json is not valid JSON (a
+duplicated `],"final":"n2"}` tail) and its nodes use `{n0}`-style
+placeholders instead of numbers stated in the question. The engine's
+reading loader maps any unparseable file to FORMAT, which is treated
+as "no reading" (the item escalates). File left as written; it is
+haiku's own proposal and the count is one of 1,000 REPLAY readings.
+Haiku's REPLAY T-tier nulls: T3 68/250, T3p 4/100, T4 96/105
+written (the agent nulled nearly all authored T4 stories), so haiku's
+fresh-A2 reach on REPLAY T4 will be near zero — reported, not fixed.
