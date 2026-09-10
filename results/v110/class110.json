@@ -68,6 +68,46 @@
   "haiku|replay|w10_T4_002045": {
    "class": "GENUINE",
    "why": "(191+15-123)*4+56=388; own 239 (sonnet-authored)"
+  },
+  "fable|seal|w10_T3_006914": {
+   "class": "GENUINE",
+   "why": "4 full lists of 15 + 5 on the final list = 65; own 80 counted 5 full lists"
+  },
+  "fable|seal|w10_T3p_000638": {
+   "class": "CORPUS",
+   "why": "ask 'emails sent' with only letters sent stated; gold 10 counts letters; own 0"
+  },
+  "fable|seal|w10_T3_000167": {
+   "class": "CORPUS",
+   "why": "192 min x $100/min = 19,200; gold 1920 is a GSM8K-train erratum"
+  },
+  "fable|seal|w10_T3_000700": {
+   "class": "CORPUS",
+   "why": "15 brown socks = 300 cents = $3; served 300 (cents), gold 3 (dollars): unit of the answer"
+  },
+  "fable|seal|w10_T3_001958": {
+   "class": "CORPUS",
+   "why": "speed 3/4 -> time 4/3: Rickey 30, Prejean 40; gold 40 takes time proportional to speed (GSM8K erratum)"
+  },
+  "fable|seal|w10_T3_005496": {
+   "class": "CORPUS",
+   "why": "10-3+20-18+2 = 11; gold 12 is a GSM8K-train erratum"
+  },
+  "fable|seal|w10_T3_006832": {
+   "class": "CORPUS",
+   "why": "4 h lunch = half the reading time -> 8 h -> 500 pages/h; gold 250 is a GSM8K-train erratum"
+  },
+  "fable|seal|w10_T3_007444": {
+   "class": "CORPUS",
+   "why": "7 gigs x 20 min = 140; gold 280 counts 14 gigs (GSM8K erratum)"
+  },
+  "fable|seal|w10_T3p_000679": {
+   "class": "CORPUS",
+   "why": "4-2+3=5; gold 1 is a corpus erratum"
+  },
+  "fable|seal|w10_T3p_000906": {
+   "class": "CORPUS",
+   "why": "perturbed SVAMP: '14 shirts today' inconsistent; gold 156 = 6*(12+14); own 86"
   }
  }
 }
