@@ -184,6 +184,34 @@
   "opus|replay|w10_T4_002700": {
    "class": "INTERP",
    "why": "haiku-authored ask 'final contingency work item count' is ambiguous between the running total 1110 (gold) and 1110+9 (own); fable's proposer nulled the item as ambiguous"
+  },
+  "sonnet|replay|w10_T3_000356": {
+   "class": "CORPUS",
+   "why": "24 correct x 2 + 4 full rounds x 4 = 64; gold 66 is a GSM8K-train erratum"
+  },
+  "sonnet|replay|w10_T3_000424": {
+   "class": "INTERP",
+   "why": "'cooked 9/10 kilograms' read literally (0.9 kg) gives 6825 g; gold 750 reads 9/10 of the rice; the intended reading is the gold's"
+  },
+  "sonnet|replay|w10_T3_002338": {
+   "class": "CORPUS",
+   "why": "10*2+5*1=25; gold 30 is a GSM8K-train erratum; own 25"
+  },
+  "sonnet|replay|w10_T3_005051": {
+   "class": "INTERP",
+   "why": "'on the third day walked an additional 100 steps': gold 1600 reads day 3 = 100, own 2600 reads day 3 = day 2 + 100; fable's proposer nulled the item for this ambiguity"
+  },
+  "sonnet|replay|w10_T3p_000034": {
+   "class": "CORPUS",
+   "why": "perturbed SVAMP asks the stated afternoon count (3); gold 1 is the evening count"
+  },
+  "sonnet|replay|w10_T3p_000729": {
+   "class": "CORPUS",
+   "why": "perturbed SVAMP asks the stated number (10); gold 13 = 23-10; own 10"
+  },
+  "sonnet|replay|w10_T4_002700": {
+   "class": "INTERP",
+   "why": "haiku-authored ask 'final contingency work item count' is ambiguous between the running total 1110 (gold) and 1110+9 (own)"
   }
  }
 }
