@@ -38,8 +38,8 @@
    "why": "4-2+3=5; gold 1 is a corpus erratum; own 5"
   },
   "haiku|seal|w10_T3p_000792": {
-   "class": "GENUINE",
-   "why": "2+3+10=15; own 18"
+   "class": "CORPUS",
+   "why": "SVAMP convention: '10 more pages of biology' = 10 pages (gold 15); own 18 reads it as 10 more than reading"
   },
   "haiku|seal|w10_T3p_000810": {
    "class": "GENUINE",
@@ -212,6 +212,90 @@
   "sonnet|replay|w10_T4_002700": {
    "class": "INTERP",
    "why": "haiku-authored ask 'final contingency work item count' is ambiguous between the running total 1110 (gold) and 1110+9 (own)"
+  },
+  "sonnet|seal|w10_T3_000167": {
+   "class": "CORPUS",
+   "why": "192 min x $100/min = 19,200; gold 1920 is a GSM8K-train erratum"
+  },
+  "sonnet|seal|w10_T3_000700": {
+   "class": "CORPUS",
+   "why": "15 brown socks = 300 cents = $3; served 300 (cents), gold 3 (dollars): unit of the answer"
+  },
+  "sonnet|seal|w10_T3_001777": {
+   "class": "INTERP",
+   "why": "basketballs 60 (30 remaining donations + 30 with hoops) vs gold 90 which removes the discarded floats first; both defensible"
+  },
+  "sonnet|seal|w10_T3_001958": {
+   "class": "CORPUS",
+   "why": "speed 3/4 -> time 4/3: Rickey 30; gold 40 takes time proportional to speed (GSM8K erratum)"
+  },
+  "sonnet|seal|w10_T3_003280": {
+   "class": "GENUINE",
+   "why": "14+2-6 = 10, the 2 eaters removed -> 8, +3 = 11; own 13 kept the eaters"
+  },
+  "sonnet|seal|w10_T3_004437": {
+   "class": "INTERP",
+   "why": "6 tables with the last at the finish: gold spaces 1200/6 (table 1 at 200 m) -> 400; own spaces 1200/5 (table 1 at the start) -> 480"
+  },
+  "sonnet|seal|w10_T3_005496": {
+   "class": "CORPUS",
+   "why": "10-3+20-18+2 = 11; gold 12 is a GSM8K-train erratum"
+  },
+  "sonnet|seal|w10_T3_006604": {
+   "class": "GENUINE",
+   "why": "'none of the cannoneers were women' makes the 63 cannoneers men: 126 women + 252 men = 378; own 441 counted them again"
+  },
+  "sonnet|seal|w10_T3_006832": {
+   "class": "CORPUS",
+   "why": "4 h lunch = half the reading time -> 8 h -> 500 pages/h; gold 250 is a GSM8K-train erratum"
+  },
+  "sonnet|seal|w10_T3_006914": {
+   "class": "GENUINE",
+   "why": "4 full lists of 15 + 5 on the final list = 65; own 80 counted 5 full lists"
+  },
+  "sonnet|seal|w10_T3p_000049": {
+   "class": "CORPUS",
+   "why": "perturbed SVAMP: 'how many more baseball than Ace' after an unsplit total of 415; gold 266 follows from neither reading"
+  },
+  "sonnet|seal|w10_T3p_000206": {
+   "class": "CORPUS",
+   "why": "SVAMP convention: '3 more pages of biology' = 3 pages, gold 11 = 8+3; own 18 sums all three"
+  },
+  "sonnet|seal|w10_T3p_000334": {
+   "class": "CORPUS",
+   "why": "SVAMP convention: '6 more pages of biology' = 6 pages, gold 16 = 10+6; own 26 = 10+16"
+  },
+  "sonnet|seal|w10_T3p_000638": {
+   "class": "CORPUS",
+   "why": "ask 'emails sent' with only letters sent stated; gold 10 counts letters; own 0"
+  },
+  "sonnet|seal|w10_T3p_000679": {
+   "class": "CORPUS",
+   "why": "4-2+3=5; gold 1 is a corpus erratum"
+  },
+  "sonnet|seal|w10_T3p_000792": {
+   "class": "CORPUS",
+   "why": "SVAMP convention: '10 more pages of biology' = 10 pages (gold 15); own 18 reads it as 10 more than reading"
+  },
+  "sonnet|seal|w10_T3p_000906": {
+   "class": "CORPUS",
+   "why": "perturbed SVAMP: '14 shirts today' inconsistent; gold 156 = 6*(12+14); own 86"
+  },
+  "sonnet|seal|w10_T3p_000985": {
+   "class": "CORPUS",
+   "why": "SVAMP convention: '3 more pages of biology' = 3 pages, gold 11-3 = 8; own 6 reads biology as 2+3 = 5"
+  },
+  "sonnet|seal|w10_T4_001576": {
+   "class": "INTERP",
+   "why": "haiku-authored: (163+23+39-201)/3+26 = 34 (gold) treats the 50-book donation as a distractor; own 84 adds it"
+  },
+  "sonnet|seal|w10_T4_002658": {
+   "class": "INTERP",
+   "why": "haiku-authored: 19,159 (gold) treats the assistant's 8 bouquets as a distractor; own 19,167 adds them"
+  },
+  "sonnet|seal|w10_T4_014073": {
+   "class": "CORPUS",
+   "why": "(179-96+7*96-54)*4+55 = 2859; the haiku-authored gold 2163 does not follow from its own story"
   }
  }
 }
