@@ -240,15 +240,47 @@ def ladder():
     return ("A" if kc_ok else "B"), ["KC-SAFE %s" % ("holds" if kc_ok else "not met")]
 
 
+def marginal(model, role, split):
+    """marginal harness tokens per item = (tokens - agents x empty-batch baseline) / items (N3)."""
+    v = tok.get("%s|%s|%s" % (model, role, split))
+    if not v or not v.get("items"):
+        return None
+    return (v["tokens"] - v["agents"] * BASE.get(model, 0)) / v["items"]
+
+
+def tokens_table(split="seal"):
+    """Engine-in-front TOKENS/QUERY vs LLM-only per arm, extrapolated to the whole split from the sealed pass.
+    LLM-only: the model answers every item (marginal answer tokens per item on this split).
+    Engine-in-front, answer-only accounting: the model answers only the items the exact path did not serve
+    (its own answer is both the A2S filter and the escalation answer), so ratio = non-exact share.
+    Engine-in-front, full accounting: every non-exact item also costs a reading proposal (needed for fresh A2 and
+    for PLAN-AGREEMENT minting), so ratio = non-exact share x (1 + reading/answer marginal tokens).
+    Extrapolation: the engine decided every item of the split (exact share is a count, not a sample statistic)."""
+    src = seal if split == "seal" else replay
+    rows = {}
+    for m, sm in src.items():
+        n = sm["totals"]["n"]; ex = sm["totals"]["exact_served"]
+        non_exact = (n - ex) / n if n else None
+        a = marginal(m, "answer", split); r = marginal(m, "reading", split)
+        rows[m] = {"n": n, "exact": ex, "non_exact_share": non_exact, "answer_marg": a, "reading_marg": r,
+                   "ratio_answer_only": non_exact,
+                   "ratio_full": (non_exact * (1 + r / a)) if (a and r and non_exact is not None) else None,
+                   "t4p4_share": None}
+        tp = [t for t in ("T4", "P4") if t in sm["by_tier"]]
+        nn = sum(g(sm["by_tier"][t], "n") for t in tp); ee = sum(g(sm["by_tier"][t], "exact_served") for t in tp)
+        rows[m]["t4p4_share"] = ((nn - ee) / nn) if nn else None
+    return rows
+
+
 def tokens_ratio():
-    """engine-in-front TOKENS/QUERY over LLM-only, extrapolated by escalation rate on SEAL (sonnet arm); None until measurable."""
-    if "sonnet" not in seal or not tok:
+    """TOKENS bar value: full-accounting ratio on the primary arm (sonnet), else the worst available arm; None until measurable."""
+    t = tokens_table("seal")
+    if not t:
         return None
-    ans = tok.get("sonnet|answer|seal") or tok.get("sonnet|answer|acq")
-    if not ans or not ans.get("items"):
-        return None
-    esc_rate = seal["sonnet"]["totals"]["escalated"] / max(1, seal["sonnet"]["totals"]["n"])
-    return esc_rate  # marginal tokens are the same per escalated query: ratio = escalation share
+    if "sonnet" in t and t["sonnet"]["ratio_full"] is not None:
+        return t["sonnet"]["ratio_full"]
+    vals = [v["ratio_full"] for v in t.values() if v["ratio_full"] is not None]
+    return max(vals) if vals else None
 
 
 # ---------------------------------------------------------------- figures
@@ -408,6 +440,20 @@ def build_md():
         marg = (v["tokens"] - v["agents"] * BASE.get(m, 0)) / v["items"] if v["items"] else None
         md.append("| %s | %s | %s | %d | %d | %s | %s |" % (m, role, sp, v["agents"], v["items"], v["tokens_per_item"], "—" if marg is None else "%.0f" % marg))
     md.append("")
+    tt = tokens_table("seal")
+    if tt:
+        md.append("TOKENS/QUERY with the engine in front vs LLM-only, extrapolated to SEAL (bar: full accounting <= 50% on the primary arm):")
+        md.append("")
+        md.append("| arm | SEAL n | exact served | non-exact share | answer marginal tok/item | reading marginal tok/item | ratio (answer-only) | ratio (full: answer + reading) | non-exact share on T4+P4 |")
+        md.append("|---|---|---|---|---|---|---|---|---|")
+        for m, v in tt.items():
+            md.append("| %s | %d | %d | %s | %s | %s | %s | %s | %s |" % (
+                m, v["n"], v["exact"], "—" if v["non_exact_share"] is None else "%.1f%%" % (100 * v["non_exact_share"]),
+                "—" if v["answer_marg"] is None else "%.0f" % v["answer_marg"], "—" if v["reading_marg"] is None else "%.0f" % v["reading_marg"],
+                "—" if v["ratio_answer_only"] is None else "%.0f%%" % (100 * v["ratio_answer_only"]),
+                "—" if v["ratio_full"] is None else "%.0f%%" % (100 * v["ratio_full"]),
+                "—" if v["t4p4_share"] is None else "%.1f%%" % (100 * v["t4p4_share"])))
+        md.append("")
     md.append(N("tokens", ""))
     md.append("")
     md.append("## 7. DEV: rules and their cost")

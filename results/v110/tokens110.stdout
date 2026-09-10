@@ -1,0 +1,344 @@
+{
+ "sonnet|answer|ctl_full": {
+  "items": 25,
+  "tokens": 65932,
+  "agents": 1,
+  "tokens_per_item": 2637.3
+ },
+ "sonnet|answer|ctl_empty": {
+  "items": 0,
+  "tokens": 64522,
+  "agents": 1,
+  "tokens_per_item": null
+ },
+ "opus|answer|ctl_empty": {
+  "items": 0,
+  "tokens": 58488,
+  "agents": 1,
+  "tokens_per_item": null
+ },
+ "haiku|answer|ctl_empty": {
+  "items": 0,
+  "tokens": 47005,
+  "agents": 1,
+  "tokens_per_item": null
+ },
+ "fable|answer|ctl_empty": {
+  "items": 0,
+  "tokens": 58748,
+  "agents": 1,
+  "tokens_per_item": null
+ },
+ "sonnet|answer|acq": {
+  "items": 3525,
+  "tokens": 1933150,
+  "agents": 17,
+  "tokens_per_item": 548.4
+ },
+ "opus|answer|acq": {
+  "items": 3700,
+  "tokens": 1731156,
+  "agents": 18,
+  "tokens_per_item": 467.9
+ },
+ "haiku|answer|acq": {
+  "items": 3700,
+  "tokens": 1563983,
+  "agents": 18,
+  "tokens_per_item": 422.7
+ },
+ "fable|answer|acq": {
+  "items": 3600,
+  "tokens": 1640986,
+  "agents": 17,
+  "tokens_per_item": 455.8
+ },
+ "haiku|author|all": {
+  "items": 6104,
+  "tokens": 4477232,
+  "agents": 31,
+  "tokens_per_item": 733.5
+ },
+ "haiku|reading|acq": {
+  "items": 3325,
+  "tokens": 2485582,
+  "agents": 18,
+  "tokens_per_item": 747.5
+ },
+ "sonnet|reading|acq": {
+  "items": 3049,
+  "tokens": 3668530,
+  "agents": 18,
+  "tokens_per_item": 1203.2
+ },
+ "opus|reading|acq": {
+  "items": 3171,
+  "tokens": 3437816,
+  "agents": 18,
+  "tokens_per_item": 1084.1
+ },
+ "fable|reading|acq": {
+  "items": 2950,
+  "tokens": 2979038,
+  "agents": 17,
+  "tokens_per_item": 1009.8
+ },
+ "sonnet|author|all": {
+  "items": 1700,
+  "tokens": 2448427,
+  "agents": 10,
+  "tokens_per_item": 1440.3
+ },
+ "opus|author|all": {
+  "items": 1600,
+  "tokens": 1935752,
+  "agents": 8,
+  "tokens_per_item": 1209.8
+ },
+ "fable|author|all": {
+  "items": 1400,
+  "tokens": 1677505,
+  "agents": 7,
+  "tokens_per_item": 1198.2
+ },
+ "sonnet|author|-": {
+  "items": 575,
+  "tokens": 657736,
+  "agents": 3,
+  "tokens_per_item": 1143.9
+ },
+ "haiku|author|-": {
+  "items": 128,
+  "tokens": 126035,
+  "agents": 1,
+  "tokens_per_item": 984.6
+ },
+ "fable|author|-": {
+  "items": 425,
+  "tokens": 557042,
+  "agents": 3,
+  "tokens_per_item": 1310.7
+ },
+ "opus|author|-": {
+  "items": 600,
+  "tokens": 598264,
+  "agents": 3,
+  "tokens_per_item": 997.1
+ },
+ "sonnet|answer|dev": {
+  "items": 1044,
+  "tokens": 465247,
+  "agents": 4,
+  "tokens_per_item": 445.6
+ },
+ "opus|answer|dev": {
+  "items": 1039,
+  "tokens": 402959,
+  "agents": 4,
+  "tokens_per_item": 387.8
+ },
+ "haiku|answer|dev": {
+  "items": 1044,
+  "tokens": 360896,
+  "agents": 4,
+  "tokens_per_item": 345.7
+ },
+ "haiku|reading|dev": {
+  "items": 1069,
+  "tokens": 889205,
+  "agents": 7,
+  "tokens_per_item": 831.8
+ },
+ "sonnet|reading|dev": {
+  "items": 994,
+  "tokens": 1168871,
+  "agents": 6,
+  "tokens_per_item": 1175.9
+ },
+ "opus|reading|dev": {
+  "items": 1003,
+  "tokens": 1084490,
+  "agents": 6,
+  "tokens_per_item": 1081.2
+ },
+ "fable|answer|dev": {
+  "items": 1039,
+  "tokens": 396375,
+  "agents": 4,
+  "tokens_per_item": 381.5
+ },
+ "fable|reading|dev": {
+  "items": 1019,
+  "tokens": 1026878,
+  "agents": 6,
+  "tokens_per_item": 1007.7
+ },
+ "opus|qc|-": {
+  "items": 1403,
+  "tokens": 731935,
+  "agents": 5,
+  "tokens_per_item": 521.7
+ },
+ "fable|qc|-": {
+  "items": 3567,
+  "tokens": 1434429,
+  "agents": 10,
+  "tokens_per_item": 402.1
+ },
+ "sonnet|qc|-": {
+  "items": 1518,
+  "tokens": 952263,
+  "agents": 5,
+  "tokens_per_item": 627.3
+ },
+ "haiku|qc|-": {
+  "items": 1255,
+  "tokens": 588825,
+  "agents": 4,
+  "tokens_per_item": 469.2
+ },
+ "haiku|answer|acq+dev": {
+  "items": 600,
+  "tokens": 211500,
+  "agents": 2,
+  "tokens_per_item": 352.5
+ },
+ "fable|answer|acq+dev": {
+  "items": 600,
+  "tokens": 301421,
+  "agents": 2,
+  "tokens_per_item": 502.4
+ },
+ "opus|answer|acq+dev": {
+  "items": 600,
+  "tokens": 299109,
+  "agents": 2,
+  "tokens_per_item": 498.5
+ },
+ "sonnet|answer|acq+dev": {
+  "items": 600,
+  "tokens": 425610,
+  "agents": 2,
+  "tokens_per_item": 709.4
+ },
+ "haiku|reading|acq+dev": {
+  "items": 200,
+  "tokens": 133958,
+  "agents": 1,
+  "tokens_per_item": 669.8
+ },
+ "fable|reading|acq+dev": {
+  "items": 175,
+  "tokens": 201449,
+  "agents": 1,
+  "tokens_per_item": 1151.1
+ },
+ "opus|reading|acq+dev": {
+  "items": 190,
+  "tokens": 233077,
+  "agents": 1,
+  "tokens_per_item": 1226.7
+ },
+ "sonnet|answer|seal": {
+  "items": 4092,
+  "tokens": 1784208,
+  "agents": 12,
+  "tokens_per_item": 436.0
+ },
+ "opus|answer|seal": {
+  "items": 3042,
+  "tokens": 1123364,
+  "agents": 9,
+  "tokens_per_item": 369.3
+ },
+ "haiku|answer|seal": {
+  "items": 3042,
+  "tokens": 1059785,
+  "agents": 10,
+  "tokens_per_item": 348.4
+ },
+ "fable|answer|seal": {
+  "items": 3042,
+  "tokens": 1104776,
+  "agents": 9,
+  "tokens_per_item": 363.2
+ },
+ "sonnet|reading|acq+dev": {
+  "items": 200,
+  "tokens": 276167,
+  "agents": 1,
+  "tokens_per_item": 1380.8
+ },
+ "haiku|reading|seal": {
+  "items": 2661,
+  "tokens": 1654090,
+  "agents": 13,
+  "tokens_per_item": 621.6
+ },
+ "fable|reading|seal": {
+  "items": 2366,
+  "tokens": 2456346,
+  "agents": 11,
+  "tokens_per_item": 1038.2
+ },
+ "sonnet|reading|seal": {
+  "items": 1853,
+  "tokens": 2563721,
+  "agents": 11,
+  "tokens_per_item": 1383.6
+ },
+ "opus|reading|seal": {
+  "items": 2376,
+  "tokens": 2468194,
+  "agents": 11,
+  "tokens_per_item": 1038.8
+ },
+ "sonnet|answer|replay": {
+  "items": 814,
+  "tokens": 460140,
+  "agents": 4,
+  "tokens_per_item": 565.3
+ },
+ "haiku|answer|replay": {
+  "items": 812,
+  "tokens": 337589,
+  "agents": 4,
+  "tokens_per_item": 415.8
+ },
+ "fable|answer|replay": {
+  "items": 1064,
+  "tokens": 449146,
+  "agents": 4,
+  "tokens_per_item": 422.1
+ },
+ "opus|answer|replay": {
+  "items": 1164,
+  "tokens": 460215,
+  "agents": 4,
+  "tokens_per_item": 395.4
+ },
+ "sonnet|reading|replay": {
+  "items": 900,
+  "tokens": 1071294,
+  "agents": 5,
+  "tokens_per_item": 1190.3
+ },
+ "haiku|reading|replay": {
+  "items": 900,
+  "tokens": 671973,
+  "agents": 5,
+  "tokens_per_item": 746.6
+ },
+ "opus|reading|replay": {
+  "items": 900,
+  "tokens": 960016,
+  "agents": 5,
+  "tokens_per_item": 1066.7
+ },
+ "fable|reading|replay": {
+  "items": 900,
+  "tokens": 925899,
+  "agents": 5,
+  "tokens_per_item": 1028.8
+ }
+}
