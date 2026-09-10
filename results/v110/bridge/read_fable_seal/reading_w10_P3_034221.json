@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id":"n1","op":"solve_pick","lhs":"x**2 -14*x +48","pick":"smaller"},{"id":"n2","op":"formula","expr":"0.5 * m * v**2","m":3,"v":"@n1","unit":"J"},{"id":"n3","op":"evaluate","expr":"@n2 + 13"},{"id":"n4","op":"convert","value":"@n3","from":"J","to":"kJ"},{"id":"n5","op":"evaluate","expr":"@n4 - 26"}], "final": "n5"}}

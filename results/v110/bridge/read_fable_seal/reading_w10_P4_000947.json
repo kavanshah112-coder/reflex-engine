@@ -1,0 +1,10 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"solve_pick","lhs":"x**2 - 8*x + 7","pick":"larger"},
+{"id":"n2","op":"formula","expr":"m","m":55000,"unit":"g"},
+{"id":"n3","op":"convert","value":"@n2","from":"g","to":"kg"},
+{"id":"n4","op":"formula","expr":"0.5 * m * v**2","m":"@n3","v":"@n1","unit":"J"},
+{"id":"n5","op":"convert","value":"@n4","from":"J","to":"kJ"},
+{"id":"n6","op":"scale","value":"@n5","by":3},
+{"id":"n7","op":"evaluate","expr":"@n6 + 1"},
+{"id":"n8","op":"evaluate","expr":"@n7 - 28"}
+], "final": "n8"}}

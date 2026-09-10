@@ -412,3 +412,26 @@ delegated to a sub-agent (N9 class). Sonnet/opus/fable on the same
 batches: 0–25 nulls per 250. Readings stand as collected (one reading
 per item, never re-sampled); the effect is a lower haiku fresh reach
 on SEAL, reported per tier, and is itself a scale finding (H10).
+
+## N32 — third session limit (2026-09-10 ~04:05 IST, reset 08:00) and a haiku agent that wiped its own output directory
+Seventeen SEAL-reading and REPLAY-answer agents died with HTTP 429;
+relaunched with skip-if-exists as before. Separately, haiku's SEAL
+P1+P2 reading agent (37 tool calls for 250 files, i.e. scripted)
+emptied `read_haiku_seal/` before writing its own files: every haiku
+T1/T2/T3/T3′/T4 SEAL reading written earlier (1,635 files) vanished
+between commits 069af444 (03:40) and c094fb67 (03:57). All 1,635 were
+restored byte-exact from commit 069af444 (`git checkout 069af444 --
+read_haiku_seal`). Files written after 03:40 and never committed are
+lost and must be proposed again — the only re-proposal in V1.10:
+haiku T3′ batch 004 (25), T4 014 (7 of 25), T4 015 (25) and P2 002
+(17); their ids are in `results/v110/haiku_seal_lost_ids.json`.
+Haiku's SEAL P4 block was written by a script that nulled all 300
+items without reading them ("I'll write null plans for all
+questions"); the files stand as collected under the one-reading rule,
+so haiku's P4 fresh reach on SEAL is zero by proposer default, not by
+engine gating — reported as such.
+Sonnet DEV dev1 (non-authored, acq1 library): exact 13,486 / 0, A2S
+173 / 1 wrong (T3′ 000997, the SVAMP item every arm misses), fresh A2
+560 / 3 (T3 own-answer agreements), PC 0. DEV is now complete on all
+four arms with no engine rule added; the D-arm SEAL and REPLAY passes
+start now (engine only, once each).

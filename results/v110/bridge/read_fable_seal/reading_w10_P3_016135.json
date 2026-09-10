@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id":"n1","op":"integrate_def","expr":"1*x**2 + 5*x","a":0,"b":2},{"id":"n2","op":"scale","value":"@n1","by":4},{"id":"n3","op":"formula","expr":"0.5 * m * v**2","m":40,"v":"@n2","unit":"J"},{"id":"n4","op":"evaluate","expr":"@n3 + 5"},{"id":"n5","op":"evaluate","expr":"@n4 + 18"},{"id":"n6","op":"scale","value":"@n5","by":9}], "final": "n6"}}

@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id":"n1","op":"solve_pick","lhs":"x**2 -9*x +18","pick":"larger"},{"id":"n2","op":"formula","expr":"m * a","m":21,"a":"@n1","unit":"N"},{"id":"n3","op":"scale","value":"@n2","by":12},{"id":"n4","op":"convert","value":"@n3","from":"N","to":"kN"},{"id":"n5","op":"scale","value":"@n4","by":8}], "final": "n5"}}

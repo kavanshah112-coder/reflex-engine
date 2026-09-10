@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id": "n1", "op": "integrate_def", "expr": "1x^2+5x", "a": 1, "b": 4}, {"id": "n2", "op": "formula", "expr": "0.5 * m * v**2", "m": 5, "v": "@n1", "unit": "J"}, {"id": "n3", "op": "scale", "value": "@n2", "by": 11}, {"id": "n4", "op": "scale", "value": "@n3", "by": 2}, {"id": "n5", "op": "scale", "value": "@n4", "by": 2}], "final": "n5"}}

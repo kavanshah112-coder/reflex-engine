@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id":"n1","op":"evaluate","expr":"2*(5 + 16)"},{"id":"n2","op":"evaluate","expr":"@n1 + 15"},{"id":"n3","op":"formula","expr":"m * a","m":66,"a":"@n2","unit":"N"}], "final": "n3"}}

@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id": "n1", "op": "derivative_at", "expr": "5x^3+3x^2", "order": 2, "point": 1}, {"id": "n2", "op": "formula", "expr": "0.5 * m * v**2", "m": 8, "v": "@n1", "unit": "J"}, {"id": "n3", "op": "evaluate", "expr": "@n2 - 21"}, {"id": "n4", "op": "evaluate", "expr": "@n3 + 8"}, {"id": "n5", "op": "evaluate", "expr": "@n4 + 11"}], "final": "n5"}}
