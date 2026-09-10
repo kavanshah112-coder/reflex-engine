@@ -1,0 +1,70 @@
+[
+ {
+  "id": "w10_P1_030692",
+  "tier": "P1",
+  "sampled": false,
+  "own": null,
+  "path": "exact:v16:tierA",
+  "value": 107.80000000000001,
+  "correct": false,
+  "gold": "121.0",
+  "text": "A setup has a mass of 11 kg, an acceleration of 11.0 m/s^2. What is the force?"
+ },
+ {
+  "id": "w10_T3_002293",
+  "tier": "T3",
+  "sampled": false,
+  "own": null,
+  "path": "exact:v16:reflex",
+  "value": 1500.0,
+  "correct": false,
+  "gold": "2",
+  "text": "A boy runs 1.5 km in 45 minutes. What is his speed in kilometers per hour?"
+ },
+ {
+  "id": "w10_T3_002338",
+  "tier": "T3",
+  "sampled": true,
+  "own": 25.0,
+  "own_correct": false,
+  "exact_reason": "no_exact",
+  "n_cands": 48,
+  "fresh": "executed",
+  "gold": "30",
+  "text": "A bottle can hold 2 cups of water. How many cups of water are needed to fill up 10 whole bottles and 5 half-capacity bottles?",
+  "rule": "A2",
+  "value": 25.0
+ },
+ {
+  "id": "w10_T3p_000729",
+  "tier": "T3p",
+  "sampled": true,
+  "own": 10.0,
+  "own_correct": false,
+  "exact_reason": "no_exact",
+  "n_cands": 48,
+  "path": "suggest:w10_T3_006129",
+  "value": 10.0,
+  "correct": false,
+  "donor": "w10_T3_006129",
+  "gold": "13",
+  "text": "A book has 2 chapters across 23 pages. The first chapter is 10 pages long. How many pages are in the first chapter?",
+  "rule": "A2S"
+ },
+ {
+  "id": "w10_T4_002045",
+  "tier": "T4",
+  "sampled": true,
+  "own": 239.0,
+  "own_correct": false,
+  "exact_reason": "no_exact",
+  "n_cands": 10,
+  "path": "suggest:g0327",
+  "value": 239.0,
+  "correct": false,
+  "donor": "g0327",
+  "gold": "388",
+  "text": "In the morning, a warehouse had 191 boxes of canned soup on the loading dock. By midday, a delivery added 15 more boxes. In the afternoon, 123 boxes were shippe",
+  "rule": "A2S"
+ }
+]

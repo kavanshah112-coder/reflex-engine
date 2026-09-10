@@ -35,7 +35,17 @@ TIER_NAME = {"T1": "one-step narrative", "T2": "2-3 step narrative", "T3": "GSM8
 # which run tag is the version's number for each split
 TAG = {"acq": "acq2", "dev": "dev", "seal": "seal", "replay": "replay"}
 # post-hoc classes of every by-gold wrong under A2S / A2 on SEAL (nothing relabelled); filled after the sealed run
-CLASS = {}
+CLASS_FILE = json.loads((HERE.parent / "results" / "v110" / "class110.json").read_text(encoding="utf-8")) if (HERE.parent / "results" / "v110" / "class110.json").exists() else {"items": {}}
+
+
+def cls(arm, split, iid):
+    e = CLASS_FILE["items"].get("%s|%s|%s" % (arm, split, iid))
+    return e["class"] if e else "unclassified"
+
+
+def cls_why(arm, split, iid):
+    e = CLASS_FILE["items"].get("%s|%s|%s" % (arm, split, iid))
+    return e["why"] if e else ""
 
 
 def load(p):
@@ -100,11 +110,11 @@ def g(c, k):
 
 
 def genuine_ids(arm, split="seal"):
-    return sorted({w["id"] for w in wrongs(arm, split) if w.get("rule") == "A2S" and CLASS.get(w["id"], "unclassified") == "GENUINE"})
+    return sorted({w["id"] for w in wrongs(arm, split) if w.get("rule") == "A2S" and cls(arm, split, w["id"]) == "GENUINE"})
 
 
 def unclassified_ids(arm, split="seal"):
-    return sorted({w["id"] for w in wrongs(arm, split) if w.get("rule") in ("A2S", "A2") and w["id"] not in CLASS})
+    return sorted({w["id"] for w in wrongs(arm, split) if w.get("rule") in ("A2S", "A2") and cls(arm, split, w["id"]) == "unclassified"})
 
 
 # ---------------------------------------------------------------- collect
@@ -130,21 +140,51 @@ def tier_rows(s):
     return s["by_tier"] if s else {}
 
 
-def reach_s(s):
-    """SUGGEST-REACH on real tiers: A2S served / (A2S served + escalated) over T3+T3p (items the exact path did not serve)."""
-    if not s:
-        return None
-    a = e = 0
-    for t in ("T3", "T3p"):
-        c = s["by_tier"].get(t, {})
-        a += g(c, "A2S_served"); e += g(c, "escalated")
-    return (a / (a + e)) if (a + e) else None
+_ROWS = {}
 
 
-def reach_tier(s, t):
+def rows_for(arm, split):
+    """Per-item rows of a sealed pass (cached)."""
+    k = (arm, split)
+    if k not in _ROWS:
+        p = OUT / ("%s_%s_%s_rows.jsonl" % (arm, split, TAG[split]))
+        _ROWS[k] = [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()] if p.exists() else []
+    return _ROWS[k]
+
+
+def _reach(arm, split, tiers, marginal=False):
+    """SUGGEST-REACH = share of the E-SAMPLE items the exact path escalated that the suggestion served.
+    Strict (the bar): suggest / (suggest + fresh + escalate) — every sampled item the exact path did not serve.
+    Marginal (published beside it): suggest / (suggest + escalate) — items neither exact nor the fresh reading served.
+    Un-sampled items have no model answer and escalate by construction (spec 5.3); they are excluded."""
+    a = f = e = 0
+    for r in rows_for(arm, split):
+        if r.get("tier") not in tiers or not r.get("sampled"):
+            continue
+        pth = r.get("path", "").split(":")[0]
+        if pth == "suggest":
+            a += 1
+        elif pth == "fresh":
+            f += 1
+        elif pth == "escalate":
+            e += 1
+    d = (a + e) if marginal else (a + f + e)
+    return (a / d) if d else None
+
+
+def reach_tier(s, t, split="seal", marginal=False):
+    return _reach(s["arm"], split, (t,), marginal) if s else None
+
+
+def reach_tier_all(s, t):
     c = s["by_tier"].get(t, {}) if s else {}
     a, e = g(c, "A2S_served"), g(c, "escalated")
     return (a / (a + e)) if (a + e) else None
+
+
+def reach_s(s, split="seal", marginal=False):
+    """REACH-S: SUGGEST-REACH pooled over T3 + T3p (strict, E-SAMPLE denominator)."""
+    return _reach(s["arm"], split, ("T3", "T3p"), marginal) if s else None
 
 
 def fa(s):
@@ -169,13 +209,14 @@ def ladder():
         return "F", ["GATE-CTRL fails"]
     gen = len(genuine_ids("sonnet")) if pri else None
     pc = any(v["totals"]["SAFETY_PC"] > 0 for v in seal.values())
-    chain = any((chain_wrong(v) or 0) > 0 for v in seal.values())
+    chain = any((chain_wrong(v) or 0) > 0 for v in list(seal.values()) + list(replay.values()) + [det[k] for k in ("seal", "replay") if k in det])
     if pri and gen:
         notes.append("SAFETY-GEN fails: %d genuine A2S wrongs on M-sonnet SEAL" % gen)
     if pc:
         notes.append("SAFETY-PC fails")
     if chain:
-        notes.append("SAFETY-CHAIN fails")
+        notes.append("SAFETY-CHAIN fails (P1-P3 model-free wrong on a sealed pass: %s)" % ", ".join(
+            "%s/%s=%d" % (n, sp, chain_wrong(v)) for n, sp, v in [(m, "seal", v) for m, v in seal.items()] + [(m, "replay", v) for m, v in replay.items()] + [("det", k, det[k]) for k in ("seal", "replay") if k in det] if (chain_wrong(v) or 0) > 0))
     if notes:
         return "E", notes
     low = [m for m, v in seal.items() if (reach_s(v) or 0) < 0.30]
@@ -326,7 +367,7 @@ def build_md():
     md.append("|---|---|---|---|---|---|---|")
     for m in seal:
         for w in wrongs(m, "seal"):
-            md.append("| %s | %s | %s | %s | %s | %s | %s |" % (m, w.get("rule", w.get("path", "exact")), w["id"], w.get("tier", ""), w.get("value"), w.get("gold"), CLASS.get(w["id"], "unclassified")))
+            md.append("| %s | %s | %s | %s | %s | %s | %s |" % (m, w.get("rule", w.get("path", "exact")), w["id"], w.get("tier", ""), w.get("value"), w.get("gold"), cls(m, "seal", w["id"])))
     md.append("")
     md.append(N("wrongs", ""))
     md.append("")
@@ -376,6 +417,16 @@ def build_md():
         md.append("- M-%s ACQ: library T=%d P=%d probated=%d; A2S served %d / wrong %d; curve %s" % (
             m, s["library_T"], s["library_P"], s["probated_T"], s["totals"]["A2S_served"], s["totals"]["A2S_WRONG"],
             ", ".join("%dk:%d" % (c["n"] // 1000, c["A2S_served"]) for c in s.get("curve", []))))
+    if replay:
+        md.append("")
+        md.append("Every by-gold wrong on REPLAY (classified after the run):")
+        md.append("")
+        md.append("| arm | rule | id | tier | value | gold | class |")
+        md.append("|---|---|---|---|---|---|---|")
+        for m in replay:
+            for w in wrongs(m, "replay"):
+                md.append("| %s | %s | %s | %s | %s | %s | %s |" % (m, w.get("rule", w.get("exact_reason", "exact")), w["id"], w.get("tier", ""), w.get("value"), w.get("gold"), cls(m, "replay", w["id"])))
+        md.append("")
     for m, s in replay.items():
         md.append("- M-%s REPLAY: A2S served %d / wrong %d; exact %d / wrong %d; escalated %d of %d" % (
             m, s["totals"]["A2S_served"], s["totals"]["A2S_WRONG"], s["totals"]["exact_served"], s["totals"]["exact_WRONG"], s["totals"]["escalated"], s["totals"]["n"]))
