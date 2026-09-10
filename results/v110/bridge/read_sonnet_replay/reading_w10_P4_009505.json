@@ -1,0 +1,8 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"evaluate","expr":"2*(9 + 15)"},
+{"id":"n2","op":"evaluate","expr":"@n1 + 26"},
+{"id":"n3","op":"formula","expr":"0.5*m*v**2","m":7,"v":"@n2","unit":"J"},
+{"id":"n4","op":"evaluate","expr":"@n3 - 9"},
+{"id":"n5","op":"evaluate","expr":"@n4 * 6"},
+{"id":"n6","op":"evaluate","expr":"@n5 + 15"}
+], "final": "n6"}}

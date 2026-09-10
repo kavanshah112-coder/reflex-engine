@@ -1,0 +1,7 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"integrate_def","expr":"5*x**2 + 7*x","a":0,"b":1},
+{"id":"n2","op":"formula","expr":"0.5 * m * v**2","m":43,"v":"@n1","unit":"J"},
+{"id":"n3","op":"convert","value":"@n2","from":"J","to":"kJ"},
+{"id":"n4","op":"scale","value":"@n3","by":3},
+{"id":"n5","op":"scale","value":"@n4","by":8}
+], "final": "n5"}}

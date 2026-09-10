@@ -1,0 +1,8 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"integrate_def","expr":"4*x**2 + 4*x","a":0,"b":1},
+{"id":"n2","op":"formula","expr":"m * a","m":108,"a":"@n1","unit":"N"},
+{"id":"n3","op":"evaluate","expr":"@n2 - 19"},
+{"id":"n4","op":"evaluate","expr":"@n3 + 3"},
+{"id":"n5","op":"scale","value":"@n4","by":6},
+{"id":"n6","op":"scale","value":"@n5","by":9}
+], "final": "n6"}}

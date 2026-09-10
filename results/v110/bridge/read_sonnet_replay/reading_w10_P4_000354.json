@@ -1,0 +1,7 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"ncr","n":9,"r":2},
+{"id":"n2","op":"formula","expr":"0.5*m*v**2","m":53,"v":"@n1","unit":"J"},
+{"id":"n3","op":"convert","value":"@n2","from":"J","to":"kJ"},
+{"id":"n4","op":"evaluate","expr":"@n3 - 19"},
+{"id":"n5","op":"evaluate","expr":"@n4 - 10"}
+], "final": "n5"}}

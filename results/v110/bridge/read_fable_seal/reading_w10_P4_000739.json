@@ -1,0 +1,8 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"solve_pick","lhs":"x**2 - 7*x + 12","pick":"larger"},
+{"id":"n2","op":"scale","value":"@n1","by":5},
+{"id":"n3","op":"formula","expr":"0.5 * m * v**2","m":39,"v":"@n2","unit":"J"},
+{"id":"n4","op":"scale","value":"@n3","by":10},
+{"id":"n5","op":"scale","value":"@n4","by":7},
+{"id":"n6","op":"convert","value":"@n5","from":"J","to":"kJ"}
+], "final": "n6"}}

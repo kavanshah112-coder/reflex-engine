@@ -1,0 +1,10 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"gcd","a":263,"b":249},
+{"id":"n2","op":"formula","expr":"m","m":34000,"unit":"g"},
+{"id":"n3","op":"convert","value":"@n2","from":"g","to":"kg"},
+{"id":"n4","op":"formula","expr":"0.5 * m * v**2","m":"@n3","v":"@n1","unit":"J"},
+{"id":"n5","op":"evaluate","expr":"@n4 + 4"},
+{"id":"n6","op":"evaluate","expr":"@n5 + 29"},
+{"id":"n7","op":"evaluate","expr":"@n6 + 8"},
+{"id":"n8","op":"convert","value":"@n7","from":"J","to":"kJ"}
+], "final": "n8"}}

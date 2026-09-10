@@ -1,0 +1,8 @@
+{"plan":{"nodes":[
+{"id":"n1","op":"integrate_def","expr":"3*x**2 + 2*x","a":0,"b":1},
+{"id":"n2","op":"evaluate","expr":"@n1 * 3"},
+{"id":"n3","op":"formula","expr":"0.5 * m * v**2","m":23,"v":"@n2","unit":"J"},
+{"id":"n4","op":"evaluate","expr":"@n3 - 25"},
+{"id":"n5","op":"evaluate","expr":"@n4 - 13"},
+{"id":"n6","op":"evaluate","expr":"@n5 * 6"}
+],"final":"n6"}}

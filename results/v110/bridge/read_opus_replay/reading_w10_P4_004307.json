@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id": "n1", "op": "solve_pick", "lhs": "x**2 -15*x +56", "pick": "smaller"}, {"id": "n2", "op": "evaluate", "expr": "@n1 - 25"}, {"id": "n3", "op": "evaluate", "expr": "@n2 + 22"}, {"id": "n4", "op": "formula", "expr": "m * a", "m": 120, "a": "@n3", "unit": "N"}, {"id": "n5", "op": "evaluate", "expr": "@n4 * 6"}], "final": "n5"}}

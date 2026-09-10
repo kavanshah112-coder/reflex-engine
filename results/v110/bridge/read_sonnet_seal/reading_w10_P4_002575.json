@@ -1,0 +1,8 @@
+{"plan":{"nodes":[
+{"id":"n1","op":"integrate_def","expr":"3*x**2 + 5*x","a":1,"b":2},
+{"id":"n2","op":"convert","value":12000,"from":"g","to":"kg"},
+{"id":"n3","op":"formula","expr":"0.5 * m * v**2","m":"@n2","v":"@n1","unit":"J"},
+{"id":"n4","op":"convert","value":"@n3","from":"J","to":"kJ"},
+{"id":"n5","op":"evaluate","expr":"@n4 - 26"},
+{"id":"n6","op":"evaluate","expr":"@n5 * 9"}
+],"final":"n6"}}
