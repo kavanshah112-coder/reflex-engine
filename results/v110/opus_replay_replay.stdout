@@ -1,0 +1,29 @@
+{
+ "arm": "opus",
+ "split": "replay",
+ "n": 92516,
+ "sampled": 1164,
+ "ms_per_query": 61.223,
+ "library_T": 1027,
+ "library_P": 295,
+ "probated_T": 56,
+ "totals": {
+  "n": 92516,
+  "exact_served": 33089,
+  "exact_WRONG": 2,
+  "A2S_served": 96,
+  "A2S_WRONG": 3,
+  "A0S_served": 96,
+  "A0S_WRONG": 3,
+  "KC_served": 0,
+  "KC_WRONG": 0,
+  "A2_admitted": 450,
+  "A2_WRONG": 4,
+  "escalated": 58320,
+  "own_answered": 1050,
+  "own_correct": 1036,
+  "SAFETY_PC": 0,
+  "SAFETY2": 0,
+  "excluded_author": 648
+ }
+}
