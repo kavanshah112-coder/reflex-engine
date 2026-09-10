@@ -283,6 +283,89 @@ def tokens_ratio():
     return max(vals) if vals else None
 
 
+
+def hyp_rows():
+    """H1-H12 verdicts computed from the sealed summaries (narrative commentary is added from report110_narrative.json)."""
+    R = []
+    def fmt(x, d=1):
+        return "—" if x is None else ("%." + str(d) + "f%%") % (100 * x)
+    # H1: A2S wrong rate <= fresh A2 wrong rate on every arm (SEAL)
+    parts = []; ok = True
+    for m, v in seal.items():
+        t = v["totals"]; a2s = (t["A2S_WRONG"] / t["A2S_served"]) if t["A2S_served"] else None; a2 = (t["A2_WRONG"] / t["A2_admitted"]) if t["A2_admitted"] else None
+        parts.append("%s A2S %s vs A2 %s" % (m, fmt(a2s, 2), fmt(a2, 2)))
+        if a2s is not None and a2 is not None and a2s > a2:
+            ok = False
+    R.append(("H1", "A2S wrong by gold <= fresh A2's rate on every arm", "HOLDS" if ok else "FAILS", "; ".join(parts)))
+    # H2
+    gen = genuine_ids("sonnet") if "sonnet" in seal else None
+    R.append(("H2", "GENUINE wrong under A2S = 0 on M-sonnet SEAL", "—" if gen is None else ("HOLDS" if not gen else "FAILS"), "—" if gen is None else ("0 genuine" if not gen else "genuine: " + ", ".join(gen))))
+    # H3: rules cost < 3% (rules110) ; 'every V10-class new wrong removed' is judged in the narrative
+    rb = [m for m, r in rules.items() if not (r["Z-SLOT"]["pass_3pct"] and r["S-MULTI"]["pass_3pct"])]
+    R.append(("H3", "Z-SLOT + S-MULTI cost < 3% false abstention on DEV", "HOLDS (cost)" if rules and not rb else ("FAILS" if rb else "—"), "; ".join("%s S-MULTI %s, Z-SLOT %s" % (m, fmt(r["S-MULTI"]["false_abstention_of_sample"]), fmt(r["Z-SLOT"]["false_abstention_of_sample"])) for m, r in rules.items())))
+    # H4: reach >= 30% on T1-T3, falling with tier; T4, P4 < 15%
+    parts = []; ok = True
+    for m, v in seal.items():
+        rr = {t: reach_tier(v, t) for t in ("T1", "T2", "T3", "T3p", "T4", "P4")}
+        parts.append("%s: " % m + ", ".join("%s %s" % (t, fmt(x)) for t, x in rr.items()))
+        if any((rr[t] or 0) < 0.30 for t in ("T1", "T2", "T3")) or any((rr[t] or 0) >= 0.15 for t in ("T4", "P4")):
+            ok = False
+    R.append(("H4", "SUGGEST-REACH >= 30% on T1-T3, falling with tier; T4 and P4 < 15% (strict, E-SAMPLE)", "HOLDS" if ok else "FAILS", "; ".join(parts)))
+    # H5: P1-P3 certified >= 90% at zero wrong, model-free
+    parts = []; ok = True
+    for sp, v in det.items():
+        if sp not in ("seal", "replay"):
+            continue
+        for t in ("P1", "P2", "P3"):
+            c = v["by_tier"].get(t, {}); n = g(c, "n"); e = g(c, "exact_served"); w = g(c, "exact_WRONG")
+            parts.append("D/%s %s %s (%d wrong)" % (sp, t, fmt(e / n if n else None), w))
+            if n and (e / n < 0.90 or w > 0):
+                ok = False
+    R.append(("H5", "P1-P3 certified >= 90% at zero wrong, model-free", "HOLDS" if ok else "FAILS", "; ".join(parts)))
+    # H6: P4 fresh reading reach < 50%; every P4 wrong traces to reading
+    parts = []; ok = True
+    for m, v in seal.items():
+        c = v["by_tier"].get("P4", {}); n = g(c, "n") - g(c, "excluded_author"); adm = g(c, "A2_admitted"); w = g(c, "A2_WRONG") + g(c, "A2S_WRONG")
+        parts.append("%s P4 fresh A2 %d / %d scorable (%s), %d wrong" % (m, adm, n, fmt(adm / n if n else None), w))
+        if n and adm / n >= 0.50:
+            ok = False
+    R.append(("H6", "P4: fresh reading reach < 50%; every P4 wrong traces to reading, never to formula", "HOLDS (reach)" if ok else "FAILS", "; ".join(parts)))
+    # H7
+    pc = {m: v["totals"]["SAFETY_PC"] for m, v in seal.items()}
+    R.append(("H7", "PC concept items: 0 certified on every arm", "HOLDS" if all(x == 0 for x in pc.values()) else "FAILS", ", ".join("%s %d" % kv for kv in pc.items())))
+    # H8
+    tt = tokens_table("seal")
+    R.append(("H8", "engine-in-front TOKENS/QUERY <= 50% of LLM-only overall, > 80% on T4/P4", "FAILS" if any((v["ratio_answer_only"] or 0) > 0.5 for v in tt.values()) else ("HOLDS" if tt else "—"),
+              "; ".join("%s answer-only %s, full %s, T4+P4 %s" % (m, fmt(v["ratio_answer_only"], 0), fmt(v["ratio_full"], 0), fmt(v["t4p4_share"], 0)) for m, v in tt.items())))
+    # H9
+    kc = {m: (v["totals"]["KC_served"], v["totals"]["KC_WRONG"]) for m, v in seal.items()}
+    R.append(("H9", "KC serves > 0 on SEAL with KC-WRONG > 0", "HOLDS" if any(a > 0 and b > 0 for a, b in kc.values()) else "FAILS", ", ".join("%s %d served / %d wrong" % (m, a, b) for m, (a, b) in kc.items())))
+    # H10
+    if "sonnet" in seal and "haiku" in seal:
+        gs, gh = len(genuine_ids("sonnet")), len(genuine_ids("haiku")); rs, rh = reach_s(seal["sonnet"]), reach_s(seal["haiku"])
+        R.append(("H10", "scale monotone: haiku >= sonnet in genuine A2S wrongs, <= in REACH-S", "HOLDS" if gh >= gs and (rh or 0) <= (rs or 0) else "FAILS", "genuine sonnet %d / haiku %d; REACH-S sonnet %s / haiku %s" % (gs, gh, fmt(rs), fmt(rh))))
+    else:
+        R.append(("H10", "scale monotone", "—", "needs sonnet and haiku SEAL"))
+    # H11: value-right / reading-wrong among A2S serves (plan_disagree / (plan_agree + plan_disagree))
+    parts = []; ok = True
+    for m, v in seal.items():
+        pa = sum(g(c, "plan_agree") for c in v["by_tier"].values()); pd = sum(g(c, "plan_disagree") for c in v["by_tier"].values())
+        x = pd / (pa + pd) if (pa + pd) else None
+        parts.append("%s %d / %d (%s)" % (m, pd, pa + pd, fmt(x)))
+        if x is None or not (0.05 <= x <= 0.20):
+            ok = False
+    R.append(("H11", "value-right/reading-wrong hits are 5-20% of A2S serves; PLAN-AGREEMENT minting excludes them", "HOLDS" if ok else "FAILS (share outside 5-20%)", "; ".join(parts)))
+    # H12: acquisition curve concave, non-flat
+    parts = []; ok = True
+    for m, v in acq.items():
+        cur = [c.get("A2S_served", 0) for c in v.get("curve", [])]
+        parts.append("%s %s" % (m, cur))
+        d = [b - a for a, b in zip(cur, cur[1:])]
+        if len(set(cur)) <= 1:
+            ok = False
+    R.append(("H12", "acquisition curve (A2S serves vs ACQ position) non-flat", "HOLDS (non-flat)" if ok else "FAILS", "; ".join(parts)))
+    return R
+
 # ---------------------------------------------------------------- figures
 def fig_arms():
     if not seal:
@@ -501,6 +584,11 @@ def build_md():
         md.append("| %s | %s |" % (k, v))
     md.append("")
     md.append("## 10. Hypotheses")
+    md.append("| | claim | verdict | evidence |")
+    md.append("|---|---|---|---|")
+    for h, claim, verdict, ev in hyp_rows():
+        md.append("| %s | %s | **%s** | %s |" % (h, claim, verdict, ev))
+    md.append("")
     md.append(N("hypotheses", "_(H1–H12 verdicts after the sealed run)_"))
     md.append("")
     md.append("## 11. Outcome on the frozen ladder")
