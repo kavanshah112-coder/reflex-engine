@@ -128,6 +128,38 @@
   "fable|replay|w10_T3p_000729": {
    "class": "CORPUS",
    "why": "perturbed SVAMP asks the stated number (10); gold 13 = 23-10; own 10"
+  },
+  "opus|seal|w10_T3_000167": {
+   "class": "CORPUS",
+   "why": "192 min x $100/min = 19,200; gold 1920 is a GSM8K-train erratum"
+  },
+  "opus|seal|w10_T3_000869": {
+   "class": "CORPUS",
+   "why": "150 stickers shared equally among 3 friends leaves 0; gold 3 does not follow from the text (GSM8K erratum)"
+  },
+  "opus|seal|w10_T3_001777": {
+   "class": "INTERP",
+   "why": "basketballs = 300-60-120-50-40 = 30 remaining donations + 30 with hoops = 60; gold 90 removes the 30 discarded floats from the 300 first; both readings defensible"
+  },
+  "opus|seal|w10_T3_005496": {
+   "class": "CORPUS",
+   "why": "10-3+20-18+2 = 11; gold 12 is a GSM8K-train erratum"
+  },
+  "opus|seal|w10_T3_006832": {
+   "class": "CORPUS",
+   "why": "4 h lunch = half the reading time -> 8 h -> 500 pages/h; gold 250 is a GSM8K-train erratum"
+  },
+  "opus|seal|w10_T3p_000679": {
+   "class": "CORPUS",
+   "why": "4-2+3=5; gold 1 is a corpus erratum"
+  },
+  "opus|seal|w10_T3p_000906": {
+   "class": "CORPUS",
+   "why": "perturbed SVAMP: '14 shirts today' inconsistent; gold 156 = 6*(12+14); own 86"
+  },
+  "opus|seal|w10_T4_014073": {
+   "class": "CORPUS",
+   "why": "(179-96+7*96-54)*4+55 = 2859; the haiku-authored gold 2163 does not follow from its own story (authored erratum that passed QC)"
   }
  }
 }
