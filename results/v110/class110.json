@@ -108,6 +108,26 @@
   "fable|seal|w10_T3p_000906": {
    "class": "CORPUS",
    "why": "perturbed SVAMP: '14 shirts today' inconsistent; gold 156 = 6*(12+14); own 86"
+  },
+  "fable|replay|w10_T3_000356": {
+   "class": "CORPUS",
+   "why": "24 correct x 2 + 4 full rounds x 4 = 64; gold 66 is a GSM8K-train erratum"
+  },
+  "fable|replay|w10_T3_000424": {
+   "class": "INTERP",
+   "why": "'cooked 9/10 kilograms' read literally (0.9 kg) gives 6825 g; gold 750 reads 9/10 of the rice; the intended reading is the gold's"
+  },
+  "fable|replay|w10_T3_002338": {
+   "class": "CORPUS",
+   "why": "10*2+5*1=25; gold 30 is a GSM8K-train erratum; own 25"
+  },
+  "fable|replay|w10_T3p_000034": {
+   "class": "CORPUS",
+   "why": "perturbed SVAMP asks the stated afternoon count (3); gold 1 is the evening count"
+  },
+  "fable|replay|w10_T3p_000729": {
+   "class": "CORPUS",
+   "why": "perturbed SVAMP asks the stated number (10); gold 13 = 23-10; own 10"
   }
  }
 }
