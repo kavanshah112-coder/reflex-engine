@@ -501,3 +501,30 @@ served correctly. Engine unchanged. Result (rules110.json): Z-SLOT
 The KC shadow path records only tallies (KC_served, KC_WRONG), not
 the item id or value, so the haiku SEAL KC wrong (1 of 1 served) is
 reported as a count; recording the KC value per row is V1.11 work.
+
+
+## B43 - GENUINE A2S wrongs on M-sonnet SEAL (SAFETY-GEN fails)
+Three sealed items on the sonnet arm were served by suggestion with
+the model's own wrong number: w10_T3_003280 (13 for 11), w10_T3_006604
+(441 for 378), w10_T3_006914 (80 for 65). In each the own answer was
+wrong, a library plan on the same cue key reproduced the same number,
+A2S admitted on agreement, the engine served. Haiku has 6 such items
+(283 served), fable 1 (316), opus 0 (335). Not an engine defect: the
+mechanism works as specified and the specification is what fails.
+Nothing changed; V1.11 must not carry A2S forward as a safety claim.
+
+## N36 - B41/B42 reproduce on every arm; one authored gold wrong past QC
+The two D-arm REPLAY exact-path wrongs (B41 w10_P1_030692, B42
+w10_T3_002293) appear identically on all four model arms because the
+exact path is model-free; they are counted once in the ledger and
+once per arm in the tables. w10_T4_014073 (haiku-authored, QC passed
+by another model) has gold 2163 while its own story computes 2859;
+opus and sonnet fresh readings served 2859 and are scored wrong by
+gold (class CORPUS, nothing relabelled).
+
+## Close of ledger for V1.10
+Bugs B37-B43; notes N1-N36. Superseded runs preserved: det_acq_base2,
+det_acq_base3, det_dev_base, det_dev_base2, det_dev_smoke*,
+haiku_acq_test_p1 (smoke and calibration runs before the frozen
+passes). Sealed passes run exactly once per arm: <arm>_seal_seal_* and
+<arm>_replay_replay_*.
