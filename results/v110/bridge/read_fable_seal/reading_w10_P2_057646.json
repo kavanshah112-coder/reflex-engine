@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id":"n1","op":"solve_pick","lhs":"x**2 -7*x +10","pick":"larger"},{"id":"n2","op":"evaluate","expr":"@n1 * 11"},{"id":"n3","op":"formula","expr":"m * a","m":11,"a":"@n2","unit":"N"}], "final": "n3"}}

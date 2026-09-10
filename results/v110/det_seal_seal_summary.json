@@ -1,0 +1,82 @@
+{
+ "arm": "det",
+ "split": "seal",
+ "n": 92392,
+ "sampled": 3042,
+ "ms_per_query": 4.356,
+ "library_T": 0,
+ "library_P": 0,
+ "probated_T": 0,
+ "by_tier": {
+  "D": {
+   "n": 1836,
+   "escalated": 1836
+  },
+  "P1": {
+   "n": 19907,
+   "exact_served": 17269,
+   "exact_correct": 17269,
+   "escalated": 2638
+  },
+  "P2": {
+   "n": 15062,
+   "escalated": 4891,
+   "exact_served": 10171,
+   "exact_correct": 10171
+  },
+  "P3": {
+   "n": 10083,
+   "exact_served": 2501,
+   "exact_correct": 2501,
+   "escalated": 7582
+  },
+  "P4": {
+   "n": 1175,
+   "escalated": 1175
+  },
+  "PC": {
+   "n": 279,
+   "escalated": 279
+  },
+  "T1": {
+   "n": 20149,
+   "escalated": 20149
+  },
+  "T2": {
+   "n": 20011,
+   "escalated": 20011
+  },
+  "T3": {
+   "n": 1876,
+   "escalated": 1876
+  },
+  "T3p": {
+   "n": 242,
+   "escalated": 242
+  },
+  "T4": {
+   "n": 1772,
+   "escalated": 1772
+  }
+ },
+ "curve": [],
+ "totals": {
+  "n": 92392,
+  "exact_served": 29941,
+  "exact_WRONG": 0,
+  "A2S_served": 0,
+  "A2S_WRONG": 0,
+  "A0S_served": 0,
+  "A0S_WRONG": 0,
+  "KC_served": 0,
+  "KC_WRONG": 0,
+  "A2_admitted": 0,
+  "A2_WRONG": 0,
+  "escalated": 62451,
+  "own_answered": 0,
+  "own_correct": 0,
+  "SAFETY_PC": 0,
+  "SAFETY2": 0,
+  "excluded_author": 0
+ }
+}

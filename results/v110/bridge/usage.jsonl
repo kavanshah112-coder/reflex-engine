@@ -359,3 +359,15 @@
 {"agent": "readq_seal_opus_rH", "model": "opus", "role": "reading", "split": "seal", "tier": "P1,P2", "items": 250, "subagent_tokens": 193864, "tool_uses": 260, "duration_ms": 808956}
 {"agent": "readq_seal_haiku_rI", "model": "haiku", "role": "reading", "split": "seal", "tier": "P2", "items": 200, "subagent_tokens": 153338, "tool_uses": 208, "duration_ms": 537784}
 {"agent": "readq_seal_fable_rH", "model": "fable", "role": "reading", "split": "seal", "tier": "P1,P2", "items": 250, "subagent_tokens": 195560, "tool_uses": 263, "duration_ms": 743004}
+{"agent": "ansq_replay_sonnet_pA2", "model": "sonnet", "role": "answer", "split": "replay", "tier": "T1,T2,T3", "items": 0, "subagent_tokens": 66893, "tool_uses": 2, "duration_ms": 21156, "note": "all 14 files already existed (killed agent had finished writing)"}
+{"agent": "ansq_replay_haiku_pA2", "model": "haiku", "role": "answer", "split": "replay", "tier": "T1,T2,T3", "items": 0, "subagent_tokens": 62240, "tool_uses": 17, "duration_ms": 57138, "note": "all 14 files already existed"}
+{"agent": "readq_seal_haiku_fill_P2", "model": "haiku", "role": "reading", "split": "seal", "tier": "P2", "items": 17, "subagent_tokens": 69514, "tool_uses": 21, "duration_ms": 99439}
+{"agent": "readq_seal_sonnet_rF2", "model": "sonnet", "role": "reading", "split": "seal", "tier": "T3p,T4", "items": 0, "subagent_tokens": 197183, "tool_uses": 254, "duration_ms": 292137, "note": "all files already existed"}
+{"agent": "ansq_replay_fable_pA2", "model": "fable", "role": "answer", "split": "replay", "tier": "T3", "items": 250, "subagent_tokens": 115160, "tool_uses": 38, "duration_ms": 169663}
+{"agent": "readq_seal_fable_rI2", "model": "fable", "role": "reading", "split": "seal", "tier": "P2", "items": 25, "subagent_tokens": 177478, "tool_uses": 233, "duration_ms": 266538}
+{"agent": "readq_seal_opus_rI2", "model": "opus", "role": "reading", "split": "seal", "tier": "P2", "items": 34, "subagent_tokens": 181149, "tool_uses": 242, "duration_ms": 316142}
+{"agent": "ansq_replay_haiku_pB", "model": "haiku", "role": "answer", "split": "replay", "tier": "T3p,T4,P1", "items": 300, "subagent_tokens": 97926, "tool_uses": 24, "duration_ms": 207619}
+{"agent": "ansq_replay_opus_pA2", "model": "opus", "role": "answer", "split": "replay", "tier": "T1,T2,T3", "items": 350, "subagent_tokens": 119081, "tool_uses": 28, "duration_ms": 245492}
+{"agent": "readq_seal_haiku_fill_slots", "model": "haiku", "role": "reading", "split": "seal", "tier": "T3p,T4", "items": 57, "subagent_tokens": 105900, "tool_uses": 67, "duration_ms": 280811}
+{"agent": "ansq_replay_opus_pB", "model": "opus", "role": "answer", "split": "replay", "tier": "T3p,T4,P1", "items": 300, "subagent_tokens": 120545, "tool_uses": 24, "duration_ms": 237337}
+{"agent": "ansq_replay_fable_pB", "model": "fable", "role": "answer", "split": "replay", "tier": "T3p,T4,P1", "items": 300, "subagent_tokens": 116287, "tool_uses": 24, "duration_ms": 182314}

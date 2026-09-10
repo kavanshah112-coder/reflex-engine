@@ -435,3 +435,37 @@ Sonnet DEV dev1 (non-authored, acq1 library): exact 13,486 / 0, A2S
 560 / 3 (T3 own-answer agreements), PC 0. DEV is now complete on all
 four arms with no engine rule added; the D-arm SEAL and REPLAY passes
 start now (engine only, once each).
+
+## D-arm sealed passes (engine only, once each): SEAL 0 wrong, REPLAY 2 wrong
+SEAL (92,392 items): exact 29,941 serves, 0 wrong, PC 0, distractor 0.
+REPLAY (92,516): exact 30,155 serves, 2 WRONG — both on the model-free
+path, both preserved (sealed, never re-run), both B-numbered:
+
+## B41 — V1.6 tier-A physics binds by value: equal mass and acceleration collapse to the weight template (sealed wrong, REPLAY P1)
+`w10_P1_030692` "mass of 11 kg, an acceleration of 11.0 m/s^2. What is
+the force?" served 107.8 (= 11 × 9.8) for gold 121. Read-only probe:
+with 11 / 12.0 the path abstains; with 12 / 12.0 it serves 117.6 =
+12 × 9.8. When the two stated quantities are numerically equal the
+V1.6 tier-A matcher sees one distinct value and matches the one-input
+"weight of a mass" template, serving m·g instead of m·a. A value-
+collision bug in a path that was frozen since V1.6; it fires only
+when mass == acceleration numerically (REPLAY holds one such item,
+SEAL none).
+
+## B42 — V1.6 conversion reflex fires on a rate ask (sealed wrong, REPLAY T3)
+`w10_T3_002293` "A boy runs 1.5 km in 45 minutes. What is his speed in
+kilometers per hour?" served 1500 (the km→m conversion reflex) for
+gold 2. The B40b gate admits the V1.6 library on ask types other/
+ratio; "speed" is typed `other`, the ask carries the unit cue
+"kilometers", and the conversion reflex bound the 1.5 km. This is the
+B40 family (a unit-cue reflex answering a story), one gate wider.
+
+Decision: the engine is NOT changed between the D-arm sealed passes
+and the four model-arm sealed passes (the exact path is identical and
+model-free, so the same two items will be served wrong on every arm's
+REPLAY; SEAL holds none). SAFETY-CHAIN (P1–P3 model-free certified
+wrong = 0) is unqualified as to split in the frozen spec; it holds on
+SEAL and fails on REPLAY by one item — the ladder is applied to the
+letter in the report. Fixes (require two distinct slot values for a
+two-input template; exclude rate asks from the conversion reflex) are
+V1.11 work, logged here before any model-arm sealed pass.

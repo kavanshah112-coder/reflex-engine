@@ -1,0 +1,1 @@
+{"plan": {"nodes": [{"id": "n1", "op": "derivative_at", "expr": "1*x**3 -5*x**2", "order": 1, "point": 4}, {"id": "n2", "op": "evaluate", "expr": "@n1 + 14"}, {"id": "n3", "op": "formula", "expr": "m * a", "m": 91, "a": "@n2", "unit": "N"}, {"id": "n4", "op": "convert", "value": "@n3", "from": "N", "to": "kN"}, {"id": "n5", "op": "evaluate", "expr": "@n4 - 1"}], "final": "n5"}}

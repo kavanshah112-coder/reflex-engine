@@ -1,0 +1,8 @@
+{"plan": {"nodes": [
+{"id":"n1","op":"derivative_at","expr":"3*x**3-2*x**2","order":2,"point":2},
+{"id":"n2","op":"evaluate","expr":"@n1 + 28"},
+{"id":"n3","op":"formula","expr":"0.5*m*v**2","m":28,"v":"@n2","unit":"J"},
+{"id":"n4","op":"evaluate","expr":"@n3 + 19"},
+{"id":"n5","op":"evaluate","expr":"@n4 * 11"},
+{"id":"n6","op":"convert","value":"@n5","from":"J","to":"kJ"}
+], "final": "n6"}}
